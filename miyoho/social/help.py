@@ -240,7 +240,8 @@ async def _diagnose(ctx: Ctx, btn_rows: list[list[dict]],
     bot_cls = type(ctx.bot).__name__ if ctx.bot is not None else "None"
     can = ctx.event is not None and can_use_buttons(ctx.event)
     kb = build_keyboard(btn_rows)
-    kb_rows = len(getattr(getattr(kb, "content", None), "rows", None) or [])
+    # 键位结构是**普通 dict**（botpy 的 TypedDict，不是对象）→ 用 dict 取值，别 getattr
+    kb_rows = len(((kb or {}).get("content") or {}).get("rows") or [])
     n_btns = sum(len(r) for r in btn_rows)
     lines = [
         "【命令菜单 · 按钮诊断】",

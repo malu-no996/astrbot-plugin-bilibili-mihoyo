@@ -90,22 +90,22 @@ def _bot_protocol(bot: Any, event: Any = None) -> str:
 
     用来挑回复模板、并决定要不要尝试 QQ 官方专属能力（如命令菜单的按钮）。
 
-    **先看事件、再看机器人**：只看 bot 的话，一旦官方适配器的 Bot 类被包装
-    （子类放在别的模块、或用了自定义 adapter 工厂），模块名就不是
-    `nonebot.adapters.qq.*`，会被误判成 OneBot —— 表现是「官方机器人永远走
-    第三方那套」，按钮这类 QQ 专属能力连尝试都不会尝试（正是命令菜单踩到的坑）。
-    QQ 官方的事件类全部定义在 `nonebot.adapters.qq.event`，比 bot 侧更可靠。
+    ⚠️ **AstrBot 版看的是「平台适配器类型名」**：`event.get_platform_name()`，
+    官方机器人是 `qq_official`（含 webhook 变体），NapCat 等是 `aiocqhttp`。
+
+    原版（nonebot）按 `type(obj).__module__.startswith("nonebot.adapters.qq")` 判断，
+    移植到 AstrBot 后**恒不成立**（事件类在 `astrbot.core.platform.sources.qqofficial`）→
+    永远返回 "onebot" → 官方机器人连按钮都不会尝试，静默退回纯文字菜单。
+    （正式分发用的是 `dispatch._protocol()`，同样按平台名判断，两处口径要一致。）
+
+    `bot` 参数留着只为兼容原签名（AstrBot 里平台名从事件上取最可靠）。
     """
-    for obj in (event, bot):
-        if obj is None:
-            continue
-        try:
-            mod = type(obj).__module__ or ""
-        except Exception:  # noqa: BLE001
-            continue
-        if mod.startswith("nonebot.adapters.qq"):
-            return "qq"
-    return "onebot"
+    del bot
+    try:
+        name = str(event.get_platform_name() or "") if event is not None else ""
+    except Exception:  # noqa: BLE001
+        name = ""
+    return "qq" if name.strip().lower().startswith("qq_official") else "onebot"
 
 
 
