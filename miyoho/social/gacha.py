@@ -88,8 +88,10 @@ def _pool_usage(cmd: str, aliases: dict, bad: list[str]) -> str:
     """参数认不出来时的提示：把当前生效的频段词 / 代码全列出来。
 
     用户并不知道「2 / 102」这些数字是什么，输错了还静默按独家频段查会让人以为查错了，
-    所以这里**直接回一条可用参数清单**（频段词来自页面「详细设置」里正在生效的那份）；
-    UID 是 8 位以上数字，也算一种参数，一并说明。
+    所以这里**直接回一条可用参数清单**（频段词来自页面「详细设置」里正在生效的那份）。
+
+    ⚠️ 命令后面**只认频段一个参数**，不认 UID —— 查谁永远由「切换角色」决定
+    （用户明确要求，2026-10-09：UID 能被人拿去直接查自己的抽卡记录，等于泄露）。
     """
     groups: dict[str, list[str]] = {}
     for word, code in aliases.items():
@@ -102,9 +104,10 @@ def _pool_usage(cmd: str, aliases: dict, bad: list[str]) -> str:
         )
     return (
         f"参数看不懂：{'、'.join(bad)}\n"
-        f"抽卡命令后面可以跟「频段」或「UID」，两个都可省（不写默认查独家频段）。\n\n"
+        f"抽卡命令后面只能跟**频段**（可省，不写就是独家频段）；"
+        f"查哪个角色由「切换角色」决定，不用也不能填 UID。\n\n"
         f"可用的频段：\n" + "\n".join(lines) + "\n\n"
-        f"用法示例：{cmd} 常驻　·　{cmd} 音擎　·　{cmd} 100000001（UID 是 8 位以上数字）"
+        f"用法示例：{cmd}　·　{cmd} 常驻　·　{cmd} 音擎"
     )
 
 _SUMMARY_SAMPLE = (
@@ -119,7 +122,8 @@ _SUMMARY_SAMPLE = (
 
 @interface(
     "zzz_gacha", "绝区零 · 调频记录",
-    "抽卡总结（参数：频段 + UID，都可省；不带参数=独家频段。"
+    "抽卡总结（参数只要一个频段，可省；不带参数=独家频段，"
+    "查谁由「切换角色」决定，不接受 UID）。"
     "频段可打：独家/常驻/音擎/邦布/重映(复刻)/回响，或代码 1/2/3/5/102/103）",
     options=[
         {"key": "output", "label": "输出方式", "type": "select",
@@ -131,7 +135,7 @@ _SUMMARY_SAMPLE = (
                  "词随便改（中英文逗号分隔），改完点「确定」立即生效。清空则用内置默认。"},
     ],
     tpl_vars=[
-        {"name": "role", "desc": "绝区零角色名（取不到时是第一行显示的 UID 文案）"},
+        {"name": "role", "desc": "绝区零角色名（取不到昵称时退回显示 UID）"},
         {"name": "pool_name", "desc": "频段名（如 独家频段）"},
         {"name": "uid", "desc": "游戏 UID"},
         {"name": "total", "desc": "统计范围内的总抽数"},
@@ -147,7 +151,6 @@ _SUMMARY_SAMPLE = (
 async def _api_zzz_gacha(ctx: Ctx) -> dict:
     text = (ctx.arg or "").strip()
     gacha_type = "2"                      # 不带参数 → 独家频段
-    uid = ""
     # 别名表取自「详细设置 → 频段词 ↔ 频段代码」（页面可改）；清空 / 全写错时回退内置默认。
     aliases = _parse_aliases(str(ctx.opt("pool_aliases", "") or "")) or _DEFAULT_ALIASES
     bad: list[str] = []                   # 认不出来的参数（后面统一提示，别静默忽略）
@@ -155,9 +158,9 @@ async def _api_zzz_gacha(ctx: Ctx) -> dict:
         t = aliases.get(token) or (token if token in GACHA_TYPES else "")
         if t:
             gacha_type = t
-        elif token.isdigit() and len(token) >= 8:
-            uid = token
         else:
+            # ⚠️ 不再接受 UID 参数（2026-10-09）：谁都能拿一个 UID 查到别人的抽卡记录，
+            # 等于把隐私递出去。查谁一律看「切换角色」，所以任何非频段 token 都是错参数。
             bad.append(token)
     if bad:
         # ⚠️ 必须在发任何请求之前回提示：原来这类 token 被悄悄丢掉、按独家频段查，
@@ -167,42 +170,20 @@ async def _api_zzz_gacha(ctx: Ctx) -> dict:
     if not aid:
         return {"text": "未绑定米游社账号：请先发送「米游社登录」扫码绑定你的米游社账号"}
 
-    # 角色列表：不传 UID 时靠它定位默认角色（「切换角色」设过的优先，没设过取列表第一个）；
-    # 传了 UID 也拉一次，好在第一行显示角色名（拉失败且用户给了 UID 时不挡查询，
-    # 第一行退回显示 UID）。
+    # 角色列表：靠它定位「当前角色」（「切换角色」设过的优先，没设过取列表第一个）。
     try:
         roles = await client.bind_roles(aid)
     except Exception as exc:  # noqa: BLE001
-        if not uid:
-            return {"text": f"读取绝区零角色失败：{exc}"}
-        roles = []
+        return {"text": f"读取绝区零角色失败：{exc}"}
 
     server = "prod_gf_cn"
     role_name = ""
-    if not uid:
-        role = _pick_role(roles, bind.role_default(ctx.user_id, aid))
-        if not role:
-            return {"text": "当前账号没有绑定绝区零角色"}
-        uid = str(role.get("game_uid") or "")
-        server = role.get("region") or server
-        role_name = str(role.get("nickname") or "")
-    else:
-        for r in roles:
-            if str(r.get("game_uid") or "") == str(uid):
-                role_name = str(r.get("nickname") or "")
-                server = r.get("region") or server
-                break
-        # 给了 UID 但当前账号下没这个角色 → 也是「参数输错了」，列出来给人看
-        # （roles 为空说明是拉列表失败，那条路上面已经处理过，这里不重复提示）。
-        if not role_name:
-            known = "、".join(
-                f"{r.get('nickname') or '?'}（{r.get('game_uid')}）" for r in roles
-            )
-            return {
-                "text": f"UID {uid} 不在当前绑定的米游社账号下。\n"
-                        f"这个账号下的绝区零角色：{known or '（无）'}\n"
-                        f"不写 UID 就查「切换角色」选中的那个，例：{_cmd_word(ctx)} 常驻",
-            }
+    role = _pick_role(roles, bind.role_default(ctx.user_id, aid))
+    if not role:
+        return {"text": "当前账号没有绑定绝区零角色"}
+    uid = str(role.get("game_uid") or "")
+    server = role.get("region") or server
+    role_name = str(role.get("nickname") or "")
 
     # 本地存档 + 增量：该频段有存档就以最大 item id 为游标只拉新的，没有才全量翻页
     stored = gacha_store.load(uid) or {}
