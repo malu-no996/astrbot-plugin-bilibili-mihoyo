@@ -33,7 +33,8 @@ window.MysSocial = {
       loading: false, saving: false, done: false,
       error: '', message: '',
       tab: 'api',            // api（接口配置）/ bot（QQ机器人配置）
-      commands: [],          // [{id, cmd, alias_text, api, enabled, admin_only, options, tpl}]
+      groups: ['mhy', 'zzz'],// 「指令组」下拉候选（后端不限制，这里只是候选）
+      commands: [],          // [{id, group, cmd, alias_text, api, enabled, admin_only, options, tpl}]
       interfaces: [],        // [{key, label, desc, options(schema), tpl_vars, sample}]
       // 「详细设置」弹窗的编辑态（每条命令点开时把它的 options/tpl 拷进来改，确定再写回）
       detail: {
@@ -54,6 +55,13 @@ window.MysSocial = {
     };
   },
 
+  /* 命令的完整触发词：`zzz deadly` / `mhy login`（机器人矩阵那一列、详细设置标题都用它）。 */
+  trigger(c) {
+    const g = String((c || {}).group || '').trim();
+    const n = String((c || {}).cmd || '').trim();
+    return (g ? g + ' ' + n : n).trim();
+  },
+
   setup(ctx, mys) {
     const mysGet = (path, params) => ctx.get('' + path, params);
     const mysPost = (path, body) => ctx.post('' + path, body);
@@ -67,7 +75,7 @@ window.MysSocial = {
         id, name, protocol, online, on: master,
         cmds: (mys.social.commands || []).map(c => ({
           id: c.id,
-          label: c.cmd || '（未命名）',
+          label: window.MysSocial.trigger(c) || '（未命名）',
           val: Object.prototype.hasOwnProperty.call(per, c.id) ? !!per[c.id] : master,
         })),
       };
@@ -96,6 +104,7 @@ window.MysSocial = {
     function applyData(j) {
       mys.social.commands = (j.commands || []).map(c => ({
         id: String(c.id || ''),
+        group: String(c.group || '').trim().toLowerCase(),
         cmd: String(c.cmd || ''),
         alias_text: (c.aliases || []).join(' '),
         api: String(c.api || ''),
@@ -143,6 +152,7 @@ window.MysSocial = {
     function collect() {
       const commands = (mys.social.commands || []).map(c => ({
         id: c.id,
+        group: String(c.group || '').trim().toLowerCase(),
         cmd: String(c.cmd || '').trim(),
         aliases: String(c.alias_text || '').split(/[\s,，、;；]+/).filter(Boolean),
         api: String(c.api || ''),

@@ -18,8 +18,12 @@ window.MysSocialApi = {
     }
 
     function saAdd() {
+      const list = mys.social.commands || [];
+      const last = list[list.length - 1] || {};
       mys.social.commands.push({
         id: newId(),
+        // 新行默认跟上一行的指令组（大多数命令都是 zzz，没得参考就 zzz）
+        group: String(last.group || 'zzz'),
         cmd: '',
         alias_text: '',
         api: (mys.social.interfaces[0] || {}).key || '',

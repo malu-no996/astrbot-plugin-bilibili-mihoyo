@@ -2112,8 +2112,10 @@
      样式 frag/social-api.css（sa-* 前缀），方法 frag/social-api.js（window.MysSocialApi）。 -->
 <div v-show="mys.social.tab==='api'">
   <div class="ss-note">
-    用户在群里发「<b>命令名</b>」（或任一别名）就会执行右边绑定的接口，把处理后的一段文本回给用户。
-    命令名和别名都<strong>不必带前缀</strong>，<code>/绝区零危局</code> 与 <code>绝区零危局</code> 等效。
+    命令是「<b>指令组 + 子命令</b>」两段式：群里发「<code>指令组 命令</code>」（或任一别名）就会执行右边绑定的接口，把处理后的一段文本回给用户。
+    组名 <code>mhy</code> = 米游社账号类，<code>zzz</code> = 绝区零查询类；<b>命令词用英文，别名照旧全中文</b>——
+    例如 <code>zzz deadly</code> = <code>zzz 危局</code> = <code>zzz危局</code>。
+    也兼容不写组名（直接发 <code>危局</code>），前缀可带可不带（<code>/zzz deadly</code> 与 <code>zzz deadly</code> 等效）。
     保存后<b>立即生效，不用重启机器人</b>。
     点每行右边的<b>详细设置</b>，可以配这个接口自己的参数（比如图鉴按什么查、列表给几条），
     以及<b>回复模板</b>：OneBot 第三方机器人和 QQ 官方机器人各一套，留空就用接口默认文本。
@@ -2124,19 +2126,26 @@
   <table class="sa-table" v-if="mys.social.done">
     <thead>
       <tr>
-        <th style="width:18%">命令</th>
-        <th style="width:22%">别名</th>
-        <th style="width:28%">绑定的接口</th>
-        <th style="width:8%">仅管理员</th>
-        <th style="width:6%">启用</th>
-        <th style="width:9%">详细设置</th>
-        <th style="width:9%"></th>
+        <th style="width:10%">指令组</th>
+        <th style="width:14%">命令</th>
+        <th style="width:19%">别名</th>
+        <th style="width:25%">绑定的接口</th>
+        <th style="width:7%">仅管理员</th>
+        <th style="width:5%">启用</th>
+        <th style="width:10%">详细设置</th>
+        <th style="width:10%"></th>
       </tr>
     </thead>
     <tbody>
       <tr v-for="(c, ci) in mys.social.commands" :key="c.id" :class="{off: !c.enabled}">
-        <td><input class="sa-in" v-model="c.cmd" placeholder="如 绝区零危局"></td>
-        <td><input class="sa-in" v-model="c.alias_text" placeholder="多个别名，空格分隔"></td>
+        <td>
+          <select class="sa-in" v-model="c.group" :title="'群里要发的完整命令：' + (mysTrigger(c) || '（未命名）')">
+            <option value="">（无）</option>
+            <option v-for="g in mys.social.groups" :key="g" :value="g">{{ g }}</option>
+          </select>
+        </td>
+        <td><input class="sa-in" v-model="c.cmd" placeholder="如 deadly"></td>
+        <td><input class="sa-in" v-model="c.alias_text" placeholder="别名（中文），空格分隔"></td>
         <td>
           <select class="sa-in" v-model="c.api">
             <option value="">（未绑定，命中后不回复）</option>
@@ -2158,12 +2167,12 @@
   </table>
 
   <p v-if="mys.social.done && !mys.social.commands.length" class="muted">
-    还没有任何命令。点下面「新增命令」加一条，或重新读取一次恢复默认的 4 条。
+    还没有任何命令。点下面「新增命令」加一条，或重新读取一次把内置命令补回来。
   </p>
 
   <div class="ss-actions" v-if="mys.social.done">
     <button class="ghost sm" @click="saAdd()">+ 新增命令</button>
-    <span class="ss-tip">别名用空格、逗号或顿号分隔，例：危局强袭战 zzz危局</span>
+    <span class="ss-tip">别名用空格、逗号或顿号分隔，例：绝区零危局 危局强袭战</span>
   </div>
 
   <div class="ss-note" v-if="mys.social.done && mys.social.interfaces.length">

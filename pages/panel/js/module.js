@@ -297,6 +297,12 @@
         if (sidebar.mysRefresh) await sidebar.mysRefresh();
       }
 
+      /* 命令的完整触发词（`zzz deadly` / `mhy login`）：表格的 title、详细设置标题用它。
+       * 实现在 frag/social.js 的 MysSocial.trigger —— 模板不能直接摸 window，必须在这里登记。 */
+      function mysTrigger(c) {
+        return window.MysSocial ? window.MysSocial.trigger(c) : '';
+      }
+
       // 危局 / 防卫战：函数本体在 frag/zzz-deadly.js、frag/zzz-shiyu.js
       // 社交命令配置：容器 frag/social.js + 两个子页面 frag/social-api.js、frag/social-bot.js
       // （注意：expose 对象字面量里千万不要写 // 注释 —— check_admin.mjs 按逗号分块解析，
@@ -371,8 +377,10 @@
         asLastText: autosignApi.asLastText,
         mysSocialLoad: socialApi.mysSocialLoad, mysSocialSave: socialApi.mysSocialSave,
         mysSocialTab: socialApi.mysSocialTab,
+        mysTrigger,
         saAdd: socialApiPage.saAdd, saDel: socialApiPage.saDel,
         sbMaster: socialBotPage.sbMaster, sbAll: socialBotPage.sbAll,
+        sbSubToggle: socialBotPage.sbSubToggle, sbSubAll: socialBotPage.sbSubAll,
         sdOpen: socialDetail.sdOpen, sdClose: socialDetail.sdClose, sdSave: socialDetail.sdSave,
         sdReset: socialDetail.sdReset, sdProto: socialDetail.sdProto, sdCount: socialDetail.sdCount,
         sdTplSample: socialDetail.sdTplSample, sdTplClear: socialDetail.sdTplClear,

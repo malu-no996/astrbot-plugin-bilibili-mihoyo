@@ -75,21 +75,64 @@ def _raw_text(event: Any) -> str:
         return ""
 
 
+def full_trigger(c: dict) -> str:
+    """命令的完整触发词：`zzz deadly` / `mhy login`（没有组名就只回命令词）。
+
+    菜单、按钮、面板都显示它 —— 这才是用户真正要打的那串字。
+    """
+    group = str((c or {}).get("group") or "").strip()
+    cmd = str((c or {}).get("cmd") or "").strip()
+    return f"{group} {cmd}".strip()
+
+
+def _norm(s: Any) -> str:
+    """比较用归一化：去空白 + 转小写（命令词是英文，允许用户大小写随意）。"""
+    return str(s or "").strip().lower()
+
+
+def _is_cmd(piece: Any, c: dict) -> bool:
+    """这一小段文字是否就是这条命令（命令词 或 任一别名，忽略大小写）。"""
+    p = _norm(piece)
+    if not p:
+        return False
+    if p == _norm(c.get("cmd")):
+        return True
+    return any(p == _norm(a) for a in (c.get("aliases") or []))
+
+
 def match_command(commands: list[dict], text: str) -> tuple[dict | None, str]:
-    """一条消息 → (命中的命令配置, 后面的参数字符串)；没命中返回 (None, '')。"""
+    """一条消息 → (命中的命令配置, 后面的参数字符串)；没命中返回 (None, '')。
+
+    命令是「指令组 + 子命令」两段式（2026-10-08 起），下面几种写法都认：
+        zzz deadly [参数…]      指令组形式：组名 + 英文命令词
+        zzz 危局 / zzz危局       组名 + 中文别名
+        deadly [参数…]          不带组名，直接发命令词 / 别名（兼容老习惯）
+    匹配忽略大小写；别名照旧全中文。
+    """
     body = _strip_prefix(text.strip())
     if not body:
         return None, ""
-    parts = body.split(maxsplit=1)
-    head = parts[0].strip()
-    arg = parts[1].strip() if len(parts) > 1 else ""
+    parts = body.split()
+    head = parts[0]
     if not head:
         return None, ""
+
+    # ① 指令组形式：第一个词是组名 → 第二个词才是子命令（/别名）
+    if len(parts) >= 2:
+        sub = parts[1]
+        for c in commands:
+            if not c.get("enabled", True):
+                continue                                  # 停用的命令不参与匹配
+            group = _norm(c.get("group"))
+            if group and _norm(head) == group and _is_cmd(sub, c):
+                return c, " ".join(parts[2:]).strip()
+
+    # ② 不带组名：第一个词直接当命令词 / 别名（老习惯，别名本身就够用）
     for c in commands:
         if not c.get("enabled", True):
-            continue                                  # 停用的命令不参与匹配
-        if head == c.get("cmd") or head in (c.get("aliases") or []):
-            return c, arg
+            continue
+        if _is_cmd(head, c):
+            return c, " ".join(parts[1:]).strip()
     return None, ""
 
 

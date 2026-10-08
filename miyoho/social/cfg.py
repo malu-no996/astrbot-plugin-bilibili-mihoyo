@@ -28,126 +28,139 @@ _CFG_FILE = zzz_path("social.json")
 
 # ================= 配置读写 =================
 
+# ================= 指令组（组名 + 子命令 两段式） =================
+#
+# 2026-10-08 起命令改成「指令组 + 子命令」两段式（用户要求）：
+#     mhy login          米游社登录 / 扫码登录 / 米游社扫码登录
+#     zzz deadly         绝区零危局 / 危局强袭战 / zzz危局
+# 命令词用**英文**（组名 mhy = 米游社、zzz = 绝区零），**别名照旧全中文**；
+# 也兼容「不写组名、直接发命令词或别名」的老习惯（见 dispatch.match_command）。
+GROUP_MHY = "mhy"
+GROUP_ZZZ = "zzz"
+# 面板「指令组」下拉里的候选。后端**不限制**组名（写别的照样能用），这里只是候选。
+GROUPS: list[str] = [GROUP_MHY, GROUP_ZZZ]
+
 # ⚠️ id 是「内置命令」的身份，别随便改：_normalize 靠它区分
 #   「用户自己删掉的」和「后来新增的内置命令」（见 _ensure_new_defaults）。
 DEFAULT_COMMANDS: list[dict] = [
     {
-        "id": "mys_login", "cmd": "米游社登录",
-        "aliases": ["扫码登录", "米游社扫码登录"], "api": "mys_login",
+        "id": "mys_login", "group": GROUP_MHY, "cmd": "login",
+        "aliases": ["米游社登录", "扫码登录", "米游社扫码登录"], "api": "mys_login",
         "enabled": True, "admin_only": False,
     },
     {
-        "id": "mys_binds", "cmd": "米游社账号",
-        "aliases": ["我的米游社"], "api": "mys_binds",
+        "id": "mys_binds", "group": GROUP_MHY, "cmd": "account",
+        "aliases": ["米游社账号", "我的米游社"], "api": "mys_binds",
         "enabled": True, "admin_only": False,
     },
     {
         # 米游社切换：不带参数列账号（文字版「账号列表」+「1、昵称：账号ID」一行一个）；
-        # **QQ 官方**改为把这些账号做成按钮（文案=昵称，点下去发「米游社切换 账号ID」），
+        # **QQ 官方**改为把这些账号做成按钮（文案=昵称，点下去发「mhy switch 账号ID」），
         # 每行 3 个、最多 9 个（官方硬上限是每行 5 个 / 最多 25 个）。
-        "id": "mys_switch", "cmd": "米游社切换",
-        "aliases": ["切换米游社"], "api": "mys_switch",
+        "id": "mys_switch", "group": GROUP_MHY, "cmd": "switch",
+        "aliases": ["米游社切换", "切换米游社"], "api": "mys_switch",
         "enabled": True, "admin_only": False,
         "options": {"kb_text": "账号列表", "per_row": 3, "max_buttons": 9},
     },
     {
-        "id": "mys_unbind", "cmd": "米游社解绑",
-        "aliases": ["解绑米游社"], "api": "mys_unbind",
+        "id": "mys_unbind", "group": GROUP_MHY, "cmd": "unbind",
+        "aliases": ["米游社解绑", "解绑米游社"], "api": "mys_unbind",
         "enabled": True, "admin_only": False,
     },
     {
         # 一个米游社账号可能绑了多个绝区零角色：不带参数列出来（默认那个打勾），
-        # **QQ 官方**改成把这些角色做成按钮（文案=角色名，点下去发「切换角色 UID」），
+        # **QQ 官方**改成把这些角色做成按钮（文案=角色名，点下去发「mhy role UID」），
         # 每行 3 个、最多 9 个；命令后加 UID 就切换默认查哪个 —— 结果只回一句
         # 「【角色名】切换成功 / 失败」。危局 / 防卫战 / 抽卡 都跟着这个默认走。
-        "id": "zzz_role", "cmd": "切换角色",
-        "aliases": ["绝区零角色", "绝区零切换角色", "zzz角色"], "api": "zzz_role",
+        "id": "zzz_role", "group": GROUP_MHY, "cmd": "role",
+        "aliases": ["切换角色", "绝区零角色", "绝区零切换角色", "zzz角色"], "api": "zzz_role",
         "enabled": True, "admin_only": False,
         "options": {"kb_text": "角色列表", "per_row": 3, "max_buttons": 9},
     },
     {
-        "id": "zzz_deadly", "cmd": "绝区零危局",
-        "aliases": ["危局强袭战", "zzz危局"], "api": "zzz_deadly",
+        "id": "zzz_deadly", "group": GROUP_ZZZ, "cmd": "deadly",
+        "aliases": ["绝区零危局", "危局强袭战", "zzz危局"], "api": "zzz_deadly",
         "enabled": True, "admin_only": False,
     },
     {
-        "id": "zzz_shiyu", "cmd": "绝区零防卫战",
-        "aliases": ["式舆防卫战", "zzz防卫战"], "api": "zzz_shiyu",
+        "id": "zzz_shiyu", "group": GROUP_ZZZ, "cmd": "shiyu",
+        "aliases": ["绝区零防卫战", "式舆防卫战", "zzz防卫战"], "api": "zzz_shiyu",
         "enabled": True, "admin_only": False,
     },
     {
         # 群排行三件套：范围限定在**当前 Q 群**里绑定了账号的人，成绩**只读本地存档**
         # （用户要求：有查过记录的才上榜，不实时拉取）。危局 = 普通总分，
         # 绝境 = 绝境难度得分，防卫战 = 防卫战总分。
-        "id": "zzz_deadly_rank", "cmd": "危局群排行",
-        "aliases": ["危局排行", "zzz危局排行"], "api": "zzz_deadly_rank",
+        "id": "zzz_deadly_rank", "group": GROUP_ZZZ, "cmd": "deadly-rank",
+        "aliases": ["危局群排行", "危局排行", "zzz危局排行"], "api": "zzz_deadly_rank",
         "enabled": True, "admin_only": False, "options": {"limit": 10},
     },
     {
         # 绝境群排行多一个「输出方式」：用户要求「在文字版基础上加上图片版」——
         # 只有它支持出图（榜单图 = 排名 / 分数 / 队伍头像（右上角影画数）/ 角色名），
         # 另外两个榜仍是纯文字。选项默认值由接口 schema 决定（这里写出来只是让默认值一目了然）。
-        "id": "zzz_hard_rank", "cmd": "绝境群排行",
-        "aliases": ["绝境排行", "危局绝境群排行", "zzz绝境排行"], "api": "zzz_hard_rank",
+        "id": "zzz_hard_rank", "group": GROUP_ZZZ, "cmd": "hard-rank",
+        "aliases": ["绝境群排行", "绝境排行", "危局绝境群排行", "zzz绝境排行"], "api": "zzz_hard_rank",
         "enabled": True, "admin_only": False, "options": {"limit": 10, "output": "text"},
     },
     {
-        "id": "zzz_shiyu_rank", "cmd": "防卫战群排行",
-        "aliases": ["防卫战排行", "zzz防卫战排行"], "api": "zzz_shiyu_rank",
+        "id": "zzz_shiyu_rank", "group": GROUP_ZZZ, "cmd": "shiyu-rank",
+        "aliases": ["防卫战群排行", "防卫战排行", "zzz防卫战排行"], "api": "zzz_shiyu_rank",
         "enabled": True, "admin_only": False, "options": {"limit": 10},
     },
     {
         # 探索类三件套：常驻玩法的进度（没有「本期/上期」的概念）。
-        "id": "zzz_abyss", "cmd": "绝区零空洞",
-        "aliases": ["零号空洞", "zzz空洞"], "api": "zzz_abyss",
+        "id": "zzz_abyss", "group": GROUP_ZZZ, "cmd": "abyss",
+        "aliases": ["绝区零空洞", "零号空洞", "zzz空洞"], "api": "zzz_abyss",
         "enabled": True, "admin_only": False,
     },
     {
-        "id": "zzz_zenkov", "cmd": "绝区零诡域",
-        "aliases": ["迷宫诡域", "zzz诡域"], "api": "zzz_zenkov",
+        "id": "zzz_zenkov", "group": GROUP_ZZZ, "cmd": "zenkov",
+        "aliases": ["绝区零诡域", "迷宫诡域", "zzz诡域"], "api": "zzz_zenkov",
         "enabled": True, "admin_only": False,
     },
     {
-        "id": "zzz_void", "cmd": "绝区零推演",
-        "aliases": ["临界推演", "zzz临界"], "api": "zzz_void",
+        "id": "zzz_void", "group": GROUP_ZZZ, "cmd": "void",
+        "aliases": ["绝区零推演", "临界推演", "zzz临界"], "api": "zzz_void",
         "enabled": True, "admin_only": False,
     },
     {
         # 实时便笺：电量 / 活跃度 / 刮刮乐 / 录像店 / 委托 / 周常。
-        "id": "zzz_note", "cmd": "实时便笺",
-        "aliases": ["体力", "zzz体力", "绝区零便笺"], "api": "zzz_note",
+        "id": "zzz_note", "group": GROUP_ZZZ, "cmd": "note",
+        "aliases": ["实时便笺", "体力", "zzz体力", "绝区零便笺"], "api": "zzz_note",
         "enabled": True, "admin_only": False,
     },
     {
         # 玩家概览：活跃天数 / 角色数 / 邦布数 / 层数（网页「我的绝区零」那一屏）。
-        "id": "zzz_profile", "cmd": "绝区零档案",
-        "aliases": ["玩家概览", "绝区零查询", "zzz查询"], "api": "zzz_profile",
+        "id": "zzz_profile", "group": GROUP_ZZZ, "cmd": "profile",
+        "aliases": ["绝区零档案", "玩家概览", "绝区零查询", "zzz查询"], "api": "zzz_profile",
         "enabled": True, "admin_only": False,
     },
     {
-        # 代理人面板：命令后必须带角色名（「代理人面板 雅」），默认出图。
+        # 代理人面板：命令后必须带角色名（「zzz card 雅」），默认出图。
         # （原名叫「角色面板」，那套版面是搬 ZZZeroUID 的、显示效果不好，
         #   2026-10-05 换成网页版「代理人详细」浮层的版面；命令词随菜单一起改叫
         #   「代理人面板」——「角色面板 / 代理人详细」都留作别名，老习惯照样能用。）
-        "id": "zzz_card", "cmd": "代理人面板",
-        "aliases": ["角色面板", "代理人详细", "绝区零面板", "zzz面板", "面板"], "api": "zzz_card",
+        "id": "zzz_card", "group": GROUP_ZZZ, "cmd": "card",
+        "aliases": ["代理人面板", "角色面板", "代理人详细", "绝区零面板", "zzz面板", "面板"],
+        "api": "zzz_card",
         "enabled": True, "admin_only": False,
         "options": {"output": "image"},
     },
     {
-        # 绳网月报：本月资源收入构成；命令后加月份查历史（「绳网月报 202610」「绳网月报 上月」）。
-        "id": "zzz_month", "cmd": "绳网月报",
-        "aliases": ["月历", "札记", "zzz月报"], "api": "zzz_month",
+        # 绳网月报：本月资源收入构成；命令后加月份查历史（「zzz month 202610」「zzz month 上月」）。
+        "id": "zzz_month", "group": GROUP_ZZZ, "cmd": "month",
+        "aliases": ["绳网月报", "月历", "札记", "zzz月报"], "api": "zzz_month",
         "enabled": True, "admin_only": False,
     },
     {
-        "id": "zzz_gacha", "cmd": "绝区零抽卡",
-        "aliases": ["zzz抽卡", "绝区零调频"], "api": "zzz_gacha",
+        "id": "zzz_gacha", "group": GROUP_ZZZ, "cmd": "gacha",
+        "aliases": ["绝区零抽卡", "zzz抽卡", "绝区零调频"], "api": "zzz_gacha",
         "enabled": True, "admin_only": False,
     },
     {
-        "id": "zzz_codex", "cmd": "绝区零图鉴",
-        "aliases": ["zzz图鉴", "绝区零资料"], "api": "zzz_codex",
+        "id": "zzz_codex", "group": GROUP_ZZZ, "cmd": "codex",
+        "aliases": ["绝区零图鉴", "zzz图鉴", "绝区零资料"], "api": "zzz_codex",
         "enabled": True, "admin_only": False,
         # 默认「按最新」：**不带参数**发一次就能拿到最新的几位代理人（列表默认 6 条，超出不显示）。
         # 带参数时命令行自动识别、不用动这里的设置：
@@ -156,17 +169,17 @@ DEFAULT_COMMANDS: list[dict] = [
         "options": {"category": "agents", "mode": "latest", "limit": 6},
     },
     {
-        # 签到：直接发「签到」签**默认账号**；「签到 all」签**全部**绑定账号。
-        "id": "zzz_sign", "cmd": "签到",
-        "aliases": ["每日签到", "绝区零签到", "zzz签到"], "api": "zzz_sign",
+        # 签到：直接发「zzz sign」签**默认账号**；「zzz sign all」签**全部**绑定账号。
+        "id": "zzz_sign", "group": GROUP_ZZZ, "cmd": "sign",
+        "aliases": ["签到", "每日签到", "绝区零签到", "zzz签到"], "api": "zzz_sign",
         "enabled": True, "admin_only": False,
     },
     {
         # 一键签到：签的是**页面上配好的那份目标清单**（「签到」页 → 自动签到，
         # 可横跨多个米游社账号），不是发命令的人自己绑的号 —— 两者别搞混。
         # 谁能触发由「详细设置 → 允许触发的人」决定（留空 = 不限制）。
-        "id": "zzz_sign_all", "cmd": "一键签到",
-        "aliases": ["绝区零一键签到", "自动签到"], "api": "zzz_sign_all",
+        "id": "zzz_sign_all", "group": GROUP_ZZZ, "cmd": "sign-all",
+        "aliases": ["一键签到", "绝区零一键签到", "自动签到"], "api": "zzz_sign_all",
         "enabled": True, "admin_only": False,
         "options": {"allow_users": ""},
     },
@@ -174,13 +187,21 @@ DEFAULT_COMMANDS: list[dict] = [
         # 命令菜单（帮助）：OneBot 发纯文字命令列表；QQ 官方**只发按钮不带文字**，
         # 按钮的显示文案与分行布局默认写在代码里（social_help._DEFAULT_BUTTONS），
         # 详细设置里可改。点一下 = 发那条命令。放在最后，菜单里也排在最末。
-        "id": "zzz_help", "cmd": "绝区零帮助",
-        "aliases": ["zzz帮助", "绝区零菜单", "zzz菜单"], "api": "zzz_help",
+        "id": "zzz_help", "group": GROUP_ZZZ, "cmd": "help",
+        "aliases": ["绝区零帮助", "zzz帮助", "绝区零菜单", "zzz菜单"], "api": "zzz_help",
         "enabled": True, "admin_only": False,
         # 只列本机器人已开启的命令；按钮每行 3 个仅是「布局留空时」的自动兜底。
         "options": {"only_ready": True, "per_row": 3},
     },
 ]
+
+# 老配置迁移表：id → (组名, 英文命令词)。
+# 磁盘上那些「还没有 group 字段」的配置（= 2026-10-08 之前存的，命令词还是中文）
+# 在这里一次性迁到新形态；**原来的中文命令词会降级成别名**，老习惯照旧能用。
+_GROUP_MIGRATE: dict[str, tuple[str, str]] = {
+    str(d["id"]): (str(d.get("group") or ""), str(d.get("cmd") or ""))
+    for d in DEFAULT_COMMANDS
+}
 
 _lock = threading.RLock()
 _cfg: dict | None = None
@@ -242,20 +263,32 @@ def _clean_commands(raw: Any) -> list[dict]:
     for c in raw if isinstance(raw, list) else []:
         if not isinstance(c, dict):
             continue
+        gid = str(c.get("id") or uuid.uuid4().hex[:8])
+        group = str(c.get("group") or "").strip().lower()
         cmd = str(c.get("cmd") or "").strip()
         if not cmd:
             continue                                  # 没有命令名的行直接丢掉
+        raw_aliases = [str(a or "").strip() for a in (c.get("aliases") or [])]
+        want = _GROUP_MIGRATE.get(gid)
+        if want and not group:
+            # 老配置迁移（2026-10-08 之前的存档）：补上指令组 + 英文命令词，
+            # 原来的中文命令词降级成别名 —— 什么都不丢，老习惯照旧能发。
+            group = want[0]
+            if cmd != want[1]:
+                raw_aliases.insert(0, cmd)
+            cmd = want[1]
         aliases = []
-        for a in c.get("aliases") or []:
+        for a in raw_aliases:
             a = str(a or "").strip()
             if a and a != cmd and a not in aliases:
                 aliases.append(a)
         api = str(c.get("api") or "")
         out.append(
             {
-                "id": str(c.get("id") or uuid.uuid4().hex[:8]),
-                "cmd": cmd,
-                "aliases": aliases,
+                "id": gid,
+                "group": group,                           # 指令组（mhy / zzz；空 = 不带组名）
+                "cmd": cmd,                               # 子命令词（英文）
+                "aliases": aliases,                        # 别名（照旧支持中文）
                 "api": api,
                 "enabled": bool(c.get("enabled", True)),
                 "admin_only": bool(c.get("admin_only", False)),

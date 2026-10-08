@@ -45,9 +45,9 @@ from typing import Any
 
 from loguru import logger
 
-from .cfg import load_cfg
+from .cfg import GROUP_MHY, GROUP_ZZZ, load_cfg
 from .core import INTERFACES, Ctx, interface
-from .dispatch import bot_allows
+from .dispatch import bot_allows, full_trigger
 # 按钮机制在 social_qq（米游社切换也用同一套）：这里只按需取用，不再自带一份。
 from .qq import (
     COLS_MAX,
@@ -131,7 +131,7 @@ def _menu_items(only_ready: bool, self_id: str) -> tuple[list[dict], int, int]:
             ready += 1
         if only_ready and not ok:
             continue
-        cmd_name = str(c.get("cmd") or "")
+        cmd_name = full_trigger(c)          # 菜单里显示的就是完整触发词（zzz deadly）
         if not cmd_name:
             continue
         aliases = [str(a) for a in (c.get("aliases") or []) if str(a).strip()]
@@ -159,11 +159,21 @@ def _plain_text(rows: list[dict]) -> str:
 
 
 def _shorten(cmd: str) -> str:
-    """按钮的默认显示文案：剥掉 绝区零/米游社 前缀（用户：菜单本身就是绝区零的）。"""
+    """按钮的默认显示文案：先剥掉指令组名（`zzz ` / `mhy `），再剥 绝区零/米游社 前缀。
+
+    （菜单本身就是绝区零的，按钮上显示「deadly」比「zzz deadly」清爽；完整触发词
+    仍然按原样显示在文字版菜单里。）
+    """
+    s = str(cmd or "").strip()
+    low = s.lower()
+    for g in (GROUP_ZZZ, GROUP_MHY):
+        if low.startswith(g + " "):
+            s = s[len(g) + 1:].strip()
+            break
     for p in _LABEL_STRIP:
-        if cmd.startswith(p) and len(cmd) > len(p):
-            return cmd[len(p):]
-    return cmd
+        if s.startswith(p) and len(s) > len(p):
+            return s[len(p):]
+    return s
 
 
 def _parse_buttons(text: Any, rows: list[dict], per_row: int
