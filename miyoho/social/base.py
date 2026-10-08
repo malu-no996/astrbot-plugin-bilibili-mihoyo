@@ -258,15 +258,11 @@ async def _send(ctx: Ctx, message: Any) -> bool:
         from astrbot.api.message_components import Image, Plain
         from astrbot.core.message.message_event_result import MessageChain
 
-        from ..send import as_plain
-
         if isinstance(message, (bytes, bytearray)):
             chain = MessageChain(chain=[Image.fromBytes(bytes(message))])
         else:
             chain = MessageChain(chain=[Plain(str(message))])
-        # QQ 官方机器人上强制纯文本（AstrBot 平台默认 use_markdown=True 会包成
-        # markdown，逐行清单会被挤成一段；详见 miyoho/send.py 顶部说明）
-        await ctx.event.send(as_plain(chain, event=ctx.event))
+        await ctx.event.send(chain)
         return True
     except Exception as exc:  # noqa: BLE001
         logger.warning(f"miyoho 社交命令主动发消息失败：{type(exc).__name__}: {exc}")

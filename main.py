@@ -188,10 +188,9 @@ class MiyohoPlugin(Star):
             dispatch.restore_wake_state(event)
             return
         if text:
-            # 走统一的出站收口：QQ 官方机器人上强制纯文本（AstrBot 平台默认是
-            # use_markdown=True，会把回复包成 msg_type=2 的 markdown —— 命令回复是
-            # 逐行清单，markdown 的单换行会把行挤进一段。详见 miyoho/send.py 顶部）
-            yield send_shim.text_result(event, text)
+            # 原样发送：格式交给平台（官方机器人按 AstrBot 的 use_markdown 配置走
+            # markdown，NapCat 走纯文本），这里不做任何 markdown/纯文本改写
+            yield event.plain_result(text)
         # 命令已处理完：停掉事件，别让 AstrBot 接着把这条也交给 LLM（会重复回一条）
         event.stop_event()
 
