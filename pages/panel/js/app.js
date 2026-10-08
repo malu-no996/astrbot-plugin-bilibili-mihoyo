@@ -229,10 +229,26 @@
           }
         }
 
+        /* 提交给 bridge 的 body 必须先「脱壳」成普通对象。
+         * 面板状态挂在 Vue reactive 上，各页面很自然会把 mys.xxx.cfg.targets、
+         * d.options 这类**响应式对象/数组**直接塞进 body —— 而 bridge 走 postMessage，
+         * 结构化克隆不支持 Proxy，会抛
+         *   Failed to execute 'postMessage' on 'Window': [object Object] could not be cloned.
+         * （用户看到的就是「保存报错」）。这里统一 JSON 深拷一层，
+         * 以后任何页面直接传响应式状态都不会再炸，不用每个 frag 自己记得拷贝。 */
+        function plainBody(v) {
+          if (v == null) return {};
+          try {
+            return JSON.parse(JSON.stringify(v));
+          } catch (e) {
+            return v;      // 循环引用之类的极端情况：原样交出去，让 bridge 自己报错
+          }
+        }
+
         async function post(path, bodyData) {
           const [ep] = cleanEndpoint(path);
           try {
-            const out = norm(await bridge.apiPost(ep, bodyData || {}));
+            const out = norm(await bridge.apiPost(ep, plainBody(bodyData)));
             return await resolveAssetsDeep(out);
           } catch (e) {
             return { ok: false, message: (e && e.message) || '请求失败' };

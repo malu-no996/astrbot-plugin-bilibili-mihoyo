@@ -105,7 +105,11 @@ window.MysAutoSign = {
       mys.as.cfg.last_result = c.last_result || {};
     }
 
-    /* 提交给后端的字段：只这几项，next_run_at / last_* 由服务端自己维护 */
+    /* 提交给后端的字段：只这几项，next_run_at / last_* 由服务端自己维护。
+       ⚠️ targets 必须**深拷成普通对象**：mys.as 是 Vue reactive，直接发 Proxy 会在
+       postMessage 的结构化克隆里抛
+         Failed to execute 'postMessage' on 'Window': [object Object] could not be cloned.
+       （现象就是点「保存」弹这条错）—— 用 map 重新造一遍字面量，别偷懒直接传。 */
     function asBody() {
       const c = mys.as.cfg;
       return {
@@ -115,7 +119,13 @@ window.MysAutoSign = {
         jitter: asNum(c.jitter, 0),
         gap: asNum(c.gap, 4),
         gap_jitter: asNum(c.gap_jitter, 0),
-        targets: c.targets,
+        targets: (c.targets || []).map(t => ({
+          account_id: String(t.account_id || ''),
+          account: String(t.account || ''),
+          uid: String(t.uid || ''),
+          server: String(t.server || 'prod_gf_cn'),
+          role: String(t.role || ''),
+        })),
         notify: {
           enabled: !!c.notify.enabled,
           self_id: String(c.notify.self_id || ''),
