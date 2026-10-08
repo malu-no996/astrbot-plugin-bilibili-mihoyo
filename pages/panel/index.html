@@ -1685,13 +1685,34 @@
               <option v-for="b in mys.as.bots" :key="b.id" :value="b.id">
                 {{ b.name }}（{{ b.id }}）
               </option>
+              <!-- 已保存的实例现在不可用（未启用/换了适配器）时，也让它显示出来，
+                   否则下拉会空白、用户看不出原来配的是哪个 -->
+              <option v-if="mys.as.botsMissing" :value="mys.as.cfg.notify.self_id">
+                {{ mys.as.cfg.notify.self_id }}（当前配置，现在不可用）
+              </option>
             </select>
             <button class="ghost sm" @click="asLoadInstances()" :disabled="mys.as.iLoading">
               {{ mys.as.iLoading ? '读取中…' : '刷新实例' }}
             </button>
           </p>
           <p class="as-hint" v-if="!mys.as.bots.length && !mys.as.iLoading">
-            没检测到在线的 OneBot 实例。QQ 官方机器人发不了主动私聊，所以这里只列 OneBot。
+            没检测到<b>能用</b>的 OneBot 实例。「按 QQ 号主动私聊」这件事只有 OneBot
+            适配器能做 —— QQ 官方机器人只能按 openid 私聊，拿不到「QQ 号 → openid」。
+            <template v-if="mys.as.otherBots.length">
+              <br>AstrBot 里配置的实例：
+              <template v-for="(b, i) in mys.as.otherBots" :key="b.id">
+                <span v-if="i"> · </span>{{ b.name }}（{{ b.reason }}）
+              </template>
+            </template>
+            <template v-else>
+              <br>也没有配置其它平台实例：到 AstrBot「平台」页加一个 OneBot（aiocqhttp）适配器。
+            </template>
+          </p>
+          <p class="as-hint" v-else-if="mys.as.otherBots.length">
+            只列 OneBot 实例（按 QQ 号私聊需要它）。不可用的：
+            <template v-for="(b, i) in mys.as.otherBots" :key="b.id">
+              <span v-if="i"> · </span>{{ b.name }}（{{ b.reason }}）
+            </template>
           </p>
 
           <p class="as-line">接收者 QQ</p>

@@ -54,7 +54,12 @@ def _inst_meta(inst: Any) -> tuple[str, str]:
 
 
 async def list_onebot_instances() -> list[dict]:
-    """在线的 OneBot（aiocqhttp）平台实例（通知里「用哪个机器人发」的下拉数据源）。"""
+    """**已加载**的 OneBot（aiocqhttp）平台实例（通知里「用哪个机器人发」的下拉数据源）。
+
+    ⚠️ `platform_manager.get_insts()` 只含**在 AstrBot 里已启用并加载**的平台 ——
+    没启用的实例（比如配好但关掉的 napcat）不会出现在这里。要让用户知道
+    「你配了、但当前不能用」，用 list_platform_instances() 补全原因。
+    """
     out: list[dict] = []
     seen: set[str] = set()
     for inst in _insts():
@@ -65,7 +70,59 @@ async def list_onebot_instances() -> list[dict]:
             continue
         seen.add(pid)
         # AstrBot 没有统一「取机器人昵称」的接口，显示实例 ID 即可
-        out.append({"id": pid, "name": pid})
+        out.append({"id": pid, "name": pid, "type": ptype})
+    return out
+
+
+# QQ 官方（qq_official）只能按 openid 发 C2C 私聊，而页面上的通知对象是**QQ 号**；
+# 官方协议不给「QQ 号 → openid」的映射（openid 只出现在它自己推来的事件里），
+# 所以按 QQ 号主动私聊这件事只有 OneBot 能做。这里把原因写清楚给页面显示。
+_TYPE_HINT = {
+    "qq_official": "QQ 官方机器人只能按 openid 私聊，拿不到「QQ 号 → openid」，所以按 QQ 号通知只能走 OneBot",
+    "qq_official_webhook": "QQ 官方（Webhook）同上：只能按 openid 私聊，无法按 QQ 号通知",
+    "webchat": "网页聊天平台，发不到 QQ",
+}
+
+
+def list_platform_instances() -> list[dict]:
+    """AstrBot 里**配置了的全部平台实例**（含未启用 / 不支持私聊的），带不可用原因。
+
+    数据来自 `context.get_config()["platform"]`（= WebUI「平台」页那份配置）——
+    没启用的实例在 `platform_manager` 里根本没有对象，只能从这里拿。
+    返回 [{id, type, loaded, usable, reason}]：
+      · loaded：该实例当前是否真的加载了（= 在跑）
+      · usable：能不能用来按 QQ 号发私聊（只有已加载的 OneBot 能）
+      · reason：不能用的原因（页面直接显示这句话）
+    """
+    try:
+        rows = _ctx().get_config().get("platform") or []
+    except Exception:  # noqa: BLE001
+        return []
+    loaded: set[str] = set()
+    for inst in _insts():                 # 已加载的实例（只有这些才真的能发消息）
+        pid, _ = _inst_meta(inst)
+        if pid:
+            loaded.add(pid)
+    out: list[dict] = []
+    for it in rows:
+        if not isinstance(it, dict):
+            continue
+        pid = str(it.get("id") or "").strip()
+        ptype = str(it.get("type") or "").strip()
+        if not pid:
+            continue
+        live = pid in loaded
+        is_onebot = "aiocqhttp" in ptype.lower()
+        if live and is_onebot:
+            reason = ""
+        elif not it.get("enable", True):
+            reason = "未在 AstrBot 里启用"
+        elif not is_onebot:
+            reason = _TYPE_HINT.get(ptype.lower(), f"{ptype or '该'} 适配器发不了 QQ 私聊")
+        else:
+            reason = "未加载（可能启动失败）"
+        out.append({"id": pid, "type": ptype, "loaded": live,
+                    "usable": live and is_onebot, "reason": reason})
     return out
 
 

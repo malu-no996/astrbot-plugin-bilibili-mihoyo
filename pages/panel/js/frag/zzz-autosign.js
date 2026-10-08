@@ -10,7 +10,10 @@
  *                                   next_label, last_label, count }
  *   GET  /zzz/autosign/targets  → { ok, accounts:[{account_id,account,logged,error,
  *                                                 roles:[{uid,server,role,region}]}] }
- *   GET  /zzz/autosign/instances→ { ok, instances:[{id,name}] } 仅 OneBot（通知用）
+ *   GET  /zzz/autosign/instances→ { ok, instances:[{id,name,type}],
+ *                                    others:[{id,type,loaded,usable,reason}] }
+ *                                 instances = 可用（已加载的 OneBot）；
+ *                                 others    = 配了但不能用的，reason 是原因（页面显示它）
  *   POST /zzz/autosign          → 保存（只传表单那几项，服务端按字段合并）
  *   POST /zzz/autosign/run      → 立刻签一轮
  *
@@ -32,7 +35,9 @@ window.MysAutoSign = {
         notify: { enabled: false, self_id: '', targets: [], when: 'auto' },
       },
       targets: [],       // 「读取账号角色」拿到的账号 × 角色清单
-      bots: [],          // 在线的 OneBot 实例（通知的「用哪个机器人发」）
+      bots: [],          // 能用的 OneBot 实例（通知的「用哪个机器人发」）
+      otherBots: [],     // AstrBot 里配了但不能用的实例（带 reason，页面显示原因）
+      botsMissing: false,// 已保存的 self_id 现在不在可用列表里（下拉仍显示它，标「不可用」）
       notifyText: '',    // 接收者 QQ，一行一个（提交时拆成数组）
       poll: 0,           // 轮询定时器 id
     };
@@ -210,13 +215,22 @@ window.MysAutoSign = {
       }
     }
 
-    /* 通知里「用哪个机器人发」的候选：后端只回 OneBot 实例（官方机器人发不了私聊）。 */
+    /* 通知里「用哪个机器人发」的候选。
+       只列**能用**的（已加载的 OneBot）：按 QQ 号主动私聊只有它做得到。
+       另外把「配了但用不了」的实例连同原因带回来（QQ 官方只能按 openid 私聊、
+       实例没在 AstrBot 里启用…）—— 这样页面能解释清楚，而不是干巴巴一句「没检测到」。 */
     async function asLoadInstances() {
       mys.as.iLoading = true;
       try {
         const j = await asGet('/zzz/autosign/instances');
-        if (j.ok) mys.as.bots = j.instances || [];
-        else mys.as.msg = j.message || '实例读取失败';
+        if (j.ok) {
+          mys.as.bots = j.instances || [];
+          mys.as.otherBots = j.others || [];
+          const sid = String((mys.as.cfg.notify || {}).self_id || '');
+          mys.as.botsMissing = !!sid && !mys.as.bots.some(b => String(b.id) === sid);
+        } else {
+          mys.as.msg = j.message || '实例读取失败';
+        }
       } catch (e) {
         mys.as.msg = '实例读取失败：' + e.message;
       } finally {

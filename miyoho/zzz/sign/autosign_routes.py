@@ -2,7 +2,7 @@
 
   GET  zzz/autosign           读配置 + 运行状态（不发网络请求，秒回）
   GET  zzz/autosign/targets   列出「账号 × 角色」供弹窗勾选（**每个账号一个网络请求**）
-  GET  zzz/autosign/instances 列出在线的 OneBot 平台实例（「签到通知」选机器人用）
+  GET  zzz/autosign/instances 列出可用的 OneBot 实例 + 配了但不能用的（带原因）
   POST zzz/autosign           保存配置（改完即时生效，定时时刻会重排）
   POST zzz/autosign/run       立刻签一轮（后台跑，页面轮询 zzz/autosign 看进度）
 """
@@ -29,11 +29,16 @@ async def api_zzz_autosign_targets():
 
 
 async def api_zzz_autosign_instances():
-    """在线的 OneBot 平台实例（「签到通知」里选哪个机器人发私聊）。
+    """「签到通知」里选哪个机器人发私聊。
 
-    只列 OneBot：QQ 官方机器人没法按 QQ 号主动私聊，列出来只会让人白选。
+    `instances` = 现在就能用的（已加载的 OneBot 实例，可直接选）；
+    `others`    = AstrBot 里配了但不能用的，带原因（未启用 / QQ 官方只能按 openid 私聊…）——
+    页面把原因显示出来，用户才知道「不是读不到实例，是这个实例发不了 QQ 号私聊」。
     """
-    return json_response({"ok": True, "instances": await send_shim.list_onebot_instances()})
+    usable = await send_shim.list_onebot_instances()
+    ok_ids = {i["id"] for i in usable}
+    others = [r for r in send_shim.list_platform_instances() if r["id"] not in ok_ids]
+    return json_response({"ok": True, "instances": usable, "others": others})
 
 
 async def api_zzz_autosign_save():
