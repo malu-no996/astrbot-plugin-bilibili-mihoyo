@@ -156,12 +156,73 @@ def apply_snapshot(subs: dict) -> dict:
     return snapshot()
 
 
-async def _group_owner_allowed(event: Any) -> bool:
-    """「订阅米哈游服务」权限：固定只能群主（owner）发；AstrBot 管理员（机器人主人）放行后门。
+# ---- 从消息原始 payload 里直接读「发送者在本群的角色」 ----
+#
+# 各平台的消息里其实都带着发送者角色，不需要额外调接口，也不受平台限制：
+#   * QQ 官方（botpy）：群消息事件的 author 里就有 member_role
+#       owner=群主 / admin=管理员 / member=普通成员
+#     （官方文档 api-v2 · group_at_message_create 的 User 字段）
+#     ⚠️ botpy 1.2.1 的 GroupMessage._User 只解析了 member_openid，
+#        **没有**把 member_role 放进对象；但 AstrBot 给官方适配器打了补丁
+#        （qqofficial_platform_adapter.PatchedGroupMessage + _set_raw_message_fields），
+#        把整份原始 payload 存进了 message.raw_data → author.member_role 可读。
+#   * OneBot v11（aiocqhttp）：raw_message 的 sender.role（owner/admin/member）。
 
-    OneBot（aiocqhttp）：get_group_member_info 查群角色，role == "owner" 才放行；
-    QQ 官方等拿不到群身份 → 只认 AstrBot 管理员（否则官方机器人上完全没法订阅）。
+
+def _pick_role(obj: Any) -> str:
+    """从 dict / 对象里取角色字段（member_role 优先，其次 role）。"""
+    if obj is None:
+        return ""
+    if isinstance(obj, dict):
+        for k in ("member_role", "role"):
+            v = obj.get(k)
+            if v:
+                return str(v)
+        return ""
+    for k in ("member_role", "role"):
+        v = getattr(obj, k, None)
+        if v:
+            return str(v)
+    return ""
+
+
+def _dig_role(obj: Any) -> str:
+    """在「原始消息」里挖角色：先看 author/sender，再看自己（兼容不同适配器形态）。"""
+    if isinstance(obj, dict):
+        for key in ("author", "sender"):
+            role = _pick_role(obj.get(key))
+            if role:
+                return role
+        return _pick_role(obj)
+    for attr in ("author", "sender"):
+        role = _pick_role(getattr(obj, attr, None))
+        if role:
+            return role
+    return _pick_role(obj)
+
+
+def raw_role(event: Any) -> str:
+    """消息自带的群内角色（owner/admin/member）；读不到返回 ""。"""
+    raw = getattr(getattr(event, "message_obj", None), "raw_message", None)
+    if raw is None:
+        return ""
+    # QQ 官方补丁把原始 payload 存在 raw_data；OneBot 的 raw_message 本身就是事件
+    return _dig_role(getattr(raw, "raw_data", None)) or _dig_role(raw)
+
+
+async def _group_owner_allowed(event: Any) -> bool:
+    """「订阅米哈游服务」权限：固定只能群主（owner）发。
+
+    判定顺序：
+      1) 消息自带角色（QQ 官方 member_role / OneBot sender.role）→ 必须是 owner；
+      2) 角色读不到时，退回 AstrBot 管理员（机器人主人）放行 —— 防止出现
+         「谁都没法订阅」的死锁；
+      3) 再退回 OneBot get_group_member_info 查角色（老路子，双保险）。
     """
+    role = raw_role(event)
+    if role:
+        logger.debug(f"miyoho 群订阅权限：消息自带角色 role={role}（仅 owner 放行）")
+        return role == "owner"
     try:
         if event.is_admin():
             return True
