@@ -183,9 +183,14 @@ class MiyohoPlugin(Star):
             logger.exception("miyoho 社交命令分发异常")
             text = f"执行失败：{type(exc).__name__}: {exc}"
         if text is None:
+            # 没命中：把「本插件 ALL 监听器」放大出来的唤醒标记还原，
+            # 免得群里随便一句话都被当成唤醒送进 LLM（详见 dispatch 顶部注释）
+            dispatch.restore_wake_state(event)
             return
         if text:
             yield event.plain_result(text)
+        # 命令已处理完：停掉事件，别让 AstrBot 接着把这条也交给 LLM（会重复回一条）
+        event.stop_event()
 
     # ==================================================================
     # 路由注册

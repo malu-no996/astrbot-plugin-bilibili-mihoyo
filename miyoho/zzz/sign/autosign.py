@@ -151,7 +151,9 @@ def _digits(raw: Any, limit: int = 12) -> str:
 def _clean_notify(raw: Any) -> dict:
     """通知配置清洗：接收者 QQ 只留数字并去重；`when` 只认 auto / always。
 
-    `self_id` 是「用哪个机器人发」——OneBot 实例的 QQ 号（页面下拉选）。
+    `self_id` 是「用哪个机器人发」= **AstrBot 平台实例 ID**（页面下拉选，
+    如 `napcat` / `280-Eous`）——⚠️ 绝不能过 `_digits`：那会把 `280-Eous`
+    削成 `280`、`napcat` 削成空串，通知就永远发不出去。
     """
     raw = raw if isinstance(raw, dict) else {}
     targets: list[str] = []
@@ -162,7 +164,7 @@ def _clean_notify(raw: Any) -> dict:
     when = str(raw.get("when") or NOTIFY_AUTO)
     return {
         "enabled": bool(raw.get("enabled", False)),
-        "self_id": _digits(raw.get("self_id")),
+        "self_id": str(raw.get("self_id") or "").strip(),
         "targets": targets,
         "when": when if when in NOTIFY_WHEN else NOTIFY_AUTO,
     }
