@@ -3,6 +3,10 @@
   GET  social/config   一次拿全：命令表 + 可用接口清单 + 平台实例 + 各种开关
   POST social/preview  模板预览：按当前弹窗里的设置真跑一次接口
   POST social/config   整份保存（命令表 + 总开关 + 逐命令开关），保存即刻生效
+
+⚠️ 这里**不管订阅**（2026-10-08 起）：群订阅 / 群员绑定走 subscribe_routes.py。
+老版本本文件会在保存时整份覆盖 subscribe.json，标签页开得早、状态里没订阅时
+就会把群里订阅好的记录一起抹掉（真实事故，详见 subscribe.apply_snapshot 的说明）。
 """
 
 from __future__ import annotations
@@ -15,7 +19,6 @@ from ..core import bind
 from ..core.web import body, fail
 from .. import send as send_shim
 from .cfg import _clean_options, _clean_tpl, load_cfg, save_cfg
-from . import subscribe
 from .core import Ctx, INTERFACES, apply_tpl, run_interface
 
 
@@ -47,7 +50,6 @@ async def api_social_config():
             "commands": cfg.get("commands") or [],
             "bots": cfg.get("bots") or {},
             "bot_cmds": cfg.get("bot_cmds") or {},
-            "subs": subscribe.snapshot(),          # 各机器人下订阅的群（面板「QQ机器人配置」展示）
             "interfaces": [
                 {
                     "key": k, "label": v["label"], "desc": v["desc"],
@@ -110,14 +112,15 @@ async def api_social_preview():
 
 
 async def api_social_save():
-    """整份保存（命令表 + 总开关 + 逐命令开关）。保存即刻生效，不用重启。"""
+    """整份保存（命令表 + 总开关 + 逐命令开关）。保存即刻生效，不用重启。
+
+    ⚠️ **不再处理订阅**（见本文件顶部说明）：订阅的增删改在 subscribe_routes.py。
+    """
     payload = await body()
     try:
         cfg = save_cfg(payload.get("commands"), payload.get("bots"), payload.get("bot_cmds"))
     except OSError as exc:
         return fail(f"保存失败：{exc}", 500)
-    # 各机器人下订阅的群（群开关默认全开，由面板维护）
-    subs = subscribe.apply_snapshot(payload.get("subs") or {})
     logger.info(
         f"miyoho 社交命令配置已更新：{len(cfg['commands'])} 条命令 · "
         f"{sum(1 for v in cfg['bots'].values() if v)} 个机器人已开启"
@@ -128,7 +131,6 @@ async def api_social_save():
             "commands": cfg["commands"],
             "bots": cfg["bots"],
             "bot_cmds": cfg["bot_cmds"],
-            "subs": subs,
             "instances": await _list_instances(),
         }
     )

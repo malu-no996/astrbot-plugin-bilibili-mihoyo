@@ -9,6 +9,11 @@
     {services: {self_id(平台实例): {group_id: {enabled, group_name,
                                           handler_id, handler_name, bound_by, bound_at}}}}
 —— key 用平台实例 ID（event.get_platform_id），和社交命令的 bots / bot_cmds 同口径。
+
+面板侧（2026-10-08 新增）：主区一级分类「群订阅」直接读写这份数据，
+接口在 subscribe_routes.py —— 逐条改（启用/停用/退订），**不再走「社交命令配置 → 保存」
+的整份覆盖**（那条路会把前端没加载到的订阅一起抹掉，见 apply_snapshot 的说明）。
+群员 ↔ 米游社账号的「状态表」在 member_binds.py，群成员足迹（含昵称）在 seen.py。
 """
 from __future__ import annotations
 
@@ -124,8 +129,51 @@ def snapshot() -> dict:
         return out
 
 
+def set_group_enabled(self_id: str, group_id: str, on: bool) -> bool:
+    """面板「群订阅」：启用 / 停用某个群（记录保留，只是不再放行功能命令）。"""
+    sid, gid = str(self_id or ""), str(group_id or "")
+    if not sid or not gid:
+        return False
+    with _lock:
+        # ⚠️ 必须 setdefault 取**真实**容器：写成 `_get().get("services") or {}`
+        # 时，空表（{} 是 falsy）会被换成一个新的临时 dict，改动全落在它身上、
+        # 存回去的还是那个空表 —— 订阅怎么点都存不进去（2026-10-09 排查的实锤）。
+        rec = (_get().setdefault("services", {}).get(sid) or {}).get(gid)
+        if not isinstance(rec, dict):
+            return False
+        rec["enabled"] = bool(on)
+        _save(_get())
+    return True
+
+
+def drop_group(self_id: str, group_id: str) -> bool:
+    """面板「群订阅 → 退订」：把这条订阅整条删掉（群里再发一次订阅即可恢复）。"""
+    sid, gid = str(self_id or ""), str(group_id or "")
+    if not sid or not gid:
+        return False
+    with _lock:
+        services = _get().setdefault("services", {})   # 真实容器，见 set_group_enabled 的说明
+        inner = services.get(sid) or {}
+        if gid not in inner:
+            return False
+        del inner[gid]
+        if not inner:
+            services.pop(sid, None)
+        _save(_get())
+    return True
+
+
 def apply_snapshot(subs: dict) -> dict:
-    """面板保存：{self_id: [{gid, enabled, group_name?, handler_name?}]} → 落盘。"""
+    """{self_id: [{gid, enabled, group_name?, handler_name?}]} → 整份覆盖落盘。
+
+    ⚠️ **已经不接在「社交命令配置 → 保存」上了**（2026-10-08 起）。
+    原因：那条路是「前端状态整份写回」，面板开着的标签页只要订阅加载之前就打开了，
+    保存时带回来的 subs 是空的 → 把群里刚订阅好的记录**整份清掉**
+    （实际事故：13:54 群订阅成功，23:26 面板保存把 subscribe.json 抹成 `{"services": {}}`，
+    用户看到的现象就是「面板上一个订阅都看不到」）。
+    现在订阅的增删改一律走 subscribe_routes.py 的独立接口（服务端为准，逐条改），
+    本函数留在这里只作手工整份导入用，别再挂回保存链路。
+    """
     with _lock:
         new: dict[str, dict] = {}
         for sid, lst in (subs or {}).items():
@@ -299,7 +347,12 @@ async def handle_sub(event: Any, arg: str) -> str:
     except Exception:  # noqa: BLE001
         uid = ""
     with _lock:
-        services = _get().get("services") or {}
+        # ⚠️ 这里曾经写的是 `services = _get().get("services") or {}` —— 空表时
+        # `or {}` 会造出一个**新**dict，`setdefault` 和写入都落在这个临时对象上，
+        # `_save(_get())` 存回去的仍是原来那个空表。现象就是：
+        # 群里回「已订阅米哈游服务 ✅」，subscribe.json 却还是 `{"services": {}}`
+        # （面板自然一个订阅都看不到）。2026-10-09 修。
+        services = _get().setdefault("services", {})
         inner = services.setdefault(sid, {})
         rec = inner.get(gid)
         now = int(time.time())
@@ -330,7 +383,7 @@ async def handle_sub(event: Any, arg: str) -> str:
     return (
         "已订阅米哈游服务 ✅\n"
         "本群现在可以使用米哈游功能命令（危局 / 防卫战 / 抽卡 / 签到…）。\n"
-        "关闭某个群的使用权限：到面板「米哈游功能命令 → QQ机器人配置」里把对应群的开关关掉即可。"
+        "关闭某个群的使用权限：到面板「群订阅 → 订阅的群」里把对应群的开关关掉即可。"
     )
 
 
@@ -351,7 +404,7 @@ async def handle_unsub(event: Any, arg: str) -> str:
     if not await _group_owner_allowed(event):
         return "无权限：取消订阅仅限群主（或 AstrBot 管理员）使用"
     with _lock:
-        services = _get().get("services") or {}
+        services = _get().setdefault("services", {})   # 真实容器，见 handle_sub 的说明
         inner = services.get(sid) or {}
         if gid not in inner:
             return "本群还没有订阅米哈游服务"

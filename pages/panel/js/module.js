@@ -67,6 +67,8 @@
       if (window.MysSocial) window.MysSocial.init(mys);
       // 设备指纹配置（frag/device.js）：解开角色列表 10041 风控那两步，状态挂 mys.device
       if (window.MysDevice) window.MysDevice.init(mys);
+      // 群订阅（frag/subscribe.js）：订阅的群 + 群员绑定，状态挂 mys.sub
+      if (window.MysSubscribe) window.MysSubscribe.init(mys);
 
       // 先交状态（sidebar.js 靠 ctx.shared.mys 拿同一份引用）
       ctx.expose({ mys }, {});
@@ -107,6 +109,8 @@
       const socialDetail = (window.MysSocialDetail && window.MysSocialDetail.setup(ctx, mys)) || {};
       // 设备指纹配置：状态在 mys.device（上面的 init 建好），所以这里只有 setup
       const devicePage = (window.MysDevice && window.MysDevice.setup(ctx, mys)) || {};
+      // 群订阅：状态在 mys.sub（上面的 init 建好），所以这里只有 setup
+      const subscribeApi = (window.MysSubscribe && window.MysSubscribe.setup(ctx, mys)) || {};
 
       const mysGet = (path, params) => ctx.get(API + path, params);
 
@@ -133,16 +137,19 @@
         if (signApi.mysSignReset) signApi.mysSignReset();
       }
 
-      /* 一级分类切换：绝区零 / 社交命令配置 / 设备配置（纯本地状态，与登录账号无关）。
-       * 两个配置页的数据都是第一次进来才拉 —— 没点过去就不发这个请求。 */
+      /* 一级分类切换：绝区零 / 社交命令配置 / 群订阅 / 设备配置（纯本地状态，与登录账号无关）。
+       * 三个配置页的数据都是第一次进来才拉 —— 没点过去就不发这个请求。 */
       function mysZoneTo(name) {
-        if (name !== 'zzz' && name !== 'social' && name !== 'device') return;
+        if (name !== 'zzz' && name !== 'social' && name !== 'device' && name !== 'subs') return;
         mys.zone = name;
         if (name === 'social' && !mys.social.done && socialApi.mysSocialLoad) {
           socialApi.mysSocialLoad();
         }
         if (name === 'device' && !mys.device.done && devicePage.dvLoad) {
           devicePage.dvLoad();
+        }
+        if (name === 'subs' && !mys.sub.done && subscribeApi.gsLoad) {
+          subscribeApi.gsLoad();
         }
       }
 
@@ -380,7 +387,6 @@
         mysTrigger,
         saAdd: socialApiPage.saAdd, saDel: socialApiPage.saDel,
         sbMaster: socialBotPage.sbMaster, sbAll: socialBotPage.sbAll,
-        sbSubToggle: socialBotPage.sbSubToggle, sbSubAll: socialBotPage.sbSubAll,
         sdOpen: socialDetail.sdOpen, sdClose: socialDetail.sdClose, sdSave: socialDetail.sdSave,
         sdReset: socialDetail.sdReset, sdProto: socialDetail.sdProto, sdCount: socialDetail.sdCount,
         sdTplSample: socialDetail.sdTplSample, sdTplClear: socialDetail.sdTplClear,
@@ -392,6 +398,14 @@
         dvCurDevice: devicePage.dvCurDevice, dvHas: devicePage.dvHas,
         dvTime: devicePage.dvTime, dvShort: devicePage.dvShort,
         dvHelp: devicePage.dvHelp,
+        // 群订阅（frag/subscribe.js）：订阅的群 + 群员绑定。
+        // 模板里用到的每一个都必须在这里登记 —— expose 是白名单，不写就是 undefined。
+        gsLoad: subscribeApi.gsLoad, gsTab: subscribeApi.gsTab,
+        gsToggleGroup: subscribeApi.gsToggleGroup, gsAskGroupDrop: subscribeApi.gsAskGroupDrop,
+        gsToggleMember: subscribeApi.gsToggleMember, gsAskMemberDrop: subscribeApi.gsAskMemberDrop,
+        gsConfirmDo: subscribeApi.gsConfirmDo, gsConfirmCancel: subscribeApi.gsConfirmCancel,
+        gsRestoreAll: subscribeApi.gsRestoreAll, gsRows: subscribeApi.gsRows,
+        gsTime: subscribeApi.gsTime, gsProto: subscribeApi.gsProto,
       });
 
       return { mysTab };

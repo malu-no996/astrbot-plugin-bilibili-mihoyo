@@ -251,7 +251,16 @@ def _qr_image_segment(bot: Any, png: bytes | None) -> Any:
 
 
 async def _send(ctx: Ctx, message: Any) -> bool:
-    """接口在执行过程中主动发一条消息（文本 str / 图片 bytes）；失败返回 False。"""
+    """接口在执行过程中主动发一条消息；失败返回 False。
+
+    message 可以是：
+      * str             → 纯文本一条
+      * bytes/bytearray → 单图一条
+      * list / tuple    → **一条混合消息**，按给定顺序组装组件（每个元素
+        str→Plain、bytes→Image.fromBytes，其余原样当 AstrBot 组件）。
+        「图在上、文字在下」就传 `[png, text]` —— 图文在同一条 MessageChain 里，
+        一次 send 发出；能否真合并不拆，取决于适配器（OneBot 可以，官方 QQ 视协议）。
+    """
     if ctx.event is None:
         return False
     try:
@@ -259,10 +268,19 @@ async def _send(ctx: Ctx, message: Any) -> bool:
         from astrbot.core.message.message_event_result import MessageChain
 
         if isinstance(message, (bytes, bytearray)):
-            chain = MessageChain(chain=[Image.fromBytes(bytes(message))])
+            comps: list[Any] = [Image.fromBytes(bytes(message))]
+        elif isinstance(message, (list, tuple)):
+            comps = []
+            for m in message:
+                if isinstance(m, (bytes, bytearray)):
+                    comps.append(Image.fromBytes(bytes(m)))
+                elif isinstance(m, str):
+                    comps.append(Plain(m))
+                else:
+                    comps.append(m)
         else:
-            chain = MessageChain(chain=[Plain(str(message))])
-        await ctx.event.send(chain)
+            comps = [Plain(str(message))]
+        await ctx.event.send(MessageChain(chain=comps))
         return True
     except Exception as exc:  # noqa: BLE001
         logger.warning(f"miyoho 社交命令主动发消息失败：{type(exc).__name__}: {exc}")

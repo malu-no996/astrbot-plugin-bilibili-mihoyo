@@ -47,8 +47,11 @@ async def _api_mys_login(ctx: Ctx) -> str:
     if seg is None:
         # 发不了图（没装 segno / 适配器不支持）就退化成发链接，至少还能用
         return f"{head}\n扫码链接：{url}"
-    if not await _send(ctx, head) or not await _send(ctx, seg):
-        return f"{head}\n（二维码图片发送失败）扫码链接：{url}"
+    # 图文**一条**消息：MessageChain 里 Image 在前、Plain 在后 → 图在上、文字在下。
+    # 混合发送失败（个别适配器不支持图文混排会抛错）才退回老路：文字、图各发一条。
+    if not await _send(ctx, [png, head]):
+        if not await _send(ctx, head) or not await _send(ctx, png):
+            return f"{head}\n（二维码图片发送失败）扫码链接：{url}"
 
     # 发完二维码开始轮询：这里**不用** matcher.finish，因为还要继续等结果，
     # 最终文本由分发器统一发出（接口只管返回要发什么）。

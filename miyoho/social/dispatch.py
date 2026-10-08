@@ -17,6 +17,7 @@ from typing import Any
 from loguru import logger
 
 from ..core import bind
+from . import member_binds
 from . import seen
 from . import subscribe
 from .cfg import load_cfg
@@ -73,6 +74,40 @@ def _raw_text(event: Any) -> str:
         return str(getattr(event, "message_str", "") or "").strip()
     except Exception:  # noqa: BLE001
         return ""
+
+
+def _sender_name(event: Any) -> str:
+    """发送者昵称（取不到返回空串）。
+
+    ⚠️ QQ 官方协议**经常给不出**（日志里长期是 `null/<openid>`），OneBot 一般有。
+    seen.py 只在非空时覆盖旧值，所以这里拿到空字符串也不会把之前记到的好名字抹掉。
+    """
+    for attr in ("get_sender_name",):
+        try:
+            fn = getattr(event, attr, None)
+            if callable(fn):
+                name = str(fn() or "").strip()
+                if name and name.lower() != "none":
+                    return name
+        except Exception:  # noqa: BLE001
+            continue
+    return ""
+
+
+def _group_name(event: Any) -> str:
+    """群名（取不到返回空串；QQ 官方拿不到稳定群名）。"""
+    try:
+        g = event.get_group() if hasattr(event, "get_group") else None
+    except Exception:  # noqa: BLE001
+        g = None
+    if g is None:
+        return ""
+    name = ""
+    if isinstance(g, dict):
+        name = str(g.get("group_name") or g.get("name") or "")
+    else:
+        name = str(getattr(g, "group_name", "") or "")
+    return "" if name.lower() == "none" else name.strip()
 
 
 def full_trigger(c: dict) -> str:
@@ -239,6 +274,28 @@ async def handle_message(event: Any) -> str | None:
     if not text:
         return None
 
+    # 群 ID 早取：订阅门槛 / 群员门槛 / 足迹记录都要它。
+    try:
+        gid = str(event.get_group_id() or "")
+    except Exception:  # noqa: BLE001
+        gid = ""
+
+    # 顺手记一笔「谁在这个群发过话」：群排行用它圈定候选人、面板「群订阅 → 群员绑定」
+    # 用它列群员（见 seen.py，热路径 + 节流落盘，失败绝不影响分发）。
+    # 昵称 / 群名一起记（取不到就空着），面板那两列靠它。
+    # ⚠️ 放在订阅分支**之前**：订阅命令也是一次群内发言，不记的话
+    #    「只发过订阅、没发过别的」的群在群员绑定页里一个人都看不到。
+    if gid:
+        try:
+            seen.remember(
+                gid,
+                str(event.get_sender_id() or ""),
+                name=_sender_name(event),
+                group_name=_group_name(event),
+            )
+        except Exception:  # noqa: BLE001
+            pass
+
     # —— 订阅米哈游服务（独立管理命令，固定群主发）——
     # 必须早于功能命令分发：它不受订阅门槛限制（否则没法开通订阅），
     # 也不受机器人总开关限制（否则死锁：没开总开关就连订阅命令都不响应）。
@@ -249,18 +306,6 @@ async def handle_message(event: Any) -> str | None:
         return await subscribe.handle_sub(event, _parts[1] if len(_parts) > 1 else "")
     if _kind == "unsub":
         return await subscribe.handle_unsub(event, _parts[1] if len(_parts) > 1 else "")
-
-    # 顺手记一笔「谁在这个群发过话」：群排行用它圈定候选人（见 seen.py，
-    # 热路径 + 节流落盘，失败绝不影响分发）。
-    try:
-        gid = str(event.get_group_id() or "")
-    except Exception:  # noqa: BLE001
-        gid = ""
-    if gid:
-        try:
-            seen.remember(gid, str(event.get_sender_id() or ""))
-        except Exception:  # noqa: BLE001
-            pass
 
     cfg = load_cfg()
     cmd, cmd_arg = match_command(cfg.get("commands") or [], text)
@@ -293,6 +338,19 @@ async def handle_message(event: Any) -> str | None:
             f"社交命令命中但群未订阅：bot={sid} group={gid} cmd={cmd.get('cmd')}"
         )
         return None
+
+    # 群员门槛：面板「群订阅 → 群员绑定」里把某个人**全部**记录禁用后，他在这个群
+    # 就不再用得了米游社功能命令（没记录 = 放行；只禁一条不拦，见 member_binds.allowed）。
+    if gid:
+        try:
+            uid = str(event.get_sender_id() or "")
+        except Exception:  # noqa: BLE001
+            uid = ""
+        if not member_binds.allowed(gid, uid):
+            logger.info(
+                f"社交命令命中但群员已禁用：bot={sid} group={gid} user={uid} cmd={cmd.get('cmd')}"
+            )
+            return None
 
     if cmd.get("admin_only"):
         try:

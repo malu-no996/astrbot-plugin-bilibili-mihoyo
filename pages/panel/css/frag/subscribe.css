@@ -1,0 +1,70 @@
+/* 群订阅 · 样式（米游社面板一级分类「群订阅」，gs-* 前缀）
+   分两块：① 订阅的群 = 一行一张小卡片；② 群员绑定 = 一张表。
+   外壳用公共件（.mys-head / .tabs.sub-tabs / .ss-note / .ss-ok / .mys-error / .modal），
+   这里只写本页自己的东西，别往 base.css / style.css 里塞。 */
+
+  /* ---- ① 订阅的群 ---- */
+  .gs-list { margin:10px 0 0; }
+
+  /* 机器人一览：一个机器人一个小胶囊，带「几个群」；没订阅的灰着 */
+  .gs-bots { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin:0 0 10px; }
+  .gs-bots-tip { font-size:12px; color:var(--muted); }
+  .gs-botchip { display:inline-flex; align-items:center; gap:6px; font-size:12px;
+                padding:3px 10px; border:1px solid var(--line); border-radius:999px;
+                background:var(--card); color:var(--muted); }
+  .gs-botchip.on { border-color:#bfe3cd; background:#f1fbf4; color:var(--text); }
+  .gs-botchip.unlinked { opacity:.6; }
+  .gs-botchip i { font-style:normal; font-size:11px; color:var(--muted); }
+  .gs-botchip b { font-weight:600; color:var(--accent); }
+  .gs-botchip em { font-style:normal; font-size:11px; color:var(--muted); }
+
+  .gs-card { margin:0 0 10px; padding:10px 13px; border:1px solid var(--line);
+             border-radius:10px; background:var(--card); }
+  .gs-card.on { border-color:#bfe3cd; background:#f7fdf9; }   /* 已启用：淡绿，一眼区分 */
+  .gs-card.off { opacity:.75; }                              /* 已停用：整卡淡下去 */
+
+  .gs-row { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  /* 群名占满剩余宽度、过长省略；后面那排（群号 / 机器人 / 状态 / 按钮）全部 flex:none，
+     免得被 flex 收缩按比例压成「每项各断一半」（这是本项目反复踩过的坑）。 */
+  .gs-name { flex:1 1 auto; min-width:0; font-size:14px;
+             overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .gs-gid { flex:none; font-size:12px; color:var(--muted); font-variant-numeric:tabular-nums; }
+  .gs-bot { flex:none; font-size:11px; padding:1px 7px; border-radius:999px;
+            background:#eef0f3; color:#5b6472; white-space:nowrap; }
+  .gs-bot.official { background:#e6f0ff; color:var(--accent); }
+  .gs-state { flex:none; font-size:12px; font-weight:700; white-space:nowrap; }
+  .gs-state.ok { color:var(--ok); }
+  .gs-state.off { color:var(--muted); }
+  .gs-acts { flex:none; display:flex; gap:6px; }
+  .gs-acts button { white-space:nowrap; }
+  .gs-del { color:var(--err); border-color:#f3c2c4; }
+  .gs-del:hover { border-color:var(--err); color:var(--err); }
+
+  .gs-meta { display:flex; gap:6px 16px; flex-wrap:wrap; margin-top:6px;
+             font-size:12px; color:var(--muted); }
+
+  .gs-acc { margin-top:7px; padding-top:7px; border-top:1px dashed var(--line);
+            display:flex; gap:6px 14px; flex-wrap:wrap; align-items:baseline; }
+  .gs-acc-tip { font-size:12px; color:var(--muted); }
+  .gs-acc-item { font-size:12px; }
+  .gs-acc-item i { font-style:normal; color:var(--accent); }
+
+  /* ---- ② 群员绑定 ---- */
+  .gs-filter { display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:0 0 10px; }
+  .gs-filter > label { font-size:12px; color:var(--muted); flex:none; }
+  .gs-filter select { max-width:460px; padding:5px 10px; border:1px solid var(--line);
+                      border-radius:6px; font:inherit; background:#fff; }
+
+  .gs-table { font-size:12px; }
+  .gs-table th { white-space:nowrap; }
+  .gs-table td { padding:7px 8px; }
+  .gs-table tr.off td { background:#fbfbfc; color:var(--muted); }
+  /* 群号 / 群友ID / 账号ID 都可能很长（QQ 官方是 32 位十六进制），
+     不限宽的话三列 id 会把表格撑爆，「状态 / 操作」得横向滚才看得见。 */
+  .gs-id { display:inline-block; max-width:190px; overflow:hidden; text-overflow:ellipsis;
+           white-space:nowrap; vertical-align:bottom; }
+  .gs-ops { white-space:nowrap; }
+  .gs-ops button { margin-right:4px; }
+
+  /* 删除确认弹窗里的说明带 \n，按换行显示 */
+  .gs-warn { white-space:pre-line; }

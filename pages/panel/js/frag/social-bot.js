@@ -5,7 +5,11 @@
  *   sbMaster(b, on) —— 总开关，连带把该机器人的逐命令开关一起同步
  *   sbAll(b, on)    —— 只批量改该机器人下的逐命令开关
  * 都只改页面上的值，仍要点右上角「保存」才落盘。
- * 状态由 frag/social.js 的 init 建立，所以这里只有 setup、没有 init。 */
+ * 状态由 frag/social.js 的 init 建立，所以这里只有 setup、没有 init。
+ *
+ * ⚠️ 群订阅（哪些群能用 + 群员绑定账号）**不在这一页**（2026-10-08 挪走）：
+ * 一级分类「群订阅」→ frag/subscribe.js → subscribe/* 接口。这里只管「机器人 × 命令」。
+ */
 window.MysSocialBot = {
   setup(ctx, mys) {
     /* 总开关。**必须连带同步逐命令开关**，否则有个很难发现的坑：
@@ -29,24 +33,6 @@ window.MysSocialBot = {
       mys.social.message = '';
     }
 
-    /* 订阅的群：就地改 mys.social.subs[botId] 里那条 enabled（避免整表重建丢状态）。
-     * 用 @change + ev.target.checked（memory #9：v-model 在这种场景会慢一拍读到旧值）。
-     * 改完仍要点右上角「保存」才落盘（和其它开关一致）。 */
-    function sbSubToggle(sid, gid, ev) {
-      const on = ev.target.checked;
-      const lst = (mys.social.subs || {})[sid] || [];
-      for (const r of lst) if (String(r.gid) === String(gid)) r.enabled = on;
-      mys.social.message = '';
-    }
-
-    /* 批量开/关某机器人下所有订阅群（幂等）。 */
-    function sbSubAll(sid, on) {
-      const val = !!on;
-      const lst = (mys.social.subs || {})[sid] || [];
-      for (const r of lst) r.enabled = val;
-      mys.social.message = '';
-    }
-
-    return { sbMaster, sbAll, sbSubToggle, sbSubAll };
+    return { sbMaster, sbAll };
   },
 };

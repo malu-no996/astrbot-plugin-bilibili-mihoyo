@@ -6,7 +6,8 @@
   凭证（ltoken_v2 / stoken / cookie_token 等）经 securestore 加密落盘
   <插件>/data/miyoushe_accounts.json
 - **面板（pages/panel，Vue 3）**：账号侧边栏 / 绝区零（抽卡 · 危局 · 防卫战 · 空洞 ·
-  诡域 · 便笺 · 临界推演 · 概览 · 图鉴 · 签到 · 自动签到）/ 社交命令配置 / 设备配置
+  诡域 · 便笺 · 临界推演 · 概览 · 图鉴 · 签到 · 自动签到）/ 社交命令配置 /
+  **群订阅（订阅的群 · 群员绑定账号）** / 设备配置
 - **QQ 群社交命令**：「指令组 + 子命令」两段式 —— `mhy login` / `mhy account` / `mhy switch` /
   `mhy unbind` / `mhy role`（米游社账号类）、`zzz deadly` / `zzz shiyu` / `zzz note` / `zzz sign`
   ……（绝区零查询类）。**命令词用英文，别名照旧全中文**；命令表在面板上可自由增删改，
@@ -34,6 +35,7 @@ from .miyoho.core import device_routes
 from .miyoho.core.web import PLUGIN_NAME, PREFIX, body, call, fail
 from .miyoho import send as send_shim
 from .miyoho.social import dispatch, routes as social_routes
+from .miyoho.social import subscribe_routes
 from .miyoho.zzz.avatar import routes as avatar_routes
 from .miyoho.zzz.codex import routes as codex_routes
 from .miyoho.zzz.gacha import routes as gacha_routes
@@ -214,6 +216,7 @@ class MiyohoPlugin(Star):
         modules = (
             device_routes,          # 设备配置（core）
             social_routes,          # 社交命令配置
+            subscribe_routes,       # 群订阅（订阅的群 + 群员绑定）
             record_routes,          # 绝区零战绩（危局/防卫战/空洞/诡域/便笺/临界推演/存档）
             gacha_routes,           # 调频（抽卡）
             codex_routes,           # 图鉴

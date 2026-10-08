@@ -30,8 +30,11 @@
   autosign.py  接口：一键签到
   help.py      接口：命令菜单
   cfg.py       配置读写（data/zzz/social.json）
+  subscribe.py 「订阅米哈游服务」群订阅数据（data/zzz/subscribe.json）
+  member_binds.py 群员 ↔ 米游社账号的启用/删除状态（data/zzz/member_binds.json）
   dispatch.py  命令匹配与分发（handle_message，供 main.py 调用）
   routes.py    管理页路由（social/config、social/preview）
+  subscribe_routes.py 「群订阅」页路由（订阅的群 + 群员绑定）
 """
 from __future__ import annotations
 

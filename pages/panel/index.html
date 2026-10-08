@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/frag/social-bot.css">
     <link rel="stylesheet" href="./css/frag/social-detail.css">
     <link rel="stylesheet" href="./css/frag/social.css">
+    <link rel="stylesheet" href="./css/frag/subscribe.css">
     <link rel="stylesheet" href="./css/frag/zzz-abyss.css">
     <link rel="stylesheet" href="./css/frag/zzz-autosign.css">
     <link rel="stylesheet" href="./css/frag/zzz-avatar.css">
@@ -181,8 +182,8 @@
 
         <!-- 右侧：主内容区 = 当前账号 -->
         <section class="mys-main">
-          <!-- 一级分类：绝区零 / 社交命令配置 / 设备配置。
-               后两个是全局配置（QQ 命令、设备指纹），与登录的米游社账号无关
+          <!-- 一级分类：绝区零 / 社交命令配置 / 群订阅 / 设备配置。
+               后三个是全局配置（QQ 命令、群订阅、设备指纹），与登录的米游社账号无关
                （设备配置里要选账号，那是它自己的下拉），所以放在 v-if="mys.current" 外面。 -->
           <nav class="mys-zones">
             <button class="mys-zone" :class="{on: mys.zone==='zzz'}" @click="mysZoneTo('zzz')">
@@ -190,6 +191,9 @@
             </button>
             <button class="mys-zone" :class="{on: mys.zone==='social'}" @click="mysZoneTo('social')">
               社交命令配置
+            </button>
+            <button class="mys-zone" :class="{on: mys.zone==='subs'}" @click="mysZoneTo('subs')">
+              群订阅
             </button>
             <button class="mys-zone" :class="{on: mys.zone==='device'}" @click="mysZoneTo('device')">
               设备配置
@@ -2073,7 +2077,7 @@
           </template>
 
           <!-- 社交命令配置（独立片段 frag/social.html，内部再分两个子页面） -->
-          <template v-else>
+          <template v-else-if="mys.zone==='social'">
             <!-- 社交命令配置 · 容器（plugins/_vendor/miyoushe/web/frag/social.html）
      米游社主区两个一级分类之一（另一个是「绝区零」，见 frag/zzz.html）。
      这里只有标题行 + 两个子页签 + 顶部的读写按钮，两个子页面各自独立：
@@ -2234,23 +2238,11 @@
         </div>
       </div>
 
-      <!-- 订阅的群：谁在这个机器人下发了「订阅米哈游服务」，谁就出现在这里；
-           每群一个开关，默认全开；关掉后该群不再响应米哈游功能命令。 -->
-      <div class="sb-subs" v-if="(mys.social.subs[b.id] || []).length">
-        <div class="sb-cmds-head">
-          <span class="ss-tip">已订阅的群（仅这些群能响应功能命令）</span>
-          <button class="ghost sm" @click="sbSubAll(b.id, true)">全开</button>
-          <button class="ghost sm" @click="sbSubAll(b.id, false)">全关</button>
-        </div>
-        <div class="sb-cmds-grid">
-          <label class="sb-cmd" v-for="s in mys.social.subs[b.id]" :key="s.gid">
-            <input type="checkbox" :checked="s.enabled" @change="sbSubToggle(b.id, s.gid, $event)">
-            <span>{{ s.name || ('群 ' + s.gid) }}</span>
-          </label>
-        </div>
-      </div>
-      <p class="muted" v-else style="margin:6px 0 0">
-        该机器人下还没有群订阅。在群里由群主发送「订阅米哈游服务」即可把本群加进来。
+      <!-- 群订阅已独立成一级分类「群订阅」：这一页只管「机器人 × 命令」开关。
+           群订阅和群员绑定在那边看和改（左边一级分类那一排最右边第一个）。 -->
+      <p class="muted" style="margin:6px 0 0">
+        哪些群能用米哈游功能命令、群员各自绑了哪个米游社账号 —— 已移到一级分类
+        <b>「群订阅」</b> 页。
       </p>
 
     </div>
@@ -2404,6 +2396,186 @@
 </div>
 
           </template>
+
+          <!-- 群订阅（米游社主区的一级分类之一，2026-10-08 新增）
+               两件事本来就不同，所以分两个子页签：
+                 ① 订阅的群   —— 哪个机器人 + 哪个群订了服务（群里发「订阅米哈游服务」写进来）
+                 ② 群员绑定   —— 本群发过言的人 × 他自己绑的米游社账号
+               逻辑 js/frag/subscribe.js（window.MysSubscribe，gs* 方法），
+               样式 css/frag/subscribe.css（gs-* 前缀），
+               后端 miyoho/social/subscribe_routes.py（每个写操作都回整份最新总览，
+               不做「本地改一半再点保存」—— 那套正是订阅被清空的老病根）。 -->
+          <template v-else>
+<div class="mys-sub">
+  <div class="mys-head">
+    <h2>群订阅</h2>
+    <nav class="tabs sub-tabs">
+      <span class="tab" :class="{active: mys.sub.tab==='groups'}" @click="gsTab('groups')">订阅的群</span>
+      <span class="tab" :class="{active: mys.sub.tab==='members'}" @click="gsTab('members')">群员绑定</span>
+    </nav>
+    <div class="mys-head-right">
+      <span class="hint" v-if="mys.sub.done">
+        共 {{ mys.sub.groups.length }} 个订阅群 · {{ mys.sub.members.length }} 条群员绑定
+      </span>
+      <button class="ghost sm" @click="gsLoad()" :disabled="mys.sub.loading">
+        {{ mys.sub.loading ? '读取中…' : '重新读取' }}
+      </button>
+    </div>
+  </div>
+
+  <p v-if="mys.sub.error" class="mys-error">{{ mys.sub.error }}</p>
+  <p v-if="mys.sub.message" class="ss-ok">{{ mys.sub.message }}</p>
+
+  <!-- ① 订阅的群：一行一个群 -->
+  <div v-show="mys.sub.tab==='groups'">
+    <div class="ss-note">
+      群主在群里发一次「<b>订阅米哈游服务</b>」，本群就会出现在这里 ——
+      只有订阅过的群才响应米哈游功能命令（危局 / 抽卡 / 签到…）。<br>
+      <b>停用</b>只是关掉放行开关（记录保留，随时可再开）；<b>退订</b>会把这条订阅删掉，
+      想恢复让群主在该群里再发一次订阅命令即可。
+    </div>
+
+    <p v-if="mys.sub.loading && !mys.sub.done" class="muted">正在读取订阅…</p>
+
+    <!-- 机器人一览：一眼看清「哪个机器人下面有几个群订了」，不用一行行翻 -->
+    <div class="gs-bots" v-if="mys.sub.done && mys.sub.bots.length">
+      <span class="gs-bots-tip">机器人</span>
+      <span class="gs-botchip" v-for="b in mys.sub.bots" :key="b.id"
+            :class="{on: b.groups, unlinked: !b.online}">
+        {{ b.name }}<i>{{ gsProto(b.protocol) }}</i>
+        <b>{{ b.groups }} 个群</b>
+        <em v-if="!b.online">未连接</em>
+      </span>
+    </div>
+
+    <!-- 订阅的群：一行一个。
+         ⚠️ 必须用 v-if（**独立**判断），不能跟上面的「机器人一览」写成 v-if / v-else-if ——
+         那样只要机器人一览成立（几乎总是成立），群卡片就永远不显示，
+         现象就是「有机器人 chip、但一个订阅的群都看不到」（2026-10-09 修）。 -->
+    <div class="gs-list" v-if="mys.sub.done && mys.sub.groups.length">
+      <div class="gs-card" v-for="g in mys.sub.groups" :key="g.sid + '|' + g.gid"
+           :class="g.enabled ? 'on' : 'off'">
+        <div class="gs-row">
+          <b class="gs-name">{{ g.name || ('群 ' + g.gid) }}</b>
+          <code class="gs-gid">{{ g.gid }}</code>
+          <span class="gs-bot" :class="{official: g.bot_protocol==='qq_official'}">
+            {{ g.bot }} · {{ gsProto(g.bot_protocol) }}
+          </span>
+          <span class="gs-state" :class="g.enabled ? 'ok' : 'off'">{{ g.enabled ? '已启用' : '已停用' }}</span>
+          <span class="gs-acts">
+            <button class="ghost sm" @click="gsToggleGroup(g)">{{ g.enabled ? '停用' : '启用' }}</button>
+            <button class="ghost sm gs-del" @click="gsAskGroupDrop(g)">退订</button>
+          </span>
+        </div>
+
+        <div class="gs-meta">
+          <span v-if="g.bound_by">订阅人：{{ g.bound_by_name || g.bound_by }}</span>
+          <span v-if="g.bound_at">订阅时间：{{ gsTime(g.bound_at) }}</span>
+          <span v-if="g.handler_id || g.handler_name">处理机器人：{{ g.handler_name || g.handler_id }}</span>
+          <span v-if="!g.bot_online">该机器人当前不在线</span>
+        </div>
+
+        <div class="gs-acc" v-if="g.accounts.length">
+          <span class="gs-acc-tip">订阅人绑定的米游社账号</span>
+          <span class="gs-acc-item" v-for="a in g.accounts" :key="a.account_id">
+            {{ a.nickname || a.account_id }}<i v-if="a.is_default">（默认）</i>
+            <code>{{ a.account_id }}</code>
+          </span>
+        </div>
+        <p class="muted" style="margin:7px 0 0" v-else>
+          订阅人还没有绑定米游社账号：他在群里发一条 <code>mhy login</code> 扫码绑一个就能查了。
+        </p>
+      </div>
+    </div>
+
+    <p v-else-if="mys.sub.done" class="muted">
+      还没有任何群订阅。到群里由<b>群主</b>发送「订阅米哈游服务」即可把本群加进来。
+    </p>
+  </div>
+
+  <!-- ② 群员绑定：一行 = 一个群员的一个米游社账号 -->
+  <div v-show="mys.sub.tab==='members'">
+    <div class="ss-note">
+      这张表是「<b>在本群发过言</b>的人」×「他自己扫码绑的米游社账号」，一行一个账号。
+      QQ 官方机器人拿不到群成员名单，所以只能按「在这个群说过话的人」算；
+      <b>群名 / 群员名</b>取不到时显示「—」（官方协议经常给不出昵称，不是这里没数据）。<br>
+      <b>禁用</b>后这个人在本群发米哈游功能命令不会被响应；<b>删除</b>只是把这条记录从表里去掉
+      （米游社账号本身不会被解绑）。
+    </div>
+
+    <div class="gs-filter">
+      <label>按群筛选</label>
+      <select v-model="mys.sub.gid">
+        <option value="">全部群（{{ mys.sub.seenGroups.length }} 个）</option>
+        <option v-for="g in mys.sub.seenGroups" :key="g.gid" :value="g.gid">
+          {{ g.name || ('群 ' + g.gid) }}{{ g.subscribed ? ' · 已订阅' : '' }}（{{ g.rows }} 条 / {{ g.members }} 人有足迹）
+        </option>
+      </select>
+      <span class="muted">当前显示 {{ gsRows().length }} 条</span>
+      <button class="ghost sm" v-if="mys.sub.removed" @click="gsRestoreAll()">
+        恢复已删除的 {{ mys.sub.removed }} 条
+      </button>
+    </div>
+
+    <p v-if="mys.sub.loading && !mys.sub.done" class="muted">正在读取…</p>
+
+    <table class="gs-table" v-else-if="gsRows().length">
+      <thead>
+        <tr>
+          <th>群ID</th>
+          <th>群名</th>
+          <th>群友ID</th>
+          <th>群员名</th>
+          <th>米游社账号ID</th>
+          <th>米游社账号名</th>
+          <th>绑定时间</th>
+          <th>状态</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="m in gsRows()" :key="m.key" :class="{off: !m.enabled}">
+          <td><code class="gs-id" :title="m.gid">{{ m.gid }}</code></td>
+          <td>{{ m.group_name || '—' }}</td>
+          <td><code class="gs-id" :title="m.member_id">{{ m.member_id }}</code></td>
+          <td>{{ m.member_name || '—' }}</td>
+          <td><code class="gs-id" :title="m.account_id">{{ m.account_id }}</code></td>
+          <td>{{ m.account_name || '—' }}</td>
+          <td>{{ gsTime(m.bound_at) || '—' }}</td>
+          <td><span class="gs-state" :class="m.enabled ? 'ok' : 'off'">{{ m.enabled ? '启用' : '禁用' }}</span></td>
+          <td class="gs-ops">
+            <button class="ghost sm" @click="gsToggleMember(m)">{{ m.enabled ? '禁用' : '启用' }}</button>
+            <button class="ghost sm gs-del" @click="gsAskMemberDrop(m)">删除</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p v-else-if="mys.sub.done" class="muted">
+      还没有可显示的记录。这一页只算「在本群发过言、并且自己绑过米游社账号」的群员 ——
+      让群员在群里发一条 <code>mhy login</code> 扫码绑定，这里就会有他了。
+    </p>
+
+    <p class="muted" v-if="mys.sub.truncated">
+      记录太多，这里只显示了前 500 条（用上面的「按群筛选」缩小范围）。
+    </p>
+  </div>
+
+  <!-- 删除 / 退订的页内二次确认（原生 window.confirm 在部分环境会被静默屏蔽）。
+       整块不在任何 v-show 容器里 —— 父级 display:none 时 position:fixed 的浮层也不显示。 -->
+  <div class="modal" v-if="mys.sub.confirm.show" @click.self="gsConfirmCancel()">
+    <div class="modal-box" style="max-width:460px">
+      <h3 style="margin-top:0">{{ mys.sub.confirm.title }}</h3>
+      <div class="warn-box gs-warn">{{ mys.sub.confirm.text }}</div>
+      <div class="actions">
+        <button class="ghost" @click="gsConfirmCancel()">取消</button>
+        <button class="red" @click="gsConfirmDo()">{{ mys.sub.confirm.ok }}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+          </template>
         </section>
       </div>
     </div>
@@ -2420,6 +2592,7 @@
     <script src="./js/frag/social-bot.js"></script>
     <script src="./js/frag/social-detail.js"></script>
     <script src="./js/frag/social.js"></script>
+    <script src="./js/frag/subscribe.js"></script>
     <script src="./js/frag/zzz-abyss.js"></script>
     <script src="./js/frag/zzz-autosign.js"></script>
     <script src="./js/frag/zzz-avatar.js"></script>

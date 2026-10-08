@@ -24,6 +24,10 @@
  *   bots       {self_id: bool}                                     机器人总开关（默认关）
  *   bot_cmds   {self_id: {cmd_id: bool}}                           逐命令覆盖开关（缺省跟随总开关）
  *
+ * ⚠️ 这里**不含订阅**（subs）：群订阅归一级分类「群订阅」（frag/subscribe.js +
+ * subscribe/* 接口），保存也不会再碰 subscribe.json —— 老版本会整份覆盖，把群里
+ * 订阅好的记录清空（真实事故，见 miyoho/social/subscribe.py 的 apply_snapshot 说明）。
+ *
  * 页面上的 alias_text 是「空格分隔的别名串」，只在读写配置时与 aliases 数组互转 ——
  * 这样表格里一个普通 v-model 就能编辑，不用额外挂 formatter 函数（门禁也少两个标识符）。
  */
@@ -50,7 +54,6 @@ window.MysSocial = {
       instances: [],         // [{id, name, protocol}] 在线实例
       bots: {},              // {self_id: bool} 后端原样
       botCmds: {},           // {self_id: {cmd_id: bool}} 后端原样
-      subs: {},              // {self_id: [{gid, name, enabled, ...}]} 各机器人下订阅的群
       botRows: [],           // 渲染用：机器人行（含逐命令开关的当前值）
     };
   },
@@ -121,34 +124,16 @@ window.MysSocial = {
       mys.social.instances = j.instances || [];
       mys.social.bots = j.bots || {};
       mys.social.botCmds = j.bot_cmds || {};
-      mys.social.subs = j.subs || {};
       rebuildRows();
     }
 
-    /* 订阅群 → **纯对象**（深拷一层）。
-     * ⚠️ 必须拷贝：mys.social 是 Vue reactive，里面的 subs 是 Proxy，
-     * 直接把 Proxy 交给 bridge 的 postMessage 会抛
-     *   Failed to execute 'postMessage' on 'Window': #<Object> could not be cloned.
-     * （结构化克隆不支持 Proxy）—— 表现就是点「保存」弹这条错。
-     * 字段名与后端 snapshot() 对齐（name 而非 group_name）。 */
-    function plainSubs(subs) {
-      const out = {};
-      for (const sid of Object.keys(subs || {})) {
-        out[sid] = (subs[sid] || []).map(r => ({
-          gid: String(r.gid || ''),
-          name: String(r.name || ''),
-          enabled: r.enabled !== false,
-          handler_id: String(r.handler_id || ''),
-          handler_name: String(r.handler_name || ''),
-          bound_by: String(r.bound_by || ''),
-          bound_at: Number(r.bound_at || 0),
-        }));
-      }
-      return out;
-    }
-
     /* 页面状态 → 后端配置。逐命令开关**全量写出**（不用「缺省」形态）：
-     * 后端 bot_allows 先看总开关，总开关关着怎么写都执行不了，所以显式写出不会跑偏。 */
+     * 后端 bot_allows 先看总开关，总开关关着怎么写都执行不了，所以显式写出不会跑偏。
+     *
+     * ⚠️ 这里**只发命令表 + 开关**，不发订阅（subs）。老版本会连订阅一起整份写回，
+     * 标签页开得早、状态里没有订阅时保存就把群里订阅好的记录清空了
+     * （真实事故，详见 miyoho/social/subscribe.py 的 apply_snapshot 说明）。
+     * 群订阅现在归一级分类「群订阅」那一页（frag/subscribe.js → subscribe/* 接口）。 */
     function collect() {
       const commands = (mys.social.commands || []).map(c => ({
         id: c.id,
@@ -172,7 +157,7 @@ window.MysSocial = {
         for (const c of r.cmds || []) per[c.id] = !!c.val;
         bot_cmds[r.id] = per;
       }
-      return { commands, bots, bot_cmds, subs: plainSubs(mys.social.subs) };
+      return { commands, bots, bot_cmds };
     }
 
     async function mysSocialLoad() {
