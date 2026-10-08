@@ -78,6 +78,35 @@ def _parse_aliases(text: str) -> dict:
 
 _DEFAULT_ALIASES = _parse_aliases(_ALIASES_DEFAULT)
 
+
+def _cmd_word(ctx: Ctx) -> str:
+    """当前命令的写法（用于提示里的示例，命令名改了也跟着变）。"""
+    return str(((ctx.cmd or {}).get("cmd")) or "gacha")
+
+
+def _pool_usage(cmd: str, aliases: dict, bad: list[str]) -> str:
+    """参数认不出来时的提示：把当前生效的频段词 / 代码全列出来。
+
+    用户并不知道「2 / 102」这些数字是什么，输错了还静默按独家频段查会让人以为查错了，
+    所以这里**直接回一条可用参数清单**（频段词来自页面「详细设置」里正在生效的那份）；
+    UID 是 8 位以上数字，也算一种参数，一并说明。
+    """
+    groups: dict[str, list[str]] = {}
+    for word, code in aliases.items():
+        groups.setdefault(str(code), []).append(word)
+    lines = []
+    for code in sorted(groups, key=lambda c: int(c) if str(c).isdigit() else 10 ** 9):
+        lines.append(
+            f"  {GACHA_TYPES.get(code, '频段 ' + code)}："
+            + " / ".join(groups[code]) + f"（也可直接写 {code}）"
+        )
+    return (
+        f"参数看不懂：{'、'.join(bad)}\n"
+        f"抽卡命令后面可以跟「频段」或「UID」，两个都可省（不写默认查独家频段）。\n\n"
+        f"可用的频段：\n" + "\n".join(lines) + "\n\n"
+        f"用法示例：{cmd} 常驻　·　{cmd} 音擎　·　{cmd} 100000001（UID 是 8 位以上数字）"
+    )
+
 _SUMMARY_SAMPLE = (
     "{role}\n"
     "绝区零调频 · {pool_name}\n"
@@ -121,12 +150,19 @@ async def _api_zzz_gacha(ctx: Ctx) -> dict:
     uid = ""
     # 别名表取自「详细设置 → 频段词 ↔ 频段代码」（页面可改）；清空 / 全写错时回退内置默认。
     aliases = _parse_aliases(str(ctx.opt("pool_aliases", "") or "")) or _DEFAULT_ALIASES
+    bad: list[str] = []                   # 认不出来的参数（后面统一提示，别静默忽略）
     for token in text.split():
         t = aliases.get(token) or (token if token in GACHA_TYPES else "")
         if t:
             gacha_type = t
         elif token.isdigit() and len(token) >= 8:
             uid = token
+        else:
+            bad.append(token)
+    if bad:
+        # ⚠️ 必须在发任何请求之前回提示：原来这类 token 被悄悄丢掉、按独家频段查，
+        # 用户只会以为「查出来的是错的」，根本不知道自己参数写错了。
+        return {"text": _pool_usage(_cmd_word(ctx), aliases, bad)}
     aid = bind.default_account(ctx.user_id)
     if not aid:
         return {"text": "未绑定米游社账号：请先发送「米游社登录」扫码绑定你的米游社账号"}
@@ -156,6 +192,17 @@ async def _api_zzz_gacha(ctx: Ctx) -> dict:
                 role_name = str(r.get("nickname") or "")
                 server = r.get("region") or server
                 break
+        # 给了 UID 但当前账号下没这个角色 → 也是「参数输错了」，列出来给人看
+        # （roles 为空说明是拉列表失败，那条路上面已经处理过，这里不重复提示）。
+        if not role_name:
+            known = "、".join(
+                f"{r.get('nickname') or '?'}（{r.get('game_uid')}）" for r in roles
+            )
+            return {
+                "text": f"UID {uid} 不在当前绑定的米游社账号下。\n"
+                        f"这个账号下的绝区零角色：{known or '（无）'}\n"
+                        f"不写 UID 就查「切换角色」选中的那个，例：{_cmd_word(ctx)} 常驻",
+            }
 
     # 本地存档 + 增量：该频段有存档就以最大 item id 为游标只拉新的，没有才全量翻页
     stored = gacha_store.load(uid) or {}
