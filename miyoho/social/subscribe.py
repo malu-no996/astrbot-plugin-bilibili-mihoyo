@@ -139,7 +139,8 @@ def apply_snapshot(subs: dict) -> dict:
                     continue
                 inner[gid] = {
                     "enabled": bool(r.get("enabled", True)),
-                    "group_name": str(r.get("group_name") or ""),
+                    # 面板 snapshot() 出的字段名是 name；这里两种都认，避免保存时把群名抹掉
+                    "group_name": str(r.get("group_name") or r.get("name") or ""),
                     "handler_id": str(r.get("handler_id") or ""),
                     "handler_name": str(r.get("handler_name") or ""),
                     "bound_by": str(r.get("bound_by") or ""),
