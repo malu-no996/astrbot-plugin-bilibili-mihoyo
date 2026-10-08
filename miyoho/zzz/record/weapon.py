@@ -23,6 +23,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 from loguru import logger
@@ -33,6 +34,25 @@ from ...core import asset_cache, device
 # `record_api.avatar_info` → AttributeError，被宽泛 except 吞掉（只 debug 日志），
 # 表现为「网页/QQ 勾了全面也永远没有音擎图标、缓存文件从不生成」。
 from ..avatar import api as avatar_api
+
+# 音擎图标本地路由的规范形态是 `/miyoho-asset/<hash>.<ext>`（asset_cache.rewrite_assets
+# 的产物）。迁移时从原 nonebot 项目拷过来的 weapon_icons.json 里是旧路由
+# `/admin/api/miyoushe/zzz/asset/<hash>.<ext>` —— 这俩 hash 同算法（md5(CDN URL)），
+# 文件都在 data/zzz/assets/，但旧前缀前端不认（既非 /miyoho-asset/ 也非 ./assets/zzz/，
+# 会当成相对路径打到 dashboard 根域名 404，音擎图标就裂了）。读缓存时统一规范化掉。
+_LEGACY_ICON = re.compile(r"/zzz/asset/([0-9a-f]+\.[a-z]+)$")
+
+
+def _norm_icon(path: str) -> str:
+    """音擎图标路由规范化：旧 nonebot 路由 → AstrBot 本地路由。空串原样返回。"""
+    if not path:
+        return ""
+    if path.startswith("/miyoho-asset/"):
+        return path
+    m = _LEGACY_ICON.search(path)
+    if m:
+        return "/miyoho-asset/" + m.group(1)
+    return path
 
 # 音擎图标缓存：{角色 UID: {角色id: 音擎图标本地路由}}。
 # 按「阵容拥有者的角色 UID」存，同一玩家多队共享、跨查询复用 —— 避免每次都打
@@ -71,9 +91,17 @@ FULL_FAILED = (
 
 def _load_cache() -> dict:
     try:
-        return json.loads(_WEAPON_CACHE.read_text(encoding="utf-8")) if _WEAPON_CACHE.exists() else {}
+        raw = json.loads(_WEAPON_CACHE.read_text(encoding="utf-8")) if _WEAPON_CACHE.exists() else {}
     except Exception:  # noqa: BLE001
         return {}
+    # 规范化：把迁移残留的旧 nonebot 路由前缀改成 AstrBot 本地路由
+    if isinstance(raw, dict):
+        for uid, owned in raw.items():
+            if isinstance(owned, dict):
+                for cid, icon in list(owned.items()):
+                    if isinstance(icon, str) and icon != (n := _norm_icon(icon)):
+                        owned[cid] = n
+    return raw
 
 
 def _save_cache(cache: dict) -> None:

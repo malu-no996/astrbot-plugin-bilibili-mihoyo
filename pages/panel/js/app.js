@@ -61,12 +61,17 @@
         // ---------------- bridge 请求层 ----------------
         const bridge = window.AstrBotPluginPage;
 
-        /* 后端下发的资源记号 → Page 相对路径（见 core/asset_cache.py 的 sync_to_page）。 */
+        /* 后端下发的资源记号 → Page 相对路径（见 core/asset_cache.py 的 sync_to_page）。
+         * 同时兜底迁移残留的旧 nonebot 路由 /admin/api/miyoushe/zzz/asset/<hash> ——
+         * 这种前缀既不是 /miyoho-asset/ 也不被 isAssetUrl 识别，会当成相对路径打到
+         * dashboard 根域名 404（音擎图标就是这个情况）。 */
         function fixAssets(v) {
           if (typeof v === 'string') {
-            return v.indexOf('/miyoho-asset/') >= 0
-              ? v.split('/miyoho-asset/').join('./assets/zzz/')
-              : v;
+            if (v.indexOf('/miyoho-asset/') >= 0)
+              return v.split('/miyoho-asset/').join('./assets/zzz/');
+            const m = v.match(/\/zzz\/asset\/([0-9a-f]+\.[a-z]+)$/);
+            if (m) return './assets/zzz/' + m[1];
+            return v;
           }
           if (Array.isArray(v)) {
             for (let i = 0; i < v.length; i++) v[i] = fixAssets(v[i]);
