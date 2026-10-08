@@ -94,7 +94,7 @@ _SUMMARY_SAMPLE = (
     "频段可打：独家/常驻/音擎/邦布/重映(复刻)/回响，或代码 1/2/3/5/102/103）",
     options=[
         {"key": "output", "label": "输出方式", "type": "select",
-         "options": OUTPUT_OPTIONS, "default": "text"},
+         "options": OUTPUT_OPTIONS, "default": "image"},
         {"key": "pool_aliases", "label": "频段词 ↔ 频段代码", "type": "textarea", "rows": 7,
          "default": _ALIASES_DEFAULT,
          "hint": "每行一条：「代码 = 词1, 词2」。代码是官方固定值 —— "
@@ -204,11 +204,11 @@ async def _api_zzz_gacha(ctx: Ctx) -> dict:
         "pity_now": p.get("pity_now") or 0,
         "items": rows,
     }
-    # 详细设置里选了「图片消息」→ 渲染总结图发出；失败退回文字。
-    # 发图成功后返回 silent：**不再跟发一条文字**（用户明确要求）。
+    # 输出方式**默认图片**（用户要求：有图片版就不要文字版）→ 渲染总结图发出；
+    # 发图成功后返回 silent：**不再跟发一条文字**。
     # 退回时**必须把原因写进消息里**：否则用户只看到文字，完全不知道图片为什么没来
     # （渲染报错 / 适配器不支持 / 发送被平台拒 都可能，只有控制台日志里有）。
-    if str(ctx.opt("output", "text")) == "image":
+    if str(ctx.opt("output", "image")) == "image":
         return await _image_reply(ctx, lambda: gacha_image.render_summary(p, role_name),
                                   lines, vars_, data_)
     return {"text": "\n".join(lines), "vars": vars_, "data": data_}

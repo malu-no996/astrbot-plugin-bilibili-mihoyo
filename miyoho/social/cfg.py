@@ -96,12 +96,12 @@ DEFAULT_COMMANDS: list[dict] = [
         "enabled": True, "admin_only": False, "options": {"limit": 10},
     },
     {
-        # 绝境群排行多一个「输出方式」：用户要求「在文字版基础上加上图片版」——
-        # 只有它支持出图（榜单图 = 排名 / 分数 / 队伍头像（右上角影画数）/ 角色名），
-        # 另外两个榜仍是纯文字。选项默认值由接口 schema 决定（这里写出来只是让默认值一目了然）。
+        # 绝境群排行多一个「输出方式」：**默认图片版**（2026-10-09 起，有图就不发文字；
+        # 榜单图 = 排名 / 分数 / 队伍头像（右上角影画数）/ 角色名）。
+        # 选项默认值由接口 schema 决定（这里写出来只是让默认值一目了然）。
         "id": "zzz_hard_rank", "group": GROUP_ZZZ, "cmd": "hard-rank",
         "aliases": ["绝境群排行", "绝境排行", "危局绝境群排行", "zzz绝境排行"], "api": "zzz_hard_rank",
-        "enabled": True, "admin_only": False, "options": {"limit": 10, "output": "text"},
+        "enabled": True, "admin_only": False, "options": {"limit": 10, "output": "image"},
     },
     {
         "id": "zzz_shiyu_rank", "group": GROUP_ZZZ, "cmd": "shiyu-rank",

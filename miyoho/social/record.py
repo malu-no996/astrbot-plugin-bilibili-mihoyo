@@ -385,7 +385,7 @@ def _arg_full(ctx: Ctx) -> bool:
     "zzz_deadly", "绝区零 · 危局强袭战", "本期总分 / 星数 / 排名（可跟 UID 参数）",
     options=[
         {"key": "output", "label": "输出方式", "type": "select",
-         "options": OUTPUT_OPTIONS, "default": "text",
+         "options": OUTPUT_OPTIONS, "default": "image",
          "hint": "选「图片消息」就发一张和网页上一样的战报图（纯 Pillow 绘制，"
                  "立绘走本地缓存）；发送失败会退回文字并附上原因。"},
         SHOW_TIME_OPTION,
@@ -475,9 +475,10 @@ async def _api_zzz_deadly(ctx: Ctx) -> dict:
             ctx, lambda: record_image.render_deadly(data, show_time=show_time, weapons=weapons),
             lines, vars_, data, note=warn,
         )
-    # 「输出方式 = 图片」→ 复用网页端那张图的渲染器（zzz/record/image.py 的
-    # render_deadly，纯 Pillow、立绘走本地缓存）；发成功后返回 silent，不再跟发文字。
-    if str(ctx.opt("output", "text")) == "image":
+    # 输出方式**默认图片**（有图就不发文字）→ 复用网页端那张图的渲染器
+    # （zzz/record/image.py 的 render_deadly，纯 Pillow、立绘走本地缓存）；
+    # 发成功后返回 silent，不再跟发文字。
+    if str(ctx.opt("output", "image")) == "image":
         show_time = bool(ctx.opt("show_time", False))
         return await _image_reply(
             ctx, lambda: record_image.render_deadly(data, show_time=show_time),
@@ -490,7 +491,7 @@ async def _api_zzz_deadly(ctx: Ctx) -> dict:
     "zzz_shiyu", "绝区零 · 式舆防卫战", "防线评级 / 总分 / 排名（可跟 UID 参数）",
     options=[
         {"key": "output", "label": "输出方式", "type": "select",
-         "options": OUTPUT_OPTIONS, "default": "text",
+         "options": OUTPUT_OPTIONS, "default": "image",
          "hint": "选「图片消息」就发一张和网页上一样的防卫战战报图"
                  "（纯 Pillow 绘制，版面照抄网页）；发送失败会退回文字并附上原因。"},
         SHOW_TIME_OPTION,
@@ -615,9 +616,10 @@ async def _api_zzz_shiyu(ctx: Ctx) -> dict:
                                              show_fourth=show_fourth, weapons=weapons),
             lines, vars_, data, note=warn,
         )
-    # 「输出方式 = 图片」→ shiyu_image.render_shiyu 把网页那套版面用 Pillow 重画一遍
-    # （网页是 HTML/CSS，QQ 里发不了 DOM）；发成功后返回 silent，不再跟发文字。
-    if str(ctx.opt("output", "text")) == "image":
+    # 输出方式**默认图片**（有图就不发文字）→ shiyu_image.render_shiyu 把网页那套版面
+    # 用 Pillow 重画一遍（网页是 HTML/CSS，QQ 里发不了 DOM）；
+    # 发成功后返回 silent，不再跟发文字。
+    if str(ctx.opt("output", "image")) == "image":
         show_time = bool(ctx.opt("show_time", False))
         return await _image_reply(
             ctx,

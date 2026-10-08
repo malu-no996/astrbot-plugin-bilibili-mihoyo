@@ -82,12 +82,13 @@ _LIMIT_OPTION = {
 }
 
 # 「输出方式」选项 —— 三个榜都支持（用户要求：危局 / 防卫战在文字版基础上也加图片版，
-# 绝境之前就有）。文字版默认；选「图片消息」发一张榜单图。渲染器另在
+# 绝境之前就有）。**默认图片版**（2026-10-09：有图片版就不要文字版回复）；
+# 选「文字消息」仍可退回文字。渲染器另在
 # zzz/record/rank_image.py（绝境走 `render_group_rank` 单队行布局；危局 / 防卫战走
 # `render_teams_rank`：排名 · 角色名 · 分数 + 队伍1/2/3 各三个头像）。
 _OUTPUT_OPTION = {
     "key": "output", "label": "输出方式", "type": "select",
-    "options": OUTPUT_OPTIONS, "default": "text",
+    "options": OUTPUT_OPTIONS, "default": "image",
     "hint": "选「图片消息」发一张榜单图：每行一个角色，含排名 / 角色名 / 分数 / 出战队伍头像"
             "（右上角带影画数）；发送失败会退回文字并附上原因。",
 }
@@ -325,9 +326,9 @@ async def _rank_reply(ctx: Ctx, measure: str) -> dict:
         "protocol": ctx.protocol,
         "top": top,
     }
-    # 「输出方式 = 图片」—— 三个榜都支持（用户要求危局 / 防卫战也加出图）。
-    # 文字版保持原样：发图成功后返回 silent，发送端据此不再跟发文字。
-    if str(ctx.opt("output", "text")) == "image":
+    # 「输出方式 = 图片」—— 三个榜都支持，**默认图片**（有图就不发文字）。
+    # 发图成功后返回 silent，发送端据此不再跟发文字。
+    if str(ctx.opt("output", "image")) == "image":
         img_rows = [
             {"rank": i, "score": r["score"], "name": r["name"] or "未知角色",
              "teams": r.get("teams") or []}
