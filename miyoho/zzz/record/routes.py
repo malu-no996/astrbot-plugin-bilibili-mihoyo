@@ -28,6 +28,7 @@ from ...core.web import file_response, json_response, request
 
 from ...core import asset_cache
 from ...core import mys as client              # 战绩接口搬去 api.py 了，这里只留 region_name
+from ...paths import PAGES_ASSETS
 from ...core.web import body, call, fail
 from . import image as record_image
 from . import store as record_store
@@ -450,6 +451,22 @@ async def api_zzz_asset64(name: str):
     return json_response({"ok": True, "name": name, "mime": mime, "b64": b64})
 
 
+async def api_zzz_pageasset(path: str):
+    """Page 静态资源 base64 版（沙箱 iframe 不带 cookie，模板里直接写的
+    `./assets/*` 相对路径全 401，所以面板静态图（稀有度方徽章 ./assets/icon/SRANK.png、
+    技能条 ./assets/skill_bar.png、属性图标等）改走这个由父页面代取的 base64 路由）。
+    读 pages/panel/assets/<path>，归一层防目录穿越。"""
+    target = (PAGES_ASSETS / path).resolve()
+    root = PAGES_ASSETS.resolve()
+    if target != root and root not in target.parents:
+        return fail("非法路径", 400)
+    if not target.exists() or not target.is_file():
+        return fail("资源不存在", 404)
+    b64 = base64.b64encode(target.read_bytes()).decode("ascii")
+    mime = _ASSET_MIME.get(target.suffix.lower(), "image/png")
+    return json_response({"ok": True, "name": path, "mime": mime, "b64": b64})
+
+
 async def api_zzz_deadly_image():
     """后台把危局结果渲染成 PNG（不经前台；纯 Pillow 绘制，立绘走本地缓存，无跨域问题）。"""
     uid, server = _qstr("uid"), _qstr("server", "prod_gf_cn")
@@ -486,5 +503,6 @@ ROUTES = [
     ("zzz/void", "GET", api_zzz_void, "临界推演"),
     ("zzz/asset/<name>", "GET", api_zzz_asset, "后台缓存的米游社图片"),
     ("zzz/asset64/<name>", "GET", api_zzz_asset64, "后台缓存图片的 base64 版（面板 bridge 用）"),
+    ("zzz/pageasset/<path:path>", "GET", api_zzz_pageasset, "Page 静态资源 base64 版（沙箱 iframe 不带 cookie，模板里 ./assets/* 相对路径全 401）"),
     ("zzz/deadly/image", "GET", api_zzz_deadly_image, "危局结果渲染成 PNG"),
 ]

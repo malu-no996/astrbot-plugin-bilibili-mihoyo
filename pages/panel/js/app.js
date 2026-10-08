@@ -91,7 +91,18 @@
         const assetPending = new Map(); // 去重并发
 
         function isAssetUrl(v) {
-          return typeof v === 'string' && v.indexOf('./assets/zzz/') === 0;
+          return typeof v === 'string' && v.indexOf('./assets/') === 0;
+        }
+
+        /* key 形如 ./assets/zzz/<hash>.png 或 ./assets/icon/SRANK.png 或
+           ./assets/skill_bar.png —— 统一走 base64 路由（沙箱 iframe 不带 cookie，
+           相对路径 401）。zzz 子目录走 asset64（读后台缓存源文件），其余走
+           pageasset（读 pages/panel/assets 下的静态镜像）。 */
+        function assetEndpoint(key) {
+          const rel = key.slice('./assets/'.length);
+          return rel.indexOf('zzz/') === 0
+            ? 'zzz/asset64/' + rel.slice('zzz/'.length)
+            : 'zzz/pageasset/' + rel;
         }
 
         function loadAsset(key) {
@@ -99,7 +110,7 @@
           if (assetPending.has(key)) return assetPending.get(key);
           const p = (async () => {
             try {
-              const j = norm(await bridge.apiGet('zzz/asset64/' + key.split('/').pop(), null));
+              const j = norm(await bridge.apiGet(assetEndpoint(key), null));
               if (!j || !j.b64) throw new Error('asset64 返回异常');
               const bin = atob(j.b64);
               const bytes = new Uint8Array(bin.length);
@@ -131,6 +142,45 @@
             }));
           }
           return v;
+        }
+
+        /* 模板里『现生成』的静态图（稀有度方徽章 ./assets/icon/SRANK.png、
+           技能条 ./assets/skill_bar.png、属性图标等）不出现在接口响应里，
+           resolveAssetsDeep 抓不到；用 MutationObserver 在 <img> 插入 / src
+           变化时异步换成 blob（走 pageasset 路由）。只认 ./assets/ 开头的相对路径，
+           blob: 换成后不再匹配，不会死循环。 */
+        function rewriteDomAssets(root) {
+          if (!root || !root.querySelectorAll) return;
+          const imgs = root.querySelectorAll('img[src^="./assets/"]');
+          imgs.forEach((img) => {
+            const key = img.getAttribute('src');
+            if (key && key.indexOf('./assets/') === 0) {
+              loadAsset(key).then((url) => {
+                if (img.getAttribute('src') === key) img.src = url;
+              });
+            }
+          });
+        }
+
+        let _assetObserver = null;
+        function observeDomAssets() {
+          if (_assetObserver) return;
+          const target = document.getElementById('app') || document.body;
+          if (!target) return;
+          rewriteDomAssets(target);
+          _assetObserver = new MutationObserver((muts) => {
+            for (const m of muts) {
+              if (m.type === 'attributes' && m.attributeName === 'src' && m.target && m.target.tagName === 'IMG') {
+                const key = m.target.getAttribute('src');
+                if (key && key.indexOf('./assets/') === 0) {
+                  loadAsset(key).then((url) => { if (m.target.getAttribute('src') === key) m.target.src = url; });
+                }
+              } else if (m.addedNodes) {
+                m.addedNodes.forEach((n) => { if (n.nodeType === 1) rewriteDomAssets(n); });
+              }
+            }
+          });
+          _assetObserver.observe(target, { childList: true, subtree: true, attributes: true, attributeFilter: ['src'] });
         }
 
         /* bridge 返回值归一成原框架口径：{ok, message, ...} / 任意业务 JSON。 */
@@ -209,6 +259,8 @@
         onMounted(async () => {
           // 等父页面下发初始上下文再触发「进页签」动作（原框架 tabClick 的替身）
           try { await bridge.ready(); } catch (e) { /* 拿不到上下文也照常跑 */ }
+          // 沙箱 iframe 不带 cookie：模板里现生成的 ./assets/* 静态图异步换 blob
+          observeDomAssets();
           ready.value = true;
           for (const fn of Object.values(actions)) {
             if (typeof fn === 'function') {
