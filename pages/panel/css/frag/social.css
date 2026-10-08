@@ -1,0 +1,22 @@
+/* 社交命令配置 · 容器样式（plugins/_vendor/miyoushe/web/frag/social.css）
+   只放三个子页面共用的外壳样式（ss-* 前缀）：
+     .ss-ok      保存成功提示
+     .ss-note    灰底说明块
+     .ss-actions 表格下面那排按钮
+   接口配置表格（sa-*）在 frag/social-api.css，机器人开关（sb-*）在 frag/social-bot.css。 */
+
+  .ss-ok { margin:8px 0; padding:8px 12px; font-size:13px; color:#1f6b3a;
+           background:#f1fbf4; border:1px solid #bfe3cd; border-radius:8px; }
+
+  .ss-note { margin:10px 0; padding:10px 13px; font-size:12px; line-height:1.75;
+             color:var(--muted); background:#f7f8fa;
+             border:1px solid var(--line); border-radius:8px; }
+  .ss-note b { color:var(--text); }
+  .ss-note ul { margin:6px 0 0; padding-left:18px; }
+  .ss-note li { margin:2px 0; }
+  .ss-note code { padding:1px 5px; font-size:12px; border-radius:4px;
+                  background:#eef0f3; color:var(--text); }
+
+  .ss-actions { display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin:12px 0 0; }
+  .ss-tip { font-size:12px; color:var(--muted); }
+  .ss-tip code { padding:1px 5px; border-radius:4px; background:#eef0f3; color:var(--text); }

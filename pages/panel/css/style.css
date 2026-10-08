@@ -1,0 +1,131 @@
+/* 米游社模块样式（plugins/_vendor/miyoushe/web/style.css）
+   只管模块骨架布局：左侧账号侧边栏 + 右侧主内容区，以及绝区零抽卡汇总。
+   侧边栏（含账号下的角色二级菜单）样式在 frag/sidebar.css，
+   各功能自己的样式在 frag/zzz-*.css，公共组件（card/tab/badge…）在 web/css/base.css。 */
+
+  .mys-layout { display:flex; gap:18px; align-items:flex-start; margin-top:10px; }
+  .mys-layout > .mys-side { flex:0 0 280px; }
+  .mys-main { flex:1 1 auto; min-width:0; }
+  @media (max-width: 900px) {
+    .mys-layout { flex-direction:column; }
+    .mys-layout > .mys-side { flex:none; width:auto; }
+  }
+
+  /* ---- 一级分类：绝区零 / 社交命令配置 ----
+     模块内两大块，各自是独立 frag。用「大标题 + 下划线」而不是页签样式，
+     免得和内容区里的二级页签（抽卡查询 / 危局查询…）看混。 */
+  .mys-zones { display:flex; align-items:baseline; gap:22px; margin:6px 0 10px;
+               border-bottom:1px solid var(--line); }
+  .mys-zone { padding:4px 2px 9px; margin-bottom:-1px; border:none; background:none;
+              cursor:pointer; font-size:15px; font-weight:700; line-height:1.2;
+              color:var(--muted); border-bottom:2px solid transparent; }
+  .mys-zone:hover { color:var(--text); }
+  .mys-zone.on { color:var(--text); border-bottom-color:var(--accent); }
+
+  /* 内容区标题行：h2 → 二级页签 → 右侧那组（当前查询 / 模块开关） */
+  .mys-head { display:flex; align-items:center; gap:8px 14px; flex-wrap:wrap; margin:8px 0 12px; }
+  /* h2 的默认外边距会把标题行撑高（上下各约 0.83em），这里清零；
+     左侧对齐交给 flex，右侧那组靠 .mys-head-right 的 margin-left:auto 顶到最右。 */
+  .mys-head h2 { margin:0; font-size:15px; }
+  /* 右侧那组（当前查询 + 模块开关）自动推到最右，页签留在最左 */
+  .mys-head-right { display:flex; align-items:center; gap:8px 14px; flex-wrap:wrap; margin-left:auto; }
+  .mys-head .tabs.sub-tabs { margin:0; }          /* 页签原来的下边距/分隔线在行内不需要 */
+  .mys-head .hint { font-weight:normal; font-size:12px; color:var(--muted); }
+  .mys-mod-switch { display:inline-flex; align-items:center; gap:6px; cursor:pointer; font-size:13px; }
+
+  /* ---- 战绩本地存档（危局 / 防卫战共用，所以放公共样式里）----
+     官方接口只返本期/上期，历史是后台每次查询时按赛期攒的快照；
+     这里是那份历史的面板（列表 + 点一行即用快照渲染）。 */
+  .mys-hist { margin:0 0 12px; border:1px solid var(--line); border-radius:10px; background:#fff; overflow:hidden; }
+  .mys-hist-head { display:flex; align-items:center; gap:8px; padding:8px 12px;
+                   font-size:12px; color:var(--muted); border-bottom:1px dashed var(--line); }
+  .mys-hist-head b { color:var(--text); font-size:13px; }
+  .mys-hist-list { max-height:262px; overflow:auto; }
+  .mys-hist-row { display:flex; align-items:center; gap:10px; padding:7px 12px; cursor:pointer;
+                  font-size:12px; border-bottom:1px solid #f2f4f7; }
+  .mys-hist-row:last-child { border-bottom:none; }
+  .mys-hist-row:hover { background:#f7faff; }
+  .mys-hist-row.active { background:#f4f8ff; }
+  .mys-hist-row.active .mys-hist-when { color:var(--accent); font-weight:700; }
+  /* 赛期用等宽数字，纵列才对得齐 */
+  .mys-hist-when { flex:none; color:var(--text); font-variant-numeric:tabular-nums; }
+  .mys-hist-sum { flex:1 1 auto; min-width:0; color:var(--muted);
+                  overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .mys-hist-badge { flex:none; font-size:10px; padding:0 6px; border-radius:999px;
+                    background:#eef0f3; color:#5b6472; }
+  .mys-hist-at { flex:none; font-size:11px; color:var(--muted); font-variant-numeric:tabular-nums; }
+  .mys-hist-empty { margin:0; padding:10px 12px; font-size:12px; color:var(--muted); }
+  /* 存档状态提示（危局 / 防卫战共用）。特意放在结果区外面，
+     这样危局「保存为图片」截 #hd-wrap 时不会把它一起渲进图片。 */
+  .mys-saved-tip { margin:0 0 10px; font-size:12px; color:var(--accent); }
+
+  /* ---- 战绩结果区（危局 / 防卫战共用）----
+     版式是照游戏内「一张横向卡片」做的，内容本身并不宽：
+     左边一小撮文字 + 头顶几个头像，右边一张 BOSS 立绘。
+     所以宽度不跟内容区走，固定 360px（宽屏铺满到 1200px+ 时中间会空一大片，
+     头像和立绘被拉得离正文很远）。
+     危局和防卫战共用这一个值，想调宽窄改这里一处即可，两边一起变。
+     max-width:100% 只是兜底：窗口本身比 360px 还窄时允许收缩，不出现横向滚动条。 */
+  .mys-stage { width: 360px; max-width: 100%; }
+
+  /* 错误明细：可能很长（含每一步的尝试结果），所以要能换行、看得清 */
+  .mys-error { white-space:pre-wrap; word-break:break-word; margin:8px 0; padding:9px 12px;
+               font-size:13px; line-height:1.65; color:#7d1d1d; background:#fff5f5;
+               border:1px solid #ffc9c9; border-left:3px solid var(--err); border-radius:8px; }
+
+  /* 「全面」版缺设备配置的提醒（危局 / 防卫战共用）：比错误轻、用暖色警示。
+     同样放在结果区外面，截图导出不会把它带进图片。 */
+  .mys-warn { white-space:pre-wrap; word-break:break-word; margin:8px 0; padding:9px 12px;
+              font-size:13px; line-height:1.65; color:#7a4a12; background:#fff9ee;
+              border:1px solid #ffd9a0; border-left:3px solid #e0a63c; border-radius:8px; }
+
+  /* ---- 抽卡（调频）汇总：总览卡 / 出金链条形图 / 卡池卡片网格 ---- */
+  .gz-top { margin:12px 0 14px; padding:12px 14px; border:1px solid var(--line); border-radius:10px; background:var(--card); }
+  .gz-top-row { display:flex; flex-wrap:wrap; gap:18px; align-items:baseline; margin-bottom:8px; }
+  .gz-top-row:last-child { margin-bottom:0; gap:8px; }
+  .gz-big { font-size:22px; font-weight:bold; color:var(--text); line-height:1.2; }
+  .gz-big i { margin-left:4px; font-size:12px; font-weight:normal; font-style:normal; color:var(--muted); }
+  .gz-chip { font-size:12px; padding:3px 10px; border-radius:999px; background:#f1f3f5; color:var(--muted); }
+  .gz-chip b { margin-right:6px; font-weight:600; color:var(--text); }
+
+  /* 出金链：一行一个金，条形长度 = pity 抽数（90 抽满格） */
+  .gz-bars { margin-top:8px; }
+  .gz-bar-row { display:flex; align-items:center; gap:10px; margin-bottom:6px; }
+  .gz-bar-name { flex:0 0 150px; font-size:13px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .gz-bar-name.unknown { color:var(--muted); font-style:italic; }
+  .gz-bar { position:relative; flex:1 1 auto; min-width:0; height:18px; border-radius:9px; background:#f1f3f5; overflow:visible; }
+  .gz-bar i { display:block; height:100%; min-width:6px; border-radius:9px; background:var(--accent); }
+  .gz-bar i.off { background:#e8890c; }
+  .gz-bar i.unknown { background:#c7ccd1; }
+  .gz-bar i.green { background:#2faa5b; }
+  .gz-bar i.yellow { background:#e0a800; }
+  .gz-bar i.red { background:#e5484d; }
+  .gz-bar b { position:absolute; right:8px; top:0; font-size:11px; font-weight:normal; line-height:18px; color:var(--muted); }
+  .gz-tag { flex:0 0 auto; font-size:11px; padding:1px 7px; border-radius:10px; }
+  .gz-tag.up { background:#e6f0ff; color:var(--accent); }
+  .gz-tag.off { background:#fff0e2; color:#c96a05; }
+
+  /* 卡片模式 / 版本总结：一张卡一个频段或卡池 */
+  .gz-card { margin:0 0 14px; padding:12px 14px; border:1px solid var(--line); border-radius:10px; background:var(--card); }
+  .gz-card-head { display:flex; flex-wrap:wrap; gap:16px; align-items:baseline; margin-bottom:10px; }
+  .gz-ver { flex:1 1 220px; min-width:0; }
+  .gz-ver b { font-size:14px; }
+  .gz-ver span { display:block; }
+  .gz-stat { font-size:16px; font-weight:bold; color:var(--text); }
+  .gz-stat i { margin-left:4px; font-size:12px; font-weight:normal; font-style:normal; color:var(--muted); }
+  .gz-stat.green { color:#2faa5b; }      /* 当前已垫：沿用出金链变色规则 */
+  .gz-stat.yellow { color:#e0a800; }
+  .gz-stat.red { color:#e5484d; }
+  .gz-grid { display:flex; flex-wrap:wrap; gap:10px; }
+  .gz-item { position:relative; flex:0 0 132px; padding:10px 10px 8px; border:1px solid var(--line);
+             border-radius:8px; background:#fff; }
+  .gz-item.off { border-color:#f0d3b4; background:#fffaf3; }
+  .gz-item.up { border-color:#bcd4fb; background:#f6faff; }
+  .gz-item.unknown { opacity:.75; }
+  .gz-item.green { border-color:#bfe3cd; background:#f1fbf4; }
+  .gz-item.yellow { border-color:#f3e3ad; background:#fffdf3; }
+  .gz-item.red { border-color:#f3c2c4; background:#fff5f5; }
+  .gz-badge { display:inline-block; margin-bottom:4px; padding:0 7px; border-radius:9px;
+              background:#f1f3f5; color:var(--muted); font-size:11px; line-height:18px; }
+  .gz-item-name { display:block; font-size:13px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+

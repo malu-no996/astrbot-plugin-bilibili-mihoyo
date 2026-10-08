@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "plans": {
+    "1581": {
+      "type": 1,
+      "game_default": {
+        "property_list": [
+          {
+            "id": 12102,
+            "name": "攻击力",
+            "full_name": "攻击力百分比",
+            "system_id": 121,
+            "is_select": false
+          },
+          {
+            "id": 31203,
+            "name": "异常精通",
+            "full_name": "异常精通",
+            "system_id": 312,
+            "is_select": false
+          },
+          {
+            "id": 12103,
+            "name": "攻击力",
+            "full_name": "攻击力",
+            "system_id": 121,
+            "is_select": false
+          }
+        ]
+      },
+      "custom_info": {
+        "property_list": [
+          {
+            "id": 11103,
+            "name": "生命值",
+            "full_name": "生命值",
+            "system_id": 111,
+            "is_select": false
+          },
+          {
+            "id": 11102,
+            "name": "生命值",
+            "full_name": "生命值百分比",
+            "system_id": 111,
+            "is_select": false
+          },
+          {
+            "id": 12103,
+            "name": "攻击力",
+            "full_name": "攻击力",
+            "system_id": 121,
+            "is_select": false
+          },
+          {
+            "id": 12102,
+            "name": "攻击力",
+            "full_name": "攻击力百分比",
+            "system_id": 121,
+            "is_select": false
+          },
+          {
+            "id": 13103,
+            "name": "防御力",
+            "full_name": "防御力",
+            "system_id": 131,
+            "is_select": false
+          },
+          {
+            "id": 13102,
+            "name": "防御力",
+            "full_name": "防御力百分比",
+            "system_id": 131,
+            "is_select": false
+          },
+          {
+            "id": 20103,
+            "name": "暴击率",
+            "full_name": "暴击率",
+            "system_id": 201,
+            "is_select": false
+          },
+          {
+            "id": 21103,
+            "name": "暴击伤害",
+            "full_name": "暴击伤害",
+            "system_id": 211,
+            "is_select": false
+          },
+          {
+            "id": 31203,
+            "name": "异常精通",
+            "full_name": "异常精通",
+            "system_id": 312,
+            "is_select": false
+          },
+          {
+            "id": 23203,
+            "name": "穿透值",
+            "full_name": "穿透值",
+            "system_id": 232,
+            "is_select": false
+          }
+        ]
+      },
+      "plan_only_special_property": false,
+      "plan_effective_property_list": [
+        {
+          "id": 12102,
+          "name": "攻击力",
+          "full_name": "攻击力百分比",
+          "system_id": 121,
+          "is_select": false
+        },
+        {
+          "id": 31203,
+          "name": "异常精通",
+          "full_name": "异常精通",
+          "system_id": 312,
+          "is_select": false
+        },
+        {
+          "id": 12103,
+          "name": "攻击力",
+          "full_name": "攻击力",
+          "system_id": 121,
+          "is_select": false
+        }
+      ],
+      "updated_at": "2026-10-05 01:49:28",
+      "source": "mys"
+    }
+  }
+}

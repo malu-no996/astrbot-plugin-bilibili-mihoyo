@@ -1,0 +1,31 @@
+/* 绝区零 · 玩家概览（plugins/_vendor/miyoushe/web/frag/zzz-profile.css）
+   逻辑 frag/zzz-profile.js（window.MysProfile），模板 frag/zzz-profile.html。前缀 pv-*。 */
+
+  .pv-wrap { margin-top:12px; display:flex; flex-direction:column; gap:10px; }
+  .pv-stats { display:grid; grid-template-columns:repeat(auto-fit, minmax(108px, 1fr)); gap:8px; }
+  .pv-stat { padding:12px; border-radius:12px; background:#f7f8fa; border:1px solid var(--line);
+             text-align:center; }
+  .pv-stat b { display:block; font-size:24px; line-height:1.1; color:#2b3542; font-variant-numeric:tabular-nums; }
+  .pv-stat span { display:block; margin-top:3px; font-size:11.5px; color:var(--muted); }
+  .pv-lv { display:inline-block; padding:4px 12px; border-radius:999px; background:#eef4fd;
+           font-size:12.5px; color:#3a6ea8; align-self:flex-start; }
+
+  .pv-card { padding:12px 14px; border-radius:12px; background:var(--card); border:1px solid var(--line); }
+  .pv-card-t { font-size:12px; font-weight:700; color:#39424f; margin-bottom:10px; }
+  .pv-card-t .hint { margin-left:6px; font-weight:normal; }
+
+  .pv-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:9px; }
+  .pv-ava { display:flex; align-items:center; gap:10px; padding:7px; border-radius:10px; border:1px solid var(--line); background:#fbfcfd; }
+  .pv-ava-i { flex:0 0 44px; width:44px; height:44px; border-radius:9px; object-fit:cover; background:#f0f2f5; }
+  .pv-ava-i.s { box-shadow:0 0 0 1.5px #d9b25a inset; }
+  .pv-ava-i.a { box-shadow:0 0 0 1.5px #9b7bd0 inset; }
+  .pv-ava-b { min-width:0; }
+  .pv-ava-n { font-size:13.5px; font-weight:600; color:#2b3542; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .pv-ava-rk { font-size:11px; color:var(--muted); font-weight:normal; margin-left:4px; }
+  .pv-ava-m { font-size:11.5px; color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+  .pv-bud { display:flex; flex-wrap:wrap; gap:7px; }
+  .pv-b { padding:5px 11px; border-radius:999px; font-size:12.5px; background:#f7f8fa; border:1px solid var(--line); color:#2b3542; }
+  .pv-b i { font-style:normal; color:var(--muted); }
+  .pv-b.s { background:#fbf3e6; border-color:#ecd9b0; }
+  .pv-b.a { background:#f3edfb; border-color:#dcc9f0; }

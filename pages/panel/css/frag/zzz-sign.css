@@ -1,0 +1,27 @@
+/* 绝区零 · 签到（plugins/_vendor/miyoushe/web/frag/zzz-sign.css）
+   逻辑 frag/zzz-sign.js（window.MysSign），模板 frag/zzz-sign.html。前缀 sg-*。 */
+
+  .sg-head { display:flex; gap:14px; flex-wrap:wrap; align-items:center; margin:2px 0 14px; }
+  .sg-stat { display:flex; flex-direction:column; }
+  .sg-stat b { font-size:20px; line-height:1.2; color:var(--text); }
+  .sg-stat i { font-size:11px; font-style:normal; color:var(--muted); }
+  .sg-state { font-size:12px; padding:3px 12px; border-radius:999px; }
+  .sg-state.on { background:#e6f6ec; color:var(--ok); }
+  .sg-state.off { background:#ffebe9; color:var(--err); }
+  .sg-btn { margin-left:auto; }
+
+  .sg-ok { font-size:13px; font-weight:600; color:var(--ok); margin:8px 0; }
+  .sg-month { font-size:12px; color:var(--muted); margin:0 0 10px; }
+  .sg-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(98px, 1fr)); gap:10px; }
+  .sg-card { position:relative; background:var(--card); border:1px solid var(--line); border-radius:10px;
+             padding:8px 6px 6px; text-align:center; overflow:hidden; }
+  .sg-card.got { background:#f6fbf7; border-color:#bfe6cb; }
+  .sg-card.today { border-color:var(--accent); box-shadow:0 0 0 2px rgba(47,111,237,.15); }
+  .sg-day { position:absolute; left:0; top:0; font-size:10px; padding:1px 7px;
+            border-bottom-right-radius:8px; background:#eef2ff; color:var(--accent); }
+  .sg-ico { width:42px; height:42px; margin:10px auto 4px; display:block; object-fit:contain; }
+  .sg-ph { width:42px; height:42px; margin:10px auto 4px; border-radius:8px;
+           background:#f0f2f5; display:flex; align-items:center; justify-content:center; color:#a9a2b5; font-size:16px; }
+  .sg-name { font-size:11px; color:var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .sg-cnt { font-size:11px; color:var(--muted); margin-top:2px; }
+  .sg-tick { position:absolute; right:4px; top:4px; font-size:12px; color:var(--ok); }

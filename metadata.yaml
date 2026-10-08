@@ -1,0 +1,5 @@
+name: astrbot_plugin_miyoho
+desc: 米哈游（米游社）插件 —— 扫码登录多账号 / 绝区零战绩·抽卡·图鉴·签到·自动签到 / QQ 群社交命令（可配置）
+version: v1.0.0
+author: malu
+repo: https://github.com/malu-no996/astrbot-plugin-miyoho

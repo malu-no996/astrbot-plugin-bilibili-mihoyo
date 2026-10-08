@@ -1,0 +1,142 @@
+/* 危局强袭战 · 深色游戏风渲染（plugins/_vendor/miyoushe/web/frag/zzz-deadly.css，hd-* 前缀）
+   布局对照游戏内：绝境一张独立卡（头 + BOSS 条目），常规危局一张大卡（头 + 总分 + BOSS 条目）。
+   两张卡里的 BOSS 条目（立绘 + 文字区）共用同一套尺寸和外框，
+   所以绝境那张图和普通条目里的那张大小完全一致。
+   卡片宽度和防卫战一致，统一由公共类 .mys-stage 控制（web/style.css，360px），
+   本文件不单独写 width。
+   ⚠️ 卡片宽度是固定的，所以「内容再放大」不能整体等比放（总宽会溢出），
+   只能吃两处余量：① 头像行（flex 均分，本来就没占满）、② 各处字号。
+   立绘宽度（绝境和普通条目统一 104px）是刻意不动的 —— 它直接决定右侧还剩多少空间给头像行。
+   想整体收放就改下面那一组数值，改完记得看一眼 4 个头像是否还排得下一行。 */
+
+.hd-wrap { margin-top: 10px; }
+/* 宽度不在这里定：危局和防卫战统一用公共类 .mys-stage 的 360px（见 web/style.css）。
+   两边保持一致，改宽窄只改那一个数；这里不要再写 width，否则会各自跑偏。 */
+
+.hd-card { position: relative; overflow: hidden; border-radius: 12px; color: #eceaf2; margin-bottom: 14px;
+           background: #17121d; box-shadow: 0 2px 10px rgba(0,0,0,.22); }
+
+/* ---- 卡片头部（绝境卡 / 常规卡共用） ---- */
+.hd-head { display: flex; align-items: center; gap: 12px; padding: 12px 16px;
+           background: linear-gradient(115deg, #2b1a2a 0%, #43182b 55%, #26101c 100%); }
+.hd-avatar { flex: 0 0 auto; width: 46px; height: 46px; border-radius: 50%;
+             border: 2px solid #caa54a; background: #0d0a10; object-fit: cover; }
+.hd-head-main { min-width: 0; }
+.hd-nick { font-size: 14px; font-weight: 600; color: #fff; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.hd-prev { font-size: 11px; font-weight: 400; padding: 0 8px; border-radius: 9px;
+           background: rgba(202,165,74,.18); color: #e7c886; }
+.hd-tag { font-size: 11px; font-weight: 700; padding: 0 8px; border-radius: 9px; color: #241703;
+          background: linear-gradient(180deg, #ffe08a, #e0b23c); }   /* 「绝境模式」金标 */
+.hd-head-side { margin-left: auto; display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+.hd-rank-pill { font-size: 13px; font-weight: 700; color: #241703; padding: 2px 11px; border-radius: 999px;
+                background: linear-gradient(180deg, #ffe08a, #e0b23c); }
+.hd-star { font-size: 13px; color: #ffd76e; letter-spacing: 1px; }
+.hd-period { margin: 0 2px 2px; font-size: 12px; color: var(--muted); }
+.hd-note { margin: 0 2px 10px; font-size: 11px; color: var(--muted); }
+/* 开关/按钮激活态 */
+.ghost.on { background: rgba(202,165,74,.2); border-color: #caa54a; color: #e7c886; }
+
+/* ---- 绝境卡身体：BOSS 立绘 + 信息（与常规卡的条目结构一致，只是没有总分行） ----
+   外框刻意做成和 .hd-entry 一模一样（外边距 / 圆角 / 内边距 / 立绘圆角），
+   这样绝境那张 BOSS 图和普通条目里的那张在完全相同的容器里，宽高都一致。
+   原来这里是「整幅贴边、无圆角、padding 13/15」，图会比普通条目的大一圈。
+   多个绝境 BOSS 之间不再画分隔线，靠外边距拉开（相邻 margin 折叠成 10px）。 */
+.hd-hard-body { display: flex; margin: 8px 10px 10px; border-radius: 10px;
+                background: linear-gradient(100deg, #401526 0%, #2a1024 55%, #1c0f1e 100%); }
+
+/* ---- 常规卡：总分行 + BOSS 条目 ---- */
+.hd-total-row { display: flex; align-items: baseline; justify-content: space-between; padding: 12px 16px 4px; }
+/* 总分那串阿拉伯数字特意比 BOSS 名大但不夸张：27px 时太抢眼，压回 24px。
+   旁边「总分」小字（.hd-unit）和 ★ 计数（.hd-star）不跟着变，保持层级差。 */
+.hd-big { font-size: 24px; font-weight: 800; line-height: 1.15; color: #fff; }
+.hd-unit { margin-left: 6px; font-size: 12px; font-weight: 400; color: #b7a6c6; }
+.hd-entry { display: flex; margin: 8px 10px 10px; border-radius: 10px;
+            background: linear-gradient(100deg, #33182a 0%, #201423 55%, #1a1120 100%); }
+
+/* ---- BOSS 立绘（绝境 / 常规条目共用一套尺寸） ----
+   宽度刻意保持不变：右侧文字区的剩余宽度全靠它腾出来，动它就会挤到头像行换行。 */
+.hd-portrait { position: relative; flex: 0 0 104px; min-height: 104px; background: #0d0a10; overflow: hidden; }
+/* 立绘原图是 2048px 方图，必须绝对定位铺满：不占布局高度，卡片高度由右侧内容决定。
+   四周压一圈白色半透明描边（游戏内立绘的那种「贴边金框」观感）。
+   box-sizing 必须写 border-box：否则 width:100% + border 会往外溢 2px，
+   右下两条边会被 .hd-portrait 的 overflow:hidden 直接裁掉，看起来只有上、左有线。 */
+.hd-portrait img { position: absolute; inset: 0; width: 100%; height: 100%; box-sizing: border-box;
+                   border: 1px solid rgba(255,255,255,.3);
+                   object-fit: cover; object-position: center 20%; }
+/* 绝境和普通条目共用同一条圆角规则：两边都加了 margin，不再有「贴边不能圆角」的限制 */
+.hd-entry .hd-portrait,
+.hd-hard-body .hd-portrait { border-top-left-radius: 10px; border-bottom-left-radius: 10px; }
+/* 内边距也只有这一处（不再给绝境单独覆盖），行高一致 = 立绘被拉到的高度也一致 */
+.hd-entry-main { flex: 1 1 auto; min-width: 0; padding: 11px 13px; }
+
+.hd-boss-name { font-size: 15px; font-weight: 700; color: #fff; }
+.hd-boss-score { display: flex; align-items: baseline; gap: 9px; margin-top: 1px;
+                 font-size: 25px; font-weight: 800; line-height: 1.2; color: #fff; }
+.hd-stars { font-size: 13px; letter-spacing: 2px; color: #ffd76e; }
+.hd-time { margin: 3px 0 7px; font-size: 12px; color: #b7a6c6; }
+
+/* ---- 代理人 / 邦布头像 ----
+   一行排满、绝不换行：卡片宽 360px，扣掉条目边距 / 立绘 / 内边距，头像区约 210px。
+   写死尺寸时「3 代理人 + 1 邦布」放不下会把邦布挤到第二行，
+   所以改成 flex 均分（flex:1 1 0 + aspect-ratio:1）：
+   数量少时受 max-width 封顶（不撑大），数量多时自动等比缩小 —— 永远一行。
+   max-width 就是「内容放大的余量」所在：调大它头像才会真的变大（会自己缩到放得下为止）。 */
+.hd-avatars { display: flex; flex-wrap: nowrap; align-items: flex-end; gap: 7px; }
+/* 头像框圆角 6px（2026-10-05 用户要求「不要太圆」，原 9px）。
+   46px 的方块上 6px ≈ 13%，看着是「小方角」；出图（image_gen._one_ava）那侧
+   传的 radius 是 6*S，两边一致 —— 改这里记得同步改 record 里那三处调用。 */
+.hd-ava { position: relative; flex: 1 1 0; min-width: 0; max-width: 48px; aspect-ratio: 1;
+          box-sizing: border-box; border-radius: 6px; overflow: hidden;
+          border: 1.5px solid #7c5a2e; background: #0d0a10; }
+.hd-ava img { display: block; width: 100%; height: 100%; object-fit: cover; }
+/* 稀有度**方徽章**图片（2026-10-05 起 S / A / B 用图片，取代字母小标签）：
+   和 QQ 出图 / 绝境群排行 / 代理人详情浮层同一套素材（texture2d/icon/{S,A,B}RANK.png）。
+   素材画布 128×128、图形只占 (9,7,119,121)（横 85.9% / 纵 89.1%），四周是透明留白，
+   CSS 裁不掉 → 盒子放大到 17.5px，再用 left/top:-1.2px 把留白抵掉
+   （9/128×17.5 ≈ 1.23），**可见图形 ≈15px**，正好和右上角 15px 的影画数角标等大。
+   .hd-ava 自己 overflow:hidden，溢出框外的那点留白会被裁掉，不会留残影。 */
+.hd-ava .hd-rar { position: absolute; left: -1.2px; top: -1.2px; z-index: 1;
+                  width: 17.5px; height: 17.5px; display: block; }
+/* 文字小标签：仅在没有对应徽章素材（C 级等）时兜底显示 */
+.hd-ava i { position: absolute; left: 0; top: 0; padding: 0 5px; font-size: 10px; font-style: normal;
+            font-weight: 700; line-height: 14px; color: #241703;
+            background: linear-gradient(180deg, #ffe08a, #d9a63a); border-bottom-right-radius: 4px; }
+.hd-ava.a { border-color: #8a6bd1; }
+.hd-ava.a i { color: #1d1030; background: linear-gradient(180deg, #c9b3ff, #8a63d9); }
+/* 邦布：同款左上角 S/A 方徽章，框略小。
+   底改**纯黑**：邦布素材带透明通道，默认 .hd-ava 的 #0d0a10 会让它看着和卡片
+   连成一片、像浮在背景上；纯黑底后邦布自成一块、不受底层背景影响。 */
+.hd-ava.buddy { max-width: 40px; border-color: #4c4556; background: #000; }
+.hd-ava.buddy.a { border-color: #8a6bd1; }
+/* 影画数（rank）角标：头像右上角小方块，**0 也渲染**（.hd-ava overflow:hidden，贴内角放）。
+   样式：黑色半透明底 + 不透明白字。圆角 4px（2026-10-05 用户要求「不要太圆」，原 7px）
+   —— 15px 的方块给 4px ≈ 27%，和代理人详情那边的 .av-rk（5px / 18px）同一观感。 */
+.hd-ava-rank { position: absolute; right: 0; top: 0; z-index: 1; width: 15px; height: 15px;
+               border-radius: 0 4px 0 4px; font-size: 10px; font-weight: 700; font-style: normal;
+               line-height: 15px; text-align: center; color: #fff;
+               background: rgba(0,0,0,.55); }
+
+/* 「全面」版音擎角标：贴头像**左下角**，大小对齐左上角 A/S 徽章（可见约 15px）。
+   音擎素材是带透明通道的整图，直接贴会和头像糊在一起 → 垫一层半透明深色圆角底
+   （rgba(12,9,16,.92)，和 QQ 出图 card_assets.weapon_icon_img 同款），图标再内缩一点。
+   四个角分工：左上 S/A 徽章、右上影画数、「全面」音擎占左下 —— 互不打架。 */
+.hd-ava .hd-wp { position: absolute; left: 0; bottom: 0; z-index: 1;
+                 width: 15px; height: 15px; box-sizing: border-box; padding: 2px;
+                 display: block; border-radius: 3px; background: rgba(12,9,16,.92);
+                 object-fit: contain; }
+
+/* ---- 增益 chips ---- */
+.hd-buffs { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+.hd-buff { position: relative; font-size: 11px; padding: 1px 8px; border-radius: 999px; color: #e7c886;
+           background: rgba(202,165,74,.12); border: 1px solid rgba(202,165,74,.35); cursor: help; }
+/* 悬停 BUFF 名称弹出详情（移出即消失） */
+.hd-buff-tip { display: none; position: absolute; left: 50%; bottom: calc(100% + 8px);
+               transform: translateX(-50%); z-index: 20; width: 230px; padding: 9px 11px;
+               border-radius: 8px; font-size: 12px; font-weight: 400; line-height: 1.5;
+               white-space: pre-wrap; text-align: left; color: #f1ecf7; cursor: default;
+               background: #16121c; border: 1px solid rgba(202,165,74,.5);
+               box-shadow: 0 6px 18px rgba(0,0,0,.45); }
+.hd-buff:hover .hd-buff-tip { display: block; }
+/* 小箭头 */
+.hd-buff-tip::after { content: ''; position: absolute; left: 50%; top: 100%; transform: translateX(-50%);
+                      border: 6px solid transparent; border-top-color: rgba(202,165,74,.5); }

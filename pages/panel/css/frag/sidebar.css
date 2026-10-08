@@ -1,0 +1,78 @@
+/* 米游社账号侧边栏样式（plugins/_vendor/miyoushe/web/frag/sidebar.css）
+   只管侧边栏自己的东西：标题 / 操作按钮 / 登录浮层 / 账号卡片 / 角色二级菜单。
+   布局宽度在 style.css 的 .mys-layout。 */
+
+  .mys-side { border:1px solid var(--line); border-radius:12px; padding:12px; background:#fbfcfe; }
+  .mys-side-title { display:flex; align-items:baseline; justify-content:space-between; font-weight:bold; font-size:14px; }
+  .mys-side-actions { display:flex; gap:6px; flex-wrap:wrap; margin:10px 0 2px; }
+
+  /* 扫码登录浮层 */
+  .mys-login { border:1px dashed var(--line); border-radius:10px; padding:10px; margin-top:10px; background:#fff; }
+
+  /* 账号卡片（垂直列表：一个账号一块，块里含账号行 + 角色二级菜单）
+     结构：头像（一列） + 右侧文字列（名字/删除、状态·UID、缺 stoken 提示）。
+     头像单独占一列是关键 —— 文字列能拿到整行宽度，状态行与 UID 才不会被挤断。 */
+  .mys-acc-list { display:flex; flex-direction:column; gap:10px; margin-top:10px; }
+  .mys-acc-block { border:1px solid var(--line); border-radius:10px; background:#fff; overflow:hidden; }
+  .mys-acc-block.active { border-color:var(--accent); }
+  .mys-acc { display:flex; align-items:center; gap:10px; padding:9px 10px; cursor:pointer; background:#fff; }
+  .mys-acc:hover { background:#f7faff; }
+  .mys-acc.active { background:#f4f8ff; }
+
+  /* 头像：底层是昵称首字占位，真实头像盖在上面（position:absolute）。
+     「没存头像 / 图片挂了 / 还没加载完」都还有字，不会是一个空白圆圈。 */
+  .mys-acc-avatar { position:relative; flex:none; width:36px; height:36px; border-radius:50%;
+                    background:#eef0f3; border:1px solid var(--line); overflow:hidden;
+                    display:flex; align-items:center; justify-content:center; }
+  .mys-acc-initial { font-size:15px; font-weight:600; color:#9aa4b1; line-height:1; user-select:none; }
+  .mys-acc-face { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
+
+  .mys-acc-body { flex:1 1 auto; min-width:0; display:flex; flex-direction:column; gap:3px; }
+  /* ① 名字 + 删除：名字过长省略号截断，删除按钮 flex:none + nowrap（否则会被挤成「删/除」竖排） */
+  .mys-acc-row { display:flex; align-items:center; gap:8px; min-width:0; }
+  .mys-acc-name { flex:1 1 auto; min-width:0; font-weight:bold; font-size:13px;
+                  white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .mys-acc-del { flex:none; white-space:nowrap; }
+  /* ② 状态 · UID：状态文字可截断（给 UID 让位），UID 永远完整 —— 多个账号靠它区分 */
+  .mys-acc-meta { display:flex; align-items:center; gap:6px; min-width:0;
+                  font-size:11px; color:var(--muted); line-height:1.5; }
+  .mys-acc-state { display:inline-flex; align-items:center; gap:5px; min-width:0; flex:0 1 auto; }
+  .mys-acc-state-t { min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .mys-acc-state-t.bad { color:var(--warn,#b26a00); }
+  .mys-acc-uid { flex:none; white-space:nowrap; font-variant-numeric:tabular-nums; }
+  /* 缺 stoken 提示：抽卡（genAuthKey）必需，旧版登录的账号没有 */
+  .mys-acc-warn { margin-top:2px; font-size:11px; color:#a35b00; background:#fff8e1;
+                  border:1px solid #f0d59a; border-radius:6px; padding:1px 7px; align-self:flex-start; }
+  /* 「只有 stoken」的残缺账号：HYP 抽卡授权单独用过导致，需补一次正式登录 */
+  .dot-warn { background:#e0a106; }
+  /* 抽卡授权区（给账号补 stoken，不动已有凭证） */
+  .mys-auth { margin-top:12px; padding-top:10px; border-top:1px dashed var(--line); }
+
+  /* ---- 角色二级菜单（账号行下面那块） ---- */
+  .mys-roles-menu { border-top:1px dashed var(--line); background:#fafbfd; }
+  .mys-roles-head { display:flex; align-items:center; gap:6px; padding:6px 10px;
+                    font-size:12px; color:var(--muted); cursor:pointer; user-select:none; }
+  .mys-roles-head:hover { color:var(--accent); }
+  .mys-caret { display:inline-block; font-size:10px; transition:transform .15s; }
+  .mys-caret.open { transform:rotate(90deg); }
+  .mys-roles-n { margin-left:auto; padding:0 7px; border-radius:999px; background:#eef0f3;
+                 font-size:11px; color:#5b6472; }
+  .mys-roles-n.busy { background:#fff3e0; color:#a35b00; }
+  .mys-roles-reload { margin-left:auto; font-size:11px; color:var(--accent); }
+  .mys-roles-n + .mys-roles-reload { margin-left:6px; }
+  .mys-roles-reload:hover { text-decoration:underline; }
+  .mys-roles-reload.busy { color:var(--muted); pointer-events:none; }
+
+  .mys-roles { padding:0 8px 8px; display:flex; flex-direction:column; gap:4px; }
+  .mys-role-tip { padding:4px 4px 6px; font-size:11.5px; color:var(--muted); }
+  .mys-role-tip.err { color:var(--err); }
+  .mys-roles-list { display:flex; flex-direction:column; gap:4px; }
+  .mys-role { display:flex; align-items:center; gap:6px; padding:5px 9px; border-radius:8px;
+              border:1px solid transparent; background:#fff; cursor:pointer; font-size:12.5px; }
+  .mys-role:hover { border-color:var(--accent); }
+  .mys-role.active { border-color:var(--accent); background:#eaf2ff; }
+  .mys-role.active .mys-role-name { color:var(--accent); font-weight:700; }
+  .mys-role-name { flex:1 1 auto; min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .mys-role-meta { flex:none; font-size:11px; color:var(--muted); }
+  .mys-role-tag { flex:none; font-size:10px; padding:0 6px; border-radius:999px;
+                  background:#e6f0ff; color:var(--accent); }

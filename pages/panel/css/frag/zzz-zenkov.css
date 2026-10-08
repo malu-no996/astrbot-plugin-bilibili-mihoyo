@@ -1,0 +1,63 @@
+/* 绝区零 · 迷宫诡域（plugins/_vendor/miyoushe/web/frag/zzz-zenkov.css）
+   逻辑 frag/zzz-zenkov.js（window.MysZenkov），模板 frag/zzz-zenkov.html。前缀 zk-*。 */
+
+  .zk-wrap { margin-top:12px; }
+
+  .zk-card { margin-top:10px; padding:12px 14px; border-radius:12px; background:var(--card);
+             border:1px solid var(--line); }
+  .zk-card-t { display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;
+               font-size:12.5px; font-weight:700; color:#39424f; margin-bottom:9px; }
+  .zk-card-t .hint { margin-left:auto; font-weight:normal; }
+
+  /* ---- 头部 ---- */
+  .zk-head { display:flex; align-items:center; gap:12px; margin-top:2px; }
+  .zk-avatar { flex:0 0 46px; width:46px; height:46px; border-radius:50%; object-fit:cover;
+               background:#f0f2f5; }
+  .zk-head-b { flex:1 1 auto; min-width:0; }
+  .zk-nick { font-size:15px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .zk-head-s { margin-top:2px; font-size:12px; color:var(--muted); }
+  .zk-rank { flex:0 0 auto; padding:3px 11px; border-radius:999px; font-size:12.5px; font-weight:700;
+             color:#8a6a1e; background:linear-gradient(180deg,#ffe08a,#e5bd55); }
+
+  /* ---- 四个关键数字 ---- */
+  .zk-stats { display:grid; grid-template-columns:repeat(auto-fit, minmax(118px, 1fr)); gap:8px;
+              margin-top:10px; }
+  .zk-stat { padding:10px 12px; border-radius:11px; background:#f7f8fa; border:1px solid var(--line); }
+  .zk-stat-t { display:block; font-size:11.5px; color:var(--muted); }
+  .zk-stat b { display:block; margin-top:3px; font-size:19px; line-height:1.15; color:#2b3542;
+               font-variant-numeric:tabular-nums; }
+  .zk-stat-x { font-size:12.5px; font-weight:normal; color:var(--muted); }
+
+  /* ---- 赛季 ---- */
+  .zk-lv { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px; }
+  .zk-lv-i { padding:4px 12px; border-radius:999px; background:#f0f2f5; font-size:12px; color:#4a5361; }
+  .zk-lv-i b { color:#2b3542; }
+
+  .zk-pb + .zk-pb { margin-top:10px; }
+  .zk-pb-h { display:flex; align-items:baseline; gap:10px; font-size:12.5px; color:#39424f; }
+  .zk-pb-v { margin-left:auto; color:var(--muted); font-variant-numeric:tabular-nums; }
+  .zk-pb-v.full { color:#2f7a45; font-weight:600; }
+  .zk-track { margin-top:5px; height:7px; border-radius:999px; background:#eef1f4; overflow:hidden; }
+  .zk-track i { display:block; height:100%; border-radius:999px;
+                background:linear-gradient(90deg,#8fd0f0,#4aa3d8); transition:width .25s; }
+
+  /* ---- 幻境记录 ---- */
+  .zk-map + .zk-map { margin-top:11px; padding-top:11px; border-top:1px dashed var(--line); }
+  .zk-map-h { display:flex; align-items:center; gap:6px; flex-wrap:wrap; font-size:12.5px; }
+  .zk-map-n { font-weight:600; color:#2b3542; }
+  .zk-map-p { margin-left:auto; color:var(--muted); font-variant-numeric:tabular-nums; }
+  .zk-tag { padding:1px 8px; border-radius:999px; font-size:10.5px; background:#f0f2f5; color:#5b6472; }
+  .zk-tag.hell { background:#fdeceb; color:#b23c33; }
+  .zk-tag.hard { background:#eef4fd; color:#3a6ea8; }
+  .zk-map-f { margin-top:5px; font-size:11.5px; color:var(--muted); }
+  .zk-map-f b { color:#2b3542; font-variant-numeric:tabular-nums; }
+
+  /* ---- 收藏图标 ---- */
+  .zk-icons { display:grid; grid-template-columns:repeat(auto-fill, minmax(74px, 1fr)); gap:9px; }
+  .zk-icon { display:flex; flex-direction:column; align-items:center; gap:3px; padding:6px 4px;
+             border-radius:10px; border:1px solid var(--line); background:#fbfcfd; }
+  .zk-icon img { width:40px; height:40px; object-fit:contain; }
+  .zk-icon i { font-style:normal; font-size:10.5px; color:#5b6472; text-align:center; line-height:1.3;
+               max-width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .zk-icon.off { opacity:.42; filter:grayscale(1); }
+  .zk-icon.off i { color:var(--muted); }

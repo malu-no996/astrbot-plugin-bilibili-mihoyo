@@ -1,0 +1,36 @@
+/* 社交命令配置 · QQ机器人配置子页面样式（plugins/_vendor/miyoushe/web/frag/social-bot.css）
+   一行一个机器人：左边总开关 + 名字，右边状态；打开后下面铺命令开关的小格子（sb-* 前缀）。 */
+
+  .sb-list { margin:10px 0 0; }
+
+  .sb-item { margin:0 0 10px; padding:10px 13px; border:1px solid var(--line);
+             border-radius:10px; background:var(--card); }
+  .sb-item.on { border-color:#bfe3cd; background:#f7fdf9; }   /* 已启用：淡淡一层绿，一眼区分 */
+  .sb-item.offline { opacity:.72; }
+
+  .sb-row { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .sb-main { display:flex; align-items:center; gap:8px; flex:1 1 auto; min-width:0;
+             cursor:pointer; font-size:14px; }
+  .sb-main b { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .sb-main input[type=checkbox] { flex:none; cursor:pointer; }
+  /* id 用等宽数字：多个机器人纵向排列时数字能对齐 */
+  .sb-id { flex:none; font-size:12px; color:var(--muted); font-variant-numeric:tabular-nums; }
+  .sb-proto { flex:none; font-size:11px; padding:1px 7px; border-radius:999px;
+              background:#eef0f3; color:#5b6472; }
+  .sb-proto.qq_official { background:#e6f0ff; color:var(--accent); }
+  .sb-badge { flex:none; font-size:11px; padding:1px 7px; border-radius:999px;
+              background:#f1f3f5; color:var(--muted); }
+
+  /* 状态文字不让位（flex:none）：名字再长也不会把它挤掉或折行 */
+  .sb-state { flex:none; font-size:12px; font-weight:700; }
+  .sb-state.ok { color:var(--ok); }
+  .sb-state.off { color:var(--muted); }
+
+  .sb-cmds { margin-top:9px; padding-top:9px; border-top:1px dashed var(--line); }
+  .sb-cmds-head { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:7px; }
+  .sb-cmds-head .ss-tip { flex:1 1 auto; }
+
+  /* 命令开关小格子：按内容排，窄屏自动折行 */
+  .sb-cmds-grid { display:flex; flex-wrap:wrap; gap:6px 14px; }
+  .sb-cmd { display:inline-flex; align-items:center; gap:6px; font-size:13px; cursor:pointer; }
+  .sb-cmd input[type=checkbox] { cursor:pointer; }

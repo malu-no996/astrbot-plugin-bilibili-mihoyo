@@ -1,0 +1,71 @@
+/* 社交命令配置 · 「详细设置」弹窗样式（plugins/_vendor/miyoushe/web/frag/social-detail.css）
+   模板在 frag/social-detail.html（sd-* 前缀）。
+   弹窗是「遮罩 + 居中盒子」：点遮罩关闭，点盒子内部不关（@click.stop）。 */
+
+  .sd-mask { position:fixed; inset:0; z-index:60; display:flex; align-items:flex-start;
+             justify-content:center; padding:40px 16px; overflow:auto;
+             background:rgba(15,18,24,.45); }
+  .sd-box { width:100%; max-width:640px; background:var(--panel, #fff); color:var(--text);
+            border:1px solid var(--line); border-radius:12px;
+            box-shadow:0 12px 40px rgba(0,0,0,.22); }
+
+  .sd-head { display:flex; align-items:center; justify-content:space-between;
+             gap:12px; padding:14px 16px; border-bottom:1px solid var(--line); }
+  .sd-head h3 { margin:0; font-size:15px; font-weight:600; }
+
+  .sd-body { padding:14px 16px; }
+  .sd-sub { margin:0 0 12px; font-size:12px; color:var(--muted); }
+  .sd-sub b { color:var(--text); }
+
+  .sd-sec { margin:0 0 16px; padding:12px 13px; background:#f7f8fa;
+            border:1px solid var(--line); border-radius:9px; }
+  .sd-sec h4 { margin:0 0 10px; font-size:13px; font-weight:600; }
+
+  .sd-field { margin:0 0 10px; }
+  .sd-field label { display:block; margin:0 0 4px; font-size:12px; color:var(--muted); }
+  .sd-field select, .sd-field input[type=text], .sd-field input[type=number] {
+    width:100%; box-sizing:border-box; padding:6px 9px; font-size:13px;
+    color:var(--text); background:#fff; border:1px solid var(--line); border-radius:6px; }
+  .sd-field select { cursor:pointer; }
+  .sd-field select:focus, .sd-field input:focus { outline:none; border-color:var(--accent); }
+
+  .sd-tabs { display:flex; gap:6px; margin:0 0 8px; }
+  .sd-tpl, .sd-ta, .sd-area { width:100%; box-sizing:border-box; padding:9px 10px; font-size:12.5px;
+            line-height:1.7; font-family:ui-monospace,Consolas,monospace; color:var(--text);
+            background:#fff; border:1px solid var(--line); border-radius:7px; resize:vertical; }
+  .sd-tpl:focus, .sd-ta:focus, .sd-area:focus { outline:none; border-color:var(--accent); }
+
+  .sd-row { display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:9px 0 6px; }
+  .sd-arg { width:150px; padding:5px 8px; font-size:12.5px; color:var(--text);
+            background:#fff; border:1px solid var(--line); border-radius:6px; }
+  .sd-preview { margin:8px 0 0; padding:10px 12px; max-height:220px; overflow:auto;
+                white-space:pre-wrap; word-break:break-all; font-size:12.5px; line-height:1.7;
+                font-family:ui-monospace,Consolas,monospace; color:var(--text);
+                background:#fff; border:1px solid var(--line); border-radius:7px; }
+
+  /* 预览出来的 JSON（模板变量 vars / 接口原始数据 data） */
+  .sd-json { margin:12px 0 0; }
+  .sd-jlabel { margin:0 0 4px; font-size:12px; color:var(--muted); }
+  .sd-pre { margin:0 0 10px; padding:10px 12px; max-height:240px; overflow:auto;
+            white-space:pre-wrap; word-break:break-all; font-size:12.5px; line-height:1.7;
+            font-family:ui-monospace,Consolas,monospace; color:var(--text);
+            background:#fff; border:1px solid var(--line); border-radius:7px; }
+
+  .sd-vars { margin:0 0 8px; padding-left:18px; font-size:12px; line-height:1.8; }
+  .sd-vars code { padding:1px 5px; border-radius:4px; background:#eef0f3; color:var(--text); }
+
+  .sd-hint { margin:6px 0 0; font-size:12px; line-height:1.7; color:var(--muted); }
+  .sd-hint b { color:var(--text); }
+  .sd-hint code { padding:1px 5px; border-radius:4px; background:#eef0f3; color:var(--text); }
+  .sd-thin { font-size:12px; font-weight:400; color:var(--muted); }
+  .sd-warn { margin:8px 0 0; padding:7px 10px; font-size:12px; color:#8a4b00;
+             background:#fff7e8; border:1px solid #f0d9ae; border-radius:7px; }
+
+  .sd-foot { display:flex; align-items:center; justify-content:flex-end; gap:10px;
+             padding:12px 16px; border-top:1px solid var(--line); }
+  .sd-foot .sd-thin { margin-right:auto; }
+
+  @media (max-width: 700px) {
+    .sd-mask { padding:16px 10px; }
+    .sd-arg { width:100%; }
+  }

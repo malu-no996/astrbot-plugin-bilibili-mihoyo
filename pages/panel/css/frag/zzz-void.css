@@ -1,0 +1,36 @@
+/* 绝区零 · 临界推演（plugins/_vendor/miyoushe/web/frag/zzz-void.css）
+   逻辑 frag/zzz-void.js（window.MysVoid），模板 frag/zzz-void.html。前缀 vt-*。 */
+
+  .vt-wrap { margin-top:12px; display:flex; flex-direction:column; gap:10px; }
+  .vt-card { padding:12px 14px; border-radius:12px; background:var(--card); border:1px solid var(--line); }
+  .vt-card-t { font-size:12px; font-weight:700; color:#39424f; margin-bottom:9px; }
+
+  .vt-head { display:flex; align-items:center; gap:14px; }
+  .vt-score { font-variant-numeric:tabular-nums; }
+  .vt-score-n { font-size:30px; font-weight:800; color:#2b3542; }
+  .vt-score-x { font-size:14px; color:var(--muted); }
+  .vt-head-r { margin-left:auto; text-align:right; }
+  .vt-rank { display:inline-block; padding:3px 11px; border-radius:999px; font-size:13px; font-weight:700;
+             color:#8a4bbf; background:linear-gradient(180deg,#f0defa,#d9b8ec); }
+  .vt-head-s { margin-top:4px; font-size:12px; color:var(--muted); }
+
+  .vt-boss { background:#fbf4ff; border-color:#e7d2f3; }
+  .vt-boss-h { display:flex; align-items:center; gap:8px; }
+  .vt-tag { padding:1px 9px; border-radius:999px; font-size:10.5px; font-weight:700; }
+  .vt-tag.boss { background:#e9c6f5; color:#7a2fb0; }
+  .vt-boss-n { font-size:14px; font-weight:700; color:#2b3542; }
+  .vt-boss-s { margin-top:6px; font-size:13px; color:#4a3a55; font-variant-numeric:tabular-nums; }
+
+  .vt-item + .vt-item { margin-top:11px; padding-top:11px; border-top:1px dashed var(--line); }
+  .vt-item-h { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .vt-item-n { font-weight:600; color:#2b3542; }
+  .vt-item-s { font-variant-numeric:tabular-nums; color:#4a5361; }
+  .vt-item-r { margin-left:auto; font-size:11.5px; color:var(--muted); }
+  .vt-item-f { margin-top:6px; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .vt-meta { font-size:11.5px; color:var(--muted); font-variant-numeric:tabular-nums; }
+  .vt-avs { display:flex; align-items:center; gap:4px; }
+  .vt-ava { width:30px; height:30px; border-radius:8px; object-fit:cover; background:#f0f2f5;
+            border:1px solid rgba(0,0,0,.06); }
+  .vt-ava.s { box-shadow:0 0 0 1.5px #d9b25a inset; }
+  .vt-ava.a { box-shadow:0 0 0 1.5px #9b7bd0 inset; }
+  .vt-buddy { display:inline-flex; }

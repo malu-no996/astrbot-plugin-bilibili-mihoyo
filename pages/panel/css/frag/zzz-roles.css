@@ -1,0 +1,47 @@
+/* 绝区零 · 角色查询（plugins/_vendor/miyoushe/web/frag/zzz-roles.css）
+   逻辑 frag/zzz-roles.js（window.MysRoles），模板 frag/zzz-roles.html。前缀 rl-*。 */
+
+  .rl-src { font-size:12px; padding:2px 10px; border-radius:999px; background:#eef2ff; color:var(--accent); }
+  .rl-src.enka { background:#fff1e6; color:#b26a00; }
+  .rl-note { font-size:12px; color:var(--muted); margin:8px 0 12px; line-height:1.7; }
+
+  .rl-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(128px, 1fr)); gap:12px; margin-top:12px; }
+  .rl-card { background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden;
+             display:flex; flex-direction:column; transition:box-shadow .15s, transform .15s; }
+  .rl-card:hover { box-shadow:0 4px 14px rgba(0,0,0,.08); transform:translateY(-1px); }
+  /* 卡片整块可点（点开角色详情）：光标 + 悬停描边，提示这里能点 */
+  .rl-card.rl-click { cursor:pointer; }
+  .rl-card.rl-click:hover { border-color:var(--accent); }
+  .rl-card.s { border-color:#e2c97a; }
+  .rl-card.a { border-color:#c3ace4; }
+
+  .rl-pic { position:relative; aspect-ratio:1 / 1; background:linear-gradient(160deg,#3a2f48,#241c2e); }
+  .rl-pic img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .rl-ph { position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+           font-size:34px; color:#6d5c80; }
+  .rl-rank { position:absolute; right:6px; top:6px; width:20px; height:20px; border-radius:50%;
+             font-size:12px; font-weight:700; font-style:normal; line-height:20px; text-align:center;
+             color:#241703; background:linear-gradient(180deg,#ffe08a,#d9a63a);
+             box-shadow:0 1px 3px rgba(0,0,0,.35); }
+  /* 稀有度专用图标（官方圆形徽章 Rarity_S/A/B/C.png）：卡片左下角小角标。
+     ⚠️ 同样的坑：要用 `.rl-pic img.rl-raric`，否则被 `.rl-pic img` 的
+     width/height:100% 拉满整张卡。
+     ⚠️ 尺寸：与详情浮层同一套素材、同一套「实际圆形只占画布 80%」的账（见
+     zzz-avatar.css 的注释）。这里与详情浮层**取同一个值 28px**（实际显示 ≈22.4px），
+     比卡片右上角 20px 的影画数徽标（.rl-rank）略大一点，视觉上正好压得住卡面。 */
+  .rl-pic img.rl-raric { position:absolute; inset:auto; left:6px; bottom:6px;
+                         width:28px; height:28px; object-fit:contain;
+                         filter:drop-shadow(0 1px 2px rgba(0,0,0,.5)); }
+  /* 文字小标签：仅在「没有对应图标素材」或图标加载失败时兜底显示 */
+  .rl-star { position:absolute; left:6px; bottom:6px; font-size:11px; font-weight:700;
+             padding:1px 8px; border-radius:999px; color:#241703; }
+  .rl-star.s { background:linear-gradient(180deg,#ffe08a,#d9a63a); }
+  .rl-star.a { background:linear-gradient(180deg,#dccbf7,#a884d8); color:#1d1030; }
+
+  .rl-info { padding:8px 10px 10px; }
+  .rl-name { font-weight:700; font-size:13px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .rl-meta { display:flex; align-items:center; gap:6px; margin-top:5px; flex-wrap:wrap; }
+  .rl-lv { font-size:11px; color:var(--muted); }
+  .rl-chip { font-size:11px; padding:1px 7px; border-radius:999px; background:#f0f2f5; color:#4a5361; }
+  .rl-camp { margin-top:5px; font-size:11px; color:var(--muted);
+             white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }

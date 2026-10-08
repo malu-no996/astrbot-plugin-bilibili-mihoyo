@@ -1,0 +1,351 @@
+/* 绝区零 · 角色详情浮层（plugins/_vendor/miyoushe/web/frag/zzz-avatar.css）
+   模板 frag/zzz-avatar.html，逻辑 frag/zzz-avatar.js。前缀 av-*。
+   整卡照游戏内角色详情做的深色风：最上面一栏是玩家名字 + UID，接着顶部立绘卡
+   （左上角竖排 稀有度/属性/职业、右上角影画数、名字等级左对齐）+ 属性两列
+   + 技能/驱动盘图标条；下面一整块「驱动盘区域」（音擎嵌在它左上角，右边是有效副属性命中
+   与评分），最下面是 3 列六张盘。配色取官方暗面：底 #16181d（整卡底；左上角「音擎」
+   那块也用它 —— 音擎是**最深**的小卡，见 .av-wrow）、驱动盘区底 #23262c（＝**浅色区**，
+   有效副属性 + 评分 + 六张盘都坐它上面）、六张盘卡 #23262c（与区域底同色；
+   其中**只有头部那一条**跟背景同色，主词条/副词条另垫深色面板 #1b1e24，
+   整张卡再 1px 黑描边，见 .av-disc）、
+   高亮橙 #ff9f2e、命中绿 #7ec36f。（影画区块已移除） */
+
+  .av-modal { position:fixed; inset:0; z-index:60; background:rgba(10,10,14,.66);
+              display:flex; align-items:flex-start; justify-content:center; padding:32px 16px;
+              overflow:auto; }
+  .av-box { position:relative; width:100%; max-width:660px; background:#16181d;
+            border-radius:16px; padding:16px; box-shadow:0 18px 50px rgba(0,0,0,.5);
+            color:#e8e6e1; font-size:13px; }
+  .av-x { position:absolute; right:10px; top:10px; width:28px; height:28px; border:none;
+          border-radius:50%; background:rgba(255,255,255,.08); color:#cfd3da; font-size:18px;
+          line-height:1; cursor:pointer; z-index:2; }
+  .av-x:hover { background:rgba(255,255,255,.16); }
+
+  .av-tip { font-size:13px; color:#9aa0a8; line-height:1.7; }
+  .av-err { color:#ff8a80; font-size:13px; line-height:1.75; padding:8px; }
+  .av-err .av-tip { color:#9aa0a8; margin-top:8px; }
+  .av-empty { font-size:12px; color:#6f757e; margin:10px 2px; }
+
+  /* ---- 查看原始 JSON（浮层最底部的折叠区）----
+     默认只露一个按钮，点了才展开一段等宽 JSON。单独用最深的底 #12141a，
+     跟上面的驱动盘区（#23262c）明显分开，免得看着糊成一片。 */
+  .av-jsonwrap { margin-top:12px; }
+  .av-jsonbtn { border:1px solid rgba(255,255,255,.14); background:rgba(255,255,255,.06);
+                color:#cfd3da; font-size:12px; border-radius:8px; padding:5px 12px;
+                cursor:pointer; }
+  .av-jsonbtn:hover { background:rgba(255,255,255,.13); }
+  .av-json { max-height:320px; overflow:auto; margin:8px 0 0; padding:10px;
+             font-size:12px; line-height:1.55; color:#c9d1d9; background:#12141a;
+             border:1px solid rgba(255,255,255,.08); border-radius:8px;
+             white-space:pre-wrap; word-break:break-all; }
+  .av-note { font-size:12px; color:#ffcf7d; background:rgba(255,159,46,.1);
+             border:1px solid rgba(255,159,46,.35); border-radius:8px;
+             padding:6px 10px; margin:0 0 12px; line-height:1.7; }
+
+  /* ---- ⓪ 顶栏：玩家名字 + UID（照官方角色详情页最上面那一栏）----
+     名字一行、UID 一行，整体左对齐；右侧留出关闭按钮（.av-x，28px + 10px 边距）的位置。 */
+  .av-head { display:flex; flex-direction:column; align-items:flex-start;
+             margin:0 0 10px; padding-right:40px; }
+  .av-head-name { font-size:19px; font-weight:800; color:#f4f2ee; line-height:1.3; }
+  .av-head-uid { font-size:11px; color:#8b91a0; line-height:16px; margin-top:1px; }
+
+  /* ---- ① 顶部：左立绘卡 + 右属性 ---- */
+  .av-top { display:flex; gap:10px; align-items:stretch; }
+  .av-agent { position:relative; flex:0 0 168px; background:#23262c; border-radius:12px;
+              padding:10px; display:flex; flex-direction:column; align-items:flex-start; }
+  .av-agent-tab { align-self:flex-start; font-size:9px; letter-spacing:.12em; color:#6f757e;
+                  background:#2c3037; border-radius:4px 4px 4px 0; padding:1px 7px;
+                  margin-bottom:8px; font-weight:700; }
+  /* 头像框尺寸 = 官方方头像素材的真实宽高比（role_square_avatar_*.png = 152×186）。
+     宽 148 → 高 148×186/152 = 181px。别改回正方形（方框会把 152×186 的图裁掉一截/压扁）。 */
+  .av-pic { position:relative; width:148px; height:181px; border-radius:6px; overflow:hidden;
+            background:#1a1c21; border:2px solid #3a3f48; }
+  .av-pic.s { border-color:#d9a63a; }
+  .av-pic.a { border-color:#a884d8; }
+  /* 头像图：cover —— 铺满整个头像框、永不拉伸变形。
+     上游给的是方形头像（role_square_url）时，方图进方框正好完整显示、也不会裁到东西。 */
+  .av-pic img { position:absolute; inset:0; width:100%; height:100%;
+                object-fit:cover; object-position:center top; display:block; }
+  .av-ph { position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+           font-size:44px; color:#5a5f68; }
+  /* 左上角竖排三件套：稀有度 → 属性 → 职业（照游戏内 AGENT INFO 卡的样子，
+     三个徽标贴着头像框左上角竖着一列；属性/职业不再单独占名字下面那一行）。
+     ⚠️ 尺寸/位置必须用 `.av-pic .av-tags img`（(0,2,1)）覆盖——上面 `.av-pic img`
+     的 position:absolute + inset:0 + width/height:100% 会把列里的图标拉满整个头像框。
+     位置 left/top:2px 已经是「贴着画框」的极限 —— .av-pic 外面还有 2px 边框 +
+     border-radius:10px，再往里就要被圆角切了；align-items:flex-start 让下面的圆牌
+     贴住列的左边缘（默认 center 会因为上面那个 28px 的徽章盒子把它们往右推 ~1px）。 */
+  .av-tags { position:absolute; left:2px; top:2px; z-index:1; display:flex;
+             flex-direction:column; align-items:flex-start; gap:3px; }
+  .av-pic .av-tags img { position:static; inset:auto; width:22px; height:22px;
+                         object-fit:contain; display:block;
+                         filter:drop-shadow(0 1px 2px rgba(0,0,0,.6)); }
+  /* 稀有度徽章（2026-10-05 改）：S / A / B 用官方 `{S,A,B}RANK.png` **方徽章**
+     （带「S RANK」字样，与绝境群排行出图同一套素材），不再用 Rarity_*.png 圆形徽章。
+     ⚠️ 尺寸口径 = **和原来那枚圆形稀有度标一样大**（24.5px），**不是** 右上角影画块的
+     18px（那个口径只属于绝境群排行的队伍头像）。用户明确：这一列是**中心轴对齐**的，
+     且 A/S 这张图**本来就比属性/职业图标大**。
+     素材画布 128×128、图形占 (9,7,119,121)（横 85.94% / 纵 89.06%，左右各留 9、上下各留 7，
+     即**图形在画布里是居中的**）→ 盒子 28px → 可见 ≈24.06×24.94px。
+     · `margin-left:-2px`：让盒子的**中心**落在 24px 圆牌的轴心上（(28−24)/2 = 2），
+       不这样调的话 align-items:flex-start 会把 28px 盒子的左边缘贴到列左，
+       可见方块就比下面两个圆偏左 2px（就是「歪了」）。
+     · `margin-top/bottom:-2px`：抵掉上下那 1.5px 透明边，并让后面的圆牌跟上来的
+       间距和原来（gap:3px）看起来一致。
+     ⚠️ 驱动盘卡片上的稀有度**不走这条规则**（见下面 .av-drar，仍是 Rarity_*.png
+     圆形徽章）—— 驱动的 S/A 用户明确要求保持不变。 */
+  .av-pic .av-tags img.av-raric { width:28px; height:28px;
+                                  margin:-2px 0 -2px -2px; }
+  /* 属性 / 职业：游戏里这两张是「黑底圆形牌」（素材本身是透明底的彩/白镂空图形），照做。
+     圆牌 24px 是用户按视觉定的（稀有度方徽章换图后另算，不再和它对齐）。
+     两张素材的画布留白不一样（元素图 40×40 里图形约占 90%；职业图 100×100 只占 ~77%），
+     所以 padding 要分开给，才能让两边的**图形**看着一样大（都 ≈17px）：
+       · 元素：24 − 2(边框) − 2×2(内边距) = 18px 内容区 × 0.90 ≈ 16.2px
+       · 职业：不填内边距 → 内容区 22px × 0.77 ≈ 16.9px → 与元素基本齐平 */
+  .av-pic .av-tags img.av-mi { width:24px; height:24px; box-sizing:border-box;
+                               border-radius:50%; background:#15171d;
+                               border:1px solid rgba(255,255,255,.2); padding:2px; }
+  .av-pic .av-tags img.av-mi.av-mi-pr { padding:0; }
+  /* 文字小标签：仅在「没有对应图标素材」或图标加载失败时兜底显示 */
+  .av-tags .av-rar { position:static; font-size:11px; font-weight:800;
+            padding:0 7px; line-height:18px; border-radius:5px; color:#241703; }
+  .av-rar.s { background:linear-gradient(180deg,#ffe08a,#d9a63a); }
+  .av-rar.a { background:linear-gradient(180deg,#dccbf7,#a884d8); color:#1d1030; }
+  /* 影画数（几命）徽标：头像框右上角，黑色半透底 + 不透明白字。
+     边长 = 左上角 S/A 方徽章（可见 ~24.5px，见 .av-raric），用户 2026-10-05 要求
+     「影画标 需要改成和 A/S 等级图标一样大小」（原来 18px 太小）。圆角 4px
+     （原来 5px 太圆，与 QQ 端 panel.py::RK_RADIUS 取同一个值）。
+     ⚠️ right/top 给 2px 是「贴着画框」的极限（与左上角 .av-tags 对称）：.av-pic
+     外面就是 2px 边框，再往外就压到边框上了。 */
+  .av-rk { position:absolute; right:2px; top:2px; min-width:24.5px; height:24.5px; line-height:24.5px;
+           text-align:center; padding:0 4px; font-size:15px; font-weight:800; color:#fff;
+           background:rgba(0,0,0,.55); border-radius:4px;
+           text-shadow:0 1px 2px rgba(0,0,0,.6); }
+  /* 名字 / 等级：照游戏里那样**左对齐**（原先是居中），和上面的 AGENT INFO 标签对齐。
+     ⚠️ .av-agent 的 align-items 从 center 改成 flex-start 只影响名字/等级（它们是内容宽度），
+     头像框 .av-pic 宽 148 = 卡片内容宽（168 − 10×2），本来就是满宽，不会跟着动。 */
+  .av-agent-name { margin-top:10px; font-size:17px; font-weight:800; text-align:left; }
+  .av-agent-lv { margin-top:6px; font-size:12px; font-weight:700; color:#dfe3ea;
+                 background:#2c3037; border-radius:6px; padding:1px 10px; }
+  /* 阵营 LOGO（官方 group_icon_path）：贴在立绘卡**右下角**。
+     ⚠️ 绝对定位是刻意的 —— 它不进 .av-agent 的 flex 流，因此不占空间、不会把
+     名字 / 等级挤走（要求就是「不影响布局」）。
+     素材是 180×64 的横版条：只定**高度**（53px，用户定），宽度按素材比例自适应
+     （≈149px），max-width 兜住不让它伸出卡片；object-fit:contain 防拉伸。
+     透明度压到 .75，别抢名字；hover 有 title 显示阵营名（所以不设 pointer-events:none）。 */
+  .av-camp { position:absolute; right:10px; bottom:10px; height:53px; width:auto;
+             max-width:100%; object-fit:contain; opacity:.75; }
+  /* 属性 / 职业图标的基础尺寸（22px＝满幅素材的原生尺寸）；放在头像框左上角竖列里时
+     由上面的 `.av-pic .av-tags img.av-mi` 接管成 24px 圆牌。素材缺失时才退回文字小标签。 */
+  .av-mi { width:22px; height:22px; object-fit:contain; display:block; }
+  /* 属性/职业没有图标素材时的文字兜底：半透明黑片，贴在头像上有对比度 */
+  .av-tags .av-mt { font-size:10px; color:#e8e6e1; background:rgba(0,0,0,.55);
+                    border-radius:4px; padding:1px 6px; line-height:16px; }
+  /* 右列（面板 + 技能栏）：整列按 ~0.88 等比缩了一档 —— 目的不是"变小好看"，
+     而是让这一列的自然高度 ≤ 左边立绘卡的高度，这样整行的高度由立绘卡决定，
+     立绘卡下方就不会再拖出一截空白（等级下面那截）。
+     ⚠️ 行高必须写死 px（line-height 用"normal"会随字体族浮动，算不准整列高度）。
+     行高账：一行固定 24px（= max(名称 15 / 数值 17 / 加成两行 21) 都装得下），
+     6 行 = 144 + 行间距 2×5 = 154 + 面板内边距 12 ≈ 166px；
+     技能栏 12 + 300×0.118 ≈ 47px；两栏间距 8 → 合计 ≈ 221px，
+     略矮于立绘卡(≈228px)，多出来的高度由面板 (flex:1 + align-content:center) 吃掉，
+     两边底边仍然齐平。 */
+  .av-right { flex:1; min-width:0; display:flex; flex-direction:column; gap:8px; }
+  /* 属性面板：照游戏里的样子 —— **每一行是一整条横贯面板的底纹**，奇数行比面板底色深一档、
+     偶数行不着色（保持面板色），行高一致、行内文字垂直居中。
+     ⚠️ 左右两列要「拼成一整条」，所以列间距必须取 0 —— 若用 grid 的 column-gap，
+     两格背景之间会露出面板底色、横条断成两截。改成让每个格子自带左右内边距（8px×2
+     = 两列之间 16px 的视觉空隙，与原 column-gap 观感一致），圆角只给整条的左右两端
+     （奇数格左圆角 / 偶数格右圆角），中间不会出现缝。 */
+  /* 行高填满面板（面板 ≈209px 时每行 ≈31px）：1fr + stretch 让 6 行平分高度，
+     天然不会超出面板 —— 字号再大也不会把面板撑高。 */
+  .av-stats { flex:1; background:#23262c; border-radius:12px; padding:6px 8px;
+              display:grid; grid-template-columns:1fr 1fr; gap:2px 0;
+              grid-auto-rows:1fr; align-content:stretch; }
+  .av-stat { display:flex; align-items:center; justify-content:space-between; gap:7px;
+             min-height:31px; padding:0 10px; }
+  .av-stat:nth-child(odd) { border-radius:6px 0 0 6px; }
+  .av-stat:nth-child(even) { border-radius:0 6px 6px 0; }
+  /* 奇数行：比面板底色(#23262c) 更暗一档；偶数行不设背景 → 全部是面板原色，整齐一致。
+     ⚠️ 行号要按「每 2 个格子一行」算：DOM 顺序是 左1 右1 左2 右2…，
+     所以 4n+1 / 4n+2 才是同一行，用 :nth-child(odd) 会变成左右交错。 */
+  .av-stat:nth-child(4n+1), .av-stat:nth-child(4n+2) { background:rgba(0,0,0,.26); }
+  /* 字号 = 原值 ×~1.3（原 11.5/13 → 15/16），配合上面 ≈31px 的行高：
+     连「生命值/攻击力/防御力」那三行带两行绿色小字的，也正好装得下、不溢出。 */
+  .av-sk { display:flex; align-items:center; gap:6px; font-size:14px; line-height:18px;
+           color:#b9bec7; white-space:nowrap; }
+  .av-sk-ic { width:16px; height:16px; object-fit:contain; flex:0 0 auto; opacity:.95; }
+  .av-sv { display:flex; align-items:baseline; gap:6px; }
+  .av-sv em { font-style:normal; font-size:10.5px; color:#7ec36f; line-height:12px;
+              text-align:right; }
+  .av-sv em i { display:block; font-style:normal; }
+  .av-sv b { font-size:15px; line-height:19px; font-weight:700; color:#f4f2ee; }
+  .av-noprop { flex:1; display:flex; align-items:center; justify-content:center;
+               color:#6f757e; font-size:12px; background:#23262c; border-radius:12px; }
+
+  /* 技能条：整张 skill_bar.png 铺开（图里自带圆形黑底），等级数字用百分比
+     绝对定位叠到对应圆上（位置由 avSkillNumStyle() 算）。
+     配色抄 ZZZeroUID：11+ 黄 / 6+ 蓝 / 3+ 白 / 其余灰。 */
+  /* 技能条同样缩一档：原图 350 宽 → 300，圆上数字字号 15 → 14（等比 0.857）。
+     ⚠️ 数字是绝对定位 + 百分比（avSkillNumStyle 算的 left/top），百分比的参照物是
+     「最近的定位祖先」的 padding box —— 所以必须有一层尺寸＝图片尺寸的 .av-sbar-wrap，
+     数字挂它下面。以前直接挂 .av-skillbar：图片被 max-width 夹窄居中、数字却按整卡
+     宽度算 %，越靠右偏得越多。 */
+  /* ⚠️ 高度硬上限 71px（用户 2026-10-05 给）：skill_bar.png 是 350×70，
+     放大多少高度就按 ×0.2 涨，所以「能放多大」= 71 − 上下内边距。
+     现在 padding 上下各 3px（共 6）→ 图最高 65px → 宽 65×5 = **326px**（原 300，放大约 1.09 倍）。
+     再想大就得继续压 padding，改这里记得两边一起算。 */
+  .av-skillbar { background:#23262c; border-radius:12px; padding:3px 9px; }
+  /* ⚠️ margin 不给 auto：技能条要**左对齐**（和上面属性面板的左内边距对齐），
+     居中时它和面板左边缘差着一截，看着像没对齐。 */
+  .av-sbar-wrap { position:relative; width:100%; max-width:326px; margin:0; }
+  .av-sbar-img { display:block; width:100%; }
+  /* 数字随图等比放大：原 300px 宽时 14px → 326px 宽时 14×326/300 ≈ 15px。 */
+  .av-sbar-num { position:absolute; transform:translate(-50%, -50%); font-size:15px;
+                 font-weight:800; color:#e8e6e1; text-shadow:0 1px 2px rgba(0,0,0,.5); }
+  .av-sbar-num.gold { color:#f0b13e; }
+  .av-sbar-num.blue { color:#6fa8ff; }
+  .av-sbar-num.dim { color:#6f757e; }
+  /* 没有技能数据时退回「驱动盘图标条」（Enka 源偶尔缺技能） */
+  .av-strip { background:#23262c; border-radius:12px; padding:8px 10px;
+              display:flex; justify-content:space-around; }
+  .av-st { position:relative; width:40px; text-align:center; }
+  .av-st img { width:36px; height:36px; border-radius:50%; background:#1a1c21;
+               border:2px solid #3a3f48; object-fit:cover; display:block; margin:0 auto; }
+
+  /* ---- ②③ 驱动盘区域：音擎嵌在左上角，右边是驱动盘信息，下面是六张盘 ----
+     照官方原图：音擎只占左边一块，「有效副属性命中」和下面六张盘全归驱动盘。
+     整块套一层 .av-dwrap（底色 #23262c ＝ **浅色区**，和属性面板/盘卡同色）：
+     「有效副属性命中」「评分」和六张盘都坐在这层浅底上；左上角的音擎是更深的
+     #16181d 小卡；六张盘卡的**头部那条**和这层底同色（直接融进区域底），
+     下面主词条/副词条垫一块更深的 #1b1e24 面板，整张卡再用 1px 黑描边勾出来。 */
+  .av-dwrap { margin-top:10px; background:#23262c; border-radius:12px; padding:12px;
+              border:1px solid rgba(255,255,255,.05); }
+  .av-dtop { display:flex; align-items:center; gap:16px; }
+
+  /* 左上角那一块音擎：**自己带一块深色底**（取整卡背景色 #16181d，即"背景"那个深色），
+     压在浅色的驱动盘区（父级 #23262c）上。
+     ⚠️ 别再设成透明（继承父级）—— 之前就是那样，父级一改成浅色，音擎也跟着变浅，
+     和参考图正好相反。参考图里：音擎是**最深**的一小块（#222），
+     驱动盘区（含下面六张盘所在的底）才是**浅色**（#2a2a2a）。
+     所以音擎必须用不透明的深色底，和驱动盘区拉开一档。 */
+  .av-wrow { flex:0 0 auto; max-width:290px; display:flex; align-items:center; gap:10px;
+             background:#16181d; border-radius:10px; padding:6px 12px 6px 6px; }
+  /* 音擎图标边框按音擎自己的稀有度：S 金 / A 紫 / B 浅蓝。
+     position:relative 是给图标下沿那排进阶星（.av-wstar）当定位参照。 */
+  .av-wico { position:relative; flex:0 0 52px; width:52px; height:52px; border-radius:10px;
+             overflow:hidden; background:#1a1c21; border:2px solid #d9a63a; }
+  .av-wico.a { border-color:#a884d8; }
+  .av-wico.b { border-color:#7fb2e8; }
+  .av-wico img { width:100%; height:100%; object-fit:cover; }
+  .av-winfo { flex:1; min-width:0; }
+  .av-wname { font-size:15px; font-weight:800; color:#f4f2ee;
+              overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  /* 音擎「进阶」星：照游戏**压在图标下沿** —— 固定 5 格，前 N 颗实心白、其余暗。
+     （N = 进阶层数 star，不是稀有度；稀有度由上面 .av-wico 的边框色表示。）
+     金色在这张卡上已经是稀有度专用色，所以点亮用白星；未点亮的用半透明白，
+     底下垫一层很淡的黑渐变，保证白星在任何图标上都看得清。 */
+  .av-wstar { position:absolute; left:0; right:0; bottom:1px; display:flex;
+              justify-content:center; gap:0; line-height:1; pointer-events:none; }
+  .av-wstar::before { content:''; position:absolute; left:0; right:0; bottom:0; height:13px;
+                      background:linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,.62)); }
+  .av-wstar i { position:relative; z-index:1; font-style:normal; font-size:10px;
+                color:rgba(255,255,255,.34); text-shadow:0 1px 2px rgba(0,0,0,.9); }
+  .av-wstar i.on { color:#fff; }
+  .av-wlv { flex:0 0 auto; align-self:center; font-size:12px; font-weight:700; color:#dfe3ea;
+            background:#2c3037; border-radius:6px; padding:2px 10px; }
+
+  /* 中间：驱动盘有效副属性命中 —— 标题一行 + 词条标签一行（照原图两行排布）。
+     透明底，直接坐在驱动盘区的底上，不再自成一卡。 */
+  .av-plan { flex:1; min-width:0; display:flex; flex-direction:column;
+             align-items:flex-start; gap:6px; }
+  .av-plan-t { font-size:12.5px; color:#b9bec7; }
+  .av-plan-n { font-size:17px; font-weight:900; color:#ff9f2e; }
+  .av-plan-tags { display:flex; flex-wrap:wrap; gap:4px; }
+  .av-plan-tags i { font-style:normal; font-size:11px; color:#ffb25e;
+                    background:rgba(255,159,46,.12); border:1px solid rgba(255,159,46,.3);
+                    border-radius:4px; padding:1px 7px; }
+
+  /* 最右：驱动盘评分（S+ / S / SS 橙；A 紫；B/C 浅蓝；SSS / SSS+ 彩虹渐变）。
+     配色与角色/音擎/驱动盘的稀有度同一套（.av-rar.s/.a、.av-wico.a/.b）。 */
+  .av-wside { flex:0 0 auto; text-align:center; }
+  .av-rate { min-width:56px; font-size:24px; font-weight:900; font-style:italic;
+             color:#ff9f2e; text-shadow:0 0 14px rgba(255,159,46,.45); }
+  .av-rate.a { color:#a884d8; text-shadow:0 0 14px rgba(168,132,216,.45); }
+  .av-rate.b { color:#7fb2e8; text-shadow:0 0 14px rgba(127,178,232,.45); }
+  /* 最高档 SSS / SSS+：彩虹渐变字（background-clip:text 抠字 → 文字必须透明）。
+     ⚠️ 文字透明后 text-shadow 会整个糊在渐变上面，得换成 filter:drop-shadow。 */
+  .av-rate.rb { background-image:linear-gradient(90deg,#ff6ec7,#ffd166,#6ee7b7,#6fb1ff,#c084fc);
+                -webkit-background-clip:text; background-clip:text;
+                color:transparent; -webkit-text-fill-color:transparent;
+                text-shadow:none; filter:drop-shadow(0 0 8px rgba(255,255,255,.35)); }
+  .av-rate-lab { font-size:10px; color:#6f757e; margin-top:2px; }
+
+  /* ---- 六张驱动盘：3 列 ---- */
+  .av-dgrid { margin-top:12px; display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; }
+  /* ⚠️ 2026-10-05 用户定稿（分两层）：
+     ① 卡片整体底色 = 父级（驱动盘区 #23262c）；但**只有头部那一条**
+        （名字 / 稀有度 LV / 盘图标，.av-dhead）是"跟背景同色"的那部分，直接融进区域底；
+     ② 下半截（主词条 .av-dmain + 副词条 .av-dsubs）另垫一块**深色面板** #1b1e24；
+     ③ 整张卡再用 **1px 黑描边**（#000）勾出格子。
+     （上一版把整张卡压深成 #1b1e24，用户否掉：只有头部同色、下面要独立深色面板。） */
+  .av-disc { background:#23262c; border:1px solid #000;
+             border-radius:12px; padding:9px 11px; min-width:0; }
+  /* 头部那一条（名字 + 稀有度/LV + 盘图标）：**不垫自己的底**，直接露卡片底（＝父级同色），
+     所以它看着和驱动盘区融为一体；下面主词条/副词条才是深色面板。 */
+  .av-dhead { display:flex; justify-content:space-between; align-items:flex-start; gap:8px; }
+  .av-dtitle { min-width:0; }
+  .av-dname { font-size:13px; font-weight:800; color:#f4f2ee;
+              overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .av-dname em { font-style:normal; font-size:11px; color:#9aa0a8; font-weight:400; }
+  .av-dmeta { display:flex; align-items:center; gap:5px; margin-top:4px; }
+  /* 稀有度徽章：和代理人/音擎用同一套官方圆形素材（Rarity_*.png）。
+     ⚠️ 素材画布 80×80、实心圆只占中间 56×56（70%，四周各 12px 透明，见 getbbox），
+     所以 CSS 给 21px 实际才显示 ≈15px —— 正好和右边 LV15 文字块等高、视觉齐平；
+     上下再给 -3px 负边距把那圈透明留白（12/80×21 ≈ 3.1）抵掉，
+     否则徽章会把这一行从 15px 撑到 21px，整排对齐就乱了。 */
+  .av-drar { flex:0 0 auto; width:21px; height:21px; margin:-3px 0; object-fit:contain; }
+  /* 文字小标签：仅在「没有对应素材」或数据源不给 rarity（Enka 侧驱动盘恒为空）时兜底 */
+  .av-drar-t { font-size:10px; font-weight:800; color:#241703; background:#f0b13e;
+               border-radius:3px; padding:0 4px; line-height:15px; }
+  .av-dlv { font-size:10px; font-weight:700; color:#cfd3da; background:#2c3037;
+            border-radius:3px; padding:0 5px; line-height:15px; }
+  .av-dmiss { font-size:10px; color:#8b91a0; }
+  .av-dmiss.ok { color:#7ec36f; }
+  .av-dico { flex:0 0 44px; width:44px; height:44px; border-radius:50%;
+             background:radial-gradient(circle at 50% 40%, #343943, #1a1c21);
+             border:2px solid #3a3f48; object-fit:cover; }
+  /* 主词条 + 副词条：合起来是一块**深色面板** #1b1e24（比卡片/父级 #23262c 深一档）
+     —— 只有卡片头部那条跟背景同色，这一块不是。
+     两块共用一个圆角框：.av-dmain 圆上两角、.av-dsubs 圆下两角，中间不留缝。 */
+  .av-dmain { display:flex; justify-content:space-between; align-items:baseline; gap:8px;
+              margin-top:9px; padding:7px 8px; background:#1b1e24; border-radius:8px 8px 0 0;
+              border-bottom:1px solid rgba(255,255,255,.07); }
+  /* 没有副词条时（.av-dsubs 不渲染），主词条就是面板的最后一块 → 自己收口成整圆角 */
+  .av-dmain:last-child { border-radius:8px; border-bottom:none; }
+  .av-dmk { font-size:12px; color:#b9bec7; }
+  .av-dmain b { font-size:17px; font-weight:800; color:#f4f2ee; }
+  .av-dsubs { padding:3px 8px 6px; background:#1b1e24; border-radius:0 0 8px 8px;
+              display:flex; flex-direction:column; }
+  .av-dsub { display:flex; justify-content:space-between; align-items:center; gap:8px;
+             padding:3px 0; font-size:11px; color:#b9bec7; }
+  .av-dsub .n { display:flex; align-items:center; gap:5px; min-width:0; }
+  .av-dsub .n::before { content:""; width:5px; height:5px; border-radius:50%;
+                        background:#5a5f68; flex:0 0 5px; }
+  .av-dsub .n em { font-style:normal; font-size:9px; font-weight:800; color:#ffb25e;
+                   background:rgba(255,159,46,.14); border-radius:3px; padding:0 4px;
+                   line-height:14px; }
+  .av-dsub b { font-weight:700; color:#e8e6e1; }
+  /* 命中「有效词条」方案的：整行橙色点亮（+N 角标本来就是橙的，行内名字跟着变） */
+  .av-dsub.on { color:#ff9f2e; }
+  .av-dsub.on .n::before { background:#ff9f2e; }
+  .av-dsub.on b { color:#ffcf7d; }
+
+  @media (max-width: 620px) {
+    .av-dgrid { grid-template-columns:repeat(2, 1fr); }
+    .av-top { flex-direction:column; }
+    .av-agent { flex-direction:row; flex-wrap:wrap; justify-content:flex-start;
+                align-items:center; gap:10px; }
+  }
+
+  /* ---- ④ 影画区块已按要求移除（不显示） ---- */

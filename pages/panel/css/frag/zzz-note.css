@@ -1,0 +1,21 @@
+/* 绝区零 · 实时便笺（plugins/_vendor/miyoushe/web/frag/zzz-note.css）
+   逻辑 frag/zzz-note.js（window.MysNote），模板 frag/zzz-note.html。前缀 nt-*。 */
+
+  .nt-wrap { margin-top:12px; display:flex; flex-direction:column; gap:10px; }
+  .nt-card { padding:12px 14px; border-radius:12px; background:var(--card); border:1px solid var(--line); }
+  .nt-card.nt-sm { margin:0; }
+  .nt-card-t { font-size:12px; font-weight:700; color:#39424f; margin-bottom:7px; }
+  .nt-row { display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; }
+  .nt-num { font-size:22px; line-height:1.1; color:#2b3542; font-variant-numeric:tabular-nums; }
+  .nt-x { font-size:13px; font-weight:normal; color:var(--muted); }
+  .nt-sub { margin-left:auto; font-size:12px; color:var(--muted); font-variant-numeric:tabular-nums; }
+  .nt-sub.ok { color:#2f7a45; font-weight:600; }
+  .nt-track { margin-top:7px; height:7px; border-radius:999px; background:#eef1f4; overflow:hidden; }
+  .nt-track i { display:block; height:100%; border-radius:999px; background:linear-gradient(90deg,#8fd0f0,#4aa3d8); }
+
+  .nt-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:10px; }
+  .nt-chip { display:flex; align-items:center; gap:10px; padding:11px 14px; border-radius:12px;
+             background:#f7f8fa; border:1px solid var(--line); }
+  .nt-chip.on { background:#eafaf0; border-color:#bfe6cc; }
+  .nt-chip-l { font-size:12px; color:var(--muted); }
+  .nt-chip b { margin-left:auto; font-size:14px; color:#2b3542; }

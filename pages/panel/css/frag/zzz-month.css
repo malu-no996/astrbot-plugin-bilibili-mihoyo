@@ -1,0 +1,22 @@
+/* 绝区零 · 绳网月报（plugins/_vendor/miyoushe/web/frag/zzz-month.css）
+   逻辑 frag/zzz-month.js（window.MysMonth），模板 frag/zzz-month.html。前缀 mo-*。 */
+
+  .mo-wrap { margin-top:12px; display:flex; flex-direction:column; gap:10px; }
+  .mo-card { padding:12px 14px; border-radius:12px; background:var(--card); border:1px solid var(--line); }
+  .mo-card-t { font-size:12px; font-weight:700; color:#39424f; margin-bottom:9px; }
+
+  .mo-row { display:flex; align-items:baseline; gap:10px; padding:5px 0; border-top:1px dashed var(--line); }
+  .mo-row:first-of-type { border-top:none; }
+  .mo-row-n { color:#2b3542; font-size:13px; }
+  .mo-row-v { margin-left:auto; font-variant-numeric:tabular-nums; color:#4a5361; font-weight:600; }
+
+  .mo-bar + .mo-bar { margin-top:10px; }
+  .mo-bar-h { display:flex; align-items:baseline; gap:10px; font-size:12.5px; }
+  .mo-bar-n { color:#2b3542; }
+  .mo-bar-v { margin-left:auto; font-variant-numeric:tabular-nums; color:#4a5361; }
+  .mo-bar-v i { font-style:normal; color:var(--muted); }
+  .mo-track { margin-top:5px; height:8px; border-radius:999px; background:#eef1f4; overflow:hidden; }
+  .mo-track i { display:block; height:100%; border-radius:999px; background:linear-gradient(90deg,#f4c07a,#e09b3d); }
+
+  .sel { padding:6px 10px; border-radius:9px; border:1px solid var(--line); background:var(--card);
+         color:#2b3542; font-size:13px; }

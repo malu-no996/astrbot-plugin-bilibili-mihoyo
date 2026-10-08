@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# 运行期用户/凭证数据（securestore 加密的账号、绑定、设备指纹、社交命令配置）
+data/.auth_key
+data/miyoushe_accounts.json
+data/miyoushe_binds.json
+data/miyoushe_devices.json
+data/zzz/social.json
+data/zzz/*.csv
+data/zzz/records/
+data/zzz/lang/
+
+# 图鉴图标缓存（哈希名，可由 asset_cache 重新抓取；面板镜像随缓存重建）
+data/zzz/assets/
+data/zzz/img/
+pages/panel/assets/zzz/
+
+# 日志/临时
+*.log

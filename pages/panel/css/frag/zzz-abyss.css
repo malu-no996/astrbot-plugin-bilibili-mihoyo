@@ -1,0 +1,38 @@
+/* 绝区零 · 零号空洞（plugins/_vendor/miyoushe/web/frag/zzz-abyss.css）
+   逻辑 frag/zzz-abyss.js（window.MysAbyss），模板 frag/zzz-abyss.html。前缀 ab-*。 */
+
+  .ab-wrap { margin-top:12px; }
+
+  /* ---- 顶部两块大数字 ---- */
+  .ab-heroes { display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:10px; }
+  .ab-hero { display:flex; align-items:center; gap:11px; padding:12px 14px; border-radius:12px;
+             background:linear-gradient(150deg,#fdf7e8,#f6ead0); border:1px solid #ecdfc0; }
+  .ab-hero-ic { flex:0 0 44px; width:44px; height:44px; object-fit:contain; }
+  .ab-hero-b { min-width:0; }
+  .ab-hero-t { font-size:12px; color:#8a7a55; }
+  .ab-hero-v { margin-top:2px; line-height:1.1; }
+  .ab-hero-v b { font-size:24px; color:#8a6a1e; }
+  .ab-hero-v span { font-size:13px; color:#a3926c; }
+
+  /* ---- 进度条卡片 ---- */
+  .ab-card { margin-top:10px; padding:12px 14px; border-radius:12px; background:var(--card);
+             border:1px solid var(--line); }
+  .ab-card-t { font-size:12.5px; font-weight:700; color:#39424f; margin-bottom:9px; }
+
+  .ab-pb + .ab-pb { margin-top:11px; }
+  .ab-pb-h { display:flex; align-items:baseline; gap:10px; font-size:12.5px; }
+  .ab-pb-n { flex:1 1 auto; min-width:0; color:#39424f; }
+  .ab-pb-v { flex:0 0 auto; color:var(--muted); font-variant-numeric:tabular-nums; }
+  .ab-pb-v.full { color:#2f7a45; font-weight:600; }
+  .ab-track { margin-top:5px; height:7px; border-radius:999px; background:#eef1f4; overflow:hidden; }
+  .ab-track i { display:block; height:100%; border-radius:999px;
+                background:linear-gradient(90deg,#f0c760,#d9a63a); transition:width .25s; }
+
+  /* ---- 深层探索解锁 ---- */
+  .ab-stages { display:flex; gap:8px; flex-wrap:wrap; }
+  .ab-stage { display:inline-flex; align-items:center; gap:6px; padding:5px 13px; border-radius:999px;
+              font-size:12.5px; background:#f2f4f7; color:#8b95a3; border:1px solid var(--line); }
+  .ab-stage i { font-style:normal; font-weight:700; }
+  .ab-stage.on { background:#eef7ee; color:#2f7a45; border-color:#cbe3d1; }
+  .ab-note { margin:10px 0 0; font-size:12px; color:var(--muted); }
+  .ab-note b { color:var(--text); font-variant-numeric:tabular-nums; }

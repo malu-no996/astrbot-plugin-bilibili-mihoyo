@@ -1,0 +1,2408 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>米游社面板</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/frag/device.css">
+    <link rel="stylesheet" href="./css/frag/sidebar.css">
+    <link rel="stylesheet" href="./css/frag/social-api.css">
+    <link rel="stylesheet" href="./css/frag/social-bot.css">
+    <link rel="stylesheet" href="./css/frag/social-detail.css">
+    <link rel="stylesheet" href="./css/frag/social.css">
+    <link rel="stylesheet" href="./css/frag/zzz-abyss.css">
+    <link rel="stylesheet" href="./css/frag/zzz-autosign.css">
+    <link rel="stylesheet" href="./css/frag/zzz-avatar.css">
+    <link rel="stylesheet" href="./css/frag/zzz-codex.css">
+    <link rel="stylesheet" href="./css/frag/zzz-deadly.css">
+    <link rel="stylesheet" href="./css/frag/zzz-month.css">
+    <link rel="stylesheet" href="./css/frag/zzz-note.css">
+    <link rel="stylesheet" href="./css/frag/zzz-profile.css">
+    <link rel="stylesheet" href="./css/frag/zzz-roles.css">
+    <link rel="stylesheet" href="./css/frag/zzz-shiyu.css">
+    <link rel="stylesheet" href="./css/frag/zzz-sign.css">
+    <link rel="stylesheet" href="./css/frag/zzz-void.css">
+    <link rel="stylesheet" href="./css/frag/zzz-zenkov.css">
+</head>
+<body>
+    <div id="app">
+<!-- 米游社模块页面（plugins/_vendor/miyoushe/web/partial.html）
+     结构：模块开关 → 左侧「米游社账号」侧边栏（frag/sidebar.*） → 右侧主内容区（绝区零）。
+     片段由服务端（config_web/assembly.py）按 FRAG 引用注记就地拼装进来
+     （注意：本文件注释里不能出现那个引用标记本身，否则会被当成引用递归展开）。 -->
+    <div class="card">
+      <!-- 模块启用开关已移到右侧主区「绝区零」标题行里（见 frag/zzz.html 的 .mys-mod-switch）：
+           它排在「当前查询：xx」后面。这里保留禁用提示 + 一个兜底按钮，
+           这样即便没登录账号（主区不渲染绝区零那一行）也能把模块重新启用回来。 -->
+
+      <div class="mys-layout">
+        <!-- 左侧：米游社账号（独立片段 frag/sidebar.html + sidebar.js + sidebar.css） -->
+        <!-- 米游社账号侧边栏（plugins/_vendor/miyoushe/web/frag/sidebar.html）
+     账号列表 / 扫码登录 / 删除账号，以及每个账号下的绝区零角色二级菜单。
+     逻辑在 sidebar.js，样式在 sidebar.css。
+     由 partial.html 的 FRAG 引用注释就地拼装（注意：本文件注释里不能出现那个引用标记本身）。 -->
+<aside class="mys-side">
+  <div class="mys-side-title">
+    <span>米游社账号</span>
+    <span class="muted" v-if="mys.accounts.length">{{ mys.accounts.length }} 个</span>
+  </div>
+
+  <div class="mys-side-actions">
+    <button class="ghost sm" @click="mysRefresh(true)" :disabled="mys.state.loading">
+      {{ mys.state.loading ? '刷新中…' : '刷新' }}
+    </button>
+    <button class="sm" @click="mysLoginStart()" :disabled="mys.login.busy">
+      {{ mys.login.busy ? '获取中…' : '扫码添加' }}
+    </button>
+    <button class="red sm" v-if="mys.accounts.length" @click="mysAskClear()">清空</button>
+  </div>
+  <span class="muted" v-if="!mys.state.qr_ready">未安装二维码依赖：pip install segno</span>
+  <p v-if="mys.state.error" class="muted" style="color:var(--err);margin:6px 0 0">{{ mys.state.error }}</p>
+
+  <!-- 扫码登录区 -->
+  <div v-if="mys.login.show" class="mys-login">
+    <img v-if="mys.login.png" :src="mys.login.png" width="150" height="150" alt="登录二维码"
+         style="border:1px solid var(--line);border-radius:8px;background:#fff;display:block;margin:0 auto">
+    <div class="muted" style="margin-top:8px">{{ mys.login.tip || '请用米游社 App 扫码' }}</div>
+    <div class="muted" style="margin-top:4px">显示不出来？<a :href="mys.login.url" target="_blank">浏览器打开登录链接</a></div>
+    <button class="ghost sm" style="margin-top:8px" @click="mysLoginCancel()">取消</button>
+  </div>
+
+  <!-- 账号列表（垂直，点选切换当前账号；每个账号下面挂它的绝区零角色二级菜单） -->
+  <div class="mys-acc-list" v-if="mys.accounts.length">
+    <div v-for="a in mys.accounts" :key="a.account_id" class="mys-acc-block"
+         :class="{active: mys.current === a.account_id}">
+      <div class="mys-acc" :class="{active: mys.current === a.account_id}"
+           @click="mysSelect(a.account_id)">
+        <!-- 头像：底层是昵称首字占位，真实头像盖在上面 ——
+             「没存头像 / 图挂了 / 还没加载完」都能看到东西，不会留一个空白圆圈。
+             图挂了只把 img 藏起来，占位自然露出来。 -->
+        <span class="mys-acc-avatar" aria-hidden="true">
+          <span class="mys-acc-initial">{{ (a.nickname || a.account_id || '?').slice(0, 1).toUpperCase() }}</span>
+          <img v-if="a.face" class="mys-acc-face" :src="a.face" alt=""
+               @error="$event.target.style.display='none'">
+        </span>
+        <!-- 右侧一整列（头像单独占一列）：① 名字 + 删除 ② 状态 · UID。
+             宽度不再是「一行三列的中间那点」，状态行不会被挤断，删除也不会竖排成「删/除」。 -->
+        <span class="mys-acc-body">
+          <span class="mys-acc-row">
+            <b class="mys-acc-name" :title="a.nickname || ('账号 ' + a.account_id)">{{ a.nickname || ('账号 ' + a.account_id) }}</b>
+            <button class="ghost sm mys-acc-del" @click.stop="mysAskDel(a.account_id)">删除</button>
+          </span>
+          <span class="mys-acc-meta">
+            <span class="mys-acc-state">
+              <span :class="a.logged ? 'dot dot-on' : (a.incomplete ? 'dot dot-warn' : 'dot dot-off')"></span>
+              <span v-if="a.logged" class="mys-acc-state-t">已登录</span>
+              <span v-else-if="a.incomplete" class="mys-acc-state-t bad" title="只有 stoken：需重新登录">只有 stoken：需重新登录</span>
+              <span v-else class="mys-acc-state-t">凭证缺失</span>
+            </span>
+            <span class="mys-acc-uid" v-if="a.mid">UID {{ a.mid }}</span>
+          </span>
+          <span v-if="!a.has_stoken" class="mys-acc-warn">
+            缺 stoken：抽卡需「抽卡授权」
+          </span>
+        </span>
+      </div>
+
+      <!-- 二级菜单：该账号绑定的绝区零角色（点一个即切换查询目标） -->
+      <div class="mys-roles-menu" :class="{open: mysRolesOpen(a.account_id)}">
+        <div class="mys-roles-head" @click.stop="mysToggleRoles(a.account_id)">
+          <span class="mys-caret" :class="{open: mysRolesOpen(a.account_id)}">▸</span>
+          <span>绝区零角色</span>
+          <span class="mys-roles-n" v-if="mysRolesState(a.account_id).list.length">
+            {{ mysRolesState(a.account_id).list.length }}
+          </span>
+          <span class="mys-roles-n busy" v-else-if="mysRolesState(a.account_id).loading">读取中…</span>
+          <span class="mys-roles-reload" @click.stop="mysRolesReload(a.account_id)"
+                :class="{busy: mysRolesState(a.account_id).loading}">刷新</span>
+        </div>
+
+        <div class="mys-roles" v-show="mysRolesOpen(a.account_id)">
+          <div v-if="mysRolesState(a.account_id).loading && !mysRolesState(a.account_id).list.length"
+               class="mys-role-tip">正在读取角色…</div>
+          <div v-else-if="mysRolesState(a.account_id).error" class="mys-role-tip err">
+            {{ mysRolesState(a.account_id).error }}
+          </div>
+          <div v-else-if="!mysRolesState(a.account_id).list.length" class="mys-role-tip">
+            没查到绝区零角色
+          </div>
+          <div v-else class="mys-roles-list">
+            <div class="mys-role" v-for="r in mysRolesState(a.account_id).list"
+                 :key="r.game_uid"
+                 :class="{active: mysRoleActive(a.account_id, r.game_uid)}"
+                 @click.stop="mysPickRoleIn(a.account_id, r.game_uid)">
+              <span class="mys-role-name">{{ r.nickname || '未命名' }}</span>
+              <span class="mys-role-meta">Lv.{{ r.level || '-' }}</span>
+              <span class="mys-role-tag" v-if="r.is_chosen">主</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p v-else class="muted" style="margin-top:10px">还没有登录任何账号。点「扫码添加」用米游社 App 扫码。</p>
+
+  <!-- 兜底：正常一次扫码就会带回 stoken，这里只在「没拿到」时才出现 -->
+  <div v-if="mysCurrent().account_id && !mysCurrent().has_stoken" class="mys-auth">
+    <p class="muted" style="font-size:12px;margin:10px 0 0">
+      当前账号缺抽卡凭证（stoken）。正常扫码登录一次就会带回来，这次没拿到说明
+      二维码回退到了兼容模式 —— 点下面按钮补一次即可，<b>不会覆盖已有的登录凭证</b>。
+    </p>
+    <button class="ghost sm" style="margin-top:6px"
+            @click="mysAuthStoken()" :disabled="mys.login.busy">
+      {{ mys.login.busy ? '获取中…' : '抽卡授权（补 stoken）' }}
+    </button>
+  </div>
+
+  <!-- 危险操作的二次确认弹窗（删除单个账号 / 清空全部）
+       用页内弹窗而不是 window.confirm：原生弹窗在部分环境会被静默屏蔽，
+       等于没有确认；这里一定看得见，且必须点两次才真的删。 -->
+  <div class="modal" v-if="mys.confirm.show" @click.self="mysConfirmCancel()">
+    <div class="modal-box" style="max-width:460px">
+      <h3 style="margin-top:0">{{ mys.confirm.title }}</h3>
+      <div class="warn-box" v-if="mys.confirm.kind === 'del'">
+        只会<strong>清除本机保存的登录凭证</strong>，米游社上的账号本身不受影响。<br>
+        删掉后想再用这个账号，需要重新扫码登录（抽卡记录存在 data/zzz/ 下，不会被删）。
+      </div>
+      <div class="warn-box" v-else>
+        会<strong>清除本机保存的全部登录凭证</strong>（共 {{ mys.accounts.length }} 个账号），
+        米游社上的账号本身不受影响。<br>
+        抽卡记录等本地存档（data/zzz/）不会被删。
+      </div>
+      <div class="actions">
+        <button class="ghost" @click="mysConfirmCancel()">取消</button>
+        <button class="red" @click="mysConfirmDo()">{{ mys.confirm.ok }}</button>
+      </div>
+    </div>
+  </div>
+</aside>
+
+
+        <!-- 右侧：主内容区 = 当前账号 -->
+        <section class="mys-main">
+          <!-- 一级分类：绝区零 / 社交命令配置 / 设备配置。
+               后两个是全局配置（QQ 命令、设备指纹），与登录的米游社账号无关
+               （设备配置里要选账号，那是它自己的下拉），所以放在 v-if="mys.current" 外面。 -->
+          <nav class="mys-zones">
+            <button class="mys-zone" :class="{on: mys.zone==='zzz'}" @click="mysZoneTo('zzz')">
+              绝区零
+            </button>
+            <button class="mys-zone" :class="{on: mys.zone==='social'}" @click="mysZoneTo('social')">
+              社交命令配置
+            </button>
+            <button class="mys-zone" :class="{on: mys.zone==='device'}" @click="mysZoneTo('device')">
+              设备配置
+            </button>
+          </nav>
+
+          <template v-if="mys.zone==='zzz'">
+            <div v-if="mys.current">
+              <!-- 「当前账号 <昵称> · 登录于 …」标题行已按需求去掉（当前账号看左侧高亮即可） -->
+
+              <!-- 绝区零（独立片段 frag/zzz.html，内部再分各查询模板） -->
+              <!-- 绝区零主区域（plugins/_vendor/miyoushe/web/frag/zzz.html）
+     角色列表已经移到左侧「米游社账号」侧边栏（每个账号下面挂它的绝区零角色二级菜单，
+     见 frag/sidebar.html + sidebar.js + sidebar.css）。这里只剩：
+     标题行 + 各查询模板（各自独立 html，由下方 FRAG 注释引入）。
+
+     标题行内的顺序（按需求）：
+       二级页签（抽卡…签到） → 当前查询：xx → 米游社模块开关
+     即页签在「当前查询」**前面**，「模块已启用」在「当前查询」**后面**。
+     「绝区零」这个一级分类标题已经提到上面 partial.html 的 .mys-zones 里
+     （与「社交命令配置」并列），这里不再重复写 h2。
+     样式见 style.css 的 .mys-head / .mys-head-right / .mys-mod-switch。 -->
+<div class="mys-head">
+  <!-- 二级页签：抽卡 → 签到 -->
+  <nav class="tabs sub-tabs" v-if="mysZoneOpen()">
+    <span class="tab" :class="{active: mys.tab==='gacha'}" @click="mysTabTo('gacha')">抽卡查询</span>
+    <span class="tab" :class="{active: mys.tab==='deadly'}" @click="mysTabTo('deadly')">危局查询</span>
+    <span class="tab" :class="{active: mys.tab==='shiyu'}" @click="mysTabTo('shiyu')">防卫战查询</span>
+    <span class="tab" :class="{active: mys.tab==='abyss'}" @click="mysTabTo('abyss')">零号空洞</span>
+    <span class="tab" :class="{active: mys.tab==='zenkov'}" @click="mysTabTo('zenkov')">迷宫诡域</span>
+    <span class="tab" :class="{active: mys.tab==='roles'}" @click="mysTabTo('roles')">角色查询</span>
+    <span class="tab" :class="{active: mys.tab==='codex'}" @click="mysTabTo('codex')">图鉴</span>
+    <span class="tab" :class="{active: mys.tab==='sign'}" @click="mysTabTo('sign')">签到</span>
+    <span class="tab" :class="{active: mys.tab==='note'}" @click="mysTabTo('note')">实时便笺</span>
+    <span class="tab" :class="{active: mys.tab==='void'}" @click="mysTabTo('void')">临界推演</span>
+    <span class="tab" :class="{active: mys.tab==='profile'}" @click="mysTabTo('profile')">玩家概览</span>
+    <span class="tab" :class="{active: mys.tab==='month'}" @click="mysTabTo('month')">绳网月报</span>
+  </nav>
+
+  <div class="mys-head-right">
+    <!-- 当前查询角色 -->
+    <span class="hint" v-if="mysHasRole()">当前查询：{{ mysRoleName() }}</span>
+  </div>
+</div>
+
+<div v-if="mys.roles.loading" class="muted" style="margin-bottom:10px">正在读取角色列表…</div>
+<div v-else-if="mys.roles.error" class="warn-box" style="margin:0 0 10px">{{ mys.roles.error }}</div>
+<p v-else-if="!mys.roles.list.length" class="muted" style="margin:0 0 10px">
+  该账号下没有查到绝区零角色。展开左侧账号里的「绝区零角色」可以重试。
+</p>
+
+<p v-if="!mysZoneOpen()" class="muted">
+  请先在左侧账号下展开「绝区零角色」，点一个角色作为查询目标。
+</p>
+
+<!-- 绝区零 · 抽卡（调频）汇总模板（plugins/_vendor/miyoushe/web/frag/zzz-gacha.html）
+     三个入口：
+       · 查询抽卡记录 → GET /zzz/gacha/local（只读本地 CSV，不联网，秒开）
+       · 增量更新     → GET /zzz/gacha/sync?force=0（只拉比本地新的记录，合并落盘）
+       · 强制全量     → GET /zzz/gacha/sync?force=1（忽略存档全量重拉，页间隔 1s）
+     落盘在 data/zzz/{uid}.csv；统计（pity 链 / UP·歪 判定 / 版本池分组）由 gacha_stats 算。
+     前端只做渲染，四个子页签：抽卡总结 / 卡片模式 / 近期卡池 / 版本总结。
+     逻辑在 module.js，样式在 style.css（gz-* 前缀）。
+     由 frag/zzz.html 里的片段注记就地拼装（本注释里不写那个标记本身，避免递归）。 -->
+<div v-show="mys.tab==='gacha'" v-if="mysZoneOpen()">
+  <!-- ---- 入口（无下拉框：路线只剩登录凭证一条，自动申请 authkey） ---- -->
+  <div class="flex" style="gap:8px;flex-wrap:wrap;align-items:center">
+    <button @click="mysGachaLocal()" :disabled="mys.gacha.loading">查询抽卡记录</button>
+    <button class="ghost" @click="mysGacha(false)" :disabled="mys.gacha.loading"
+            title="只拉取比本地存档更新的记录（页间隔 1 秒）">增量更新</button>
+    <button class="ghost" @click="mysGacha(true)" :disabled="mys.gacha.loading"
+            title="忽略本地存档，全量重新拉取（较慢）">强制全量</button>
+    <span class="muted" v-if="mys.gacha.data">
+      共 {{ mys.gacha.data.total }} 抽
+      <span v-if="mys.gacha.data.fresh !== undefined"> · 本次新增 {{ mys.gacha.data.fresh }} 条</span>
+      · 更新于 {{ fmt(mys.gacha.data.updated_at) }}
+    </span>
+  </div>
+  <p v-if="mys.gacha.loading" class="muted" style="margin:6px 0 0;font-size:12px">
+    正在拉取（每页间隔 1 秒），已用时 {{ mys.gacha.elapsed }} 秒，请勿关闭页面…
+  </p>
+  <p class="muted" style="margin:6px 0 0;font-size:12px">
+    「查询抽卡记录」直接读本地 CSV（不联网）；「增量更新」只拉新记录并合并；「强制全量」重拉全部。
+  </p>
+
+  <p v-if="mys.gacha.error" class="mys-error">{{ mys.gacha.error }}</p>
+  <div v-if="mys.gacha.data && mys.gacha.data.errors && mys.gacha.data.errors.length"
+       class="warn-box" style="margin:8px 0">
+    <b>有 {{ mys.gacha.data.errors.length }} 个频段没拉下来</b>（其余频段已正常保存，可先看重算出来的统计）：
+    <div v-for="(e, i) in mys.gacha.data.errors" :key="i" style="margin-top:4px">{{ e }}</div>
+  </div>
+
+  <div v-if="mys.gacha.data && mys.gacha.data.pools">
+    <!-- ---- 顶部总览卡 ---- -->
+    <div class="gz-top">
+      <div class="gz-top-row">
+        <span class="gz-big">{{ mys.gacha.data.total }}<i>抽</i></span>
+        <span class="gz-big">{{ mys.gacha.data.avg_per_s || '—' }}<i>平均每金</i></span>
+        <span class="gz-big">{{ mys.gacha.data.s_total }}<i>S级总数</i></span>
+        <span class="gz-big">{{ mys.gacha.data.a_total }}<i>A级总数</i></span>
+      </div>
+      <div class="gz-top-row">
+        <span v-for="p in mys.gacha.data.pools" :key="p.base" class="gz-chip">
+          <b>{{ p.name }}</b>
+          <template v-if="p.up_rate !== null && p.up_rate !== undefined">
+            {{ Math.round(p.up_rate * 100) }}%不歪 · {{ p.avg_per_up }}抽/UP
+          </template>
+          <template v-else-if="p.avg_per_s">{{ p.avg_per_s }}抽/金</template>
+          <template v-else>暂无金</template>
+        </span>
+      </div>
+    </div>
+
+    <!-- ---- 四个子页签 ---- -->
+    <nav class="tabs sub-tabs">
+      <span class="tab" :class="{active: mys.gacha.tab==='summary'}" @click="mys.gacha.tab='summary'">抽卡总结</span>
+      <span class="tab" :class="{active: mys.gacha.tab==='cards'}" @click="mys.gacha.tab='cards'">卡片模式</span>
+      <span class="tab" :class="{active: mys.gacha.tab==='recent'}" @click="mys.gacha.tab='recent'">近期卡池</span>
+      <span class="tab" :class="{active: mys.gacha.tab==='versions'}" @click="mys.gacha.tab='versions'">版本总结</span>
+    </nav>
+
+    <!-- ===== 抽卡总结：限定/常驻 S 汇总 + 按频段的出金链条形 ===== -->
+    <div v-show="mys.gacha.tab==='summary'">
+      <p style="margin:10px 0 6px">
+        共获得<b>限定S级 {{ mys.gacha.data.limited_s }} 个</b>，
+        <b>常驻S级 {{ mys.gacha.data.standard_s }} 个</b>，具体如下：
+      </p>
+      <nav class="tabs sub-tabs">
+        <span v-for="p in mys.gacha.data.pools" :key="p.base" class="tab"
+              :class="{active: mys.gacha.pool===p.base}"
+              @click="mys.gacha.pool=p.base">{{ p.name }}</span>
+      </nav>
+      <div v-for="p in mys.gacha.data.pools" v-show="mys.gacha.pool===p.base" :key="'s'+p.base">
+        <p class="muted" style="margin:8px 0 4px">
+          {{ p.total }} 抽 · {{ p.s_count }} 金 · {{ p.a_count }} A
+          <template v-if="p.avg_per_s"> · 平均 {{ p.avg_per_s }} 抽/金</template>
+          · 当前已垫 {{ p.pity_now }} 抽
+        </p>
+        <div class="gz-bars">
+          <div class="gz-bar-row" v-if="p.pity_now > 0">
+            <span class="gz-bar-name muted">当前已垫</span>
+            <div class="gz-bar">
+              <i :style="{width: gzBarW(p.pity_now)}" :class="gzBarCls({pity: p.pity_now})"></i>
+              <b>{{ p.pity_now }}抽</b>
+            </div>
+          </div>
+          <div class="gz-bar-row" v-for="(g, i) in p.golden" :key="i">
+            <span class="gz-bar-name">{{ g.name }}</span>
+            <div class="gz-bar">
+              <i :style="{width: gzBarW(g.pity)}" :class="gzBarCls(g)"></i>
+              <b>{{ g.pity }}抽</b>
+            </div>
+            <span v-if="g.has_up && g.is_up === true" class="gz-tag up">UP</span>
+            <span v-else-if="g.has_up && g.is_up === false" class="gz-tag off">歪</span>
+          </div>
+          <p v-if="!p.golden.length" class="muted">该频段还没有出过金。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== 卡片模式：每频段一张卡，出金卡片网格（角标 = pity 抽数） ===== -->
+    <div v-show="mys.gacha.tab==='cards'">
+      <div class="gz-card" v-for="p in mys.gacha.data.pools" :key="'c'+p.base">
+        <header class="gz-card-head">
+          <b>{{ p.name }}</b>
+          <span class="gz-stat">{{ p.total }}<i>总抽</i></span>
+          <span class="gz-stat" v-if="p.pity_now > 0" :class="gzBarCls({pity: p.pity_now})">{{ p.pity_now }}<i>当前已垫</i></span>
+          <span class="gz-stat" v-if="p.avg_per_up">{{ p.avg_per_up }}<i>每UP需抽</i></span>
+          <span class="gz-stat" v-else-if="p.avg_per_s">{{ p.avg_per_s }}<i>每金</i></span>
+          <span class="gz-stat" v-if="p.up_rate !== null && p.up_rate !== undefined">
+            {{ Math.round(p.up_rate * 100) }}%<i>不歪概率</i>
+          </span>
+        </header>
+        <div class="gz-grid">
+          <div class="gz-item" v-for="(g, i) in p.golden" :key="i"
+               :class="gzBarCls(g)">
+            <span class="gz-badge">{{ g.pity }}</span>
+            <span class="gz-item-name">{{ g.name }}</span>
+            <span v-if="g.has_up && g.is_up === true" class="gz-tag up">UP</span>
+            <span v-else-if="g.has_up && g.is_up === false" class="gz-tag off">歪</span>
+          </div>
+        </div>
+        <p v-if="!p.golden.length" class="muted">该频段还没有出过金。</p>
+      </div>
+    </div>
+
+    <!-- ===== 近期卡池：最近出的金（时间倒序） ===== -->
+    <div v-show="mys.gacha.tab==='recent'">
+      <table>
+        <thead><tr><th style="width:150px">时间</th><th>名称</th><th style="width:110px">频段</th><th style="width:60px">UP</th></tr></thead>
+        <tbody>
+          <tr v-for="(g, i) in mys.gacha.data.recent" :key="i">
+            <td class="muted">{{ g.time }}</td>
+            <td>{{ g.name }}</td>
+            <td class="muted">{{ g.pool }}</td>
+            <td>
+              <span v-if="g.has_up && g.is_up === true" class="gz-tag up">UP</span>
+              <span v-else-if="g.has_up && g.is_up === false" class="gz-tag off">歪</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p v-if="!mys.gacha.data.recent.length" class="muted">还没有出金记录。</p>
+    </div>
+
+    <!-- ===== 版本总结：按卡池（gacha_id）分组，一张卡一个池 ===== -->
+    <div v-show="mys.gacha.tab==='versions'">
+      <div class="gz-card" v-for="v in mys.gacha.data.versions" :key="'v'+v.gacha_id">
+        <header class="gz-card-head">
+          <div class="gz-ver">
+            <b>{{ v.title }}</b>
+            <span class="muted" style="font-size:12px">
+              {{ v.start }} 起<template v-if="v.end && v.end !== v.start"> · {{ v.end }} 止</template>
+              <template v-if="v.approx"> · 官方没返回卡池编号，按频段+月份归的组</template>
+            </span>
+          </div>
+          <span class="gz-stat">{{ v.total }}<i>总抽</i></span>
+          <span class="gz-stat">{{ v.s_count }}<i>S级数</i></span>
+          <span class="gz-stat">{{ v.a_count }}<i>A级数</i></span>
+        </header>
+        <p class="muted" style="margin:4px 0 8px">
+          你在该池共计花费 <b style="color:var(--accent,#2f6fed)">{{ v.cost }}</b> 复色菲林
+          （{{ v.total }} 抽 × 160）。
+        </p>
+        <div class="gz-grid" v-if="v.s_items.length">
+          <div class="gz-item" v-for="(g, i) in v.s_items" :key="i"
+               :class="gzBarCls(g)">
+            <span class="gz-badge">{{ g.pity }}</span>
+            <span class="gz-item-name">{{ g.name }}</span>
+            <span v-if="g.has_up && g.is_up === true" class="gz-tag up">UP</span>
+            <span v-else-if="g.has_up && g.is_up === false" class="gz-tag off">歪</span>
+          </div>
+        </div>
+        <p v-if="v.a_counts.length" class="muted" style="margin:8px 0 2px">
+          A级：{{ v.a_counts.map(x => x[0] + '×' + x[1]).join('、') }}
+        </p>
+      </div>
+      <p v-if="!mys.gacha.data.versions.length" class="muted">暂无卡池数据。</p>
+    </div>
+  </div>
+</div>
+
+<!-- 绝区零 · 危局强袭战（plugins/_vendor/miyoushe/web/frag/zzz-deadly.html）
+     查询逻辑 frag/zzz-deadly.js（window.MysDeadly），样式 frag/zzz-deadly.css（hd-* 前缀）。
+     布局对照游戏内：绝境一张独立卡（头部=头像/昵称/绝境排名，身体=BOSS 立绘+得分）；
+     常规危局一张大卡（头部=头像/昵称/排名，大号总分+★xN，内部每个 BOSS 一条目）。 -->
+<div v-show="mys.tab==='deadly'" v-if="mysHasRole()">
+  <div class="flex" style="gap:8px;flex-wrap:wrap;align-items:center">
+    <button class="ghost" @click="mysDeadly(false)" :disabled="mys.deadly.loading">
+      {{ mys.deadly.loading ? '读取中…' : '查询本期' }}
+    </button>
+    <button class="ghost" @click="mysDeadly(true)" :disabled="mys.deadly.loading">查询往期</button>
+    <button class="ghost" :class="{ on: mys.deadly.history.open }" @click="mysDeadlyHistoryToggle()">
+      本地存档{{ mys.deadly.history.count ? '（' + mys.deadly.history.count + '）' : '' }}
+    </button>
+    <button class="ghost" :class="{ on: mys.deadly.showTime }" @click="mys.deadly.showTime = !mys.deadly.showTime">
+      通关时间{{ mys.deadly.showTime ? '：开' : '：关' }}
+    </button>
+    <!-- 「全面」：查询时顺手查每个代理人头像左下角的音擎图标（实时查角色详情，须先绑设备） -->
+    <button class="ghost" :class="{ on: mys.deadly.full }" @click="mys.deadly.full = !mys.deadly.full"
+            title="查询时给每个代理人头像左下角加音擎图标（实时查「角色详情」，需先在米游社→设备配置绑设备）">
+      全面{{ mys.deadly.full ? '：开' : '：关' }}
+    </button>
+    <button class="ghost" @click="mysDeadlySaveImage()" :disabled="mys.deadly.saving || !mys.deadly.view">
+      {{ mys.deadly.saving ? '生成中…' : '保存为图片' }}
+    </button>
+  </div>
+  <p v-if="mys.deadly.error" class="mys-error">{{ mys.deadly.error }}</p>
+  <!-- 存档状态提示放在 #hd-wrap 之外：截图分享时不会被一起渲进图片 -->
+  <p class="mys-saved-tip" v-if="mys.deadly.savedAt">
+    {{ mys.deadly.view && mys.deadly.view.saved ? '当前显示的是本地存档' : '已存入本地存档' }}
+    · {{ dzHistAt(mys.deadly.savedAt) }}
+  </p>
+  <!-- 「全面」版提醒：音擎图标要实时查「角色详情」，账号没绑设备配置就查不到 -->
+  <p class="mys-warn" v-if="mys.deadly.view && mys.deadly.view.weapon_warn">{{ mys.deadly.view.weapon_warn }}</p>
+
+  <!-- 本地存档：官方接口只有本期/上期，往前的历史全在这里（每期只留最新一版） -->
+  <div class="mys-hist" v-if="mys.deadly.history.open">
+    <div class="mys-hist-head">
+      <b>本地存档</b>
+      <span>共 {{ mys.deadly.history.count }} 期 · 同一期只保留最新一版</span>
+      <button class="ghost sm" style="margin-left:auto" @click="mysDeadlyHistory()"
+              :disabled="mys.deadly.history.loading">
+        {{ mys.deadly.history.loading ? '刷新中…' : '刷新' }}
+      </button>
+    </div>
+    <p v-if="mys.deadly.history.error" class="mys-error" style="margin:10px 12px">{{ mys.deadly.history.error }}</p>
+    <div class="mys-hist-list" v-else-if="mys.deadly.history.list.length">
+      <div class="mys-hist-row" v-for="h in mys.deadly.history.list" :key="h.key"
+           :class="{active: mys.deadly.savedKey === h.key}" @click="mysDeadlyPick(h.key)">
+        <span class="mys-hist-when">{{ dzHistPeriod(h) }}</span>
+        <span class="mys-hist-sum">{{ dzHistSum(h) }}</span>
+        <span class="mys-hist-badge" v-if="h.revisions > 1">更新过 {{ h.revisions }} 次</span>
+        <span class="mys-hist-at">{{ dzHistAt(h.updated_at) }}</span>
+      </div>
+    </div>
+    <p v-else class="mys-hist-empty">
+      还没有存档。查一次「本期 / 往期」就会自动存下来；后台每天也会自动抓一遍。
+    </p>
+  </div>
+
+  <div v-if="mys.deadly.view" class="hd-wrap mys-stage" id="hd-wrap">
+    <p class="hd-period" v-if="mys.deadly.view.period">统计周期 {{ mys.deadly.view.period }}</p>
+    <p class="hd-note">* 总得分/排名和挑战详情并非同时刷新，挑战详情存在 2 小时左右延迟</p>
+
+    <!-- ---- 绝境模式：独立一张卡，与常规危局明显区分 ---- -->
+    <div class="hd-card hd-hard" v-if="mys.deadly.view.hard.length">
+      <div class="hd-head">
+        <img class="hd-avatar" v-if="mys.deadly.view.avatar_icon" :src="mys.deadly.view.avatar_icon" alt="">
+        <div class="hd-head-main">
+          <div class="hd-nick">
+            {{ mys.deadly.view.nick_name || '代理人' }}
+            <span class="hd-tag">绝境模式</span>
+            <span class="hd-prev" v-if="mys.deadly.view.saved">本地存档</span>
+            <span class="hd-prev" v-else-if="mys.deadly.view.previous">往期</span>
+          </div>
+        </div>
+        <div class="hd-head-side">
+          <span class="hd-rank-pill" v-if="mys.deadly.view.hard_rank">{{ mys.deadly.view.hard_rank }}</span>
+        </div>
+      </div>
+      <div class="hd-hard-body" v-for="(c, i) in mys.deadly.view.hard" :key="'h' + i">
+        <div class="hd-portrait" v-if="c.boss_img"><img :src="c.boss_img" alt=""></div>
+        <div class="hd-entry-main">
+          <div class="hd-boss-name">{{ c.boss_name || ('绝境 ' + (i + 1)) }}</div>
+          <div class="hd-boss-score">{{ c.score }}<span class="hd-stars">{{ '★'.repeat(c.star) }}</span></div>
+          <div class="hd-time" v-if="c.time && mys.deadly.showTime">通关时刻：{{ c.time }}</div>
+          <div class="hd-avatars">
+            <span class="hd-ava" v-for="(a, j) in c.avatars" :key="j" :class="dzRarity(a)" :title="a.rarity + ' 级代理人'">
+              <img :src="a.icon" alt="">
+              <!-- S / A / B 用方徽章图片（和 QQ 出图同一套素材）；没素材才退回字母小标签 -->
+              <img class="hd-rar" v-if="dzRarIcon(a.rarity)" :src="dzRarIcon(a.rarity)" alt="">
+              <i v-else>{{ a.rarity }}</i>
+              <b class="hd-ava-rank">{{ a.rank }}</b>
+              <!-- 「全面」版：左下角叠一枚音擎图标（大小同左上角 A/S 徽章） -->
+              <img class="hd-wp" v-if="a.weapon" :src="a.weapon" alt="">
+            </span>
+            <span class="hd-ava buddy" v-if="c.buddy_icon" :class="c.buddy_rarity === 'A' ? 'a' : ''">
+              <img :src="c.buddy_icon" alt="" :title="c.buddy_rarity + ' 级邦布'">
+              <img class="hd-rar" v-if="dzRarIcon(c.buddy_rarity)" :src="dzRarIcon(c.buddy_rarity)" alt="">
+              <i v-else>{{ c.buddy_rarity }}</i>
+            </span>
+          </div>
+          <div class="hd-buffs" v-if="c.buffers.length">
+            <span class="hd-buff" v-for="(b, j) in c.buffers" :key="j">{{ b.name }}
+              <span class="hd-buff-tip" v-if="b.desc">{{ b.desc }}</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---- 常规危局：一张大卡（总分 + ★xN + 每个 BOSS 一个条目） ---- -->
+    <div class="hd-card hd-normal">
+      <div class="hd-head">
+        <img class="hd-avatar" v-if="mys.deadly.view.avatar_icon" :src="mys.deadly.view.avatar_icon" alt="">
+        <div class="hd-head-main">
+          <div class="hd-nick">
+            {{ mys.deadly.view.nick_name || '代理人' }}
+            <span class="hd-prev" v-if="mys.deadly.view.saved">本地存档</span>
+            <span class="hd-prev" v-else-if="mys.deadly.view.previous">往期</span>
+          </div>
+        </div>
+        <div class="hd-head-side">
+          <span class="hd-rank-pill" v-if="mys.deadly.view.rank">{{ mys.deadly.view.rank }}</span>
+        </div>
+      </div>
+      <div class="hd-total-row">
+        <div class="hd-big">{{ mys.deadly.view.total_score }}<span class="hd-unit">总分</span></div>
+        <span class="hd-star">★ × {{ mys.deadly.view.total_star }}</span>
+      </div>
+      <div class="hd-entry" v-for="(c, i) in mys.deadly.view.list" :key="i">
+        <div class="hd-portrait" v-if="c.boss_img"><img :src="c.boss_img" alt=""></div>
+        <div class="hd-entry-main">
+          <div class="hd-boss-name">{{ c.boss_name || ('挑战 ' + (i + 1)) }}</div>
+          <div class="hd-boss-score">{{ c.score }}<span class="hd-stars">{{ '★'.repeat(c.star) }}</span></div>
+          <div class="hd-time" v-if="c.time && mys.deadly.showTime">通关时刻：{{ c.time }}</div>
+          <div class="hd-avatars">
+            <span class="hd-ava" v-for="(a, j) in c.avatars" :key="j" :class="dzRarity(a)" :title="a.rarity + ' 级代理人'">
+              <img :src="a.icon" alt="">
+              <!-- S / A / B 用方徽章图片（和 QQ 出图同一套素材）；没素材才退回字母小标签 -->
+              <img class="hd-rar" v-if="dzRarIcon(a.rarity)" :src="dzRarIcon(a.rarity)" alt="">
+              <i v-else>{{ a.rarity }}</i>
+              <b class="hd-ava-rank">{{ a.rank }}</b>
+              <!-- 「全面」版：左下角叠一枚音擎图标（大小同左上角 A/S 徽章） -->
+              <img class="hd-wp" v-if="a.weapon" :src="a.weapon" alt="">
+            </span>
+            <span class="hd-ava buddy" v-if="c.buddy_icon" :class="c.buddy_rarity === 'A' ? 'a' : ''">
+              <img :src="c.buddy_icon" alt="" :title="c.buddy_rarity + ' 级邦布'">
+              <img class="hd-rar" v-if="dzRarIcon(c.buddy_rarity)" :src="dzRarIcon(c.buddy_rarity)" alt="">
+              <i v-else>{{ c.buddy_rarity }}</i>
+            </span>
+          </div>
+          <div class="hd-buffs" v-if="c.buffers.length">
+            <span class="hd-buff" v-for="(b, j) in c.buffers" :key="j">{{ b.name }}
+              <span class="hd-buff-tip" v-if="b.desc">{{ b.desc }}</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <p v-if="!mys.deadly.view.list.length && !mys.deadly.view.hard.length" class="muted" style="padding:0 14px 12px">
+        没有危局强袭战数据（本期可能未参与）。
+      </p>
+    </div>
+  </div>
+
+  <details v-if="mys.deadly.done" style="margin-top:10px">
+    <summary class="muted" style="cursor:pointer">查看原始返回</summary>
+    <pre style="max-height:300px;overflow:auto;font-size:12px;background:#f7f8fa;padding:10px;border-radius:8px">{{ mys.deadly.raw }}</pre>
+  </details>
+</div>
+
+<!-- 绝区零 · 式舆防卫战（plugins/_vendor/miyoushe/web/frag/zzz-shiyu.html）
+     查询逻辑 frag/zzz-shiyu.js（window.MysShiyu），样式 frag/zzz-shiyu.css（sy-* 前缀）。
+     渲染对照游戏内「式舆防卫战」页：头部（昵称/综合评级）
+     + 剧变节点第五防线卡（总分 / 排名 / S+ 徽标，每个小队一行：得分/防线效果/通关时刻/代理人+邦布/BOSS 立绘）
+     + 剧变节点第四防线卡（评级 / 防线效果 / 出战小队）。 -->
+<div v-show="mys.tab==='shiyu'" v-if="mysHasRole()">
+  <div class="flex" style="gap:8px;flex-wrap:wrap;align-items:center">
+    <button class="ghost" @click="mysShiyu(false)" :disabled="mys.shiyu.loading">
+      {{ mys.shiyu.loading ? '读取中…' : '查询本期' }}
+    </button>
+    <button class="ghost" @click="mysShiyu(true)" :disabled="mys.shiyu.loading">查询往期</button>
+    <button class="ghost" :class="{ on: mys.shiyu.history.open }" @click="mysShiyuHistoryToggle()">
+      本地存档{{ mys.shiyu.history.count ? '（' + mys.shiyu.history.count + '）' : '' }}
+    </button>
+    <button class="ghost" :class="{ on: mys.shiyu.showTime }" @click="mys.shiyu.showTime = !mys.shiyu.showTime">
+      通关时间{{ mys.shiyu.showTime ? '：开' : '：关' }}
+    </button>
+    <!-- 第四防线官方只给头像（没有得分 / 评级 / 立绘），默认关掉；命令那边有同名选项 -->
+    <button class="ghost" :class="{ on: mys.shiyu.showFourth }" @click="mys.shiyu.showFourth = !mys.shiyu.showFourth">
+      第四防线{{ mys.shiyu.showFourth ? '：开' : '：关' }}
+    </button>
+    <!-- 「全面」：查询时顺手查每个代理人头像左下角的音擎图标（实时查角色详情，须先绑设备） -->
+    <button class="ghost" :class="{ on: mys.shiyu.full }" @click="mys.shiyu.full = !mys.shiyu.full"
+            title="查询时给每个代理人头像左下角加音擎图标（实时查「角色详情」，需先在米游社→设备配置绑设备）">
+      全面{{ mys.shiyu.full ? '：开' : '：关' }}
+    </button>
+  </div>
+  <p v-if="mys.shiyu.error" class="mys-error">{{ mys.shiyu.error }}</p>
+  <p class="mys-saved-tip" v-if="mys.shiyu.savedAt">
+    {{ mys.shiyu.view && mys.shiyu.view.saved ? '当前显示的是本地存档' : '已存入本地存档' }}
+    · {{ syHistAt(mys.shiyu.savedAt) }}
+  </p>
+  <!-- 「全面」版提醒：音擎图标要实时查「角色详情」，账号没绑设备配置就查不到 -->
+  <p class="mys-warn" v-if="mys.shiyu.view && mys.shiyu.view.weapon_warn">{{ mys.shiyu.view.weapon_warn }}</p>
+
+  <!-- 本地存档：官方接口只有本期/上期，往前的历史全在这里（每期只留最新一版） -->
+  <div class="mys-hist" v-if="mys.shiyu.history.open">
+    <div class="mys-hist-head">
+      <b>本地存档</b>
+      <span>共 {{ mys.shiyu.history.count }} 期 · 同一期只保留最新一版</span>
+      <button class="ghost sm" style="margin-left:auto" @click="mysShiyuHistory()"
+              :disabled="mys.shiyu.history.loading">
+        {{ mys.shiyu.history.loading ? '刷新中…' : '刷新' }}
+      </button>
+    </div>
+    <p v-if="mys.shiyu.history.error" class="mys-error" style="margin:10px 12px">{{ mys.shiyu.history.error }}</p>
+    <div class="mys-hist-list" v-else-if="mys.shiyu.history.list.length">
+      <div class="mys-hist-row" v-for="h in mys.shiyu.history.list" :key="h.key"
+           :class="{active: mys.shiyu.savedKey === h.key}" @click="mysShiyuPick(h.key)">
+        <span class="mys-hist-when">{{ syHistPeriod(h) }}</span>
+        <span class="mys-hist-sum">{{ syHistSum(h) }}</span>
+        <span class="mys-hist-badge" v-if="h.revisions > 1">更新过 {{ h.revisions }} 次</span>
+        <span class="mys-hist-at">{{ syHistAt(h.updated_at) }}</span>
+      </div>
+    </div>
+    <p v-else class="mys-hist-empty">
+      还没有存档。查一次「本期 / 往期」就会自动存下来；后台每天也会自动抓一遍。
+    </p>
+  </div>
+
+  <div v-if="mys.shiyu.view" class="sy-wrap mys-stage">
+    <!-- 统计周期说明放在整个结果区最上面（和危局的 .hd-period 一致）。
+         以前夹在头部卡和第五防线卡之间，看起来像是下面那张卡的附属信息。 -->
+    <p class="sy-period" v-if="mys.shiyu.view.period">
+      仅展示{{ mys.shiyu.showFourth ? '剧变节点 4-5 层' : '剧变节点第五防线' }}数据，统计周期: {{ mys.shiyu.view.period }}
+    </p>
+
+    <!-- ---- 头部：代理人 ---- -->
+    <!-- 综合评级**不在这里显示**（用户要求最上面角色名后面不要 S+ 之类的评级）：
+         评级在下面的防线卡右侧已经有了，头卡留白更干净。 -->
+    <div class="sy-card sy-head">
+      <img class="sy-avatar" v-if="mys.shiyu.view.icon" :src="mys.shiyu.view.icon" alt="">
+      <span class="sy-nick">{{ mys.shiyu.view.nick_name || '代理人' }}</span>
+      <span class="sy-prev" v-if="mys.shiyu.view.saved">本地存档</span>
+      <span class="sy-prev" v-else-if="mys.shiyu.view.previous">往期</span>
+    </div>
+
+    <!-- ---- 剧变节点第五防线 ---- -->
+    <div class="sy-card sy-layer">
+      <div class="sy-layer-head">
+        <div>
+          <div class="sy-layer-title">剧变节点第五防线</div>
+          <div class="sy-score-big">{{ mys.shiyu.view.score }}
+            <span class="sy-rank-pill" v-if="mys.shiyu.view.rank">{{ mys.shiyu.view.rank }}</span>
+          </div>
+        </div>
+        <span class="sy-rating" :class="syRatingCls(mys.shiyu.view.rating)">{{ mys.shiyu.view.rating || '—' }}</span>
+      </div>
+
+      <div class="sy-team" v-for="t in mys.shiyu.view.fifth.teams" :key="t.no">
+        <img class="sy-monster" v-if="t.monster_pic" :src="t.monster_pic" alt="">
+        <div class="sy-team-top">
+          <span class="sy-team-label">0{{ t.no }} TEAM.</span>
+          <span class="sy-rating" v-if="t.rating" :class="syRatingCls(t.rating)">{{ t.rating }}</span>
+        </div>
+        <div class="sy-team-score" v-if="t.score">
+          {{ t.score }}
+          <span class="sy-fx" v-if="t.buffer" :title="t.buffer_text">防线效果 ▸</span>
+        </div>
+        <div class="sy-time" v-if="t.time && mys.shiyu.showTime">通关时刻：{{ t.time }}</div>
+        <div class="sy-avatars">
+          <span class="sy-ava" v-for="(a, j) in t.avatars" :key="j" :class="syRarity(a)" :title="a.rarity + ' 级代理人'">
+            <img :src="a.icon" alt="">
+            <!-- S / A / B 用方徽章图片（和 QQ 出图同一套素材）；没素材才退回字母小标签 -->
+            <img class="sy-rar" v-if="syRarIcon(a.rarity)" :src="syRarIcon(a.rarity)" alt=""><i v-else>{{ a.rarity }}</i>
+            <b class="sy-ava-rank">{{ a.rank }}</b>
+            <!-- 「全面」版：左下角叠一枚音擎图标（大小同左上角 A/S 徽章） -->
+            <img class="sy-wp" v-if="a.weapon" :src="a.weapon" alt="">
+          </span>
+          <span class="sy-ava buddy" v-if="t.buddy_icon" :class="t.buddy_rarity === 'A' ? 'a' : ''">
+            <img :src="t.buddy_icon" alt="" :title="t.buddy_rarity + ' 级邦布'">
+            <img class="sy-rar" v-if="syRarIcon(t.buddy_rarity)" :src="syRarIcon(t.buddy_rarity)" alt=""><i v-else>{{ t.buddy_rarity }}</i>
+          </span>
+        </div>
+      </div>
+      <p v-if="!mys.shiyu.view.fifth.teams.length" class="muted" style="margin:10px 0 0">没有第五防线数据。</p>
+    </div>
+
+    <!-- ---- 剧变节点第四防线（默认不显示，上面那个「第四防线」按钮可切换）---- -->
+    <div class="sy-card sy-layer" v-if="mys.shiyu.showFourth && mys.shiyu.view.fourth.teams.length">
+      <div class="sy-layer-head">
+        <div class="sy-layer-title">剧变节点第四防线</div>
+        <span class="sy-rating" :class="syRatingCls(mys.shiyu.view.fourth.rating)">{{ mys.shiyu.view.fourth.rating || '—' }}</span>
+      </div>
+      <p class="sy-buffer" v-if="mys.shiyu.view.fourth.buffer" :title="mys.shiyu.view.fourth.buffer_text">
+        防线效果 ▸ {{ mys.shiyu.view.fourth.buffer }}
+      </p>
+      <div class="sy-team" v-for="t in mys.shiyu.view.fourth.teams" :key="t.no">
+        <div class="sy-team-top">
+          <span class="sy-team-label">0{{ t.no }} TEAM.</span>
+        </div>
+        <div class="sy-time" v-if="t.time && mys.shiyu.showTime">通关时刻：{{ t.time }}</div>
+        <div class="sy-avatars">
+          <span class="sy-ava" v-for="(a, j) in t.avatars" :key="j" :class="syRarity(a)" :title="a.rarity + ' 级代理人'">
+            <img :src="a.icon" alt="">
+            <!-- S / A / B 用方徽章图片（和 QQ 出图同一套素材）；没素材才退回字母小标签 -->
+            <img class="sy-rar" v-if="syRarIcon(a.rarity)" :src="syRarIcon(a.rarity)" alt=""><i v-else>{{ a.rarity }}</i>
+            <b class="sy-ava-rank">{{ a.rank }}</b>
+            <!-- 「全面」版：左下角叠一枚音擎图标（大小同左上角 A/S 徽章） -->
+            <img class="sy-wp" v-if="a.weapon" :src="a.weapon" alt="">
+          </span>
+          <span class="sy-ava buddy" v-if="t.buddy_icon" :class="t.buddy_rarity === 'A' ? 'a' : ''">
+            <img :src="t.buddy_icon" alt="" :title="t.buddy_rarity + ' 级邦布'">
+            <img class="sy-rar" v-if="syRarIcon(t.buddy_rarity)" :src="syRarIcon(t.buddy_rarity)" alt=""><i v-else>{{ t.buddy_rarity }}</i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p v-else-if="mys.shiyu.done" class="muted">没有式舆防卫战数据。</p>
+  <details v-if="mys.shiyu.done" style="margin-top:10px">
+    <summary class="muted" style="cursor:pointer">查看原始返回</summary>
+    <pre style="max-height:300px;overflow:auto;font-size:12px;background:#f7f8fa;padding:10px;border-radius:8px">{{ mys.shiyu.raw }}</pre>
+  </details>
+</div>
+
+<!-- 绝区零 · 零号空洞（plugins/_vendor/miyoushe/web/frag/zzz-abyss.html）
+     查询逻辑 frag/zzz-abyss.js（window.MysAbyss），样式 frag/zzz-abyss.css（ab-* 前缀）。
+     渲染对照游戏内「零号空洞」摘要：调查等级 / 鸣徽等级 + 悬赏委托 / 调查点数进度条
+     + 数据收集 5 项进度 + 深层探索解锁（枯败花圃 · 刀耕火焚）。
+     接口不返回昵称头像，头部用当前查询角色名。 -->
+<div v-show="mys.tab==='abyss'" v-if="mysHasRole()">
+  <div class="flex" style="gap:8px;flex-wrap:wrap;align-items:center">
+    <button class="ghost" @click="mysAbyss()" :disabled="mys.abyss.loading">
+      {{ mys.abyss.loading ? '读取中…' : '查询零号空洞' }}
+    </button>
+    <span class="hint" v-if="mys.abyss.view">
+      当前查询：{{ mysRoleName() }} · {{ mys.abyss.view.unlock ? '已解锁' : '未解锁' }}
+    </span>
+  </div>
+  <p v-if="mys.abyss.error" class="mys-error">{{ mys.abyss.error }}</p>
+
+  <div v-if="mys.abyss.view" class="ab-wrap">
+    <!-- ---- 顶部两块大数字：调查等级 / 鸣徽等级 ---- -->
+    <div class="ab-heroes">
+      <div class="ab-hero">
+        <img class="ab-hero-ic" v-if="mys.abyss.view.level.icon" :src="mys.abyss.view.level.icon" alt="">
+        <div class="ab-hero-b">
+          <div class="ab-hero-t">调查等级</div>
+          <div class="ab-hero-v">
+            <b>{{ mys.abyss.view.level.cur }}</b><span>/{{ mys.abyss.view.level.max }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="ab-hero">
+        <div class="ab-hero-b">
+          <div class="ab-hero-t">鸣徽等级</div>
+          <div class="ab-hero-v">
+            <b>{{ mys.abyss.view.talent.cur }}</b><span>/{{ mys.abyss.view.talent.max }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---- 悬赏委托 / 调查点数（可能没有：委托 null、点数 0/0） ---- -->
+    <div class="ab-card" v-if="mys.abyss.view.duty || mys.abyss.view.point">
+      <div class="ab-pb" v-if="mys.abyss.view.duty">
+        <div class="ab-pb-h">
+          <span class="ab-pb-n">悬赏委托</span>
+          <span class="ab-pb-v" :class="{full: mys.abyss.view.duty.full}">
+            {{ mys.abyss.view.duty.cur }} / {{ mys.abyss.view.duty.max }}
+          </span>
+        </div>
+        <div class="ab-track"><i :style="{width: mys.abyss.view.duty.w}"></i></div>
+      </div>
+      <div class="ab-pb" v-if="mys.abyss.view.point">
+        <div class="ab-pb-h">
+          <span class="ab-pb-n">调查点数</span>
+          <span class="ab-pb-v" :class="{full: mys.abyss.view.point.full}">
+            {{ mys.abyss.view.point.cur }} / {{ mys.abyss.view.point.max }}
+          </span>
+        </div>
+        <div class="ab-track"><i :style="{width: mys.abyss.view.point.w}"></i></div>
+      </div>
+    </div>
+
+    <!-- ---- 数据收集 ---- -->
+    <div class="ab-card" v-if="mys.abyss.view.collect.length">
+      <div class="ab-card-t">数据收集</div>
+      <div class="ab-pb" v-for="c in mys.abyss.view.collect" :key="c.name">
+        <div class="ab-pb-h">
+          <span class="ab-pb-n">{{ c.name }}</span>
+          <span class="ab-pb-v" :class="{full: c.full}">{{ c.cur }} / {{ c.max }}</span>
+        </div>
+        <div class="ab-track"><i :style="{width: c.w}"></i></div>
+      </div>
+    </div>
+
+    <!-- ---- 深层探索：枯败花圃 / 刀耕火焚 ---- -->
+    <div class="ab-card">
+      <div class="ab-card-t">深层探索</div>
+      <div class="ab-stages">
+        <span class="ab-stage" :class="{on: mys.abyss.view.nest.normal}">
+          <i>{{ mys.abyss.view.nest.normal ? '✓' : '·' }}</i>枯败花圃
+        </span>
+        <span class="ab-stage" :class="{on: mys.abyss.view.nest.hard}">
+          <i>{{ mys.abyss.view.nest.hard ? '✓' : '·' }}</i>枯败花圃 · 地狱
+        </span>
+        <span class="ab-stage" :class="{on: mys.abyss.view.throne.done}">
+          <i>{{ mys.abyss.view.throne.done ? '✓' : '·' }}</i>刀耕火焚
+        </span>
+      </div>
+      <p class="ab-note" v-if="mys.abyss.view.throne.damage">
+        刀耕火焚最高伤害：<b>{{ mys.abyss.view.throne.damage }}</b>
+      </p>
+    </div>
+  </div>
+
+  <p v-else-if="mys.abyss.done" class="muted">没有零号空洞数据。</p>
+  <details v-if="mys.abyss.done" style="margin-top:10px">
+    <summary class="muted" style="cursor:pointer">查看原始返回</summary>
+    <pre style="max-height:300px;overflow:auto;font-size:12px;background:#f7f8fa;padding:10px;border-radius:8px">{{ mys.abyss.raw }}</pre>
+  </details>
+</div>
+
+<!-- 绝区零 · 迷宫诡域（plugins/_vendor/miyoushe/web/frag/zzz-zenkov.html）
+     查询逻辑 frag/zzz-zenkov.js（window.MysZenkov），样式 frag/zzz-zenkov.css（zk-* 前缀）。
+     渲染对照游戏内「迷宫诡域」摘要：头像昵称 + 收藏总值/大红/百万撤离/最高排名
+     + 悬赏委托 + 赛季进度 + 幻境记录（撤离度·最高收益·难度解锁）+ 收藏（奖章 / 藏品）。 -->
+<div v-show="mys.tab==='zenkov'" v-if="mysHasRole()">
+  <div class="flex" style="gap:8px;flex-wrap:wrap;align-items:center">
+    <button class="ghost" @click="mysZenkov()" :disabled="mys.zenkov.loading">
+      {{ mys.zenkov.loading ? '读取中…' : '查询迷宫诡域' }}
+    </button>
+    <span class="hint" v-if="mys.zenkov.view && mys.zenkov.view.refresh">
+      数据刷新倒计时：{{ mys.zenkov.view.refresh }}
+    </span>
+  </div>
+  <p v-if="mys.zenkov.error" class="mys-error">{{ mys.zenkov.error }}</p>
+
+  <div v-if="mys.zenkov.view" class="zk-wrap">
+    <!-- ---- 头部：头像 + 昵称 + 最高排名 ---- -->
+    <div class="zk-card zk-head">
+      <img class="zk-avatar" v-if="mys.zenkov.view.avatar" :src="mys.zenkov.view.avatar" alt="">
+      <div class="zk-head-b">
+        <div class="zk-nick">{{ mys.zenkov.view.nick || mysRoleName() }}</div>
+        <div class="zk-head-s">
+          迷宫诡域<span v-if="mys.zenkov.view.season.id"> · 第 {{ mys.zenkov.view.season.id }} 赛季</span>
+        </div>
+      </div>
+      <span class="zk-rank" v-if="mys.zenkov.view.rank">{{ mys.zenkov.view.rank }}</span>
+    </div>
+
+    <!-- ---- 四个关键数字 ---- -->
+    <div class="zk-stats">
+      <div class="zk-stat">
+        <span class="zk-stat-t">收藏总值</span>
+        <b>{{ mys.zenkov.view.total_value }}</b>
+      </div>
+      <div class="zk-stat">
+        <span class="zk-stat-t">大红</span>
+        <b>{{ mys.zenkov.view.big_red }}</b>
+      </div>
+      <div class="zk-stat">
+        <span class="zk-stat-t">百万撤离</span>
+        <b>{{ mys.zenkov.view.millions }}</b>
+      </div>
+      <div class="zk-stat">
+        <span class="zk-stat-t">悬赏委托</span>
+        <b v-if="mys.zenkov.view.duty">
+          {{ mys.zenkov.view.duty.cur }}<span class="zk-stat-x">/{{ mys.zenkov.view.duty.max }}</span>
+        </b>
+        <b v-else class="zk-stat-x">—</b>
+      </div>
+    </div>
+
+    <!-- ---- 赛季进度 ---- -->
+    <div class="zk-card">
+      <div class="zk-card-t">
+        赛季进度
+        <span class="hint" v-if="mys.zenkov.view.season.left">剩余 {{ mys.zenkov.view.season.left }}</span>
+      </div>
+      <div class="zk-lv">
+        <span class="zk-lv-i">等级 <b>{{ mys.zenkov.view.season.level }}</b></span>
+        <span class="zk-lv-i">阶段 <b>{{ mys.zenkov.view.season.stage }}</b></span>
+        <span class="zk-lv-i" v-if="mys.zenkov.view.season.quest">
+          任务 <b>{{ mys.zenkov.view.season.quest.cur }}/{{ mys.zenkov.view.season.quest.max }}</b>
+        </span>
+      </div>
+      <div class="zk-pb" v-if="mys.zenkov.view.season.coin">
+        <div class="zk-pb-h">
+          <span>赛季金币</span>
+          <span class="zk-pb-v" :class="{full: mys.zenkov.view.season.coin.full}">
+            {{ mys.zenkov.view.season.coin.cur }} / {{ mys.zenkov.view.season.coin.max }}
+          </span>
+        </div>
+        <div class="zk-track"><i :style="{width: mys.zenkov.view.season.coin.w}"></i></div>
+      </div>
+      <div class="zk-pb" v-if="mys.zenkov.view.duty">
+        <div class="zk-pb-h">
+          <span>悬赏委托</span>
+          <span class="zk-pb-v" :class="{full: mys.zenkov.view.duty.full}">
+            {{ mys.zenkov.view.duty.cur }} / {{ mys.zenkov.view.duty.max }}
+          </span>
+        </div>
+        <div class="zk-track"><i :style="{width: mys.zenkov.view.duty.w}"></i></div>
+      </div>
+    </div>
+
+    <!-- ---- 幻境记录 ---- -->
+    <div class="zk-card" v-if="mys.zenkov.view.maps.length">
+      <div class="zk-card-t">幻境记录</div>
+      <div class="zk-map" v-for="m in mys.zenkov.view.maps" :key="m.id">
+        <div class="zk-map-h">
+          <span class="zk-map-n">{{ m.name }}</span>
+          <span class="zk-tag" v-if="m.challenge">挑战</span>
+          <span class="zk-tag hell" v-if="m.hell">地狱</span>
+          <span class="zk-tag hard" v-if="m.hard">硬核</span>
+          <span class="zk-map-p">{{ m.leave }}</span>
+        </div>
+        <div class="zk-track"><i :style="{width: m.w}"></i></div>
+        <div class="zk-map-f" v-if="m.price">最高收益 <b>{{ m.price }}</b></div>
+      </div>
+    </div>
+
+    <!-- ---- 收藏：奖章 ---- -->
+    <div class="zk-card" v-if="mys.zenkov.view.medal.list.length">
+      <div class="zk-card-t">
+        奖章
+        <span class="hint">{{ mys.zenkov.view.medal.cur }} / {{ mys.zenkov.view.medal.total }}</span>
+      </div>
+      <div class="zk-icons">
+        <span class="zk-icon" v-for="m in mys.zenkov.view.medal.list" :key="m.id"
+              :class="{off: !m.unlock}" :title="m.name + (m.unlock ? '' : '（未解锁）')">
+          <img :src="m.icon" alt=""><i>{{ m.name }}</i>
+        </span>
+      </div>
+    </div>
+
+    <!-- ---- 收藏：藏品 ---- -->
+    <div class="zk-card" v-if="mys.zenkov.view.goods.list.length">
+      <div class="zk-card-t">
+        藏品
+        <span class="hint">{{ mys.zenkov.view.goods.cur }} / {{ mys.zenkov.view.goods.total }}</span>
+      </div>
+      <div class="zk-icons">
+        <span class="zk-icon" v-for="g in mys.zenkov.view.goods.list" :key="g.id"
+              :class="{off: !g.unlock}"
+              :title="g.name + (g.number > 1 ? ' ×' + g.number : '') + (g.unlock ? '' : '（未解锁）')">
+          <img :src="g.icon" alt=""><i>{{ g.name }}</i>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <p v-else-if="mys.zenkov.done" class="muted">没有迷宫诡域数据。</p>
+  <details v-if="mys.zenkov.done" style="margin-top:10px">
+    <summary class="muted" style="cursor:pointer">查看原始返回</summary>
+    <pre style="max-height:300px;overflow:auto;font-size:12px;background:#f7f8fa;padding:10px;border-radius:8px">{{ mys.zenkov.raw }}</pre>
+  </details>
+</div>
+
+<!-- 绝区零 · 角色查询（plugins/_vendor/miyoushe/web/frag/zzz-roles.html）
+     查询逻辑 frag/zzz-roles.js（window.MysRoles），样式 frag/zzz-roles.css（rl-* 前缀）。
+     数据源：米游社 avatar/basic（账号拥有的全部角色）；该接口带「角色详情」风控，
+     未开放时（retcode 10041）后台自动降级到 Enka 展示角色，页面顶部会标出来源。 -->
+<div v-show="mys.tab==='roles'" v-if="mysHasRole()">
+  <div class="flex" style="gap:8px;flex-wrap:wrap;align-items:center">
+    <button class="ghost" @click="mysAvatars()" :disabled="mys.avatars.loading">
+      {{ mys.avatars.loading ? '读取中…' : '查询角色' }}
+    </button>
+    <span class="rl-src" v-if="mys.avatars.done" :class="mys.avatars.source">
+      来源：{{ mys.avatars.source_name }}
+    </span>
+    <span class="muted" v-if="mys.avatars.done">共 {{ mys.avatars.count }} 个角色</span>
+  </div>
+
+  <p v-if="mys.avatars.error" class="mys-error">{{ mys.avatars.error }}</p>
+  <p v-if="mys.avatars.note" class="rl-note">{{ mys.avatars.note }}</p>
+
+  <!-- 点卡片 → 打开详情浮层（frag/zzz-avatar.html，挂在 frag/zzz.html 末尾）：
+       音擎 / 驱动盘 / 技能加点 / 影画 / 面板属性 -->
+  <div v-if="mys.avatars.list.length" class="rl-grid">
+    <div class="rl-card rl-click" v-for="a in mys.avatars.list" :key="a.id" :class="rlRarity(a)"
+         @click="avOpen(a)" :title="'查看 ' + a.name + ' 的详情'">
+      <div class="rl-pic">
+        <img v-if="a.icon" :src="a.icon" :alt="a.name" loading="lazy" @error="rlImgErr($event)">
+        <span v-else class="rl-ph">{{ (a.name || '?').slice(0, 1) }}</span>
+        <i class="rl-rank" v-if="a.rank > 0" :title="'影画 ' + a.rank">{{ a.rank }}</i>
+        <!-- 稀有度：优先官方圆形徽章图，没有素材或加载失败才回退文字 -->
+        <img class="rl-raric" v-if="rlRarIcon(a)" :src="rlRarIcon(a)" :alt="a.rarity"
+             :title="'稀有度 ' + a.rarity" @error="rlRarErr($event)">
+        <span class="rl-star" :class="rlRarity(a)" v-if="a.rarity"
+              :style="rlRarIcon(a) ? 'display:none' : ''">{{ a.rarity }}</span>
+      </div>
+      <div class="rl-info">
+        <div class="rl-name" :title="a.full_name || a.name">{{ a.name }}</div>
+        <div class="rl-meta">
+          <span class="rl-lv">Lv.{{ a.level || '-' }}</span>
+          <span class="rl-chip" v-if="a.element">{{ a.element }}</span>
+          <span class="rl-chip" v-if="a.profession">{{ a.profession }}</span>
+        </div>
+        <div class="rl-camp" v-if="a.camp">{{ a.camp }}</div>
+      </div>
+    </div>
+  </div>
+
+  <p v-else-if="mys.avatars.done && !mys.avatars.error" class="muted">没有读取到角色。</p>
+  <p v-else-if="!mys.avatars.done" class="muted">点「查询角色」读取该账号下所拥有的角色。</p>
+</div>
+
+<!-- 绝区零 · 图鉴（plugins/_vendor/miyoushe/web/frag/zzz-codex.html）
+     逻辑 frag/zzz-codex.js（window.MysCodex），样式 frag/zzz-codex.css（cx-* 前缀）。
+     数据源：/zzz/codex 的**本地快照**（后台抓取时已把图标一起下载到本机），与账号无关、无需选角色。
+     点卡片看详情；「更新数据」会让后台重新抓取并落盘（不需要重启 bot）。 -->
+<div v-show="mys.tab==='codex'">
+  <div class="cx-bar">
+    <div class="cx-tabs">
+      <span class="cx-tab" :class="{active: mys.codex.tab==='agents'}" @click="mys.codex.tab='agents'">
+        代理人<i>{{ cxTabCount('agents') }}</i>
+      </span>
+      <span class="cx-tab" :class="{active: mys.codex.tab==='wengines'}" @click="mys.codex.tab='wengines'">
+        音擎<i>{{ cxTabCount('wengines') }}</i>
+      </span>
+      <span class="cx-tab" :class="{active: mys.codex.tab==='discs'}" @click="mys.codex.tab='discs'">
+        驱动盘<i>{{ cxTabCount('discs') }}</i>
+      </span>
+      <span class="cx-tab" :class="{active: mys.codex.tab==='bangboo'}" @click="mys.codex.tab='bangboo'">
+        邦布<i>{{ cxTabCount('bangboo') }}</i>
+      </span>
+    </div>
+  </div>
+
+  <!-- 工具条（一行）：搜索名称（最前）→ 属性/职业/阵营 下拉（仅代理人页签，选项由数据动态汇总）
+       → 清空筛选 → 更新数据（最右）。
+       注意这一行**不能**加 v-if：搜索和更新是四个页签都要用的，只有中间的下拉是有条件渲染的。 -->
+  <div class="cx-filters">
+    <input class="cx-search" v-model="mys.codex.q" placeholder="搜索名称 / 英文名…">
+    <div class="cx-frow" v-for="f in cxFilters()" :key="f.key">
+      <span class="cx-flabel">{{ f.label }}</span>
+      <select class="cx-fsel" :class="{active: !!mys.codex.filter[f.key]}"
+              :value="mys.codex.filter[f.key] || ''"
+              @change="cxFilterSet(f.key, $event.target.value)">
+        <option value="">全部</option>
+        <option v-for="o in f.options" :key="o" :value="o">{{ cxT(o) }}</option>
+      </select>
+    </div>
+    <div class="cx-actions">
+      <!-- 显示语言：切换后名称/描述都走映射表，映射里没有的文本自动回退简中 -->
+      <select class="cx-fsel cx-lang" :value="mys.codex.lang" title="显示语言"
+              :disabled="mys.codex.langs.length <= 1"
+              @change="cxLangSet($event.target.value)">
+        <option v-for="l in mys.codex.langs" :key="l.id" :value="l.id">{{ l.name }}</option>
+      </select>
+      <button class="ghost sm" v-if="cxFilterOn()" @click="cxFilterClear()">清空筛选</button>
+      <button class="ghost sm" @click="mysCodexRefresh()" :disabled="mys.codex.refreshing">
+        {{ mys.codex.refreshing ? '抓取中…' : '更新数据' }}
+      </button>
+    </div>
+  </div>
+
+  <p v-if="mys.codex.error" class="mys-error">{{ mys.codex.error }}</p>
+  <p class="cx-count" v-if="mys.codex.done">
+    共 {{ cxList().length }} 项{{ cxTabName() }}
+    <span class="cx-src">本地快照 · 数据版本 {{ mys.codex.version }}<span v-if="mys.codex.updated">（{{ mys.codex.updated }} 更新）</span></span>
+    <!-- 「更新方式」：展开下面那个说明浮层（内容由接口的 pipeline 字段给出，见 codex_build.pipeline） -->
+    <a class="cx-how" v-if="cxHow().steps.length" @click="cxHowShow()"
+       title="这些数据是怎么抓来的、访问了哪些源地址">更新方式</a>
+  </p>
+
+  <div class="cx-grid" v-if="cxList().length">
+    <div class="cx-card" v-for="it in cxList()" :key="it.id" :class="cxRarity(it)" @click="codexPick(it)">
+      <div class="cx-pic">
+        <img v-if="it.icon" :src="it.icon" :alt="it.name" loading="lazy" @error="cxImgErr($event)">
+        <span v-else class="cx-ph">{{ (it.name || '?').slice(0, 1) }}</span>
+        <span class="cx-rar" :class="cxRarity(it)" v-if="it.rarity">{{ it.rarity }}</span>
+      </div>
+      <div class="cx-info">
+        <div class="cx-name" :title="cxT(it.full_name || it.name)">{{ cxT(it.name) }}</div>
+        <div class="cx-sub" v-if="cxSub(it)">{{ cxSub(it) }}</div>
+        <div class="cx-chips" v-if="cxChips(it).length">
+          <span class="cx-chip" v-for="(c, i) in cxChips(it)" :key="i">{{ c }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p v-else-if="mys.codex.done" class="muted">没有匹配的条目。</p>
+  <p v-else class="muted">正在加载图鉴数据…</p>
+
+  <!-- ---- 详情浮层（点卡片打开，点遮罩/关闭按钮收起） ---- -->
+  <div class="cx-modal" v-if="mys.codex.detail" @click="codexClose()">
+    <div class="cx-modal-box" @click.stop>
+      <button class="cx-modal-x" @click="codexClose()" title="关闭">×</button>
+
+      <div class="cx-mhead">
+        <div class="cx-mpic" :class="cxRarity(mys.codex.detail)">
+          <img v-if="mys.codex.detail.icon" :src="mys.codex.detail.icon"
+               :alt="cxDetail().name" @error="cxImgErr($event)">
+          <span v-else class="cx-ph">{{ (cxDetail().name || '?').slice(0, 1) }}</span>
+        </div>
+        <div class="cx-mtitle">
+          <div class="cx-mkind">{{ cxDetail().kind_name }}</div>
+          <div class="cx-mname">{{ cxDetail().name }}</div>
+          <div class="cx-mfull" v-if="cxDetail().full_name">{{ cxDetail().full_name }}</div>
+          <div class="cx-mbadges">
+            <span class="cx-rar" :class="cxRarity(mys.codex.detail)" v-if="cxDetail().rarity">{{ cxDetail().rarity }}</span>
+            <span class="cx-chip" v-for="(c, i) in cxDetail().chips" :key="i">{{ c }}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cx-mrows" v-if="cxDetail().rows.length">
+        <div class="cx-mrow" v-for="(r, i) in cxDetail().rows" :key="i">
+          <span class="cx-mk">{{ r.k }}</span><span class="cx-mv">{{ r.v }}</span>
+        </div>
+      </div>
+
+      <!-- ---- 代理人扩展数据 ---- -->
+      <!-- 技能倍率：倍率随「技能等级」现算（(Main + Growth × 等级) / 10000） -->
+      <div class="cx-sec" v-if="cxDetail().skills.length">
+        <div class="cx-sec-h">
+          <span class="cx-sec-t">技能倍率</span>
+          <span class="cx-lvs">
+            <span class="cx-lvs-t">技能等级</span>
+            <span class="cx-lv" v-for="n in 12" :key="n"
+                  :class="{active: mys.codex.skillLv===n}"
+                  @click="mys.codex.skillLv=n">{{ n }}</span>
+          </span>
+        </div>
+        <div class="cx-skill" v-for="(s, i) in cxDetail().skills" :key="i">
+          <div class="cx-skill-n">{{ s.name }}</div>
+          <div class="cx-skill-ps">
+            <span class="cx-skill-p" v-for="(p, j) in s.params" :key="j">
+              {{ p.k }} <b>{{ cxSkillVal(p) }}</b>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 突破档位：该档突破后的生命/攻击/防御 + 所需材料 -->
+      <div class="cx-sec" v-if="cxDetail().levels.length">
+        <div class="cx-sec-t">突破属性</div>
+        <table class="cx-tb">
+          <thead><tr><th>等级</th><th>生命</th><th>攻击</th><th>防御</th><th>材料</th></tr></thead>
+          <tbody>
+            <tr v-for="(l, i) in cxDetail().levels" :key="i">
+              <td class="cx-tb-lv">{{ l.min }} → {{ l.max }}</td>
+              <td>{{ l.hp }}</td><td>{{ l.atk }}</td><td>{{ l.def }}</td>
+              <td class="cx-tb-mat">
+                <span v-for="(m, j) in l.mats" :key="j">{{ cxMatName(m) }}</span>
+                <span v-if="!l.mats.length" style="color:var(--muted)">—</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="cx-note">
+          材料一列是数据源里给的 ID（参考数据没有「材料名 → 名字」对照表，所以不猜名字）：
+          <code>丁尼</code> 是通用货币，其余为材料 ID。
+        </div>
+      </div>
+
+      <!-- 核心技（基础特性）：每档的等级上限与属性加成 -->
+      <div class="cx-sec" v-if="cxDetail().extras.length">
+        <div class="cx-sec-t">核心技 · 基础特性加成</div>
+        <div class="cx-extra" v-for="(e, i) in cxDetail().extras" :key="i">
+          <span class="cx-extra-l">上限 {{ e.max }} 级</span>
+          <span class="cx-extra-i" v-for="(x, j) in e.items" :key="j">{{ x.k }} +{{ x.v }}</span>
+        </div>
+      </div>
+
+      <!-- 音擎效果：1~5 阶切换 -->
+      <div class="cx-talents" v-if="cxDetail().talents.length">
+        <div class="cx-talent-tabs">
+          <span class="cx-talent-tab" v-for="n in mys.codex.ranks" :key="n"
+                :class="{active: mys.codex.talent === n}" @click="mys.codex.talent = n">{{ n }} 阶</span>
+        </div>
+        <div class="cx-block">
+          <div class="cx-block-t">{{ cxTalent().name || '音擎效果' }}</div>
+          <div class="cx-block-x">{{ cxTalent().desc }}</div>
+        </div>
+      </div>
+
+      <div class="cx-block" v-for="(b, i) in cxDetail().blocks" :key="i">
+        <div class="cx-block-t">{{ b.title }}</div>
+        <div class="cx-block-x">{{ b.text }}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---- 「更新方式」说明浮层：点上面那个小链接打开 ----
+       内容全部来自接口返回的 pipeline（后台 codex_build.pipeline() 用真实常量拼的），
+       所以源地址、目录、文件名都不会和实际代码脱节。 -->
+  <div class="cx-modal" v-if="mys.codex.howOpen" @click="cxHowHide()">
+    <div class="cx-modal-box cx-howbox" @click.stop>
+      <button class="cx-modal-x" @click="cxHowHide()" title="关闭">×</button>
+
+      <div class="cx-h-head">
+        <div class="cx-mkind">更新数据 · 流程说明</div>
+        <div class="cx-h-title">这份图鉴是怎么抓出来的</div>
+        <div class="cx-h-sum">{{ cxHow().summary }}</div>
+        <div class="cx-h-meta">
+          <span class="cx-chip" v-if="cxHow().version">数据版本 {{ cxHow().version }}</span>
+          <span class="cx-chip" v-if="cxHow().table_total">文本表缓存 {{ cxHow().table_total }}</span>
+        </div>
+      </div>
+
+      <div class="cx-h-step" v-for="s in cxHow().steps" :key="s.n">
+        <div class="cx-h-sh"><i>{{ s.n }}</i><span>{{ s.title }}</span></div>
+        <div class="cx-h-sd">{{ s.desc }}</div>
+        <ul class="cx-h-ul" v-if="s.bullets && s.bullets.length">
+          <li v-for="(b, i) in s.bullets" :key="i">{{ b }}</li>
+        </ul>
+        <div class="cx-h-li" v-for="(l, i) in s.links" :key="i">
+          <span class="cx-h-k">{{ l.k }}</span>
+          <code class="cx-h-v" v-if="l.v">{{ l.v }}</code>
+          <span class="cx-h-n" v-if="l.note">{{ l.note }}</span>
+        </div>
+        <div class="cx-h-out" v-if="s.out">产出 · {{ s.out }}</div>
+      </div>
+
+      <div class="cx-note">
+        说明由后台按当前配置实时生成（源地址、缓存目录都取自代码里的常量），
+        与「更新数据」按钮实际执行的是同一套流程。
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 绝区零 · 签到（plugins/_vendor/miyoushe/web/frag/zzz-sign.html）
+     逻辑 frag/zzz-sign.js（window.MysSign）+ frag/zzz-autosign.js（window.MysAutoSign，
+     自动签到的配置弹窗与「一键签到」），样式 frag/zzz-sign.css、frag/zzz-autosign.css。
+     数据源：luna 活动接口（/zzz/sign 只读拉状态+奖励表，/zzz/sign/do 执行签到）。 -->
+
+<!-- 自动签到入口：与「当前选中哪个角色」无关（签的是页面上勾好的那批角色），
+     所以**不套 v-if="mysHasRole()"**，放在最上面一行。 -->
+<div class="sg-auto-bar" v-show="mys.tab==='sign'">
+  <button class="ghost" @click="asOpen()">自动签到设置</button>
+  <button class="ghost" @click="asRun(false)" :disabled="mys.as.running">
+    {{ mys.as.running ? '签到中…' : '一键签到' }}
+  </button>
+  <span class="hint">{{ mys.as.line }}</span>
+</div>
+
+<div v-show="mys.tab==='sign'" v-if="mysHasRole()">
+  <div class="flex" style="gap:8px;flex-wrap:wrap;align-items:center">
+    <button class="ghost" @click="mysSignLoad()" :disabled="mys.sign.loading || mys.sign.signing">
+      {{ mys.sign.loading ? '读取中…' : '读取签到状态' }}
+    </button>
+    <button class="ghost" v-if="mys.sign.done"
+            @click="mysSignDo()" :disabled="mys.sign.loading || mys.sign.signing || sgSigned()">
+      {{ sgSigned() ? '今日已签到' : (mys.sign.signing ? '签到中…' : '立即签到') }}
+    </button>
+  </div>
+
+  <p v-if="mys.sign.error" class="mys-error">{{ mys.sign.error }}</p>
+  <p v-if="mys.sign.message" class="sg-ok">{{ mys.sign.message }}</p>
+
+  <div v-if="mys.sign.done" class="sg-head">
+    <div class="sg-stat"><b>{{ mys.sign.info.total_sign_day || 0 }}</b><i>累计签到（天）</i></div>
+    <div class="sg-stat"><b>{{ mys.sign.info.sign_cnt_missed || 0 }}</b><i>本月漏签（天）</i></div>
+    <span class="sg-state" :class="sgSigned() ? 'on' : 'off'">
+      {{ sgSigned() ? '今日已签到' : '今日未签到' }}
+    </span>
+  </div>
+
+  <p class="sg-month" v-if="mys.sign.done">{{ mys.sign.month }} 月签到奖励（已领取的格子打勾）</p>
+  <div class="sg-grid" v-if="mys.sign.done && mys.sign.awards.length">
+    <div class="sg-card" v-for="(a, i) in mys.sign.awards" :key="i"
+         :class="{got: i < (mys.sign.info.total_sign_day || 0), today: i === sgToday()}">
+      <span class="sg-day">{{ i + 1 }}</span>
+      <span class="sg-tick" v-if="i < (mys.sign.info.total_sign_day || 0)">✓</span>
+      <img class="sg-ico" v-if="a.icon" :src="a.icon" :alt="a.name" loading="lazy" @error="sgImgErr($event)">
+      <span class="sg-ph" v-else>?</span>
+      <div class="sg-name">{{ a.name }}</div>
+      <div class="sg-cnt">×{{ a.cnt }}</div>
+    </div>
+  </div>
+  <p v-else-if="mys.sign.done" class="muted">没有奖励数据。</p>
+  <p v-else class="muted">点「读取签到状态」查看本月签到奖励。</p>
+</div>
+
+<!-- 绝区零 · 实时便笺 / 体力（plugins/_vendor/miyoushe/web/frag/zzz-note.html）
+     逻辑 frag/zzz-note.js（window.MysNote），样式 frag/zzz-note.css（nt-* 前缀）。
+     数据来自 /zzz/note：电量 / 活跃度 / 刮刮乐 / 录像店 / 悬赏委托 / 周常。 -->
+<div v-show="mys.tab==='note'" v-if="mysHasRole()">
+  <div class="flex" style="gap:8px;flex-wrap:wrap;align-items:center">
+    <button class="ghost" @click="mysNote()" :disabled="mys.note.loading">
+      {{ mys.note.loading ? '读取中…' : (mys.note.done ? '刷新' : '查询实时便笺') }}
+    </button>
+    <span class="hint" v-if="mys.note.done && !mys.note.error">已读取 · {{ mysRoleName() }}</span>
+  </div>
+  <p v-if="mys.note.error" class="mys-error">{{ mys.note.error }}</p>
+
+  <div v-if="mys.note.view" class="nt-wrap">
+    <!-- 电量 -->
+    <div class="nt-card">
+      <div class="nt-card-t">电量</div>
+      <div class="nt-row">
+        <b class="nt-num">{{ mys.note.view.energy_cur }}<span class="nt-x">/{{ mys.note.view.energy_max }}</span></b>
+        <span class="nt-sub" v-if="mys.note.view.energy_restore">
+          {{ ntDur(mys.note.view.energy_restore) }}后回满
+        </span>
+        <span class="nt-sub ok" v-else>已回满</span>
+      </div>
+      <div class="nt-track" v-if="mys.note.view.energy_max">
+        <i :style="{width: ntPct(mys.note.view.energy_cur, mys.note.view.energy_max)}"></i>
+      </div>
+    </div>
+
+    <!-- 活跃度 -->
+    <div class="nt-card">
+      <div class="nt-card-t">今日活跃度</div>
+      <div class="nt-row">
+        <b class="nt-num">{{ mys.note.view.vitality_cur }}<span class="nt-x">/{{ mys.note.view.vitality_max }}</span></b>
+        <span class="nt-sub ok" v-if="mys.note.view.vitality_cur >= mys.note.view.vitality_max">已满</span>
+      </div>
+      <div class="nt-track" v-if="mys.note.view.vitality_max">
+        <i :style="{width: ntPct(mys.note.view.vitality_cur, mys.note.view.vitality_max)}"></i>
+      </div>
+    </div>
+
+    <!-- 两项开关状态 -->
+    <div class="nt-grid">
+      <div class="nt-chip" :class="{on: mys.note.view.card_sign==='已刮'}">
+        <span class="nt-chip-l">刮刮乐</span><b>{{ mys.note.view.card_sign }}</b>
+      </div>
+      <div class="nt-chip" :class="{on: mys.note.view.vhs_sale==='营业中'}">
+        <span class="nt-chip-l">录像店</span><b>{{ mys.note.view.vhs_sale }}</b>
+      </div>
+    </div>
+
+    <!-- 悬赏委托 + 周常 -->
+    <div class="nt-grid">
+      <div class="nt-card nt-sm">
+        <div class="nt-card-t">悬赏委托</div>
+        <div class="nt-row">
+          <b class="nt-num">{{ mys.note.view.bounty_cur }}<span class="nt-x">/{{ mys.note.view.bounty_max }}</span></b>
+          <span class="nt-sub ok" v-if="mys.note.view.bounty_max && mys.note.view.bounty_cur >= mys.note.view.bounty_max">已做满</span>
+        </div>
+      </div>
+      <div class="nt-card nt-sm">
+        <div class="nt-card-t">周常任务</div>
+        <div class="nt-row">
+          <b class="nt-num">{{ mys.note.view.weekly_cur }}<span class="nt-x">/{{ mys.note.view.weekly_max }}</span></b>
+          <span class="nt-sub ok" v-if="mys.note.view.weekly_max && mys.note.view.weekly_cur >= mys.note.view.weekly_max">已做满</span>
+        </div>
+        <!-- refresh_time 是「距刷新的剩余秒数」，不是时间戳，所以用 ntDur 不是 ntStamp -->
+        <div class="nt-sub" v-if="mys.note.view.weekly_refresh_sec">
+          {{ ntDur(mys.note.view.weekly_refresh_sec) }}后刷新
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p v-else-if="mys.note.done" class="muted">没有实时便笺数据（该角色可能未开启）。</p>
+  <details v-if="mys.note.done" style="margin-top:10px">
+    <summary class="muted" style="cursor:pointer">查看原始返回</summary>
+    <pre style="max-height:300px;overflow:auto;font-size:12px;background:#f7f8fa;padding:10px;border-radius:8px">{{ mys.note.raw }}</pre>
+  </details>
+</div>
+
+<!-- 绝区零 · 临界推演（plugins/_vendor/miyoushe/web/frag/zzz-void.html）
+     逻辑 frag/zzz-void.js（window.MysVoid），样式 frag/zzz-void.css（vt-* 前缀）。
+     数据来自 /zzz/void：本期总分 / 排名 / BOSS 关与各关卡成绩。 -->
+<div v-show="mys.tab==='void'" v-if="mysHasRole()">
+  <div class="flex" style="gap:8px;flex-wrap:wrap;align-items:center">
+    <button class="ghost" @click="mysVoid()" :disabled="mys.void.loading">
+      {{ mys.void.loading ? '读取中…' : (mys.void.done ? '刷新' : '查询临界推演') }}
+    </button>
+    <span class="hint" v-if="mys.void.view && mys.void.view.nick">{{ mys.void.view.nick }}</span>
+    <span class="hint" v-if="mys.void.view && mys.void.view.left_ts">{{ vtLeft(mys.void.view.left_ts) }}</span>
+  </div>
+  <p v-if="mys.void.error" class="mys-error">{{ mys.void.error }}</p>
+
+  <div v-if="mys.void.view" class="vt-wrap">
+    <!-- 总览 -->
+    <div class="vt-card vt-head">
+      <div class="vt-score">
+        <span class="vt-score-n">{{ mys.void.view.total_score }}</span>
+        <span class="vt-score-x" v-if="mys.void.view.max_score">/ {{ mys.void.view.max_score }}</span>
+      </div>
+      <div class="vt-head-r">
+        <div class="vt-rank" v-if="mys.void.view.rank_percent">前 {{ (mys.void.view.rank_percent/100).toFixed(2) }}%</div>
+        <div class="vt-head-s">本期总分</div>
+      </div>
+    </div>
+
+    <!-- BOSS 关 -->
+    <div class="vt-card vt-boss" v-if="mys.void.view.boss && mys.void.view.boss.name">
+      <div class="vt-boss-h">
+        <span class="vt-tag boss">BOSS</span>
+        <b class="vt-boss-n">{{ mys.void.view.boss.name }}</b>
+      </div>
+      <div class="vt-boss-s">{{ mys.void.view.boss.score }} 分<span v-if="mys.void.view.boss.star"> · {{ mys.void.view.boss.star }}★</span></div>
+    </div>
+
+    <!-- 各关卡 -->
+    <div class="vt-card" v-if="mys.void.view.items.length">
+      <div class="vt-card-t">关卡成绩</div>
+      <div class="vt-item" v-for="(it, i) in mys.void.view.items" :key="i">
+        <div class="vt-item-h">
+          <span class="vt-item-n">{{ it.name || ('关卡 ' + (i+1)) }}</span>
+          <span class="vt-item-s">{{ it.score }} 分<span v-if="it.star"> · {{ it.star }}★</span></span>
+          <span class="vt-item-r" v-if="it.ratio">{{ it.ratio }}</span>
+        </div>
+        <div class="vt-item-f" v-if="it.time || it.buddy || it.avatars.length">
+          <span v-if="it.time" class="vt-meta">{{ it.time }}</span>
+          <span class="vt-avs">
+            <img v-for="(a, k) in it.avatars" :key="k" class="vt-ava" :class="a.rarity==='A'?'a':'s'"
+                 :src="a.icon" alt="" @error="vtImgErr($event)">
+            <span class="vt-buddy" v-if="it.buddy">
+              <img class="vt-ava" :class="it.buddy_rarity==='A'?'a':'s'" :src="it.buddy" alt="" @error="vtImgErr($event)">
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p v-else-if="mys.void.done" class="muted">没有临界推演数据（本期可能未参与）。</p>
+  <details v-if="mys.void.done" style="margin-top:10px">
+    <summary class="muted" style="cursor:pointer">查看原始返回</summary>
+    <pre style="max-height:300px;overflow:auto;font-size:12px;background:#f7f8fa;padding:10px;border-radius:8px">{{ mys.void.raw }}</pre>
+  </details>
+</div>
+
+<!-- 绝区零 · 玩家概览（plugins/_vendor/miyoushe/web/frag/zzz-profile.html）
+     逻辑 frag/zzz-profile.js（window.MysProfile），样式 frag/zzz-profile.css（pv-* 前缀）。
+     数据来自 /zzz/profile（/index）：活跃天数 / 角色数 / 邦布数 / 层数 + 展示角色与邦布。 -->
+<div v-show="mys.tab==='profile'" v-if="mysHasRole()">
+  <div class="flex" style="gap:8px;flex-wrap:wrap;align-items:center">
+    <button class="ghost" @click="mysProfile()" :disabled="mys.profile.loading">
+      {{ mys.profile.loading ? '读取中…' : (mys.profile.done ? '刷新' : '查询玩家概览') }}
+    </button>
+    <span class="hint" v-if="mys.profile.done && !mys.profile.error">已读取 · {{ mysRoleName() }}</span>
+  </div>
+  <p v-if="mys.profile.error" class="mys-error">{{ mys.profile.error }}</p>
+
+  <div v-if="mys.profile.view" class="pv-wrap">
+    <!-- 关键档案 -->
+    <div class="pv-stats">
+      <div class="pv-stat"><b>{{ mys.profile.view.active_days }}</b><span>活跃天数</span></div>
+      <div class="pv-stat"><b>{{ mys.profile.view.avatar_num }}</b><span>角色数</span></div>
+      <div class="pv-stat"><b>{{ mys.profile.view.buddy_num }}</b><span>邦布数</span></div>
+      <div class="pv-stat" v-if="mys.profile.view.zone_layer"><b>{{ mys.profile.view.zone_layer }}</b><span>本期层数</span></div>
+    </div>
+    <div class="pv-lv" v-if="mys.profile.view.world_level_name">{{ mys.profile.view.world_level_name }}</div>
+
+    <!-- 展示角色 -->
+    <div class="pv-card" v-if="mys.profile.view.avatars.length">
+      <div class="pv-card-t">展示角色 <span class="hint">{{ mys.profile.view.avatars.length }} 个</span></div>
+      <div class="pv-grid">
+        <div class="pv-ava" v-for="a in mys.profile.view.avatars" :key="a.id">
+          <img class="pv-ava-i" :class="a.rarity==='A'?'a':'s'" :src="a.icon" alt="" @error="pvImgErr($event)">
+          <div class="pv-ava-b">
+            <div class="pv-ava-n">{{ a.name }}<span class="pv-ava-rk" v-if="a.rank">· {{ a.rank }} 影画</span></div>
+            <div class="pv-ava-m">Lv.{{ a.level }} · {{ a.element }} · {{ a.profession }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 邦布 -->
+    <div class="pv-card" v-if="mys.profile.view.buddies.length">
+      <div class="pv-card-t">邦布 <span class="hint">{{ mys.profile.view.buddies.length }} 个</span></div>
+      <div class="pv-bud">
+        <span class="pv-b" v-for="b in mys.profile.view.buddies" :key="b.id" :class="b.rarity==='A'?'a':'s'">
+          {{ b.name }}<i v-if="b.star"> · {{ b.star }}★</i>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <p v-else-if="mys.profile.done" class="muted">没有玩家概览数据。</p>
+  <details v-if="mys.profile.done" style="margin-top:10px">
+    <summary class="muted" style="cursor:pointer">查看原始返回</summary>
+    <pre style="max-height:300px;overflow:auto;font-size:12px;background:#f7f8fa;padding:10px;border-radius:8px">{{ mys.profile.raw }}</pre>
+  </details>
+</div>
+
+<!-- 绝区零 · 绳网月报（plugins/_vendor/miyoushe/web/frag/zzz-month.html）
+     逻辑 frag/zzz-month.js（window.MysMonth），样式 frag/zzz-month.css（mo-* 前缀）。
+     数据来自 /zzz/month（nap_ledger）：本月（或指定月份）菲林等资源的收入构成。 -->
+<div v-show="mys.tab==='month'" v-if="mysHasRole()">
+  <div class="flex" style="gap:8px;flex-wrap:wrap;align-items:center">
+    <select class="sel" v-model="mys.month.pick" :disabled="!mys.month.months.length">
+      <option v-for="m in mys.month.months" :key="m" :value="m">{{ moPretty(m) }}</option>
+    </select>
+    <button class="ghost" @click="mysMonth(mys.month.pick)" :disabled="mys.month.loading">
+      {{ mys.month.loading ? '读取中…' : '查询' }}
+    </button>
+    <span class="hint" v-if="mys.month.view">{{ mys.month.view.month }} · {{ mys.month.view.nick }}</span>
+  </div>
+  <p v-if="mys.month.error" class="mys-error">{{ mys.month.error }}</p>
+
+  <div v-if="mys.month.view" class="mo-wrap">
+    <!-- 收入明细 -->
+    <div class="mo-card" v-if="mys.month.view.items.length">
+      <div class="mo-card-t">收入明细</div>
+      <div class="mo-row" v-for="(it, i) in mys.month.view.items" :key="i">
+        <span class="mo-row-n">{{ it.name }}</span>
+        <b class="mo-row-v">{{ it.count }}</b>
+      </div>
+    </div>
+
+    <!-- 渠道构成 -->
+    <div class="mo-card" v-if="mys.month.view.incomes.length">
+      <div class="mo-card-t">渠道构成</div>
+      <div class="mo-bar" v-for="(c, i) in mys.month.view.incomes" :key="i">
+        <div class="mo-bar-h">
+          <span class="mo-bar-n">{{ c.name }}</span>
+          <span class="mo-bar-v">{{ c.num }} <i>({{ c.percent }}%)</i></span>
+        </div>
+        <div class="mo-track"><i :style="{width: Math.min(100, c.percent) + '%'}"></i></div>
+      </div>
+    </div>
+    <p v-if="!mys.month.view.items.length && !mys.month.view.incomes.length" class="muted">这个月没有可统计的收入。</p>
+  </div>
+
+  <details v-if="mys.month.done" style="margin-top:10px">
+    <summary class="muted" style="cursor:pointer">查看原始返回</summary>
+    <pre style="max-height:300px;overflow:auto;font-size:12px;background:#f7f8fa;padding:10px;border-radius:8px">{{ mys.month.raw }}</pre>
+  </details>
+</div>
+
+<!-- 网页版「角色面板」页签已删除（2026-10-05）：那套版面是从 ZZZeroUID 搬来的，
+     显示效果不好；QQ 命令已改为出「代理人详细」面板图（src/zzz/avatar/panel.py）。 -->
+<!-- 自动签到的配置浮层：挂在所有「子页 v-show 容器」**之外**（父元素 display:none 时
+     position:fixed 的浮层一样不显示）。入口按钮在 frag/zzz-sign.html 顶部那条 .sg-auto-bar。 -->
+<!-- 绝区零 · 自动签到 配置弹窗（plugins/_vendor/miyoushe/web/frag/zzz-autosign.html）
+     逻辑 frag/zzz-autosign.js（window.MysAutoSign，as* 方法），样式 frag/zzz-autosign.css。
+     入口是签到页（frag/zzz-sign.html）顶部那条 .sg-auto-bar 上的两个按钮：
+     「自动签到设置」（本弹窗）/「一键签到」（立刻签一轮）。
+
+     ⚠️ 浮层必须挂在「子页 v-show 容器」之外：这里是 zzz-sign.html 的末尾、只有一个 v-if，
+     若放进那个 v-show="mys.tab==='sign'" 的盒子里，切到别的子页时父元素 display:none，
+     position:fixed 的浮层一样不会显示（拆 frag 时踩过）。
+
+     五个区块：① 触发方式（定时 / 仅手动 + 是否启用）② 签到目标（账号 × 角色多选，可跨账号）
+     ③ 请求间隔（基准 ± 浮动，下限 3 秒）④ 签到通知（可选，仅 OneBot 私聊推送）
+     ⑤ 最近一次签到结果。 -->
+<div class="as-mask" v-if="mys.as.show" @click.self="asClose()">
+  <div class="as-box">
+    <div class="as-head">
+      <b>自动签到</b>
+      <span class="as-sub">勾选的角色每天定时签一遍，也可以只用页面 / QQ 命令手动触发</span>
+      <button class="ghost sm" @click="asClose()">关闭</button>
+    </div>
+
+    <div class="as-body">
+      <!-- ① 触发方式 -->
+      <div class="as-sec">
+        <div class="as-title">触发方式</div>
+        <label class="as-line">
+          <input type="radio" value="auto" v-model="mys.as.cfg.mode">
+          <span>每天定时自动签</span>
+          <span class="as-inline" v-if="mys.as.cfg.mode==='auto'">
+            每天 <input class="as-num" type="time" v-model="mys.as.cfg.time">
+            ± <input class="as-num" type="number" min="0" max="120" v-model.number="mys.as.cfg.jitter"> 分钟浮动
+          </span>
+        </label>
+        <label class="as-line">
+          <input type="radio" value="manual" v-model="mys.as.cfg.mode">
+          <span>仅手动触发</span>
+          <span class="as-hint">用页面上的「一键签到」，或在 QQ 里发「一键签到」命令</span>
+        </label>
+        <label class="as-line">
+          <input type="checkbox" v-model="mys.as.cfg.enabled">
+          <span>启用（关掉后定时与手动触发都停下，勾选的目标保留）</span>
+        </label>
+        <p class="as-hint" v-if="mys.as.cfg.enabled && mys.as.cfg.mode==='auto'">
+          下一次触发：<b>{{ mys.as.nextLabel || '（保存后马上排定）' }}</b>
+          —— 触发时刻会在设定值前后随机浮动，每天都不一样
+        </p>
+        <p class="as-hint" v-if="mys.as.cfg.enabled && mys.as.cfg.mode==='manual'">
+          定时已关：只在你点「一键签到」（页面或 QQ 命令）的时候签。
+        </p>
+      </div>
+
+      <!-- ② 签到目标 -->
+      <div class="as-sec">
+        <div class="as-title">
+          签到目标
+          <span class="as-thin">已选 {{ mys.as.cfg.targets.length }} 个角色</span>
+          <span class="as-grow"></span>
+          <button class="ghost sm" @click="asLoadTargets()" :disabled="mys.as.tLoading">
+            {{ mys.as.tLoading ? '读取中…' : '读取账号角色' }}
+          </button>
+        </div>
+        <p class="as-hint">
+          可跨多个米游社账号；一个账号下有多个绝区零角色时，每个都能单独勾。
+          这里勾的是「机器人要签谁」，与 QQ 里谁发命令无关。
+        </p>
+        <p v-if="mys.as.tError" class="as-err">{{ mys.as.tError }}</p>
+
+        <div class="as-acc" v-for="a in mys.as.targets" :key="a.account_id">
+          <div class="as-acc-head">
+            <b>{{ a.account }}</b>
+            <span class="as-thin">{{ a.roles.length }} 个角色</span>
+            <label class="as-mini" v-if="a.roles.length">
+              <input type="checkbox" :checked="asAccAll(a)"
+                     @change="asAccToggle(a, $event.target.checked)"> 全选
+            </label>
+            <span class="as-err" v-if="a.error">{{ a.error }}</span>
+          </div>
+          <div class="as-roles" v-if="a.roles.length">
+            <label class="as-role" v-for="r in a.roles" :key="r.uid">
+              <input type="checkbox" :checked="asPickedOne(a.account_id, r.uid)"
+                     @change="asPick(a, r, $event.target.checked)">
+              <span class="as-role-name">{{ r.role || ('UID ' + r.uid) }}</span>
+              <i>{{ r.region }}</i>
+            </label>
+          </div>
+        </div>
+        <p class="as-hint" v-if="!mys.as.targets.length && !mys.as.tLoading">
+          点右上角「读取账号角色」列出可签到的账号与角色（每个账号会现拉一次角色列表）。
+        </p>
+      </div>
+
+      <!-- ③ 请求间隔 -->
+      <div class="as-sec">
+        <div class="as-title">请求间隔</div>
+        <p class="as-line">
+          每个请求之间隔
+          <input class="as-num" type="number" min="3" max="120" step="0.5" v-model.number="mys.as.cfg.gap"> 秒
+          ± <input class="as-num" type="number" min="0" max="60" step="0.5" v-model.number="mys.as.cfg.gap_jitter"> 秒
+        </p>
+        <p class="as-hint">
+          下限 <b>3 秒</b>（间隔太密会被米游社当脚本）；浮动让节奏看起来更像人手动点的。
+          一个角色大概要 3 个请求，所以「角色数 × 3 × 间隔」就是一轮的大致耗时。
+        </p>
+      </div>
+
+      <!-- ④ 签到通知（可选） -->
+      <div class="as-sec">
+        <div class="as-title">签到通知</div>
+        <label class="as-line">
+          <input type="checkbox" v-model="mys.as.cfg.notify.enabled">
+          <span>签到完成后私聊通知（仅 OneBot 机器人）</span>
+        </label>
+        <template v-if="mys.as.cfg.notify.enabled">
+          <p class="as-line">用哪个机器人发
+            <select class="as-sel" v-model="mys.as.cfg.notify.self_id">
+              <option value="">（选择实例）</option>
+              <option v-for="b in mys.as.bots" :key="b.id" :value="b.id">
+                {{ b.name }}（{{ b.id }}）
+              </option>
+            </select>
+            <button class="ghost sm" @click="asLoadInstances()" :disabled="mys.as.iLoading">
+              {{ mys.as.iLoading ? '读取中…' : '刷新实例' }}
+            </button>
+          </p>
+          <p class="as-hint" v-if="!mys.as.bots.length && !mys.as.iLoading">
+            没检测到在线的 OneBot 实例。QQ 官方机器人发不了主动私聊，所以这里只列 OneBot。
+          </p>
+
+          <p class="as-line">接收者 QQ</p>
+          <textarea class="as-ta" rows="3" v-model="mys.as.notifyText"
+                    placeholder="一行一个 QQ 号（必须是这个机器人的好友）"></textarea>
+
+          <label class="as-line">
+            <input type="radio" value="auto" v-model="mys.as.cfg.notify.when">
+            <span>只在定时那一轮通知</span>
+          </label>
+          <label class="as-line">
+            <input type="radio" value="always" v-model="mys.as.cfg.notify.when">
+            <span>每次都通知（含页面 / QQ 命令触发的一键签到）</span>
+          </label>
+          <p class="as-hint">
+            用选中的 OneBot 机器人给这些 QQ 号发私聊，内容是签到结果原文。
+            发不出去（不是好友 / 实例掉线）只记后台日志，不影响签到本身。
+          </p>
+        </template>
+      </div>
+
+      <!-- ⑤ 最近一次 -->
+      <div class="as-sec" v-if="asLastText()">
+        <div class="as-title">最近一次签到</div>
+        <p class="as-hint">
+          {{ mys.as.cfg.last_result.when }} · {{ mys.as.cfg.last_result.source_name }}
+          · 成功 {{ mys.as.cfg.last_result.ok || 0 }} / {{ mys.as.cfg.last_result.count || 0 }}
+        </p>
+        <pre class="as-pre">{{ asLastText() }}</pre>
+      </div>
+    </div>
+
+    <div class="as-foot">
+      <span class="as-hint as-grow">{{ mys.as.msg }}</span>
+      <button class="ghost sm" @click="asClose()">取消</button>
+      <button class="ghost sm" @click="asRun(true)" :disabled="mys.as.running">
+        {{ mys.as.running ? '签到中…' : '保存并签一次' }}
+      </button>
+      <button class="sm" @click="asSave()" :disabled="mys.as.saving">
+        {{ mys.as.saving ? '保存中…' : '保存' }}
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 角色详情浮层：入口是「角色查询」页的卡片（frag/zzz-roles.html 里的 @click="avOpen"），
+     同样必须挂在子页容器之外，理由同上。 -->
+<!-- 绝区零 · 角色详情浮层（plugins/_vendor/miyoushe/web/frag/zzz-avatar.html）
+     逻辑 frag/zzz-avatar.js（window.MysAvatar），样式 frag/zzz-avatar.css（av-* 前缀）。
+     入口：角色查询页（frag/zzz-roles.html）点任意一张角色卡片 → avOpen(a)。
+
+     布局照着游戏内的角色详情卡做的（深色）：
+       ⓪ 顶栏 = 玩家名字 + UID（游戏里详情页最上面那一栏）
+       ① 顶部大卡 = 左「AGENT INFO」立绘卡（**头像框左上角竖排：稀有度→属性→职业**，
+                    右上角影画数，名字/等级左对齐）
+                    + 右面板属性两列 + 驱动盘图标条
+       ② 驱动盘区域 = 一整块，左上角嵌「音擎」小卡（图标+名字+星级+等级），
+                    右边是驱动盘自己的信息：有效副属性共命中 N 次 + 词条标签 + 评分（S+）
+       ③            + 下面 3 列共六张盘（套装名[位] / 稀有度等级 / 未命中N次 / 主词条 / 副词条+强化次数）
+
+     （影画 / 技能加点区块已按要求移除，不再显示）
+
+     数据是 /admin/api/miyoushe/zzz/avatar/info 的 { detail }，模型见 src/zzz/avatar/detail.py
+     顶部的 DETAIL_SHAPE。官方拿不到时后端会自动降级 Enka（只有展示栏角色、字段更少），
+     note 会写明降级原因，显示在卡片顶部。
+
+     ⚠️ 本浮层挂在 frag/zzz.html 的**末尾**（不在任何子页 v-show 容器里）：
+     position:fixed 的浮层放在 display:none 的父元素内是显示不出来的。 -->
+<div class="av-modal" v-if="mys.avatar.show" @click="avClose()">
+  <div class="av-box" @click.stop>
+    <button class="av-x" @click="avClose()" title="关闭">×</button>
+
+    <div v-if="mys.avatar.loading" class="av-tip">正在读取角色详情…</div>
+
+    <div v-else-if="mys.avatar.error" class="av-err">
+      <p>{{ mys.avatar.error }}</p>
+      <p class="av-tip">官方的「角色详情」受风控保护：
+        可到米游社插件的<strong>「设备配置」</strong>登记真机设备，
+        或在米游社 App「我的 → 设置 → 隐私设置」开启角色详情公开。</p>
+    </div>
+
+    <template v-else-if="avD()">
+      <!-- ---- ⓪ 顶栏：玩家名字 + UID（照官方角色详情页最上面那一栏）----
+           名字取自侧边栏选中的那个绝区零角色，和这张卡查的是谁无关。 -->
+      <div class="av-head">
+        <div class="av-head-name" v-if="avPlayer().name">{{ avPlayer().name }}</div>
+        <div class="av-head-uid" v-if="avPlayer().uid">UID: {{ avPlayer().uid }}</div>
+      </div>
+
+      <p class="av-note" v-if="avD().note">{{ avD().note }}</p>
+
+      <!-- ---- ① 顶部：立绘卡 + 面板属性 + 驱动盘图标条 ---- -->
+      <div class="av-top">
+        <div class="av-agent">
+          <span class="av-agent-tab">AGENT INFO</span>
+          <div class="av-pic" :class="avRarity()">
+            <img v-if="avD().icon" :src="avD().icon" :alt="avD().name" @error="avImgErr($event)">
+            <span v-else class="av-ph">{{ (avD().name || '?').slice(0, 1) }}</span>
+            <!-- 左上角竖排三件套：稀有度 → 属性 → 职业（照游戏内 AGENT INFO 卡，
+                 三个徽标贴着头像框左上角竖着一列，属性/职业不再单独占名字下面那一行）。
+                 全部优先用官方图标素材，缺素材或加载失败时各自退回文字小标签。 -->
+            <div class="av-tags">
+              <img class="av-raric" v-if="avRarIcon()" :src="avRarIcon()" :alt="avD().rarity"
+                   :title="'稀有度 ' + avD().rarity" @error="avRarErr($event)">
+              <span class="av-rar" :class="avRarity()" v-if="avD().rarity"
+                    :style="avRarIcon() ? 'display:none' : ''">{{ avD().rarity }}</span>
+              <img class="av-mi av-mi-el" v-if="avElemIcon()" :src="avElemIcon()" :alt="avD().element"
+                   :title="avD().element || '属性'" @error="avIcErr($event)">
+              <span class="av-mt" v-else-if="avD().element">{{ avD().element }}</span>
+              <img class="av-mi av-mi-pr" v-if="avProfIcon()" :src="avProfIcon()" :alt="avD().profession"
+                   :title="avD().profession || '职业'" @error="avIcErr($event)">
+              <span class="av-mt" v-else-if="avD().profession">{{ avD().profession }}</span>
+            </div>
+            <span class="av-rk" v-if="avD().rank != null" :title="'影画 ' + avD().rank">{{ avD().rank }}</span>
+          </div>
+          <div class="av-agent-name">{{ avD().name }}</div>
+          <div class="av-agent-lv">LV.{{ avD().level }}</div>
+          <!-- 阵营 LOGO（官方 group_icon_path）：绝对定位在立绘卡右下角，**不参与布局**
+               （不占 flex 空间、不推开名字/等级）。取不到就不渲染；加载失败按老规矩藏起来。 -->
+          <img class="av-camp" v-if="avD().camp_icon" :src="avD().camp_icon"
+               :alt="avD().camp" :title="avD().camp" @error="avIcErr($event)">
+          <!-- （「米游社 / Enka」来源小标签已按要求移除：看板顶部已有 note 说明降级原因） -->
+        </div>
+
+        <div class="av-right">
+          <div class="av-stats" v-if="avProps().length">
+            <div class="av-stat" v-for="(p, i) in avProps()" :key="i">
+              <span class="av-sk">
+                <img class="av-sk-ic" v-if="avPropIcon(p)" :src="avPropIcon(p)" :alt="p.name"
+                     loading="lazy" @error="avIcErr($event)">
+                {{ p.name }}
+              </span>
+              <span class="av-sv">
+                <em class="up" v-if="p.add && p.add !== p.base">{{ p.base }}<i>+{{ p.add }}</i></em>
+                <b>{{ p.final || p.base }}</b>
+              </span>
+            </div>
+          </div>
+          <p class="av-noprop" v-else-if="avD().source === 'enka'">Enka 备用源没有面板属性</p>
+
+          <!-- 技能加点：整条 skill_bar.png 原样铺开（图里自带圆形黑底），
+               等级数字按百分比叠到对应那个圆上 -->
+          <div class="av-skillbar" v-if="avSkills().length" title="技能加点">
+            <!-- ⚠️ 数字的百分比位置是相对「图片那层框」算的，必须包一层 .av-sbar-wrap：
+                 直接挂在 .av-skillbar 上时，图片被 max-width 夹窄居中、数字却按整卡宽度排 → 会错位。 -->
+            <div class="av-sbar-wrap">
+              <img class="av-sbar-img" :src="avSkillBarUrl()" alt="技能">
+              <span class="av-sbar-num" v-for="(s, i) in avSkills()" :key="i"
+                    :class="avSkillLvClass(s)" :style="avSkillNumStyle(s)"
+                    :title="s.name">{{ s.level }}</span>
+            </div>
+          </div>
+          <div class="av-strip" v-else-if="avDiscs().length" title="已装备的驱动盘">
+            <div class="av-st" v-for="(d, i) in avDiscs()" :key="i">
+              <img :src="d.icon" :alt="d.name" @error="avImgErr($event)">
+              <i>{{ d.level }}</i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- ②③ 驱动盘区域（照官方原图：音擎只是摆在这个区域的左上角，剩下的都归驱动盘）----
+           上排 = 左「音擎一块」（图标 + 名字 + 等级；**进阶星压在图标下沿**） | 中「有效副属性共命中 N 次」+ 词条标签
+                  | 右「驱动盘评分（S+）」
+           下排 = 六张驱动盘卡（3 列）
+           严格来说「有效副属性」和下面六张盘同属驱动盘区域，所以整块套一层 .av-dwrap；
+           音擎和有效副属性都直接坐在这层底上（不另起卡底），和游戏里一致。
+           注：音擎的星星是**进阶层数**（star），不是稀有度 —— 稀有度看 .av-wico 的边框色。 -->
+      <div class="av-dwrap">
+        <div class="av-dtop">
+          <!-- 左上角：音擎（只占左边一块） -->
+          <div class="av-wrow" v-if="avW()">
+            <div class="av-wico" :class="avWRarity()">
+              <img v-if="avW().icon" :src="avW().icon" @error="avImgErr($event)">
+              <!-- 进阶星：照游戏压在图标下沿 —— 固定 5 格，前 avWStarN() 颗点亮 -->
+              <span class="av-wstar" :title="'进阶 ' + avWStarN() + ' / 5'">
+                <i v-for="n in 5" :key="n" :class="{ on: n <= avWStarN() }">★</i>
+              </span>
+            </div>
+            <div class="av-winfo">
+              <div class="av-wname">{{ avW().name }}</div>
+            </div>
+            <div class="av-wlv">LV.{{ avW().level }}</div>
+          </div>
+
+          <!-- 中间：驱动盘有效副属性命中（官方评分方案才有） -->
+          <div class="av-plan" v-if="avD().valid_cnt > 0 || avD().plan_tags.length">
+            <span class="av-plan-t">驱动盘有效副属性共命中
+              <b class="av-plan-n">{{ avD().valid_cnt }}</b> 次</span>
+            <span class="av-plan-tags">
+              <i v-for="t in avD().plan_tags" :key="t">{{ t }}</i>
+            </span>
+          </div>
+
+          <!-- 最右：驱动盘评分 -->
+          <div class="av-wside" v-if="avRating()">
+            <div class="av-rate" :class="avRatingCls()">{{ avRating() }}</div>
+            <div class="av-rate-lab">驱动盘</div>
+          </div>
+        </div>
+
+        <!-- 六张驱动盘（3 列） -->
+        <div class="av-dgrid" v-if="avDiscs().length">
+          <div class="av-disc" v-for="(d, i) in avDiscs()" :key="i">
+            <div class="av-dhead">
+              <div class="av-dtitle">
+                <div class="av-dname">{{ d.suit || d.name }}<em>[{{ d.slot }}]</em></div>
+                <div class="av-dmeta">
+                  <!-- 稀有度：用和代理人/音擎同一套官方圆形徽章（Rarity_*.png）。
+                       文字小标签始终留在 DOM 里（有图标时 display:none），
+                       这样徽章图万一加载失败，avRarErr 能把它放出来兜底。 -->
+                  <img class="av-drar" v-if="avDiscRarIcon(d.rarity)" :src="avDiscRarIcon(d.rarity)"
+                       :alt="d.rarity" :title="'稀有度 ' + d.rarity" @error="avRarErr($event)">
+                  <span class="av-drar-t" v-if="d.rarity"
+                        :style="avDiscRarIcon(d.rarity) ? 'display:none' : ''">{{ d.rarity }}</span>
+                  <span class="av-dlv">LV{{ d.level }}</span>
+                  <span class="av-dmiss ok" v-if="d.invalid_cnt === 0">全命中</span>
+                  <span class="av-dmiss" v-else-if="d.invalid_cnt > 0">未命中{{ d.invalid_cnt }}次</span>
+                </div>
+              </div>
+              <img class="av-dico" :src="d.icon" :alt="d.name" @error="avImgErr($event)">
+            </div>
+            <div class="av-dmain" v-if="d.main && d.main.name">
+              <span class="av-dmk">{{ d.main.name }}</span>
+              <b>{{ d.main.value }}</b>
+            </div>
+            <div class="av-dsubs" v-if="d.subs && d.subs.length">
+              <div class="av-dsub" v-for="(s, k) in d.subs" :key="k" :class="{on: s.valid}">
+                <!-- 副词条后的「强化命中」角标：展示口径 = 原数据 −1（第一次命中是词条本身、
+                     不算额外强化），减完是 0 就不显示（原来 +1 只写 +1，会把「命中1次」也标出来）。 -->
+                <span class="n">{{ s.name }}<em v-if="s.times > 1">+{{ s.times - 1 }}</em></span>
+                <b>{{ s.value }}</b>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="av-empty" v-else>没读到驱动盘（该角色可能未装备，或数据源没给）。</p>
+      </div>
+
+      <!-- 技能加点已在顶部图标条里，这里不重复 -->
+
+      <!-- 影画区块已按要求移除（不显示） -->
+
+      <!-- 查看原始 JSON：点按钮展开接口**原样返回**的数据（官方 avatar/info 那一条，
+           或降级时的 Enka 角色对象），用来核对字段 / 排查问题。没拿到 raw 就整块不显示。 -->
+      <div class="av-jsonwrap" v-if="mys.avatar.raw">
+        <button class="av-jsonbtn" @click="avToggleRaw()">
+          {{ mys.avatar.showRaw ? '收起 JSON 数据' : '查看 JSON 数据' }}
+        </button>
+        <pre class="av-json" v-if="mys.avatar.showRaw">{{ mys.avatar.raw }}</pre>
+      </div>
+    </template>
+  </div>
+</div>
+
+
+            </div>
+            <p v-else class="muted">在左侧选择或扫码登录一个米游社账号，这里会展示账号信息与绝区零查询。</p>
+          </template>
+
+          <!-- 设备指纹配置（独立片段 frag/device.html）：解开角色列表 10041 风控用 -->
+          <template v-else-if="mys.zone==='device'">
+            <!-- 设备指纹配置（plugins/_vendor/miyoushe/web/frag/device.html）
+     米游社主区三个一级分类之一（另两个是「绝区零」「社交命令配置」）。
+     干什么：绝区零的**角色类接口**（拥有代理人 / 角色详情 / 资料总览 / 实时便笺）带
+     设备指纹风控（retcode=10041），请求不像「这个账号登录过的手机」就一律拒。
+     把手机端导出的设备 JSON 粘进来 → 换一个 device_fp → 再**登记到账号**，之后才放行。
+     两个页签：默认设备（所有账号共用）/ 按账号（单个账号单独一份，优先于默认）。
+     外层已有 v-if="mys.zone==='device'"（见 partial.html），这里不再重复判断。
+     逻辑见 frag/device.js（window.MysDevice，方法 dv* 前缀），样式 frag/device.css。 -->
+<div class="mys-device">
+  <div class="mys-head">
+    <h2>设备配置</h2>
+    <button class="dv-help-btn" @click="dvHelp()">
+      {{ mys.device.help ? '收起说明 ▴' : '说明 ▾' }}
+    </button>
+    <div class="mys-head-right">
+      <button class="ghost sm" @click="dvLoad()" :disabled="mys.device.loading">
+        {{ mys.device.loading ? '读取中…' : '重新读取' }}
+      </button>
+    </div>
+  </div>
+
+  <div class="dv-note" v-if="mys.device.help">
+    <p>
+      绝区零「账号拥有代理人」（<code>avatar/basic</code>）、角色详情、资料总览这几个接口
+      带<strong>设备指纹校验</strong>：请求里的 <code>x-rpc-device_id</code> /
+      <code>x-rpc-device_fp</code> 不是「这个米游社账号真实登录过的手机」时，一律返回
+      <strong>retcode=10041</strong>（此时页面降级到 Enka，只有展示栏那几个角色）。
+      危局 / 防卫战 / 邦布不受影响，所以那些一直能查。
+    </p>
+    <p><strong>两步都要做</strong>：</p>
+    <ol>
+      <li>把手机端导出的真机 JSON 粘进下面 → 换回一个 <code>device_fp</code>；</li>
+      <li>点<strong>「登记到这个账号」</strong> —— 用账号 Cookie 把这台设备登记到米游社账号名下。
+          只做第 1 步不登记，等于换了台陌生手机，照样 10041。</li>
+    </ol>
+    <p>
+      数据归属：<strong>默认设备</strong>给所有账号共用；某个账号想单独用另一台，
+      切到<strong>「按账号」</strong>配一份，它优先于默认设备。
+    </p>
+  </div>
+
+  <nav class="tabs sub-tabs">
+    <span class="tab" :class="{active: mys.device.tab==='default'}" @click="dvTab('default')">
+      默认设备{{ mys.device.default ? '' : '（未配）' }}
+    </span>
+    <span class="tab" :class="{active: mys.device.tab==='account'}" @click="dvTab('account')">
+      按账号
+    </span>
+  </nav>
+
+  <p v-if="mys.device.error" class="mys-error">{{ mys.device.error }}</p>
+  <p v-if="mys.device.message" class="dv-ok">{{ mys.device.message }}</p>
+
+  <!-- 米游社账号：按账号页签决定「给谁配」；登记 / 试一下也都用这一个 -->
+  <div class="dv-row">
+    <label>米游社账号</label>
+    <select v-model="mys.device.aid">
+      <option value="">— 选择一个账号 —</option>
+      <option v-for="a in mys.device.accounts" :key="a.account_id" :value="a.account_id">
+        {{ a.nickname }}{{ a.device ? ' · 已配设备' : '' }}
+      </option>
+    </select>
+    <span class="muted">
+      {{ mys.device.tab==='account' ? '给这个账号单独配一台（不配就跟随默认设备）' : '登记 / 试一下时用这个账号' }}
+    </span>
+  </div>
+
+  <template v-if="mys.device.tab!=='account' || mys.device.aid">
+    <!-- 当前这份设备 -->
+    <div class="dv-card" v-if="dvHas()">
+      <div class="dv-card-head">
+        <b>{{ mys.device.tab==='account' ? '该账号的设备' : '默认设备' }}</b>
+        <button class="ghost sm" @click="dvDelete()" :disabled="mys.device.saving">删除</button>
+      </div>
+      <div class="dv-kv"><span>设备号</span><code>{{ dvCurDevice().device_id }}</code></div>
+      <div class="dv-kv"><span>指纹 fp</span><code>{{ dvCurDevice().fp }}</code></div>
+      <div class="dv-kv"><span>机型</span><code>{{ dvCurDevice().model || '（未知）' }}</code></div>
+      <div class="dv-kv"><span>安卓</span><code>{{ dvCurDevice().sys_version || '（未填）' }}</code></div>
+      <div class="dv-kv"><span>更新于</span><code>{{ dvTime(dvCurDevice().updated_at) }}</code></div>
+      <div class="dv-kv" v-if="dvCurDevice().info">
+        <span>指纹串</span><code>{{ dvShort(dvCurDevice().info.deviceFingerprint, 56) }}</code>
+      </div>
+    </div>
+    <p v-else class="muted">还没配设备：把手机端导出的 JSON 粘到下面，点「保存并生成」。</p>
+
+    <!-- 真机信息 -->
+    <div class="dv-row">
+      <label>真机信息（JSON）</label>
+      <textarea class="dv-json" rows="8" v-model="mys.device.raw"
+                placeholder='把手机端导出的那串 JSON 粘进来，例如 {"deviceModel":"PHK110", ...}'></textarea>
+      <span class="muted">
+        七个字段里最关键的是 <strong>deviceFingerprint</strong>：厂家 / 型号就是从它里取的，
+        没有它换回来的 fp 不像真机。
+      </span>
+      <button class="ghost sm" @click="dvUseSample()">填入空模板</button>
+      <button class="ghost sm" @click="dvFmt()">检查格式</button>
+      <button class="sm" @click="dvSave()" :disabled="mys.device.saving">
+        {{ mys.device.saving ? '生成中…' : '保存并生成' }}
+      </button>
+    </div>
+
+    <!-- 登记 / 自检 -->
+    <div class="dv-row dv-acts">
+      <button class="sm" @click="dvRegister()"
+              :disabled="mys.device.registering || !mys.device.aid">
+        {{ mys.device.registering ? '登记中…' : '登记到这个账号' }}
+      </button>
+      <button class="ghost sm" @click="dvTest()"
+              :disabled="mys.device.testing || !mys.device.aid">
+        {{ mys.device.testing ? '查询中…' : '试一下' }}
+      </button>
+      <span class="muted">登记要用这个账号的 Cookie（账号得先登录），登记完再「试一下」看还返不返 10041。</span>
+    </div>
+
+    <div class="dv-test" v-if="mys.device.test.message">
+      <b>试一下</b>：retcode={{ mys.device.test.retcode }} · {{ mys.device.test.message }}
+    </div>
+  </template>
+</div>
+
+          </template>
+
+          <!-- 社交命令配置（独立片段 frag/social.html，内部再分两个子页面） -->
+          <template v-else>
+            <!-- 社交命令配置 · 容器（plugins/_vendor/miyoushe/web/frag/social.html）
+     米游社主区两个一级分类之一（另一个是「绝区零」，见 frag/zzz.html）。
+     这里只有标题行 + 两个子页签 + 顶部的读写按钮，两个子页面各自独立：
+       接口配置   → frag/social-api.{html,js,css}   （sa-* 前缀）
+       QQ机器人配置 → frag/social-bot.{html,js,css} （sb-* 前缀）
+     外层已有 v-if="mys.zone==='social'"（见 partial.html），这里不再重复判断。
+     逻辑见 frag/social.js（window.MysSocial，ss-* 前缀样式在 frag/social.css）。 -->
+<div class="mys-social">
+  <div class="mys-head">
+    <h2>社交命令配置</h2>
+
+    <nav class="tabs sub-tabs">
+      <span class="tab" :class="{active: mys.social.tab==='api'}" @click="mysSocialTab('api')">接口配置</span>
+      <span class="tab" :class="{active: mys.social.tab==='bot'}" @click="mysSocialTab('bot')">QQ机器人配置</span>
+    </nav>
+
+    <div class="mys-head-right">
+      <span class="hint" v-if="mys.social.done">
+        共 {{ mys.social.commands.length }} 条命令 · {{ mys.social.botRows.length }} 个机器人
+      </span>
+      <button class="ghost sm" @click="mysSocialLoad()" :disabled="mys.social.loading || mys.social.saving">
+        {{ mys.social.loading ? '读取中…' : '重新读取' }}
+      </button>
+      <button class="sm" @click="mysSocialSave()" :disabled="mys.social.loading || mys.social.saving">
+        {{ mys.social.saving ? '保存中…' : '保存' }}
+      </button>
+    </div>
+  </div>
+
+  <p v-if="mys.social.error" class="mys-error">{{ mys.social.error }}</p>
+  <p v-if="mys.social.message" class="ss-ok">{{ mys.social.message }}</p>
+
+  <!-- 社交命令配置 · 子页面一：接口配置（plugins/_vendor/miyoushe/web/frag/social-api.html）
+     一行 = 一条命令：命令名 + 别名 + 绑定的后台接口 + 仅管理员 + 启用。
+     页面只改配置，「命令名 → 后台接口」的映射由后端 social.py 的分发器执行（保存即时生效）。
+     样式 frag/social-api.css（sa-* 前缀），方法 frag/social-api.js（window.MysSocialApi）。 -->
+<div v-show="mys.social.tab==='api'">
+  <div class="ss-note">
+    用户在群里发「<b>命令名</b>」（或任一别名）就会执行右边绑定的接口，把处理后的一段文本回给用户。
+    命令名和别名都<strong>不必带前缀</strong>，<code>/绝区零危局</code> 与 <code>绝区零危局</code> 等效。
+    保存后<b>立即生效，不用重启机器人</b>。
+    点每行右边的<b>详细设置</b>，可以配这个接口自己的参数（比如图鉴按什么查、列表给几条），
+    以及<b>回复模板</b>：OneBot 第三方机器人和 QQ 官方机器人各一套，留空就用接口默认文本。
+  </div>
+
+  <p v-if="!mys.social.done && mys.social.loading" class="muted">正在读取配置…</p>
+
+  <table class="sa-table" v-if="mys.social.done">
+    <thead>
+      <tr>
+        <th style="width:18%">命令</th>
+        <th style="width:22%">别名</th>
+        <th style="width:28%">绑定的接口</th>
+        <th style="width:8%">仅管理员</th>
+        <th style="width:6%">启用</th>
+        <th style="width:9%">详细设置</th>
+        <th style="width:9%"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="(c, ci) in mys.social.commands" :key="c.id" :class="{off: !c.enabled}">
+        <td><input class="sa-in" v-model="c.cmd" placeholder="如 绝区零危局"></td>
+        <td><input class="sa-in" v-model="c.alias_text" placeholder="多个别名，空格分隔"></td>
+        <td>
+          <select class="sa-in" v-model="c.api">
+            <option value="">（未绑定，命中后不回复）</option>
+            <option v-for="f in mys.social.interfaces" :key="f.key" :value="f.key">{{ f.label }}</option>
+          </select>
+        </td>
+        <td class="sa-c"><input type="checkbox" v-model="c.admin_only" title="勾选后仅管理员可触发"></td>
+        <td class="sa-c"><input type="checkbox" v-model="c.enabled" title="取消勾选则这条命令完全不参与匹配"></td>
+        <td class="sa-c">
+          <button class="ghost sm" @click="sdOpen(ci)" title="这个接口的专属设置 + 回复模板">
+            详细设置<span v-if="sdCount(c)">（{{ sdCount(c) }}）</span>
+          </button>
+        </td>
+        <td class="sa-c">
+          <button class="ghost sm" @click="saDel(ci)" title="删除这条命令">删除</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p v-if="mys.social.done && !mys.social.commands.length" class="muted">
+    还没有任何命令。点下面「新增命令」加一条，或重新读取一次恢复默认的 4 条。
+  </p>
+
+  <div class="ss-actions" v-if="mys.social.done">
+    <button class="ghost sm" @click="saAdd()">+ 新增命令</button>
+    <span class="ss-tip">别名用空格、逗号或顿号分隔，例：危局强袭战 zzz危局</span>
+  </div>
+
+  <div class="ss-note" v-if="mys.social.done && mys.social.interfaces.length">
+    <b>可绑定的后台接口</b>（都在 social.py 里注册，返回结果由它统一处理成文本）
+    <ul>
+      <li v-for="f in mys.social.interfaces" :key="f.key">
+        <code>{{ f.key }}</code> · {{ f.label }}<span v-if="f.desc"> —— {{ f.desc }}</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  <!-- 社交命令配置 · 子页面二：QQ机器人配置（plugins/_vendor/miyoushe/web/frag/social-bot.html）
+     一个机器一行：总开关（默认关）+ 展开后的「该机器人 × 每条命令」开关矩阵。
+     总开关是硬门槛：关着的机器人在后端 bot_allows() 里直接返回 False，
+     收到命令也一声不吭（不会误伤普通聊天）。
+     样式 frag/social-bot.css（sb-* 前缀），方法 frag/social-bot.js（window.MysSocialBot）。 -->
+<div v-show="mys.social.tab==='bot'">
+  <div class="ss-note">
+    只有在这里<b>打开总开关</b>的机器人，才会响应「接口配置」里配的命令（<b>默认全部关闭</b>）。
+    总开关打开后，还能用下面的小开关单独关掉某几条命令。改完记得点右上角<b>保存</b>。
+  </div>
+
+  <p v-if="!mys.social.done && mys.social.loading" class="muted">正在读取机器人实例…</p>
+
+  <p v-else-if="!mys.social.botRows.length" class="muted">
+    没有发现在线的机器人实例。确认机器人已连接后，点右上角「重新读取」。
+  </p>
+
+  <div class="sb-list" v-else>
+    <div class="sb-item" v-for="b in mys.social.botRows" :key="b.id" :class="{on: b.on, unlinked: !b.online}">
+      <div class="sb-row">
+        <label class="sb-main">
+          <input type="checkbox" :checked="b.on" @change="sbMaster(b, $event.target.checked)"
+                 title="总开关：关着时这个机器人不响应任何社交命令">
+          <b>{{ b.name || ('机器人 ' + b.id) }}</b>
+          <!-- 没名字时后面这格就是同一个 id，重复显示很难看 -->
+          <span class="sb-id" v-if="b.name">{{ b.id }}</span>
+          <span class="sb-proto" :class="b.protocol">{{ b.protocol === 'qq_official' ? '官方QQ' : 'OneBot' }}</span>
+          <span class="sb-badge" v-if="!b.online">未连接</span>
+        </label>
+        <span class="sb-state" :class="b.on ? 'ok' : 'off'">{{ b.on ? '已启用' : '已关闭' }}</span>
+      </div>
+
+      <div class="sb-cmds" v-if="b.on">
+        <div class="sb-cmds-head">
+          <span class="ss-tip">该机器人响应的命令</span>
+          <button class="ghost sm" @click="sbAll(b, true)">全开</button>
+          <button class="ghost sm" @click="sbAll(b, false)">全关</button>
+        </div>
+        <p class="muted" v-if="!b.cmds.length" style="margin:6px 0 0">
+          还没有配置任何命令，先去「接口配置」加一条。
+        </p>
+        <div class="sb-cmds-grid" v-else>
+          <label class="sb-cmd" v-for="c in b.cmds" :key="c.id">
+            <input type="checkbox" v-model="c.val">
+            <span>{{ c.label }}</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- 详细设置弹窗：由接口配置表格里每行的「详细设置」按钮打开（frag/social-detail.html）。
+       它是浮层，必须放最后，盖在上面两个子页面之上。
+       ⚠️ 这行只能出现一次：装配器是 FRAG_RE.sub（替换**所有**匹配），
+       写两次就会在 DOM 里放两份一样的弹窗（状态共用，视觉上叠一层）。 -->
+  <!-- 社交命令配置 · 「详细设置」弹窗（plugins/_vendor/miyoushe/web/frag/social-detail.html）
+     接口配置表格里每行一个「详细设置」按钮（frag/social-api.html）→ 打开这个浮层。
+     里面三块：
+       ① 接口设置   —— 表单**按后端给的 schema 渲染**（social.py 里 @interface(options=[...])），
+                       支持 select / number / switch / text / textarea，
+                       加设置项只改后端，不用动这个文件；
+       ② 回复模板   —— OneBot 第三方 / QQ 官方各一套，留空 = 用接口自带的默认文本；
+                       点「预览」真跑一次接口，并展示它返回的 JSON（模板变量 vars +
+                       接口原始数据 data），配模板时不用猜有哪些字段；
+       ③ 可用变量   —— 模板里能写哪些 {xxx}，由接口声明（tpl_vars），不是写死在页面上的。
+     「预览身份」是绑定类接口（危局 / 防卫战 / 抽卡 / 签到 / 角色）的必要输入：
+     它们查的是「某个 QQ 用户自己绑的米游社账号」，留空则由后端自动挑一个已绑定用户。
+     逻辑 frag/social-detail.js（window.MysSocialDetail，sd* 方法），样式 frag/social-detail.css。
+     挂在哪：frag/social.html 末尾的 FRAG:social-detail 占位行（放最后，浮层盖在主区之上）。 -->
+<div class="sd-mask" v-if="mys.social.detail.show" @click.self="sdClose()">
+  <div class="sd-box">
+    <div class="sd-head">
+      <b>详细设置</b>
+      <span class="sd-sub">{{ mys.social.detail.cmd || '（未命名命令）' }} · {{ mys.social.detail.apiLabel }}</span>
+      <button class="ghost sm" @click="sdClose()">关闭</button>
+    </div>
+
+    <div class="sd-body">
+      <!-- ① 接口设置：没有 schema 时明说一句，不留一片空白让人以为坏了 -->
+      <div class="sd-sec">
+        <div class="sd-title">接口设置</div>
+
+        <p v-if="!mys.social.detail.schema.length" class="sd-empty">
+          这个接口没有额外设置项，只需要配下面的回复模板（可留空）。
+        </p>
+
+        <div class="sd-field" v-for="f in mys.social.detail.schema" :key="f.key">
+          <label class="sd-label">{{ f.label }}</label>
+
+          <select class="sd-in" v-if="f.type==='select'" v-model="mys.social.detail.options[f.key]">
+            <option v-for="o in f.options" :key="o.value" :value="o.value">{{ o.label }}</option>
+          </select>
+
+          <input class="sd-in" v-else-if="f.type==='number'" type="number"
+                 :min="f.min" :max="f.max" v-model="mys.social.detail.options[f.key]">
+
+          <input class="sd-in" v-else-if="f.type==='switch'" type="checkbox"
+                 v-model="mys.social.detail.options[f.key]">
+
+          <!-- 多行文本框（接口 schema 里 type:"textarea"，rows 控制高度）：
+               目前用于抽卡命令的「频段词 ↔ 频段代码」表，一行一条 -->
+          <textarea class="sd-ta" v-else-if="f.type==='textarea'" :rows="f.rows || 5"
+                    v-model="mys.social.detail.options[f.key]"></textarea>
+
+          <input class="sd-in" v-else type="text" v-model="mys.social.detail.options[f.key]">
+
+          <span class="sd-hint" v-if="f.hint">{{ f.hint }}</span>
+        </div>
+      </div>
+
+      <!-- ② 回复模板：两套协议分开配 -->
+      <div class="sd-sec">
+        <div class="sd-title">回复模板</div>
+        <p class="sd-tip">
+          留空 = 用接口自带的默认文本（<b>QQ 官方那栏留空时会自动借用 OneBot 的模板</b>）。语法：<code>{变量}</code> 取值，
+          <code>{#items}…{/items}</code> 循环列表，<code>{#detail}…{/detail}</code> 详情块。
+        </p>
+
+        <nav class="tabs sub-tabs sd-tabs">
+          <span class="tab" :class="{active: mys.social.detail.proto==='onebot'}" @click="sdProto('onebot')">OneBot 第三方</span>
+          <span class="tab" :class="{active: mys.social.detail.proto==='qq'}" @click="sdProto('qq')">QQ 官方</span>
+        </nav>
+
+        <textarea class="sd-ta" rows="7" v-if="mys.social.detail.proto==='onebot'"
+                  v-model="mys.social.detail.tpl.onebot"
+                  placeholder="留空则用默认文本，例：【图鉴·{category}】{title}"></textarea>
+        <textarea class="sd-ta" rows="7" v-if="mys.social.detail.proto==='qq'"
+                  v-model="mys.social.detail.tpl.qq"
+                  placeholder="留空则用 OneBot 那套模板；OneBot 也留空才用默认文本"></textarea>
+
+        <div class="sd-actions">
+          <button class="ghost sm" @click="sdTplSample()" :disabled="!mys.social.detail.sample">填入示例</button>
+          <button class="ghost sm" @click="sdTplClear()">清空</button>
+          <button class="ghost sm" @click="sdReset()">设置项恢复默认</button>
+          <span class="sd-grow"></span>
+          <input class="sd-in sd-arg" type="text" v-model="mys.social.detail.arg" placeholder="预览参数（可留空）">
+          <!-- 预览身份：危局 / 防卫战 / 抽卡 / 签到这些接口查的是「某个 QQ 用户自己绑的
+               米游社账号」，管理页本身没有身份 —— 留空则由后端自动挑一个已绑定用户。 -->
+          <input class="sd-in sd-arg" type="text" v-model="mys.social.detail.user"
+                 placeholder="预览身份 QQ 号（留空=自动）">
+          <button class="sm" @click="sdPreview()" :disabled="mys.social.detail.previewing">
+            {{ mys.social.detail.previewing ? '预览中…' : '预览' }}
+          </button>
+        </div>
+
+        <div class="sd-preview" v-if="mys.social.detail.preview">
+          <div class="sd-ptitle">
+            预览结果（{{ mys.social.detail.proto==='onebot' ? 'OneBot 第三方' : 'QQ 官方' }}）
+            <span class="sd-warn" v-if="mys.social.detail.previewEmpty">没取到数据，模板变量是空的</span>
+          </div>
+          <pre class="sd-pre">{{ mys.social.detail.preview }}</pre>
+        </div>
+        <p v-if="mys.social.detail.previewErr" class="sd-err">{{ mys.social.detail.previewErr }}</p>
+
+        <!-- 接口给的 JSON 数据：点「预览」后出现。
+             上面配模板时想知道「有哪些字段能写进 {xxx}」就看这里 ——
+             变量 vars 是模板能直接用的，原始数据 data 是接口拿到的完整内容。 -->
+        <div class="sd-json" v-if="mys.social.detail.previewVarsJson || mys.social.detail.previewDataJson">
+          <div class="sd-title">接口返回的 JSON</div>
+          <p class="sd-tip">
+            「模板变量」里的每个键都能在回复模板里写 <code>{键}</code>；
+            列表（数组）用 <code>{#items}…{/items}</code> 循环。
+            本次预览身份：<code>{{ mys.social.detail.previewUser || '（无）' }}</code>
+            —— 危局 / 防卫战 / 抽卡 / 签到查的就是这个 QQ 绑定的米游社账号。
+          </p>
+          <div v-if="mys.social.detail.previewVarsJson">
+            <div class="sd-jlabel">模板变量 vars（能写进模板的）</div>
+            <pre class="sd-pre">{{ mys.social.detail.previewVarsJson }}</pre>
+          </div>
+          <div v-if="mys.social.detail.previewDataJson">
+            <div class="sd-jlabel">接口原始数据 data</div>
+            <pre class="sd-pre">{{ mys.social.detail.previewDataJson }}</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- ③ 变量说明 -->
+      <div class="sd-sec" v-if="mys.social.detail.varsDoc.length">
+        <div class="sd-title">可用变量</div>
+        <ul class="sd-vars">
+          <li v-for="v in mys.social.detail.varsDoc" :key="v.name">
+            <code>{{ v.name }}</code> —— {{ v.desc }}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sd-foot">
+      <span class="sd-tip">点「确定」立即保存并生效（不用再点页面的「保存」）</span>
+      <button class="ghost sm" @click="sdClose()">取消</button>
+      <button class="sm" @click="sdSave()">确定</button>
+    </div>
+  </div>
+</div>
+
+</div>
+
+          </template>
+        </section>
+      </div>
+    </div>
+
+    <div class="toast" :class="toast.kind" v-show="toast.show">{{ toast.text }}</div>
+
+    </div>
+    <script src="/api/plugin/page/bridge-sdk.js"></script>
+    <script src="./lib/vue.global.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/frag/device.js"></script>
+    <script src="./js/frag/sidebar.js"></script>
+    <script src="./js/frag/social-api.js"></script>
+    <script src="./js/frag/social-bot.js"></script>
+    <script src="./js/frag/social-detail.js"></script>
+    <script src="./js/frag/social.js"></script>
+    <script src="./js/frag/zzz-abyss.js"></script>
+    <script src="./js/frag/zzz-autosign.js"></script>
+    <script src="./js/frag/zzz-avatar.js"></script>
+    <script src="./js/frag/zzz-codex.js"></script>
+    <script src="./js/frag/zzz-deadly.js"></script>
+    <script src="./js/frag/zzz-month.js"></script>
+    <script src="./js/frag/zzz-note.js"></script>
+    <script src="./js/frag/zzz-profile.js"></script>
+    <script src="./js/frag/zzz-roles.js"></script>
+    <script src="./js/frag/zzz-shiyu.js"></script>
+    <script src="./js/frag/zzz-sign.js"></script>
+    <script src="./js/frag/zzz-void.js"></script>
+    <script src="./js/frag/zzz-zenkov.js"></script>
+    <script src="./js/module.js"></script>
+</body>
+</html>

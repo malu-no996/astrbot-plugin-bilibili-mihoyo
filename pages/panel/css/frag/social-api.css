@@ -1,0 +1,22 @@
+/* 社交命令配置 · 接口配置子页面样式（plugins/_vendor/miyoushe/web/frag/social-api.css）
+   表格里的输入框/下拉框要能撑满单元格、窄屏不溢出（sa-* 前缀）。 */
+
+  .sa-table { width:100%; margin:10px 0 0; border-collapse:collapse; font-size:13px; }
+  .sa-table th { padding:7px 8px; text-align:left; font-size:12px; font-weight:600;
+                 color:var(--muted); border-bottom:1px solid var(--line); }
+  .sa-table td { padding:6px 8px; border-bottom:1px solid #f2f4f7; vertical-align:middle; }
+  .sa-table tr.off { opacity:.55; }          /* 停用的命令整行压暗，一眼能看出不参与匹配 */
+
+  /* min-width:0 是关键：不加的话 flex/grid 之外的表单元格里 input 会按内容撑破列宽 */
+  .sa-table .sa-in { width:100%; min-width:0; box-sizing:border-box; padding:5px 8px;
+                     font-size:13px; color:var(--text); background:#fff;
+                     border:1px solid var(--line); border-radius:6px; }
+  .sa-table .sa-in:focus { outline:none; border-color:var(--accent); }
+  .sa-table select.sa-in { cursor:pointer; }
+  .sa-table .sa-c { text-align:center; }
+  .sa-table .sa-c input[type=checkbox] { cursor:pointer; }
+
+  @media (max-width: 900px) {
+    /* 窄屏下表格横向滚动，比让输入框被压成一条缝好用 */
+    .sa-table { display:block; overflow-x:auto; white-space:nowrap; }
+  }

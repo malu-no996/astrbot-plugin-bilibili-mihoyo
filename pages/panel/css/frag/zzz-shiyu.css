@@ -1,0 +1,98 @@
+/* 式舆防卫战 · 深色游戏风渲染（plugins/_vendor/miyoushe/web/frag/zzz-shiyu.css，sy-* 前缀）
+   对照游戏内「式舆防卫战」页：深色底 + 紫红渐变，S+ 金色评级、小队行右侧 BOSS 立绘。 */
+
+.sy-wrap { margin-top: 10px; }
+.sy-card { position: relative; overflow: hidden; border-radius: 12px; color: #eceaf2;
+           background: #161220; box-shadow: 0 2px 10px rgba(0,0,0,.22); }
+
+/* ---- 头部：代理人（不再显示综合评级，评级只在防线卡右侧） ---- */
+.sy-head { display: flex; align-items: center; gap: 10px; padding: 12px 16px;
+           background: linear-gradient(115deg, #2a1430 0%, #3f1226 55%, #26101c 100%); }
+.sy-avatar { flex: 0 0 auto; width: 40px; height: 40px; border-radius: 50%;
+             border: 2px solid #caa54a; background: #0d0a10; object-fit: cover; }
+.sy-nick { font-size: 14px; font-weight: 600; color: #fff; }
+.sy-prev { font-size: 11px; padding: 0 8px; border-radius: 9px;
+           background: rgba(202,165,74,.18); color: #e7c886; }
+/* 统计周期说明：放在整个结果区最上面一行（对应危局的 .hd-period），
+   所以上边距为 0，靠下边距和第一张卡拉开 10px。 */
+.sy-period { margin: 0 2px 10px; font-size: 12px; color: var(--muted); }
+
+/* ---- 评级徽标（S+ 金渐变 / S 金 / A 紫 / B 蓝） ---- */
+.sy-rating { font-size: 26px; font-weight: 900; font-style: italic; line-height: 1; }
+.sy-rating.sp { color: transparent;
+                background: linear-gradient(180deg, #ffe9a8 20%, #e8a33d 80%);
+                -webkit-background-clip: text; background-clip: text; }
+.sy-rating.s { color: #ffd76e; }
+.sy-rating.a { color: #c9b3ff; }
+.sy-rating.b { color: #9ec3ff; }
+
+/* ---- 防线卡（第五 / 第四） ---- */
+.sy-layer { padding: 14px 16px; margin-bottom: 12px;
+            background: linear-gradient(160deg, #241428 0%, #181020 60%, #150d18 100%); }
+.sy-layer-head { display: flex; align-items: center; gap: 12px; }
+/* 防线卡标题行右侧的评级与分数同字号（22px）：两者并排，差一级会很突兀 */
+.sy-layer-head .sy-rating { margin-left: auto; font-size: 22px; }
+.sy-layer-title { font-size: 15px; font-weight: 700; color: #fff; }
+.sy-score-big { margin-top: 2px; font-size: 22px; font-weight: 800; line-height: 1.2; color: #fff;
+                display: flex; align-items: center; gap: 10px; }
+.sy-rank-pill { font-size: 12px; font-weight: 700; color: #241703; padding: 1px 10px; border-radius: 999px;
+                background: linear-gradient(180deg, #ffe08a, #e0b23c); }
+.sy-buffer { margin: 8px 0 0; font-size: 12px; color: #e7c886; }
+
+/* ---- 小队行：右侧 BOSS 立绘渐隐 + 出战代理人 ---- */
+.sy-team { position: relative; overflow: hidden; margin-top: 10px; padding: 12px 14px;
+           border-radius: 10px; background: rgba(13,10,16,.75);
+           border: 1px solid rgba(255,255,255,.05); }
+.sy-monster { position: absolute; right: -12px; top: 0; height: 100%; width: 200px;
+              object-fit: cover; opacity: .45; pointer-events: none;
+              -webkit-mask-image: linear-gradient(90deg, transparent, #000 55%);
+              mask-image: linear-gradient(90deg, transparent, #000 55%); }
+.sy-team-top { display: flex; align-items: center; }
+.sy-team-top .sy-rating { margin-left: auto; font-size: 18px; }
+.sy-team-label { font-size: 11px; font-weight: 700; letter-spacing: 2px; color: #8f8499; }
+.sy-team-score { display: flex; align-items: center; gap: 10px; margin-top: 2px;
+                 font-size: 22px; font-weight: 800; color: #fff; }
+.sy-fx { font-size: 11px; font-weight: 400; color: #cfc4dd; padding: 1px 8px; border-radius: 999px;
+         background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12); cursor: help; }
+.sy-time { margin: 4px 0 8px; font-size: 12px; color: #b7a6c6; }
+.sy-avatars { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 8px;
+              position: relative; z-index: 1; }
+/* 头像框圆角 6px（2026-10-05 用户要求「不要太圆」，原 9px）。
+   与危局 .hd-ava 同一个数：出图（image_gen._one_ava）那边传的 radius 也是 6*S。 */
+.sy-ava { position: relative; width: 46px; height: 46px; border-radius: 6px; overflow: hidden;
+          border: 1.5px solid #7c5a2e; background: #0d0a10; }
+.sy-ava img { display: block; width: 100%; height: 100%; object-fit: cover; }
+/* 稀有度**方徽章**图片（2026-10-05 起 S / A / B 用图片，取代字母小标签）：
+   与危局 .hd-ava .hd-rar 完全一致 —— 素材画布 128×128、图形只占 (9,7,119,121)，
+   四周透明留白 CSS 裁不掉 → 盒子 17.5px + left/top:-1.2px 抵掉留白，
+   **可见图形 ≈15px**，和右上角 15px 的影画数角标等大。
+   .sy-ava 自己 overflow:hidden，溢出框外的那点留白会被裁掉。 */
+.sy-ava .sy-rar { position: absolute; left: -1.2px; top: -1.2px; z-index: 1;
+                  width: 17.5px; height: 17.5px; display: block; }
+/* 文字小标签：仅在没有对应徽章素材（C 级等）时兜底显示 */
+.sy-ava i { position: absolute; left: 0; top: 0; padding: 0 5px; font-size: 10px; font-style: normal;
+            font-weight: 700; line-height: 14px; color: #241703;
+            background: linear-gradient(180deg, #ffe08a, #d9a63a); border-bottom-right-radius: 4px; }
+.sy-ava.a { border-color: #8a6bd1; }
+.sy-ava.a i { color: #1d1030; background: linear-gradient(180deg, #c9b3ff, #8a63d9); }
+/* 影画数（rank）角标：头像右上角小方块，**0 也渲染**（.sy-ava overflow:hidden，贴内角放）。
+   样式与危局 .hd-ava-rank 完全一致：黑色半透明底 + 不透明白字。
+   圆角 4px（2026-10-05 用户要求「不要太圆」，原 7px）。 */
+.sy-ava-rank { position: absolute; right: 0; top: 0; z-index: 1; width: 15px; height: 15px;
+               border-radius: 0 4px 0 4px; font-size: 10px; font-weight: 700; font-style: normal;
+               line-height: 15px; text-align: center; color: #fff;
+               background: rgba(0,0,0,.55); }
+
+/* 「全面」版音擎角标：贴头像**左下角**，大小对齐左上角 A/S 徽章（可见约 15px）。
+   与危局 .hd-wp 完全同款：深色半透明圆角底 + 图标内缩（对应 QQ 出图的 weapon_icon_img）。
+   四角分工：左上 S/A 徽章、右上影画数、「全面」音擎占左下 —— 互不打架。 */
+.sy-ava .sy-wp { position: absolute; left: 0; bottom: 0; z-index: 1;
+                 width: 15px; height: 15px; box-sizing: border-box; padding: 2px;
+                 display: block; border-radius: 3px; background: rgba(12,9,16,.92);
+                 object-fit: contain; }
+/* 邦布：带左上角稀有度标（S 金 / A 紫，与危局 .hd-ava.buddy 完全一致），
+   边框也按稀有度区分（S 灰棕 #4c4556 / A 紫 #8a6bd1）。
+   底改**纯黑**：素材带透明通道，原先 .sy-ava 的 #0d0a10 会透出底下的卡片渐变，
+   显得「浮」在背景上；纯黑后邦布自成一块、不受底层背景影响。 */
+.sy-ava.buddy { width: 40px; height: 40px; border-color: #4c4556; background: #000; }
+.sy-ava.buddy.a { border-color: #8a6bd1; }
