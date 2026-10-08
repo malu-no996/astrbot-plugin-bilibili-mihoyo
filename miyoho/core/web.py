@@ -14,13 +14,31 @@ from __future__ import annotations
 import httpx
 from loguru import logger
 
-from astrbot.api.web import error_response, json_response, request
+from astrbot.api.web import (
+    error_response,
+    file_response,
+    json_response as _raw_json_response,
+    request,
+)
 
 from . import mys
 
 # 插件名（register_web_api 的路由必须带它做前缀；main.py 会用）
 PLUGIN_NAME = "astrbot_plugin_miyoho"
 PREFIX = f"/{PLUGIN_NAME}"
+
+
+def json_response(data=None, **kwargs):
+    """给响应套 AstrBot 信封 `{status:"ok", data:载荷}`。
+
+    ⚠️ 为什么必须套：面板 bridge 的父页面（dashboard 前端）转发响应时固定做
+    `r.data.data ?? r.data` —— 只要顶层有 `data` 字段就**只转发里层**。
+    原来直接发 `{ok:true, data:{…}}`，前端拿到的就是剥掉 `ok` 的里层数据，
+    `j.ok` 恒为 undefined → 所有返回带 data 的接口（战绩/便笺/抽卡…）全部
+    假报「查询XX失败」且没有原因；顶层不带 data 的接口（roles/state）反而正常。
+    套上信封后父页面剥一层、shim 的 norm 再兼容一层，前端拿回原载荷。
+    """
+    return _raw_json_response({"status": "ok", "data": data}, **kwargs)
 
 
 def fail(message: str, status: int = 400):

@@ -9,7 +9,7 @@ from __future__ import annotations
 
 from loguru import logger
 
-from astrbot.api.web import json_response
+from ..core.web import json_response
 
 from ..core import bind
 from ..core.web import body, fail

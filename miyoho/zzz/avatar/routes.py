@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import httpx
 
-from astrbot.api.web import json_response, request
+from ...core.web import json_response, request
 
 from ...core import asset_cache, store
 from ...core import mys as client

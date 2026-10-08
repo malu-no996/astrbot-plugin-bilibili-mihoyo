@@ -7,7 +7,7 @@
 """
 from __future__ import annotations
 
-from astrbot.api.web import json_response, request
+from ...core.web import json_response, request
 
 from ...core import mys as client            # 只用它的 region_name
 from ...core.web import body, call, fail

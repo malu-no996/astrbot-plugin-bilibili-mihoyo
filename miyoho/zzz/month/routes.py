@@ -7,7 +7,7 @@
 """
 from __future__ import annotations
 
-from astrbot.api.web import json_response, request
+from ...core.web import json_response, request
 
 from ...core.web import call, fail
 from .api import month_info

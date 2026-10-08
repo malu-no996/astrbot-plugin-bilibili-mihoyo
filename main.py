@@ -24,7 +24,7 @@ from loguru import logger
 
 from astrbot.api.event import AstrMessageEvent, filter
 from astrbot.api.star import Context, Star
-from astrbot.api.web import error_response, json_response, request
+from .miyoho.core.web import error_response, json_response, request
 
 from . import miyoho
 from .miyoho import securestore, seed

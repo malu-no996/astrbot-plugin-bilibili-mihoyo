@@ -10,7 +10,7 @@ from __future__ import annotations
 
 from loguru import logger
 
-from astrbot.api.web import json_response
+from ...core.web import json_response
 
 from ...core.web import fail
 from . import build as codex_build

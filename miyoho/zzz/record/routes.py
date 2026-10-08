@@ -23,7 +23,7 @@ import time
 
 from loguru import logger
 
-from astrbot.api.web import file_response, json_response, request
+from ...core.web import file_response, json_response, request
 
 from ...core import asset_cache
 from ...core import mys as client              # 战绩接口搬去 api.py 了，这里只留 region_name
