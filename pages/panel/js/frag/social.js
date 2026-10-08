@@ -49,6 +49,7 @@ window.MysSocial = {
       instances: [],         // [{id, name, protocol}] 在线实例
       bots: {},              // {self_id: bool} 后端原样
       botCmds: {},           // {self_id: {cmd_id: bool}} 后端原样
+      subs: {},              // {self_id: [{gid, name, enabled, ...}]} 各机器人下订阅的群
       botRows: [],           // 渲染用：机器人行（含逐命令开关的当前值）
     };
   },
@@ -111,6 +112,7 @@ window.MysSocial = {
       mys.social.instances = j.instances || [];
       mys.social.bots = j.bots || {};
       mys.social.botCmds = j.bot_cmds || {};
+      mys.social.subs = j.subs || {};
       rebuildRows();
     }
 
@@ -138,7 +140,7 @@ window.MysSocial = {
         for (const c of r.cmds || []) per[c.id] = !!c.val;
         bot_cmds[r.id] = per;
       }
-      return { commands, bots, bot_cmds };
+      return { commands, bots, bot_cmds, subs: mys.social.subs };
     }
 
     async function mysSocialLoad() {

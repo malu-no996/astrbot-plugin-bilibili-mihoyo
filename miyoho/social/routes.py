@@ -15,6 +15,7 @@ from ..core import bind
 from ..core.web import body, fail
 from .. import send as send_shim
 from .cfg import _clean_options, _clean_tpl, load_cfg, save_cfg
+from . import subscribe
 from .core import Ctx, INTERFACES, apply_tpl, run_interface
 
 
@@ -46,6 +47,7 @@ async def api_social_config():
             "commands": cfg.get("commands") or [],
             "bots": cfg.get("bots") or {},
             "bot_cmds": cfg.get("bot_cmds") or {},
+            "subs": subscribe.snapshot(),          # 各机器人下订阅的群（面板「QQ机器人配置」展示）
             "interfaces": [
                 {
                     "key": k, "label": v["label"], "desc": v["desc"],
@@ -114,6 +116,8 @@ async def api_social_save():
         cfg = save_cfg(payload.get("commands"), payload.get("bots"), payload.get("bot_cmds"))
     except OSError as exc:
         return fail(f"保存失败：{exc}", 500)
+    # 各机器人下订阅的群（群开关默认全开，由面板维护）
+    subs = subscribe.apply_snapshot(payload.get("subs") or {})
     logger.info(
         f"miyoho 社交命令配置已更新：{len(cfg['commands'])} 条命令 · "
         f"{sum(1 for v in cfg['bots'].values() if v)} 个机器人已开启"
@@ -124,6 +128,7 @@ async def api_social_save():
             "commands": cfg["commands"],
             "bots": cfg["bots"],
             "bot_cmds": cfg["bot_cmds"],
+            "subs": subs,
             "instances": await _list_instances(),
         }
     )

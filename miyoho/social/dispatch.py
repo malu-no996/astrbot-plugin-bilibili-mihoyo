@@ -18,6 +18,7 @@ from loguru import logger
 
 from ..core import bind
 from . import seen
+from . import subscribe
 from .cfg import load_cfg
 from .core import Ctx, apply_tpl, run_interface
 
@@ -195,6 +196,17 @@ async def handle_message(event: Any) -> str | None:
     if not text:
         return None
 
+    # —— 订阅米哈游服务（独立管理命令，固定群主发）——
+    # 必须早于功能命令分发：它不受订阅门槛限制（否则没法开通订阅），
+    # 也不受机器人总开关限制（否则死锁：没开总开关就连订阅命令都不响应）。
+    _stripped = _strip_prefix(text.strip())
+    _parts = _stripped.split(maxsplit=1)
+    _kind = subscribe.match(_parts[0]) if _parts else None
+    if _kind == "sub":
+        return await subscribe.handle_sub(event, _parts[1] if len(_parts) > 1 else "")
+    if _kind == "unsub":
+        return await subscribe.handle_unsub(event, _parts[1] if len(_parts) > 1 else "")
+
     # 顺手记一笔「谁在这个群发过话」：群排行用它圈定候选人（见 seen.py，
     # 热路径 + 节流落盘，失败绝不影响分发）。
     try:
@@ -230,6 +242,14 @@ async def handle_message(event: Any) -> str | None:
             f"（该机器人总开关或这条命令的单独开关没开）"
         )
         return None                                   # 该机器人没开这条命令 → 完全静默
+
+    # 订阅门槛：群消息必须「该机器人 + 该群」已订阅且开关打开，否则静默不放行。
+    # 私聊（gid 空）不受限 —— 扫码登录等私聊操作照常可用。
+    if gid and not subscribe.allowed(sid, gid):
+        logger.info(
+            f"社交命令命中但群未订阅：bot={sid} group={gid} cmd={cmd.get('cmd')}"
+        )
+        return None
 
     if cmd.get("admin_only"):
         try:

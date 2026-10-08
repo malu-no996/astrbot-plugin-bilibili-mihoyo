@@ -2224,6 +2224,26 @@
           </label>
         </div>
       </div>
+
+      <!-- 订阅的群：谁在这个机器人下发了「订阅米哈游服务」，谁就出现在这里；
+           每群一个开关，默认全开；关掉后该群不再响应米哈游功能命令。 -->
+      <div class="sb-subs" v-if="(mys.social.subs[b.id] || []).length">
+        <div class="sb-cmds-head">
+          <span class="ss-tip">已订阅的群（仅这些群能响应功能命令）</span>
+          <button class="ghost sm" @click="sbSubAll(b.id, true)">全开</button>
+          <button class="ghost sm" @click="sbSubAll(b.id, false)">全关</button>
+        </div>
+        <div class="sb-cmds-grid">
+          <label class="sb-cmd" v-for="s in mys.social.subs[b.id]" :key="s.gid">
+            <input type="checkbox" :checked="s.enabled" @change="sbSubToggle(b.id, s.gid, $event)">
+            <span>{{ s.name || ('群 ' + s.gid) }}</span>
+          </label>
+        </div>
+      </div>
+      <p class="muted" v-else style="margin:6px 0 0">
+        该机器人下还没有群订阅。在群里由群主发送「订阅米哈游服务」即可把本群加进来。
+      </p>
+
     </div>
   </div>
 </div>
