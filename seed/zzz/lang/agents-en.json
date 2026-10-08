@@ -1,0 +1,11658 @@
+{
+ "1641": {
+  "element": "Fire",
+  "profession": "Anomaly",
+  "hit_type": "Slash",
+  "camp": "Krampus Compliance Authority",
+  "skills": [
+   {
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1631": {
+  "profession": "Attack",
+  "hit_type": "Slash",
+  "camp": "New Eridu Public Security",
+  "skills": [
+   {
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {}
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {},
+     {}
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1621": {
+  "name": "Roxy",
+  "full_name": "Roxy Ifrita Pryce",
+  "profession": "Stun",
+  "hit_type": "Strike",
+  "camp": "Roscaelifer",
+  "skills": [
+   {
+    "name": "Basic Attack: Do Stay a While",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Forgive My Rudeness",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Returned Courtesy",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Much Obliged",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Forgive Me for Not Seeing You Off",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Don't Catch a Chill",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {}
+    ]
+   },
+   {
+    "name": "EX Special Attack: Kindly Rest in Peace",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {}
+    ]
+   },
+   {
+    "name": "Storm's Eye",
+    "params": [
+     {},
+     {},
+     {}
+    ]
+   },
+   {
+    "name": "Chain Attack: Gale-Burying Great Hammer",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Requiem for the Night-Burial",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist: Still on Overtime?",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: At Your Service",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Midnight Code",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1611": {
+  "name": "Claret",
+  "full_name": "Claret Flint",
+  "element": "Electric",
+  "hit_type": "Slash",
+  "camp": "Roscaelifer",
+  "skills": [
+   {
+    "name": "Basic Attack: Bloodforging - Four Forms",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Bloodbloom Oath - Starforging",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "Three Consecutive Slashes DMG Multiplier"
+     },
+     {
+      "k": "Three Consecutive Downward Strikes DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Bloodbloom Oath - Subduing Axe",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Tempering",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Returning Edge",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Bloodbloom Oath - Returning Edge",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: First Light's Call",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Bloodbloom Oath - Secret Bloodforged Edge",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Bloodbloom Oath - Cleaving Gold and Iron",
+    "params": [
+     {
+      "k": "Upward Attack DMG Multiplier"
+     },
+     {
+      "k": "Horizontal Slash DMG Multiplier"
+     },
+     {
+      "k": "Maim DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Bloodbloom Oath - Blood Burial Assault",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Bloodbloom Oath - Resonant Blood Pact",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Bloodbloom Oath - Trial After Trial",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Return of the Dire Moon",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist Bloodbloom Oath - Return of the Dire Moon",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Bloodbloom Oath - Pureforged Edge",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Counter Assist: Yield Not an Inch of Steel",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     }
+    ]
+   }
+  ]
+ },
+ "1591": {
+  "name": "Sigrid",
+  "full_name": "Sigrid de L'Azur",
+  "element": "Ice",
+  "profession": "Attack",
+  "hit_type": "Pierce",
+  "camp": "Roscaelifer",
+  "skills": [
+   {
+    "name": "Basic Attack: Frost-Tipped Spear",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Converging Spear 1st Stage",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Converging Spear 2nd Stage",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Converging Spear 3rd Stage",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Windchase",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Counterthrust",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Frostflower",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Scattered Jade",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Shattered Jade",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Encroaching Ice",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Frozen Heavens",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Iron Sentinel",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Devouring Frost",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1581": {
+  "name": "Remielle",
+  "full_name": "Remielle Dan",
+  "profession": "Anomaly",
+  "hit_type": "Slash",
+  "camp": "Covenant of Dayat",
+  "skills": [
+   {
+    "name": "Basic Attack: Leap",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Solo Dance",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Rainbow's End",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Fleeting Grace",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Keen Light",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Mirrored Shadow",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Sliver of Light",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Ode to Dawn - Radiant Turn",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Ode to Dawn",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Interwoven Dance Steps",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Dazzling Curtain Call",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Featherglow Rebirth",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Awakening Glimmer",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist: Flower & Feather Dance",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Anomaly Proficiency"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Proficiency"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Proficiency"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Proficiency"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Proficiency"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Proficiency"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1571": {
+  "name": "Norma",
+  "full_name": "Norma Hollowell",
+  "element": "Fire",
+  "profession": "Stun",
+  "hit_type": "Strike",
+  "camp": "Roscaelifer",
+  "skills": [
+   {
+    "name": "Basic Attack: Engineering Insurance",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Hat Trick",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Deadline Rush",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Compliance Testing",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Thermal Shutdown",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: En-Nah Barrage",
+    "params": [
+     {
+      "k": "Shot DMG Multiplier"
+     },
+     {
+      "k": "Armor-Piercing Warhead DMG Multiplier"
+     },
+     {
+      "k": "High-Explosive Warhead DMG Multiplier"
+     },
+     {
+      "k": "Extended Shot DMG Multiplier Per Sec"
+     },
+     {
+      "k": "Extended Shot Armor-Piercing Warhead DMG Multiplier Per Sec"
+     },
+     {
+      "k": "Extended Shot High-Explosive Warhead DMG Multiplier Per Sec"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Target Practice",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Explosive Experiment",
+    "params": [
+     {
+      "k": "Additional Armor-Piercing Warhead DMG Multiplier"
+     },
+     {
+      "k": "Additional High-Explosive Warhead DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Impact Drill",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Doctrine of Superior Firepower",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Roaring Backup",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Technological Suppression",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1561": {
+  "name": "Velina",
+  "full_name": "Velina Airgid",
+  "profession": "Anomaly",
+  "hit_type": "Slash",
+  "camp": "Roscaelifer",
+  "skills": [
+   {
+    "name": "Basic Attack: Dancing Fans",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Gale Step",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Cloudrend",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Wind Shear - Purging Surge",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Wind Shear - Purifying Rise",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Wind Shear - Triple Deathblow",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Wind Shear - Eye of the Storm",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Sweeping Cyclone",
+    "params": [
+     {
+      "k": "Sweeping Cyclone Wind Attribute Single-Hit DMG Multiplier"
+     },
+     {
+      "k": "Sweeping Cyclone Attribute-Converted Single-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Condensed Cyclone",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Thousandfold Spiral",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Heed the Tempest",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Emergency Protocol",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Negotiation Techniques",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Anomaly Proficiency"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Proficiency"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Proficiency"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Proficiency"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Proficiency"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Proficiency"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1551": {
+  "name": "Pyrois",
+  "full_name": "Pyrois",
+  "element": "Ether",
+  "profession": "Attack",
+  "hit_type": "Slash",
+  "camp": "Phaethon",
+  "skills": [
+   {
+    "name": "Basic Attack: Emberglow",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Celestial Light",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Sunrise",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: First Light",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Fading Rays",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Sun's Halo",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Assault Directive",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Ceremonial March",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Total Annihilation",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Triumphant Return",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Unbound Swordstorm",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Eternal Imprisonment",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Duskguard",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Return to Daylight",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1541": {
+  "name": "Promeia",
+  "full_name": "Promeia",
+  "element": "Ice",
+  "profession": "Anomaly",
+  "hit_type": "Slash",
+  "camp": "Krampus Compliance Authority",
+  "skills": [
+   {
+    "name": "Basic Attack: Sweeping Edge",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     },
+     {
+      "k": "Cloak Slash DMG Per Second Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Whirling Blade",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Grim Reap",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Soaring Bat",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Execution - Cold Flash",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Execution - Glacial Death",
+    "params": [
+     {
+      "k": "Blade Throw Total DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Execution - Descending Frost",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Execution - Layered Frost",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {
+      "k": "Blade Slash Total DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Execution - Merciless Judgment",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Hanging Judgment",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Glaciating Impalement",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Ambushing Strike",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Intercepting Strike",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1531": {
+  "name": "Starlight - Billy",
+  "full_name": "Starlight - Billy",
+  "element": "Physical",
+  "profession": "Rupture",
+  "hit_type": "Slash",
+  "camp": "Cunning Hares",
+  "skills": [
+   {
+    "name": "Basic Attack: Knight's Technique",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Full-Throttle Starlight",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Starlight Retribution",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Duel King",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Afterfire Spin",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Drive Suppression",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Run Wild",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Cool Wheelie",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: High-Traction Wheels",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Rocking Footwork",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Knight's Swagger",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Starlight Knight Flying Kick",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Starlight - Power of Bonds",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Villain's Exit",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1521": {
+  "name": "Cissia",
+  "full_name": "Cissia",
+  "element": "Electric",
+  "profession": "Attack",
+  "hit_type": "Slash",
+  "camp": "New Eridu Public Security",
+  "skills": [
+   {
+    "name": "Basic Attack: Tongue Flick",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Serpent's Kiss",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Corrode Bone",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Bite Mark",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Bite Back",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Bared Fangs",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Venomous Bite",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {
+      "k": "Additional Strike DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Gang Operation",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Ophidiophobia",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Alarm System",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Partners in Crime",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1511": {
+  "name": "Nangong Yu",
+  "full_name": "Nangong Yu",
+  "element": "Ether",
+  "profession": "Stun",
+  "hit_type": "Strike",
+  "camp": "Angels of Delusion",
+  "skills": [
+   {
+    "name": "Basic Attack: Shooting Star Step",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Adorable Explosive Impact",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier (Coordinated)"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Spinning Meteor",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Asteroid Waltz",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: The Weight of Love",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: The Unbearable Weight of Love",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Comet Gravity",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Meteor Shower",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Emergency Save",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Improvised Performance",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1501": {
+  "name": "Aria",
+  "full_name": "Aria",
+  "element": "Ether",
+  "profession": "Anomaly",
+  "hit_type": "Strike",
+  "camp": "Angels of Delusion",
+  "skills": [
+   {
+    "name": "Basic Attack: Sweet Melody",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Perfect Pitch",
+    "params": [
+     {
+      "k": "Charge Level One Attack DMG Multiplier"
+     },
+     {
+      "k": "Charge Level Two Attack DMG Multiplier"
+     },
+     {
+      "k": "Charge Level Three Attack DMG Multiplier"
+     },
+     {
+      "k": "Charge Level Three Attack DMG Multiplier (Coordinated)"
+     },
+     {
+      "k": "Enhanced Charge Attack DMG Multiplier"
+     },
+     {
+      "k": "Enhanced Charge Attack DMG Multiplier (Coordinated)"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Silky-Smooth Combo",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Slide-Shift Variation",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Full-Sugar Electronica",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Full-Sugar Electronica - No Ice",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Fall Into Delusion",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Instantly Hooked",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Dream Collab",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: 100% Energy",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Shatter Fantasy",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Encore Song",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1491": {
+  "name": "Sunna",
+  "full_name": "Sunna",
+  "element": "Physical",
+  "profession": "Support",
+  "hit_type": "Strike",
+  "camp": "Angels of Delusion",
+  "skills": [
+   {
+    "name": "Basic Attack: Mischief Meteor Hammer",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Naughty Cat Spotted",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Skyward Hammer",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Delusion Strikeout",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Star Shooter",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Bubblegum Barrage",
+    "params": [
+     {
+      "k": "Bubblegum Barrage DMG Multiplier"
+     },
+     {
+      "k": "Bubblegum Barrage DMG Multiplier when quickly chaining into Special Photography Technique"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Special Photography Technique",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {
+      "k": "DMG Multiplier (Teamwork)"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Don't Mess With the Cat",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Smash It All!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Sonic Beatdown",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Jump Training",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "ATK"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ATK"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ATK"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ATK"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ATK"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ATK"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1481": {
+  "name": "Dialyn",
+  "full_name": "Dialyn",
+  "element": "Physical",
+  "profession": "Stun",
+  "hit_type": "Slash",
+  "camp": "Krampus Compliance Authority",
+  "skills": [
+   {
+    "name": "Basic Attack: Happy to Be of Service",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Rock, Paper, Scissors",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Sudden Call",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Number Unavailable",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Get Lost!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Welcome Gesture",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Rock",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Scissors",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Paper!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Welcome Mat",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Service Stopped for Number Dialed",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Forward Call",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Back-to-Back Calls",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1471": {
+  "name": "Banyue",
+  "full_name": "Banyue",
+  "element": "Fire",
+  "profession": "Rupture",
+  "hit_type": "Strike",
+  "camp": "Krampus Compliance Authority",
+  "skills": [
+   {
+    "name": "Basic Attack: Towering Peaks",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Majestic Summit",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Immolate",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Toppling Mountain",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Crushing Peaks",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Scattering Sands",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Stoneburst",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Earth Shaker",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Mountain Tremor",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: One's Path",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Lion's Roar",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Mountain Tremor - Wrath",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Lion's Roar - Wrath",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Blazing Wrath",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: The World Trembles",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Batholith",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Lofty Ascent",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Pierce Heavens",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1461": {
+  "name": "Seed",
+  "full_name": "Seed",
+  "element": "Electric",
+  "profession": "Attack",
+  "hit_type": "Slash",
+  "camp": "New Eridu Defense Force",
+  "skills": [
+   {
+    "name": "Basic Attack: Chrysanthemum Wheel Dance",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Falling Petals - Slaughter",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Falling Petals - Downfall First Form",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Falling Petals - Downfall Second Form",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Magnetic Wheel Dance",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Blossom Burst",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Withered in Frost",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Raining Iron Petals",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Raining Iron Petals - Away",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Tempest of Frosty Petals",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Clockwork Garden - Bloom!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Barrage of Raining Flowers",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Crimson Core Burst",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1451": {
+  "name": "Lucia",
+  "full_name": "Lucia Elowen",
+  "element": "Ether",
+  "profession": "Support",
+  "hit_type": "Strike",
+  "camp": "Spook Shack",
+  "skills": [
+   {
+    "name": "Basic Attack: Orbital Combo",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "Whim DMG Multiplier"
+     },
+     {
+      "k": "Harmony DMG Multiplier"
+     },
+     {
+      "k": "Follow-Up Attack DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Refraction",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Stardust Echo",
+    "params": [
+     {
+      "k": "Whim DMG Multiplier"
+     },
+     {
+      "k": "Harmony DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Symphony of the Reaper - Storm",
+    "params": [
+     {
+      "k": "Whim DMG Multiplier"
+     },
+     {
+      "k": "Harmony DMG Multiplier"
+     },
+     {
+      "k": "Follow-Up Attack DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Symphony of the Reaper - Daybreak",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Stage of Brilliance",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Charge, Great Armor!",
+    "params": [
+     {
+      "k": "Charge Single-Hit DMG Multiplier"
+     },
+     {
+      "k": "Ultimate DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Crushing Mist",
+    "params": [
+     {
+      "k": "Whim DMG Multiplier"
+     },
+     {
+      "k": "Harmony DMG Multiplier"
+     },
+     {
+      "k": "Follow-Up Attack DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Harmony of Painted Dreams",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1431": {
+  "name": "Ye Shunguang",
+  "full_name": "Ye Shunguang",
+  "element": "Physical",
+  "profession": "Attack",
+  "hit_type": "Slash",
+  "camp": "Yunkui Summit",
+  "skills": [
+   {
+    "name": "Basic Attack: Swiftedge",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Cloudstream Sword Will",
+    "params": [
+     {
+      "k": "Individual Blade Energy DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Enlightened Mind - Splitting Currents",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Enlightened Mind - Skyward Ascent",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Enlightened Mind - Sunderlight Maximum",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Enlightened Mind - Sunderlight",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Enlightened Mind - Sunderlight Annihilation",
+    "params": [
+     {
+      "k": "DMG Multiplier With Qingming Sword Force"
+     },
+     {
+      "k": "DMG Multiplier Without Qingming Sword Force"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Phantasm Dash",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Swallow Strike",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Guiding Tides",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {
+      "k": "Perfect Dodge Triggered DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Gale Suppression",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Enlightened Mind - Clean Exit",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Enlightened Mind - Soaring Light",
+    "params": [
+     {
+      "k": "1 Qingming Sword Force Consumed DMG Multiplier"
+     },
+     {
+      "k": "6 Qingming Sword Force Consumed DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Enlightened Mind - Return to Dust",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Smite the Wicked",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Chasing Storms",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Enlightened Mind - Lure Thunder",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Cleaving Heavens",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Entry Skill: Illuminating Darkness",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Support Guard",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Cease Hostility",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Enlightened Mind - Tactical Support",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Enlightened Mind - Unification",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1411": {
+  "name": "Yuzuha",
+  "full_name": "Ukinami Yuzuha",
+  "element": "Physical",
+  "profession": "Support",
+  "hit_type": "Strike",
+  "camp": "Spook Shack",
+  "skills": [
+   {
+    "name": "Basic Attack: Tanuki Claws",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Hard Candy Shot",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Sugarburst Sparkles",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Sugarburst Sparkles - Max",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Tanuki Helper",
+    "params": [
+     {
+      "k": "Tanuki Kama & Yuzuha Coordinated Attack DMG Multiplier"
+     },
+     {
+      "k": "Tanuki Kama Auto-Attack DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: You're Outta Luck!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Time for Payback~",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Gummy Bombardment",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Cavity Alert",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Cavity Alert, Right Now!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Prank Assault",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Surrender or Suffer the Mischief",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Dessert Time",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: We Have Cookies",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Stuffed Hard Candy Shot",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1401": {
+  "name": "Alice",
+  "full_name": "Alice Thymefield",
+  "element": "Physical",
+  "profession": "Anomaly",
+  "hit_type": "Slash",
+  "camp": "Spook Shack",
+  "skills": [
+   {
+    "name": "Basic Attack: Celestial Overture",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit (Enhanced) DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Starshine Waltz",
+    "params": [
+     {
+      "k": "One-Staged Charged Attack DMG Multiplier"
+     },
+     {
+      "k": "Two-Staged Charged Attack DMG Multiplier"
+     },
+     {
+      "k": "Three-Staged Charged Attack DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Blade-Dancer's Gale",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Ceremony of Swordlight",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Piercing Dawn",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Aurora Thrust - Northern Cross",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Aurora Thrust - Southern Cross",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Starfall Intermission",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Starfall Finale",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Intertwined Stab",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Cross Riposte",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1391": {
+  "name": "Ju Fufu",
+  "full_name": "Ju Fufu",
+  "element": "Fire",
+  "profession": "Stun",
+  "hit_type": "Strike",
+  "camp": "Yunkui Summit",
+  "skills": [
+   {
+    "name": "Basic Attack: Tiger Seven Forms - Flaming Claw",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Hu Wei",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Tiger Seven Forms - Tiger Charge",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Tiger Seven Forms - Mountain King's Game",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Tiger Seven Forms - Mountain King's Game - Momentum",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Tiger Seven Forms - Mountain King's Game - Hu Wei",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Tiger Seven Forms - Reignited Mountain",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Tiger Seven Forms - Mountain-Descending Tiger",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Tiger Seven Forms Alt - Mountain-Descending Savage Tiger",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Tiger Cauldron Collapse",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Suppressing Tiger Cauldron",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Tiger Seven Forms - Raging Tiger Explosion",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Decisive Stomp",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Feral Blazing Maw",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1381": {
+  "name": "Soldier 0 - Anby",
+  "full_name": "Soldier 0 - Anby",
+  "element": "Electric",
+  "profession": "Attack",
+  "hit_type": "Slash",
+  "camp": "New Eridu Defense Force",
+  "skills": [
+   {
+    "name": "Basic Attack: Penetrating Shock",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit Finisher DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Torrent",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Ground Flash Counter",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Celestial Thunder",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Azure Flash",
+    "params": [
+     {
+      "k": "White Thunder DMG Multiplier"
+     },
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Thunder Smite",
+    "params": [
+     {
+      "k": "Thunder Smite DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Azure Flash - Boundary",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Sundering Bolt",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Leaping Thunderstrike",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Voidstrike",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Cloud Flash",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Conducting Blow",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1371": {
+  "name": "Yixuan",
+  "full_name": "Yixuan",
+  "element": "Ether",
+  "profession": "Rupture",
+  "hit_type": "Strike",
+  "camp": "Yunkui Summit",
+  "skills": [
+   {
+    "name": "Basic Attack: Cirrus Strike",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Ink‐Veil Cloud Coalescence",
+    "params": [
+     {
+      "k": "Ink‐Veil Cloud Coalescence Total DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Auric Array",
+    "params": [
+     {
+      "k": "Auric Array Total DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Qingming Eruption",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Skybreaker",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Banishing Blow",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Shadow-Ignition",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Ink Manifestation",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {
+      "k": "Additional DMG Multiplier on Full Charge"
+     },
+     {
+      "k": "EX Special Attack: Celestial Cloud Blitz - Break Total DMG Multiplier"
+     },
+     {
+      "k": "EX Special Attack: Qingming Eruption - Break Total DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Cloud-Shaper",
+    "params": [
+     {
+      "k": "Total DMG Multiplier During Charge"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Ashen Ink Becomes Shadows",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Auric Ink Rush",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Qingming Skyshade",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Endless Talisman Suppression",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Cloudstream Shadow",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Celestial Cloud Blitz",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "HP"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "HP"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "HP"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "HP"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "HP"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "HP"
+     }
+    ]
+   }
+  ]
+ },
+ "1361": {
+  "name": "Trigger",
+  "full_name": "Trigger",
+  "element": "Electric",
+  "profession": "Stun",
+  "hit_type": "Pierce",
+  "camp": "New Eridu Defense Force",
+  "skills": [
+   {
+    "name": "Basic Attack: Cold-Bore Shot",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Silenced Shot",
+    "params": [
+     {
+      "k": "Shot DMG Multiplier"
+     },
+     {
+      "k": "Counter DMG Multiplier"
+     },
+     {
+      "k": "Finishing Move DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Harmonizing Shot",
+    "params": [
+     {
+      "k": "Continuous Fire DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Harmonizing Shot - Tartarus",
+    "params": [
+     {
+      "k": "Continuous Fire DMG Multiplier"
+     },
+     {
+      "k": "Finishing Move DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Vengeful Specter",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Condemned Soul",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Spectral Flash",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Flash Burial",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Stygian Guide",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Underworld Requiem",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Cold-Bore Cover Fire",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Piercing Thunder",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1341": {
+  "name": "Zhao",
+  "full_name": "Zhao",
+  "element": "Ice",
+  "profession": "Defense",
+  "hit_type": "Slash",
+  "camp": "Krampus Compliance Authority",
+  "skills": [
+   {
+    "name": "Basic Attack: Glacial Judgment",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Final Verdict",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Bouncing Dash",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Swift Blink",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Shatterfrost Surge",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Frostflow Tundra",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Temporary Alliance",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Bunny Barrage",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Entry Skill: Burst of Frost",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Patch the Gaps",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Frostlight Reflection",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1331": {
+  "name": "Vivian",
+  "full_name": "Vivian Banshee",
+  "element": "Ether",
+  "profession": "Anomaly",
+  "hit_type": "Slash",
+  "camp": "Mockingbird",
+  "skills": [
+   {
+    "name": "Basic Attack: Feathered Strike",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Noblewoman - Waltz",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Fluttering Frock - Suspension",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Featherbloom",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Silver Thorned Melody",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Wingblade Reverb",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Song of Silver Wings",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Violet Requiem",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Chorus of Celestial Wings",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Soaring Bird's Song",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Frostwing Guard",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Featherblade Execution",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1321": {
+  "name": "Evelyn",
+  "full_name": "Evelyn Chevalier",
+  "element": "Fire",
+  "profession": "Attack",
+  "hit_type": "Slash",
+  "camp": "Stars of Lyra",
+  "skills": [
+   {
+    "name": "Basic Attack: Razor Wire",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Garrote - First Form",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Garrote - Second Form",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Piercing Ambush",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Strangling Reversal",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Locked Position",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Binding Sunder - First Form",
+    "params": [
+     {
+      "k": "Bind DMG Multiplier"
+     },
+     {
+      "k": "Explosion DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Binding Sunder - Final Form",
+    "params": [
+     {
+      "k": "Bind DMG Multiplier"
+     },
+     {
+      "k": "Explosion DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Lunalux - Snare",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Lunalux Garrote - Timbre",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Lunalux Garrote - Shadow",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Fierce Blade",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Course Disruption",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1311": {
+  "name": "Astra Yao",
+  "full_name": "Astra Yao",
+  "element": "Ether",
+  "profession": "Support",
+  "hit_type": "Strike",
+  "camp": "Stars of Lyra",
+  "skills": [
+   {
+    "name": "Basic Attack: \"Capriccio\"",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit Min DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit Max DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Interlude",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Chorus",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Finale",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: \"Lunar Eclipse Melody\"",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: \"Umbrella Waltz\"",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: \"Windchimes & Oaths\"",
+    "params": [
+     {
+      "k": "Minimum DMG Multiplier"
+     },
+     {
+      "k": "Maximum DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chord",
+    "params": [
+     {
+      "k": "Follow-Up Tremolo DMG Multiplier"
+     },
+     {
+      "k": "Follow-Up Tone Cluster DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: \"Tipsy Concerto\"",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: \"Fantasian Sonata\"",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: \"One Luminous Sky\"",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: \"Three Lifetimes of Fate\"",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1301": {
+  "name": "Orphie & Magus",
+  "full_name": "Orphie Magnusson & Magus",
+  "element": "Fire",
+  "profession": "Attack",
+  "hit_type": "Pierce",
+  "camp": "New Eridu Defense Force",
+  "skills": [
+   {
+    "name": "Basic Attack: High-Pressure Flamethrower",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     },
+     {
+      "k": "Fire Blade DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Rush Command",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Counter Strike Opportunity",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Blazing Chamber",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Corrosive Flash",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Watch Your Step",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Crimson Vortex",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Heat Charge",
+    "params": [
+     {
+      "k": "Laser Maximum DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Fiery Eruption",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Overheated Barrel",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Dance with Fire",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {
+      "k": "Extended Duration Total DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Searing Slash",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Boiling Pierce",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1291": {
+  "name": "Hugo",
+  "full_name": "Hugo Vlad",
+  "element": "Ice",
+  "profession": "Attack",
+  "hit_type": "Slash",
+  "camp": "Mockingbird",
+  "skills": [
+   {
+    "name": "Basic Attack: Dark Abyss Quartet",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "Slash DMG Multiplier"
+     },
+     {
+      "k": "Shot DMG Multiplier"
+     },
+     {
+      "k": "Charged Shot DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Dark Abyss Concerto",
+    "params": [
+     {
+      "k": "Slash DMG Multiplier"
+     },
+     {
+      "k": "Shot DMG Multiplier"
+     },
+     {
+      "k": "Charged Shot DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Phantasm - Shatter",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Phantasm - Slash",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {
+      "k": "ALT Shot DMG Multiplier"
+     },
+     {
+      "k": "ALT Charged Shot DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Soul Hunter - Judgment",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Soul Hunter - Punishment",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Trick of Fate",
+    "params": [
+     {
+      "k": "Slash DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Blaspheme",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Elegy",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {
+      "k": "ALT Shot DMG Multiplier"
+     },
+     {
+      "k": "ALT Charged Shot DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Ace Reversal",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1261": {
+  "name": "Jane",
+  "full_name": "Jane Doe",
+  "element": "Physical",
+  "profession": "Anomaly",
+  "hit_type": "Slash",
+  "camp": "New Eridu Public Security",
+  "skills": [
+   {
+    "name": "Basic Attack: Dancing Blades",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     },
+     {
+      "k": "6th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Salchow Jump",
+    "params": [
+     {
+      "k": "Consecutive Attack DMG Multiplier"
+     },
+     {
+      "k": "Finishing Move DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Edge Jump",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Phantom Thrust",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Swift Shadow",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Swift Shadow Dance",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Aerial Sweep",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Aerial Sweep - Clearout",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Aerial Sweep - Onslaught",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Flowers of Sin",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Final Curtain",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Dark Thorn",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Lutz Jump",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Gale Sweep",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1251": {
+  "name": "Qingyi",
+  "full_name": "Qingyi",
+  "element": "Electric",
+  "profession": "Stun",
+  "hit_type": "Strike",
+  "camp": "New Eridu Public Security",
+  "skills": [
+   {
+    "name": "Basic Attack: Penultimate",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "1st-Hit DMG Multiplier (ALT)"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier (Enhanced)"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Enchanted Blossoms",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Enchanted Moonlit Blossoms",
+    "params": [
+     {
+      "k": "Rush Attack DMG Multiplier"
+     },
+     {
+      "k": "Finishing Move DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Breach",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Lingering Sentiments",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Sunlit Glory",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Moonlit Begonia",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Tranquil Serenade",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Eight Sounds of Ganzhou",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Wind Through the Pines",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Song of the Clear River",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1241": {
+  "name": "Zhu Yuan",
+  "full_name": "Zhu Yuan",
+  "element": "Ether",
+  "profession": "Attack",
+  "hit_type": "Pierce",
+  "camp": "New Eridu Public Security",
+  "skills": [
+   {
+    "name": "Basic Attack: Don't Move!",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Please Do Not Resist",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier (Physical)"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier (Physical)"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier (Physical)"
+     },
+     {
+      "k": "1st-Hit DMG Multiplier (Ether)"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier (Ether)"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier (Ether)"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Firepower Offensive",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Overwhelming Firepower",
+    "params": [
+     {
+      "k": "DMG Multiplier (Physical)"
+     },
+     {
+      "k": "DMG Multiplier (Ether)"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Fire Blast",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Buckshot Blast",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Full Barrage",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Eradication Mode",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Max Eradication Mode",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Covering Shot",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Defensive Counter",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1221": {
+  "name": "Yanagi",
+  "full_name": "Tsukishiro Yanagi",
+  "element": "Electric",
+  "profession": "Anomaly",
+  "hit_type": "Slash",
+  "camp": "Hollow Special Operations Section 6",
+  "skills": [
+   {
+    "name": "Stance: Jougen",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Stance: Kagen",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Fleeting Flight",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Rapid Retaliation",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Ruten",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Gekka Ruten",
+    "params": [
+     {
+      "k": "Thrust Attack DMG Multiplier"
+     },
+     {
+      "k": "Downward Attack DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Celestial Harmony",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Raiei Tenge",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Blade of Elegance",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Weeping Willow Stab",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1211": {
+  "name": "Rina",
+  "full_name": "Alexandrina Sebastiane",
+  "element": "Electric",
+  "profession": "Support",
+  "hit_type": "Strike",
+  "camp": "Victoria Housekeeping Co.",
+  "skills": [
+   {
+    "name": "Basic Attack: Whack the Dimwit",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Shoo the Fool",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Morning Cleanup",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Midnight Cleanup",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Sudden Surprise",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Bangboo Callback",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Beat the Blockhead",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Dimwit Disappearing Trick",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Code of Conduct",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: The Queen's Attendants",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Duple Meter Allemande",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Quadruple Meter Gavotte",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "PEN Ratio"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "PEN Ratio"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "PEN Ratio"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "PEN Ratio"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "PEN Ratio"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "PEN Ratio"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1201": {
+  "name": "Harumasa",
+  "full_name": "Asaba Harumasa",
+  "element": "Electric",
+  "profession": "Attack",
+  "hit_type": "Pierce",
+  "camp": "Hollow Special Operations Section 6",
+  "skills": [
+   {
+    "name": "Basic Attack: Cloud Piercer",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Cloud Piercer - Drift",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Falling Feather",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Ha-Oto no Ya",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Hiten no Tsuru",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Hidden Edge",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Hiten no Tsuru - Slash",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chasing Thunder",
+    "params": [
+     {
+      "k": "Additional DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Nowhere to Hide",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Nowhere to Run",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Nowhere to Run - Patrol",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Kai - Hanare",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Zanshin",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Zanshin - Scattered Blossoms",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Braced Bow",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Yugamae - Slash",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1191": {
+  "name": "Ellen",
+  "full_name": "Ellen Joe",
+  "element": "Ice",
+  "profession": "Attack",
+  "hit_type": "Slash",
+  "camp": "Victoria Housekeeping Co.",
+  "skills": [
+   {
+    "name": "Basic Attack: Saw Teeth Trimming",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Flash Freeze Trimming",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Glacial Blade Wave",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Icy Blade",
+    "params": [
+     {
+      "k": "DMG Multiplier to Small Enemies"
+     },
+     {
+      "k": "DMG Multiplier to Medium Enemies"
+     },
+     {
+      "k": "DMG Multiplier to Large Enemies"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Arctic Ambush",
+    "params": [
+     {
+      "k": "Spinning Slash DMG Multiplier"
+     },
+     {
+      "k": "Swift Scissors DMG Multiplier"
+     },
+     {
+      "k": "Charged Scissors DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Monstrous Wave",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Cold Snap",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Reef Rock",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Drift",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Tail Swipe",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Sharknami",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Avalanche",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Endless Winter",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Shark Sentinel",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Shark Cruiser",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1181": {
+  "name": "Grace",
+  "full_name": "Grace Howard",
+  "element": "Electric",
+  "profession": "Anomaly",
+  "hit_type": "Pierce",
+  "camp": "Belobog Heavy Industries",
+  "skills": [
+   {
+    "name": "Basic Attack: High-Pressure Spike",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "Moving Shot DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Quick Inspection",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Violation Penalty",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Obstruction Removal",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Supercharged Obstruction Removal",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Vortex Cluster Grenade Base Multiplier",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Obstruction Removal - Cycle",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Pulse Grenade Multiplier",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Collaborative Construction",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Demolition Blast - Beware",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Incident Management",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Counter Volt Needle",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Mastery"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1171": {
+  "name": "Burnice",
+  "full_name": "Burnice White",
+  "element": "Fire",
+  "profession": "Anomaly",
+  "hit_type": "Pierce",
+  "camp": "Sons of Calydon",
+  "skills": [
+   {
+    "name": "Basic Attack: Direct Flame Blend",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Mixed Flame Blend",
+    "params": [
+     {
+      "k": "Continuous Spray DMG Multiplier"
+     },
+     {
+      "k": "Finishing Move DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Dangerous Fermentation",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Fluttering Steps",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Intense Heat Aging Method",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {
+      "k": "Charged Attack DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Intense Heat Stirring Method",
+    "params": [
+     {
+      "k": "Continuous Spray DMG Multiplier"
+     },
+     {
+      "k": "Fire Blast DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Intense Heat Stirring Method - Double Shot",
+    "params": [
+     {
+      "k": "Continuous Spray DMG Multiplier"
+     },
+     {
+      "k": "Fire Blast DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Intense Heat Tossing Method",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Fuel-Fed Flame",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Glorious Inferno",
+    "params": [
+     {
+      "k": "Maximum DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Energizing Specialty Drink",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Scorching Dew",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1161": {
+  "name": "Lighter",
+  "full_name": "Lighter",
+  "element": "Fire",
+  "profession": "Stun",
+  "hit_type": "Strike",
+  "camp": "Sons of Calydon",
+  "skills": [
+   {
+    "name": "Basic Attack: L-Form Thundering Fist",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "Follow-Up 1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "Follow-Up 2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "Follow-Up 3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "Follow-Up 4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "Follow-Up 5th-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit Startup DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit Combo DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit Finisher DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit Startup DMG Multiplier (Morale Burst)"
+     },
+     {
+      "k": "5th-Hit Combo DMG Multiplier (Morale Burst)"
+     },
+     {
+      "k": "5th-Hit Finisher DMG Multiplier (Morale Burst)"
+     },
+     {
+      "k": "5th-Hit Powerful Finisher DMG Multiplier (Morale Burst)"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Charging Slam",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Blazing Flash",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: V-Form Sunrise Uppercut",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: V-Form Sunrise Uppercut - Full Distance",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {
+      "k": "Follow-Up DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: V-Form Scorching Sun",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: W-Form Crowned Inferno",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Blazing Flash - Guard",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Charging Slam - Stab",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1141": {
+  "name": "Lycaon",
+  "full_name": "Von Lycaon",
+  "element": "Ice",
+  "profession": "Stun",
+  "hit_type": "Strike",
+  "camp": "Victoria Housekeeping Co.",
+  "skills": [
+   {
+    "name": "Basic Attack: Moon Hunter",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "One-Staged Charged Attack DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "Two-Staged Charged Attack DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "Three-Staged Charged Attack DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit Charged Attack DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit Level-1 Charged Attack DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit Level-2 Charged Attack DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Keep it Clean",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Etiquette Manual",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Time to Hunt",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {
+      "k": "Charged Attack DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Thrill of the Hunt",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {
+      "k": "Charged Attack DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: As You Wish",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Mission Complete",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Wolf Pack",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Vengeful Counterattack",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Vengeful Counterattack - Glacial Waltz",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1101": {
+  "name": "Koleda",
+  "full_name": "Koleda Belobog",
+  "element": "Fire",
+  "profession": "Stun",
+  "hit_type": "Strike",
+  "camp": "Belobog Heavy Industries",
+  "skills": [
+   {
+    "name": "Basic Attack: Smash 'n' Bash",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "Enhanced Basic Attack 1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "Enhanced Basic Attack 2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "Enhanced Basic Attack 2nd-Hit Dmg Multiplier (Teamwork)"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Tremble!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Don't Look Down on Me",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Hammer Time",
+    "params": [
+     {
+      "k": "Strike DMG Multiplier"
+     },
+     {
+      "k": "Explosion DMG Multiplier"
+     },
+     {
+      "k": "Explosion DMG Multiplier (Teamwork)"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Boiling Furnace",
+    "params": [
+     {
+      "k": "Strike DMG Multiplier"
+     },
+     {
+      "k": "Explosion DMG Multiplier"
+     },
+     {
+      "k": "Explosion DMG Multiplier (Teamwork)"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Natural Disaster",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Hammerquake",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {
+      "k": "DMG Multiplier (Teamwork)"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Coming Thru!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Hammer Bell",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1091": {
+  "name": "Miyabi",
+  "full_name": "Hoshimi Miyabi",
+  "element": "Ice",
+  "profession": "Anomaly",
+  "hit_type": "Slash",
+  "camp": "Hollow Special Operations Section 6",
+  "skills": [
+   {
+    "name": "Basic Attack: Kazahana",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Shimotsuki",
+    "params": [
+     {
+      "k": "Charge Level One Slash DMG Multiplier"
+     },
+     {
+      "k": "Charge Level Two Slash DMG Multiplier"
+     },
+     {
+      "k": "Charge Level Three Slash DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Fuyubachi",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Kan Suzume",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Miyuki",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Hisetsu",
+    "params": [
+     {
+      "k": "Slash DMG Multiplier"
+     },
+     {
+      "k": "Follow-Up DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Spring's Call",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Lingering Snow",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Dancing Petals",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Falling Petals",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Anomaly Proficiency"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Proficiency"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Proficiency"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Proficiency"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Proficiency"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Anomaly Proficiency"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1071": {
+  "name": "Caesar",
+  "full_name": "Caesar King",
+  "element": "Physical",
+  "profession": "Defense",
+  "hit_type": "Slash",
+  "camp": "Sons of Calydon",
+  "skills": [
+   {
+    "name": "Basic Attack: Rampaging Slash",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit (ALT) DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     },
+     {
+      "k": "6th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Dead End",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Hog Rush",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Eye For an Eye",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Shockwave Shield Bash",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Roaring Thrust",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Parry Counter",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {
+      "k": "[Perfect Block] Counter DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Overpowered Shield Bash",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Road Rage Slam",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Savage Smash",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Lane Change",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Aiding Blade",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1051": {
+  "name": "Yidhari",
+  "full_name": "Yidhari Murphy",
+  "element": "Ice",
+  "profession": "Rupture",
+  "hit_type": "Strike",
+  "camp": "Spook Shack",
+  "skills": [
+   {
+    "name": "Basic Attack: Crushing Strike",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "1st-Hit DMG Multiplier (ALT)"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Frostbite Embrace",
+    "params": [
+     {
+      "k": "Level-1 Charged Attack DMG Multiplier"
+     },
+     {
+      "k": "Level-2 Charged Attack DMG Multiplier"
+     },
+     {
+      "k": "Level-3 Charged Smash DMG Multiplier"
+     },
+     {
+      "k": "Level-3 Charged Spin DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Frost's Crushing Weight",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Frostbloom Impact",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Icehaul Reverb",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Cease Thoughts",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Frost Coil",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Surging Cold, Crushing Pursuit",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Glacial Crush",
+    "params": [
+     {
+      "k": "EX Special Attack: Glacial Crush DMG Multiplier"
+     },
+     {
+      "k": "Additional Ability Icy Tentacle DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Frostbound Oath",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {
+      "k": "DMG Multiplier in Ether Veil: Wellspring"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Final Act - Crossing the River of Regret",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Frostshock Reinforcement",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Glacial Onslaught",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1041": {
+  "name": "Soldier 11",
+  "full_name": "Soldier 11",
+  "element": "Fire",
+  "profession": "Attack",
+  "hit_type": "Slash",
+  "camp": "New Eridu Defense Force",
+  "skills": [
+   {
+    "name": "Basic Attack: Warmup Sparks",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Fire Suppression",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     },
+     {
+      "k": "Enhanced Basic Attack 5th-Hit DMG Multiplier"
+     },
+     {
+      "k": "Enhanced Basic Attack 5th-Hit Additional DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Fire Assault",
+    "params": [
+     {
+      "k": "Basic Attack: Fire Assault DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Blazing Fire",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Fire Suppression",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Backdraft",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Raging Fire",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Fervent Fire",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Uplifting Flame",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Bellowing Flame",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Covering Fire",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Reignition",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1021": {
+  "name": "Nekomata",
+  "full_name": "Nekomiya Mana",
+  "element": "Physical",
+  "profession": "Attack",
+  "hit_type": "Slash",
+  "camp": "Cunning Hares",
+  "skills": [
+   {
+    "name": "Basic Attack: Kitty Slash",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Crimson Blade",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Over Here!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Phantom Claws",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Fluffy Piercing Claw",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Surprise Attack",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Super Surprise Attack!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Claw Swipe",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Claw Smash",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Cat's Paw",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Shadow Strike",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1441": {
+  "name": "Manato",
+  "full_name": "Komano Manato",
+  "element": "Fire",
+  "profession": "Rupture",
+  "hit_type": "Slash",
+  "camp": "Spook Shack",
+  "skills": [
+   {
+    "name": "Basic Attack: Blazing Wind Slash",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "1st-Hit DMG Multiplier (Triggering Scorchwind)"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier (Triggering Scorchwind)"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier (Triggering Scorchwind)"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Blazing Wind - Misty Slash",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Radiant Blade - Zanshin",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Radiant Blade - Battle Sweep",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Return to Ashes",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {
+      "k": "DMG Multiplier (Charged or Successful Block)"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Return to Ashes - Fall",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Blazing Eruption",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Musou Aratama",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Lone Shadow - Regroup",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Lone Shadow - Breaking Fang",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {
+      "k": "Combo Maximum DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1421": {
+  "name": "Pan Yinhu",
+  "full_name": "Pan Yinhu",
+  "element": "Physical",
+  "profession": "Defense",
+  "hit_type": "Strike",
+  "camp": "Yunkui Summit",
+  "skills": [
+   {
+    "name": "Basic Attack: Unyielding Strikes",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Sizzling Oil Supreme",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Moving Mountains and Seas",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Sonic Pressure-Point Strike",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Touch of Death",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Mountainous Pulse Strike",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Anointed With Wok Steam",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: A Feast Fit for an Emperor!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Lift Your Gaze to Good Fortune",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Ride the Momentum",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1351": {
+  "name": "Pulchra",
+  "full_name": "Pulchra Fellini",
+  "element": "Physical",
+  "profession": "Stun",
+  "hit_type": "Slash",
+  "camp": "Sons of Calydon",
+  "skills": [
+   {
+    "name": "Basic Attack: Swift Strike",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Leaping Strike",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: First Strike Advantage",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Relentless Retribution",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Rending Claw",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Rending Claw - Nightmare Shadow",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {
+      "k": "Finishing Move DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Rending Claw - Flashstep",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Hey, Didn't Expect That, Right?",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Oh, Time to Play?",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Contract - Bodyguard",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Independent Pricing",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1281": {
+  "name": "Piper",
+  "full_name": "Piper",
+  "element": "Physical",
+  "profession": "Anomaly",
+  "hit_type": "Slash",
+  "camp": "Sons of Calydon",
+  "skills": [
+   {
+    "name": "Basic Attack: Load Up and Roll Out",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Pedal to the Metal",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Power Drift",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Tire Spin",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: One Trillion Tons",
+    "params": [
+     {
+      "k": "Level-1 Charged Attack DMG Multiplier"
+     },
+     {
+      "k": "Level-2 Charged Attack DMG Multiplier"
+     },
+     {
+      "k": "Level-3 Charged Attack DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Engine Spin",
+    "params": [
+     {
+      "k": "DMG Multiplier Every Spin"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Really Heavy",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Buckle Up",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Hold~ On~ Tight~",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Brake Tap",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Overtaking Maneuver",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1271": {
+  "name": "Seth",
+  "full_name": "Seth Lowell",
+  "element": "Electric",
+  "profession": "Defense",
+  "hit_type": "Slash",
+  "camp": "New Eridu Public Security",
+  "skills": [
+   {
+    "name": "Basic Attack: Lightning Strike",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Lightning Strike - Electrified",
+    "params": [
+     {
+      "k": "Consecutive Attack DMG Multiplier"
+     },
+     {
+      "k": "Finishing Move DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Thunder Assault",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Retreat to Advance",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Thunder Shield Rush",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Thunder Shield Rush - High Voltage",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     },
+     {
+      "k": "DMG Multiplier (Charged)"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Final Judgment",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Justice Prevails",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Armed Support",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Public Security Ruling",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1151": {
+  "name": "Lucy",
+  "full_name": "Luciana de Montefio",
+  "element": "Fire",
+  "profession": "Support",
+  "hit_type": "Strike",
+  "camp": "Sons of Calydon",
+  "skills": [
+   {
+    "name": "Basic Attack: Lady's Bat",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit (ALT) DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Guard Boars: To Arms!",
+    "params": [
+     {
+      "k": "Baseball Bat DMG Multiplier"
+     },
+     {
+      "k": "Boxing Gloves DMG Multiplier"
+     },
+     {
+      "k": "Slingshot DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Guard Boars: Spinning Swing!",
+    "params": [
+     {
+      "k": "Spinning Swing DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Fearless Boar!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Returning Tusk!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Solid Hit!",
+    "params": [
+     {
+      "k": "Line Drive DMG Multiplier"
+     },
+     {
+      "k": "Fly Ball DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Home Run!",
+    "params": [
+     {
+      "k": "Line Drive DMG Multiplier"
+     },
+     {
+      "k": "Fly Ball DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Grand Slam!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Walk-Off Home Run!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Hit By Pitch!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Scored a Run!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1131": {
+  "name": "Soukaku",
+  "full_name": "Soukaku",
+  "element": "Ice",
+  "profession": "Support",
+  "hit_type": "Slash",
+  "camp": "Hollow Special Operations Section 6",
+  "skills": [
+   {
+    "name": "Basic Attack: Making Rice Cakes",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Making Rice Cakes (Frosted Banner)",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: 50/50",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: 50/50 (Frosted Banner)",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Away From My Snacks",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Cooling Bento",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "Finishing Move DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Fanning Mosquitoes",
+    "params": [
+     {
+      "k": "Consecutive Attack DMG Multiplier"
+     },
+     {
+      "k": "Wind Current DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Rally!",
+    "params": [
+     {
+      "k": "Fly the Flag DMG Multiplier"
+     },
+     {
+      "k": "Quick Fly the Flag DMG Multiplier"
+     },
+     {
+      "k": "Lowering the Flag DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Pudding Slash",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Jumbo Pudding Slash",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: A Set for Two",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Sweeping Strike",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1121": {
+  "name": "Ben",
+  "full_name": "Ben Bigger",
+  "element": "Fire",
+  "profession": "Defense",
+  "hit_type": "Strike",
+  "camp": "Belobog Heavy Industries",
+  "skills": [
+   {
+    "name": "Basic Attack: Debt Reconciliation",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Incoming Expense",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Accounts Settled",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Fiscal Fist",
+    "params": [
+     {
+      "k": "Active Attack DMG Multiplier"
+     },
+     {
+      "k": "Block Counter DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Cashflow Counter",
+    "params": [
+     {
+      "k": "Active Attack DMG Multiplier"
+     },
+     {
+      "k": "Follow-Up Attack DMG Multiplier"
+     },
+     {
+      "k": "Block Counter DMG Multiplier"
+     },
+     {
+      "k": "Block Follow-Up DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Signed and Sealed",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Complete Payback",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Joint Account",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Don't Break Contract",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1111": {
+  "name": "Anton",
+  "full_name": "Anton Ivanov",
+  "element": "Electric",
+  "profession": "Attack",
+  "hit_type": "Pierce",
+  "camp": "Belobog Heavy Industries",
+  "skills": [
+   {
+    "name": "Basic Attack: Enthusiastic Drills",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Enthusiastic Drills (Burst Mode)",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Fire With Fire",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Retaliation",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Overload Drill (Burst Mode)",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Spin, Bro!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Explosive Drill (Burst Mode)",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Smash the Horizon, Bro!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Go Go Go!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Go Go Go Go Go!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Shoulder-To-Shoulder",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Protective Drill (Burst Mode)",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Limit Burst",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1081": {
+  "name": "Billy",
+  "full_name": "Billy Kid",
+  "element": "Physical",
+  "profession": "Attack",
+  "hit_type": "Pierce",
+  "camp": "Cunning Hares",
+  "skills": [
+   {
+    "name": "Basic Attack: Full Firepower",
+    "params": [
+     {
+      "k": "Standing Fire DMG Multiplier"
+     },
+     {
+      "k": "Standing Bullet DMG Multiplier"
+     },
+     {
+      "k": "Crouching Fire DMG Multiplier"
+     },
+     {
+      "k": "Crouching Bullet DMG Multiplier"
+     },
+     {
+      "k": "Rolling Shot DMG Multiplier"
+     },
+     {
+      "k": "Finishing Shot DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Starlight Sanction",
+    "params": [
+     {
+      "k": "360-degree Shot DMG Multiplier"
+     },
+     {
+      "k": "Straight Shot DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Fair Fight",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Stand Still",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Clearance Time",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Starlight Mirage",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Starlight, Shine Bright",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Power of Teamwork",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Fatal Shot",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1061": {
+  "name": "Corin",
+  "full_name": "Corin Wickes",
+  "element": "Physical",
+  "profession": "Attack",
+  "hit_type": "Slash",
+  "camp": "Victoria Housekeeping Co.",
+  "skills": [
+   {
+    "name": "Basic Attack: Wipeout",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     },
+     {
+      "k": "5th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Oopsy-Daisy!",
+    "params": [
+     {
+      "k": "Maximum DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Nope!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Clean Sweep",
+    "params": [
+     {
+      "k": "Spinning Slash DMG Multiplier"
+     },
+     {
+      "k": "Extended Slash Maximum DMG Multiplier"
+     },
+     {
+      "k": "Explosion DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Skirt Alert",
+    "params": [
+     {
+      "k": "Spinning Slash DMG Multiplier"
+     },
+     {
+      "k": "Extended Slash Maximum DMG Multiplier"
+     },
+     {
+      "k": "Explosion DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Sorry...",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Very, Very Sorry!",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Emergency Measures",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Quick Sweep",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1031": {
+  "name": "Nicole",
+  "full_name": "Nicole Demara",
+  "element": "Ether",
+  "profession": "Support",
+  "hit_type": "Strike",
+  "camp": "Cunning Hares",
+  "skills": [
+   {
+    "name": "Basic Attack: Cunning Combo",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Do As I Please",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Jack in the Box",
+    "params": [
+     {
+      "k": "Forward Dash DMG Multiplier"
+     },
+     {
+      "k": "Backward Vault DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Do As I Please",
+    "params": [
+     {
+      "k": "Forward Dash DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Diverted Bombard",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Sugarcoated Bullet",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Stuffed Sugarcoated Bullet",
+    "params": [
+     {
+      "k": "Charged Attack DMG Multiplier"
+     },
+     {
+      "k": "Bombard DMG Multiplier"
+     },
+     {
+      "k": "Energy Field DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Ether Shellacking",
+    "params": [
+     {
+      "k": "Bombard DMG Multiplier"
+     },
+     {
+      "k": "Energy Field DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Ether Grenade",
+    "params": [
+     {
+      "k": "Bombard DMG Multiplier"
+     },
+     {
+      "k": "Energy Field DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Emergency Bombard",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Window of Opportunity",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Base Energy Regen"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1011": {
+  "name": "Anby",
+  "full_name": "Anby Demara",
+  "element": "Electric",
+  "profession": "Stun",
+  "hit_type": "Slash",
+  "camp": "Cunning Hares",
+  "skills": [
+   {
+    "name": "Basic Attack: Turbo Volt",
+    "params": [
+     {
+      "k": "1st-Hit DMG Multiplier"
+     },
+     {
+      "k": "2nd-Hit DMG Multiplier"
+     },
+     {
+      "k": "3rd-Hit DMG Multiplier"
+     },
+     {
+      "k": "4th-Hit DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Basic Attack: Thunderbolt",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dash Attack: Taser Blast",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Dodge Counter: Thunderclap",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Special Attack: Fork Lightning",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "EX Special Attack: Lightning Bolt",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Chain Attack: Electro Engine",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Ultimate: Overdrive Engine",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Quick Assist: Thunderfall",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   },
+   {
+    "name": "Assist Follow-Up: Lightning Whirl",
+    "params": [
+     {
+      "k": "DMG Multiplier"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ }
+}

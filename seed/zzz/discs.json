@@ -1,0 +1,212 @@
+[
+ {
+  "id": "34200",
+  "name": "荆棘玫瑰",
+  "desc1": "防御力+16%。",
+  "desc2": "装备者造成的伤害提升15%，装备者初始防御力大于等于1000/1800点时，暴击率提升8/16%",
+  "icon": "/admin/api/miyoushe/zzz/asset/eb2858772a6bacbd5eb225f5aabe15b5.webp"
+ },
+ {
+  "id": "34100",
+  "name": "谶羽之誓",
+  "desc1": "异常精通+30点。",
+  "desc2": "装备者进入战场时，或被切换为当前操作中角色时，获得增益效果：异常精通提升50点，若装备者为<color=#FFA9DD>流明属性</color>，造成的属性异常伤害提升15%，持续15秒；\n当装备者为非操作中角色时，则始终持有该增益效果。",
+  "icon": "/admin/api/miyoushe/zzz/asset/781751cb47a8b3fc05070bb7d455f38d.webp"
+ },
+ {
+  "id": "34000",
+  "name": "拂晓行纪",
+  "desc1": "<color=#FE437E>以太伤害</color>+10%。",
+  "desc2": "装备者为<color=#FE437E>以太属性</color>代理人时，暴击伤害提升30%；装备者发动<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[终结技]</color>时，装备者的攻击力提升10%，持续30秒，重复触发时刷新持续时间。",
+  "icon": "/admin/api/miyoushe/zzz/asset/c9a1fe28a0230f7e8984d64f6dedbba8.webp"
+ },
+ {
+  "id": "33900",
+  "name": "呼啸沙龙",
+  "desc1": "<color=#A6C5FD>风属性伤害</color>+10%。",
+  "desc2": "装备者发动<color=#FFFFFF>[强化特殊技]</color>时，装备者异常精通提升25点，最多叠加2层，持续40秒，重复触发时刷新持续时间；装备者触发<color=#A6C5FD>[风化]</color>效果后，装备者造成的伤害提升18%，持续40秒，重复触发时刷新持续时间。",
+  "icon": "/admin/api/miyoushe/zzz/asset/2a38c686a57785aae0378b857be3e217.webp"
+ },
+ {
+  "id": "33800",
+  "name": "囚徒手记",
+  "desc1": "<color=#98EFF0>冰属性伤害</color>+10%。",
+  "desc2": "装备者触发<color=#FFFFFF>[异放]</color>时，装备者异常精通提升48点，持续30秒；重复触发时刷新持续时间；装备者触发<color=#FFFFFF>[冻结]</color>效果时，装备者造成的所有属性异常伤害、<color=#FFFFFF>[紊乱]</color>伤害提升16%，持续30秒，重复触发时刷新持续时间。",
+  "icon": "/admin/api/miyoushe/zzz/asset/9ea346c6ee042abe38309ac99238c395.webp"
+ },
+ {
+  "id": "33700",
+  "name": "雪兔梦游仙境 ",
+  "desc1": "生命值+10%",
+  "desc2": "[防护]角色装备时：装备者发动<color=#FFFFFF>[强化特殊技]</color>或队伍中任意队友发动<color=#FFFFFF>[招架支援]</color>、<color=#FFFFFF>[回避支援]</color>时，全队角色造成伤害提升6%，最多叠加3层，持续25秒，层数逐层衰减，获得或者衰减时刷新持续时间，同名被动效果之间不可叠加。",
+  "icon": "/admin/api/miyoushe/zzz/asset/e3559b45f005aea6d4646f4a44b72885.webp"
+ },
+ {
+  "id": "33600",
+  "name": "流光咏叹",
+  "desc1": "<color=#FE437E>以太伤害</color>+10%。",
+  "desc2": "装备者发动<color=#FFFFFF>[普通攻击]</color>命中敌人时，自身异常精通提升36点，持续8秒，重复触发时刷新持续时间；当场上有敌人进入失衡状态时，装备者造成的伤害提升25%，持续18秒，重复触发时刷新持续时间。",
+  "icon": "/admin/api/miyoushe/zzz/asset/8f7f85762ad2d8e6dc882543a6cf6474.webp"
+ },
+ {
+  "id": "33500",
+  "name": "沧浪行歌",
+  "desc1": "<color=#F0D12B>物理伤害</color>+10%。",
+  "desc2": "装备者处于任意<color=#FFFFFF>[以太帷幕]</color>中时，自身暴击率提高10%，离开<color=#FFFFFF>[以太帷幕]</color>后，该增益效果仍然保留，持续15秒；装备者为<color=#FFFFFF>[强攻]</color>角色时，开启<color=#FFFFFF>[以太帷幕]</color>或延长<color=#FFFFFF>[以太帷幕]</color>的持续时间会使自身暴击率提升10%和攻击力提升10%，持续30秒，重复触发时刷新持续时间。",
+  "icon": "/admin/api/miyoushe/zzz/asset/8babb1eefc4e0b1ae243934a66b3438b.webp"
+ },
+ {
+  "id": "33400",
+  "name": "月光骑士颂",
+  "desc1": "能量自动回复+20%。",
+  "desc2": "装备者为[支援]角色时，发动<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[终结技]</color>会使全队角色造成的伤害提升18%，持续25秒，重复触发时刷新持续时间，同名被动效果之间不可叠加。",
+  "icon": "/admin/api/miyoushe/zzz/asset/bfcafc5f0096f2ba4911bdbc16a4f72c.webp"
+ },
+ {
+  "id": "33300",
+  "name": "拂晓生花",
+  "desc1": "<color=#FFFFFF>[普通攻击]</color>造成的伤害提升15%。",
+  "desc2": "<color=#FFFFFF>[普通攻击]</color>造成的伤害提升20%，装备者为[强攻]角色时，发动<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[终结技]</color>会使<color=#FFFFFF>[普通攻击]</color>造成的伤害额外提升20%，持续25秒，重复触发时刷新持续时间。",
+  "icon": "/admin/api/miyoushe/zzz/asset/ae02dd1cf21ba53b11669b06f5a67af6.webp"
+ },
+ {
+  "id": "33200",
+  "name": "山大王",
+  "desc1": "攻击造成的失衡值提升6%",
+  "desc2": "装备者为[击破]角色时，发动<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>会使全队角色暴击伤害提升15%，装备者的暴击率大于等于50%时暴击伤害额外提升15%，持续15秒，重复触发时刷新持续时间，同名被动效果之间不可叠加。",
+  "icon": "/admin/api/miyoushe/zzz/asset/9299d44f58c0e3c7233233e3923a7061.webp"
+ },
+ {
+  "id": "33100",
+  "name": "云岿如我",
+  "desc1": "生命值+10%",
+  "desc2": "发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[终结技]</color>时，暴击率提升4%，最多叠加3层，持续15秒，重复触发时刷新持续时间，拥有3层效果时，造成的贯穿伤害提升10%。",
+  "icon": "/admin/api/miyoushe/zzz/asset/292856c7f24d7e6885e2c3d5ea4b6239.webp"
+ },
+ {
+  "id": "33000",
+  "name": "法厄同之歌",
+  "desc1": "异常掌控+8%。",
+  "desc2": "队伍中任意角色发动<color=#FFFFFF>[强化特殊技]</color>时，装备者的异常精通提升45点，持续8秒；如果发动<color=#FFFFFF>[强化特殊技]</color>的角色不是装备者本人时，装备者造成的<color=#FE437E>以太伤害</color>提升25%。",
+  "icon": "/admin/api/miyoushe/zzz/asset/23e0d8ad1f72d53854439d8f0d52ebf6.webp"
+ },
+ {
+  "id": "32900",
+  "name": "如影相随",
+  "desc1": "<color=#FFFFFF>[追加攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升15%。",
+  "desc2": "<color=#FFFFFF>[追加攻击]</color>或<color=#FFFFFF>[冲刺攻击]</color>命中敌人时，若造成的伤害与装备者的属性一致，则获得1层增益效果，同一招式内最多触发一次；每拥有1层增益效果，装备者的攻击力提升4%，暴击率提升4%，最多叠加3层，持续15秒，重复触发时刷新持续时间。",
+  "icon": "/admin/api/miyoushe/zzz/asset/66ccf12871f13878cadd930288850f01.webp"
+ },
+ {
+  "id": "32800",
+  "name": "静听嘉音",
+  "desc1": "攻击力+10%。",
+  "desc2": "队伍中任意角色通过<color=#FFFFFF>[快速支援]</color>入场时，全队角色获得1层<color=#FFFFFF>[嘉音]</color>，最多叠加3层，持续15秒，重复触发时刷新持续时间，每拥有1层<color=#FFFFFF>[嘉音]</color>，通过<color=#FFFFFF>[快速支援]</color>入场的角色造成的伤害提升8%，同名被动效果之间不可叠加。",
+  "icon": "/admin/api/miyoushe/zzz/asset/1b2eb92648f3adce914cc9420b479bf2.webp"
+ },
+ {
+  "id": "32700",
+  "name": "折枝剑歌",
+  "desc1": "暴击伤害+16%。",
+  "desc2": "异常掌控大于等于115点时，装备者的暴击伤害提升30%；队伍中任意角色对敌人施加<color=#98EFF0>[冻结]</color>或触发<color=#98EFF0>[碎冰]</color>效果时，装备者的暴击率提升12%，持续15秒。",
+  "icon": "/admin/api/miyoushe/zzz/asset/3f4d137b59077e94ca9cf7da00661cb3.webp"
+ },
+ {
+  "id": "32600",
+  "name": "獠牙重金属",
+  "desc1": "<color=#F0D12B>物理伤害</color>+10%。",
+  "desc2": "队伍中任意角色对敌人施加<color=#F0D12B>[强击]</color>效果时，装备者对目标造成的伤害提升35%，持续12秒。",
+  "icon": "/admin/api/miyoushe/zzz/asset/26caef64558871ece1e565a21863e564.webp"
+ },
+ {
+  "id": "32500",
+  "name": "极地重金属",
+  "desc1": "<color=#98EFF0>冰属性伤害</color>+10%。",
+  "desc2": "<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升20%，队伍中任意角色对敌人施加<color=#98EFF0>[冻结]</color>或触发<color=#98EFF0>[碎冰]</color>效果时，该增益效果额外提升20%，持续12秒。",
+  "icon": "/admin/api/miyoushe/zzz/asset/2040a5ca556e01bffabcf038f5b53191.webp"
+ },
+ {
+  "id": "32400",
+  "name": "雷暴重金属",
+  "desc1": "<color=#2EB6FF>电属性伤害</color>+10%。",
+  "desc2": "当场上存在处于<color=#2EB6FF>[感电]</color>状态下的敌人时，装备者的攻击力提升28%。",
+  "icon": "/admin/api/miyoushe/zzz/asset/695919462c2ec69e5a1b63e1dc38a692.webp"
+ },
+ {
+  "id": "32300",
+  "name": "混沌重金属",
+  "desc1": "<color=#FE437E>以太伤害</color>+10%。",
+  "desc2": "装备者的暴击伤害提升20%，队伍中任意角色触发<color=#FE437E>[侵蚀]</color>伤害时，该增益效果额外提升5.5%，最多叠加6层，持续8秒，重复触发时刷新持续时间。",
+  "icon": "/admin/api/miyoushe/zzz/asset/805dc491ba267fe602c07dfcd8d6c03c.webp"
+ },
+ {
+  "id": "32200",
+  "name": "炎狱重金属",
+  "desc1": "<color=#FF5521>火属性伤害</color>+10%。",
+  "desc2": "攻击命中处于<color=#FF5521>[灼烧]</color>状态下的敌人时，装备者的暴击率提升28%，持续8秒。",
+  "icon": "/admin/api/miyoushe/zzz/asset/7fd4016fc822b1c274cfa29e840d4d97.webp"
+ },
+ {
+  "id": "31900",
+  "name": "原始朋克",
+  "desc1": "施加的护盾值提升15%。",
+  "desc2": "队伍中任意角色发动<color=#FFFFFF>[招架支援]</color>或<color=#FFFFFF>[回避支援]</color>时，全队角色造成的伤害提升15%，持续10秒，同名被动效果之间不可叠加。",
+  "icon": "/admin/api/miyoushe/zzz/asset/041d77da79e8ed125b67e49241f18158.webp"
+ },
+ {
+  "id": "31800",
+  "name": "混沌爵士",
+  "desc1": "异常精通+30点。",
+  "desc2": "<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升15%；位于后场时，<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[支援攻击]</color>造成的伤害提升20%，换入前场后，该增益效果仍然保留，持续5秒，保留效果7.5秒内最多触发一次。",
+  "icon": "/admin/api/miyoushe/zzz/asset/fd18a4fe13701c807f7032d40de7e835.webp"
+ },
+ {
+  "id": "31600",
+  "name": "摇摆爵士",
+  "desc1": "能量自动回复+20%。",
+  "desc2": "发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>时，全队角色造成的伤害提升15%，持续12秒，同名被动效果之间不可叠加。",
+  "icon": "/admin/api/miyoushe/zzz/asset/28788ba08cb7c876202f322fb927d178.webp"
+ },
+ {
+  "id": "31500",
+  "name": "灵魂摇滚",
+  "desc1": "防御力+16%。",
+  "desc2": "受到敌方攻击并损失生命值时，装备者受到的伤害降低40%，持续2.5秒，15秒内最多触发一次。",
+  "icon": "/admin/api/miyoushe/zzz/asset/02e2a8d967e38c816352c12b653f4d3e.webp"
+ },
+ {
+  "id": "31400",
+  "name": "激素朋克",
+  "desc1": "攻击力+10%。",
+  "desc2": "成为接战状态下的当前操作角色时，装备者的攻击力提升25%，持续10秒，20秒内最多触发一次。",
+  "icon": "/admin/api/miyoushe/zzz/asset/efe46e06630c8cdb3015cce5c2dd9c23.webp"
+ },
+ {
+  "id": "31300",
+  "name": "自由蓝调",
+  "desc1": "异常精通+30点。",
+  "desc2": "<color=#FFFFFF>[强化特殊技]</color>命中敌人时，根据装备者的属性类型，使目标对应属性异常积蓄抗性降低20%，持续8秒，相同属性类型的效果不可叠加。",
+  "icon": "/admin/api/miyoushe/zzz/asset/102b257258bf9186708d34ac31df7dcc.webp"
+ },
+ {
+  "id": "31200",
+  "name": "震星迪斯科",
+  "desc1": "冲击力+6%。",
+  "desc2": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[冲刺攻击]</color>、<color=#FFFFFF>[闪避反击]</color>对主要攻击目标造成的失衡值提升20%。",
+  "icon": "/admin/api/miyoushe/zzz/asset/287f4bbd1773896421f2b1dfb9bfc3e7.webp"
+ },
+ {
+  "id": "31100",
+  "name": "河豚电音",
+  "desc1": "穿透率+8%。",
+  "desc2": "<color=#FFFFFF>[终结技]</color>造成的伤害提升20%；发动<color=#FFFFFF>[终结技]</color>时，装备者的攻击力提升15%，持续12秒。",
+  "icon": "/admin/api/miyoushe/zzz/asset/7e47b1618087bae243816523c310921f.webp"
+ },
+ {
+  "id": "31000",
+  "name": "啄木鸟电音",
+  "desc1": "暴击率+8%。",
+  "desc2": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避反击]</color>或<color=#FFFFFF>[强化特殊技]</color>命中敌人并触发暴击时，分别为装备者提供1层增益效果，每层增益效果使装备者的攻击力提升9%，持续6秒，不同招式分别结算持续时间。",
+  "icon": "/admin/api/miyoushe/zzz/asset/123301ec4f2abb666460c4a5030ffb0a.webp"
+ }
+]

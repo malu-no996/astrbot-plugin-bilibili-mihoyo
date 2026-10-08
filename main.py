@@ -27,7 +27,7 @@ from astrbot.api.star import Context, Star
 from astrbot.api.web import error_response, json_response, request
 
 from . import miyoho
-from .miyoho import securestore
+from .miyoho import securestore, seed
 from .miyoho.core import asset_cache, bind, device, mys as client, store
 from .miyoho.core import device_routes
 from .miyoho.core.web import PLUGIN_NAME, PREFIX, body, call, fail
@@ -53,7 +53,12 @@ class MiyohoPlugin(Star):
     # ==================================================================
 
     async def initialize(self):
-        """启动后台循环：战绩自动存档（每天）+ 自动签到（每 30s 看一次到点没有）。"""
+        """启动后台循环：战绩自动存档（每天）+ 自动签到（每 30s 看一次到点没有）。
+
+        启动前先 bootstrap：把 seed/ 里缺的种子数据补进 data/、把缺失的面板图标镜像
+        补齐（AstrBot 更新插件会清空 pages/ 与仓库里出现过的目录，见 miyoho/seed.py）。
+        """
+        seed.bootstrap()
         self._tasks.append(capture.start_capture_loop())
         self._tasks.append(asyncio.create_task(autosign.loop()))
         cfg = autosign.load()

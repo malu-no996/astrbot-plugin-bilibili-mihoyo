@@ -1,0 +1,3092 @@
+[
+ {
+  "id": "14164",
+  "name": "涅槃初翎",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "异常掌控 1200",
+  "talents": [
+   {
+    "name": "破壳日",
+    "desc": "(Test1)装备者的异常精通提升<color=#2BAD00>90</color>点；队伍中任意角色对敌人造成的属性异常伤害产生暴击时，装备者造成的<color=#FF5521>火属性伤害</color>提升<color=#2BAD00>40%</color>，持续20秒，重复触发刷新持续时间。"
+   },
+   {
+    "name": "破壳日",
+    "desc": "(Test1)装备者的异常精通提升<color=#2BAD00>104</color>点；队伍中任意角色对敌人造成的属性异常伤害产生暴击时，装备者造成的<color=#FF5521>火属性伤害</color>提升<color=#2BAD00>46%</color>，持续20秒，重复触发刷新持续时间。"
+   },
+   {
+    "name": "破壳日",
+    "desc": "(Test1)装备者的异常精通提升<color=#2BAD00>117</color>点；队伍中任意角色对敌人造成的属性异常伤害产生暴击时，装备者造成的<color=#FF5521>火属性伤害</color>提升<color=#2BAD00>52%</color>，持续20秒，重复触发刷新持续时间。"
+   },
+   {
+    "name": "破壳日",
+    "desc": "(Test1)装备者的异常精通提升<color=#2BAD00>131</color>点；队伍中任意角色对敌人造成的属性异常伤害产生暴击时，装备者造成的<color=#FF5521>火属性伤害</color>提升<color=#2BAD00>58%</color>，持续20秒，重复触发刷新持续时间。"
+   },
+   {
+    "name": "破壳日",
+    "desc": "(Test1)装备者的异常精通提升<color=#2BAD00>144</color>点；队伍中任意角色对敌人造成的属性异常伤害产生暴击时，装备者造成的<color=#FF5521>火属性伤害</color>提升<color=#2BAD00>64%</color>，持续20秒，重复触发刷新持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/18361076050c340fc61fb01d49b07227.webp"
+ },
+ {
+  "id": "14163",
+  "name": "禁罪囚笼",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "暴击率 960",
+  "talents": [
+   {
+    "name": "掌中狩恶",
+    "desc": "(Test1)装备者暴击率提升<color=#2BAD00>24%</color>；装备者的<color=#FFFFFF>[普通攻击]</color>命中敌人时，使自身攻击力提升<color=#2BAD00>10%</color>，造成的伤害无视目标<color=#2BAD00>16%</color><color=#A6C5FD>风属性伤害抗性</color>，持续30秒。"
+   },
+   {
+    "name": "掌中狩恶",
+    "desc": "(Test1)装备者暴击率提升<color=#2BAD00>27.6%</color>；装备者的<color=#FFFFFF>[普通攻击]</color>命中敌人时，使自身攻击力提升<color=#2BAD00>11.5%</color>，造成的伤害无视目标<color=#2BAD00>18.4%</color><color=#A6C5FD>风属性伤害抗性</color>，持续30秒。"
+   },
+   {
+    "name": "掌中狩恶",
+    "desc": "(Test1)装备者暴击率提升<color=#2BAD00>31.2%</color>；装备者的<color=#FFFFFF>[普通攻击]</color>命中敌人时，使自身攻击力提升<color=#2BAD00>13%</color>，造成的伤害无视目标<color=#2BAD00>20.8%</color><color=#A6C5FD>风属性伤害抗性</color>，持续30秒。"
+   },
+   {
+    "name": "掌中狩恶",
+    "desc": "(Test1)装备者暴击率提升<color=#2BAD00>34.8%</color>；装备者的<color=#FFFFFF>[普通攻击]</color>命中敌人时，使自身攻击力提升<color=#2BAD00>14.5%</color>，造成的伤害无视目标<color=#2BAD00>23.2%</color><color=#A6C5FD>风属性伤害抗性</color>，持续30秒。"
+   },
+   {
+    "name": "掌中狩恶",
+    "desc": "(Test1)装备者暴击率提升<color=#2BAD00>38.4%</color>；装备者的<color=#FFFFFF>[普通攻击]</color>命中敌人时，使自身攻击力提升<color=#2BAD00>16%</color>，造成的伤害无视目标<color=#2BAD00>25.6%</color><color=#A6C5FD>风属性伤害抗性</color>，持续30秒。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/c5041097e5c01c3fe0e631ccb597982b.webp"
+ },
+ {
+  "id": "14162",
+  "name": "绯月银棺",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "能量自动回复 2400",
+  "talents": [
+   {
+    "name": "永夜辗眠",
+    "desc": "装备者暴击率提升<color=#2BAD00>24%</color>；造成的伤害无视目标<color=#2BAD00>15%</color><color=#A6C5FD>风属性伤害抗性</color>；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#A6C5FD>风属性伤害</color>时，造成的失衡值提升<color=#2BAD00>16%</color>，全队其他角色造成的伤害提升<color=#2BAD00>20%</color>，持续50秒，重复触发时刷新持续时间，伤害提升效果全队唯一。"
+   },
+   {
+    "name": "永夜辗眠",
+    "desc": "装备者暴击率提升<color=#2BAD00>26%</color>；造成的伤害无视目标<color=#2BAD00>17.3%</color><color=#A6C5FD>风属性伤害抗性</color>；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#A6C5FD>风属性伤害</color>时，造成的失衡值提升<color=#2BAD00>18.4%</color>，全队其他角色造成的伤害提升<color=#2BAD00>23%</color>，持续50秒，重复触发时刷新持续时间，伤害提升效果全队唯一。"
+   },
+   {
+    "name": "永夜辗眠",
+    "desc": "装备者暴击率提升<color=#2BAD00>28%</color>；造成的伤害无视目标<color=#2BAD00>19.5%</color><color=#A6C5FD>风属性伤害抗性</color>；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#A6C5FD>风属性伤害</color>时，造成的失衡值提升<color=#2BAD00>20.8%</color>，全队其他角色造成的伤害提升<color=#2BAD00>26%</color>，持续50秒，重复触发时刷新持续时间，伤害提升效果全队唯一。"
+   },
+   {
+    "name": "永夜辗眠",
+    "desc": "装备者暴击率提升<color=#2BAD00>30%</color>；造成的伤害无视目标<color=#2BAD00>21.8%</color><color=#A6C5FD>风属性伤害抗性</color>；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#A6C5FD>风属性伤害</color>时，造成的失衡值提升<color=#2BAD00>23.2%</color>，全队其他角色造成的伤害提升<color=#2BAD00>29%</color>，持续50秒，重复触发时刷新持续时间，伤害提升效果全队唯一。"
+   },
+   {
+    "name": "永夜辗眠",
+    "desc": "装备者暴击率提升<color=#2BAD00>32%</color>；造成的伤害无视目标<color=#2BAD00>24%</color><color=#A6C5FD>风属性伤害抗性</color>；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#A6C5FD>风属性伤害</color>时，造成的失衡值提升<color=#2BAD00>25.6%</color>，全队其他角色造成的伤害提升<color=#2BAD00>32%</color>，持续50秒，重复触发时刷新持续时间，伤害提升效果全队唯一。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/26ddadbbf95307d7fce1532bb3d2b548.webp"
+ },
+ {
+  "id": "14161",
+  "name": "猩红渴望",
+  "rarity": "S",
+  "main": "基础防御力 29",
+  "sub": "防御力 1920",
+  "talents": [
+   {
+    "name": "渴血",
+    "desc": "装备者暴击率提升<color=#2BAD00>25%</color>；<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>15%</color>；装备者发动<color=#FFFFFF>[强化特殊技]</color>或触发<color=#FFFFFF>[毁伤]</color>时，造成的<color=#2EB6FF>电属性锐化伤害</color>提升<color=#2BAD00>10%</color>，持续40秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "渴血",
+    "desc": "装备者暴击率提升<color=#2BAD00>27.5%</color>；<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>17.5%</color>；装备者发动<color=#FFFFFF>[强化特殊技]</color>或触发<color=#FFFFFF>[毁伤]</color>时，造成的<color=#2EB6FF>电属性锐化伤害</color>提升<color=#2BAD00>11.5%</color>，持续40秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "渴血",
+    "desc": "装备者暴击率提升<color=#2BAD00>30%</color>；<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>20%</color>；装备者发动<color=#FFFFFF>[强化特殊技]</color>或触发<color=#FFFFFF>[毁伤]</color>时，造成的<color=#2EB6FF>电属性锐化伤害</color>提升<color=#2BAD00>13%</color>，持续40秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "渴血",
+    "desc": "装备者暴击率提升<color=#2BAD00>32.5%</color>；<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>22.5%</color>；装备者发动<color=#FFFFFF>[强化特殊技]</color>或触发<color=#FFFFFF>[毁伤]</color>时，造成的<color=#2EB6FF>电属性锐化伤害</color>提升<color=#2BAD00>14.5%</color>，持续40秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "渴血",
+    "desc": "装备者暴击率提升<color=#2BAD00>35%</color>；<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>25%</color>；装备者发动<color=#FFFFFF>[强化特殊技]</color>或触发<color=#FFFFFF>[毁伤]</color>时，造成的<color=#2EB6FF>电属性锐化伤害</color>提升<color=#2BAD00>16%</color>，持续40秒，重复触发时刷新持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/425effe3522752c523ccae8d3b244970.webp"
+ },
+ {
+  "id": "14159",
+  "name": "骁骑礼赞",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "暴击伤害 1920",
+  "talents": [
+   {
+    "name": "骑士仪典",
+    "desc": "装备者的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[强化特殊技]</color>的重击命中敌人时，获得1层<color=#FFFFFF>[兵锋]</color>，使暴击伤害提升<color=#2BAD00>32%</color>，持续25秒；<color=#FFFFFF>[兵锋]</color>最多叠加2层，且每种招式类型最多提供1层，重复触发时，刷新所有<color=#FFFFFF>[兵锋]</color>持续时间；\n拥有2层<color=#FFFFFF>[兵锋]</color>时，获得<color=#FFFFFF>[彻骨]</color>：装备者造成的伤害无视目标<color=#2BAD00>20%</color><color=#98EFF0>冰属性伤害抗性</color>。"
+   },
+   {
+    "name": "骑士仪典",
+    "desc": "装备者的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[强化特殊技]</color>的重击命中敌人时，获得1层<color=#FFFFFF>[兵锋]</color>，使暴击伤害提升<color=#2BAD00>36.8%</color>，持续25秒；<color=#FFFFFF>[兵锋]</color>最多叠加2层，且每种招式类型最多提供1层，重复触发时，刷新所有<color=#FFFFFF>[兵锋]</color>持续时间；\n拥有2层<color=#FFFFFF>[兵锋]</color>时，获得<color=#FFFFFF>[彻骨]</color>：装备者造成的伤害无视目标<color=#2BAD00>23%</color><color=#98EFF0>冰属性伤害抗性</color>。"
+   },
+   {
+    "name": "骑士仪典",
+    "desc": "装备者的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[强化特殊技]</color>的重击命中敌人时，获得1层<color=#FFFFFF>[兵锋]</color>，使暴击伤害提升<color=#2BAD00>41.6%</color>，持续25秒；<color=#FFFFFF>[兵锋]</color>最多叠加2层，且每种招式类型最多提供1层，重复触发时，刷新所有<color=#FFFFFF>[兵锋]</color>持续时间；\n拥有2层<color=#FFFFFF>[兵锋]</color>时，获得<color=#FFFFFF>[彻骨]</color>：装备者造成的伤害无视目标<color=#2BAD00>26%</color><color=#98EFF0>冰属性伤害抗性</color>。"
+   },
+   {
+    "name": "骑士仪典",
+    "desc": "装备者的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[强化特殊技]</color>的重击命中敌人时，获得1层<color=#FFFFFF>[兵锋]</color>，使暴击伤害提升<color=#2BAD00>46.4%</color>，持续25秒；<color=#FFFFFF>[兵锋]</color>最多叠加2层，且每种招式类型最多提供1层，重复触发时，刷新所有<color=#FFFFFF>[兵锋]</color>持续时间；\n拥有2层<color=#FFFFFF>[兵锋]</color>时，获得<color=#FFFFFF>[彻骨]</color>：装备者造成的伤害无视目标<color=#2BAD00>29%</color><color=#98EFF0>冰属性伤害抗性</color>。"
+   },
+   {
+    "name": "骑士仪典",
+    "desc": "装备者的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[强化特殊技]</color>的重击命中敌人时，获得1层<color=#FFFFFF>[兵锋]</color>，使暴击伤害提升<color=#2BAD00>51.2%</color>，持续25秒；<color=#FFFFFF>[兵锋]</color>最多叠加2层，且每种招式类型最多提供1层，重复触发时，刷新所有<color=#FFFFFF>[兵锋]</color>持续时间；\n拥有2层<color=#FFFFFF>[兵锋]</color>时，获得<color=#FFFFFF>[彻骨]</color>：装备者造成的伤害无视目标<color=#2BAD00>32%</color><color=#98EFF0>冰属性伤害抗性</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/04b02e42ad8c286e95d0462784960d52.webp"
+ },
+ {
+  "id": "14158",
+  "name": "空羽复归之诗",
+  "rarity": "S",
+  "main": "基础攻击力 50",
+  "sub": "攻击力 1440",
+  "talents": [
+   {
+    "name": "失乐园",
+    "desc": "异常精通提升<color=#2BAD00>96</color>点；装备者触发<color=#FFA9DD>[异化]</color>反应时，自身获得属性异常伤害提升<color=#2BAD00>20%</color>的效果，并为全队角色施加造成的伤害提升<color=#2BAD00>30%</color>效果，效果均持续30秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "失乐园",
+    "desc": "异常精通提升<color=#2BAD00>105</color>点；装备者触发<color=#FFA9DD>[异化]</color>反应时，自身获得属性异常伤害提升<color=#2BAD00>23%</color>的效果，并为全队角色施加造成的伤害提升<color=#2BAD00>34.5%</color>效果，效果均持续30秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "失乐园",
+    "desc": "异常精通提升<color=#2BAD00>115</color>点；装备者触发<color=#FFA9DD>[异化]</color>反应时，自身获得属性异常伤害提升<color=#2BAD00>26%</color>的效果，并为全队角色施加造成的伤害提升<color=#2BAD00>39%</color>效果，效果均持续30秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "失乐园",
+    "desc": "异常精通提升<color=#2BAD00>125</color>点；装备者触发<color=#FFA9DD>[异化]</color>反应时，自身获得属性异常伤害提升<color=#2BAD00>29%</color>的效果，并为全队角色施加造成的伤害提升<color=#2BAD00>43.5%</color>效果，效果均持续30秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "失乐园",
+    "desc": "异常精通提升<color=#2BAD00>135</color>点；装备者触发<color=#FFA9DD>[异化]</color>反应时，自身获得属性异常伤害提升<color=#2BAD00>32%</color>的效果，并为全队角色施加造成的伤害提升<color=#2BAD00>48%</color>效果，效果均持续30秒，重复触发时刷新持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/7a917513c64fcb79101df53ddeb5116f.webp"
+ },
+ {
+  "id": "14157",
+  "name": "首席跟班",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "暴击率 960",
+  "talents": [
+   {
+    "name": "天才的扈从",
+    "desc": "装备者的冲击力提升<color=#2BAD00>30</color>点，造成的伤害无视目标<color=#2BAD00>15%</color><color=#FF5521>火属性伤害抗性</color>；装备者为非操作中角色时，能量自动回复提升<color=#2BAD00>0.4</color>点/秒；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#FF5521>火属性伤害</color>时，使全队代理人造成的伤害提升<color=#2BAD00>12.5%</color>，持续30秒，最多叠加2层，重复触发时刷新持续时间，同一招式内最多触发1次，该效果全队唯一。"
+   },
+   {
+    "name": "天才的扈从",
+    "desc": "装备者的冲击力提升<color=#2BAD00>33</color>点，造成的伤害无视目标<color=#2BAD00>17.2%</color><color=#FF5521>火属性伤害抗性</color>；装备者为非操作中角色时，能量自动回复提升<color=#2BAD00>0.46</color>点/秒；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#FF5521>火属性伤害</color>时，使全队代理人造成的伤害提升<color=#2BAD00>14.4%</color>，持续30秒，最多叠加2层，重复触发时刷新持续时间，同一招式内最多触发1次，该效果全队唯一。"
+   },
+   {
+    "name": "天才的扈从",
+    "desc": "装备者的冲击力提升<color=#2BAD00>36</color>点，造成的伤害无视目标<color=#2BAD00>19.5%</color><color=#FF5521>火属性伤害抗性</color>；装备者为非操作中角色时，能量自动回复提升<color=#2BAD00>0.52</color>点/秒；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#FF5521>火属性伤害</color>时，使全队代理人造成的伤害提升<color=#2BAD00>16.3%</color>，持续30秒，最多叠加2层，重复触发时刷新持续时间，同一招式内最多触发1次，该效果全队唯一。"
+   },
+   {
+    "name": "天才的扈从",
+    "desc": "装备者的冲击力提升<color=#2BAD00>39</color>点，造成的伤害无视目标<color=#2BAD00>21.7%</color><color=#FF5521>火属性伤害抗性</color>；装备者为非操作中角色时，能量自动回复提升<color=#2BAD00>0.58</color>点/秒；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#FF5521>火属性伤害</color>时，使全队代理人造成的伤害提升<color=#2BAD00>18.1%</color>，持续30秒，最多叠加2层，重复触发时刷新持续时间，同一招式内最多触发1次，该效果全队唯一。"
+   },
+   {
+    "name": "天才的扈从",
+    "desc": "装备者的冲击力提升<color=#2BAD00>42</color>点，造成的伤害无视目标<color=#2BAD00>24%</color><color=#FF5521>火属性伤害抗性</color>；装备者为非操作中角色时，能量自动回复提升<color=#2BAD00>0.64</color>点/秒；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#FF5521>火属性伤害</color>时，使全队代理人造成的伤害提升<color=#2BAD00>20%</color>，持续30秒，最多叠加2层，重复触发时刷新持续时间，同一招式内最多触发1次，该效果全队唯一。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/afb0a59bcc9d2a00e7815533bed50ada.webp"
+ },
+ {
+  "id": "14156",
+  "name": "琳琅鎏心",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "能量自动回复 2400",
+  "talents": [
+   {
+    "name": "无懈之礼",
+    "desc": "装备者的异常精通提升<color=#2BAD00>70</color>点；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#A6C5FD>风属性伤害</color>时，自身造成的<color=#FFFFFF>[乱流]</color>和<color=#A6C5FD>[风化]</color>伤害提升<color=#2BAD00>7%</color>，持续40秒，最多叠加2层，重复触发时刷新持续时间，同一招式内最多触发一次，拥有2层该效果时，全队代理人的异常精通提升<color=#2BAD00>60</color>点，该效果全队唯一。"
+   },
+   {
+    "name": "无懈之礼",
+    "desc": "装备者的异常精通提升<color=#2BAD00>80</color>点；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#A6C5FD>风属性伤害</color>时，自身造成的<color=#FFFFFF>[乱流]</color>和<color=#A6C5FD>[风化]</color>伤害提升<color=#2BAD00>8%</color>，持续40秒，最多叠加2层，重复触发时刷新持续时间，同一招式内最多触发一次，拥有2层该效果时，全队代理人的异常精通提升<color=#2BAD00>69</color>点，该效果全队唯一。"
+   },
+   {
+    "name": "无懈之礼",
+    "desc": "装备者的异常精通提升<color=#2BAD00>90</color>点；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#A6C5FD>风属性伤害</color>时，自身造成的<color=#FFFFFF>[乱流]</color>和<color=#A6C5FD>[风化]</color>伤害提升<color=#2BAD00>9%</color>，持续40秒，最多叠加2层，重复触发时刷新持续时间，同一招式内最多触发一次，拥有2层该效果时，全队代理人的异常精通提升<color=#2BAD00>78</color>点，该效果全队唯一。"
+   },
+   {
+    "name": "无懈之礼",
+    "desc": "装备者的异常精通提升<color=#2BAD00>100</color>点；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#A6C5FD>风属性伤害</color>时，自身造成的<color=#FFFFFF>[乱流]</color>和<color=#A6C5FD>[风化]</color>伤害提升<color=#2BAD00>10%</color>，持续40秒，最多叠加2层，重复触发时刷新持续时间，同一招式内最多触发一次，拥有2层该效果时，全队代理人的异常精通提升<color=#2BAD00>87</color>点，该效果全队唯一。"
+   },
+   {
+    "name": "无懈之礼",
+    "desc": "装备者的异常精通提升<color=#2BAD00>110</color>点；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#A6C5FD>风属性伤害</color>时，自身造成的<color=#FFFFFF>[乱流]</color>和<color=#A6C5FD>[风化]</color>伤害提升<color=#2BAD00>11%</color>，持续40秒，最多叠加2层，重复触发时刷新持续时间，同一招式内最多触发一次，拥有2层该效果时，全队代理人的异常精通提升<color=#2BAD00>96</color>点，该效果全队唯一。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/8d55590022c993b2136d3254f99f55de.webp"
+ },
+ {
+  "id": "14155",
+  "name": "日冕遗蜕",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "攻击力 1200",
+  "talents": [
+   {
+    "name": "日蚀效应",
+    "desc": "暴击率提升20%；装备者为佩洛伊斯时，发动<color=#FFFFFF>[终结技]</color>获得[日蚀]效果，[日蚀]效果下，装备者造成的伤害无视<color=#2BAD00>16%</color><color=#FE437E>以太伤害抗性</color>，持续45秒，重复触发时刷新持续时间，进入接战状态时，获得[日蚀]效果。"
+   },
+   {
+    "name": "日蚀效应",
+    "desc": "暴击率提升20%；装备者为佩洛伊斯时，发动<color=#FFFFFF>[终结技]</color>获得[日蚀]效果，[日蚀]效果下，装备者造成的伤害无视<color=#2BAD00>17.5%</color><color=#FE437E>以太伤害抗性</color>，持续45秒，重复触发时刷新持续时间，进入接战状态时，获得[日蚀]效果。"
+   },
+   {
+    "name": "日蚀效应",
+    "desc": "暴击率提升20%；装备者为佩洛伊斯时，发动<color=#FFFFFF>[终结技]</color>获得[日蚀]效果，[日蚀]效果下，装备者造成的伤害无视<color=#2BAD00>19%</color><color=#FE437E>以太伤害抗性</color>，持续45秒，重复触发时刷新持续时间，进入接战状态时，获得[日蚀]效果。"
+   },
+   {
+    "name": "日蚀效应",
+    "desc": "暴击率提升20%；装备者为佩洛伊斯时，发动<color=#FFFFFF>[终结技]</color>获得[日蚀]效果，[日蚀]效果下，装备者造成的伤害无视<color=#2BAD00>20.5%</color><color=#FE437E>以太伤害抗性</color>，持续45秒，重复触发时刷新持续时间，进入接战状态时，获得[日蚀]效果。"
+   },
+   {
+    "name": "日蚀效应",
+    "desc": "暴击率提升20%；装备者为佩洛伊斯时，发动<color=#FFFFFF>[终结技]</color>获得[日蚀]效果，[日蚀]效果下，装备者造成的伤害无视<color=#2BAD00>22%</color><color=#FE437E>以太伤害抗性</color>，持续45秒，重复触发时刷新持续时间，进入接战状态时，获得[日蚀]效果。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/dc923be797b32ecd9f52237077e3efb0.webp"
+ },
+ {
+  "id": "14154",
+  "name": "朔月裁霜",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "异常掌控 1200",
+  "talents": [
+   {
+    "name": "终末裁决",
+    "desc": "<color=#98EFF0>冰属性</color>的装备者发动<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>时，自身造成的<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>20%</color>，持续40秒，最多叠加2层，同一招式内最多触发一次，重复触发时刷新持续时间，拥有2层效果时，装备者造成的<color=#FFFFFF>[异放]</color>伤害额外提升<color=#2BAD00>35%</color>。"
+   },
+   {
+    "name": "终末裁决",
+    "desc": "<color=#98EFF0>冰属性</color>的装备者发动<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>时，自身造成的<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>23%</color>，持续40秒，最多叠加2层，同一招式内最多触发一次，重复触发时刷新持续时间，拥有2层效果时，装备者造成的<color=#FFFFFF>[异放]</color>伤害额外提升<color=#2BAD00>38.5%</color>。"
+   },
+   {
+    "name": "终末裁决",
+    "desc": "<color=#98EFF0>冰属性</color>的装备者发动<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>时，自身造成的<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>26%</color>，持续40秒，最多叠加2层，同一招式内最多触发一次，重复触发时刷新持续时间，拥有2层效果时，装备者造成的<color=#FFFFFF>[异放]</color>伤害额外提升<color=#2BAD00>42%</color>。"
+   },
+   {
+    "name": "终末裁决",
+    "desc": "<color=#98EFF0>冰属性</color>的装备者发动<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>时，自身造成的<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>29%</color>，持续40秒，最多叠加2层，同一招式内最多触发一次，重复触发时刷新持续时间，拥有2层效果时，装备者造成的<color=#FFFFFF>[异放]</color>伤害额外提升<color=#2BAD00>45.5%</color>。"
+   },
+   {
+    "name": "终末裁决",
+    "desc": "<color=#98EFF0>冰属性</color>的装备者发动<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>时，自身造成的<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>32%</color>，持续40秒，最多叠加2层，同一招式内最多触发一次，重复触发时刷新持续时间，拥有2层效果时，装备者造成的<color=#FFFFFF>[异放]</color>伤害额外提升<color=#2BAD00>50%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/f0d683e75fe12c500328043a4c0c0d90.webp"
+ },
+ {
+  "id": "14153",
+  "name": "辉骑面铠",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "生命值 1200",
+  "talents": [
+   {
+    "name": "骑士气势",
+    "desc": "暴击率提升<color=#2BAD00>20%</color>；装备者发动<color=#FFFFFF>[特殊技]</color>时，装备者造成的<color=#F0D12B>物理贯穿伤害</color>提升<color=#2BAD00>10%</color>，最多叠加2层，持续30秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "骑士气势",
+    "desc": "暴击率提升<color=#2BAD00>23%</color>；装备者发动<color=#FFFFFF>[特殊技]</color>时，装备者造成的<color=#F0D12B>物理贯穿伤害</color>提升<color=#2BAD00>11.5%</color>，最多叠加2层，持续30秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "骑士气势",
+    "desc": "暴击率提升<color=#2BAD00>26%</color>；装备者发动<color=#FFFFFF>[特殊技]</color>时，装备者造成的<color=#F0D12B>物理贯穿伤害</color>提升<color=#2BAD00>13%</color>，最多叠加2层，持续30秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "骑士气势",
+    "desc": "暴击率提升<color=#2BAD00>29%</color>；装备者发动<color=#FFFFFF>[特殊技]</color>时，装备者造成的<color=#F0D12B>物理贯穿伤害</color>提升<color=#2BAD00>14.5%</color>，最多叠加2层，持续30秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "骑士气势",
+    "desc": "暴击率提升<color=#2BAD00>32%</color>；装备者发动<color=#FFFFFF>[特殊技]</color>时，装备者造成的<color=#F0D12B>物理贯穿伤害</color>提升<color=#2BAD00>16%</color>，最多叠加2层，持续30秒，重复触发时刷新持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/9859a294d954934bed9cb79bc62f07bc.webp"
+ },
+ {
+  "id": "14152",
+  "name": "鳞齿寻踪",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "能量自动回复 2400",
+  "talents": [
+   {
+    "name": "仿生毒素",
+    "desc": "暴击率提升<color=#2BAD00>25%</color>；装备者单次消耗的能量达到20点时，每消耗20点能量，获得3秒增益效果：造成<color=#2EB6FF>电属性伤害</color>时无视目标<color=#2BAD00>28%</color>防御力；重复获得时，延长持续时间，至多延长至30秒；进入接战状态时，获得10秒该增益；装备者为非当前操作中角色时，持续时间不再减少。"
+   },
+   {
+    "name": "仿生毒素",
+    "desc": "暴击率提升<color=#2BAD00>28.8%</color>；装备者单次消耗的能量达到20点时，每消耗20点能量，获得3秒增益效果：造成<color=#2EB6FF>电属性伤害</color>时无视目标<color=#2BAD00>31.5%</color>防御力；重复获得时，延长持续时间，至多延长至30秒；进入接战状态时，获得10秒该增益；装备者为非当前操作中角色时，持续时间不再减少。"
+   },
+   {
+    "name": "仿生毒素",
+    "desc": "暴击率提升<color=#2BAD00>32.5%</color>；装备者单次消耗的能量达到20点时，每消耗20点能量，获得3秒增益效果：造成<color=#2EB6FF>电属性伤害</color>时无视目标<color=#2BAD00>35%</color>防御力；重复获得时，延长持续时间，至多延长至30秒；进入接战状态时，获得10秒该增益；装备者为非当前操作中角色时，持续时间不再减少。"
+   },
+   {
+    "name": "仿生毒素",
+    "desc": "暴击率提升<color=#2BAD00>36.3%</color>；装备者单次消耗的能量达到20点时，每消耗20点能量，获得3秒增益效果：造成<color=#2EB6FF>电属性伤害</color>时无视目标<color=#2BAD00>38.5%</color>防御力；重复获得时，延长持续时间，至多延长至30秒；进入接战状态时，获得10秒该增益；装备者为非当前操作中角色时，持续时间不再减少。"
+   },
+   {
+    "name": "仿生毒素",
+    "desc": "暴击率提升<color=#2BAD00>40%</color>；装备者单次消耗的能量达到20点时，每消耗20点能量，获得3秒增益效果：造成<color=#2EB6FF>电属性伤害</color>时无视目标<color=#2BAD00>42%</color>防御力；重复获得时，延长持续时间，至多延长至30秒；进入接战状态时，获得10秒该增益；装备者为非当前操作中角色时，持续时间不再减少。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/41417ab9a75dfe58efbf474f024e38f5.webp"
+ },
+ {
+  "id": "14151",
+  "name": "霓虹妄想",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "异常掌控 1200",
+  "talents": [
+   {
+    "name": "迪斯科恶魔",
+    "desc": "装备者的异常精通提升<color=#2BAD00>90</color>点；装备者<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[普通攻击]</color>造成<color=#FE437E>以太属性伤害</color>时，全队角色造成的伤害提升<color=#2BAD00>15%</color>，持续40秒，最多叠加2层，同一招式内最多触发一次，重复触发时刷新持续时间，拥有2层效果时，装备者的异常精通额外提升<color=#2BAD00>60</color>点，该效果全队唯一。"
+   },
+   {
+    "name": "迪斯科恶魔",
+    "desc": "装备者的异常精通提升<color=#2BAD00>103</color>点；装备者<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[普通攻击]</color>造成<color=#FE437E>以太属性伤害</color>时，全队角色造成的伤害提升<color=#2BAD00>17%</color>，持续40秒，最多叠加2层，同一招式内最多触发一次，重复触发时刷新持续时间，拥有2层效果时，装备者的异常精通额外提升<color=#2BAD00>69</color>点，该效果全队唯一。"
+   },
+   {
+    "name": "迪斯科恶魔",
+    "desc": "装备者的异常精通提升<color=#2BAD00>117</color>点；装备者<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[普通攻击]</color>造成<color=#FE437E>以太属性伤害</color>时，全队角色造成的伤害提升<color=#2BAD00>19.5%</color>，持续40秒，最多叠加2层，同一招式内最多触发一次，重复触发时刷新持续时间，拥有2层效果时，装备者的异常精通额外提升<color=#2BAD00>78</color>点，该效果全队唯一。"
+   },
+   {
+    "name": "迪斯科恶魔",
+    "desc": "装备者的异常精通提升<color=#2BAD00>130</color>点；装备者<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[普通攻击]</color>造成<color=#FE437E>以太属性伤害</color>时，全队角色造成的伤害提升<color=#2BAD00>21%</color>，持续40秒，最多叠加2层，同一招式内最多触发一次，重复触发时刷新持续时间，拥有2层效果时，装备者的异常精通额外提升<color=#2BAD00>87</color>点，该效果全队唯一。"
+   },
+   {
+    "name": "迪斯科恶魔",
+    "desc": "装备者的异常精通提升<color=#2BAD00>145</color>点；装备者<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[普通攻击]</color>造成<color=#FE437E>以太属性伤害</color>时，全队角色造成的伤害提升<color=#2BAD00>24%</color>，持续40秒，最多叠加2层，同一招式内最多触发一次，重复触发时刷新持续时间，拥有2层效果时，装备者的异常精通额外提升<color=#2BAD00>96</color>点，该效果全队唯一。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/fa35a2247ebdc1887e419c3f9458f50e.webp"
+ },
+ {
+  "id": "14150",
+  "name": "壳中之灵",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "异常掌控 1200",
+  "talents": [
+   {
+    "name": "元气一击",
+    "desc": "装备者的异常精通提升<color=#2BAD00>90</color>点；<color=#FE437E>以太属性</color>的装备者进入前场或发动<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>时获得增益效果：对处于属性异常状态下的敌人造成的伤害提升<color=#2BAD00>20%</color>，触发的所有属性异常伤害和[紊乱]伤害提升<color=#2BAD00>10%</color>，效果持续15秒，重复触发时刷新持续时间，换回后场时该效果移除。"
+   },
+   {
+    "name": "元气一击",
+    "desc": "装备者的异常精通提升<color=#2BAD00>103</color>点；<color=#FE437E>以太属性</color>的装备者进入前场或发动<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>时获得增益效果：对处于属性异常状态下的敌人造成的伤害提升<color=#2BAD00>23%</color>，触发的所有属性异常伤害和[紊乱]伤害提升<color=#2BAD00>11.5%</color>，效果持续15秒，重复触发时刷新持续时间，换回后场时该效果移除。"
+   },
+   {
+    "name": "元气一击",
+    "desc": "装备者的异常精通提升<color=#2BAD00>117</color>点；<color=#FE437E>以太属性</color>的装备者进入前场或发动<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>时获得增益效果：对处于属性异常状态下的敌人造成的伤害提升<color=#2BAD00>26%</color>，触发的所有属性异常伤害和[紊乱]伤害提升<color=#2BAD00>13%</color>，效果持续15秒，重复触发时刷新持续时间，换回后场时该效果移除。"
+   },
+   {
+    "name": "元气一击",
+    "desc": "装备者的异常精通提升<color=#2BAD00>130</color>点；<color=#FE437E>以太属性</color>的装备者进入前场或发动<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>时获得增益效果：对处于属性异常状态下的敌人造成的伤害提升<color=#2BAD00>29%</color>，触发的所有属性异常伤害和[紊乱]伤害提升<color=#2BAD00>14.5%</color>，效果持续15秒，重复触发时刷新持续时间，换回后场时该效果移除。"
+   },
+   {
+    "name": "元气一击",
+    "desc": "装备者的异常精通提升<color=#2BAD00>144</color>点；<color=#FE437E>以太属性</color>的装备者进入前场或发动<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>时获得增益效果：对处于属性异常状态下的敌人造成的伤害提升<color=#2BAD00>32%</color>，触发的所有属性异常伤害和[紊乱]伤害提升<color=#2BAD00>16%</color>，效果持续15秒，重复触发时刷新持续时间，换回后场时该效果移除。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/057b5dd3ef3ae6c5d2c9ec5f35ee6429.webp"
+ },
+ {
+  "id": "14149",
+  "name": "思络成歌",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "能量自动回复 2400",
+  "talents": [
+   {
+    "name": "喧响独白",
+    "desc": "装备者为非操作中角色时，能量自动回复提升<color=#2BAD00>0.6</color>点/秒；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#F0D12B>物理伤害</color>时，使全队角色获得增益效果：角色造成伤害提升<color=#2BAD00>12.5%</color>，效果持续40秒，最多叠加2层，重复触发时刷新持续时间；拥有2层效果时，角色的攻击力额外提升<color=#2BAD00>10%</color>，该效果全队唯一。"
+   },
+   {
+    "name": "喧响独白",
+    "desc": "装备者为非操作中角色时，能量自动回复提升<color=#2BAD00>0.69</color>点/秒；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#F0D12B>物理伤害</color>时，使全队角色获得增益效果：角色造成伤害提升<color=#2BAD00>14.3%</color>，效果持续40秒，最多叠加2层，重复触发时刷新持续时间；拥有2层效果时，角色的攻击力额外提升<color=#2BAD00>11.5%</color>，该效果全队唯一。"
+   },
+   {
+    "name": "喧响独白",
+    "desc": "装备者为非操作中角色时，能量自动回复提升<color=#2BAD00>0.78</color>点/秒；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#F0D12B>物理伤害</color>时，使全队角色获得增益效果：角色造成伤害提升<color=#2BAD00>16.1%</color>，效果持续40秒，最多叠加2层，重复触发时刷新持续时间；拥有2层效果时，角色的攻击力额外提升<color=#2BAD00>13%</color>，该效果全队唯一。"
+   },
+   {
+    "name": "喧响独白",
+    "desc": "装备者为非操作中角色时，能量自动回复提升<color=#2BAD00>0.87</color>点/秒；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#F0D12B>物理伤害</color>时，使全队角色获得增益效果：角色造成伤害提升<color=#2BAD00>17.9%</color>，效果持续40秒，最多叠加2层，重复触发时刷新持续时间；拥有2层效果时，角色的攻击力额外提升<color=#2BAD00>14.5%</color>，该效果全队唯一。"
+   },
+   {
+    "name": "喧响独白",
+    "desc": "装备者为非操作中角色时，能量自动回复提升<color=#2BAD00>0.96</color>点/秒；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#F0D12B>物理伤害</color>时，使全队角色获得增益效果：角色造成伤害提升<color=#2BAD00>20%</color>，效果持续40秒，最多叠加2层，重复触发时刷新持续时间；拥有2层效果时，角色的攻击力额外提升<color=#2BAD00>16%</color>，该效果全队唯一。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/ce5d6fa3a114ca7880a812b3f61679ea.webp"
+ },
+ {
+  "id": "14148",
+  "name": "昨夜来电",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "暴击率 960",
+  "talents": [
+   {
+    "name": "7×24",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>1.5</color>点/秒；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#F0D12B>物理属性</color>伤害时，装备者攻击造成的失衡值提升<color=#2BAD00>9%</color>，最多叠加3层，持续10秒，叠加到3层时，全队角色暴击伤害额外提升<color=#2BAD00>30%</color>，持续40秒，重复触发时刷新持续时间，暴击伤害提升效果全队唯一。"
+   },
+   {
+    "name": "7×24",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>1.7</color>点/秒；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#F0D12B>物理属性</color>伤害时，装备者攻击造成的失衡值提升<color=#2BAD00>10.3%</color>，最多叠加3层，持续10秒，叠加到3层时，全队角色暴击伤害额外提升<color=#2BAD00>34.5%</color>，持续40秒，重复触发时刷新持续时间，暴击伤害提升效果全队唯一。"
+   },
+   {
+    "name": "7×24",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>1.9</color>点/秒；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#F0D12B>物理属性</color>伤害时，装备者攻击造成的失衡值提升<color=#2BAD00>11.7%</color>，最多叠加3层，持续10秒，叠加到3层时，全队角色暴击伤害额外提升<color=#2BAD00>39%</color>，持续40秒，重复触发时刷新持续时间，暴击伤害提升效果全队唯一。"
+   },
+   {
+    "name": "7×24",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>2.1</color>点/秒；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#F0D12B>物理属性</color>伤害时，装备者攻击造成的失衡值提升<color=#2BAD00>13%</color>，最多叠加3层，持续10秒，叠加到3层时，全队角色暴击伤害额外提升<color=#2BAD00>43.5%</color>，持续40秒，重复触发时刷新持续时间，暴击伤害提升效果全队唯一。"
+   },
+   {
+    "name": "7×24",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>2.3</color>点/秒；装备者发动<color=#FFFFFF>[强化特殊技]</color>造成<color=#F0D12B>物理属性</color>伤害时，装备者攻击造成的失衡值提升<color=#2BAD00>14.5%</color>，最多叠加3层，持续10秒，叠加到3层时，全队角色暴击伤害额外提升<color=#2BAD00>48%</color>，持续40秒，重复触发时刷新持续时间，暴击伤害提升效果全队唯一。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/ed967d6de7d295a62c5acd0edd10b7ba.webp"
+ },
+ {
+  "id": "14147",
+  "name": "怒目金刚",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "生命值 1200",
+  "talents": [
+   {
+    "name": "焚心业火",
+    "desc": "暴击率提升<color=#2BAD00>20%</color>；装备者发动<color=#FFFFFF>[强化特殊技]</color>时，装备者造成的<color=#FF5521>火属性贯穿伤害</color>提升<color=#2BAD00>9%</color>，最多叠加2层，持续20秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "焚心业火",
+    "desc": "暴击率提升<color=#2BAD00>23%</color>；装备者发动<color=#FFFFFF>[强化特殊技]</color>时，装备者造成的<color=#FF5521>火属性贯穿伤害</color>提升<color=#2BAD00>10.35%</color>，最多叠加2层，持续20秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "焚心业火",
+    "desc": "暴击率提升<color=#2BAD00>26%</color>；装备者发动<color=#FFFFFF>[强化特殊技]</color>时，装备者造成的<color=#FF5521>火属性贯穿伤害</color>提升<color=#2BAD00>11.7%</color>，最多叠加2层，持续20秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "焚心业火",
+    "desc": "暴击率提升<color=#2BAD00>29%</color>；装备者发动<color=#FFFFFF>[强化特殊技]</color>时，装备者造成的<color=#FF5521>火属性贯穿伤害</color>提升<color=#2BAD00>13.05%</color>，最多叠加2层，持续20秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "焚心业火",
+    "desc": "暴击率提升<color=#2BAD00>32%</color>；装备者发动<color=#FFFFFF>[强化特殊技]</color>时，装备者造成的<color=#FF5521>火属性贯穿伤害</color>提升<color=#2BAD00>14.4%</color>，最多叠加2层，持续20秒，每层效果单独结算持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/db3fc94edfe7e31ca86c3a7737bee1ff.webp"
+ },
+ {
+  "id": "14146",
+  "name": "机巧心种",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "暴击率 960",
+  "talents": [
+   {
+    "name": "芽生炉心",
+    "desc": "暴击率提升<color=#2BAD00>15%</color>；装备者的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成伤害时，可分别获得1层增益效果，每层增益效果使装备者造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>12.5%</color>，最多叠加2层，持续40秒，每层效果单独结算持续时间，同一招式内最多触发一次；拥有2层增益效果时，装备者的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[终结技]</color>对敌人造成的伤害无视<color=#2BAD00>20%</color>防御力。"
+   },
+   {
+    "name": "芽生炉心",
+    "desc": "暴击率提升<color=#2BAD00>17%</color>；装备者的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成伤害时，可分别获得1层增益效果，每层增益效果使装备者造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>14.5%</color>，最多叠加2层，持续40秒，每层效果单独结算持续时间，同一招式内最多触发一次；拥有2层增益效果时，装备者的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[终结技]</color>对敌人造成的伤害无视<color=#2BAD00>23%</color>防御力。"
+   },
+   {
+    "name": "芽生炉心",
+    "desc": "暴击率提升<color=#2BAD00>19%</color>；装备者的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成伤害时，可分别获得1层增益效果，每层增益效果使装备者造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>16.5%</color>，最多叠加2层，持续40秒，每层效果单独结算持续时间，同一招式内最多触发一次；拥有2层增益效果时，装备者的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[终结技]</color>对敌人造成的伤害无视<color=#2BAD00>26%</color>防御力。"
+   },
+   {
+    "name": "芽生炉心",
+    "desc": "暴击率提升<color=#2BAD00>21%</color>；装备者的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成伤害时，可分别获得1层增益效果，每层增益效果使装备者造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>18.5%</color>，最多叠加2层，持续40秒，每层效果单独结算持续时间，同一招式内最多触发一次；拥有2层增益效果时，装备者的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[终结技]</color>对敌人造成的伤害无视<color=#2BAD00>29%</color>防御力。"
+   },
+   {
+    "name": "芽生炉心",
+    "desc": "暴击率提升<color=#2BAD00>23%</color>；装备者的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成伤害时，可分别获得1层增益效果，每层增益效果使装备者造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>20%</color>，最多叠加2层，持续40秒，每层效果单独结算持续时间，同一招式内最多触发一次；拥有2层增益效果时，装备者的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[终结技]</color>对敌人造成的伤害无视<color=#2BAD00>32%</color>防御力。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/c580aaecb16c251e46fbfb0940375cd4.webp"
+ },
+ {
+  "id": "14145",
+  "name": "铸梦炉歌",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "生命值 1200",
+  "talents": [
+   {
+    "name": "月引颂篇",
+    "desc": "装备者的能量自动回复提升<color=#2BAD00>0.4</color>点/秒；当装备者开启<color=#FFFFFF>[以太帷幕]</color>或延长<color=#FFFFFF>[以太帷幕]</color>的持续时间时，全队角色造成伤害提升<color=#2BAD00>25%</color>，生命值上限提升<color=#2BAD00>15%</color>，效果持续45秒，重复触发时刷新持续时间，该效果全队唯一。"
+   },
+   {
+    "name": "月引颂篇",
+    "desc": "装备者的能量自动回复提升<color=#2BAD00>0.46</color>点/秒；当装备者开启<color=#FFFFFF>[以太帷幕]</color>或延长<color=#FFFFFF>[以太帷幕]</color>的持续时间时，全队角色造成伤害提升<color=#2BAD00>28.8%</color>，生命值上限提升<color=#2BAD00>17.3%</color>，效果持续45秒，重复触发时刷新持续时间，该效果全队唯一。"
+   },
+   {
+    "name": "月引颂篇",
+    "desc": "装备者的能量自动回复提升<color=#2BAD00>0.52</color>点/秒；当装备者开启<color=#FFFFFF>[以太帷幕]</color>或延长<color=#FFFFFF>[以太帷幕]</color>的持续时间时，全队角色造成伤害提升<color=#2BAD00>32.5%</color>，生命值上限提升<color=#2BAD00>19.5%</color>，效果持续45秒，重复触发时刷新持续时间，该效果全队唯一。"
+   },
+   {
+    "name": "月引颂篇",
+    "desc": "装备者的能量自动回复提升<color=#2BAD00>0.58</color>点/秒；当装备者开启<color=#FFFFFF>[以太帷幕]</color>或延长<color=#FFFFFF>[以太帷幕]</color>的持续时间时，全队角色造成伤害提升<color=#2BAD00>36.3%</color>，生命值上限提升<color=#2BAD00>21.8%</color>，效果持续45秒，重复触发时刷新持续时间，该效果全队唯一。"
+   },
+   {
+    "name": "月引颂篇",
+    "desc": "装备者的能量自动回复提升<color=#2BAD00>0.64</color>点/秒；当装备者开启<color=#FFFFFF>[以太帷幕]</color>或延长<color=#FFFFFF>[以太帷幕]</color>的持续时间时，全队角色造成伤害提升<color=#2BAD00>40%</color>，生命值上限提升<color=#2BAD00>24%</color>，效果持续45秒，重复触发时刷新持续时间，该效果全队唯一。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/98c9d023ac84afd91995d9de73bac732.webp"
+ },
+ {
+  "id": "14143",
+  "name": "云霓孤光",
+  "rarity": "S",
+  "main": "基础攻击力 50",
+  "sub": "暴击伤害 1920",
+  "talents": [
+   {
+    "name": "玉魄冰心",
+    "desc": "装备者造成的伤害无视目标<color=#2BAD00>20%</color><color=#F0D12B>物理属性伤害抗性</color>；装备者开启<color=#FFFFFF>[以太帷幕]</color>时，自身造成的伤害提升<color=#2BAD00>25%</color>，暴击伤害提升<color=#2BAD00>25%</color>，持续40秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "玉魄冰心",
+    "desc": "装备者造成的伤害无视目标<color=#2BAD00>22%</color><color=#F0D12B>物理属性伤害抗性</color>；装备者开启<color=#FFFFFF>[以太帷幕]</color>时，自身造成的伤害提升<color=#2BAD00>28.7%</color>，暴击伤害提升<color=#2BAD00>28.7%</color>，持续40秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "玉魄冰心",
+    "desc": "装备者造成的伤害无视目标<color=#2BAD00>24%</color><color=#F0D12B>物理属性伤害抗性</color>；装备者开启<color=#FFFFFF>[以太帷幕]</color>时，自身造成的伤害提升<color=#2BAD00>32.5%</color>，暴击伤害提升<color=#2BAD00>32.5%</color>，持续40秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "玉魄冰心",
+    "desc": "装备者造成的伤害无视目标<color=#2BAD00>26%</color><color=#F0D12B>物理属性伤害抗性</color>；装备者开启<color=#FFFFFF>[以太帷幕]</color>时，自身造成的伤害提升<color=#2BAD00>36.2%</color>，暴击伤害提升<color=#2BAD00>36.2%</color>，持续40秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "玉魄冰心",
+    "desc": "装备者造成的伤害无视目标<color=#2BAD00>28%</color><color=#F0D12B>物理属性伤害抗性</color>；装备者开启<color=#FFFFFF>[以太帷幕]</color>时，自身造成的伤害提升<color=#2BAD00>40%</color>，暴击伤害提升<color=#2BAD00>40%</color>，持续40秒，重复触发时刷新持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/5a401cda5a68be1e2e00049eae87bdf0.webp"
+ },
+ {
+  "id": "14141",
+  "name": "狸法七变化",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "能量自动回复 2400",
+  "talents": [
+   {
+    "name": "机巧玲珑",
+    "desc": "装备者的<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[终结技]</color>造成<color=#F0D12B>物理伤害</color>时，装备者<color=#FFFFFF>异常掌控</color>提升<color=#2BAD00>30</color>点，持续40秒；装备者的<color=#FFFFFF>[追加攻击]</color>命中敌人时，使全队角色的<color=#FFFFFF>异常精通</color>提升<color=#2BAD00>60</color>点，持续40秒，该效果全队唯一。"
+   },
+   {
+    "name": "机巧玲珑",
+    "desc": "装备者的<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[终结技]</color>造成<color=#F0D12B>物理伤害</color>时，装备者<color=#FFFFFF>异常掌控</color>提升<color=#2BAD00>34</color>点，持续40秒；装备者的<color=#FFFFFF>[追加攻击]</color>命中敌人时，使全队角色的<color=#FFFFFF>异常精通</color>提升<color=#2BAD00>69</color>点，持续40秒，该效果全队唯一。"
+   },
+   {
+    "name": "机巧玲珑",
+    "desc": "装备者的<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[终结技]</color>造成<color=#F0D12B>物理伤害</color>时，装备者<color=#FFFFFF>异常掌控</color>提升<color=#2BAD00>39</color>点，持续40秒；装备者的<color=#FFFFFF>[追加攻击]</color>命中敌人时，使全队角色的<color=#FFFFFF>异常精通</color>提升<color=#2BAD00>78</color>点，持续40秒，该效果全队唯一。"
+   },
+   {
+    "name": "机巧玲珑",
+    "desc": "装备者的<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[终结技]</color>造成<color=#F0D12B>物理伤害</color>时，装备者<color=#FFFFFF>异常掌控</color>提升<color=#2BAD00>43</color>点，持续40秒；装备者的<color=#FFFFFF>[追加攻击]</color>命中敌人时，使全队角色的<color=#FFFFFF>异常精通</color>提升<color=#2BAD00>87</color>点，持续40秒，该效果全队唯一。"
+   },
+   {
+    "name": "机巧玲珑",
+    "desc": "装备者的<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[终结技]</color>造成<color=#F0D12B>物理伤害</color>时，装备者<color=#FFFFFF>异常掌控</color>提升<color=#2BAD00>48</color>点，持续40秒；装备者的<color=#FFFFFF>[追加攻击]</color>命中敌人时，使全队角色的<color=#FFFFFF>异常精通</color>提升<color=#2BAD00>96</color>点，持续40秒，该效果全队唯一。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/f853d4d46c9f54da9dbd770351d41ee0.webp"
+ },
+ {
+  "id": "14140",
+  "name": "十方锻星",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "攻击力 1200",
+  "talents": [
+   {
+    "name": "予你星屑",
+    "desc": "装备者的<color=#FFFFFF>[异常掌控]</color>提升<color=#2BAD00>60</color>点；触发<color=#F0D12B>[强击]</color>时，装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>20%</color>，持续20秒，最多叠加2层，重复触发时刷新持续时间，装备者进入接战状态时，立即获得2层效果。"
+   },
+   {
+    "name": "予你星屑",
+    "desc": "装备者的<color=#FFFFFF>[异常掌控]</color>提升<color=#2BAD00>69</color>点；触发<color=#F0D12B>[强击]</color>时，装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>23%</color>，持续20秒，最多叠加2层，重复触发时刷新持续时间，装备者进入接战状态时，立即获得2层效果。"
+   },
+   {
+    "name": "予你星屑",
+    "desc": "装备者的<color=#FFFFFF>[异常掌控]</color>提升<color=#2BAD00>78</color>点；触发<color=#F0D12B>[强击]</color>时，装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>26%</color>，持续20秒，最多叠加2层，重复触发时刷新持续时间，装备者进入接战状态时，立即获得2层效果。"
+   },
+   {
+    "name": "予你星屑",
+    "desc": "装备者的<color=#FFFFFF>[异常掌控]</color>提升<color=#2BAD00>87</color>点；触发<color=#F0D12B>[强击]</color>时，装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>29%</color>，持续20秒，最多叠加2层，重复触发时刷新持续时间，装备者进入接战状态时，立即获得2层效果。"
+   },
+   {
+    "name": "予你星屑",
+    "desc": "装备者的<color=#FFFFFF>[异常掌控]</color>提升<color=#2BAD00>96</color>点；触发<color=#F0D12B>[强击]</color>时，装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>32%</color>，持续20秒，最多叠加2层，重复触发时刷新持续时间，装备者进入接战状态时，立即获得2层效果。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/9874700d0b794e769544f5ae2a319c91.webp"
+ },
+ {
+  "id": "14139",
+  "name": "福虓炉炉",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "攻击力 1200",
+  "talents": [
+   {
+    "name": "虎气融融",
+    "desc": "装备者的<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>和<color=#FFFFFF>[终结技]</color>造成的失衡值提升<color=#2BAD00>28%</color>；\n发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>并造成<color=#FF5521>火属性伤害</color>时，全队角色造成伤害提升<color=#2BAD00>10%</color>，最多叠加2层，持续30秒，每层效果单独结算持续时间，同一招式内最多触发一次，该效果全队唯一。"
+   },
+   {
+    "name": "虎气融融",
+    "desc": "装备者的<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>和<color=#FFFFFF>[终结技]</color>造成的失衡值提升<color=#2BAD00>32.2%</color>；\n发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>并造成<color=#FF5521>火属性伤害</color>时，全队角色造成伤害提升<color=#2BAD00>11.5%</color>，最多叠加2层，持续30秒，每层效果单独结算持续时间，同一招式内最多触发一次，该效果全队唯一。"
+   },
+   {
+    "name": "虎气融融",
+    "desc": "装备者的<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>和<color=#FFFFFF>[终结技]</color>造成的失衡值提升<color=#2BAD00>36.4%</color>；\n发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>并造成<color=#FF5521>火属性伤害</color>时，全队角色造成伤害提升<color=#2BAD00>13%</color>，最多叠加2层，持续30秒，每层效果单独结算持续时间，同一招式内最多触发一次，该效果全队唯一。"
+   },
+   {
+    "name": "虎气融融",
+    "desc": "装备者的<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>和<color=#FFFFFF>[终结技]</color>造成的失衡值提升<color=#2BAD00>40.6%</color>；\n发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>并造成<color=#FF5521>火属性伤害</color>时，全队角色造成伤害提升<color=#2BAD00>14.5%</color>，最多叠加2层，持续30秒，每层效果单独结算持续时间，同一招式内最多触发一次，该效果全队唯一。"
+   },
+   {
+    "name": "虎气融融",
+    "desc": "装备者的<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>和<color=#FFFFFF>[终结技]</color>造成的失衡值提升<color=#2BAD00>44.8%</color>；\n发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>并造成<color=#FF5521>火属性伤害</color>时，全队角色造成伤害提升<color=#2BAD00>16%</color>，最多叠加2层，持续30秒，每层效果单独结算持续时间，同一招式内最多触发一次，该效果全队唯一。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/45b11b361e2d6838427feb3029d5b575.webp"
+ },
+ {
+  "id": "14138",
+  "name": "牺牲洁纯",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "暴击伤害 1920",
+  "talents": [
+   {
+    "name": "光静花冷",
+    "desc": "暴击伤害提升<color=#2BAD00>30%</color>；装备者发动<color=#FFFFFF>[普通攻击]</color> 、<color=#FFFFFF>[特殊技]</color>或<color=#FFFFFF>[追加攻击]</color>命中敌人时，可分别获得1层增益效果，每层增益效果使装备者的暴击伤害额外提升<color=#2BAD00>10%</color>，最多叠加3层，持续30秒，每层效果单独结算持续时间，同一招式内最多触发一次；拥有3层增益效果时，装备者造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>20%</color>。"
+   },
+   {
+    "name": "光静花冷",
+    "desc": "暴击伤害提升<color=#2BAD00>34.5%</color>；装备者发动<color=#FFFFFF>[普通攻击]</color> 、<color=#FFFFFF>[特殊技]</color>或<color=#FFFFFF>[追加攻击]</color>命中敌人时，可分别获得1层增益效果，每层增益效果使装备者的暴击伤害额外提升<color=#2BAD00>11.5%</color>，最多叠加3层，持续30秒，每层效果单独结算持续时间，同一招式内最多触发一次；拥有3层增益效果时，装备者造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>23%</color>。"
+   },
+   {
+    "name": "光静花冷",
+    "desc": "暴击伤害提升<color=#2BAD00>39%</color>；装备者发动<color=#FFFFFF>[普通攻击]</color> 、<color=#FFFFFF>[特殊技]</color>或<color=#FFFFFF>[追加攻击]</color>命中敌人时，可分别获得1层增益效果，每层增益效果使装备者的暴击伤害额外提升<color=#2BAD00>13%</color>，最多叠加3层，持续30秒，每层效果单独结算持续时间，同一招式内最多触发一次；拥有3层增益效果时，装备者造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>26%</color>。"
+   },
+   {
+    "name": "光静花冷",
+    "desc": "暴击伤害提升<color=#2BAD00>43.5%</color>；装备者发动<color=#FFFFFF>[普通攻击]</color> 、<color=#FFFFFF>[特殊技]</color>或<color=#FFFFFF>[追加攻击]</color>命中敌人时，可分别获得1层增益效果，每层增益效果使装备者的暴击伤害额外提升<color=#2BAD00>14.5%</color>，最多叠加3层，持续30秒，每层效果单独结算持续时间，同一招式内最多触发一次；拥有3层增益效果时，装备者造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>29%</color>。"
+   },
+   {
+    "name": "光静花冷",
+    "desc": "暴击伤害提升<color=#2BAD00>48%</color>；装备者发动<color=#FFFFFF>[普通攻击]</color> 、<color=#FFFFFF>[特殊技]</color>或<color=#FFFFFF>[追加攻击]</color>命中敌人时，可分别获得1层增益效果，每层增益效果使装备者的暴击伤害额外提升<color=#2BAD00>16%</color>，最多叠加3层，持续30秒，每层效果单独结算持续时间，同一招式内最多触发一次；拥有3层增益效果时，装备者造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>32%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/7db01c48877f3a2162b298c84e07bbb5.webp"
+ },
+ {
+  "id": "14137",
+  "name": "青溟笼舍",
+  "rarity": "S",
+  "main": "基础攻击力 50",
+  "sub": "生命值 1200",
+  "talents": [
+   {
+    "name": "云流运转",
+    "desc": "暴击率提升<color=#2BAD00>20%</color>；装备者释放<color=#FFFFFF>[强化特殊技]</color>时角色获得1层<color=#FFFFFF>[青溟同行]</color>效果，最多叠加2层，持续15秒，进入接战状态时直接获得2层，重复触发时刷新持续时间；每层<color=#FFFFFF>[青溟同行]</color>效果使装备者造成的<color=#FE437E>以太伤害</color>提升<color=#2BAD00>8%</color>，[终结技]或[强化特殊技]造成的<color=#FE437E>以太贯穿伤害</color>提升<color=#2BAD00>10%</color>。"
+   },
+   {
+    "name": "云流运转",
+    "desc": "暴击率提升<color=#2BAD00>23%</color>；装备者释放<color=#FFFFFF>[强化特殊技]</color>时角色获得1层<color=#FFFFFF>[青溟同行]</color>效果，最多叠加2层，持续15秒，进入接战状态时直接获得2层，重复触发时刷新持续时间；每层<color=#FFFFFF>[青溟同行]</color>效果使装备者造成的<color=#FE437E>以太伤害</color>提升<color=#2BAD00>9.2%</color>，[终结技]或[强化特殊技]造成的<color=#FE437E>以太贯穿伤害</color>提升<color=#2BAD00>11.5%</color>。"
+   },
+   {
+    "name": "云流运转",
+    "desc": "暴击率提升<color=#2BAD00>26%</color>；装备者释放<color=#FFFFFF>[强化特殊技]</color>时角色获得1层<color=#FFFFFF>[青溟同行]</color>效果，最多叠加2层，持续15秒，进入接战状态时直接获得2层，重复触发时刷新持续时间；每层<color=#FFFFFF>[青溟同行]</color>效果使装备者造成的<color=#FE437E>以太伤害</color>提升<color=#2BAD00>10.4%</color>，[终结技]或[强化特殊技]造成的<color=#FE437E>以太贯穿伤害</color>提升<color=#2BAD00>13%</color>。"
+   },
+   {
+    "name": "云流运转",
+    "desc": "暴击率提升<color=#2BAD00>29%</color>；装备者释放<color=#FFFFFF>[强化特殊技]</color>时角色获得1层<color=#FFFFFF>[青溟同行]</color>效果，最多叠加2层，持续15秒，进入接战状态时直接获得2层，重复触发时刷新持续时间；每层<color=#FFFFFF>[青溟同行]</color>效果使装备者造成的<color=#FE437E>以太伤害</color>提升<color=#2BAD00>11.6%</color>，[终结技]或[强化特殊技]造成的<color=#FE437E>以太贯穿伤害</color>提升<color=#2BAD00>14.5%</color>。"
+   },
+   {
+    "name": "云流运转",
+    "desc": "暴击率提升<color=#2BAD00>32%</color>；装备者释放<color=#FFFFFF>[强化特殊技]</color>时角色获得1层<color=#FFFFFF>[青溟同行]</color>效果，最多叠加2层，持续15秒，进入接战状态时直接获得2层，重复触发时刷新持续时间；每层<color=#FFFFFF>[青溟同行]</color>效果使装备者造成的<color=#FE437E>以太伤害</color>提升<color=#2BAD00>12.8%</color>，[终结技]或[强化特殊技]造成的<color=#FE437E>以太贯穿伤害</color>提升<color=#2BAD00>16%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/7fe304683c6843acc149e71cb4ed192c.webp"
+ },
+ {
+  "id": "14136",
+  "name": "索魂影眸",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "暴击率 960",
+  "talents": [
+   {
+    "name": "捕风寻踪",
+    "desc": "装备者的<color=#FFFFFF>[追加攻击]</color>命中敌人并造成<color=#2EB6FF>电属性伤害</color>时，目标的防御力降低<color=#2BAD00>25%</color>，持续5秒，同名被动效果之间不可叠加；该效果触发时，如果自身不是当前操作中的角色，则装备者获得1层<color=#FFFFFF>[魂锁]</color>，最多叠加3层，同一招式内最多触发一次；每层<color=#FFFFFF>[魂锁]</color>，可使装备者的冲击力提升<color=#2BAD00>4%</color>，持续12秒，每层效果单独结算持续时间，<color=#FFFFFF>[魂锁]</color>层数叠满时，额外给装备者的冲击力提升<color=#2BAD00>8%</color>。"
+   },
+   {
+    "name": "捕风寻踪",
+    "desc": "装备者的<color=#FFFFFF>[追加攻击]</color>命中敌人并造成<color=#2EB6FF>电属性伤害</color>时，目标的防御力降低<color=#2BAD00>28.75%</color>，持续5秒，同名被动效果之间不可叠加；该效果触发时，如果自身不是当前操作中的角色，则装备者获得1层<color=#FFFFFF>[魂锁]</color>，最多叠加3层，同一招式内最多触发一次；每层<color=#FFFFFF>[魂锁]</color>，可使装备者的冲击力提升<color=#2BAD00>4.6%</color>，持续12秒，每层效果单独结算持续时间，<color=#FFFFFF>[魂锁]</color>层数叠满时，额外给装备者的冲击力提升<color=#2BAD00>9.2%</color>。"
+   },
+   {
+    "name": "捕风寻踪",
+    "desc": "装备者的<color=#FFFFFF>[追加攻击]</color>命中敌人并造成<color=#2EB6FF>电属性伤害</color>时，目标的防御力降低<color=#2BAD00>32.5%</color>，持续5秒，同名被动效果之间不可叠加；该效果触发时，如果自身不是当前操作中的角色，则装备者获得1层<color=#FFFFFF>[魂锁]</color>，最多叠加3层，同一招式内最多触发一次；每层<color=#FFFFFF>[魂锁]</color>，可使装备者的冲击力提升<color=#2BAD00>5.2%</color>，持续12秒，每层效果单独结算持续时间，<color=#FFFFFF>[魂锁]</color>层数叠满时，额外给装备者的冲击力提升<color=#2BAD00>10.4%</color>。"
+   },
+   {
+    "name": "捕风寻踪",
+    "desc": "装备者的<color=#FFFFFF>[追加攻击]</color>命中敌人并造成<color=#2EB6FF>电属性伤害</color>时，目标的防御力降低<color=#2BAD00>36.25%</color>，持续5秒，同名被动效果之间不可叠加；该效果触发时，如果自身不是当前操作中的角色，则装备者获得1层<color=#FFFFFF>[魂锁]</color>，最多叠加3层，同一招式内最多触发一次；每层<color=#FFFFFF>[魂锁]</color>，可使装备者的冲击力提升<color=#2BAD00>5.8%</color>，持续12秒，每层效果单独结算持续时间，<color=#FFFFFF>[魂锁]</color>层数叠满时，额外给装备者的冲击力提升<color=#2BAD00>11.6%</color>。"
+   },
+   {
+    "name": "捕风寻踪",
+    "desc": "装备者的<color=#FFFFFF>[追加攻击]</color>命中敌人并造成<color=#2EB6FF>电属性伤害</color>时，目标的防御力降低<color=#2BAD00>40%</color>，持续5秒，同名被动效果之间不可叠加；该效果触发时，如果自身不是当前操作中的角色，则装备者获得1层<color=#FFFFFF>[魂锁]</color>，最多叠加3层，同一招式内最多触发一次；每层<color=#FFFFFF>[魂锁]</color>，可使装备者的冲击力提升<color=#2BAD00>6.4%</color>，持续12秒，每层效果单独结算持续时间，<color=#FFFFFF>[魂锁]</color>层数叠满时，额外给装备者的冲击力提升<color=#2BAD00>12.8%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/5b60e834c188ef6930de0d9aec4495df.webp"
+ },
+ {
+  "id": "14134",
+  "name": "半糖雪兔",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "生命值 1200",
+  "talents": [
+   {
+    "name": "易碎之甜",
+    "desc": "装备者的能量自动回复提升<color=#2BAD00>0.46</color>点/秒；全队角色攻击力提升<color=#2BAD00>10%</color>，最大生命值提升<color=#2BAD00>10%</color>，该效果全队唯一；装备者开启或延长<color=#FFFFFF>[以太帷幕]</color>时，使全队角色的暴击伤害提升<color=#2BAD00>30%</color>，持续60秒，重复触发刷新持续时间。"
+   },
+   {
+    "name": "易碎之甜",
+    "desc": "装备者的能量自动回复提升<color=#2BAD00>0.53</color>点/秒；全队角色攻击力提升<color=#2BAD00>11.5%</color>，最大生命值提升<color=#2BAD00>11.5%</color>，该效果全队唯一；装备者开启或延长<color=#FFFFFF>[以太帷幕]</color>时，使全队角色的暴击伤害提升<color=#2BAD00>34.5%</color>，持续60秒，重复触发刷新持续时间。"
+   },
+   {
+    "name": "易碎之甜",
+    "desc": "装备者的能量自动回复提升<color=#2BAD00>0.6</color>点/秒；全队角色攻击力提升<color=#2BAD00>13%</color>，最大生命值提升<color=#2BAD00>13%</color>，该效果全队唯一；装备者开启或延长<color=#FFFFFF>[以太帷幕]</color>时，使全队角色的暴击伤害提升<color=#2BAD00>39%</color>，持续60秒，重复触发刷新持续时间。"
+   },
+   {
+    "name": "易碎之甜",
+    "desc": "装备者的能量自动回复提升<color=#2BAD00>0.67</color>点/秒；全队角色攻击力提升<color=#2BAD00>14.5%</color>，最大生命值提升<color=#2BAD00>14.5%</color>，该效果全队唯一；装备者开启或延长<color=#FFFFFF>[以太帷幕]</color>时，使全队角色的暴击伤害提升<color=#2BAD00>43.5%</color>，持续60秒，重复触发刷新持续时间。"
+   },
+   {
+    "name": "易碎之甜",
+    "desc": "装备者的能量自动回复提升<color=#2BAD00>0.74</color>点/秒；全队角色攻击力提升<color=#2BAD00>16%</color>，最大生命值提升<color=#2BAD00>16%</color>，该效果全队唯一；装备者开启或延长<color=#FFFFFF>[以太帷幕]</color>时，使全队角色的暴击伤害提升<color=#2BAD00>48%</color>，持续60秒，重复触发刷新持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/ec0878016cc843ac3c8bc7bf61532409.webp"
+ },
+ {
+  "id": "14133",
+  "name": "飞鸟星梦",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "异常精通 36",
+  "talents": [
+   {
+    "name": "银刺幽羽",
+    "desc": "属性异常积蓄效率提升<color=#2BAD00>40%</color>；装备者造成<color=#FE437E>以太伤害</color>时，自身异常精通提升<color=#2BAD00>20</color>点，持续5秒，最多叠加6层，0.5秒内最多触发一次，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "银刺幽羽",
+    "desc": "属性异常积蓄效率提升<color=#2BAD00>46%</color>；装备者造成<color=#FE437E>以太伤害</color>时，自身异常精通提升<color=#2BAD00>23</color>点，持续5秒，最多叠加6层，0.5秒内最多触发一次，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "银刺幽羽",
+    "desc": "属性异常积蓄效率提升<color=#2BAD00>52%</color>；装备者造成<color=#FE437E>以太伤害</color>时，自身异常精通提升<color=#2BAD00>26</color>点，持续5秒，最多叠加6层，0.5秒内最多触发一次，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "银刺幽羽",
+    "desc": "属性异常积蓄效率提升<color=#2BAD00>58%</color>；装备者造成<color=#FE437E>以太伤害</color>时，自身异常精通提升<color=#2BAD00>29</color>点，持续5秒，最多叠加6层，0.5秒内最多触发一次，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "银刺幽羽",
+    "desc": "属性异常积蓄效率提升<color=#2BAD00>64%</color>；装备者造成<color=#FE437E>以太伤害</color>时，自身异常精通提升<color=#2BAD00>32</color>点，持续5秒，最多叠加6层，0.5秒内最多触发一次，重复触发时刷新持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/742f1ea1f50a2d567762d25d78f1a6a8.webp"
+ },
+ {
+  "id": "14132",
+  "name": "心弦夜响",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "暴击率 960",
+  "talents": [
+   {
+    "name": "弦音相随",
+    "desc": "暴击伤害提升<color=#2BAD00>50%</color>；装备者进入接战状态、发动<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[终结技]</color>时，获得1层<color=#FFFFFF>[心弦]</color>，每层<color=#FFFFFF>[心弦]</color>会使装备者的<color=#FFFFFF>[连携技]</color>和<color=#FFFFFF>[终结技]</color>无视目标<color=#2BAD00>12.5%</color><color=#FF5521>火属性伤害抗性</color>，最多叠加2层，持续30秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "弦音相随",
+    "desc": "暴击伤害提升<color=#2BAD00>57.5%</color>；装备者进入接战状态、发动<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[终结技]</color>时，获得1层<color=#FFFFFF>[心弦]</color>，每层<color=#FFFFFF>[心弦]</color>会使装备者的<color=#FFFFFF>[连携技]</color>和<color=#FFFFFF>[终结技]</color>无视目标<color=#2BAD00>14.5%</color><color=#FF5521>火属性伤害抗性</color>，最多叠加2层，持续30秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "弦音相随",
+    "desc": "暴击伤害提升<color=#2BAD00>65%</color>；装备者进入接战状态、发动<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[终结技]</color>时，获得1层<color=#FFFFFF>[心弦]</color>，每层<color=#FFFFFF>[心弦]</color>会使装备者的<color=#FFFFFF>[连携技]</color>和<color=#FFFFFF>[终结技]</color>无视目标<color=#2BAD00>16.5%</color><color=#FF5521>火属性伤害抗性</color>，最多叠加2层，持续30秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "弦音相随",
+    "desc": "暴击伤害提升<color=#2BAD00>72.5%</color>；装备者进入接战状态、发动<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[终结技]</color>时，获得1层<color=#FFFFFF>[心弦]</color>，每层<color=#FFFFFF>[心弦]</color>会使装备者的<color=#FFFFFF>[连携技]</color>和<color=#FFFFFF>[终结技]</color>无视目标<color=#2BAD00>18.5%</color><color=#FF5521>火属性伤害抗性</color>，最多叠加2层，持续30秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "弦音相随",
+    "desc": "暴击伤害提升<color=#2BAD00>80%</color>；装备者进入接战状态、发动<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[终结技]</color>时，获得1层<color=#FFFFFF>[心弦]</color>，每层<color=#FFFFFF>[心弦]</color>会使装备者的<color=#FFFFFF>[连携技]</color>和<color=#FFFFFF>[终结技]</color>无视目标<color=#2BAD00>20%</color><color=#FF5521>火属性伤害抗性</color>，最多叠加2层，持续30秒，重复触发时刷新持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/27190851397cf9ae08b6bd4619ee409b.webp"
+ },
+ {
+  "id": "14131",
+  "name": "玲珑妆匣",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "攻击力 1200",
+  "talents": [
+   {
+    "name": "卓卓千华",
+    "desc": "队伍中任意角色通过<color=#FFFFFF>[快速支援]</color>、<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[招架支援]</color>、<color=#FFFFFF>[回避支援]</color>入场时，为装备者回复<color=#2BAD00>5</color>点能量，5秒内最多触发一次；装备者消耗25点或以上能量时，全队角色造成的伤害提升<color=#2BAD00>10%</color>，最多叠加2层，持续20秒，重复触发时刷新持续时间，该效果全队唯一。"
+   },
+   {
+    "name": "卓卓千华",
+    "desc": "队伍中任意角色通过<color=#FFFFFF>[快速支援]</color>、<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[招架支援]</color>、<color=#FFFFFF>[回避支援]</color>入场时，为装备者回复<color=#2BAD00>5.5</color>点能量，5秒内最多触发一次；装备者消耗25点或以上能量时，全队角色造成的伤害提升<color=#2BAD00>11.5%</color>，最多叠加2层，持续20秒，重复触发时刷新持续时间，该效果全队唯一。"
+   },
+   {
+    "name": "卓卓千华",
+    "desc": "队伍中任意角色通过<color=#FFFFFF>[快速支援]</color>、<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[招架支援]</color>、<color=#FFFFFF>[回避支援]</color>入场时，为装备者回复<color=#2BAD00>6</color>点能量，5秒内最多触发一次；装备者消耗25点或以上能量时，全队角色造成的伤害提升<color=#2BAD00>13%</color>，最多叠加2层，持续20秒，重复触发时刷新持续时间，该效果全队唯一。"
+   },
+   {
+    "name": "卓卓千华",
+    "desc": "队伍中任意角色通过<color=#FFFFFF>[快速支援]</color>、<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[招架支援]</color>、<color=#FFFFFF>[回避支援]</color>入场时，为装备者回复<color=#2BAD00>6.5</color>点能量，5秒内最多触发一次；装备者消耗25点或以上能量时，全队角色造成的伤害提升<color=#2BAD00>14.5%</color>，最多叠加2层，持续20秒，重复触发时刷新持续时间，该效果全队唯一。"
+   },
+   {
+    "name": "卓卓千华",
+    "desc": "队伍中任意角色通过<color=#FFFFFF>[快速支援]</color>、<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[招架支援]</color>、<color=#FFFFFF>[回避支援]</color>入场时，为装备者回复<color=#2BAD00>7</color>点能量，5秒内最多触发一次；装备者消耗25点或以上能量时，全队角色造成的伤害提升<color=#2BAD00>16%</color>，最多叠加2层，持续20秒，重复触发时刷新持续时间，该效果全队唯一。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/7e1e4272d7ab7f8b8427883258bb019d.webp"
+ },
+ {
+  "id": "14130",
+  "name": "嚣枪喧焰",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "能量自动回复 2400",
+  "talents": [
+   {
+    "name": "喋声吞炎",
+    "desc": "暴击率提升<color=#2BAD00>20%</color>；装备者发动<color=#FFFFFF>[追加攻击]</color>造成<color=#FF5521>火属性伤害</color>时，装备者的攻击对敌人造成的伤害无视<color=#2BAD00>15%</color>防御力，持续8秒，3秒内最多获得1层，最多叠加2层，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "喋声吞炎",
+    "desc": "暴击率提升<color=#2BAD00>23%</color>；装备者发动<color=#FFFFFF>[追加攻击]</color>造成<color=#FF5521>火属性伤害</color>时，装备者的攻击对敌人造成的伤害无视<color=#2BAD00>17.2%</color>防御力，持续8秒，3秒内最多获得1层，最多叠加2层，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "喋声吞炎",
+    "desc": "暴击率提升<color=#2BAD00>26%</color>；装备者发动<color=#FFFFFF>[追加攻击]</color>造成<color=#FF5521>火属性伤害</color>时，装备者的攻击对敌人造成的伤害无视<color=#2BAD00>19.5%</color>防御力，持续8秒，3秒内最多获得1层，最多叠加2层，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "喋声吞炎",
+    "desc": "暴击率提升<color=#2BAD00>29%</color>；装备者发动<color=#FFFFFF>[追加攻击]</color>造成<color=#FF5521>火属性伤害</color>时，装备者的攻击对敌人造成的伤害无视<color=#2BAD00>21.7%</color>防御力，持续8秒，3秒内最多获得1层，最多叠加2层，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "喋声吞炎",
+    "desc": "暴击率提升<color=#2BAD00>32%</color>；装备者发动<color=#FFFFFF>[追加攻击]</color>造成<color=#FF5521>火属性伤害</color>时，装备者的攻击对敌人造成的伤害无视<color=#2BAD00>24%</color>防御力，持续8秒，3秒内最多获得1层，最多叠加2层，重复触发时刷新持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/07a237cd5321a86baf947a4ab504f057.webp"
+ },
+ {
+  "id": "14129",
+  "name": "千面日陨",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "暴击率 960",
+  "talents": [
+   {
+    "name": "万千非我",
+    "desc": "暴击伤害提升<color=#2BAD00>45%</color>；<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[终结技]</color>造成<color=#98EFF0>冰属性伤害</color>时，角色获得<color=#FFFFFF>[零度处刑宣言]</color>效果，持续3秒；<color=#FFFFFF>[零度处刑宣言]</color>效果期间，角色命中敌人时无视<color=#2BAD00>25%</color>防御力。"
+   },
+   {
+    "name": "万千非我",
+    "desc": "暴击伤害提升<color=#2BAD00>51.75%</color>；<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[终结技]</color>造成<color=#98EFF0>冰属性伤害</color>时，角色获得<color=#FFFFFF>[零度处刑宣言]</color>效果，持续3秒；<color=#FFFFFF>[零度处刑宣言]</color>效果期间，角色命中敌人时无视<color=#2BAD00>28.75%</color>防御力。"
+   },
+   {
+    "name": "万千非我",
+    "desc": "暴击伤害提升<color=#2BAD00>58.5%</color>；<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[终结技]</color>造成<color=#98EFF0>冰属性伤害</color>时，角色获得<color=#FFFFFF>[零度处刑宣言]</color>效果，持续3秒；<color=#FFFFFF>[零度处刑宣言]</color>效果期间，角色命中敌人时无视<color=#2BAD00>32.5%</color>防御力。"
+   },
+   {
+    "name": "万千非我",
+    "desc": "暴击伤害提升<color=#2BAD00>65.25%</color>；<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[终结技]</color>造成<color=#98EFF0>冰属性伤害</color>时，角色获得<color=#FFFFFF>[零度处刑宣言]</color>效果，持续3秒；<color=#FFFFFF>[零度处刑宣言]</color>效果期间，角色命中敌人时无视<color=#2BAD00>36.25%</color>防御力。"
+   },
+   {
+    "name": "万千非我",
+    "desc": "暴击伤害提升<color=#2BAD00>72%</color>；<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[终结技]</color>造成<color=#98EFF0>冰属性伤害</color>时，角色获得<color=#FFFFFF>[零度处刑宣言]</color>效果，持续3秒；<color=#FFFFFF>[零度处刑宣言]</color>效果期间，角色命中敌人时无视<color=#2BAD00>40%</color>防御力。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/3919811e891e11dc02d962b3247aaacd.webp"
+ },
+ {
+  "id": "14126",
+  "name": "淬锋钳刺",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "异常精通 36",
+  "talents": [
+   {
+    "name": "恣横猎心",
+    "desc": "发动<color=#FFFFFF>[冲刺攻击]</color>时，获得1层<color=#FFFFFF>[猎意]</color>，每层<color=#FFFFFF>[猎意]</color>使装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>12%</color>，最多叠加3层，持续10秒，0.5秒内最多触发一次，重复触发时刷新持续时间；进入接战状态或触发<color=#FFFFFF>[极限闪避]</color>时，直接获得3层<color=#FFFFFF>[猎意]</color>；<color=#FFFFFF>[猎意]</color>叠加至层数上限后，装备者的属性异常积蓄效率提升<color=#2BAD00>40%</color>。"
+   },
+   {
+    "name": "恣横猎心",
+    "desc": "发动<color=#FFFFFF>[冲刺攻击]</color>时，获得1层<color=#FFFFFF>[猎意]</color>，每层<color=#FFFFFF>[猎意]</color>使装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>15%</color>，最多叠加3层，持续10秒，0.5秒内最多触发一次，重复触发时刷新持续时间；进入接战状态或触发<color=#FFFFFF>[极限闪避]</color>时，直接获得3层<color=#FFFFFF>[猎意]</color>；<color=#FFFFFF>[猎意]</color>叠加至层数上限后，装备者的属性异常积蓄效率提升<color=#2BAD00>50%</color>。"
+   },
+   {
+    "name": "恣横猎心",
+    "desc": "发动<color=#FFFFFF>[冲刺攻击]</color>时，获得1层<color=#FFFFFF>[猎意]</color>，每层<color=#FFFFFF>[猎意]</color>使装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>18%</color>，最多叠加3层，持续10秒，0.5秒内最多触发一次，重复触发时刷新持续时间；进入接战状态或触发<color=#FFFFFF>[极限闪避]</color>时，直接获得3层<color=#FFFFFF>[猎意]</color>；<color=#FFFFFF>[猎意]</color>叠加至层数上限后，装备者的属性异常积蓄效率提升<color=#2BAD00>60%</color>。"
+   },
+   {
+    "name": "恣横猎心",
+    "desc": "发动<color=#FFFFFF>[冲刺攻击]</color>时，获得1层<color=#FFFFFF>[猎意]</color>，每层<color=#FFFFFF>[猎意]</color>使装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>21%</color>，最多叠加3层，持续10秒，0.5秒内最多触发一次，重复触发时刷新持续时间；进入接战状态或触发<color=#FFFFFF>[极限闪避]</color>时，直接获得3层<color=#FFFFFF>[猎意]</color>；<color=#FFFFFF>[猎意]</color>叠加至层数上限后，装备者的属性异常积蓄效率提升<color=#2BAD00>70%</color>。"
+   },
+   {
+    "name": "恣横猎心",
+    "desc": "发动<color=#FFFFFF>[冲刺攻击]</color>时，获得1层<color=#FFFFFF>[猎意]</color>，每层<color=#FFFFFF>[猎意]</color>使装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>24%</color>，最多叠加3层，持续10秒，0.5秒内最多触发一次，重复触发时刷新持续时间；进入接战状态或触发<color=#FFFFFF>[极限闪避]</color>时，直接获得3层<color=#FFFFFF>[猎意]</color>；<color=#FFFFFF>[猎意]</color>叠加至层数上限后，装备者的属性异常积蓄效率提升<color=#2BAD00>80%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/f9919e358db0e0624ebf3418a7f6f4ba.webp"
+ },
+ {
+  "id": "14125",
+  "name": "玉壶青冰",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "冲击力 720",
+  "talents": [
+   {
+    "name": "泠泠连奏",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>命中敌人时，获得1层<color=#FFFFFF>[茶劲]</color>，每层<color=#FFFFFF>[茶劲]</color>使装备者的冲击力提升<color=#2BAD00>0.7%</color>，最多叠加30层，持续8秒，每层效果单独结算持续时间；获得<color=#FFFFFF>[茶劲]</color>时，若装备者拥有的<color=#FFFFFF>[茶劲]</color>层数大于等于15层，全队角色造成的伤害提升<color=#2BAD00>20%</color>，持续10秒，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "泠泠连奏",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>命中敌人时，获得1层<color=#FFFFFF>[茶劲]</color>，每层<color=#FFFFFF>[茶劲]</color>使装备者的冲击力提升<color=#2BAD00>0.88%</color>，最多叠加30层，持续8秒，每层效果单独结算持续时间；获得<color=#FFFFFF>[茶劲]</color>时，若装备者拥有的<color=#FFFFFF>[茶劲]</color>层数大于等于15层，全队角色造成的伤害提升<color=#2BAD00>23%</color>，持续10秒，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "泠泠连奏",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>命中敌人时，获得1层<color=#FFFFFF>[茶劲]</color>，每层<color=#FFFFFF>[茶劲]</color>使装备者的冲击力提升<color=#2BAD00>1.05%</color>，最多叠加30层，持续8秒，每层效果单独结算持续时间；获得<color=#FFFFFF>[茶劲]</color>时，若装备者拥有的<color=#FFFFFF>[茶劲]</color>层数大于等于15层，全队角色造成的伤害提升<color=#2BAD00>26%</color>，持续10秒，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "泠泠连奏",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>命中敌人时，获得1层<color=#FFFFFF>[茶劲]</color>，每层<color=#FFFFFF>[茶劲]</color>使装备者的冲击力提升<color=#2BAD00>1.22%</color>，最多叠加30层，持续8秒，每层效果单独结算持续时间；获得<color=#FFFFFF>[茶劲]</color>时，若装备者拥有的<color=#FFFFFF>[茶劲]</color>层数大于等于15层，全队角色造成的伤害提升<color=#2BAD00>29%</color>，持续10秒，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "泠泠连奏",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>命中敌人时，获得1层<color=#FFFFFF>[茶劲]</color>，每层<color=#FFFFFF>[茶劲]</color>使装备者的冲击力提升<color=#2BAD00>1.4%</color>，最多叠加30层，持续8秒，每层效果单独结算持续时间；获得<color=#FFFFFF>[茶劲]</color>时，若装备者拥有的<color=#FFFFFF>[茶劲]</color>层数大于等于15层，全队角色造成的伤害提升<color=#2BAD00>32%</color>，持续10秒，同名被动效果之间不可叠加。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/c8289a28d3adcae2c96b94c21c48c048.webp"
+ },
+ {
+  "id": "14124",
+  "name": "防暴者Ⅵ型",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "暴击伤害 1920",
+  "talents": [
+   {
+    "name": "安全巡查",
+    "desc": "暴击率提升<color=#2BAD00>15%</color>；发动<color=#FFFFFF>[强化特殊技]</color>时，为装备者提供8层充能效果，最多叠加8层；<color=#FFFFFF>[普通攻击]</color>或<color=#FFFFFF>[冲刺攻击]</color>造成<color=#FE437E>以太伤害</color>时，消耗1层充能，使当前招式造成的伤害提升<color=#2BAD00>35%</color>。"
+   },
+   {
+    "name": "安全巡查",
+    "desc": "暴击率提升<color=#2BAD00>18.8%</color>；发动<color=#FFFFFF>[强化特殊技]</color>时，为装备者提供8层充能效果，最多叠加8层；<color=#FFFFFF>[普通攻击]</color>或<color=#FFFFFF>[冲刺攻击]</color>造成<color=#FE437E>以太伤害</color>时，消耗1层充能，使当前招式造成的伤害提升<color=#2BAD00>43.5%</color>。"
+   },
+   {
+    "name": "安全巡查",
+    "desc": "暴击率提升<color=#2BAD00>22.6%</color>；发动<color=#FFFFFF>[强化特殊技]</color>时，为装备者提供8层充能效果，最多叠加8层；<color=#FFFFFF>[普通攻击]</color>或<color=#FFFFFF>[冲刺攻击]</color>造成<color=#FE437E>以太伤害</color>时，消耗1层充能，使当前招式造成的伤害提升<color=#2BAD00>52%</color>。"
+   },
+   {
+    "name": "安全巡查",
+    "desc": "暴击率提升<color=#2BAD00>26.4%</color>；发动<color=#FFFFFF>[强化特殊技]</color>时，为装备者提供8层充能效果，最多叠加8层；<color=#FFFFFF>[普通攻击]</color>或<color=#FFFFFF>[冲刺攻击]</color>造成<color=#FE437E>以太伤害</color>时，消耗1层充能，使当前招式造成的伤害提升<color=#2BAD00>60.5%</color>。"
+   },
+   {
+    "name": "安全巡查",
+    "desc": "暴击率提升<color=#2BAD00>30%</color>；发动<color=#FFFFFF>[强化特殊技]</color>时，为装备者提供8层充能效果，最多叠加8层；<color=#FFFFFF>[普通攻击]</color>或<color=#FFFFFF>[冲刺攻击]</color>造成<color=#FE437E>以太伤害</color>时，消耗1层充能，使当前招式造成的伤害提升<color=#2BAD00>70%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/30d849561ec2fc588ba376c76ac3975c.webp"
+ },
+ {
+  "id": "14122",
+  "name": "时流贤者",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "攻击力 1200",
+  "talents": [
+   {
+    "name": "时喰奇谋",
+    "desc": "装备者的<color=#2EB6FF>电属性异常积蓄效率</color>提升<color=#2BAD00>30%</color>；<color=#FFFFFF>[特殊技]</color>或<color=#FFFFFF>[强化特殊技]</color>命中处于属性异常状态下的敌人时，装备者的异常精通提升<color=#2BAD00>75</color>点，持续15秒；\n当装备者的异常精通大于等于375点时，由装备者造成的<color=#FFFFFF>[紊乱]</color>伤害提升<color=#2BAD00>25%</color>。"
+   },
+   {
+    "name": "时喰奇谋",
+    "desc": "装备者的<color=#2EB6FF>电属性异常积蓄效率</color>提升<color=#2BAD00>35%</color>；<color=#FFFFFF>[特殊技]</color>或<color=#FFFFFF>[强化特殊技]</color>命中处于属性异常状态下的敌人时，装备者的异常精通提升<color=#2BAD00>85</color>点，持续15秒；\n当装备者的异常精通大于等于375点时，由装备者造成的<color=#FFFFFF>[紊乱]</color>伤害提升<color=#2BAD00>27.5%</color>。"
+   },
+   {
+    "name": "时喰奇谋",
+    "desc": "装备者的<color=#2EB6FF>电属性异常积蓄效率</color>提升<color=#2BAD00>40%</color>；<color=#FFFFFF>[特殊技]</color>或<color=#FFFFFF>[强化特殊技]</color>命中处于属性异常状态下的敌人时，装备者的异常精通提升<color=#2BAD00>95</color>点，持续15秒；\n当装备者的异常精通大于等于375点时，由装备者造成的<color=#FFFFFF>[紊乱]</color>伤害提升<color=#2BAD00>30%</color>。"
+   },
+   {
+    "name": "时喰奇谋",
+    "desc": "装备者的<color=#2EB6FF>电属性异常积蓄效率</color>提升<color=#2BAD00>45%</color>；<color=#FFFFFF>[特殊技]</color>或<color=#FFFFFF>[强化特殊技]</color>命中处于属性异常状态下的敌人时，装备者的异常精通提升<color=#2BAD00>105</color>点，持续15秒；\n当装备者的异常精通大于等于375点时，由装备者造成的<color=#FFFFFF>[紊乱]</color>伤害提升<color=#2BAD00>32.5%</color>。"
+   },
+   {
+    "name": "时喰奇谋",
+    "desc": "装备者的<color=#2EB6FF>电属性异常积蓄效率</color>提升<color=#2BAD00>50%</color>；<color=#FFFFFF>[特殊技]</color>或<color=#FFFFFF>[强化特殊技]</color>命中处于属性异常状态下的敌人时，装备者的异常精通提升<color=#2BAD00>115</color>点，持续15秒；\n当装备者的异常精通大于等于375点时，由装备者造成的<color=#FFFFFF>[紊乱]</color>伤害提升<color=#2BAD00>35%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/193294f871ac31ea8700354b5b3ca31a.webp"
+ },
+ {
+  "id": "14121",
+  "name": "啜泣摇篮",
+  "rarity": "S",
+  "main": "基础攻击力 46",
+  "sub": "穿透率 960",
+  "talents": [
+   {
+    "name": "惩·罚",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>0.6</color>点/秒；装备者攻击命中敌人时，所有单位对目标造成的伤害提升<color=#2BAD00>10%</color>，持续3秒；效果持续期间，每0.5秒该增益效果额外提升<color=#2BAD00>1.7%</color>，最多额外提升<color=#2BAD00>10.2%</color>，重复触发时仅刷新持续时间，不刷新伤害提升效果，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "惩·罚",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>0.75</color>点/秒；装备者攻击命中敌人时，所有单位对目标造成的伤害提升<color=#2BAD00>12.5%</color>，持续3秒；效果持续期间，每0.5秒该增益效果额外提升<color=#2BAD00>2%</color>，最多额外提升<color=#2BAD00>12%</color>，重复触发时仅刷新持续时间，不刷新伤害提升效果，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "惩·罚",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>0.9</color>点/秒；装备者攻击命中敌人时，所有单位对目标造成的伤害提升<color=#2BAD00>15%</color>，持续3秒；效果持续期间，每0.5秒该增益效果额外提升<color=#2BAD00>2.5%</color>，最多额外提升<color=#2BAD00>15%</color>，重复触发时仅刷新持续时间，不刷新伤害提升效果，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "惩·罚",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>1.05</color>点/秒；装备者攻击命中敌人时，所有单位对目标造成的伤害提升<color=#2BAD00>17.5%</color>，持续3秒；效果持续期间，每0.5秒该增益效果额外提升<color=#2BAD00>3%</color>，最多额外提升<color=#2BAD00>18%</color>，重复触发时仅刷新持续时间，不刷新伤害提升效果，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "惩·罚",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>1.2</color>点/秒；装备者攻击命中敌人时，所有单位对目标造成的伤害提升<color=#2BAD00>20%</color>，持续3秒；效果持续期间，每0.5秒该增益效果额外提升<color=#2BAD00>3.3%</color>，最多额外提升<color=#2BAD00>19.8%</color>，重复触发时仅刷新持续时间，不刷新伤害提升效果，同名被动效果之间不可叠加。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/2d50f30571f78121dc6e32456de2ffa2.webp"
+ },
+ {
+  "id": "14120",
+  "name": "残心青囊",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "暴击伤害 1920",
+  "talents": [
+   {
+    "name": "啖若逆修",
+    "desc": "暴击率提升<color=#2BAD00>10%</color>；<color=#FFFFFF>[冲刺攻击]</color>造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>40%</color>；队伍中任意角色对敌人施加属性异常效果或造成失衡时，装备者的暴击率额外提升<color=#2BAD00>10%</color>，持续15秒。"
+   },
+   {
+    "name": "啖若逆修",
+    "desc": "暴击率提升<color=#2BAD00>11.5%</color>；<color=#FFFFFF>[冲刺攻击]</color>造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>46%</color>；队伍中任意角色对敌人施加属性异常效果或造成失衡时，装备者的暴击率额外提升<color=#2BAD00>11.5%</color>，持续15秒。"
+   },
+   {
+    "name": "啖若逆修",
+    "desc": "暴击率提升<color=#2BAD00>13%</color>；<color=#FFFFFF>[冲刺攻击]</color>造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>52%</color>；队伍中任意角色对敌人施加属性异常效果或造成失衡时，装备者的暴击率额外提升<color=#2BAD00>13%</color>，持续15秒。"
+   },
+   {
+    "name": "啖若逆修",
+    "desc": "暴击率提升<color=#2BAD00>14.5%</color>；<color=#FFFFFF>[冲刺攻击]</color>造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>58%</color>；队伍中任意角色对敌人施加属性异常效果或造成失衡时，装备者的暴击率额外提升<color=#2BAD00>14.5%</color>，持续15秒。"
+   },
+   {
+    "name": "啖若逆修",
+    "desc": "暴击率提升<color=#2BAD00>16%</color>；<color=#FFFFFF>[冲刺攻击]</color>造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>64%</color>；队伍中任意角色对敌人施加属性异常效果或造成失衡时，装备者的暴击率额外提升<color=#2BAD00>16%</color>，持续15秒。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/8e9c0a7de7bf39c80acbb717c5b25050.webp"
+ },
+ {
+  "id": "14119",
+  "name": "深海访客",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "暴击率 960",
+  "talents": [
+   {
+    "name": "诸洋之王",
+    "desc": "<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>25%</color>；<color=#FFFFFF>[普通攻击]</color>命中敌人时，装备者的暴击率提升<color=#2BAD00>10%</color>，持续8秒；<color=#FFFFFF>[冲刺攻击]</color>造成<color=#98EFF0>冰属性伤害</color>时，装备者的暴击率额外提升<color=#2BAD00>10%</color>，持续15秒，每种增益效果单独结算持续时间。"
+   },
+   {
+    "name": "诸洋之王",
+    "desc": "<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>31.5%</color>；<color=#FFFFFF>[普通攻击]</color>命中敌人时，装备者的暴击率提升<color=#2BAD00>12.5%</color>，持续8秒；<color=#FFFFFF>[冲刺攻击]</color>造成<color=#98EFF0>冰属性伤害</color>时，装备者的暴击率额外提升<color=#2BAD00>12.5%</color>，持续15秒，每种增益效果单独结算持续时间。"
+   },
+   {
+    "name": "诸洋之王",
+    "desc": "<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>38%</color>；<color=#FFFFFF>[普通攻击]</color>命中敌人时，装备者的暴击率提升<color=#2BAD00>15%</color>，持续8秒；<color=#FFFFFF>[冲刺攻击]</color>造成<color=#98EFF0>冰属性伤害</color>时，装备者的暴击率额外提升<color=#2BAD00>15%</color>，持续15秒，每种增益效果单独结算持续时间。"
+   },
+   {
+    "name": "诸洋之王",
+    "desc": "<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>44.5%</color>；<color=#FFFFFF>[普通攻击]</color>命中敌人时，装备者的暴击率提升<color=#2BAD00>17.5%</color>，持续8秒；<color=#FFFFFF>[冲刺攻击]</color>造成<color=#98EFF0>冰属性伤害</color>时，装备者的暴击率额外提升<color=#2BAD00>17.5%</color>，持续15秒，每种增益效果单独结算持续时间。"
+   },
+   {
+    "name": "诸洋之王",
+    "desc": "<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>50%</color>；<color=#FFFFFF>[普通攻击]</color>命中敌人时，装备者的暴击率提升<color=#2BAD00>20%</color>，持续8秒；<color=#FFFFFF>[冲刺攻击]</color>造成<color=#98EFF0>冰属性伤害</color>时，装备者的暴击率额外提升<color=#2BAD00>20%</color>，持续15秒，每种增益效果单独结算持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/4dae2dabc074ba0f928b4a7b6c7fb83e.webp"
+ },
+ {
+  "id": "14118",
+  "name": "嵌合编译器",
+  "rarity": "S",
+  "main": "基础攻击力 46",
+  "sub": "穿透率 960",
+  "talents": [
+   {
+    "name": "数据洪流",
+    "desc": "攻击力提升<color=#2BAD00>12%</color>；发动<color=#FFFFFF>[特殊技]</color>或<color=#FFFFFF>[强化特殊技]</color>时，装备者的异常精通提升<color=#2BAD00>25</color>点，最多叠加3层，持续8秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "数据洪流",
+    "desc": "攻击力提升<color=#2BAD00>15%</color>；发动<color=#FFFFFF>[特殊技]</color>或<color=#FFFFFF>[强化特殊技]</color>时，装备者的异常精通提升<color=#2BAD00>31</color>点，最多叠加3层，持续8秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "数据洪流",
+    "desc": "攻击力提升<color=#2BAD00>18%</color>；发动<color=#FFFFFF>[特殊技]</color>或<color=#FFFFFF>[强化特殊技]</color>时，装备者的异常精通提升<color=#2BAD00>37</color>点，最多叠加3层，持续8秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "数据洪流",
+    "desc": "攻击力提升<color=#2BAD00>21%</color>；发动<color=#FFFFFF>[特殊技]</color>或<color=#FFFFFF>[强化特殊技]</color>时，装备者的异常精通提升<color=#2BAD00>43</color>点，最多叠加3层，持续8秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "数据洪流",
+    "desc": "攻击力提升<color=#2BAD00>24%</color>；发动<color=#FFFFFF>[特殊技]</color>或<color=#FFFFFF>[强化特殊技]</color>时，装备者的异常精通提升<color=#2BAD00>50</color>点，最多叠加3层，持续8秒，每层效果单独结算持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/224d60bfd73d9c61c86dcfbe6f3374c9.webp"
+ },
+ {
+  "id": "14117",
+  "name": "灼心摇壶",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "攻击力 1200",
+  "talents": [
+   {
+    "name": "焦油斟注",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>0.6</color>点/秒；<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[支援攻击]</color>命中敌人时，装备者造成的伤害提升<color=#2BAD00>3.5%</color>，最多叠加10层，持续6秒，0.3秒内最多触发一次，位于后场时叠加效率翻倍，重复触发时刷新持续时间；获得伤害提升效果时，若叠加层数大于等于5层，则装备者的异常精通额外提升<color=#2BAD00>50</color>点，异常精通提升效果不可叠加，持续6秒。"
+   },
+   {
+    "name": "焦油斟注",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>0.75</color>点/秒；<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[支援攻击]</color>命中敌人时，装备者造成的伤害提升<color=#2BAD00>4.4%</color>，最多叠加10层，持续6秒，0.3秒内最多触发一次，位于后场时叠加效率翻倍，重复触发时刷新持续时间；获得伤害提升效果时，若叠加层数大于等于5层，则装备者的异常精通额外提升<color=#2BAD00>62</color>点，异常精通提升效果不可叠加，持续6秒。"
+   },
+   {
+    "name": "焦油斟注",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>0.9</color>点/秒；<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[支援攻击]</color>命中敌人时，装备者造成的伤害提升<color=#2BAD00>5.2%</color>，最多叠加10层，持续6秒，0.3秒内最多触发一次，位于后场时叠加效率翻倍，重复触发时刷新持续时间；获得伤害提升效果时，若叠加层数大于等于5层，则装备者的异常精通额外提升<color=#2BAD00>75</color>点，异常精通提升效果不可叠加，持续6秒。"
+   },
+   {
+    "name": "焦油斟注",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>1.05</color>点/秒；<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[支援攻击]</color>命中敌人时，装备者造成的伤害提升<color=#2BAD00>6.1%</color>，最多叠加10层，持续6秒，0.3秒内最多触发一次，位于后场时叠加效率翻倍，重复触发时刷新持续时间；获得伤害提升效果时，若叠加层数大于等于5层，则装备者的异常精通额外提升<color=#2BAD00>87</color>点，异常精通提升效果不可叠加，持续6秒。"
+   },
+   {
+    "name": "焦油斟注",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>1.2</color>点/秒；<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[支援攻击]</color>命中敌人时，装备者造成的伤害提升<color=#2BAD00>7%</color>，最多叠加10层，持续6秒，0.3秒内最多触发一次，位于后场时叠加效率翻倍，重复触发时刷新持续时间；获得伤害提升效果时，若叠加层数大于等于5层，则装备者的异常精通额外提升<color=#2BAD00>100</color>点，异常精通提升效果不可叠加，持续6秒。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/881c83ccf1f803e59532e81aeaf60f2a.webp"
+ },
+ {
+  "id": "14116",
+  "name": "焰心桂冠",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "冲击力 720",
+  "talents": [
+   {
+    "name": "流动之火",
+    "desc": "发动<color=#FFFFFF>[快速支援]</color>或<color=#FFFFFF>[极限支援]</color>时，装备者的冲击力提升<color=#2BAD00>25%</color>，持续8秒；装备者的<color=#FFFFFF>[普通攻击]</color>命中敌人时，对目标施加一层<color=#FFFFFF>[萎靡]</color>，最多叠加20层，持续30秒，重复触发时刷新持续时间；队伍中任意角色攻击命中敌人时，目标每拥有一层<color=#FFFFFF>[萎靡]</color>，本次攻击中<color=#98EFF0>冰属性伤害</color>和<color=#FF5521>火属性伤害</color>的暴击伤害提升<color=#2BAD00>1.5%</color>，该效果全队唯一。"
+   },
+   {
+    "name": "流动之火",
+    "desc": "发动<color=#FFFFFF>[快速支援]</color>或<color=#FFFFFF>[极限支援]</color>时，装备者的冲击力提升<color=#2BAD00>28.75%</color>，持续8秒；装备者的<color=#FFFFFF>[普通攻击]</color>命中敌人时，对目标施加一层<color=#FFFFFF>[萎靡]</color>，最多叠加20层，持续30秒，重复触发时刷新持续时间；队伍中任意角色攻击命中敌人时，目标每拥有一层<color=#FFFFFF>[萎靡]</color>，本次攻击中<color=#98EFF0>冰属性伤害</color>和<color=#FF5521>火属性伤害</color>的暴击伤害提升<color=#2BAD00>1.72%</color>，该效果全队唯一。"
+   },
+   {
+    "name": "流动之火",
+    "desc": "发动<color=#FFFFFF>[快速支援]</color>或<color=#FFFFFF>[极限支援]</color>时，装备者的冲击力提升<color=#2BAD00>32.5%</color>，持续8秒；装备者的<color=#FFFFFF>[普通攻击]</color>命中敌人时，对目标施加一层<color=#FFFFFF>[萎靡]</color>，最多叠加20层，持续30秒，重复触发时刷新持续时间；队伍中任意角色攻击命中敌人时，目标每拥有一层<color=#FFFFFF>[萎靡]</color>，本次攻击中<color=#98EFF0>冰属性伤害</color>和<color=#FF5521>火属性伤害</color>的暴击伤害提升<color=#2BAD00>1.95%</color>，该效果全队唯一。"
+   },
+   {
+    "name": "流动之火",
+    "desc": "发动<color=#FFFFFF>[快速支援]</color>或<color=#FFFFFF>[极限支援]</color>时，装备者的冲击力提升<color=#2BAD00>36.25%</color>，持续8秒；装备者的<color=#FFFFFF>[普通攻击]</color>命中敌人时，对目标施加一层<color=#FFFFFF>[萎靡]</color>，最多叠加20层，持续30秒，重复触发时刷新持续时间；队伍中任意角色攻击命中敌人时，目标每拥有一层<color=#FFFFFF>[萎靡]</color>，本次攻击中<color=#98EFF0>冰属性伤害</color>和<color=#FF5521>火属性伤害</color>的暴击伤害提升<color=#2BAD00>2.17%</color>，该效果全队唯一。"
+   },
+   {
+    "name": "流动之火",
+    "desc": "发动<color=#FFFFFF>[快速支援]</color>或<color=#FFFFFF>[极限支援]</color>时，装备者的冲击力提升<color=#2BAD00>40%</color>，持续8秒；装备者的<color=#FFFFFF>[普通攻击]</color>命中敌人时，对目标施加一层<color=#FFFFFF>[萎靡]</color>，最多叠加20层，持续30秒，重复触发时刷新持续时间；队伍中任意角色攻击命中敌人时，目标每拥有一层<color=#FFFFFF>[萎靡]</color>，本次攻击中<color=#98EFF0>冰属性伤害</color>和<color=#FF5521>火属性伤害</color>的暴击伤害提升<color=#2BAD00>2.4%</color>，该效果全队唯一。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/6d7dc35c099e985dae2f53cc8643e05c.webp"
+ },
+ {
+  "id": "14114",
+  "name": "拘缚者",
+  "rarity": "S",
+  "main": "基础攻击力 46",
+  "sub": "冲击力 720",
+  "talents": [
+   {
+    "name": "束缚枷锁",
+    "desc": "攻击命中敌人时，<color=#FFFFFF>[普通攻击]</color>造成的伤害和失衡值提升<color=#2BAD00>6%</color>，最多叠加5层，持续8秒，同一招式内最多触发一次，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "束缚枷锁",
+    "desc": "攻击命中敌人时，<color=#FFFFFF>[普通攻击]</color>造成的伤害和失衡值提升<color=#2BAD00>7.5%</color>，最多叠加5层，持续8秒，同一招式内最多触发一次，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "束缚枷锁",
+    "desc": "攻击命中敌人时，<color=#FFFFFF>[普通攻击]</color>造成的伤害和失衡值提升<color=#2BAD00>9%</color>，最多叠加5层，持续8秒，同一招式内最多触发一次，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "束缚枷锁",
+    "desc": "攻击命中敌人时，<color=#FFFFFF>[普通攻击]</color>造成的伤害和失衡值提升<color=#2BAD00>10.5%</color>，最多叠加5层，持续8秒，同一招式内最多触发一次，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "束缚枷锁",
+    "desc": "攻击命中敌人时，<color=#FFFFFF>[普通攻击]</color>造成的伤害和失衡值提升<color=#2BAD00>12%</color>，最多叠加5层，持续8秒，同一招式内最多触发一次，每层效果单独结算持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/9e7fc4c4006059ff587196d57b865f96.webp"
+ },
+ {
+  "id": "14110",
+  "name": "燃狱齿轮",
+  "rarity": "S",
+  "main": "基础攻击力 46",
+  "sub": "冲击力 720",
+  "talents": [
+   {
+    "name": "热血施工",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>0.6</color>点/秒；发动<color=#FFFFFF>[强化特殊技]</color>时，装备者的冲击力提升<color=#2BAD00>10%</color>，最多叠加2层，持续10秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "热血施工",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>0.75</color>点/秒；发动<color=#FFFFFF>[强化特殊技]</color>时，装备者的冲击力提升<color=#2BAD00>12.5%</color>，最多叠加2层，持续10秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "热血施工",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>0.9</color>点/秒；发动<color=#FFFFFF>[强化特殊技]</color>时，装备者的冲击力提升<color=#2BAD00>15%</color>，最多叠加2层，持续10秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "热血施工",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>1.05</color>点/秒；发动<color=#FFFFFF>[强化特殊技]</color>时，装备者的冲击力提升<color=#2BAD00>17.5%</color>，最多叠加2层，持续10秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "热血施工",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>1.2</color>点/秒；发动<color=#FFFFFF>[强化特殊技]</color>时，装备者的冲击力提升<color=#2BAD00>20%</color>，最多叠加2层，持续10秒，每层效果单独结算持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/743c9b9e97f41fa617a9bc52664b2087.webp"
+ },
+ {
+  "id": "14109",
+  "name": "霰落星殿",
+  "rarity": "S",
+  "main": "基础攻击力 50",
+  "sub": "暴击率 960",
+  "talents": [
+   {
+    "name": "霜染寒星",
+    "desc": "暴击伤害提升<color=#2BAD00>50%</color>；发动<color=#FFFFFF>[强化特殊技]</color>或队伍中任意角色对敌人施加属性异常效果时，装备者造成的<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>20%</color>，最多叠加2层，持续15秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "霜染寒星",
+    "desc": "暴击伤害提升<color=#2BAD00>57%</color>；发动<color=#FFFFFF>[强化特殊技]</color>或队伍中任意角色对敌人施加属性异常效果时，装备者造成的<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>23%</color>，最多叠加2层，持续15秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "霜染寒星",
+    "desc": "暴击伤害提升<color=#2BAD00>65%</color>；发动<color=#FFFFFF>[强化特殊技]</color>或队伍中任意角色对敌人施加属性异常效果时，装备者造成的<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>26%</color>，最多叠加2层，持续15秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "霜染寒星",
+    "desc": "暴击伤害提升<color=#2BAD00>72%</color>；发动<color=#FFFFFF>[强化特殊技]</color>或队伍中任意角色对敌人施加属性异常效果时，装备者造成的<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>29%</color>，最多叠加2层，持续15秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "霜染寒星",
+    "desc": "暴击伤害提升<color=#2BAD00>80%</color>；发动<color=#FFFFFF>[强化特殊技]</color>或队伍中任意角色对敌人施加属性异常效果时，装备者造成的<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>32%</color>，最多叠加2层，持续15秒，每层效果单独结算持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/3285dda7097b474c2ef1b5441838d70a.webp"
+ },
+ {
+  "id": "14107",
+  "name": "奔袭獠牙",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "冲击力 720",
+  "talents": [
+   {
+    "name": "不破铁骑",
+    "desc": "装备者施加的护盾值提升<color=#2BAD00>30%</color>；队伍中任意角色触发<color=#FFFFFF>[破招]</color>或<color=#FFFFFF>[极限闪避]</color>时，全队角色造成的伤害提升<color=#2BAD00>18%</color>，造成的失衡值提升<color=#2BAD00>12%</color>，持续20秒，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "不破铁骑",
+    "desc": "装备者施加的护盾值提升<color=#2BAD00>38%</color>；队伍中任意角色触发<color=#FFFFFF>[破招]</color>或<color=#FFFFFF>[极限闪避]</color>时，全队角色造成的伤害提升<color=#2BAD00>22.5%</color>，造成的失衡值提升<color=#2BAD00>15%</color>，持续20秒，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "不破铁骑",
+    "desc": "装备者施加的护盾值提升<color=#2BAD00>46%</color>；队伍中任意角色触发<color=#FFFFFF>[破招]</color>或<color=#FFFFFF>[极限闪避]</color>时，全队角色造成的伤害提升<color=#2BAD00>27%</color>，造成的失衡值提升<color=#2BAD00>18%</color>，持续20秒，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "不破铁骑",
+    "desc": "装备者施加的护盾值提升<color=#2BAD00>52%</color>；队伍中任意角色触发<color=#FFFFFF>[破招]</color>或<color=#FFFFFF>[极限闪避]</color>时，全队角色造成的伤害提升<color=#2BAD00>31.5%</color>，造成的失衡值提升<color=#2BAD00>21%</color>，持续20秒，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "不破铁骑",
+    "desc": "装备者施加的护盾值提升<color=#2BAD00>60%</color>；队伍中任意角色触发<color=#FFFFFF>[破招]</color>或<color=#FFFFFF>[极限闪避]</color>时，全队角色造成的伤害提升<color=#2BAD00>36%</color>，造成的失衡值提升<color=#2BAD00>24%</color>，持续20秒，同名被动效果之间不可叠加。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/f79ecd3c55bd0b7dd0ed5c7b2ea201da.webp"
+ },
+ {
+  "id": "14105",
+  "name": "海妖摇篮",
+  "rarity": "S",
+  "main": "基础攻击力 48",
+  "sub": "生命值 1200",
+  "talents": [
+   {
+    "name": "触抚心拥",
+    "desc": "装备者的生命值降低时，造成的<color=#98EFF0>冰属性贯穿伤害</color>提升<color=#2BAD00>6%</color>，最多叠加3层，持续25秒，每层效果单独结算持续时间，0.5秒内最多触发一次；装备者生命值降低至最大值的50%时，暴击率提升<color=#2BAD00>20%</color>。"
+   },
+   {
+    "name": "触抚心拥",
+    "desc": "装备者的生命值降低时，造成的<color=#98EFF0>冰属性贯穿伤害</color>提升<color=#2BAD00>7%</color>，最多叠加3层，持续25秒，每层效果单独结算持续时间，0.5秒内最多触发一次；装备者生命值降低至最大值的50%时，暴击率提升<color=#2BAD00>23%</color>。"
+   },
+   {
+    "name": "触抚心拥",
+    "desc": "装备者的生命值降低时，造成的<color=#98EFF0>冰属性贯穿伤害</color>提升<color=#2BAD00>8%</color>，最多叠加3层，持续25秒，每层效果单独结算持续时间，0.5秒内最多触发一次；装备者生命值降低至最大值的50%时，暴击率提升<color=#2BAD00>26%</color>。"
+   },
+   {
+    "name": "触抚心拥",
+    "desc": "装备者的生命值降低时，造成的<color=#98EFF0>冰属性贯穿伤害</color>提升<color=#2BAD00>9%</color>，最多叠加3层，持续25秒，每层效果单独结算持续时间，0.5秒内最多触发一次；装备者生命值降低至最大值的50%时，暴击率提升<color=#2BAD00>29%</color>。"
+   },
+   {
+    "name": "触抚心拥",
+    "desc": "装备者的生命值降低时，造成的<color=#98EFF0>冰属性贯穿伤害</color>提升<color=#2BAD00>10%</color>，最多叠加3层，持续25秒，每层效果单独结算持续时间，0.5秒内最多触发一次；装备者生命值降低至最大值的50%时，暴击率提升<color=#2BAD00>32%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/a5c52aae9b2491ffb51c8033ed8e3b0b.webp"
+ },
+ {
+  "id": "14104",
+  "name": "硫磺石",
+  "rarity": "S",
+  "main": "基础攻击力 46",
+  "sub": "攻击力 1200",
+  "talents": [
+   {
+    "name": "炽烈吐息",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[冲刺攻击]</color>或<color=#FFFFFF>[闪避反击]</color>命中敌人时，装备者的攻击力提升<color=#2BAD00>3.5%</color>，最多叠加8层，持续8秒，0.5秒内最多触发一次，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "炽烈吐息",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[冲刺攻击]</color>或<color=#FFFFFF>[闪避反击]</color>命中敌人时，装备者的攻击力提升<color=#2BAD00>4.4%</color>，最多叠加8层，持续8秒，0.5秒内最多触发一次，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "炽烈吐息",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[冲刺攻击]</color>或<color=#FFFFFF>[闪避反击]</color>命中敌人时，装备者的攻击力提升<color=#2BAD00>5.2%</color>，最多叠加8层，持续8秒，0.5秒内最多触发一次，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "炽烈吐息",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[冲刺攻击]</color>或<color=#FFFFFF>[闪避反击]</color>命中敌人时，装备者的攻击力提升<color=#2BAD00>6%</color>，最多叠加8层，持续8秒，0.5秒内最多触发一次，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "炽烈吐息",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[冲刺攻击]</color>或<color=#FFFFFF>[闪避反击]</color>命中敌人时，装备者的攻击力提升<color=#2BAD00>7%</color>，最多叠加8层，持续8秒，0.5秒内最多触发一次，每层效果单独结算持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/707d564bfbfd6d36cf5203f5a61605ef.webp"
+ },
+ {
+  "id": "14102",
+  "name": "钢铁肉垫",
+  "rarity": "S",
+  "main": "基础攻击力 46",
+  "sub": "暴击率 960",
+  "talents": [
+   {
+    "name": "合金猫爪",
+    "desc": "<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>20%</color>；从背后攻击命中敌人时，装备者造成的伤害提升<color=#2BAD00>25%</color>。"
+   },
+   {
+    "name": "合金猫爪",
+    "desc": "<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>25%</color>；从背后攻击命中敌人时，装备者造成的伤害提升<color=#2BAD00>31.5%</color>。"
+   },
+   {
+    "name": "合金猫爪",
+    "desc": "<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>30%</color>；从背后攻击命中敌人时，装备者造成的伤害提升<color=#2BAD00>38%</color>。"
+   },
+   {
+    "name": "合金猫爪",
+    "desc": "<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>35%</color>；从背后攻击命中敌人时，装备者造成的伤害提升<color=#2BAD00>44%</color>。"
+   },
+   {
+    "name": "合金猫爪",
+    "desc": "<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>40%</color>；从背后攻击命中敌人时，装备者造成的伤害提升<color=#2BAD00>50%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/1c5b30ab3e426f6f0f8a7645da41169e.webp"
+ },
+ {
+  "id": "14003",
+  "name": "左轮转子",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "冲击力 600",
+  "talents": [
+   {
+    "name": "开火！",
+    "desc": "每3秒为装备者提供1层充能效果，最多叠加6层；发动<color=#FFFFFF>[强化特殊技]</color>时，消耗所有充能，每层充能效果使招式造成的失衡值提升<color=#2BAD00>4%</color>。"
+   },
+   {
+    "name": "开火！",
+    "desc": "每3秒为装备者提供1层充能效果，最多叠加6层；发动<color=#FFFFFF>[强化特殊技]</color>时，消耗所有充能，每层充能效果使招式造成的失衡值提升<color=#2BAD00>4.6%</color>。"
+   },
+   {
+    "name": "开火！",
+    "desc": "每3秒为装备者提供1层充能效果，最多叠加6层；发动<color=#FFFFFF>[强化特殊技]</color>时，消耗所有充能，每层充能效果使招式造成的失衡值提升<color=#2BAD00>5.2%</color>。"
+   },
+   {
+    "name": "开火！",
+    "desc": "每3秒为装备者提供1层充能效果，最多叠加6层；发动<color=#FFFFFF>[强化特殊技]</color>时，消耗所有充能，每层充能效果使招式造成的失衡值提升<color=#2BAD00>5.8%</color>。"
+   },
+   {
+    "name": "开火！",
+    "desc": "每3秒为装备者提供1层充能效果，最多叠加6层；发动<color=#FFFFFF>[强化特殊技]</color>时，消耗所有充能，每层充能效果使招式造成的失衡值提升<color=#2BAD00>6.4%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/3f4626ad60a38c0fb31c7de6a3853826.webp"
+ },
+ {
+  "id": "14002",
+  "name": "逍遥游球",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "能量自动回复 2000",
+  "talents": [
+   {
+    "name": "电玩，启动！",
+    "desc": "装备者攻击命中敌人时，若触发属性克制效果，则所有单位对该目标的暴击率提升<color=#2BAD00>12%</color>，持续12秒，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "电玩，启动！",
+    "desc": "装备者攻击命中敌人时，若触发属性克制效果，则所有单位对该目标的暴击率提升<color=#2BAD00>13.5%</color>，持续12秒，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "电玩，启动！",
+    "desc": "装备者攻击命中敌人时，若触发属性克制效果，则所有单位对该目标的暴击率提升<color=#2BAD00>15.5%</color>，持续12秒，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "电玩，启动！",
+    "desc": "装备者攻击命中敌人时，若触发属性克制效果，则所有单位对该目标的暴击率提升<color=#2BAD00>17.5%</color>，持续12秒，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "电玩，启动！",
+    "desc": "装备者攻击命中敌人时，若触发属性克制效果，则所有单位对该目标的暴击率提升<color=#2BAD00>20%</color>，持续12秒，同名被动效果之间不可叠加。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/2308d53191573b590f9b876fa2564668.webp"
+ },
+ {
+  "id": "14001",
+  "name": "加农转子",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "暴击率 800",
+  "talents": [
+   {
+    "name": "口径超规",
+    "desc": "攻击力提升<color=#2BAD00>7.5%</color>；攻击命中敌人并触发暴击时，额外造成200%攻击力的伤害，<color=#2BAD00>8</color>秒内最多触发一次。"
+   },
+   {
+    "name": "口径超规",
+    "desc": "攻击力提升<color=#2BAD00>8.6%</color>；攻击命中敌人并触发暴击时，额外造成200%攻击力的伤害，<color=#2BAD00>7.5</color>秒内最多触发一次。"
+   },
+   {
+    "name": "口径超规",
+    "desc": "攻击力提升<color=#2BAD00>9.7%</color>；攻击命中敌人并触发暴击时，额外造成200%攻击力的伤害，<color=#2BAD00>7</color>秒内最多触发一次。"
+   },
+   {
+    "name": "口径超规",
+    "desc": "攻击力提升<color=#2BAD00>10.8%</color>；攻击命中敌人并触发暴击时，额外造成200%攻击力的伤害，<color=#2BAD00>6.5</color>秒内最多触发一次。"
+   },
+   {
+    "name": "口径超规",
+    "desc": "攻击力提升<color=#2BAD00>12%</color>；攻击命中敌人并触发暴击时，额外造成200%攻击力的伤害，<color=#2BAD00>6</color>秒内最多触发一次。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/58df5b3b548b6446146e83c3633d3e09.webp"
+ },
+ {
+  "id": "13144",
+  "name": "燔火胧夜",
+  "rarity": "A",
+  "main": "基础攻击力 42",
+  "sub": "生命值 1000",
+  "talents": [
+   {
+    "name": "笼中火",
+    "desc": "装备者造成的<color=#FF5521>火属性伤害</color>提升<color=#2BAD00>15%</color>；装备者的生命值降低时，暴击率提升<color=#2BAD00>15%</color>，持续5秒。"
+   },
+   {
+    "name": "笼中火",
+    "desc": "装备者造成的<color=#FF5521>火属性伤害</color>提升<color=#2BAD00>17.25%</color>；装备者的生命值降低时，暴击率提升<color=#2BAD00>17.25%</color>，持续5秒。"
+   },
+   {
+    "name": "笼中火",
+    "desc": "装备者造成的<color=#FF5521>火属性伤害</color>提升<color=#2BAD00>19.5%</color>；装备者的生命值降低时，暴击率提升<color=#2BAD00>19.5%</color>，持续5秒。"
+   },
+   {
+    "name": "笼中火",
+    "desc": "装备者造成的<color=#FF5521>火属性伤害</color>提升<color=#2BAD00>21.75%</color>；装备者的生命值降低时，暴击率提升<color=#2BAD00>21.75%</color>，持续5秒。"
+   },
+   {
+    "name": "笼中火",
+    "desc": "装备者造成的<color=#FF5521>火属性伤害</color>提升<color=#2BAD00>24%</color>；装备者的生命值降低时，暴击率提升<color=#2BAD00>24%</color>，持续5秒。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/943dd263bade4316af4f39ae7b2aa176.webp"
+ },
+ {
+  "id": "13142",
+  "name": "震元奇枢",
+  "rarity": "A",
+  "main": "基础攻击力 42",
+  "sub": "攻击力 1000",
+  "talents": [
+   {
+    "name": "寻经定络",
+    "desc": "装备者的<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>造成的伤害增加<color=#2BAD00>25%</color>；队伍中任意角色受到伤害或回复生命时，为装备者回复<color=#2BAD00>2</color>点能量，5秒内最多触发一次；"
+   },
+   {
+    "name": "寻经定络",
+    "desc": "装备者的<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>造成的伤害增加<color=#2BAD00>28.7%</color>；队伍中任意角色受到伤害或回复生命时，为装备者回复<color=#2BAD00>2.3</color>点能量，5秒内最多触发一次；"
+   },
+   {
+    "name": "寻经定络",
+    "desc": "装备者的<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>造成的伤害增加<color=#2BAD00>32.5%</color>；队伍中任意角色受到伤害或回复生命时，为装备者回复<color=#2BAD00>2.6</color>点能量，5秒内最多触发一次；"
+   },
+   {
+    "name": "寻经定络",
+    "desc": "装备者的<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>造成的伤害增加<color=#2BAD00>36.2%</color>；队伍中任意角色受到伤害或回复生命时，为装备者回复<color=#2BAD00>2.9</color>点能量，5秒内最多触发一次；"
+   },
+   {
+    "name": "寻经定络",
+    "desc": "装备者的<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>造成的伤害增加<color=#2BAD00>40%</color>；队伍中任意角色受到伤害或回复生命时，为装备者回复<color=#2BAD00>3.2</color>点能量，5秒内最多触发一次；"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/fda6ab719f401e41815f67f24ad9c13a.webp"
+ },
+ {
+  "id": "13135",
+  "name": "裁纸刀",
+  "rarity": "A",
+  "main": "基础攻击力 42",
+  "sub": "冲击力 600",
+  "talents": [
+   {
+    "name": "小心手指",
+    "desc": "发动<color=#FFFFFF>[追加攻击]</color>时，装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>15%</color>，造成的失衡值提升<color=#2BAD00>10%</color>，持续10秒。"
+   },
+   {
+    "name": "小心手指",
+    "desc": "发动<color=#FFFFFF>[追加攻击]</color>时，装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>17.3%</color>，造成的失衡值提升<color=#2BAD00>11.5%</color>，持续10秒。"
+   },
+   {
+    "name": "小心手指",
+    "desc": "发动<color=#FFFFFF>[追加攻击]</color>时，装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>19.5%</color>，造成的失衡值提升<color=#2BAD00>13%</color>，持续10秒。"
+   },
+   {
+    "name": "小心手指",
+    "desc": "发动<color=#FFFFFF>[追加攻击]</color>时，装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>21.8%</color>，造成的失衡值提升<color=#2BAD00>14.5%</color>，持续10秒。"
+   },
+   {
+    "name": "小心手指",
+    "desc": "发动<color=#FFFFFF>[追加攻击]</color>时，装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>24%</color>，造成的失衡值提升<color=#2BAD00>16%</color>，持续10秒。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/5c430b0a6d8d0d54901698af23bc4e98.webp"
+ },
+ {
+  "id": "13128",
+  "name": "轰鸣座驾",
+  "rarity": "A",
+  "main": "基础攻击力 42",
+  "sub": "攻击力 1000",
+  "talents": [
+   {
+    "name": "碰撞势能",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>命中敌人时，随机触发以下三种效果中的一种，持续5秒，0.3秒内最多触发一次，同类效果不可叠加，重复触发时刷新持续时间，多个效果可以同时存在：装备者的攻击力提升<color=#2BAD00>8%</color>；装备者的异常精通提升<color=#2BAD00>40</color>点；装备者的属性异常积蓄效率提升<color=#2BAD00>25%</color>。"
+   },
+   {
+    "name": "碰撞势能",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>命中敌人时，随机触发以下三种效果中的一种，持续5秒，0.3秒内最多触发一次，同类效果不可叠加，重复触发时刷新持续时间，多个效果可以同时存在：装备者的攻击力提升<color=#2BAD00>9.2%</color>；装备者的异常精通提升<color=#2BAD00>46</color>点；装备者的属性异常积蓄效率提升<color=#2BAD00>28%</color>。"
+   },
+   {
+    "name": "碰撞势能",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>命中敌人时，随机触发以下三种效果中的一种，持续5秒，0.3秒内最多触发一次，同类效果不可叠加，重复触发时刷新持续时间，多个效果可以同时存在：装备者的攻击力提升<color=#2BAD00>10.4%</color>；装备者的异常精通提升<color=#2BAD00>52</color>点；装备者的属性异常积蓄效率提升<color=#2BAD00>32%</color>。"
+   },
+   {
+    "name": "碰撞势能",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>命中敌人时，随机触发以下三种效果中的一种，持续5秒，0.3秒内最多触发一次，同类效果不可叠加，重复触发时刷新持续时间，多个效果可以同时存在：装备者的攻击力提升<color=#2BAD00>11.6%</color>；装备者的异常精通提升<color=#2BAD00>58</color>点；装备者的属性异常积蓄效率提升<color=#2BAD00>36%</color>。"
+   },
+   {
+    "name": "碰撞势能",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>命中敌人时，随机触发以下三种效果中的一种，持续5秒，0.3秒内最多触发一次，同类效果不可叠加，重复触发时刷新持续时间，多个效果可以同时存在：装备者的攻击力提升<color=#2BAD00>12.8%</color>；装备者的异常精通提升<color=#2BAD00>64</color>点；装备者的属性异常积蓄效率提升<color=#2BAD00>40%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/7b3d0f41e5391e01f142af45e8f6f9d6.webp"
+ },
+ {
+  "id": "13127",
+  "name": "维序者-特化型",
+  "rarity": "A",
+  "main": "基础攻击力 42",
+  "sub": "攻击力 1000",
+  "talents": [
+   {
+    "name": "标准格挡术",
+    "desc": "拥有护盾时，装备者的能量自动回复提升<color=#2BAD00>0.4</color>点/秒；<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[支援突击]</color>累积的属性异常积蓄值提升<color=#2BAD00>36%</color>。"
+   },
+   {
+    "name": "标准格挡术",
+    "desc": "拥有护盾时，装备者的能量自动回复提升<color=#2BAD00>0.46</color>点/秒；<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[支援突击]</color>累积的属性异常积蓄值提升<color=#2BAD00>40%</color>。"
+   },
+   {
+    "name": "标准格挡术",
+    "desc": "拥有护盾时，装备者的能量自动回复提升<color=#2BAD00>0.52</color>点/秒；<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[支援突击]</color>累积的属性异常积蓄值提升<color=#2BAD00>45%</color>。"
+   },
+   {
+    "name": "标准格挡术",
+    "desc": "拥有护盾时，装备者的能量自动回复提升<color=#2BAD00>0.58</color>点/秒；<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[支援突击]</color>累积的属性异常积蓄值提升<color=#2BAD00>50%</color>。"
+   },
+   {
+    "name": "标准格挡术",
+    "desc": "拥有护盾时，装备者的能量自动回复提升<color=#2BAD00>0.64</color>点/秒；<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[支援突击]</color>累积的属性异常积蓄值提升<color=#2BAD00>55%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/bb47063b8649055c5107d901211fca98.webp"
+ },
+ {
+  "id": "13115",
+  "name": "好斗的阿炮",
+  "rarity": "A",
+  "main": "基础攻击力 42",
+  "sub": "能量自动回复 2000",
+  "talents": [
+   {
+    "name": "踩踏事故",
+    "desc": "队伍中任意友方单位攻击命中敌人时，队伍中所有友方单位的攻击力提升<color=#2BAD00>2.5%</color>，最多叠加4层，持续8秒，每层效果单独结算持续时间，每名友方单位最多提供1层增益效果，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "踩踏事故",
+    "desc": "队伍中任意友方单位攻击命中敌人时，队伍中所有友方单位的攻击力提升<color=#2BAD00>2.8%</color>，最多叠加4层，持续8秒，每层效果单独结算持续时间，每名友方单位最多提供1层增益效果，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "踩踏事故",
+    "desc": "队伍中任意友方单位攻击命中敌人时，队伍中所有友方单位的攻击力提升<color=#2BAD00>3.2%</color>，最多叠加4层，持续8秒，每层效果单独结算持续时间，每名友方单位最多提供1层增益效果，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "踩踏事故",
+    "desc": "队伍中任意友方单位攻击命中敌人时，队伍中所有友方单位的攻击力提升<color=#2BAD00>3.6%</color>，最多叠加4层，持续8秒，每层效果单独结算持续时间，每名友方单位最多提供1层增益效果，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "踩踏事故",
+    "desc": "队伍中任意友方单位攻击命中敌人时，队伍中所有友方单位的攻击力提升<color=#2BAD00>4%</color>，最多叠加4层，持续8秒，每层效果单独结算持续时间，每名友方单位最多提供1层增益效果，同名被动效果之间不可叠加。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/63a7ecd6c9d8dd396f8f2a21e18a82da.webp"
+ },
+ {
+  "id": "13113",
+  "name": "含羞恶面",
+  "rarity": "A",
+  "main": "基础攻击力 42",
+  "sub": "攻击力 1000",
+  "talents": [
+   {
+    "name": "饕餮相",
+    "desc": "<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>15%</color>；发动<color=#FFFFFF>[强化特殊技]</color>时，全队角色攻击力提升<color=#2BAD00>2%</color>，最多叠加4层，持续12秒，重复触发时刷新持续时间，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "饕餮相",
+    "desc": "<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>17.5%</color>；发动<color=#FFFFFF>[强化特殊技]</color>时，全队角色攻击力提升<color=#2BAD00>2.3%</color>，最多叠加4层，持续12秒，重复触发时刷新持续时间，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "饕餮相",
+    "desc": "<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>20%</color>；发动<color=#FFFFFF>[强化特殊技]</color>时，全队角色攻击力提升<color=#2BAD00>2.6%</color>，最多叠加4层，持续12秒，重复触发时刷新持续时间，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "饕餮相",
+    "desc": "<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>22%</color>；发动<color=#FFFFFF>[强化特殊技]</color>时，全队角色攻击力提升<color=#2BAD00>2.9%</color>，最多叠加4层，持续12秒，重复触发时刷新持续时间，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "饕餮相",
+    "desc": "<color=#98EFF0>冰属性伤害</color>提升<color=#2BAD00>24%</color>；发动<color=#FFFFFF>[强化特殊技]</color>时，全队角色攻击力提升<color=#2BAD00>3.2%</color>，最多叠加4层，持续12秒，重复触发时刷新持续时间，同名被动效果之间不可叠加。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/80558bd8c0ea42b7b6f4fc71d4c4be8b.webp"
+ },
+ {
+  "id": "13112",
+  "name": "比格气缸",
+  "rarity": "A",
+  "main": "基础攻击力 42",
+  "sub": "防御力 1600",
+  "talents": [
+   {
+    "name": "万斤顶",
+    "desc": "受到的伤害降低<color=#2BAD00>7.5%</color>；受到敌方攻击后，下一次攻击命中敌人时，额外造成装备者<color=#2BAD00>600%</color>防御力的伤害，且必定触发暴击，7.5秒内最多触发一次。"
+   },
+   {
+    "name": "万斤顶",
+    "desc": "受到的伤害降低<color=#2BAD00>8.5%</color>；受到敌方攻击后，下一次攻击命中敌人时，额外造成装备者<color=#2BAD00>690%</color>防御力的伤害，且必定触发暴击，7.5秒内最多触发一次。"
+   },
+   {
+    "name": "万斤顶",
+    "desc": "受到的伤害降低<color=#2BAD00>9.5%</color>；受到敌方攻击后，下一次攻击命中敌人时，额外造成装备者<color=#2BAD00>780%</color>防御力的伤害，且必定触发暴击，7.5秒内最多触发一次。"
+   },
+   {
+    "name": "万斤顶",
+    "desc": "受到的伤害降低<color=#2BAD00>10.5%</color>；受到敌方攻击后，下一次攻击命中敌人时，额外造成装备者<color=#2BAD00>870%</color>防御力的伤害，且必定触发暴击，7.5秒内最多触发一次。"
+   },
+   {
+    "name": "万斤顶",
+    "desc": "受到的伤害降低<color=#2BAD00>12%</color>；受到敌方攻击后，下一次攻击命中敌人时，额外造成装备者<color=#2BAD00>960%</color>防御力的伤害，且必定触发暴击，7.5秒内最多触发一次。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/a077411ecb4cf12deff182dcc033cd37.webp"
+ },
+ {
+  "id": "13111",
+  "name": "旋钻机-赤轴",
+  "rarity": "A",
+  "main": "基础攻击力 42",
+  "sub": "能量自动回复 2000",
+  "talents": [
+   {
+    "name": "红莲电机",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>时，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>50%</color>，持续10秒，15秒内最多触发一次。"
+   },
+   {
+    "name": "红莲电机",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>时，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>57.5%</color>，持续10秒，15秒内最多触发一次。"
+   },
+   {
+    "name": "红莲电机",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>时，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>65%</color>，持续10秒，15秒内最多触发一次。"
+   },
+   {
+    "name": "红莲电机",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>时，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>72.5%</color>，持续10秒，15秒内最多触发一次。"
+   },
+   {
+    "name": "红莲电机",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>时，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>80%</color>，持续10秒，15秒内最多触发一次。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/dc6fe39f6c187d9ef951b405b6edc417.webp"
+ },
+ {
+  "id": "13108",
+  "name": "仿制星徽引擎",
+  "rarity": "A",
+  "main": "基础攻击力 42",
+  "sub": "攻击力 1000",
+  "talents": [
+   {
+    "name": "骑士光波：改",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>或<color=#FFFFFF>[冲刺攻击]</color>命中6米外的敌人时，装备者对目标造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>36%</color>，持续8秒。"
+   },
+   {
+    "name": "骑士光波：改",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>或<color=#FFFFFF>[冲刺攻击]</color>命中6米外的敌人时，装备者对目标造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>41%</color>，持续8秒。"
+   },
+   {
+    "name": "骑士光波：改",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>或<color=#FFFFFF>[冲刺攻击]</color>命中6米外的敌人时，装备者对目标造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>46.5%</color>，持续8秒。"
+   },
+   {
+    "name": "骑士光波：改",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>或<color=#FFFFFF>[冲刺攻击]</color>命中6米外的敌人时，装备者对目标造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>52%</color>，持续8秒。"
+   },
+   {
+    "name": "骑士光波：改",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>或<color=#FFFFFF>[冲刺攻击]</color>命中6米外的敌人时，装备者对目标造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>57.5%</color>，持续8秒。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/79bb8156acdab77aace9caf23d530fef.webp"
+ },
+ {
+  "id": "13106",
+  "name": "家政员",
+  "rarity": "A",
+  "main": "基础攻击力 42",
+  "sub": "攻击力 1000",
+  "talents": [
+   {
+    "name": "安心家用轮锯",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>0.45</color>点/秒；<color=#FFFFFF>[强化特殊技]</color>命中敌人时，装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>3%</color>，最多叠加15层，持续1秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "安心家用轮锯",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>0.52</color>点/秒；<color=#FFFFFF>[强化特殊技]</color>命中敌人时，装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>3.5%</color>，最多叠加15层，持续1秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "安心家用轮锯",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>0.58</color>点/秒；<color=#FFFFFF>[强化特殊技]</color>命中敌人时，装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>4%</color>，最多叠加15层，持续1秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "安心家用轮锯",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>0.65</color>点/秒；<color=#FFFFFF>[强化特殊技]</color>命中敌人时，装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>4.4%</color>，最多叠加15层，持续1秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "安心家用轮锯",
+    "desc": "位于后场时，装备者的能量自动回复提升<color=#2BAD00>0.72</color>点/秒；<color=#FFFFFF>[强化特殊技]</color>命中敌人时，装备者造成的<color=#F0D12B>物理伤害</color>提升<color=#2BAD00>4.8%</color>，最多叠加15层，持续1秒，重复触发时刷新持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/865bdf7a82bd6b9ed5e73f918a45d601.webp"
+ },
+ {
+  "id": "13103",
+  "name": "聚宝箱",
+  "rarity": "A",
+  "main": "基础攻击力 42",
+  "sub": "能量自动回复 2000",
+  "talents": [
+   {
+    "name": "财迷心窍",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>造成<color=#FE437E>以太伤害</color>时，所有单位对目标造成的伤害提升<color=#2BAD00>15%</color>，装备者的能量自动回复提升<color=#2BAD00>0.5</color>点/秒，持续2秒，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "财迷心窍",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>造成<color=#FE437E>以太伤害</color>时，所有单位对目标造成的伤害提升<color=#2BAD00>17.5%</color>，装备者的能量自动回复提升<color=#2BAD00>0.58</color>点/秒，持续2秒，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "财迷心窍",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>造成<color=#FE437E>以太伤害</color>时，所有单位对目标造成的伤害提升<color=#2BAD00>20%</color>，装备者的能量自动回复提升<color=#2BAD00>0.65</color>点/秒，持续2秒，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "财迷心窍",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>造成<color=#FE437E>以太伤害</color>时，所有单位对目标造成的伤害提升<color=#2BAD00>22%</color>，装备者的能量自动回复提升<color=#2BAD00>0.72</color>点/秒，持续2秒，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "财迷心窍",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>造成<color=#FE437E>以太伤害</color>时，所有单位对目标造成的伤害提升<color=#2BAD00>24%</color>，装备者的能量自动回复提升<color=#2BAD00>0.8</color>点/秒，持续2秒，同名被动效果之间不可叠加。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/127243e73c1d382d877279fdfd6a9ef3.webp"
+ },
+ {
+  "id": "13101",
+  "name": "德玛拉电池Ⅱ型",
+  "rarity": "A",
+  "main": "基础攻击力 42",
+  "sub": "冲击力 600",
+  "talents": [
+   {
+    "name": "电光石火",
+    "desc": "<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>15%</color>；<color=#FFFFFF>[闪避反击]</color>或<color=#FFFFFF>[支援攻击]</color>命中敌人时，装备者的能量获得效率提升<color=#2BAD00>18%</color>，持续8秒。"
+   },
+   {
+    "name": "电光石火",
+    "desc": "<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>17.5%</color>；<color=#FFFFFF>[闪避反击]</color>或<color=#FFFFFF>[支援攻击]</color>命中敌人时，装备者的能量获得效率提升<color=#2BAD00>20.5%</color>，持续8秒。"
+   },
+   {
+    "name": "电光石火",
+    "desc": "<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>20%</color>；<color=#FFFFFF>[闪避反击]</color>或<color=#FFFFFF>[支援攻击]</color>命中敌人时，装备者的能量获得效率提升<color=#2BAD00>23%</color>，持续8秒。"
+   },
+   {
+    "name": "电光石火",
+    "desc": "<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>22%</color>；<color=#FFFFFF>[闪避反击]</color>或<color=#FFFFFF>[支援攻击]</color>命中敌人时，装备者的能量获得效率提升<color=#2BAD00>25%</color>，持续8秒。"
+   },
+   {
+    "name": "电光石火",
+    "desc": "<color=#2EB6FF>电属性伤害</color>提升<color=#2BAD00>24%</color>；<color=#FFFFFF>[闪避反击]</color>或<color=#FFFFFF>[支援攻击]</color>命中敌人时，装备者的能量获得效率提升<color=#2BAD00>27.5%</color>，持续8秒。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/d41ce3af8486f661a855c2201e2018ad.webp"
+ },
+ {
+  "id": "13022",
+  "name": "烛光诡计",
+  "rarity": "A",
+  "main": "基础防御力 24",
+  "sub": "防御力 1600",
+  "talents": [
+   {
+    "name": "惊吓时刻",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，装备者暴击率提升<color=#2BAD00>8%</color>，持续40秒；装备者对当前生命值低于最大值50%的敌人造成的伤害提高<color=#2BAD00>15%</color>。"
+   },
+   {
+    "name": "惊吓时刻",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，装备者暴击率提升<color=#2BAD00>9.2%</color>，持续40秒；装备者对当前生命值低于最大值50%的敌人造成的伤害提高<color=#2BAD00>17.3%</color>。"
+   },
+   {
+    "name": "惊吓时刻",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，装备者暴击率提升<color=#2BAD00>10.4%</color>，持续40秒；装备者对当前生命值低于最大值50%的敌人造成的伤害提高<color=#2BAD00>19.5%</color>。"
+   },
+   {
+    "name": "惊吓时刻",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，装备者暴击率提升<color=#2BAD00>11.6%</color>，持续40秒；装备者对当前生命值低于最大值50%的敌人造成的伤害提高<color=#2BAD00>21.8%</color>。"
+   },
+   {
+    "name": "惊吓时刻",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，装备者暴击率提升<color=#2BAD00>12.8%</color>，持续40秒；装备者对当前生命值低于最大值50%的敌人造成的伤害提高<color=#2BAD00>24%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/a8ea9453eb504467df40cb0694c3b0fd.webp"
+ },
+ {
+  "id": "13021",
+  "name": "血髓秘匣",
+  "rarity": "A",
+  "main": "基础防御力 24",
+  "sub": "暴击率 800",
+  "talents": [
+   {
+    "name": "启封之刻",
+    "desc": "装备者暴击率大于<color=#2BAD00>100%</color>时，每超出1%暴击率，使装备者造成的伤害提升<color=#2BAD00>0.48%</color>，至多提升<color=#2BAD00>24%</color>。"
+   },
+   {
+    "name": "启封之刻",
+    "desc": "装备者暴击率大于<color=#2BAD00>100%</color>时，每超出1%暴击率，使装备者造成的伤害提升<color=#2BAD00>0.56%</color>，至多提升<color=#2BAD00>28%</color>。"
+   },
+   {
+    "name": "启封之刻",
+    "desc": "装备者暴击率大于<color=#2BAD00>100%</color>时，每超出1%暴击率，使装备者造成的伤害提升<color=#2BAD00>0.64%</color>，至多提升<color=#2BAD00>32%</color>。"
+   },
+   {
+    "name": "启封之刻",
+    "desc": "装备者暴击率大于<color=#2BAD00>100%</color>时，每超出1%暴击率，使装备者造成的伤害提升<color=#2BAD00>0.72%</color>，至多提升<color=#2BAD00>36%</color>。"
+   },
+   {
+    "name": "启封之刻",
+    "desc": "装备者暴击率大于<color=#2BAD00>100%</color>时，每超出1%暴击率，使装备者造成的伤害提升<color=#2BAD00>0.8%</color>，至多提升<color=#2BAD00>40%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/32f81cd52bc2a1ed6746edfe84ce9347.webp"
+ },
+ {
+  "id": "13020",
+  "name": "炎炙沸釜",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "冲击力 600",
+  "talents": [
+   {
+    "name": "红油辣锅",
+    "desc": "发动<color=#FFFFFF>[支援突击]</color> 时，装备者对目标造成的失衡值提升<color=#2BAD00>7.2%</color>，装备者造成的伤害提升<color=#2BAD00>7.2%</color>，持续30秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "红油辣锅",
+    "desc": "发动<color=#FFFFFF>[支援突击]</color> 时，装备者对目标造成的失衡值提升<color=#2BAD00>8.2%</color>，装备者造成的伤害提升<color=#2BAD00>8.2%</color>，持续30秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "红油辣锅",
+    "desc": "发动<color=#FFFFFF>[支援突击]</color> 时，装备者对目标造成的失衡值提升<color=#2BAD00>9.2%</color>，装备者造成的伤害提升<color=#2BAD00>9.2%</color>，持续30秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "红油辣锅",
+    "desc": "发动<color=#FFFFFF>[支援突击]</color> 时，装备者对目标造成的失衡值提升<color=#2BAD00>10.2%</color>，装备者造成的伤害提升<color=#2BAD00>10.2%</color>，持续30秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "红油辣锅",
+    "desc": "发动<color=#FFFFFF>[支援突击]</color> 时，装备者对目标造成的失衡值提升<color=#2BAD00>11.5%</color>，装备者造成的伤害提升<color=#2BAD00>11.5%</color>，持续30秒，重复触发时刷新持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/1b96b71f8dafecd72eb00efdf94d8475.webp"
+ },
+ {
+  "id": "13019",
+  "name": "青漪灵鼎",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "生命值 1000",
+  "talents": [
+   {
+    "name": "玄音唤灵",
+    "desc": "装备者发动<color=#FFFFFF>[强化特殊技]</color> 时可获得1层增益效果，每层增益效果使装备者造成的伤害提升<color=#2BAD00>4%</color>，最多叠加3层，持续20秒，每0.5秒最多触发1次，重复触发时刷新持续时间；拥有3层增益效果时，装备者的暴击率提升<color=#2BAD00>6.5%</color>。"
+   },
+   {
+    "name": "玄音唤灵",
+    "desc": "装备者发动<color=#FFFFFF>[强化特殊技]</color> 时可获得1层增益效果，每层增益效果使装备者造成的伤害提升<color=#2BAD00>4.6%</color>，最多叠加3层，持续20秒，每0.5秒最多触发1次，重复触发时刷新持续时间；拥有3层增益效果时，装备者的暴击率提升<color=#2BAD00>7.5%</color>。"
+   },
+   {
+    "name": "玄音唤灵",
+    "desc": "装备者发动<color=#FFFFFF>[强化特殊技]</color> 时可获得1层增益效果，每层增益效果使装备者造成的伤害提升<color=#2BAD00>5.2%</color>，最多叠加3层，持续20秒，每0.5秒最多触发1次，重复触发时刷新持续时间；拥有3层增益效果时，装备者的暴击率提升<color=#2BAD00>8.5%</color>。"
+   },
+   {
+    "name": "玄音唤灵",
+    "desc": "装备者发动<color=#FFFFFF>[强化特殊技]</color> 时可获得1层增益效果，每层增益效果使装备者造成的伤害提升<color=#2BAD00>5.8%</color>，最多叠加3层，持续20秒，每0.5秒最多触发1次，重复触发时刷新持续时间；拥有3层增益效果时，装备者的暴击率提升<color=#2BAD00>9.4%</color>。"
+   },
+   {
+    "name": "玄音唤灵",
+    "desc": "装备者发动<color=#FFFFFF>[强化特殊技]</color> 时可获得1层增益效果，每层增益效果使装备者造成的伤害提升<color=#2BAD00>6.4%</color>，最多叠加3层，持续20秒，每0.5秒最多触发1次，重复触发时刷新持续时间；拥有3层增益效果时，装备者的暴击率提升<color=#2BAD00>10.4%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/ff55392287983a007535b1616d9fe5b6.webp"
+ },
+ {
+  "id": "13018",
+  "name": "咚哒回声",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "异常精通 30",
+  "talents": [
+   {
+    "name": "铿锵鸣鼓",
+    "desc": "装备者触发<color=#FFFFFF>[乱流]</color>效果时，为自身回复<color=#2BAD00>2</color>点能量，10秒内最多触发一次；装备者攻击处于属性异常状态下的敌人时，造成的伤害提升<color=#2BAD00>11.5%</color>。"
+   },
+   {
+    "name": "铿锵鸣鼓",
+    "desc": "装备者触发<color=#FFFFFF>[乱流]</color>效果时，为自身回复<color=#2BAD00>2.3</color>点能量，10秒内最多触发一次；装备者攻击处于属性异常状态下的敌人时，造成的伤害提升<color=#2BAD00>13.2%</color>。"
+   },
+   {
+    "name": "铿锵鸣鼓",
+    "desc": "装备者触发<color=#FFFFFF>[乱流]</color>效果时，为自身回复<color=#2BAD00>2.6</color>点能量，10秒内最多触发一次；装备者攻击处于属性异常状态下的敌人时，造成的伤害提升<color=#2BAD00>15%</color>。"
+   },
+   {
+    "name": "铿锵鸣鼓",
+    "desc": "装备者触发<color=#FFFFFF>[乱流]</color>效果时，为自身回复<color=#2BAD00>2.9</color>点能量，10秒内最多触发一次；装备者攻击处于属性异常状态下的敌人时，造成的伤害提升<color=#2BAD00>16.7%</color>。"
+   },
+   {
+    "name": "铿锵鸣鼓",
+    "desc": "装备者触发<color=#FFFFFF>[乱流]</color>效果时，为自身回复<color=#2BAD00>3.2</color>点能量，10秒内最多触发一次；装备者攻击处于属性异常状态下的敌人时，造成的伤害提升<color=#2BAD00>18.4%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/9864a533648dd7f4a56d08564b5befa5.webp"
+ },
+ {
+  "id": "13017",
+  "name": "喵运当头",
+  "rarity": "A",
+  "main": "基础防御力 24",
+  "sub": "防御力 1600",
+  "talents": [
+   {
+    "name": "幸运肉球",
+    "desc": "防御力提升<color=#2BAD00>8%</color>；释放<color=#FFFFFF>[强化特殊技]</color>时，防御力额外提升<color=#2BAD00>8%</color>，持续40秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "幸运肉球",
+    "desc": "防御力提升<color=#2BAD00>9%</color>；释放<color=#FFFFFF>[强化特殊技]</color>时，防御力额外提升<color=#2BAD00>9%</color>，持续40秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "幸运肉球",
+    "desc": "防御力提升<color=#2BAD00>10%</color>；释放<color=#FFFFFF>[强化特殊技]</color>时，防御力额外提升<color=#2BAD00>10%</color>，持续40秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "幸运肉球",
+    "desc": "防御力提升<color=#2BAD00>11%</color>；释放<color=#FFFFFF>[强化特殊技]</color>时，防御力额外提升<color=#2BAD00>11%</color>，持续40秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "幸运肉球",
+    "desc": "防御力提升<color=#2BAD00>12%</color>；释放<color=#FFFFFF>[强化特殊技]</color>时，防御力额外提升<color=#2BAD00>12%</color>，持续40秒，重复触发时刷新持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/b9ade7f440c9d935cedab8ae4263778b.webp"
+ },
+ {
+  "id": "13016",
+  "name": "光影刻刀",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "冲击力 600",
+  "talents": [
+   {
+    "name": "镌刻倏忽",
+    "desc": "队伍中角色生命值大于等于50%，受到的伤害降低<color=#2BAD00>7.5%</color>，受到的[秽息浸染]值降低<color=#2BAD00>10%</color>，该效果全队唯一。"
+   },
+   {
+    "name": "镌刻倏忽",
+    "desc": "队伍中角色生命值大于等于50%，受到的伤害降低<color=#2BAD00>8.6%</color>，受到的[秽息浸染]值降低<color=#2BAD00>11.5%</color>，该效果全队唯一。"
+   },
+   {
+    "name": "镌刻倏忽",
+    "desc": "队伍中角色生命值大于等于50%，受到的伤害降低<color=#2BAD00>9.7%</color>，受到的[秽息浸染]值降低<color=#2BAD00>13%</color>，该效果全队唯一。"
+   },
+   {
+    "name": "镌刻倏忽",
+    "desc": "队伍中角色生命值大于等于50%，受到的伤害降低<color=#2BAD00>10.8%</color>，受到的[秽息浸染]值降低<color=#2BAD00>14.5%</color>，该效果全队唯一。"
+   },
+   {
+    "name": "镌刻倏忽",
+    "desc": "队伍中角色生命值大于等于50%，受到的伤害降低<color=#2BAD00>12%</color>，受到的[秽息浸染]值降低<color=#2BAD00>16%</color>，该效果全队唯一。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/59e94ca69a7035e018a1011d1b35c8f3.webp"
+ },
+ {
+  "id": "13015",
+  "name": "强音热望",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "暴击率 800",
+  "talents": [
+   {
+    "name": "躁动全场",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>命中敌人时，装备者的攻击力提升<color=#2BAD00>6%</color>，持续8秒；目标处于属性异常状态下时，该增益效果额外提升<color=#2BAD00>6%</color>。"
+   },
+   {
+    "name": "躁动全场",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>命中敌人时，装备者的攻击力提升<color=#2BAD00>6.9%</color>，持续8秒；目标处于属性异常状态下时，该增益效果额外提升<color=#2BAD00>6.9%</color>。"
+   },
+   {
+    "name": "躁动全场",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>命中敌人时，装备者的攻击力提升<color=#2BAD00>7.8%</color>，持续8秒；目标处于属性异常状态下时，该增益效果额外提升<color=#2BAD00>7.8%</color>。"
+   },
+   {
+    "name": "躁动全场",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>命中敌人时，装备者的攻击力提升<color=#2BAD00>8.7%</color>，持续8秒；目标处于属性异常状态下时，该增益效果额外提升<color=#2BAD00>8.7%</color>。"
+   },
+   {
+    "name": "躁动全场",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>命中敌人时，装备者的攻击力提升<color=#2BAD00>9.6%</color>，持续8秒；目标处于属性异常状态下时，该增益效果额外提升<color=#2BAD00>9.6%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/976eaebff2680d56330c81426b408a60.webp"
+ },
+ {
+  "id": "13014",
+  "name": "电波漫步",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "生命值 1000",
+  "talents": [
+   {
+    "name": "自在步调",
+    "desc": "发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>时，装备者获得1层增益效果，每层增益效果使装备者的贯穿力提升<color=#2BAD00>80</color>点，最多叠加3层，持续12秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "自在步调",
+    "desc": "发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>时，装备者获得1层增益效果，每层增益效果使装备者的贯穿力提升<color=#2BAD00>92</color>点，最多叠加3层，持续12秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "自在步调",
+    "desc": "发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>时，装备者获得1层增益效果，每层增益效果使装备者的贯穿力提升<color=#2BAD00>104</color>点，最多叠加3层，持续12秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "自在步调",
+    "desc": "发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>时，装备者获得1层增益效果，每层增益效果使装备者的贯穿力提升<color=#2BAD00>116</color>点，最多叠加3层，持续12秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "自在步调",
+    "desc": "发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>时，装备者获得1层增益效果，每层增益效果使装备者的贯穿力提升<color=#2BAD00>128</color>点，最多叠加3层，持续12秒，每层效果单独结算持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/1aa843ec93b735afab9c752d66e77167.webp"
+ },
+ {
+  "id": "13013",
+  "name": "鎏金花信",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "攻击力 1000",
+  "talents": [
+   {
+    "name": "超规防盗措施",
+    "desc": "攻击力提升<color=#2BAD00>6</color>%，<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升<color=#2BAD00>15</color>%。"
+   },
+   {
+    "name": "超规防盗措施",
+    "desc": "攻击力提升<color=#2BAD00>6.9</color>%，<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升<color=#2BAD00>17.2</color>%。"
+   },
+   {
+    "name": "超规防盗措施",
+    "desc": "攻击力提升<color=#2BAD00>7.8</color>%，<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升<color=#2BAD00>19.5</color>%。"
+   },
+   {
+    "name": "超规防盗措施",
+    "desc": "攻击力提升<color=#2BAD00>8.7</color>%，<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升<color=#2BAD00>21.8</color>%。"
+   },
+   {
+    "name": "超规防盗措施",
+    "desc": "攻击力提升<color=#2BAD00>9.6</color>%，<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升<color=#2BAD00>24</color>%。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/9874a498c5d704564b272eade7c36534.webp"
+ },
+ {
+  "id": "13012",
+  "name": "幻变魔方",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "攻击力 1000",
+  "talents": [
+   {
+    "name": "奇机弄巧",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，装备者暴击伤害提升<color=#2BAD00>16%</color>，持续12秒；且若目标当前生命值低于最大值的50%时，<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升<color=#2BAD00>20%</color>。"
+   },
+   {
+    "name": "奇机弄巧",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，装备者暴击伤害提升<color=#2BAD00>18.4%</color>，持续12秒；且若目标当前生命值低于最大值的50%时，<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升<color=#2BAD00>23%</color>。"
+   },
+   {
+    "name": "奇机弄巧",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，装备者暴击伤害提升<color=#2BAD00>20.8%</color>，持续12秒；且若目标当前生命值低于最大值的50%时，<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升<color=#2BAD00>26%</color>。"
+   },
+   {
+    "name": "奇机弄巧",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，装备者暴击伤害提升<color=#2BAD00>23.2%</color>，持续12秒；且若目标当前生命值低于最大值的50%时，<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升<color=#2BAD00>29%</color>。"
+   },
+   {
+    "name": "奇机弄巧",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，装备者暴击伤害提升<color=#2BAD00>25.6%</color>，持续12秒；且若目标当前生命值低于最大值的50%时，<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升<color=#2BAD00>32%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/31b073055258fa23b017fdc3ec190072.webp"
+ },
+ {
+  "id": "13011",
+  "name": "春日融融",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "攻击力 1000",
+  "talents": [
+   {
+    "name": "热泉汤",
+    "desc": "受到的伤害降低<color=#2BAD00>7.5%</color>；受到敌方攻击时，装备者的能量获得效率提升<color=#2BAD00>10%</color>，持续12秒；装备者换回后场时，该增益效果将传递给当前操作中的角色，并刷新持续时间，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "热泉汤",
+    "desc": "受到的伤害降低<color=#2BAD00>8.5%</color>；受到敌方攻击时，装备者的能量获得效率提升<color=#2BAD00>11.5%</color>，持续12秒；装备者换回后场时，该增益效果将传递给当前操作中的角色，并刷新持续时间，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "热泉汤",
+    "desc": "受到的伤害降低<color=#2BAD00>9.5%</color>；受到敌方攻击时，装备者的能量获得效率提升<color=#2BAD00>13%</color>，持续12秒；装备者换回后场时，该增益效果将传递给当前操作中的角色，并刷新持续时间，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "热泉汤",
+    "desc": "受到的伤害降低<color=#2BAD00>10.5%</color>；受到敌方攻击时，装备者的能量获得效率提升<color=#2BAD00>14.5%</color>，持续12秒；装备者换回后场时，该增益效果将传递给当前操作中的角色，并刷新持续时间，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "热泉汤",
+    "desc": "受到的伤害降低<color=#2BAD00>12%</color>；受到敌方攻击时，装备者的能量获得效率提升<color=#2BAD00>16%</color>，持续12秒；装备者换回后场时，该增益效果将传递给当前操作中的角色，并刷新持续时间，同名被动效果之间不可叠加。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/cf7a833e9eb290294965c24079ff07ed.webp"
+ },
+ {
+  "id": "13010",
+  "name": "兔能环",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "防御力 1600",
+  "talents": [
+   {
+    "name": "摸摸兔兔",
+    "desc": "生命值上限提升<color=#2BAD00>8%</color>；拥有护盾时，装备者的攻击力提升<color=#2BAD00>10%</color>。"
+   },
+   {
+    "name": "摸摸兔兔",
+    "desc": "生命值上限提升<color=#2BAD00>9.2%</color>；拥有护盾时，装备者的攻击力提升<color=#2BAD00>11.5%</color>。"
+   },
+   {
+    "name": "摸摸兔兔",
+    "desc": "生命值上限提升<color=#2BAD00>10.4%</color>；拥有护盾时，装备者的攻击力提升<color=#2BAD00>13%</color>。"
+   },
+   {
+    "name": "摸摸兔兔",
+    "desc": "生命值上限提升<color=#2BAD00>11.6%</color>；拥有护盾时，装备者的攻击力提升<color=#2BAD00>14.5%</color>。"
+   },
+   {
+    "name": "摸摸兔兔",
+    "desc": "生命值上限提升<color=#2BAD00>12.8%</color>；拥有护盾时，装备者的攻击力提升<color=#2BAD00>16%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/2582a69982b140b6d723f8b2495e2aee.webp"
+ },
+ {
+  "id": "13009",
+  "name": "触电唇彩",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "异常精通 30",
+  "talents": [
+   {
+    "name": "致命拥吻",
+    "desc": "当场上存在处于属性异常状态下的敌人时，装备者的攻击力提升<color=#2BAD00>10%</color>，对目标造成的伤害额外提升<color=#2BAD00>15%</color>。"
+   },
+   {
+    "name": "致命拥吻",
+    "desc": "当场上存在处于属性异常状态下的敌人时，装备者的攻击力提升<color=#2BAD00>11.5%</color>，对目标造成的伤害额外提升<color=#2BAD00>17.5%</color>。"
+   },
+   {
+    "name": "致命拥吻",
+    "desc": "当场上存在处于属性异常状态下的敌人时，装备者的攻击力提升<color=#2BAD00>13%</color>，对目标造成的伤害额外提升<color=#2BAD00>20%</color>。"
+   },
+   {
+    "name": "致命拥吻",
+    "desc": "当场上存在处于属性异常状态下的敌人时，装备者的攻击力提升<color=#2BAD00>14.5%</color>，对目标造成的伤害额外提升<color=#2BAD00>22.5%</color>。"
+   },
+   {
+    "name": "致命拥吻",
+    "desc": "当场上存在处于属性异常状态下的敌人时，装备者的攻击力提升<color=#2BAD00>16%</color>，对目标造成的伤害额外提升<color=#2BAD00>25%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/a06aecf9cfa5ce7787b1c01b5741b276.webp"
+ },
+ {
+  "id": "13008",
+  "name": "双生泣星",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "攻击力 1000",
+  "talents": [
+   {
+    "name": "呜咽余波",
+    "desc": "队伍中任意角色对敌人施加属性异常效果时，为装备者提供1层增益效果，每层增益效果使装备者的异常精通提升<color=#2BAD00>30</color>点，最多叠加4层，目标从失衡状态恢复或死亡时，对应增益效果结束，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "呜咽余波",
+    "desc": "队伍中任意角色对敌人施加属性异常效果时，为装备者提供1层增益效果，每层增益效果使装备者的异常精通提升<color=#2BAD00>34</color>点，最多叠加4层，目标从失衡状态恢复或死亡时，对应增益效果结束，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "呜咽余波",
+    "desc": "队伍中任意角色对敌人施加属性异常效果时，为装备者提供1层增益效果，每层增益效果使装备者的异常精通提升<color=#2BAD00>38</color>点，最多叠加4层，目标从失衡状态恢复或死亡时，对应增益效果结束，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "呜咽余波",
+    "desc": "队伍中任意角色对敌人施加属性异常效果时，为装备者提供1层增益效果，每层增益效果使装备者的异常精通提升<color=#2BAD00>42</color>点，最多叠加4层，目标从失衡状态恢复或死亡时，对应增益效果结束，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "呜咽余波",
+    "desc": "队伍中任意角色对敌人施加属性异常效果时，为装备者提供1层增益效果，每层增益效果使装备者的异常精通提升<color=#2BAD00>48</color>点，最多叠加4层，目标从失衡状态恢复或死亡时，对应增益效果结束，每层效果单独结算持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/8068b56f4e05ec847935e901ed2188f4.webp"
+ },
+ {
+  "id": "13007",
+  "name": "正版变身器",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "生命值 1000",
+  "talents": [
+   {
+    "name": "骑士飞踢",
+    "desc": "生命值上限提升<color=#2BAD00>8%</color>；受到敌方攻击时，装备者的冲击力提升<color=#2BAD00>10%</color>，持续12秒。"
+   },
+   {
+    "name": "骑士飞踢",
+    "desc": "生命值上限提升<color=#2BAD00>9%</color>；受到敌方攻击时，装备者的冲击力提升<color=#2BAD00>11.5%</color>，持续12秒。"
+   },
+   {
+    "name": "骑士飞踢",
+    "desc": "生命值上限提升<color=#2BAD00>10%</color>；受到敌方攻击时，装备者的冲击力提升<color=#2BAD00>13%</color>，持续12秒。"
+   },
+   {
+    "name": "骑士飞踢",
+    "desc": "生命值上限提升<color=#2BAD00>11%</color>；受到敌方攻击时，装备者的冲击力提升<color=#2BAD00>14.5%</color>，持续12秒。"
+   },
+   {
+    "name": "骑士飞踢",
+    "desc": "生命值上限提升<color=#2BAD00>12.5%</color>；受到敌方攻击时，装备者的冲击力提升<color=#2BAD00>16%</color>，持续12秒。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/67c6339f91481497923bb4667057bee7.webp"
+ },
+ {
+  "id": "13006",
+  "name": "贵重骨核",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "冲击力 600",
+  "talents": [
+   {
+    "name": "巨兽猎手",
+    "desc": "敌方生命值大于等于50%时，装备者对目标造成的失衡值提升<color=#2BAD00>10%</color>，敌方生命值大于等于75%时，该增益效果额外提升<color=#2BAD00>10%</color>。"
+   },
+   {
+    "name": "巨兽猎手",
+    "desc": "敌方生命值大于等于50%时，装备者对目标造成的失衡值提升<color=#2BAD00>11.5%</color>，敌方生命值大于等于75%时，该增益效果额外提升<color=#2BAD00>11.5%</color>。"
+   },
+   {
+    "name": "巨兽猎手",
+    "desc": "敌方生命值大于等于50%时，装备者对目标造成的失衡值提升<color=#2BAD00>13%</color>，敌方生命值大于等于75%时，该增益效果额外提升<color=#2BAD00>13%</color>。"
+   },
+   {
+    "name": "巨兽猎手",
+    "desc": "敌方生命值大于等于50%时，装备者对目标造成的失衡值提升<color=#2BAD00>14.5%</color>，敌方生命值大于等于75%时，该增益效果额外提升<color=#2BAD00>14.5%</color>。"
+   },
+   {
+    "name": "巨兽猎手",
+    "desc": "敌方生命值大于等于50%时，装备者对目标造成的失衡值提升<color=#2BAD00>16%</color>，敌方生命值大于等于75%时，该增益效果额外提升<color=#2BAD00>16%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/fafe83cd75f615b5f13039be81aac343.webp"
+ },
+ {
+  "id": "13005",
+  "name": "人为刀俎",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "能量自动回复 2000",
+  "talents": [
+   {
+    "name": "浓厚汤底",
+    "desc": "每拥有10点能量值，装备者的冲击力提升<color=#2BAD00>2%</color>，最多叠加8层，能量消耗后该增益效果仍然保留，持续8秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "浓厚汤底",
+    "desc": "每拥有10点能量值，装备者的冲击力提升<color=#2BAD00>2.3%</color>，最多叠加8层，能量消耗后该增益效果仍然保留，持续8秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "浓厚汤底",
+    "desc": "每拥有10点能量值，装备者的冲击力提升<color=#2BAD00>2.6%</color>，最多叠加8层，能量消耗后该增益效果仍然保留，持续8秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "浓厚汤底",
+    "desc": "每拥有10点能量值，装备者的冲击力提升<color=#2BAD00>2.9%</color>，最多叠加8层，能量消耗后该增益效果仍然保留，持续8秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "浓厚汤底",
+    "desc": "每拥有10点能量值，装备者的冲击力提升<color=#2BAD00>3.2%</color>，最多叠加8层，能量消耗后该增益效果仍然保留，持续8秒，每层效果单独结算持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/5af5765c79334347d07eb402e1f955e7.webp"
+ },
+ {
+  "id": "13004",
+  "name": "星徽引擎",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "攻击力 1000",
+  "talents": [
+   {
+    "name": "骑士连打",
+    "desc": "发动<color=#FFFFFF>[闪避反击]</color>或<color=#FFFFFF>[快速支援]</color>时，装备者的攻击力提升<color=#2BAD00>12%</color>，持续12秒。"
+   },
+   {
+    "name": "骑士连打",
+    "desc": "发动<color=#FFFFFF>[闪避反击]</color>或<color=#FFFFFF>[快速支援]</color>时，装备者的攻击力提升<color=#2BAD00>13.8%</color>，持续12秒。"
+   },
+   {
+    "name": "骑士连打",
+    "desc": "发动<color=#FFFFFF>[闪避反击]</color>或<color=#FFFFFF>[快速支援]</color>时，装备者的攻击力提升<color=#2BAD00>15.6%</color>，持续12秒。"
+   },
+   {
+    "name": "骑士连打",
+    "desc": "发动<color=#FFFFFF>[闪避反击]</color>或<color=#FFFFFF>[快速支援]</color>时，装备者的攻击力提升<color=#2BAD00>17.4%</color>，持续12秒。"
+   },
+   {
+    "name": "骑士连打",
+    "desc": "发动<color=#FFFFFF>[闪避反击]</color>或<color=#FFFFFF>[快速支援]</color>时，装备者的攻击力提升<color=#2BAD00>19.2%</color>，持续12秒。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/a7bf80f13fb13f13ded73955ef37a1f3.webp"
+ },
+ {
+  "id": "13003",
+  "name": "雨林饕客",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "异常精通 30",
+  "talents": [
+   {
+    "name": "开饭了！",
+    "desc": "每消耗10点能量值，获得1层增益效果，每层增益效果使装备者的攻击力提升<color=#2BAD00>2.5%</color>，最多叠加10层，持续10秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "开饭了！",
+    "desc": "每消耗10点能量值，获得1层增益效果，每层增益效果使装备者的攻击力提升<color=#2BAD00>2.8%</color>，最多叠加10层，持续10秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "开饭了！",
+    "desc": "每消耗10点能量值，获得1层增益效果，每层增益效果使装备者的攻击力提升<color=#2BAD00>3.2%</color>，最多叠加10层，持续10秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "开饭了！",
+    "desc": "每消耗10点能量值，获得1层增益效果，每层增益效果使装备者的攻击力提升<color=#2BAD00>3.6%</color>，最多叠加10层，持续10秒，每层效果单独结算持续时间。"
+   },
+   {
+    "name": "开饭了！",
+    "desc": "每消耗10点能量值，获得1层增益效果，每层增益效果使装备者的攻击力提升<color=#2BAD00>4%</color>，最多叠加10层，持续10秒，每层效果单独结算持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/e833850d2d6b26bbc5f1eb3cd25f602f.webp"
+ },
+ {
+  "id": "13002",
+  "name": "时光切片",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "穿透率 800",
+  "talents": [
+   {
+    "name": "说「茄子」",
+    "desc": "队伍中任意角色发动<color=#FFFFFF>[闪避反击]</color>/<color=#FFFFFF>[强化特殊技]</color>/<color=#FFFFFF>[支援攻击]</color>/<color=#FFFFFF>[连携技]</color>时，额外获得<color=#2BAD00>20</color>/<color=#2BAD00>25</color>/<color=#2BAD00>30</color>/<color=#2BAD00>35</color>点喧响值，并为装备者回复<color=#2BAD00>0.7</color>点能量，12秒内最多触发一次，不同招式分别结算冷却时间，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "说「茄子」",
+    "desc": "队伍中任意角色发动<color=#FFFFFF>[闪避反击]</color>/<color=#FFFFFF>[强化特殊技]</color>/<color=#FFFFFF>[支援攻击]</color>/<color=#FFFFFF>[连携技]</color>时，额外获得<color=#2BAD00>23</color>/<color=#2BAD00>28.5</color>/<color=#2BAD00>34.5</color>/<color=#2BAD00>40</color>点喧响值，并为装备者回复<color=#2BAD00>0.8</color>点能量，12秒内最多触发一次，不同招式分别结算冷却时间，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "说「茄子」",
+    "desc": "队伍中任意角色发动<color=#FFFFFF>[闪避反击]</color>/<color=#FFFFFF>[强化特殊技]</color>/<color=#FFFFFF>[支援攻击]</color>/<color=#FFFFFF>[连携技]</color>时，额外获得<color=#2BAD00>26</color>/<color=#2BAD00>32</color>/<color=#2BAD00>39</color>/<color=#2BAD00>45</color>点喧响值，并为装备者回复<color=#2BAD00>0.9</color>点能量，12秒内最多触发一次，不同招式分别结算冷却时间，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "说「茄子」",
+    "desc": "队伍中任意角色发动<color=#FFFFFF>[闪避反击]</color>/<color=#FFFFFF>[强化特殊技]</color>/<color=#FFFFFF>[支援攻击]</color>/<color=#FFFFFF>[连携技]</color>时，额外获得<color=#2BAD00>29</color>/<color=#2BAD00>35.5</color>/<color=#2BAD00>43.5</color>/<color=#2BAD00>50</color>点喧响值，并为装备者回复<color=#2BAD00>1</color>点能量，12秒内最多触发一次，不同招式分别结算冷却时间，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "说「茄子」",
+    "desc": "队伍中任意角色发动<color=#FFFFFF>[闪避反击]</color>/<color=#FFFFFF>[强化特殊技]</color>/<color=#FFFFFF>[支援攻击]</color>/<color=#FFFFFF>[连携技]</color>时，额外获得<color=#2BAD00>32</color>/<color=#2BAD00>40</color>/<color=#2BAD00>48</color>/<color=#2BAD00>55</color>点喧响值，并为装备者回复<color=#2BAD00>1.1</color>点能量，12秒内最多触发一次，不同招式分别结算冷却时间，同名被动效果之间不可叠加。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/0e02ed369c9ee127a97b5c1b6bc7400b.webp"
+ },
+ {
+  "id": "13001",
+  "name": "街头巨星",
+  "rarity": "A",
+  "main": "基础攻击力 40",
+  "sub": "攻击力 1000",
+  "talents": [
+   {
+    "name": "火热腔调",
+    "desc": "队伍中任意角色发动<color=#FFFFFF>[连携技]</color>时，为装备者提供1层充能效果，最多叠加3层；发动<color=#FFFFFF>[终结技]</color>时，消耗所有充能，每层充能效果使招式造成的伤害提升<color=#2BAD00>15%</color>。"
+   },
+   {
+    "name": "火热腔调",
+    "desc": "队伍中任意角色发动<color=#FFFFFF>[连携技]</color>时，为装备者提供1层充能效果，最多叠加3层；发动<color=#FFFFFF>[终结技]</color>时，消耗所有充能，每层充能效果使招式造成的伤害提升<color=#2BAD00>17.2%</color>。"
+   },
+   {
+    "name": "火热腔调",
+    "desc": "队伍中任意角色发动<color=#FFFFFF>[连携技]</color>时，为装备者提供1层充能效果，最多叠加3层；发动<color=#FFFFFF>[终结技]</color>时，消耗所有充能，每层充能效果使招式造成的伤害提升<color=#2BAD00>19.5%</color>。"
+   },
+   {
+    "name": "火热腔调",
+    "desc": "队伍中任意角色发动<color=#FFFFFF>[连携技]</color>时，为装备者提供1层充能效果，最多叠加3层；发动<color=#FFFFFF>[终结技]</color>时，消耗所有充能，每层充能效果使招式造成的伤害提升<color=#2BAD00>21.7%</color>。"
+   },
+   {
+    "name": "火热腔调",
+    "desc": "队伍中任意角色发动<color=#FFFFFF>[连携技]</color>时，为装备者提供1层充能效果，最多叠加3层；发动<color=#FFFFFF>[终结技]</color>时，消耗所有充能，每层充能效果使招式造成的伤害提升<color=#2BAD00>24%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/78ecd490ca0ecece3a090963c6ccdf3b.webp"
+ },
+ {
+  "id": "12016",
+  "name": "「月相」-弦",
+  "rarity": "A",
+  "main": "基础防御力 19",
+  "sub": "防御力 1280",
+  "talents": [
+   {
+    "name": "弦月",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，[普通攻击]造成的伤害提升<color=#2BAD00>18%</color>，持续10秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "弦月",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，[普通攻击]造成的伤害提升<color=#2BAD00>21%</color>，持续10秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "弦月",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，[普通攻击]造成的伤害提升<color=#2BAD00>24%</color>，持续10秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "弦月",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，[普通攻击]造成的伤害提升<color=#2BAD00>27%</color>，持续10秒，重复触发时刷新持续时间。"
+   },
+   {
+    "name": "弦月",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，[普通攻击]造成的伤害提升<color=#2BAD00>30%</color>，持续10秒，重复触发时刷新持续时间。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/63989069d298a27683b7027cbce62698.webp"
+ },
+ {
+  "id": "12015",
+  "name": "「灰烬」-钴蓝",
+  "rarity": "A",
+  "main": "基础攻击力 32",
+  "sub": "生命值 800",
+  "talents": [
+   {
+    "name": "黯火",
+    "desc": "成为接战状态下的当前操作角色时，装备者的攻击力提升<color=#2BAD00>7.2%</color>，持续10秒，20秒内最多触发一次。"
+   },
+   {
+    "name": "黯火",
+    "desc": "成为接战状态下的当前操作角色时，装备者的攻击力提升<color=#2BAD00>8.2%</color>，持续10秒，20秒内最多触发一次。"
+   },
+   {
+    "name": "黯火",
+    "desc": "成为接战状态下的当前操作角色时，装备者的攻击力提升<color=#2BAD00>9.3%</color>，持续10秒，20秒内最多触发一次。"
+   },
+   {
+    "name": "黯火",
+    "desc": "成为接战状态下的当前操作角色时，装备者的攻击力提升<color=#2BAD00>10.4%</color>，持续10秒，20秒内最多触发一次。"
+   },
+   {
+    "name": "黯火",
+    "desc": "成为接战状态下的当前操作角色时，装备者的攻击力提升<color=#2BAD00>11.5%</color>，持续10秒，20秒内最多触发一次。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/d63a92bb1f8402aef4d834671715ec19.webp"
+ },
+ {
+  "id": "12014",
+  "name": "「恒等式」-变格",
+  "rarity": "A",
+  "main": "基础攻击力 32",
+  "sub": "防御力 1280",
+  "talents": [
+   {
+    "name": "致眩",
+    "desc": "受到敌方攻击时，攻击者造成的伤害降低<color=#2BAD00>6%</color>，持续12秒。"
+   },
+   {
+    "name": "致眩",
+    "desc": "受到敌方攻击时，攻击者造成的伤害降低<color=#2BAD00>7%</color>，持续12秒。"
+   },
+   {
+    "name": "致眩",
+    "desc": "受到敌方攻击时，攻击者造成的伤害降低<color=#2BAD00>8%</color>，持续12秒。"
+   },
+   {
+    "name": "致眩",
+    "desc": "受到敌方攻击时，攻击者造成的伤害降低<color=#2BAD00>9%</color>，持续12秒。"
+   },
+   {
+    "name": "致眩",
+    "desc": "受到敌方攻击时，攻击者造成的伤害降低<color=#2BAD00>10%</color>，持续12秒。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/70ebe47db5a73ada1ea2c5decab4b081.webp"
+ },
+ {
+  "id": "12013",
+  "name": "「恒等式」-本格",
+  "rarity": "A",
+  "main": "基础攻击力 32",
+  "sub": "防御力 1280",
+  "talents": [
+   {
+    "name": "沉击",
+    "desc": "受到敌方攻击时，装备者的防御力提升<color=#2BAD00>20%</color>，持续8秒。"
+   },
+   {
+    "name": "沉击",
+    "desc": "受到敌方攻击时，装备者的防御力提升<color=#2BAD00>23%</color>，持续8秒。"
+   },
+   {
+    "name": "沉击",
+    "desc": "受到敌方攻击时，装备者的防御力提升<color=#2BAD00>26%</color>，持续8秒。"
+   },
+   {
+    "name": "沉击",
+    "desc": "受到敌方攻击时，装备者的防御力提升<color=#2BAD00>29%</color>，持续8秒。"
+   },
+   {
+    "name": "沉击",
+    "desc": "受到敌方攻击时，装备者的防御力提升<color=#2BAD00>32%</color>，持续8秒。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/372f06efaa282e01da1744fe51b2096a.webp"
+ },
+ {
+  "id": "12012",
+  "name": "「电磁暴」-叁式",
+  "rarity": "A",
+  "main": "基础攻击力 32",
+  "sub": "穿透率 640",
+  "talents": [
+   {
+    "name": "过载电荷",
+    "desc": "队伍中任意角色对敌人施加属性异常效果时，装备者回复<color=#2BAD00>3.5</color>点能量，12秒内最多触发一次。"
+   },
+   {
+    "name": "过载电荷",
+    "desc": "队伍中任意角色对敌人施加属性异常效果时，装备者回复<color=#2BAD00>4</color>点能量，12秒内最多触发一次。"
+   },
+   {
+    "name": "过载电荷",
+    "desc": "队伍中任意角色对敌人施加属性异常效果时，装备者回复<color=#2BAD00>4.5</color>点能量，12秒内最多触发一次。"
+   },
+   {
+    "name": "过载电荷",
+    "desc": "队伍中任意角色对敌人施加属性异常效果时，装备者回复<color=#2BAD00>5</color>点能量，12秒内最多触发一次。"
+   },
+   {
+    "name": "过载电荷",
+    "desc": "队伍中任意角色对敌人施加属性异常效果时，装备者回复<color=#2BAD00>5.5</color>点能量，12秒内最多触发一次。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/d8c099175291e398a4c989b4e208f631.webp"
+ },
+ {
+  "id": "12011",
+  "name": "「电磁暴」-贰式",
+  "rarity": "A",
+  "main": "基础攻击力 32",
+  "sub": "异常精通 24",
+  "talents": [
+   {
+    "name": "高压电涌",
+    "desc": "累积属性异常积蓄值时，装备者的异常精通提升<color=#2BAD00>25</color>点，持续10秒，20秒内最多触发一次。"
+   },
+   {
+    "name": "高压电涌",
+    "desc": "累积属性异常积蓄值时，装备者的异常精通提升<color=#2BAD00>28</color>点，持续10秒，20秒内最多触发一次。"
+   },
+   {
+    "name": "高压电涌",
+    "desc": "累积属性异常积蓄值时，装备者的异常精通提升<color=#2BAD00>32</color>点，持续10秒，20秒内最多触发一次。"
+   },
+   {
+    "name": "高压电涌",
+    "desc": "累积属性异常积蓄值时，装备者的异常精通提升<color=#2BAD00>36</color>点，持续10秒，20秒内最多触发一次。"
+   },
+   {
+    "name": "高压电涌",
+    "desc": "累积属性异常积蓄值时，装备者的异常精通提升<color=#2BAD00>40</color>点，持续10秒，20秒内最多触发一次。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/bf07a46fe9d9984ef296cefd19b11e24.webp"
+ },
+ {
+  "id": "12010",
+  "name": "「电磁暴」-壹式",
+  "rarity": "A",
+  "main": "基础攻击力 32",
+  "sub": "攻击力 800",
+  "talents": [
+   {
+    "name": "紊乱电流",
+    "desc": "累积属性异常积蓄值时，装备者的异常掌控提升<color=#2BAD00>25</color>点，持续10秒，20秒内最多触发一次。"
+   },
+   {
+    "name": "紊乱电流",
+    "desc": "累积属性异常积蓄值时，装备者的异常掌控提升<color=#2BAD00>28</color>点，持续10秒，20秒内最多触发一次。"
+   },
+   {
+    "name": "紊乱电流",
+    "desc": "累积属性异常积蓄值时，装备者的异常掌控提升<color=#2BAD00>32</color>点，持续10秒，20秒内最多触发一次。"
+   },
+   {
+    "name": "紊乱电流",
+    "desc": "累积属性异常积蓄值时，装备者的异常掌控提升<color=#2BAD00>36</color>点，持续10秒，20秒内最多触发一次。"
+   },
+   {
+    "name": "紊乱电流",
+    "desc": "累积属性异常积蓄值时，装备者的异常掌控提升<color=#2BAD00>40</color>点，持续10秒，20秒内最多触发一次。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/063ca10990448b07df28d6b1b88463d0.webp"
+ },
+ {
+  "id": "12009",
+  "name": "「湍流」-斧型",
+  "rarity": "A",
+  "main": "基础攻击力 32",
+  "sub": "能量自动回复 1600",
+  "talents": [
+   {
+    "name": "疾潮",
+    "desc": "成为接战状态下的当前操作角色时，装备者的冲击力提升<color=#2BAD00>9%</color>，持续10秒，20秒内最多触发一次。"
+   },
+   {
+    "name": "疾潮",
+    "desc": "成为接战状态下的当前操作角色时，装备者的冲击力提升<color=#2BAD00>10%</color>，持续10秒，20秒内最多触发一次。"
+   },
+   {
+    "name": "疾潮",
+    "desc": "成为接战状态下的当前操作角色时，装备者的冲击力提升<color=#2BAD00>11%</color>，持续10秒，20秒内最多触发一次。"
+   },
+   {
+    "name": "疾潮",
+    "desc": "成为接战状态下的当前操作角色时，装备者的冲击力提升<color=#2BAD00>12%</color>，持续10秒，20秒内最多触发一次。"
+   },
+   {
+    "name": "疾潮",
+    "desc": "成为接战状态下的当前操作角色时，装备者的冲击力提升<color=#2BAD00>13%</color>，持续10秒，20秒内最多触发一次。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/66ad3019d65bed78fd460d71f93e491c.webp"
+ },
+ {
+  "id": "12008",
+  "name": "「湍流」-矢型",
+  "rarity": "A",
+  "main": "基础攻击力 32",
+  "sub": "冲击力 480",
+  "talents": [
+   {
+    "name": "巨浪",
+    "desc": "攻击命中敌人时，装备者对主要攻击目标造成的失衡值提升<color=#2BAD00>8%</color>。"
+   },
+   {
+    "name": "巨浪",
+    "desc": "攻击命中敌人时，装备者对主要攻击目标造成的失衡值提升<color=#2BAD00>9%</color>。"
+   },
+   {
+    "name": "巨浪",
+    "desc": "攻击命中敌人时，装备者对主要攻击目标造成的失衡值提升<color=#2BAD00>10%</color>。"
+   },
+   {
+    "name": "巨浪",
+    "desc": "攻击命中敌人时，装备者对主要攻击目标造成的失衡值提升<color=#2BAD00>11%</color>。"
+   },
+   {
+    "name": "巨浪",
+    "desc": "攻击命中敌人时，装备者对主要攻击目标造成的失衡值提升<color=#2BAD00>12%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/9acfef0019b28e0049e835611ffe37a5.webp"
+ },
+ {
+  "id": "12007",
+  "name": "「湍流」-铳型",
+  "rarity": "A",
+  "main": "基础攻击力 32",
+  "sub": "攻击力 800",
+  "talents": [
+   {
+    "name": "暗涌",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>造成的失衡值提升<color=#2BAD00>10%</color>。"
+   },
+   {
+    "name": "暗涌",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>造成的失衡值提升<color=#2BAD00>11.5%</color>。"
+   },
+   {
+    "name": "暗涌",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>造成的失衡值提升<color=#2BAD00>13%</color>。"
+   },
+   {
+    "name": "暗涌",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>造成的失衡值提升<color=#2BAD00>14.5%</color>。"
+   },
+   {
+    "name": "暗涌",
+    "desc": "<color=#FFFFFF>[强化特殊技]</color>造成的失衡值提升<color=#2BAD00>16%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/a1727696bc9a32f77deeb1fe6cb541f9.webp"
+ },
+ {
+  "id": "12006",
+  "name": "「残响」-Ⅲ型",
+  "rarity": "A",
+  "main": "基础攻击力 32",
+  "sub": "生命值 800",
+  "talents": [
+   {
+    "name": "强音",
+    "desc": "发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>时，全队角色攻击力提升<color=#2BAD00>8%</color>，持续10秒，20秒内最多触发一次，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "强音",
+    "desc": "发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>时，全队角色攻击力提升<color=#2BAD00>9%</color>，持续10秒，20秒内最多触发一次，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "强音",
+    "desc": "发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>时，全队角色攻击力提升<color=#2BAD00>10%</color>，持续10秒，20秒内最多触发一次，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "强音",
+    "desc": "发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>时，全队角色攻击力提升<color=#2BAD00>11%</color>，持续10秒，20秒内最多触发一次，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "强音",
+    "desc": "发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>时，全队角色攻击力提升<color=#2BAD00>12%</color>，持续10秒，20秒内最多触发一次，同名被动效果之间不可叠加。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/a11909e481de80f34be27ab95efea121.webp"
+ },
+ {
+  "id": "12005",
+  "name": "「残响」-Ⅱ型",
+  "rarity": "A",
+  "main": "基础攻击力 32",
+  "sub": "能量自动回复 1600",
+  "talents": [
+   {
+    "name": "音浪",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>时，全队角色异常掌控和异常精通提升<color=#2BAD00>10</color>点，持续10秒，20秒内最多触发一次，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "音浪",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>时，全队角色异常掌控和异常精通提升<color=#2BAD00>12</color>点，持续10秒，20秒内最多触发一次，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "音浪",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>时，全队角色异常掌控和异常精通提升<color=#2BAD00>13</color>点，持续10秒，20秒内最多触发一次，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "音浪",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>时，全队角色异常掌控和异常精通提升<color=#2BAD00>15</color>点，持续10秒，20秒内最多触发一次，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "音浪",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>时，全队角色异常掌控和异常精通提升<color=#2BAD00>16</color>点，持续10秒，20秒内最多触发一次，同名被动效果之间不可叠加。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/e4e0743ad6dd59f771f8bbe1f3268631.webp"
+ },
+ {
+  "id": "12004",
+  "name": "「残响」-Ⅰ型",
+  "rarity": "A",
+  "main": "基础攻击力 32",
+  "sub": "攻击力 800",
+  "talents": [
+   {
+    "name": "潮汐",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，全队角色冲击力提升<color=#2BAD00>8%</color>，持续10秒，20秒内最多触发一次，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "潮汐",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，全队角色冲击力提升<color=#2BAD00>9%</color>，持续10秒，20秒内最多触发一次，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "潮汐",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，全队角色冲击力提升<color=#2BAD00>10%</color>，持续10秒，20秒内最多触发一次，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "潮汐",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，全队角色冲击力提升<color=#2BAD00>11%</color>，持续10秒，20秒内最多触发一次，同名被动效果之间不可叠加。"
+   },
+   {
+    "name": "潮汐",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，全队角色冲击力提升<color=#2BAD00>12%</color>，持续10秒，20秒内最多触发一次，同名被动效果之间不可叠加。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/27de123c72010191eabc864ab601c590.webp"
+ },
+ {
+  "id": "12003",
+  "name": "「月相」-朔",
+  "rarity": "A",
+  "main": "基础攻击力 32",
+  "sub": "暴击率 640",
+  "talents": [
+   {
+    "name": "新月",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，装备者回复<color=#2BAD00>3</color>点能量，12秒内最多触发一次。"
+   },
+   {
+    "name": "新月",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，装备者回复<color=#2BAD00>3.5</color>点能量，12秒内最多触发一次。"
+   },
+   {
+    "name": "新月",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，装备者回复<color=#2BAD00>4</color>点能量，12秒内最多触发一次。"
+   },
+   {
+    "name": "新月",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，装备者回复<color=#2BAD00>4.5</color>点能量，12秒内最多触发一次。"
+   },
+   {
+    "name": "新月",
+    "desc": "发动<color=#FFFFFF>[强化特殊技]</color>时，装备者回复<color=#2BAD00>5</color>点能量，12秒内最多触发一次。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/5fa39133eb4812b028e7c17b3c13a5e9.webp"
+ },
+ {
+  "id": "12002",
+  "name": "「月相」-晦",
+  "rarity": "A",
+  "main": "基础攻击力 32",
+  "sub": "攻击力 800",
+  "talents": [
+   {
+    "name": "残月",
+    "desc": "发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>时，装备者造成的伤害提升<color=#2BAD00>15%</color>，持续6秒。"
+   },
+   {
+    "name": "残月",
+    "desc": "发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>时，装备者造成的伤害提升<color=#2BAD00>17.5%</color>，持续6秒。"
+   },
+   {
+    "name": "残月",
+    "desc": "发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>时，装备者造成的伤害提升<color=#2BAD00>20%</color>，持续6秒。"
+   },
+   {
+    "name": "残月",
+    "desc": "发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>时，装备者造成的伤害提升<color=#2BAD00>22.5%</color>，持续6秒。"
+   },
+   {
+    "name": "残月",
+    "desc": "发动<color=#FFFFFF>[连携技]</color>或<color=#FFFFFF>[终结技]</color>时，装备者造成的伤害提升<color=#2BAD00>25%</color>，持续6秒。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/4a3993542da0eedc6c9f45a5ad0fbed8.webp"
+ },
+ {
+  "id": "12001",
+  "name": "「月相」-望",
+  "rarity": "A",
+  "main": "基础攻击力 32",
+  "sub": "攻击力 800",
+  "talents": [
+   {
+    "name": "满月",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[冲刺攻击]</color>、<color=#FFFFFF>[闪避反击]</color>造成的伤害提升<color=#2BAD00>12%</color>。"
+   },
+   {
+    "name": "满月",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[冲刺攻击]</color>、<color=#FFFFFF>[闪避反击]</color>造成的伤害提升<color=#2BAD00>14%</color>。"
+   },
+   {
+    "name": "满月",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[冲刺攻击]</color>、<color=#FFFFFF>[闪避反击]</color>造成的伤害提升<color=#2BAD00>16%</color>。"
+   },
+   {
+    "name": "满月",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[冲刺攻击]</color>、<color=#FFFFFF>[闪避反击]</color>造成的伤害提升<color=#2BAD00>18%</color>。"
+   },
+   {
+    "name": "满月",
+    "desc": "<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[冲刺攻击]</color>、<color=#FFFFFF>[闪避反击]</color>造成的伤害提升<color=#2BAD00>20%</color>。"
+   }
+  ],
+  "icon": "/admin/api/miyoushe/zzz/asset/e72e47b1298d1ec8fde1fb62e7555e21.webp"
+ }
+]

@@ -24,12 +24,21 @@ from pathlib import Path
 
 PLUGIN_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = PLUGIN_ROOT / "data"
+# 随仓库发的只读种子数据（图鉴快照 JSON / 多语言表 / 配装方案）。
+# 单独放 seed/ 而不是 data/：仓库里只要有 data/ 目录，AstrBot 更新插件时就会把
+# data/ 整个删掉（见 miyoho/seed.py 的说明），运行数据必须留在更新的射程之外。
+SEED_DIR = PLUGIN_ROOT / "seed"
 PAGES_ASSETS = PLUGIN_ROOT / "pages" / "panel" / "assets"
 
 
 def data_path(*parts: str) -> Path:
     """插件 data/ 下的相对路径（自动建父目录的事由调用方决定）。"""
     return DATA_DIR.joinpath(*parts)
+
+
+def seed_path(*parts: str) -> Path:
+    """seed/ 下的相对路径（跟随仓库更新，只读）。"""
+    return SEED_DIR.joinpath(*parts)
 
 
 def zzz_path(*parts: str) -> Path:

@@ -1,0 +1,2659 @@
+{
+ "14164": {
+  "main": "Base ATK",
+  "sub": "Anomaly Mastery",
+  "talents": [
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ },
+ "14163": {
+  "main": "Base ATK",
+  "sub": "CRIT Rate",
+  "talents": [
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ },
+ "14162": {
+  "name": "Crimson Moon Casket",
+  "main": "Base ATK",
+  "sub": "Energy Regen",
+  "talents": [
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ },
+ "14161": {
+  "name": "Crimson Thirst",
+  "main": "Base DEF",
+  "sub": "DEF",
+  "talents": [
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ },
+ "14159": {
+  "name": "Knight's Extolment",
+  "main": "Base ATK",
+  "sub": "CRIT DMG",
+  "talents": [
+   {
+    "name": "Knight's Rite",
+    "desc": "When the equipper's Basic Attack or EX Special Attack's heavy attack hits an enemy, they gain 1 stack of Battle Edge, increasing CRIT DMG by 32% for 25s. Battle Edge can stack up to 2 times, and each skill type can provide up to 1 stack. Repeated triggers refresh the duration of all Battle Edge.\nAt 2 stacks of Battle Edge, the equipper gains Bonechill: Their DMG ignores 20% of the target's Ice RES."
+   },
+   {
+    "name": "Knight's Rite",
+    "desc": "When the equipper's Basic Attack or EX Special Attack's heavy attack hits an enemy, they gain 1 stack of Battle Edge, increasing CRIT DMG by 36.8% for 25s. Battle Edge can stack up to 2 times, and each skill type can provide up to 1 stack. Repeated triggers refresh the duration of all Battle Edge.\nAt 2 stacks of Battle Edge, the equipper gains Bonechill: Their DMG ignores 23% of the target's Ice RES."
+   },
+   {
+    "name": "Knight's Rite",
+    "desc": "When the equipper's Basic Attack or EX Special Attack's heavy attack hits an enemy, they gain 1 stack of Battle Edge, increasing CRIT DMG by 41.6% for 25s. Battle Edge can stack up to 2 times, and each skill type can provide up to 1 stack. Repeated triggers refresh the duration of all Battle Edge.\nAt 2 stacks of Battle Edge, the equipper gains Bonechill: Their DMG ignores 26% of the target's Ice RES."
+   },
+   {
+    "name": "Knight's Rite",
+    "desc": "When the equipper's Basic Attack or EX Special Attack's heavy attack hits an enemy, they gain 1 stack of Battle Edge, increasing CRIT DMG by 46.4% for 25s. Battle Edge can stack up to 2 times, and each skill type can provide up to 1 stack. Repeated triggers refresh the duration of all Battle Edge.\nAt 2 stacks of Battle Edge, the equipper gains Bonechill: Their DMG ignores 29% of the target's Ice RES."
+   },
+   {
+    "name": "Knight's Rite",
+    "desc": "When the equipper's Basic Attack or EX Special Attack's heavy attack hits an enemy, they gain 1 stack of Battle Edge, increasing CRIT DMG by 51.2% for 25s. Battle Edge can stack up to 2 times, and each skill type can provide up to 1 stack. Repeated triggers refresh the duration of all Battle Edge.\nAt 2 stacks of Battle Edge, the equipper gains Bonechill: Their DMG ignores 32% of the target's Ice RES."
+   }
+  ]
+ },
+ "14158": {
+  "name": "Ode of Resurrected Wings",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Paradise Lost",
+    "desc": "Increases Anomaly Proficiency by 96. When the equipper triggers a Refringe reaction, they gain 20% increased Anomaly DMG, and all squad members gain 30% increased DMG dealt. Both effects last 30s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Paradise Lost",
+    "desc": "Increases Anomaly Proficiency by 105. When the equipper triggers a Refringe reaction, they gain 23% increased Anomaly DMG, and all squad members gain 34.5% increased DMG dealt. Both effects last 30s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Paradise Lost",
+    "desc": "Increases Anomaly Proficiency by 115. When the equipper triggers a Refringe reaction, they gain 26% increased Anomaly DMG, and all squad members gain 39% increased DMG dealt. Both effects last 30s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Paradise Lost",
+    "desc": "Increases Anomaly Proficiency by 125. When the equipper triggers a Refringe reaction, they gain 29% increased Anomaly DMG, and all squad members gain 43.5% increased DMG dealt. Both effects last 30s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Paradise Lost",
+    "desc": "Increases Anomaly Proficiency by 135. When the equipper triggers a Refringe reaction, they gain 32% increased Anomaly DMG, and all squad members gain 48% increased DMG dealt. Both effects last 30s. Repeated triggers reset the duration."
+   }
+  ]
+ },
+ "14157": {
+  "name": "Chief Sidekick",
+  "main": "Base ATK",
+  "sub": "CRIT Rate",
+  "talents": [
+   {
+    "name": "The Genius's Follower",
+    "desc": "The equipper's Impact increases by 30, and their DMG ignores 15% of the target's Fire RES. When the equipper is not the active character, Energy Regen increases by 0.4/s. When the equipper deals Fire DMG with an EX Special Attack, all Agents' DMG increases by 12.5% for 30s, stacking up to 2 times. Repeated triggers reset the duration. This effect can trigger once per skill. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "The Genius's Follower",
+    "desc": "The equipper's Impact increases by 33, and their DMG ignores 17.2% of the target's Fire RES. When the equipper is not the active character, Energy Regen increases by 0.46/s. When the equipper deals Fire DMG with an EX Special Attack, all Agents' DMG increases by 14.4% for 30s, stacking up to 2 times. Repeated triggers reset the duration. This effect can trigger once per skill. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "The Genius's Follower",
+    "desc": "The equipper's Impact increases by 36, and their DMG ignores 19.5% of the target's Fire RES. When the equipper is not the active character, Energy Regen increases by 0.52/s. When the equipper deals Fire DMG with an EX Special Attack, all Agents' DMG increases by 16.3% for 30s, stacking up to 2 times. Repeated triggers reset the duration. This effect can trigger once per skill. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "The Genius's Follower",
+    "desc": "The equipper's Impact increases by 39, and their DMG ignores 21.7% of the target's Fire RES. When the equipper is not the active character, Energy Regen increases by 0.58/s. When the equipper deals Fire DMG with an EX Special Attack, all Agents' DMG increases by 18.1% for 30s, stacking up to 2 times. Repeated triggers reset the duration. This effect can trigger once per skill. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "The Genius's Follower",
+    "desc": "The equipper's Impact increases by 42, and their DMG ignores 24% of the target's Fire RES. When the equipper is not the active character, Energy Regen increases by 0.64/s. When the equipper deals Fire DMG with an EX Special Attack, all Agents' DMG increases by 20% for 30s, stacking up to 2 times. Repeated triggers reset the duration. This effect can trigger once per skill. Only one instance of this effect can exist in the same squad."
+   }
+  ]
+ },
+ "14156": {
+  "name": "Joyau Dore",
+  "main": "Base ATK",
+  "sub": "Energy Regen",
+  "talents": [
+   {
+    "name": "Flawless Etiquette",
+    "desc": "The equipper's Anomaly Proficiency increases by 70. When the equipper's EX Special Attack deals Wind DMG, the DMG dealt by their Vortex and Windswept increases by 7% for 40s, stacking up to 2 times. Repeated triggers reset the duration. This effect can trigger once per skill use. At 2 stacks, all squad members gain 60 Anomaly Proficiency. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Flawless Etiquette",
+    "desc": "The equipper's Anomaly Proficiency increases by 80. When the equipper's EX Special Attack deals Wind DMG, the DMG dealt by their Vortex and Windswept increases by 8% for 40s, stacking up to 2 times. Repeated triggers reset the duration. This effect can trigger once per skill use. At 2 stacks, all squad members gain 69 Anomaly Proficiency. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Flawless Etiquette",
+    "desc": "The equipper's Anomaly Proficiency increases by 90. When the equipper's EX Special Attack deals Wind DMG, the DMG dealt by their Vortex and Windswept increases by 9% for 40s, stacking up to 2 times. Repeated triggers reset the duration. This effect can trigger once per skill use. At 2 stacks, all squad members gain 78 Anomaly Proficiency. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Flawless Etiquette",
+    "desc": "The equipper's Anomaly Proficiency increases by 100. When the equipper's EX Special Attack deals Wind DMG, the DMG dealt by their Vortex and Windswept increases by 10% for 40s, stacking up to 2 times. Repeated triggers reset the duration. This effect can trigger once per skill use. At 2 stacks, all squad members gain 87 Anomaly Proficiency. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Flawless Etiquette",
+    "desc": "The equipper's Anomaly Proficiency increases by 110. When the equipper's EX Special Attack deals Wind DMG, the DMG dealt by their Vortex and Windswept increases by 11% for 40s, stacking up to 2 times. Repeated triggers reset the duration. This effect can trigger once per skill use. At 2 stacks, all squad members gain 96 Anomaly Proficiency. Only one instance of this effect can exist in the same squad."
+   }
+  ]
+ },
+ "14155": {
+  "name": "Sol Exuvia",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Eclipse Effect",
+    "desc": "CRIT Rate increases by 20%. When the equipper is Pyrois, using an Ultimate grants the Eclipse effect. When the Eclipse effect is active, DMG dealt by the equipper ignores 16% of Ether RES, lasting 45s. Repeated triggers reset the duration. When the equipper enters combat, they gain the Eclipse effect."
+   },
+   {
+    "name": "Eclipse Effect",
+    "desc": "CRIT Rate increases by 20%. When the equipper is Pyrois, using an Ultimate grants the Eclipse effect. When the Eclipse effect is active, DMG dealt by the equipper ignores 17.5% of Ether RES, lasting 45s. Repeated triggers reset the duration. When the equipper enters combat, they gain the Eclipse effect."
+   },
+   {
+    "name": "Eclipse Effect",
+    "desc": "CRIT Rate increases by 20%. When the equipper is Pyrois, using an Ultimate grants the Eclipse effect. When the Eclipse effect is active, DMG dealt by the equipper ignores 19% of Ether RES, lasting 45s. Repeated triggers reset the duration. When the equipper enters combat, they gain the Eclipse effect."
+   },
+   {
+    "name": "Eclipse Effect",
+    "desc": "CRIT Rate increases by 20%. When the equipper is Pyrois, using an Ultimate grants the Eclipse effect. When the Eclipse effect is active, DMG dealt by the equipper ignores 20.5% of Ether RES, lasting 45s. Repeated triggers reset the duration. When the equipper enters combat, they gain the Eclipse effect."
+   },
+   {
+    "name": "Eclipse Effect",
+    "desc": "CRIT Rate increases by 20%. When the equipper is Pyrois, using an Ultimate grants the Eclipse effect. When the Eclipse effect is active, DMG dealt by the equipper ignores 22% of Ether RES, lasting 45s. Repeated triggers reset the duration. When the equipper enters combat, they gain the Eclipse effect."
+   }
+  ]
+ },
+ "14154": {
+  "name": "Frostfall Sickle",
+  "main": "Base ATK",
+  "sub": "Anomaly Mastery",
+  "talents": [
+   {
+    "name": "Terminating Verdict",
+    "desc": "When an Ice attribute equipper uses a Special Attack or EX Special Attack, their Ice DMG is increased by 20% for 40s, stacking up to 2 times, once per use of a skill. Repeated triggers refresh the duration. At 2 stacks, the equipper's Abloom DMG dealt is increased by an additional 35%."
+   },
+   {
+    "name": "Terminating Verdict",
+    "desc": "When an Ice attribute equipper uses a Special Attack or EX Special Attack, their Ice DMG is increased by 23% for 40s, stacking up to 2 times, once per use of a skill. Repeated triggers refresh the duration. At 2 stacks, the equipper's Abloom DMG dealt is increased by an additional 38.5%."
+   },
+   {
+    "name": "Terminating Verdict",
+    "desc": "When an Ice attribute equipper uses a Special Attack or EX Special Attack, their Ice DMG is increased by 26% for 40s, stacking up to 2 times, once per use of a skill. Repeated triggers refresh the duration. At 2 stacks, the equipper's Abloom DMG dealt is increased by an additional 42%."
+   },
+   {
+    "name": "Terminating Verdict",
+    "desc": "When an Ice attribute equipper uses a Special Attack or EX Special Attack, their Ice DMG is increased by 29% for 40s, stacking up to 2 times, once per use of a skill. Repeated triggers refresh the duration. At 2 stacks, the equipper's Abloom DMG dealt is increased by an additional 45.5%."
+   },
+   {
+    "name": "Terminating Verdict",
+    "desc": "When an Ice attribute equipper uses a Special Attack or EX Special Attack, their Ice DMG is increased by 32% for 40s, stacking up to 2 times, once per use of a skill. Repeated triggers refresh the duration. At 2 stacks, the equipper's Abloom DMG dealt is increased by an additional 50%."
+   }
+  ]
+ },
+ "14153": {
+  "name": "Starlight Rider Faceplate",
+  "main": "Base ATK",
+  "sub": "HP",
+  "talents": [
+   {
+    "name": "Knight's Morale",
+    "desc": "Increases CRIT Rate by 20%. When the equipper launches a Special Attack, their Physical Sheer DMG increases by 10%, stacking up to 2 times and lasting 30s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Knight's Morale",
+    "desc": "Increases CRIT Rate by 23%. When the equipper launches a Special Attack, their Physical Sheer DMG increases by 11.5%, stacking up to 2 times and lasting 30s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Knight's Morale",
+    "desc": "Increases CRIT Rate by 26%. When the equipper launches a Special Attack, their Physical Sheer DMG increases by 13%, stacking up to 2 times and lasting 30s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Knight's Morale",
+    "desc": "Increases CRIT Rate by 29%. When the equipper launches a Special Attack, their Physical Sheer DMG increases by 14.5%, stacking up to 2 times and lasting 30s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Knight's Morale",
+    "desc": "Increases CRIT Rate by 32%. When the equipper launches a Special Attack, their Physical Sheer DMG increases by 16%, stacking up to 2 times and lasting 30s. Repeated triggers reset the duration."
+   }
+  ]
+ },
+ "14152": {
+  "name": "Serpentine Seeker",
+  "main": "Base ATK",
+  "sub": "Energy Regen",
+  "talents": [
+   {
+    "name": "Bioengineered Venom",
+    "desc": "CRIT Rate increases by 25%. When the equipper consumes at least 20 Energy in a single instance, every 20 Energy consumed grants 3s of a buff: when dealing Electric DMG, ignore 28% of the target's DEF. Repeated triggers extend the duration, up to a maximum of 30s. When entering combat, gain 10s of this buff. While the equipper is not the active character, the duration no longer decreases."
+   },
+   {
+    "name": "Bioengineered Venom",
+    "desc": "CRIT Rate increases by 28.8%. When the equipper consumes at least 20 Energy in a single instance, every 20 Energy consumed grants 3s of a buff: when dealing Electric DMG, ignore 31.5% of the target's DEF. Repeated triggers extend the duration, up to a maximum of 30s. When entering combat, gain 10s of this buff. While the equipper is not the active character, the duration no longer decreases."
+   },
+   {
+    "name": "Bioengineered Venom",
+    "desc": "CRIT Rate increases by 32.5%. When the equipper consumes at least 20 Energy in a single instance, every 20 Energy consumed grants 3s of a buff: when dealing Electric DMG, ignore 35% of the target's DEF. Repeated triggers extend the duration, up to a maximum of 30s. When entering combat, gain 10s of this buff. While the equipper is not the active character, the duration no longer decreases."
+   },
+   {
+    "name": "Bioengineered Venom",
+    "desc": "CRIT Rate increases by 36.3%. When the equipper consumes at least 20 Energy in a single instance, every 20 Energy consumed grants 3s of a buff: when dealing Electric DMG, ignore 38.5% of the target's DEF. Repeated triggers extend the duration, up to a maximum of 30s. When entering combat, gain 10s of this buff. While the equipper is not the active character, the duration no longer decreases."
+   },
+   {
+    "name": "Bioengineered Venom",
+    "desc": "CRIT Rate increases by 40%. When the equipper consumes at least 20 Energy in a single instance, every 20 Energy consumed grants 3s of a buff: when dealing Electric DMG, ignore 42% of the target's DEF. Repeated triggers extend the duration, up to a maximum of 30s. When entering combat, gain 10s of this buff. While the equipper is not the active character, the duration no longer decreases."
+   }
+  ]
+ },
+ "14151": {
+  "name": "Neon Fantasies",
+  "main": "Base ATK",
+  "sub": "Anomaly Mastery",
+  "talents": [
+   {
+    "name": "Disco Demon",
+    "desc": "The equipper's Anomaly Proficiency increases by 90. When the equipper's EX Special Attack or Basic Attack deals Ether DMG, all squad members' DMG dealt increases by 15% for 40s, stacking up to 2 times. This effect can trigger once per use of a skill and repeated triggers reset the duration. With 2 stacks, the equipper's Anomaly Proficiency increases by an additional 60. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Disco Demon",
+    "desc": "The equipper's Anomaly Proficiency increases by 103. When the equipper's EX Special Attack or Basic Attack deals Ether DMG, all squad members' DMG dealt increases by 17% for 40s, stacking up to 2 times. This effect can trigger once per use of a skill and repeated triggers reset the duration. With 2 stacks, the equipper's Anomaly Proficiency increases by an additional 69. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Disco Demon",
+    "desc": "The equipper's Anomaly Proficiency increases by 117. When the equipper's EX Special Attack or Basic Attack deals Ether DMG, all squad members' DMG dealt increases by 19.5% for 40s, stacking up to 2 times. This effect can trigger once per use of a skill and repeated triggers reset the duration. With 2 stacks, the equipper's Anomaly Proficiency increases by an additional 78. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Disco Demon",
+    "desc": "The equipper's Anomaly Proficiency increases by 130. When the equipper's EX Special Attack or Basic Attack deals Ether DMG, all squad members' DMG dealt increases by 21% for 40s, stacking up to 2 times. This effect can trigger once per use of a skill and repeated triggers reset the duration. With 2 stacks, the equipper's Anomaly Proficiency increases by an additional 87. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Disco Demon",
+    "desc": "The equipper's Anomaly Proficiency increases by 145. When the equipper's EX Special Attack or Basic Attack deals Ether DMG, all squad members' DMG dealt increases by 24% for 40s, stacking up to 2 times. This effect can trigger once per use of a skill and repeated triggers reset the duration. With 2 stacks, the equipper's Anomaly Proficiency increases by an additional 96. Only one instance of this effect can exist in the same squad."
+   }
+  ]
+ },
+ "14150": {
+  "name": "Angel in the Shell",
+  "main": "Base ATK",
+  "sub": "Anomaly Mastery",
+  "talents": [
+   {
+    "name": "Energetic Strike",
+    "desc": "Increases the equipper's Anomaly Proficiency by 90. When the equipper is an Ether character, and comes on-field or uses a Special Attack or EX Special Attack, they gain a buff: DMG dealt to enemies afflicted with Attribute Anomalies increases by 20%, and all Attribute Anomaly DMG and Disorder DMG they trigger increases by 10%, lasting 15s. Repeated triggers reset the duration, and the effect is removed when switching off-field."
+   },
+   {
+    "name": "Energetic Strike",
+    "desc": "Increases the equipper's Anomaly Proficiency by 103. When the equipper is an Ether character, and comes on-field or uses a Special Attack or EX Special Attack, they gain a buff: DMG dealt to enemies afflicted with Attribute Anomalies increases by 23%, and all Attribute Anomaly DMG and Disorder DMG they trigger increases by 11.5%, lasting 15s. Repeated triggers reset the duration, and the effect is removed when switching off-field."
+   },
+   {
+    "name": "Energetic Strike",
+    "desc": "Increases the equipper's Anomaly Proficiency by 117. When the equipper is an Ether character, and comes on-field or uses a Special Attack or EX Special Attack, they gain a buff: DMG dealt to enemies afflicted with Attribute Anomalies increases by 26%, and all Attribute Anomaly DMG and Disorder DMG they trigger increases by 13%, lasting 15s. Repeated triggers reset the duration, and the effect is removed when switching off-field."
+   },
+   {
+    "name": "Energetic Strike",
+    "desc": "Increases the equipper's Anomaly Proficiency by 130. When the equipper is an Ether character, and comes on-field or uses a Special Attack or EX Special Attack, they gain a buff: DMG dealt to enemies afflicted with Attribute Anomalies increases by 29%, and all Attribute Anomaly DMG and Disorder DMG they trigger increases by 14.5%, lasting 15s. Repeated triggers reset the duration, and the effect is removed when switching off-field."
+   },
+   {
+    "name": "Energetic Strike",
+    "desc": "Increases the equipper's Anomaly Proficiency by 144. When the equipper is an Ether character, and comes on-field or uses a Special Attack or EX Special Attack, they gain a buff: DMG dealt to enemies afflicted with Attribute Anomalies increases by 32%, and all Attribute Anomaly DMG and Disorder DMG they trigger increases by 16%, lasting 15s. Repeated triggers reset the duration, and the effect is removed when switching off-field."
+   }
+  ]
+ },
+ "14149": {
+  "name": "Thoughtbop",
+  "main": "Base ATK",
+  "sub": "Energy Regen",
+  "talents": [
+   {
+    "name": "Decibel Monologue",
+    "desc": "While not the active character, the equipper's Energy Regen increases by 0.6/s. When the equipper uses an EX Special Attack and deals Physical DMG, all squad members gain a buff that increases DMG dealt by 12.5% for 40s, stacking up to 2 times. Repeated triggers reset the duration. At 2 stacks, characters gain an additional 10% ATK. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Decibel Monologue",
+    "desc": "While not the active character, the equipper's Energy Regen increases by 0.69/s. When the equipper uses an EX Special Attack and deals Physical DMG, all squad members gain a buff that increases DMG dealt by 14.3% for 40s, stacking up to 2 times. Repeated triggers reset the duration. At 2 stacks, characters gain an additional 11.5% ATK. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Decibel Monologue",
+    "desc": "While not the active character, the equipper's Energy Regen increases by 0.78/s. When the equipper uses an EX Special Attack and deals Physical DMG, all squad members gain a buff that increases DMG dealt by 16.1% for 40s, stacking up to 2 times. Repeated triggers reset the duration. At 2 stacks, characters gain an additional 13% ATK. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Decibel Monologue",
+    "desc": "While not the active character, the equipper's Energy Regen increases by 0.87/s. When the equipper uses an EX Special Attack and deals Physical DMG, all squad members gain a buff that increases DMG dealt by 17.9% for 40s, stacking up to 2 times. Repeated triggers reset the duration. At 2 stacks, characters gain an additional 14.5% ATK. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Decibel Monologue",
+    "desc": "While not the active character, the equipper's Energy Regen increases by 0.96/s. When the equipper uses an EX Special Attack and deals Physical DMG, all squad members gain a buff that increases DMG dealt by 20% for 40s, stacking up to 2 times. Repeated triggers reset the duration. At 2 stacks, characters gain an additional 16% ATK. Only one instance of this effect can exist in the same squad."
+   }
+  ]
+ },
+ "14148": {
+  "name": "Yesterday Calls",
+  "main": "Base ATK",
+  "sub": "CRIT Rate",
+  "talents": [
+   {
+    "name": "24/7",
+    "desc": "While off-field, the equipper's Energy Regen increases by 1.5/s. When the equipper deals Physical DMG with an EX Special Attack, the Daze dealt by the equipper's attacks increases by 9% for 10s, stacking up to 3 times. At 3 stacks, all squad members gain 30% additional CRIT DMG for 40s. Repeated triggers reset the duration. Only one instance of this CRIT DMG boost effect can exist in the same squad."
+   },
+   {
+    "name": "24/7",
+    "desc": "While off-field, the equipper's Energy Regen increases by 1.7/s. When the equipper deals Physical DMG with an EX Special Attack, the Daze dealt by the equipper's attacks increases by 10.3% for 10s, stacking up to 3 times. At 3 stacks, all squad members gain 34.5% additional CRIT DMG for 40s. Repeated triggers reset the duration. Only one instance of this CRIT DMG boost effect can exist in the same squad."
+   },
+   {
+    "name": "24/7",
+    "desc": "While off-field, the equipper's Energy Regen increases by 1.9/s. When the equipper deals Physical DMG with an EX Special Attack, the Daze dealt by the equipper's attacks increases by 11.7% for 10s, stacking up to 3 times. At 3 stacks, all squad members gain 39% additional CRIT DMG for 40s. Repeated triggers reset the duration. Only one instance of this CRIT DMG boost effect can exist in the same squad."
+   },
+   {
+    "name": "24/7",
+    "desc": "While off-field, the equipper's Energy Regen increases by 2.1/s. When the equipper deals Physical DMG with an EX Special Attack, the Daze dealt by the equipper's attacks increases by 13% for 10s, stacking up to 3 times. At 3 stacks, all squad members gain 43.5% additional CRIT DMG for 40s. Repeated triggers reset the duration. Only one instance of this CRIT DMG boost effect can exist in the same squad."
+   },
+   {
+    "name": "24/7",
+    "desc": "While off-field, the equipper's Energy Regen increases by 2.3/s. When the equipper deals Physical DMG with an EX Special Attack, the Daze dealt by the equipper's attacks increases by 14.5% for 10s, stacking up to 3 times. At 3 stacks, all squad members gain 48% additional CRIT DMG for 40s. Repeated triggers reset the duration. Only one instance of this CRIT DMG boost effect can exist in the same squad."
+   }
+  ]
+ },
+ "14147": {
+  "name": "Wrathful Vajra",
+  "main": "Base ATK",
+  "sub": "HP",
+  "talents": [
+   {
+    "name": "Purging Karmic Fire",
+    "desc": "CRIT Rate increases by 20%. When the equipper launches an EX Special Attack, their Fire Sheer DMG increases by 9%, stacking up to 2 times and lasting 20s. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Purging Karmic Fire",
+    "desc": "CRIT Rate increases by 23%. When the equipper launches an EX Special Attack, their Fire Sheer DMG increases by 10.35%, stacking up to 2 times and lasting 20s. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Purging Karmic Fire",
+    "desc": "CRIT Rate increases by 26%. When the equipper launches an EX Special Attack, their Fire Sheer DMG increases by 11.7%, stacking up to 2 times and lasting 20s. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Purging Karmic Fire",
+    "desc": "CRIT Rate increases by 29%. When the equipper launches an EX Special Attack, their Fire Sheer DMG increases by 13.05%, stacking up to 2 times and lasting 20s. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Purging Karmic Fire",
+    "desc": "CRIT Rate increases by 32%. When the equipper launches an EX Special Attack, their Fire Sheer DMG increases by 14.4%, stacking up to 2 times and lasting 20s. The duration of each stack is calculated separately."
+   }
+  ]
+ },
+ "14146": {
+  "name": "Cordis Germina",
+  "main": "Base ATK",
+  "sub": "CRIT Rate",
+  "talents": [
+   {
+    "name": "Sprouting Core",
+    "desc": "Increases CRIT Rate by 15%. When the equipper deals DMG with a Basic Attack or EX Special Attack, they gain 1 stack of a buff. Each stack increases the equipper's Electric DMG by 12.5%, up to 2 stacks. Each stack lasts 40s. The duration of each stack is calculated separately. Can trigger once per use of a skill. At 2 stacks, the wearer's Basic Attack and Ultimate DMG ignore 20% of enemy DEF."
+   },
+   {
+    "name": "Sprouting Core",
+    "desc": "Increases CRIT Rate by 17%. When the equipper deals DMG with a Basic Attack or EX Special Attack, they gain 1 stack of a buff. Each stack increases the equipper's Electric DMG by 14.5%, up to 2 stacks. Each stack lasts 40s. The duration of each stack is calculated separately. Can trigger once per use of a skill. At 2 stacks, the wearer's Basic Attack and Ultimate DMG ignore 23% of enemy DEF."
+   },
+   {
+    "name": "Sprouting Core",
+    "desc": "Increases CRIT Rate by 19%. When the equipper deals DMG with a Basic Attack or EX Special Attack, they gain 1 stack of a buff. Each stack increases the equipper's Electric DMG by 16.5%, up to 2 stacks. Each stack lasts 40s. The duration of each stack is calculated separately. Can trigger once per use of a skill. At 2 stacks, the wearer's Basic Attack and Ultimate DMG ignore 26% of enemy DEF."
+   },
+   {
+    "name": "Sprouting Core",
+    "desc": "Increases CRIT Rate by 21%. When the equipper deals DMG with a Basic Attack or EX Special Attack, they gain 1 stack of a buff. Each stack increases the equipper's Electric DMG by 18.5%, up to 2 stacks. Each stack lasts 40s. The duration of each stack is calculated separately. Can trigger once per use of a skill. At 2 stacks, the wearer's Basic Attack and Ultimate DMG ignore 29% of enemy DEF."
+   },
+   {
+    "name": "Sprouting Core",
+    "desc": "Increases CRIT Rate by 23%. When the equipper deals DMG with a Basic Attack or EX Special Attack, they gain 1 stack of a buff. Each stack increases the equipper's Electric DMG by 20%, up to 2 stacks. Each stack lasts 40s. The duration of each stack is calculated separately. Can trigger once per use of a skill. At 2 stacks, the wearer's Basic Attack and Ultimate DMG ignore 32% of enemy DEF."
+   }
+  ]
+ },
+ "14145": {
+  "name": "Dreamlit Hearth",
+  "main": "Base ATK",
+  "sub": "HP",
+  "talents": [
+   {
+    "name": "Moontide Epic",
+    "desc": "The equipper's Energy Regen increases by 0.4/s. When the equipper activates Ether Veil or extends its duration, all squad members gain 25% increased DMG and 15% increased Max HP for 45s. Repeated triggers reset the duration. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Moontide Epic",
+    "desc": "The equipper's Energy Regen increases by 0.46/s. When the equipper activates Ether Veil or extends its duration, all squad members gain 28.8% increased DMG and 17.3% increased Max HP for 45s. Repeated triggers reset the duration. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Moontide Epic",
+    "desc": "The equipper's Energy Regen increases by 0.52/s. When the equipper activates Ether Veil or extends its duration, all squad members gain 32.5% increased DMG and 19.5% increased Max HP for 45s. Repeated triggers reset the duration. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Moontide Epic",
+    "desc": "The equipper's Energy Regen increases by 0.58/s. When the equipper activates Ether Veil or extends its duration, all squad members gain 36.3% increased DMG and 21.8% increased Max HP for 45s. Repeated triggers reset the duration. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Moontide Epic",
+    "desc": "The equipper's Energy Regen increases by 0.64/s. When the equipper activates Ether Veil or extends its duration, all squad members gain 40% increased DMG and 24% increased Max HP for 45s. Repeated triggers reset the duration. Only one instance of this effect can exist in the same squad."
+   }
+  ]
+ },
+ "14143": {
+  "name": "Cloudcleave Radiance",
+  "main": "Base ATK",
+  "sub": "CRIT DMG",
+  "talents": [
+   {
+    "name": "Jade Soul, Frozen Heart",
+    "desc": "The equipper's DMG ignores 20% of the target's Physical RES. When the equipper activates an Ether Veil, the equipper's DMG increases by 25% and CRIT DMG increases by 25% for 40s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Jade Soul, Frozen Heart",
+    "desc": "The equipper's DMG ignores 22% of the target's Physical RES. When the equipper activates an Ether Veil, the equipper's DMG increases by 28.7% and CRIT DMG increases by 28.7% for 40s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Jade Soul, Frozen Heart",
+    "desc": "The equipper's DMG ignores 24% of the target's Physical RES. When the equipper activates an Ether Veil, the equipper's DMG increases by 32.5% and CRIT DMG increases by 32.5% for 40s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Jade Soul, Frozen Heart",
+    "desc": "The equipper's DMG ignores 26% of the target's Physical RES. When the equipper activates an Ether Veil, the equipper's DMG increases by 36.2% and CRIT DMG increases by 36.2% for 40s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Jade Soul, Frozen Heart",
+    "desc": "The equipper's DMG ignores 28% of the target's Physical RES. When the equipper activates an Ether Veil, the equipper's DMG increases by 40% and CRIT DMG increases by 40% for 40s. Repeated triggers reset the duration."
+   }
+  ]
+ },
+ "14141": {
+  "name": "Metanukimorphosis",
+  "main": "Base ATK",
+  "sub": "Energy Regen",
+  "talents": [
+   {
+    "name": "Exquisitely Ingenious",
+    "desc": "When the equipper's EX Special Attack or Ultimate deals Physical DMG, their Anomaly Mastery increases by 30 for 40s. When the equipper's Aftershock hits an enemy, all squad members' Anomaly Proficiency increases by 60 for 40s. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Exquisitely Ingenious",
+    "desc": "When the equipper's EX Special Attack or Ultimate deals Physical DMG, their Anomaly Mastery increases by 34 for 40s. When the equipper's Aftershock hits an enemy, all squad members' Anomaly Proficiency increases by 69 for 40s. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Exquisitely Ingenious",
+    "desc": "When the equipper's EX Special Attack or Ultimate deals Physical DMG, their Anomaly Mastery increases by 39 for 40s. When the equipper's Aftershock hits an enemy, all squad members' Anomaly Proficiency increases by 78 for 40s. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Exquisitely Ingenious",
+    "desc": "When the equipper's EX Special Attack or Ultimate deals Physical DMG, their Anomaly Mastery increases by 43 for 40s. When the equipper's Aftershock hits an enemy, all squad members' Anomaly Proficiency increases by 87 for 40s. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Exquisitely Ingenious",
+    "desc": "When the equipper's EX Special Attack or Ultimate deals Physical DMG, their Anomaly Mastery increases by 48 for 40s. When the equipper's Aftershock hits an enemy, all squad members' Anomaly Proficiency increases by 96 for 40s. Only one instance of this effect can exist in the same squad."
+   }
+  ]
+ },
+ "14140": {
+  "name": "Practiced Perfection",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Gift of Stardust",
+    "desc": "The equipper's Anomaly Mastery increases by 60. When inflicting Assault, the equipper's Physical DMG increases by 20% for 20s, stacking up to 2 times. Repeated triggers reset the duration. When the equipper enters combat, immediately gain 2 stacks."
+   },
+   {
+    "name": "Gift of Stardust",
+    "desc": "The equipper's Anomaly Mastery increases by 69. When inflicting Assault, the equipper's Physical DMG increases by 23% for 20s, stacking up to 2 times. Repeated triggers reset the duration. When the equipper enters combat, immediately gain 2 stacks."
+   },
+   {
+    "name": "Gift of Stardust",
+    "desc": "The equipper's Anomaly Mastery increases by 78. When inflicting Assault, the equipper's Physical DMG increases by 26% for 20s, stacking up to 2 times. Repeated triggers reset the duration. When the equipper enters combat, immediately gain 2 stacks."
+   },
+   {
+    "name": "Gift of Stardust",
+    "desc": "The equipper's Anomaly Mastery increases by 87. When inflicting Assault, the equipper's Physical DMG increases by 29% for 20s, stacking up to 2 times. Repeated triggers reset the duration. When the equipper enters combat, immediately gain 2 stacks."
+   },
+   {
+    "name": "Gift of Stardust",
+    "desc": "The equipper's Anomaly Mastery increases by 96. When inflicting Assault, the equipper's Physical DMG increases by 32% for 20s, stacking up to 2 times. Repeated triggers reset the duration. When the equipper enters combat, immediately gain 2 stacks."
+   }
+  ]
+ },
+ "14139": {
+  "name": "Roaring Fur-nace",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Tiger Spirit Rising",
+    "desc": "The Daze dealt by the equipper's EX Special Attack, Chain Attack, and Ultimate increases by 28%.\nWhen using a Chain Attack or Ultimate to deal Fire DMG, the DMG dealt by all squad members increases by 10%, stacking up to 2 times and lasting 30s. The duration of each stack is calculated separately. Triggers once per use of a skill. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Tiger Spirit Rising",
+    "desc": "The Daze dealt by the equipper's EX Special Attack, Chain Attack, and Ultimate increases by 32.2%.\nWhen using a Chain Attack or Ultimate to deal Fire DMG, the DMG dealt by all squad members increases by 11.5%, stacking up to 2 times and lasting 30s. The duration of each stack is calculated separately. Triggers once per use of a skill. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Tiger Spirit Rising",
+    "desc": "The Daze dealt by the equipper's EX Special Attack, Chain Attack, and Ultimate increases by 36.4%.\nWhen using a Chain Attack or Ultimate to deal Fire DMG, the DMG dealt by all squad members increases by 13%, stacking up to 2 times and lasting 30s. The duration of each stack is calculated separately. Triggers once per use of a skill. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Tiger Spirit Rising",
+    "desc": "The Daze dealt by the equipper's EX Special Attack, Chain Attack, and Ultimate increases by 40.6%.\nWhen using a Chain Attack or Ultimate to deal Fire DMG, the DMG dealt by all squad members increases by 14.5%, stacking up to 2 times and lasting 30s. The duration of each stack is calculated separately. Triggers once per use of a skill. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Tiger Spirit Rising",
+    "desc": "The Daze dealt by the equipper's EX Special Attack, Chain Attack, and Ultimate increases by 44.8%.\nWhen using a Chain Attack or Ultimate to deal Fire DMG, the DMG dealt by all squad members increases by 16%, stacking up to 2 times and lasting 30s. The duration of each stack is calculated separately. Triggers once per use of a skill. Only one instance of this effect can exist in the same squad."
+   }
+  ]
+ },
+ "14138": {
+  "name": "Severed Innocence",
+  "main": "Base ATK",
+  "sub": "CRIT DMG",
+  "talents": [
+   {
+    "name": "Tranquil Blossom",
+    "desc": "CRIT DMG is increased by 30%. When the equipper lands a hit with a Basic Attack, Special Attack, or Aftershock, they gain 1 stack of a buff. Each stack increases the equipper's CRIT DMG by an additional 10%, stacking up to 3 times. The effect lasts for 30s, with each stack's duration calculated separately, and can only be triggered once per use of a skill. With all 3 stacks, the equipper's Electric DMG increases by 20%."
+   },
+   {
+    "name": "Tranquil Blossom",
+    "desc": "CRIT DMG is increased by 34.5%. When the equipper lands a hit with a Basic Attack, Special Attack, or Aftershock, they gain 1 stack of a buff. Each stack increases the equipper's CRIT DMG by an additional 11.5%, stacking up to 3 times. The effect lasts for 30s, with each stack's duration calculated separately, and can only be triggered once per use of a skill. With all 3 stacks, the equipper's Electric DMG increases by 23%."
+   },
+   {
+    "name": "Tranquil Blossom",
+    "desc": "CRIT DMG is increased by 39%. When the equipper lands a hit with a Basic Attack, Special Attack, or Aftershock, they gain 1 stack of a buff. Each stack increases the equipper's CRIT DMG by an additional 13%, stacking up to 3 times. The effect lasts for 30s, with each stack's duration calculated separately, and can only be triggered once per use of a skill. With all 3 stacks, the equipper's Electric DMG increases by 26%."
+   },
+   {
+    "name": "Tranquil Blossom",
+    "desc": "CRIT DMG is increased by 43.5%. When the equipper lands a hit with a Basic Attack, Special Attack, or Aftershock, they gain 1 stack of a buff. Each stack increases the equipper's CRIT DMG by an additional 14.5%, stacking up to 3 times. The effect lasts for 30s, with each stack's duration calculated separately, and can only be triggered once per use of a skill. With all 3 stacks, the equipper's Electric DMG increases by 29%."
+   },
+   {
+    "name": "Tranquil Blossom",
+    "desc": "CRIT DMG is increased by 48%. When the equipper lands a hit with a Basic Attack, Special Attack, or Aftershock, they gain 1 stack of a buff. Each stack increases the equipper's CRIT DMG by an additional 16%, stacking up to 3 times. The effect lasts for 30s, with each stack's duration calculated separately, and can only be triggered once per use of a skill. With all 3 stacks, the equipper's Electric DMG increases by 32%."
+   }
+  ]
+ },
+ "14137": {
+  "name": "Qingming Birdcage",
+  "main": "Base ATK",
+  "sub": "HP",
+  "talents": [
+   {
+    "name": "Cloud Flow",
+    "desc": "CRIT Rate increases by 20%. When the equipper launches an EX Special Attack, the character gains 1 stack of Qingming Companion effect, stacking up to 2 times and lasting 15s. On entering combat, immediately gain 2 stacks. Repeated triggers reset the duration. Each stack of the Qingming Companion effect increases the equipper's Ether DMG by 8%, and increases Ultimate and EX Special Attack Ether Sheer DMG by 10%."
+   },
+   {
+    "name": "Cloud Flow",
+    "desc": "CRIT Rate increases by 23%. When the equipper launches an EX Special Attack, the character gains 1 stack of Qingming Companion effect, stacking up to 2 times and lasting 15s. On entering combat, immediately gain 2 stacks. Repeated triggers reset the duration. Each stack of the Qingming Companion effect increases the equipper's Ether DMG by 9.2%, and increases Ultimate and EX Special Attack Ether Sheer DMG by 11.5%."
+   },
+   {
+    "name": "Cloud Flow",
+    "desc": "CRIT Rate increases by 26%. When the equipper launches an EX Special Attack, the character gains 1 stack of Qingming Companion effect, stacking up to 2 times and lasting 15s. On entering combat, immediately gain 2 stacks. Repeated triggers reset the duration. Each stack of the Qingming Companion effect increases the equipper's Ether DMG by 10.4%, and increases Ultimate and EX Special Attack Ether Sheer DMG by 13%."
+   },
+   {
+    "name": "Cloud Flow",
+    "desc": "CRIT Rate increases by 29%. When the equipper launches an EX Special Attack, the character gains 1 stack of Qingming Companion effect, stacking up to 2 times and lasting 15s. On entering combat, immediately gain 2 stacks. Repeated triggers reset the duration. Each stack of the Qingming Companion effect increases the equipper's Ether DMG by 11.6%, and increases Ultimate and EX Special Attack Ether Sheer DMG by 14.5%."
+   },
+   {
+    "name": "Cloud Flow",
+    "desc": "CRIT Rate increases by 32%. When the equipper launches an EX Special Attack, the character gains 1 stack of Qingming Companion effect, stacking up to 2 times and lasting 15s. On entering combat, immediately gain 2 stacks. Repeated triggers reset the duration. Each stack of the Qingming Companion effect increases the equipper's Ether DMG by 12.8%, and increases Ultimate and EX Special Attack Ether Sheer DMG by 16%."
+   }
+  ]
+ },
+ "14136": {
+  "name": "Spectral Gaze",
+  "main": "Base ATK",
+  "sub": "CRIT Rate",
+  "talents": [
+   {
+    "name": "Wind Seeker",
+    "desc": "When the equipper's Aftershock hits an enemy, causing Electric DMG, the target's DEF is reduced by 25% for 5s. Passive effects of the same name do not stack. When this effect is triggered, if the equipper is not the active character, they gain 1 stack of Spirit Lock, up to a maximum of 3 stacks. This can trigger only once per use of a skill. Each stack of Spirit Lock increases the equipper's Impact by 4%, lasting 12s. The duration of each stack is calculated separately. At full stacks of Spirit Lock, the equipper's Impact increases by an additional 8%."
+   },
+   {
+    "name": "Wind Seeker",
+    "desc": "When the equipper's Aftershock hits an enemy, causing Electric DMG, the target's DEF is reduced by 28.75% for 5s. Passive effects of the same name do not stack. When this effect is triggered, if the equipper is not the active character, they gain 1 stack of Spirit Lock, up to a maximum of 3 stacks. This can trigger only once per use of a skill. Each stack of Spirit Lock increases the equipper's Impact by 4.6%, lasting 12s. The duration of each stack is calculated separately. At full stacks of Spirit Lock, the equipper's Impact increases by an additional 9.2%."
+   },
+   {
+    "name": "Wind Seeker",
+    "desc": "When the equipper's Aftershock hits an enemy, causing Electric DMG, the target's DEF is reduced by 32.5% for 5s. Passive effects of the same name do not stack. When this effect is triggered, if the equipper is not the active character, they gain 1 stack of Spirit Lock, up to a maximum of 3 stacks. This can trigger only once per use of a skill. Each stack of Spirit Lock increases the equipper's Impact by 5.2%, lasting 12s. The duration of each stack is calculated separately. At full stacks of Spirit Lock, the equipper's Impact increases by an additional 10.4%."
+   },
+   {
+    "name": "Wind Seeker",
+    "desc": "When the equipper's Aftershock hits an enemy, causing Electric DMG, the target's DEF is reduced by 36.25% for 5s. Passive effects of the same name do not stack. When this effect is triggered, if the equipper is not the active character, they gain 1 stack of Spirit Lock, up to a maximum of 3 stacks. This can trigger only once per use of a skill. Each stack of Spirit Lock increases the equipper's Impact by 5.8%, lasting 12s. The duration of each stack is calculated separately. At full stacks of Spirit Lock, the equipper's Impact increases by an additional 11.6%."
+   },
+   {
+    "name": "Wind Seeker",
+    "desc": "When the equipper's Aftershock hits an enemy, causing Electric DMG, the target's DEF is reduced by 40% for 5s. Passive effects of the same name do not stack. When this effect is triggered, if the equipper is not the active character, they gain 1 stack of Spirit Lock, up to a maximum of 3 stacks. This can trigger only once per use of a skill. Each stack of Spirit Lock increases the equipper's Impact by 6.4%, lasting 12s. The duration of each stack is calculated separately. At full stacks of Spirit Lock, the equipper's Impact increases by an additional 12.8%."
+   }
+  ]
+ },
+ "14134": {
+  "name": "Half-Sugar Bunny",
+  "main": "Base ATK",
+  "sub": "HP",
+  "talents": [
+   {
+    "name": "Fragile Sweetness",
+    "desc": "The equipper's Energy Regen increases by 0.46/s. All squad members gain 10% ATK and 10% Max HP. Only one instance of this effect can exist in the same squad. When the equipper activates or extends an Ether Veil, all squad members gain 30% CRIT DMG for 60s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Fragile Sweetness",
+    "desc": "The equipper's Energy Regen increases by 0.53/s. All squad members gain 11.5% ATK and 11.5% Max HP. Only one instance of this effect can exist in the same squad. When the equipper activates or extends an Ether Veil, all squad members gain 34.5% CRIT DMG for 60s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Fragile Sweetness",
+    "desc": "The equipper's Energy Regen increases by 0.6/s. All squad members gain 13% ATK and 13% Max HP. Only one instance of this effect can exist in the same squad. When the equipper activates or extends an Ether Veil, all squad members gain 39% CRIT DMG for 60s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Fragile Sweetness",
+    "desc": "The equipper's Energy Regen increases by 0.67/s. All squad members gain 14.5% ATK and 14.5% Max HP. Only one instance of this effect can exist in the same squad. When the equipper activates or extends an Ether Veil, all squad members gain 43.5% CRIT DMG for 60s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Fragile Sweetness",
+    "desc": "The equipper's Energy Regen increases by 0.74/s. All squad members gain 16% ATK and 16% Max HP. Only one instance of this effect can exist in the same squad. When the equipper activates or extends an Ether Veil, all squad members gain 48% CRIT DMG for 60s. Repeated triggers reset the duration."
+   }
+  ]
+ },
+ "14133": {
+  "name": "Flight of Fancy",
+  "main": "Base ATK",
+  "sub": "Anomaly Proficiency",
+  "talents": [
+   {
+    "name": "Silver Spiked Feathers",
+    "desc": "Increases Anomaly Buildup Rate by 40%. When the equipper deals Ether DMG, their Anomaly Proficiency increases by 20 for 5s, stacking up to 6 times. This effect can trigger once every 0.5s, and repeated triggers reset the duration."
+   },
+   {
+    "name": "Silver Spiked Feathers",
+    "desc": "Increases Anomaly Buildup Rate by 46%. When the equipper deals Ether DMG, their Anomaly Proficiency increases by 23 for 5s, stacking up to 6 times. This effect can trigger once every 0.5s, and repeated triggers reset the duration."
+   },
+   {
+    "name": "Silver Spiked Feathers",
+    "desc": "Increases Anomaly Buildup Rate by 52%. When the equipper deals Ether DMG, their Anomaly Proficiency increases by 26 for 5s, stacking up to 6 times. This effect can trigger once every 0.5s, and repeated triggers reset the duration."
+   },
+   {
+    "name": "Silver Spiked Feathers",
+    "desc": "Increases Anomaly Buildup Rate by 58%. When the equipper deals Ether DMG, their Anomaly Proficiency increases by 29 for 5s, stacking up to 6 times. This effect can trigger once every 0.5s, and repeated triggers reset the duration."
+   },
+   {
+    "name": "Silver Spiked Feathers",
+    "desc": "Increases Anomaly Buildup Rate by 64%. When the equipper deals Ether DMG, their Anomaly Proficiency increases by 32 for 5s, stacking up to 6 times. This effect can trigger once every 0.5s, and repeated triggers reset the duration."
+   }
+  ]
+ },
+ "14132": {
+  "name": "Heartstring Nocturne",
+  "main": "Base ATK",
+  "sub": "CRIT Rate",
+  "talents": [
+   {
+    "name": "String & Melody",
+    "desc": "CRIT DMG increases by 50%. When the equipper enters combat, or activates a Chain Attack or Ultimate, they gain 1 stack of Heartstring. Each stack of Heartstring allows the equipper's Chain Attack and Ultimate to ignore 12.5% of the target's Fire RES, stacking up to 2 times and lasting 30s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "String & Melody",
+    "desc": "CRIT DMG increases by 57.5%. When the equipper enters combat, or activates a Chain Attack or Ultimate, they gain 1 stack of Heartstring. Each stack of Heartstring allows the equipper's Chain Attack and Ultimate to ignore 14.5% of the target's Fire RES, stacking up to 2 times and lasting 30s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "String & Melody",
+    "desc": "CRIT DMG increases by 65%. When the equipper enters combat, or activates a Chain Attack or Ultimate, they gain 1 stack of Heartstring. Each stack of Heartstring allows the equipper's Chain Attack and Ultimate to ignore 16.5% of the target's Fire RES, stacking up to 2 times and lasting 30s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "String & Melody",
+    "desc": "CRIT DMG increases by 72.5%. When the equipper enters combat, or activates a Chain Attack or Ultimate, they gain 1 stack of Heartstring. Each stack of Heartstring allows the equipper's Chain Attack and Ultimate to ignore 18.5% of the target's Fire RES, stacking up to 2 times and lasting 30s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "String & Melody",
+    "desc": "CRIT DMG increases by 80%. When the equipper enters combat, or activates a Chain Attack or Ultimate, they gain 1 stack of Heartstring. Each stack of Heartstring allows the equipper's Chain Attack and Ultimate to ignore 20% of the target's Fire RES, stacking up to 2 times and lasting 30s. Repeated triggers reset the duration."
+   }
+  ]
+ },
+ "14131": {
+  "name": "Elegant Vanity",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Untold Beauty",
+    "desc": "When any squad member enters the field through a Quick Assist, Chain Attack, Defensive Assist, or Evasive Assist, the equipper gains 5 Energy. This effect can trigger once every 5s. When the equipper consumes 25 or more Energy, the DMG dealt by all squad members increases by 10%, stacking up to 2 times, and lasting 20s. Repeated triggers reset the duration. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Untold Beauty",
+    "desc": "When any squad member enters the field through a Quick Assist, Chain Attack, Defensive Assist, or Evasive Assist, the equipper gains 5.5 Energy. This effect can trigger once every 5s. When the equipper consumes 25 or more Energy, the DMG dealt by all squad members increases by 11.5%, stacking up to 2 times, and lasting 20s. Repeated triggers reset the duration. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Untold Beauty",
+    "desc": "When any squad member enters the field through a Quick Assist, Chain Attack, Defensive Assist, or Evasive Assist, the equipper gains 6 Energy. This effect can trigger once every 5s. When the equipper consumes 25 or more Energy, the DMG dealt by all squad members increases by 13%, stacking up to 2 times, and lasting 20s. Repeated triggers reset the duration. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Untold Beauty",
+    "desc": "When any squad member enters the field through a Quick Assist, Chain Attack, Defensive Assist, or Evasive Assist, the equipper gains 6.5 Energy. This effect can trigger once every 5s. When the equipper consumes 25 or more Energy, the DMG dealt by all squad members increases by 14.5%, stacking up to 2 times, and lasting 20s. Repeated triggers reset the duration. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Untold Beauty",
+    "desc": "When any squad member enters the field through a Quick Assist, Chain Attack, Defensive Assist, or Evasive Assist, the equipper gains 7 Energy. This effect can trigger once every 5s. When the equipper consumes 25 or more Energy, the DMG dealt by all squad members increases by 16%, stacking up to 2 times, and lasting 20s. Repeated triggers reset the duration. Only one instance of this effect can exist in the same squad."
+   }
+  ]
+ },
+ "14130": {
+  "name": "Bellicose Blaze",
+  "main": "Base ATK",
+  "sub": "Energy Regen",
+  "talents": [
+   {
+    "name": "Flame-Devouring Choir",
+    "desc": "Increases CRIT Rate by 20%. When the equipper triggers an Aftershock that deals Fire DMG, their attacks ignore 15% of the target's DEF for 8s. Can stack once every 3s, up to 2 stacks. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Flame-Devouring Choir",
+    "desc": "Increases CRIT Rate by 23%. When the equipper triggers an Aftershock that deals Fire DMG, their attacks ignore 17.2% of the target's DEF for 8s. Can stack once every 3s, up to 2 stacks. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Flame-Devouring Choir",
+    "desc": "Increases CRIT Rate by 26%. When the equipper triggers an Aftershock that deals Fire DMG, their attacks ignore 19.5% of the target's DEF for 8s. Can stack once every 3s, up to 2 stacks. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Flame-Devouring Choir",
+    "desc": "Increases CRIT Rate by 29%. When the equipper triggers an Aftershock that deals Fire DMG, their attacks ignore 21.7% of the target's DEF for 8s. Can stack once every 3s, up to 2 stacks. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Flame-Devouring Choir",
+    "desc": "Increases CRIT Rate by 32%. When the equipper triggers an Aftershock that deals Fire DMG, their attacks ignore 24% of the target's DEF for 8s. Can stack once every 3s, up to 2 stacks. Repeated triggers reset the duration."
+   }
+  ]
+ },
+ "14129": {
+  "name": "Myriad Eclipse",
+  "main": "Base ATK",
+  "sub": "CRIT Rate",
+  "talents": [
+   {
+    "name": "False Personas",
+    "desc": "Increases CRIT DMG by 45%. When using an EX Special Attack, Chain Attack, or Ultimate to deal Ice DMG, the equipper gains the Absolute Zero Death Sentence effect for 3s. While Absolute Zero Death Sentence is active, the character ignores 25% of the enemy's DEF when landing a hit."
+   },
+   {
+    "name": "False Personas",
+    "desc": "Increases CRIT DMG by 51.75%. When using an EX Special Attack, Chain Attack, or Ultimate to deal Ice DMG, the equipper gains the Absolute Zero Death Sentence effect for 3s. While Absolute Zero Death Sentence is active, the character ignores 28.75% of the enemy's DEF when landing a hit."
+   },
+   {
+    "name": "False Personas",
+    "desc": "Increases CRIT DMG by 58.5%. When using an EX Special Attack, Chain Attack, or Ultimate to deal Ice DMG, the equipper gains the Absolute Zero Death Sentence effect for 3s. While Absolute Zero Death Sentence is active, the character ignores 32.5% of the enemy's DEF when landing a hit."
+   },
+   {
+    "name": "False Personas",
+    "desc": "Increases CRIT DMG by 65.25%. When using an EX Special Attack, Chain Attack, or Ultimate to deal Ice DMG, the equipper gains the Absolute Zero Death Sentence effect for 3s. While Absolute Zero Death Sentence is active, the character ignores 36.25% of the enemy's DEF when landing a hit."
+   },
+   {
+    "name": "False Personas",
+    "desc": "Increases CRIT DMG by 72%. When using an EX Special Attack, Chain Attack, or Ultimate to deal Ice DMG, the equipper gains the Absolute Zero Death Sentence effect for 3s. While Absolute Zero Death Sentence is active, the character ignores 40% of the enemy's DEF when landing a hit."
+   }
+  ]
+ },
+ "14126": {
+  "name": "Sharpened Stinger",
+  "main": "Base ATK",
+  "sub": "Anomaly Proficiency",
+  "talents": [
+   {
+    "name": "Indulge in the Hunt",
+    "desc": "Upon activating a Dash Attack, gain 1 stack of Predatory Instinct. Each stack of Predatory Instinct increases the equipper's Physical DMG by 12% for 10s, stacking up to 3 times. This effect can trigger once every 0.5s and repeated triggers reset the duration. When entering combat or triggering Perfect Dodge, gain 3 stacks of Predatory Instinct. While Predatory Instinct is at maximum stacks, the equipper's Anomaly Buildup Rate increases by 40%."
+   },
+   {
+    "name": "Indulge in the Hunt",
+    "desc": "Upon activating a Dash Attack, gain 1 stack of Predatory Instinct. Each stack of Predatory Instinct increases the equipper's Physical DMG by 15% for 10s, stacking up to 3 times. This effect can trigger once every 0.5s and repeated triggers reset the duration. When entering combat or triggering Perfect Dodge, gain 3 stacks of Predatory Instinct. While Predatory Instinct is at maximum stacks, the equipper's Anomaly Buildup Rate increases by 50%."
+   },
+   {
+    "name": "Indulge in the Hunt",
+    "desc": "Upon activating a Dash Attack, gain 1 stack of Predatory Instinct. Each stack of Predatory Instinct increases the equipper's Physical DMG by 18% for 10s, stacking up to 3 times. This effect can trigger once every 0.5s and repeated triggers reset the duration. When entering combat or triggering Perfect Dodge, gain 3 stacks of Predatory Instinct. While Predatory Instinct is at maximum stacks, the equipper's Anomaly Buildup Rate increases by 60%."
+   },
+   {
+    "name": "Indulge in the Hunt",
+    "desc": "Upon activating a Dash Attack, gain 1 stack of Predatory Instinct. Each stack of Predatory Instinct increases the equipper's Physical DMG by 21% for 10s, stacking up to 3 times. This effect can trigger once every 0.5s and repeated triggers reset the duration. When entering combat or triggering Perfect Dodge, gain 3 stacks of Predatory Instinct. While Predatory Instinct is at maximum stacks, the equipper's Anomaly Buildup Rate increases by 70%."
+   },
+   {
+    "name": "Indulge in the Hunt",
+    "desc": "Upon activating a Dash Attack, gain 1 stack of Predatory Instinct. Each stack of Predatory Instinct increases the equipper's Physical DMG by 24% for 10s, stacking up to 3 times. This effect can trigger once every 0.5s and repeated triggers reset the duration. When entering combat or triggering Perfect Dodge, gain 3 stacks of Predatory Instinct. While Predatory Instinct is at maximum stacks, the equipper's Anomaly Buildup Rate increases by 80%."
+   }
+  ]
+ },
+ "14125": {
+  "name": "Ice-Jade Teapot",
+  "main": "Base ATK",
+  "sub": "Impact",
+  "talents": [
+   {
+    "name": "Ringing Melody",
+    "desc": "When a Basic Attack hits an enemy, gain 1 stack of Tea-riffic. Each stack of Tea-riffic increases the user's Impact by 0.7%, stacking up to 30 times, and lasting for 8s. The duration of each stack is calculated separately. Upon acquiring Tea-riffic, if the equipper possesses stacks of Tea-riffic greater than or equal to 15, all squad members' DMG is increased by 20% for 10s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Ringing Melody",
+    "desc": "When a Basic Attack hits an enemy, gain 1 stack of Tea-riffic. Each stack of Tea-riffic increases the user's Impact by 0.88%, stacking up to 30 times, and lasting for 8s. The duration of each stack is calculated separately. Upon acquiring Tea-riffic, if the equipper possesses stacks of Tea-riffic greater than or equal to 15, all squad members' DMG is increased by 23% for 10s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Ringing Melody",
+    "desc": "When a Basic Attack hits an enemy, gain 1 stack of Tea-riffic. Each stack of Tea-riffic increases the user's Impact by 1.05%, stacking up to 30 times, and lasting for 8s. The duration of each stack is calculated separately. Upon acquiring Tea-riffic, if the equipper possesses stacks of Tea-riffic greater than or equal to 15, all squad members' DMG is increased by 26% for 10s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Ringing Melody",
+    "desc": "When a Basic Attack hits an enemy, gain 1 stack of Tea-riffic. Each stack of Tea-riffic increases the user's Impact by 1.22%, stacking up to 30 times, and lasting for 8s. The duration of each stack is calculated separately. Upon acquiring Tea-riffic, if the equipper possesses stacks of Tea-riffic greater than or equal to 15, all squad members' DMG is increased by 29% for 10s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Ringing Melody",
+    "desc": "When a Basic Attack hits an enemy, gain 1 stack of Tea-riffic. Each stack of Tea-riffic increases the user's Impact by 1.4%, stacking up to 30 times, and lasting for 8s. The duration of each stack is calculated separately. Upon acquiring Tea-riffic, if the equipper possesses stacks of Tea-riffic greater than or equal to 15, all squad members' DMG is increased by 32% for 10s. Passive effects of the same name do not stack."
+   }
+  ]
+ },
+ "14124": {
+  "name": "Riot Suppressor Mark VI",
+  "main": "Base ATK",
+  "sub": "CRIT DMG",
+  "talents": [
+   {
+    "name": "Security Patrol",
+    "desc": "Increases CRIT Rate by 15%. Launching an EX Special Attack grants the equipper 8 Charge stacks, up to a maximum of 8 stacks. Whenever the equipper's Basic Attack or Dash Attack deals Ether DMG, consumes a Charge stack and increases the skill's DMG by 35%."
+   },
+   {
+    "name": "Security Patrol",
+    "desc": "Increases CRIT Rate by 18.8%. Launching an EX Special Attack grants the equipper 8 Charge stacks, up to a maximum of 8 stacks. Whenever the equipper's Basic Attack or Dash Attack deals Ether DMG, consumes a Charge stack and increases the skill's DMG by 43.5%."
+   },
+   {
+    "name": "Security Patrol",
+    "desc": "Increases CRIT Rate by 22.6%. Launching an EX Special Attack grants the equipper 8 Charge stacks, up to a maximum of 8 stacks. Whenever the equipper's Basic Attack or Dash Attack deals Ether DMG, consumes a Charge stack and increases the skill's DMG by 52%."
+   },
+   {
+    "name": "Security Patrol",
+    "desc": "Increases CRIT Rate by 26.4%. Launching an EX Special Attack grants the equipper 8 Charge stacks, up to a maximum of 8 stacks. Whenever the equipper's Basic Attack or Dash Attack deals Ether DMG, consumes a Charge stack and increases the skill's DMG by 60.5%."
+   },
+   {
+    "name": "Security Patrol",
+    "desc": "Increases CRIT Rate by 30%. Launching an EX Special Attack grants the equipper 8 Charge stacks, up to a maximum of 8 stacks. Whenever the equipper's Basic Attack or Dash Attack deals Ether DMG, consumes a Charge stack and increases the skill's DMG by 70%."
+   }
+  ]
+ },
+ "14122": {
+  "name": "Timeweaver",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Time-Devouring Stratagem",
+    "desc": "The equipper's Electric Anomaly Buildup Rate increases by 30%. When Special Attacks or EX Special Attacks hit enemies suffering an Attribute Anomaly, the equipper's Anomaly Proficiency increases by 75 for 15s.\nWhen the equipper's Anomaly Proficiency is greater than or equal to 375, Disorder DMG inflicted by the equipper increases by 25%."
+   },
+   {
+    "name": "Time-Devouring Stratagem",
+    "desc": "The equipper's Electric Anomaly Buildup Rate increases by 35%. When Special Attacks or EX Special Attacks hit enemies suffering an Attribute Anomaly, the equipper's Anomaly Proficiency increases by 85 for 15s.\nWhen the equipper's Anomaly Proficiency is greater than or equal to 375, Disorder DMG inflicted by the equipper increases by 27.5%."
+   },
+   {
+    "name": "Time-Devouring Stratagem",
+    "desc": "The equipper's Electric Anomaly Buildup Rate increases by 40%. When Special Attacks or EX Special Attacks hit enemies suffering an Attribute Anomaly, the equipper's Anomaly Proficiency increases by 95 for 15s.\nWhen the equipper's Anomaly Proficiency is greater than or equal to 375, Disorder DMG inflicted by the equipper increases by 30%."
+   },
+   {
+    "name": "Time-Devouring Stratagem",
+    "desc": "The equipper's Electric Anomaly Buildup Rate increases by 45%. When Special Attacks or EX Special Attacks hit enemies suffering an Attribute Anomaly, the equipper's Anomaly Proficiency increases by 105 for 15s.\nWhen the equipper's Anomaly Proficiency is greater than or equal to 375, Disorder DMG inflicted by the equipper increases by 32.5%."
+   },
+   {
+    "name": "Time-Devouring Stratagem",
+    "desc": "The equipper's Electric Anomaly Buildup Rate increases by 50%. When Special Attacks or EX Special Attacks hit enemies suffering an Attribute Anomaly, the equipper's Anomaly Proficiency increases by 115 for 15s.\nWhen the equipper's Anomaly Proficiency is greater than or equal to 375, Disorder DMG inflicted by the equipper increases by 35%."
+   }
+  ]
+ },
+ "14121": {
+  "name": "Weeping Cradle",
+  "main": "Base ATK",
+  "sub": "PEN Ratio",
+  "talents": [
+   {
+    "name": "Punishment",
+    "desc": "While off-field, the equipper's Energy Regen increases by 0.6/s. Attacks from the equipper increase all units' DMG against a struck target by 10% for 3 seconds. During this period, this effect is further increased by 1.7% every 0.5s, up to a maximum additional increase of 10.2%. Repeated triggers only refresh the duration without refreshing the DMG increase effect. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Punishment",
+    "desc": "While off-field, the equipper's Energy Regen increases by 0.75/s. Attacks from the equipper increase all units' DMG against a struck target by 12.5% for 3 seconds. During this period, this effect is further increased by 2% every 0.5s, up to a maximum additional increase of 12%. Repeated triggers only refresh the duration without refreshing the DMG increase effect. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Punishment",
+    "desc": "While off-field, the equipper's Energy Regen increases by 0.9/s. Attacks from the equipper increase all units' DMG against a struck target by 15% for 3 seconds. During this period, this effect is further increased by 2.5% every 0.5s, up to a maximum additional increase of 15%. Repeated triggers only refresh the duration without refreshing the DMG increase effect. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Punishment",
+    "desc": "While off-field, the equipper's Energy Regen increases by 1.05/s. Attacks from the equipper increase all units' DMG against a struck target by 17.5% for 3 seconds. During this period, this effect is further increased by 3% every 0.5s, up to a maximum additional increase of 18%. Repeated triggers only refresh the duration without refreshing the DMG increase effect. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Punishment",
+    "desc": "While off-field, the equipper's Energy Regen increases by 1.2/s. Attacks from the equipper increase all units' DMG against a struck target by 20% for 3 seconds. During this period, this effect is further increased by 3.3% every 0.5s, up to a maximum additional increase of 19.8%. Repeated triggers only refresh the duration without refreshing the DMG increase effect. Passive effects of the same name do not stack."
+   }
+  ]
+ },
+ "14120": {
+  "name": "Zanshin Herb Case",
+  "main": "Base ATK",
+  "sub": "CRIT DMG",
+  "talents": [
+   {
+    "name": "Growth Through Adversity",
+    "desc": "CRIT Rate increases by 10%. Dash Attack Electric DMG increases by 40%. When any squad member applies an Attribute Anomaly or Stuns an enemy, the equipper's CRIT Rate increases by an additional 10% for 15s."
+   },
+   {
+    "name": "Growth Through Adversity",
+    "desc": "CRIT Rate increases by 11.5%. Dash Attack Electric DMG increases by 46%. When any squad member applies an Attribute Anomaly or Stuns an enemy, the equipper's CRIT Rate increases by an additional 11.5% for 15s."
+   },
+   {
+    "name": "Growth Through Adversity",
+    "desc": "CRIT Rate increases by 13%. Dash Attack Electric DMG increases by 52%. When any squad member applies an Attribute Anomaly or Stuns an enemy, the equipper's CRIT Rate increases by an additional 13% for 15s."
+   },
+   {
+    "name": "Growth Through Adversity",
+    "desc": "CRIT Rate increases by 14.5%. Dash Attack Electric DMG increases by 58%. When any squad member applies an Attribute Anomaly or Stuns an enemy, the equipper's CRIT Rate increases by an additional 14.5% for 15s."
+   },
+   {
+    "name": "Growth Through Adversity",
+    "desc": "CRIT Rate increases by 16%. Dash Attack Electric DMG increases by 64%. When any squad member applies an Attribute Anomaly or Stuns an enemy, the equipper's CRIT Rate increases by an additional 16% for 15s."
+   }
+  ]
+ },
+ "14119": {
+  "name": "Deep Sea Visitor",
+  "main": "Base ATK",
+  "sub": "CRIT Rate",
+  "talents": [
+   {
+    "name": "Lord of Seas",
+    "desc": "Increases Ice DMG by 25%. Upon hitting an enemy with a Basic Attack, the equipper's CRIT Rate increases by 10% for 8s. When dealing Ice DMG with a Dash Attack, the equipper's CRIT Rate increases by an additional 10% for 15s. The duration of each effect is calculated separately."
+   },
+   {
+    "name": "Lord of Seas",
+    "desc": "Increases Ice DMG by 31.5%. Upon hitting an enemy with a Basic Attack, the equipper's CRIT Rate increases by 12.5% for 8s. When dealing Ice DMG with a Dash Attack, the equipper's CRIT Rate increases by an additional 12.5% for 15s. The duration of each effect is calculated separately."
+   },
+   {
+    "name": "Lord of Seas",
+    "desc": "Increases Ice DMG by 38%. Upon hitting an enemy with a Basic Attack, the equipper's CRIT Rate increases by 15% for 8s. When dealing Ice DMG with a Dash Attack, the equipper's CRIT Rate increases by an additional 15% for 15s. The duration of each effect is calculated separately."
+   },
+   {
+    "name": "Lord of Seas",
+    "desc": "Increases Ice DMG by 44.5%. Upon hitting an enemy with a Basic Attack, the equipper's CRIT Rate increases by 17.5% for 8s. When dealing Ice DMG with a Dash Attack, the equipper's CRIT Rate increases by an additional 17.5% for 15s. The duration of each effect is calculated separately."
+   },
+   {
+    "name": "Lord of Seas",
+    "desc": "Increases Ice DMG by 50%. Upon hitting an enemy with a Basic Attack, the equipper's CRIT Rate increases by 20% for 8s. When dealing Ice DMG with a Dash Attack, the equipper's CRIT Rate increases by an additional 20% for 15s. The duration of each effect is calculated separately."
+   }
+  ]
+ },
+ "14118": {
+  "name": "Fusion Compiler",
+  "main": "Base ATK",
+  "sub": "PEN Ratio",
+  "talents": [
+   {
+    "name": "Data Flood",
+    "desc": "Increases ATK by 12%.\nWhen using a Special Attack or EX Special Attack, the equipper's Anomaly Proficiency is increased by 25 for 8s, stacking up to 3 times. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Data Flood",
+    "desc": "Increases ATK by 15%.\nWhen using a Special Attack or EX Special Attack, the equipper's Anomaly Proficiency is increased by 31 for 8s, stacking up to 3 times. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Data Flood",
+    "desc": "Increases ATK by 18%.\nWhen using a Special Attack or EX Special Attack, the equipper's Anomaly Proficiency is increased by 37 for 8s, stacking up to 3 times. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Data Flood",
+    "desc": "Increases ATK by 21%.\nWhen using a Special Attack or EX Special Attack, the equipper's Anomaly Proficiency is increased by 43 for 8s, stacking up to 3 times. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Data Flood",
+    "desc": "Increases ATK by 24%.\nWhen using a Special Attack or EX Special Attack, the equipper's Anomaly Proficiency is increased by 50 for 8s, stacking up to 3 times. The duration of each stack is calculated separately."
+   }
+  ]
+ },
+ "14117": {
+  "name": "Flamemaker Shaker",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Fuel on the Rocks",
+    "desc": "While off-field, the equipper's Energy Regen increases by 0.6/s. When hitting an enemy with an EX Special Attack or Assist Attack, the equipper's DMG increases by 3.5%, stacking up to 10 times and lasting for 6s. This effect can trigger once every 0.3s. While off-field, the stack effect is doubled. Repeated triggers reset the duration. Upon obtaining the DMG increase effect, if the number of current stacks is greater than or equal to 5, then the equipper's Anomaly Proficiency increases by 50. This Anomaly Proficiency increase does not stack and lasts for 6s."
+   },
+   {
+    "name": "Fuel on the Rocks",
+    "desc": "While off-field, the equipper's Energy Regen increases by 0.75/s. When hitting an enemy with an EX Special Attack or Assist Attack, the equipper's DMG increases by 4.4%, stacking up to 10 times and lasting for 6s. This effect can trigger once every 0.3s. While off-field, the stack effect is doubled. Repeated triggers reset the duration. Upon obtaining the DMG increase effect, if the number of current stacks is greater than or equal to 5, then the equipper's Anomaly Proficiency increases by 62. This Anomaly Proficiency increase does not stack and lasts for 6s."
+   },
+   {
+    "name": "Fuel on the Rocks",
+    "desc": "While off-field, the equipper's Energy Regen increases by 0.9/s. When hitting an enemy with an EX Special Attack or Assist Attack, the equipper's DMG increases by 5.2%, stacking up to 10 times and lasting for 6s. This effect can trigger once every 0.3s. While off-field, the stack effect is doubled. Repeated triggers reset the duration. Upon obtaining the DMG increase effect, if the number of current stacks is greater than or equal to 5, then the equipper's Anomaly Proficiency increases by 75. This Anomaly Proficiency increase does not stack and lasts for 6s."
+   },
+   {
+    "name": "Fuel on the Rocks",
+    "desc": "While off-field, the equipper's Energy Regen increases by 1.05/s. When hitting an enemy with an EX Special Attack or Assist Attack, the equipper's DMG increases by 6.1%, stacking up to 10 times and lasting for 6s. This effect can trigger once every 0.3s. While off-field, the stack effect is doubled. Repeated triggers reset the duration. Upon obtaining the DMG increase effect, if the number of current stacks is greater than or equal to 5, then the equipper's Anomaly Proficiency increases by 87. This Anomaly Proficiency increase does not stack and lasts for 6s."
+   },
+   {
+    "name": "Fuel on the Rocks",
+    "desc": "While off-field, the equipper's Energy Regen increases by 1.2/s. When hitting an enemy with an EX Special Attack or Assist Attack, the equipper's DMG increases by 7%, stacking up to 10 times and lasting for 6s. This effect can trigger once every 0.3s. While off-field, the stack effect is doubled. Repeated triggers reset the duration. Upon obtaining the DMG increase effect, if the number of current stacks is greater than or equal to 5, then the equipper's Anomaly Proficiency increases by 100. This Anomaly Proficiency increase does not stack and lasts for 6s."
+   }
+  ]
+ },
+ "14116": {
+  "name": "Blazing Laurel",
+  "main": "Base ATK",
+  "sub": "Impact",
+  "talents": [
+   {
+    "name": "Flowing Flame",
+    "desc": "Upon launching a Quick Assist or Perfect Assist, the equipper's Impact increases by 25% for 8s. When the equipper launches and hits an enemy with a Basic Attack, apply Wilt to the target for 30s, stacking up to 20 times, repeated triggers reset the duration. When any squad member hits an enemy, for every stack of Wilt applied to the target, the CRIT DMG of the Ice DMG and Fire DMG dealt by that attack increases by 1.5%. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Flowing Flame",
+    "desc": "Upon launching a Quick Assist or Perfect Assist, the equipper's Impact increases by 28.75% for 8s. When the equipper launches and hits an enemy with a Basic Attack, apply Wilt to the target for 30s, stacking up to 20 times, repeated triggers reset the duration. When any squad member hits an enemy, for every stack of Wilt applied to the target, the CRIT DMG of the Ice DMG and Fire DMG dealt by that attack increases by 1.72%. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Flowing Flame",
+    "desc": "Upon launching a Quick Assist or Perfect Assist, the equipper's Impact increases by 32.5% for 8s. When the equipper launches and hits an enemy with a Basic Attack, apply Wilt to the target for 30s, stacking up to 20 times, repeated triggers reset the duration. When any squad member hits an enemy, for every stack of Wilt applied to the target, the CRIT DMG of the Ice DMG and Fire DMG dealt by that attack increases by 1.95%. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Flowing Flame",
+    "desc": "Upon launching a Quick Assist or Perfect Assist, the equipper's Impact increases by 36.25% for 8s. When the equipper launches and hits an enemy with a Basic Attack, apply Wilt to the target for 30s, stacking up to 20 times, repeated triggers reset the duration. When any squad member hits an enemy, for every stack of Wilt applied to the target, the CRIT DMG of the Ice DMG and Fire DMG dealt by that attack increases by 2.17%. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Flowing Flame",
+    "desc": "Upon launching a Quick Assist or Perfect Assist, the equipper's Impact increases by 40% for 8s. When the equipper launches and hits an enemy with a Basic Attack, apply Wilt to the target for 30s, stacking up to 20 times, repeated triggers reset the duration. When any squad member hits an enemy, for every stack of Wilt applied to the target, the CRIT DMG of the Ice DMG and Fire DMG dealt by that attack increases by 2.4%. Only one instance of this effect can exist in the same squad."
+   }
+  ]
+ },
+ "14114": {
+  "name": "The Restrained",
+  "main": "Base ATK",
+  "sub": "Impact",
+  "talents": [
+   {
+    "name": "Binding Chains",
+    "desc": "When an attack hits an enemy, DMG and Daze from Basic Attacks increase by 6% for 8s, stacking up to 5 times. This effect can trigger at most once during each skill. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Binding Chains",
+    "desc": "When an attack hits an enemy, DMG and Daze from Basic Attacks increase by 7.5% for 8s, stacking up to 5 times. This effect can trigger at most once during each skill. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Binding Chains",
+    "desc": "When an attack hits an enemy, DMG and Daze from Basic Attacks increase by 9% for 8s, stacking up to 5 times. This effect can trigger at most once during each skill. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Binding Chains",
+    "desc": "When an attack hits an enemy, DMG and Daze from Basic Attacks increase by 10.5% for 8s, stacking up to 5 times. This effect can trigger at most once during each skill. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Binding Chains",
+    "desc": "When an attack hits an enemy, DMG and Daze from Basic Attacks increase by 12% for 8s, stacking up to 5 times. This effect can trigger at most once during each skill. The duration of each stack is calculated separately."
+   }
+  ]
+ },
+ "14110": {
+  "name": "Hellfire Gears",
+  "main": "Base ATK",
+  "sub": "Impact",
+  "talents": [
+   {
+    "name": "Passionate Construction",
+    "desc": "While off-field, the equipper's Energy Regen increases by 0.6/s.\nWhen using an EX Special Attack, the equipper's Impact is increased by 10% for 10s, stacking up to 2 times. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Passionate Construction",
+    "desc": "While off-field, the equipper's Energy Regen increases by 0.75/s.\nWhen using an EX Special Attack, the equipper's Impact is increased by 12.5% for 10s, stacking up to 2 times. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Passionate Construction",
+    "desc": "While off-field, the equipper's Energy Regen increases by 0.9/s.\nWhen using an EX Special Attack, the equipper's Impact is increased by 15% for 10s, stacking up to 2 times. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Passionate Construction",
+    "desc": "While off-field, the equipper's Energy Regen increases by 1.05/s.\nWhen using an EX Special Attack, the equipper's Impact is increased by 17.5% for 10s, stacking up to 2 times. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Passionate Construction",
+    "desc": "While off-field, the equipper's Energy Regen increases by 1.2/s.\nWhen using an EX Special Attack, the equipper's Impact is increased by 20% for 10s, stacking up to 2 times. The duration of each stack is calculated separately."
+   }
+  ]
+ },
+ "14109": {
+  "name": "Hailstorm Shrine",
+  "main": "Base ATK",
+  "sub": "CRIT Rate",
+  "talents": [
+   {
+    "name": "Frost-Stained Star",
+    "desc": "CRIT DMG increases by 50%. When using an EX Special Attack or when any squad member applies an Attribute Anomaly to an enemy, the equipper's Ice DMG increases by 20%, stacking up to 2 times and lasting 15s. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Frost-Stained Star",
+    "desc": "CRIT DMG increases by 57%. When using an EX Special Attack or when any squad member applies an Attribute Anomaly to an enemy, the equipper's Ice DMG increases by 23%, stacking up to 2 times and lasting 15s. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Frost-Stained Star",
+    "desc": "CRIT DMG increases by 65%. When using an EX Special Attack or when any squad member applies an Attribute Anomaly to an enemy, the equipper's Ice DMG increases by 26%, stacking up to 2 times and lasting 15s. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Frost-Stained Star",
+    "desc": "CRIT DMG increases by 72%. When using an EX Special Attack or when any squad member applies an Attribute Anomaly to an enemy, the equipper's Ice DMG increases by 29%, stacking up to 2 times and lasting 15s. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Frost-Stained Star",
+    "desc": "CRIT DMG increases by 80%. When using an EX Special Attack or when any squad member applies an Attribute Anomaly to an enemy, the equipper's Ice DMG increases by 32%, stacking up to 2 times and lasting 15s. The duration of each stack is calculated separately."
+   }
+  ]
+ },
+ "14107": {
+  "name": "Tusks of Fury",
+  "main": "Base ATK",
+  "sub": "Impact",
+  "talents": [
+   {
+    "name": "Invincible Rider",
+    "desc": "The Shield value provided by the equipper increases by 30%. When any squad member triggers Interrupt or Perfect Dodge, all squad members' DMG increases by 18% and Daze dealt increases by 12% for 20s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Invincible Rider",
+    "desc": "The Shield value provided by the equipper increases by 38%. When any squad member triggers Interrupt or Perfect Dodge, all squad members' DMG increases by 22.5% and Daze dealt increases by 15% for 20s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Invincible Rider",
+    "desc": "The Shield value provided by the equipper increases by 46%. When any squad member triggers Interrupt or Perfect Dodge, all squad members' DMG increases by 27% and Daze dealt increases by 18% for 20s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Invincible Rider",
+    "desc": "The Shield value provided by the equipper increases by 52%. When any squad member triggers Interrupt or Perfect Dodge, all squad members' DMG increases by 31.5% and Daze dealt increases by 21% for 20s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Invincible Rider",
+    "desc": "The Shield value provided by the equipper increases by 60%. When any squad member triggers Interrupt or Perfect Dodge, all squad members' DMG increases by 36% and Daze dealt increases by 24% for 20s. Passive effects of the same name do not stack."
+   }
+  ]
+ },
+ "14105": {
+  "name": "Kraken's Cradle",
+  "main": "Base ATK",
+  "sub": "HP",
+  "talents": [
+   {
+    "name": "Heartfelt Caress",
+    "desc": "When the equipper's HP decreases, their Ice Sheer DMG increases by 6%, stacking up to 3 times and lasting 25s. The duration of each stack is calculated separately. This effect can trigger once every 0.5s. When the equipper's HP falls to 50% of Max HP or below, CRIT Rate increases by 20%."
+   },
+   {
+    "name": "Heartfelt Caress",
+    "desc": "When the equipper's HP decreases, their Ice Sheer DMG increases by 7%, stacking up to 3 times and lasting 25s. The duration of each stack is calculated separately. This effect can trigger once every 0.5s. When the equipper's HP falls to 50% of Max HP or below, CRIT Rate increases by 23%."
+   },
+   {
+    "name": "Heartfelt Caress",
+    "desc": "When the equipper's HP decreases, their Ice Sheer DMG increases by 8%, stacking up to 3 times and lasting 25s. The duration of each stack is calculated separately. This effect can trigger once every 0.5s. When the equipper's HP falls to 50% of Max HP or below, CRIT Rate increases by 26%."
+   },
+   {
+    "name": "Heartfelt Caress",
+    "desc": "When the equipper's HP decreases, their Ice Sheer DMG increases by 9%, stacking up to 3 times and lasting 25s. The duration of each stack is calculated separately. This effect can trigger once every 0.5s. When the equipper's HP falls to 50% of Max HP or below, CRIT Rate increases by 29%."
+   },
+   {
+    "name": "Heartfelt Caress",
+    "desc": "When the equipper's HP decreases, their Ice Sheer DMG increases by 10%, stacking up to 3 times and lasting 25s. The duration of each stack is calculated separately. This effect can trigger once every 0.5s. When the equipper's HP falls to 50% of Max HP or below, CRIT Rate increases by 32%."
+   }
+  ]
+ },
+ "14104": {
+  "name": "The Brimstone",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Scorching Breath",
+    "desc": "Upon hitting an enemy with a Basic Attack, Dash Attack, or Dodge Counter, the equipper's ATK increases by 3.5% for 8s, stacking up to 8 times. This effect can trigger once every 0.5s. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Scorching Breath",
+    "desc": "Upon hitting an enemy with a Basic Attack, Dash Attack, or Dodge Counter, the equipper's ATK increases by 4.4% for 8s, stacking up to 8 times. This effect can trigger once every 0.5s. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Scorching Breath",
+    "desc": "Upon hitting an enemy with a Basic Attack, Dash Attack, or Dodge Counter, the equipper's ATK increases by 5.2% for 8s, stacking up to 8 times. This effect can trigger once every 0.5s. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Scorching Breath",
+    "desc": "Upon hitting an enemy with a Basic Attack, Dash Attack, or Dodge Counter, the equipper's ATK increases by 6% for 8s, stacking up to 8 times. This effect can trigger once every 0.5s. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Scorching Breath",
+    "desc": "Upon hitting an enemy with a Basic Attack, Dash Attack, or Dodge Counter, the equipper's ATK increases by 7% for 8s, stacking up to 8 times. This effect can trigger once every 0.5s. The duration of each stack is calculated separately."
+   }
+  ]
+ },
+ "14102": {
+  "name": "Steel Cushion",
+  "main": "Base ATK",
+  "sub": "CRIT Rate",
+  "talents": [
+   {
+    "name": "Metal Cat Claws",
+    "desc": "Increases Physical DMG by 20%. The equipper's DMG increases by 25% when hitting the enemy from behind."
+   },
+   {
+    "name": "Metal Cat Claws",
+    "desc": "Increases Physical DMG by 25%. The equipper's DMG increases by 31.5% when hitting the enemy from behind."
+   },
+   {
+    "name": "Metal Cat Claws",
+    "desc": "Increases Physical DMG by 30%. The equipper's DMG increases by 38% when hitting the enemy from behind."
+   },
+   {
+    "name": "Metal Cat Claws",
+    "desc": "Increases Physical DMG by 35%. The equipper's DMG increases by 44% when hitting the enemy from behind."
+   },
+   {
+    "name": "Metal Cat Claws",
+    "desc": "Increases Physical DMG by 40%. The equipper's DMG increases by 50% when hitting the enemy from behind."
+   }
+  ]
+ },
+ "14003": {
+  "name": "Six Shooter",
+  "main": "Base ATK",
+  "sub": "Impact",
+  "talents": [
+   {
+    "name": "Fire!",
+    "desc": "The equipper gains 1 Charge stack every 3s, stacking up to 6 times. When launching an EX Special Attack, consumes all Charge stacks and each stack consumed increases the skill's Daze inflicted by 4%."
+   },
+   {
+    "name": "Fire!",
+    "desc": "The equipper gains 1 Charge stack every 3s, stacking up to 6 times. When launching an EX Special Attack, consumes all Charge stacks and each stack consumed increases the skill's Daze inflicted by 4.6%."
+   },
+   {
+    "name": "Fire!",
+    "desc": "The equipper gains 1 Charge stack every 3s, stacking up to 6 times. When launching an EX Special Attack, consumes all Charge stacks and each stack consumed increases the skill's Daze inflicted by 5.2%."
+   },
+   {
+    "name": "Fire!",
+    "desc": "The equipper gains 1 Charge stack every 3s, stacking up to 6 times. When launching an EX Special Attack, consumes all Charge stacks and each stack consumed increases the skill's Daze inflicted by 5.8%."
+   },
+   {
+    "name": "Fire!",
+    "desc": "The equipper gains 1 Charge stack every 3s, stacking up to 6 times. When launching an EX Special Attack, consumes all Charge stacks and each stack consumed increases the skill's Daze inflicted by 6.4%."
+   }
+  ]
+ },
+ "14002": {
+  "name": "Unfettered Game Ball",
+  "main": "Base ATK",
+  "sub": "Energy Regen",
+  "talents": [
+   {
+    "name": "Game Start!",
+    "desc": "Whenever the equipper's attack triggers an Attribute Counter effect, all units' CRIT Rate against the struck enemy increases by 12% for 12s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Game Start!",
+    "desc": "Whenever the equipper's attack triggers an Attribute Counter effect, all units' CRIT Rate against the struck enemy increases by 13.5% for 12s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Game Start!",
+    "desc": "Whenever the equipper's attack triggers an Attribute Counter effect, all units' CRIT Rate against the struck enemy increases by 15.5% for 12s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Game Start!",
+    "desc": "Whenever the equipper's attack triggers an Attribute Counter effect, all units' CRIT Rate against the struck enemy increases by 17.5% for 12s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Game Start!",
+    "desc": "Whenever the equipper's attack triggers an Attribute Counter effect, all units' CRIT Rate against the struck enemy increases by 20% for 12s. Passive effects of the same name do not stack."
+   }
+  ]
+ },
+ "14001": {
+  "name": "Cannon Rotor",
+  "main": "Base ATK",
+  "sub": "CRIT Rate",
+  "talents": [
+   {
+    "name": "Oversized Barrel",
+    "desc": "Increases ATK by 7.5%. Landing a critical hit on an enemy will inflict an additional 200% of ATK as DMG. This effect can trigger once every 8s."
+   },
+   {
+    "name": "Oversized Barrel",
+    "desc": "Increases ATK by 8.6%. Landing a critical hit on an enemy will inflict an additional 200% of ATK as DMG. This effect can trigger once every 7.5s."
+   },
+   {
+    "name": "Oversized Barrel",
+    "desc": "Increases ATK by 9.7%. Landing a critical hit on an enemy will inflict an additional 200% of ATK as DMG. This effect can trigger once every 7s."
+   },
+   {
+    "name": "Oversized Barrel",
+    "desc": "Increases ATK by 10.8%. Landing a critical hit on an enemy will inflict an additional 200% of ATK as DMG. This effect can trigger once every 6.5s."
+   },
+   {
+    "name": "Oversized Barrel",
+    "desc": "Increases ATK by 12%. Landing a critical hit on an enemy will inflict an additional 200% of ATK as DMG. This effect can trigger once every 6s."
+   }
+  ]
+ },
+ "13144": {
+  "name": "Grill O'Wisp",
+  "main": "Base ATK",
+  "sub": "HP",
+  "talents": [
+   {
+    "name": "Caged Fire",
+    "desc": "The equipper's Fire DMG increases by 15%. When the equipper's HP decreases, their CRIT Rate increases by 15% for 5s."
+   },
+   {
+    "name": "Caged Fire",
+    "desc": "The equipper's Fire DMG increases by 17.25%. When the equipper's HP decreases, their CRIT Rate increases by 17.25% for 5s."
+   },
+   {
+    "name": "Caged Fire",
+    "desc": "The equipper's Fire DMG increases by 19.5%. When the equipper's HP decreases, their CRIT Rate increases by 19.5% for 5s."
+   },
+   {
+    "name": "Caged Fire",
+    "desc": "The equipper's Fire DMG increases by 21.75%. When the equipper's HP decreases, their CRIT Rate increases by 21.75% for 5s."
+   },
+   {
+    "name": "Caged Fire",
+    "desc": "The equipper's Fire DMG increases by 24%. When the equipper's HP decreases, their CRIT Rate increases by 24% for 5s."
+   }
+  ]
+ },
+ "13142": {
+  "name": "Tremor Trigram Vessel",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Meridian Mapping",
+    "desc": "The equipper's EX Special Attack and Ultimate DMG increases by 25%. Whenever any squad member takes DMG or recovers HP, the equipper gains 2 Energy. This effect can trigger once every 5s."
+   },
+   {
+    "name": "Meridian Mapping",
+    "desc": "The equipper's EX Special Attack and Ultimate DMG increases by 28.7%. Whenever any squad member takes DMG or recovers HP, the equipper gains 2.3 Energy. This effect can trigger once every 5s."
+   },
+   {
+    "name": "Meridian Mapping",
+    "desc": "The equipper's EX Special Attack and Ultimate DMG increases by 32.5%. Whenever any squad member takes DMG or recovers HP, the equipper gains 2.6 Energy. This effect can trigger once every 5s."
+   },
+   {
+    "name": "Meridian Mapping",
+    "desc": "The equipper's EX Special Attack and Ultimate DMG increases by 36.2%. Whenever any squad member takes DMG or recovers HP, the equipper gains 2.9 Energy. This effect can trigger once every 5s."
+   },
+   {
+    "name": "Meridian Mapping",
+    "desc": "The equipper's EX Special Attack and Ultimate DMG increases by 40%. Whenever any squad member takes DMG or recovers HP, the equipper gains 3.2 Energy. This effect can trigger once every 5s."
+   }
+  ]
+ },
+ "13135": {
+  "name": "Box Cutter",
+  "main": "Base ATK",
+  "sub": "Impact",
+  "talents": [
+   {
+    "name": "Watch Your Fingers",
+    "desc": "Upon launching an Aftershock, the equipper's Physical DMG increases by 15%, and Daze increases by 10%, lasting 10s."
+   },
+   {
+    "name": "Watch Your Fingers",
+    "desc": "Upon launching an Aftershock, the equipper's Physical DMG increases by 17.3%, and Daze increases by 11.5%, lasting 10s."
+   },
+   {
+    "name": "Watch Your Fingers",
+    "desc": "Upon launching an Aftershock, the equipper's Physical DMG increases by 19.5%, and Daze increases by 13%, lasting 10s."
+   },
+   {
+    "name": "Watch Your Fingers",
+    "desc": "Upon launching an Aftershock, the equipper's Physical DMG increases by 21.8%, and Daze increases by 14.5%, lasting 10s."
+   },
+   {
+    "name": "Watch Your Fingers",
+    "desc": "Upon launching an Aftershock, the equipper's Physical DMG increases by 24%, and Daze increases by 16%, lasting 10s."
+   }
+  ]
+ },
+ "13128": {
+  "name": "Roaring Ride",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Collision Potential",
+    "desc": "When EX Special Attack hits an enemy, one of three possible effects is randomly triggered for 5 seconds. This effect can trigger once every 0.3s. The same types of effects cannot stack. Repeated triggers reset the duration, allowing several effects to be active at once:\nIncreases the equipper's ATK by 8%, increases the equipper's Anomaly Proficiency by 40, or increases the equipper's Anomaly Buildup Rate by 25%."
+   },
+   {
+    "name": "Collision Potential",
+    "desc": "When EX Special Attack hits an enemy, one of three possible effects is randomly triggered for 5 seconds. This effect can trigger once every 0.3s. The same types of effects cannot stack. Repeated triggers reset the duration, allowing several effects to be active at once:\nIncreases the equipper's ATK by 9.2%, increases the equipper's Anomaly Proficiency by 46, or increases the equipper's Anomaly Buildup Rate by 28%."
+   },
+   {
+    "name": "Collision Potential",
+    "desc": "When EX Special Attack hits an enemy, one of three possible effects is randomly triggered for 5 seconds. This effect can trigger once every 0.3s. The same types of effects cannot stack. Repeated triggers reset the duration, allowing several effects to be active at once:\nIncreases the equipper's ATK by 10.4%, increases the equipper's Anomaly Proficiency by 52, or increases the equipper's Anomaly Buildup Rate by 32%."
+   },
+   {
+    "name": "Collision Potential",
+    "desc": "When EX Special Attack hits an enemy, one of three possible effects is randomly triggered for 5 seconds. This effect can trigger once every 0.3s. The same types of effects cannot stack. Repeated triggers reset the duration, allowing several effects to be active at once:\nIncreases the equipper's ATK by 11.6%, increases the equipper's Anomaly Proficiency by 58, or increases the equipper's Anomaly Buildup Rate by 36%."
+   },
+   {
+    "name": "Collision Potential",
+    "desc": "When EX Special Attack hits an enemy, one of three possible effects is randomly triggered for 5 seconds. This effect can trigger once every 0.3s. The same types of effects cannot stack. Repeated triggers reset the duration, allowing several effects to be active at once:\nIncreases the equipper's ATK by 12.8%, increases the equipper's Anomaly Proficiency by 64, or increases the equipper's Anomaly Buildup Rate by 40%."
+   }
+  ]
+ },
+ "13127": {
+  "name": "Peacekeeper - Specialized",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Standard Blocking Technique",
+    "desc": "While Shielded, the equipper's Energy Regen increases by 0.4/s. The Anomaly Buildup of EX Special Attacks and Assist Follow-Ups increase by 36%."
+   },
+   {
+    "name": "Standard Blocking Technique",
+    "desc": "While Shielded, the equipper's Energy Regen increases by 0.46/s. The Anomaly Buildup of EX Special Attacks/Assist Follow-Ups increase by 40%."
+   },
+   {
+    "name": "Standard Blocking Technique",
+    "desc": "While Shielded, the equipper's Energy Regen increases by 0.52/s. The Anomaly Buildup of EX Special Attacks/Assist Follow-Ups increase by 45%."
+   },
+   {
+    "name": "Standard Blocking Technique",
+    "desc": "While Shielded, the equipper's Energy Regen increases by 0.58/s. The Anomaly Buildup of EX Special Attacks/Assist Follow-Ups increase by 50%."
+   },
+   {
+    "name": "Standard Blocking Technique",
+    "desc": "While Shielded, the equipper's Energy Regen increases by 0.64/s. The Anomaly Buildup of EX Special Attacks/Assist Follow-Ups increase by 55%."
+   }
+  ]
+ },
+ "13115": {
+  "name": "Kaboom the Cannon",
+  "main": "Base ATK",
+  "sub": "Energy Regen",
+  "talents": [
+   {
+    "name": "Stampede Accident",
+    "desc": "When any friendly unit in the squad attacks and hits an enemy, all friendly units' ATK increases by 2.5% for 8s, stacking up to 4 times. The duration of each stack is calculated separately, and each friendly unit can provide 1 stack of the buff. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Stampede Accident",
+    "desc": "When any friendly unit in the squad attacks and hits an enemy, all friendly units' ATK increases by 2.8% for 8s, stacking up to 4 times. The duration of each stack is calculated separately, and each friendly unit can provide 1 stack of the buff. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Stampede Accident",
+    "desc": "When any friendly unit in the squad attacks and hits an enemy, all friendly units' ATK increases by 3.2% for 8s, stacking up to 4 times. The duration of each stack is calculated separately, and each friendly unit can provide 1 stack of the buff. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Stampede Accident",
+    "desc": "When any friendly unit in the squad attacks and hits an enemy, all friendly units' ATK increases by 3.6% for 8s, stacking up to 4 times. The duration of each stack is calculated separately, and each friendly unit can provide 1 stack of the buff. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Stampede Accident",
+    "desc": "When any friendly unit in the squad attacks and hits an enemy, all friendly units' ATK increases by 4% for 8s, stacking up to 4 times. The duration of each stack is calculated separately, and each friendly unit can provide 1 stack of the buff. Passive effects of the same name do not stack."
+   }
+  ]
+ },
+ "13113": {
+  "name": "Bashful Demon",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Visage of Greed",
+    "desc": "Increases Ice DMG by 15%. When launching an EX Special Attack, all squad members' ATK increases by 2% for 12s, stacking up to 4 times. Repeated triggers reset the duration. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Visage of Greed",
+    "desc": "Increases Ice DMG by 17.5%. When launching an EX Special Attack, all squad members' ATK increases by 2.3% for 12s, stacking up to 4 times. Repeated triggers reset the duration. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Visage of Greed",
+    "desc": "Increases Ice DMG by 20%. When launching an EX Special Attack, all squad members' ATK increases by 2.6% for 12s, stacking up to 4 times. Repeated triggers reset the duration. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Visage of Greed",
+    "desc": "Increases Ice DMG by 22%. When launching an EX Special Attack, all squad members' ATK increases by 2.9% for 12s, stacking up to 4 times. Repeated triggers reset the duration. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Visage of Greed",
+    "desc": "Increases Ice DMG by 24%. When launching an EX Special Attack, all squad members' ATK increases by 3.2% for 12s, stacking up to 4 times. Repeated triggers reset the duration. Passive effects of the same name do not stack."
+   }
+  ]
+ },
+ "13112": {
+  "name": "Big Cylinder",
+  "main": "Base ATK",
+  "sub": "DEF",
+  "talents": [
+   {
+    "name": "Ten Ton Top",
+    "desc": "Reduces DMG taken by 7.5%. After being attacked, the next attack to hit an enemy will trigger a critical hit and deal 600% of the equipper's DEF as additional DMG. This effect can be triggered once every 7.5s."
+   },
+   {
+    "name": "Ten Ton Top",
+    "desc": "Reduces DMG taken by 8.5%. After being attacked, the next attack to hit an enemy will trigger a critical hit and deal 690% of the equipper's DEF as additional DMG. This effect can be triggered once every 7.5s."
+   },
+   {
+    "name": "Ten Ton Top",
+    "desc": "Reduces DMG taken by 9.5%. After being attacked, the next attack to hit an enemy will trigger a critical hit and deal 780% of the equipper's DEF as additional DMG. This effect can be triggered once every 7.5s."
+   },
+   {
+    "name": "Ten Ton Top",
+    "desc": "Reduces DMG taken by 10.5%. After being attacked, the next attack to hit an enemy will trigger a critical hit and deal 870% of the equipper's DEF as additional DMG. This effect can be triggered once every 7.5s."
+   },
+   {
+    "name": "Ten Ton Top",
+    "desc": "Reduces DMG taken by 12%. After being attacked, the next attack to hit an enemy will trigger a critical hit and deal 960% of the equipper's DEF as additional DMG. This effect can be triggered once every 7.5s."
+   }
+  ]
+ },
+ "13111": {
+  "name": "Drill Rig - Red Axis",
+  "main": "Base ATK",
+  "sub": "Energy Regen",
+  "talents": [
+   {
+    "name": "Hell's Generator",
+    "desc": "When launching an EX Special Attack or Chain Attack, Electric DMG from Basic Attacks and Dash Attacks increases by 50% for 10s. This effect can trigger once every 15s."
+   },
+   {
+    "name": "Hell's Generator",
+    "desc": "When launching an EX Special Attack or Chain Attack, Electric DMG from Basic Attacks and Dash Attacks increases by 57.5% for 10s. This effect can trigger once every 15s."
+   },
+   {
+    "name": "Hell's Generator",
+    "desc": "When launching an EX Special Attack or Chain Attack, Electric DMG from Basic Attacks and Dash Attacks increases by 65% for 10s. This effect can trigger once every 15s."
+   },
+   {
+    "name": "Hell's Generator",
+    "desc": "When launching an EX Special Attack or Chain Attack, Electric DMG from Basic Attacks and Dash Attacks increases by 72.5% for 10s. This effect can trigger once every 15s."
+   },
+   {
+    "name": "Hell's Generator",
+    "desc": "When launching an EX Special Attack or Chain Attack, Electric DMG from Basic Attacks and Dash Attacks increases by 80% for 10s. This effect can trigger once every 15s."
+   }
+  ]
+ },
+ "13108": {
+  "name": "Starlight Engine Replica",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Knight Beam: Change",
+    "desc": "Increases the equipper's Physical DMG against the target by 36% for 8s upon hitting an enemy at least 6 meters away with a Basic Attack or Dash Attack."
+   },
+   {
+    "name": "Knight Beam: Change",
+    "desc": "Increases the equipper's Physical DMG against the target by 41% for 8s upon hitting an enemy at least 6 meters away with a Basic Attack or Dash Attack."
+   },
+   {
+    "name": "Knight Beam: Change",
+    "desc": "Increases the equipper's Physical DMG against the target by 46.5% for 8s upon hitting an enemy at least 6 meters away with a Basic Attack or Dash Attack."
+   },
+   {
+    "name": "Knight Beam: Change",
+    "desc": "Increases the equipper's Physical DMG against the target by 52% for 8s upon hitting an enemy at least 6 meters away with a Basic Attack or Dash Attack."
+   },
+   {
+    "name": "Knight Beam: Change",
+    "desc": "Increases the equipper's Physical DMG against the target by 57.5% for 8s upon hitting an enemy at least 6 meters away with a Basic Attack or Dash Attack."
+   }
+  ]
+ },
+ "13106": {
+  "name": "Housekeeper",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Safe Household Saw",
+    "desc": "While off-field, the equipper's Energy Regen increases by 0.45/s. When an EX Special Attack hits an enemy, the equipper's Physical DMG increases by 3%, stacking up to 15 times and lasting 1s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Safe Household Saw",
+    "desc": "While off-field, the equipper's Energy Regen increases by 0.52/s. When an EX Special Attack hits an enemy, the equipper's Physical DMG increases by 3.5%, stacking up to 15 times and lasting 1s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Safe Household Saw",
+    "desc": "While off-field, the equipper's Energy Regen increases by 0.58/s. When an EX Special Attack hits an enemy, the equipper's Physical DMG increases by 4%, stacking up to 15 times and lasting 1s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Safe Household Saw",
+    "desc": "While off-field, the equipper's Energy Regen increases by 0.65/s. When an EX Special Attack hits an enemy, the equipper's Physical DMG increases by 4.4%, stacking up to 15 times and lasting 1s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Safe Household Saw",
+    "desc": "While off-field, the equipper's Energy Regen increases by 0.72/s. When an EX Special Attack hits an enemy, the equipper's Physical DMG increases by 4.8%, stacking up to 15 times and lasting 1s. Repeated triggers reset the duration."
+   }
+  ]
+ },
+ "13103": {
+  "name": "The Vault",
+  "main": "Base ATK",
+  "sub": "Energy Regen",
+  "talents": [
+   {
+    "name": "Money-Lover",
+    "desc": "Dealing Ether DMG using an EX Special Attack, Chain Attack, or Ultimate increases all units' DMG against the target by 15% and increases the equipper's Energy Regen by 0.5/s for 2s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Money-Lover",
+    "desc": "Dealing Ether DMG using an EX Special Attack, Chain Attack, or Ultimate increases all units' DMG against the target by 17.5% and increases the equipper's Energy Regen by 0.58/s for 2s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Money-Lover",
+    "desc": "Dealing Ether DMG using an EX Special Attack, Chain Attack, or Ultimate increases all units' DMG against the target by 20% and increases the equipper's Energy Regen by 0.65/s for 2s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Money-Lover",
+    "desc": "Dealing Ether DMG using an EX Special Attack, Chain Attack, or Ultimate increases all units' DMG against the target by 22% and increases the equipper's Energy Regen by 0.72/s for 2s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Money-Lover",
+    "desc": "Dealing Ether DMG using an EX Special Attack, Chain Attack, or Ultimate increases all units' DMG against the target by 24% and increases the equipper's Energy Regen by 0.8/s for 2s. Passive effects of the same name do not stack."
+   }
+  ]
+ },
+ "13101": {
+  "name": "Demara Battery Mark II",
+  "main": "Base ATK",
+  "sub": "Impact",
+  "talents": [
+   {
+    "name": "In a Flash of Light",
+    "desc": "Increases Electric DMG by 15%. When the equipper hits an enemy with a Dodge Counter or Assist Attack, their Energy Generation Rate increases by 18% for 8s."
+   },
+   {
+    "name": "In a Flash of Light",
+    "desc": "Increases Electric DMG by 17.5%. When the equipper hits an enemy with a Dodge Counter or Assist Attack, their Energy Generation Rate increases by 20.5% for 8s."
+   },
+   {
+    "name": "In a Flash of Light",
+    "desc": "Increases Electric DMG by 20%. When the equipper hits an enemy with a Dodge Counter or Assist Attack, their Energy Generation Rate increases by 23% for 8s."
+   },
+   {
+    "name": "In a Flash of Light",
+    "desc": "Increases Electric DMG by 22%. When the equipper hits an enemy with a Dodge Counter or Assist Attack, their Energy Generation Rate increases by 25% for 8s."
+   },
+   {
+    "name": "In a Flash of Light",
+    "desc": "Increases Electric DMG by 24%. When the equipper hits an enemy with a Dodge Counter or Assist Attack, their Energy Generation Rate increases by 27.5% for 8s."
+   }
+  ]
+ },
+ "13022": {
+  "main": "Base DEF",
+  "sub": "DEF",
+  "talents": [
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ },
+ "13021": {
+  "main": "Base DEF",
+  "sub": "CRIT Rate",
+  "talents": [
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ },
+ "13020": {
+  "name": "The Simmering Pot",
+  "main": "Base ATK",
+  "sub": "Impact",
+  "talents": [
+   {
+    "name": "Red Chili Oil Hot Pot",
+    "desc": "When activating an Assist Follow-Up, the equipper's Daze inflicted on the target increases by 7.2%, and DMG dealt increases by 7.2% for 30s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Red Chili Oil Hot Pot",
+    "desc": "When activating an Assist Follow-Up, the equipper's Daze inflicted on the target increases by 8.2%, and DMG dealt increases by 8.2% for 30s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Red Chili Oil Hot Pot",
+    "desc": "When activating an Assist Follow-Up, the equipper's Daze inflicted on the target increases by 9.2%, and DMG dealt increases by 9.2% for 30s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Red Chili Oil Hot Pot",
+    "desc": "When activating an Assist Follow-Up, the equipper's Daze inflicted on the target increases by 10.2%, and DMG dealt increases by 10.2% for 30s. Repeated triggers reset the duration."
+   },
+   {
+    "name": "Red Chili Oil Hot Pot",
+    "desc": "When activating an Assist Follow-Up, the equipper's Daze inflicted on the target increases by 11.5%, and DMG dealt increases by 11.5% for 30s. Repeated triggers reset the duration."
+   }
+  ]
+ },
+ "13019": {
+  "name": "Cauldron of Clarity",
+  "main": "Base ATK",
+  "sub": "HP",
+  "talents": [
+   {
+    "name": "Summoning Arcanum",
+    "desc": "When the equipper activates an EX Special Attack, they gain 1 stack of a buff. Each stack increases the equipper's DMG by 4%, up to 3 stacks, and lasting 20s. This effect can trigger once every 0.5s, and repeated triggers reset the duration. At 3 stacks, the equipper's CRIT Rate increases by 6.5%."
+   },
+   {
+    "name": "Summoning Arcanum",
+    "desc": "When the equipper activates an EX Special Attack, they gain 1 stack of a buff. Each stack increases the equipper's DMG by 4.6%, up to 3 stacks, and lasting 20s. This effect can trigger once every 0.5s, and repeated triggers reset the duration. At 3 stacks, the equipper's CRIT Rate increases by 7.5%."
+   },
+   {
+    "name": "Summoning Arcanum",
+    "desc": "When the equipper activates an EX Special Attack, they gain 1 stack of a buff. Each stack increases the equipper's DMG by 5.2%, up to 3 stacks, and lasting 20s. This effect can trigger once every 0.5s, and repeated triggers reset the duration. At 3 stacks, the equipper's CRIT Rate increases by 8.5%."
+   },
+   {
+    "name": "Summoning Arcanum",
+    "desc": "When the equipper activates an EX Special Attack, they gain 1 stack of a buff. Each stack increases the equipper's DMG by 5.8%, up to 3 stacks, and lasting 20s. This effect can trigger once every 0.5s, and repeated triggers reset the duration. At 3 stacks, the equipper's CRIT Rate increases by 9.4%."
+   },
+   {
+    "name": "Summoning Arcanum",
+    "desc": "When the equipper activates an EX Special Attack, they gain 1 stack of a buff. Each stack increases the equipper's DMG by 6.4%, up to 3 stacks, and lasting 20s. This effect can trigger once every 0.5s, and repeated triggers reset the duration. At 3 stacks, the equipper's CRIT Rate increases by 10.4%."
+   }
+  ]
+ },
+ "13018": {
+  "name": "Boisterous Echoes",
+  "main": "Base ATK",
+  "sub": "Anomaly Proficiency",
+  "talents": [
+   {
+    "name": "Resounding Drum",
+    "desc": "When the equipper triggers the Vortex effect, they gain 2 Energy. This effect can trigger once every 10s. When attacking enemies afflicted with an Attribute Anomaly, the equipper deals 11.5% increased DMG."
+   },
+   {
+    "name": "Resounding Drum",
+    "desc": "When the equipper triggers the Vortex effect, they gain 2.3 Energy. This effect can trigger once every 10s. When attacking enemies afflicted with an Attribute Anomaly, the equipper deals 13.2% increased DMG."
+   },
+   {
+    "name": "Resounding Drum",
+    "desc": "When the equipper triggers the Vortex effect, they gain 2.6 Energy. This effect can trigger once every 10s. When attacking enemies afflicted with an Attribute Anomaly, the equipper deals 15% increased DMG."
+   },
+   {
+    "name": "Resounding Drum",
+    "desc": "When the equipper triggers the Vortex effect, they gain 2.9 Energy. This effect can trigger once every 10s. When attacking enemies afflicted with an Attribute Anomaly, the equipper deals 16.7% increased DMG."
+   },
+   {
+    "name": "Resounding Drum",
+    "desc": "When the equipper triggers the Vortex effect, they gain 3.2 Energy. This effect can trigger once every 10s. When attacking enemies afflicted with an Attribute Anomaly, the equipper deals 18.4% increased DMG."
+   }
+  ]
+ },
+ "13017": {
+  "name": "Catty Luck",
+  "main": "Base DEF",
+  "sub": "DEF",
+  "talents": [
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ },
+ "13016": {
+  "name": "Reel Projector",
+  "main": "Base ATK",
+  "sub": "Impact",
+  "talents": [
+   {
+    "name": "Flash Engraving",
+    "desc": "When a squad member's HP is greater than or equal to 50%, they take 7.5% less DMG, and 10% less Miasma Contamination. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Flash Engraving",
+    "desc": "When a squad member's HP is greater than or equal to 50%, they take 8.6% less DMG, and 11.5% less Miasma Contamination. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Flash Engraving",
+    "desc": "When a squad member's HP is greater than or equal to 50%, they take 9.7% less DMG, and 13% less Miasma Contamination. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Flash Engraving",
+    "desc": "When a squad member's HP is greater than or equal to 50%, they take 10.8% less DMG, and 14.5% less Miasma Contamination. Only one instance of this effect can exist in the same squad."
+   },
+   {
+    "name": "Flash Engraving",
+    "desc": "When a squad member's HP is greater than or equal to 50%, they take 12% less DMG, and 16% less Miasma Contamination. Only one instance of this effect can exist in the same squad."
+   }
+  ]
+ },
+ "13015": {
+  "name": "Marcato Desire",
+  "main": "Base ATK",
+  "sub": "CRIT Rate",
+  "talents": [
+   {
+    "name": "Get Everyone Fired Up",
+    "desc": "When an EX Special Attack or Chain Attack hits an enemy, the equipper's ATK increases by 6% for 8s. While the target is under an Attribute Anomaly, this effect is increased by an additional 6%."
+   },
+   {
+    "name": "Get Everyone Fired Up",
+    "desc": "When an EX Special Attack or Chain Attack hits an enemy, the equipper's ATK increases by 6.9% for 8s. While the target is under an Attribute Anomaly, this effect is increased by an additional 6.9%."
+   },
+   {
+    "name": "Get Everyone Fired Up",
+    "desc": "When an EX Special Attack or Chain Attack hits an enemy, the equipper's ATK increases by 7.8% for 8s. While the target is under an Attribute Anomaly, this effect is increased by an additional 7.8%."
+   },
+   {
+    "name": "Get Everyone Fired Up",
+    "desc": "When an EX Special Attack or Chain Attack hits an enemy, the equipper's ATK increases by 8.7% for 8s. While the target is under an Attribute Anomaly, this effect is increased by an additional 8.7%."
+   },
+   {
+    "name": "Get Everyone Fired Up",
+    "desc": "When an EX Special Attack or Chain Attack hits an enemy, the equipper's ATK increases by 9.6% for 8s. While the target is under an Attribute Anomaly, this effect is increased by an additional 9.6%."
+   }
+  ]
+ },
+ "13014": {
+  "name": "Radiowave Journey",
+  "main": "Base ATK",
+  "sub": "HP",
+  "talents": [
+   {
+    "name": "Easy Strides",
+    "desc": "When launching a Chain Attack or Ultimate, the equipper gains 1 stack of a buff effect. Each stack increases the equipper's Sheer Force by 80, stacking up to 3 times, and lasting 12s. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Easy Strides",
+    "desc": "When launching a Chain Attack or Ultimate, the equipper gains 1 stack of a buff effect. Each stack increases the equipper's Sheer Force by 92, stacking up to 3 times, and lasting 12s. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Easy Strides",
+    "desc": "When launching a Chain Attack or Ultimate, the equipper gains 1 stack of a buff effect. Each stack increases the equipper's Sheer Force by 104, stacking up to 3 times, and lasting 12s. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Easy Strides",
+    "desc": "When launching a Chain Attack or Ultimate, the equipper gains 1 stack of a buff effect. Each stack increases the equipper's Sheer Force by 116, stacking up to 3 times, and lasting 12s. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Easy Strides",
+    "desc": "When launching a Chain Attack or Ultimate, the equipper gains 1 stack of a buff effect. Each stack increases the equipper's Sheer Force by 128, stacking up to 3 times, and lasting 12s. The duration of each stack is calculated separately."
+   }
+  ]
+ },
+ "13013": {
+  "name": "Gilded Blossom",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Extraordinary Anti-Theft Measures",
+    "desc": "ATK increases by 6%, and DMG dealt by EX Special Attacks increases by 15%."
+   },
+   {
+    "name": "Extraordinary Anti-Theft Measures",
+    "desc": "ATK increases by 6.9%, and DMG dealt by EX Special Attacks increases by 17.2%."
+   },
+   {
+    "name": "Extraordinary Anti-Theft Measures",
+    "desc": "ATK increases by 7.8%, and DMG dealt by EX Special Attacks increases by 19.5%."
+   },
+   {
+    "name": "Extraordinary Anti-Theft Measures",
+    "desc": "ATK increases by 8.7%, and DMG dealt by EX Special Attacks increases by 21.8%."
+   },
+   {
+    "name": "Extraordinary Anti-Theft Measures",
+    "desc": "ATK increases by 9.6%, and DMG dealt by EX Special Attacks increases by 24%."
+   }
+  ]
+ },
+ "13012": {
+  "name": "Puzzle Sphere",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Ingenious Craft",
+    "desc": "Upon launching an EX Special Attack, the equipper's CRIT DMG increases by 16% for 12s. Additionally, if the target's current HP is below 50% of their Max HP, EX Special Attack DMG increases by 20%."
+   },
+   {
+    "name": "Ingenious Craft",
+    "desc": "Upon launching an EX Special Attack, the equipper's CRIT DMG increases by 18.4% for 12s. Additionally, if the target's current HP is below 50% of their Max HP, EX Special Attack DMG increases by 23%."
+   },
+   {
+    "name": "Ingenious Craft",
+    "desc": "Upon launching an EX Special Attack, the equipper's CRIT DMG increases by 20.8% for 12s. Additionally, if the target's current HP is below 50% of their Max HP, EX Special Attack DMG increases by 26%."
+   },
+   {
+    "name": "Ingenious Craft",
+    "desc": "Upon launching an EX Special Attack, the equipper's CRIT DMG increases by 23.2% for 12s. Additionally, if the target's current HP is below 50% of their Max HP, EX Special Attack DMG increases by 29%."
+   },
+   {
+    "name": "Ingenious Craft",
+    "desc": "Upon launching an EX Special Attack, the equipper's CRIT DMG increases by 25.6% for 12s. Additionally, if the target's current HP is below 50% of their Max HP, EX Special Attack DMG increases by 32%."
+   }
+  ]
+ },
+ "13011": {
+  "name": "Spring Embrace",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Hot Spring Soup",
+    "desc": "Reduces DMG taken by 7.5%. When attacked, the equipper's Energy Generation Rate increases by 10% for 12s. When the equipper switches off-field, this buff will be transferred to the new on-field character with its duration refreshed. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Hot Spring Soup",
+    "desc": "Reduces DMG taken by 8.5%. When attacked, the equipper's Energy Generation Rate increases by 11.5% for 12s. When the equipper switches off-field, this buff will be transferred to the new on-field character with its duration refreshed. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Hot Spring Soup",
+    "desc": "Reduces DMG taken by 9.5%. When attacked, the equipper's Energy Generation Rate increases by 13% for 12s. When the equipper switches off-field, this buff will be transferred to the new on-field character with its duration refreshed. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Hot Spring Soup",
+    "desc": "Reduces DMG taken by 10.5%. When attacked, the equipper's Energy Generation Rate increases by 14.5% for 12s. When the equipper switches off-field, this buff will be transferred to the new on-field character with its duration refreshed. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Hot Spring Soup",
+    "desc": "Reduces DMG taken by 12%. When attacked, the equipper's Energy Generation Rate increases by 16% for 12s. When the equipper switches off-field, this buff will be transferred to the new on-field character with its duration refreshed. Passive effects of the same name do not stack."
+   }
+  ]
+ },
+ "13010": {
+  "name": "Bunny Band",
+  "main": "Base ATK",
+  "sub": "DEF",
+  "talents": [
+   {
+    "name": "Pet the Bunny",
+    "desc": "Increases Max HP by 8%. Increases the equipper's ATK by 10% when they are shielded."
+   },
+   {
+    "name": "Pet the Bunny",
+    "desc": "Increases Max HP by 9.2%. Increases the equipper's ATK by 11.5% when they are shielded."
+   },
+   {
+    "name": "Pet the Bunny",
+    "desc": "Increases Max HP by 10.4%. Increases the equipper's ATK by 13% when they are shielded."
+   },
+   {
+    "name": "Pet the Bunny",
+    "desc": "Increases Max HP by 11.6%. Increases the equipper's ATK by 14.5% when they are shielded."
+   },
+   {
+    "name": "Pet the Bunny",
+    "desc": "Increases Max HP by 12.8%. Increases the equipper's ATK by 16% when they are shielded."
+   }
+  ]
+ },
+ "13009": {
+  "name": "Electro-Lip Gloss",
+  "main": "Base ATK",
+  "sub": "Anomaly Proficiency",
+  "talents": [
+   {
+    "name": "Kiss of Death",
+    "desc": "When there are enemies inflicted with Attribute Anomaly on the field, the equipper's ATK increases by 10% and they deal an additional 15% more DMG to the target."
+   },
+   {
+    "name": "Kiss of Death",
+    "desc": "When there are enemies inflicted with Attribute Anomaly on the field, the equipper's ATK increases by 11.5% and they deal an additional 17.5% more DMG to the target."
+   },
+   {
+    "name": "Kiss of Death",
+    "desc": "When there are enemies inflicted with Attribute Anomaly on the field, the equipper's ATK increases by 13% and they deal an additional 20% more DMG to the target."
+   },
+   {
+    "name": "Kiss of Death",
+    "desc": "When there are enemies inflicted with Attribute Anomaly on the field, the equipper's ATK increases by 14.5% and they deal an additional 22.5% more DMG to the target."
+   },
+   {
+    "name": "Kiss of Death",
+    "desc": "When there are enemies inflicted with Attribute Anomaly on the field, the equipper's ATK increases by 16% and they deal an additional 25% more DMG to the target."
+   }
+  ]
+ },
+ "13008": {
+  "name": "Weeping Gemini",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Lingering Cries",
+    "desc": "Whenever a squad member inflicts an Attribute Anomaly on an enemy, the equipper gains a buff that increases Anomaly Proficiency by 30, stacking up to 4 times. This effect expires when the target recovers from Stun or is defeated. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Lingering Cries",
+    "desc": "Whenever a squad member inflicts an Attribute Anomaly on an enemy, the equipper gains a buff that increases Anomaly Proficiency by 34, stacking up to 4 times. This effect expires when the target recovers from Stun or is defeated. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Lingering Cries",
+    "desc": "Whenever a squad member inflicts an Attribute Anomaly on an enemy, the equipper gains a buff that increases Anomaly Proficiency by 38, stacking up to 4 times. This effect expires when the target recovers from Stun or is defeated. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Lingering Cries",
+    "desc": "Whenever a squad member inflicts an Attribute Anomaly on an enemy, the equipper gains a buff that increases Anomaly Proficiency by 42, stacking up to 4 times. This effect expires when the target recovers from Stun or is defeated. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Lingering Cries",
+    "desc": "Whenever a squad member inflicts an Attribute Anomaly on an enemy, the equipper gains a buff that increases Anomaly Proficiency by 48, stacking up to 4 times. This effect expires when the target recovers from Stun or is defeated. The duration of each stack is calculated separately."
+   }
+  ]
+ },
+ "13007": {
+  "name": "Original Transmorpher",
+  "main": "Base ATK",
+  "sub": "HP",
+  "talents": [
+   {
+    "name": "Starlight Knight Flying Kick",
+    "desc": "Increases Max HP by 8%. When attacked, the equipper's Impact is increased by 10% for 12s."
+   },
+   {
+    "name": "Starlight Knight Flying Kick",
+    "desc": "Increases Max HP by 9%. When attacked, the equipper's Impact is increased by 11.5% for 12s."
+   },
+   {
+    "name": "Starlight Knight Flying Kick",
+    "desc": "Increases Max HP by 10%. When attacked, the equipper's Impact is increased by 13% for 12s."
+   },
+   {
+    "name": "Starlight Knight Flying Kick",
+    "desc": "Increases Max HP by 11%. When attacked, the equipper's Impact is increased by 14.5% for 12s."
+   },
+   {
+    "name": "Starlight Knight Flying Kick",
+    "desc": "Increases Max HP by 12.5%. When attacked, the equipper's Impact is increased by 16% for 12s."
+   }
+  ]
+ },
+ "13006": {
+  "name": "Precious Fossilized Core",
+  "main": "Base ATK",
+  "sub": "Impact",
+  "talents": [
+   {
+    "name": "Behemoth Hunter",
+    "desc": "When the target's HP is no lower than 50%, the equipper inflicts 10% more Daze to the target. When the target's HP is no lower than 75%, this bonus is further increased by 10%."
+   },
+   {
+    "name": "Behemoth Hunter",
+    "desc": "When the target's HP is no lower than 50%, the equipper inflicts 11.5% more Daze to the target. When the target's HP is no lower than 75%, this bonus is further increased by 11.5%."
+   },
+   {
+    "name": "Behemoth Hunter",
+    "desc": "When the target's HP is no lower than 50%, the equipper inflicts 13% more Daze to the target. When the target's HP is no lower than 75%, this bonus is further increased by 13%."
+   },
+   {
+    "name": "Behemoth Hunter",
+    "desc": "When the target's HP is no lower than 50%, the equipper inflicts 14.5% more Daze to the target. When the target's HP is no lower than 75%, this bonus is further increased by 14.5%."
+   },
+   {
+    "name": "Behemoth Hunter",
+    "desc": "When the target's HP is no lower than 50%, the equipper inflicts 16% more Daze to the target. When the target's HP is no lower than 75%, this bonus is further increased by 16%."
+   }
+  ]
+ },
+ "13005": {
+  "name": "Steam Oven",
+  "main": "Base ATK",
+  "sub": "Energy Regen",
+  "talents": [
+   {
+    "name": "Thick Broth",
+    "desc": "For every 10 Energy accumulated, the equipper's Impact is increased by 2%, stacking up to 8 times. After Energy is consumed, this bonus remains for 8 more seconds. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Thick Broth",
+    "desc": "For every 10 Energy accumulated, the equipper's Impact is increased by 2.3%, stacking up to 8 times. After Energy is consumed, this bonus remains for 8 more seconds. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Thick Broth",
+    "desc": "For every 10 Energy accumulated, the equipper's Impact is increased by 2.6%, stacking up to 8 times. After Energy is consumed, this bonus remains for 8 more seconds. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Thick Broth",
+    "desc": "For every 10 Energy accumulated, the equipper's Impact is increased by 2.9%, stacking up to 8 times. After Energy is consumed, this bonus remains for 8 more seconds. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Thick Broth",
+    "desc": "For every 10 Energy accumulated, the equipper's Impact is increased by 3.2%, stacking up to 8 times. After Energy is consumed, this bonus remains for 8 more seconds. The duration of each stack is calculated separately."
+   }
+  ]
+ },
+ "13004": {
+  "name": "Starlight Engine",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Knight's Combo",
+    "desc": "Launching a Dodge Counter or Quick Assist increases the equipper's ATK by 12% for 12s."
+   },
+   {
+    "name": "Knight's Combo",
+    "desc": "Launching a Dodge Counter or Quick Assist increases the equipper's ATK by 13.8% for 12s."
+   },
+   {
+    "name": "Knight's Combo",
+    "desc": "Launching a Dodge Counter or Quick Assist increases the equipper's ATK by 15.6% for 12s."
+   },
+   {
+    "name": "Knight's Combo",
+    "desc": "Launching a Dodge Counter or Quick Assist increases the equipper's ATK by 17.4% for 12s."
+   },
+   {
+    "name": "Knight's Combo",
+    "desc": "Launching a Dodge Counter or Quick Assist increases the equipper's ATK by 19.2% for 12s."
+   }
+  ]
+ },
+ "13003": {
+  "name": "Rainforest Gourmet",
+  "main": "Base ATK",
+  "sub": "Anomaly Proficiency",
+  "talents": [
+   {
+    "name": "Dinner's Ready!",
+    "desc": "For every 10 Energy consumed, the equipper gains a buff that increases ATK by 2.5% for 10s, stacking up to 10 times. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Dinner's Ready!",
+    "desc": "For every 10 Energy consumed, the equipper gains a buff that increases ATK by 2.8% for 10s, stacking up to 10 times. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Dinner's Ready!",
+    "desc": "For every 10 Energy consumed, the equipper gains a buff that increases ATK by 3.2% for 10s, stacking up to 10 times. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Dinner's Ready!",
+    "desc": "For every 10 Energy consumed, the equipper gains a buff that increases ATK by 3.6% for 10s, stacking up to 10 times. The duration of each stack is calculated separately."
+   },
+   {
+    "name": "Dinner's Ready!",
+    "desc": "For every 10 Energy consumed, the equipper gains a buff that increases ATK by 4% for 10s, stacking up to 10 times. The duration of each stack is calculated separately."
+   }
+  ]
+ },
+ "13002": {
+  "name": "Slice of Time",
+  "main": "Base ATK",
+  "sub": "PEN Ratio",
+  "talents": [
+   {
+    "name": "Say Cheese",
+    "desc": "Any squad members' Dodge Counter, EX Special Attack, Assist Attack, or Chain Attack respectively generates 20/25/30/35 more Decibels and generates 0.7 Energy for the equipper. This effect can trigger once every 12s. The cooldown for each type of attack is independent of others. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Say Cheese",
+    "desc": "Any squad members' Dodge Counter, EX Special Attack, Assist Attack, or Chain Attack respectively generates 23/28.5/34.5/40 more Decibels and generates 0.8 Energy for the equipper. This effect can trigger once every 12s. The cooldown for each type of attack is independent of others. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Say Cheese",
+    "desc": "Any squad members' Dodge Counter, EX Special Attack, Assist Attack, or Chain Attack respectively generates 26/32/39/45 more Decibels and generates 0.9 Energy for the equipper. This effect can trigger once every 12s. The cooldown for each type of attack is independent of others. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Say Cheese",
+    "desc": "Any squad members' Dodge Counter, EX Special Attack, Assist Attack, or Chain Attack respectively generates 29/35.5/43.5/50 more Decibels and generates 1 Energy for the equipper. This effect can trigger once every 12s. The cooldown for each type of attack is independent of others. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Say Cheese",
+    "desc": "Any squad members' Dodge Counter, EX Special Attack, Assist Attack, or Chain Attack respectively generates 32/40/48/55 more Decibels and generates 1.1 Energy for the equipper. This effect can trigger once every 12s. The cooldown for each type of attack is independent of others. Passive effects of the same name do not stack."
+   }
+  ]
+ },
+ "13001": {
+  "name": "Street Superstar",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Flaming Bars",
+    "desc": "Whenever a squad member launches a Chain Attack, the equipper gains 1 Charge stack, stacking up to 3 times. Upon activating their own Ultimate, the equipper consumes all Charge stacks, and each stack increases the skill's DMG by 15%."
+   },
+   {
+    "name": "Flaming Bars",
+    "desc": "Whenever a squad member launches a Chain Attack, the equipper gains 1 Charge stack, stacking up to 3 times. Upon activating their own Ultimate, the equipper consumes all Charge stacks, and each stack increases the skill's DMG by 17.2%."
+   },
+   {
+    "name": "Flaming Bars",
+    "desc": "Whenever a squad member launches a Chain Attack, the equipper gains 1 Charge stack, stacking up to 3 times. Upon activating their own Ultimate, the equipper consumes all Charge stacks, and each stack increases the skill's DMG by 19.5%."
+   },
+   {
+    "name": "Flaming Bars",
+    "desc": "Whenever a squad member launches a Chain Attack, the equipper gains 1 Charge stack, stacking up to 3 times. Upon activating their own Ultimate, the equipper consumes all Charge stacks, and each stack increases the skill's DMG by 21.7%."
+   },
+   {
+    "name": "Flaming Bars",
+    "desc": "Whenever a squad member launches a Chain Attack, the equipper gains 1 Charge stack, stacking up to 3 times. Upon activating their own Ultimate, the equipper consumes all Charge stacks, and each stack increases the skill's DMG by 24%."
+   }
+  ]
+ },
+ "12016": {
+  "name": "[Lunar] Semiluna",
+  "main": "Base DEF",
+  "sub": "DEF",
+  "talents": [
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ },
+ "12015": {
+  "name": "[Cinder] Cobalt",
+  "main": "Base ATK",
+  "sub": "HP",
+  "talents": [
+   {
+    "name": "Dim Flame",
+    "desc": "Upon becoming the active character in combat, the equipper's ATK increases by 7.2% for 10s. This effect can trigger once every 20s."
+   },
+   {
+    "name": "Dim Flame",
+    "desc": "Upon becoming the active character in combat, the equipper's ATK increases by 8.2% for 10s. This effect can trigger once every 20s."
+   },
+   {
+    "name": "Dim Flame",
+    "desc": "Upon becoming the active character in combat, the equipper's ATK increases by 9.3% for 10s. This effect can trigger once every 20s."
+   },
+   {
+    "name": "Dim Flame",
+    "desc": "Upon becoming the active character in combat, the equipper's ATK increases by 10.4% for 10s. This effect can trigger once every 20s."
+   },
+   {
+    "name": "Dim Flame",
+    "desc": "Upon becoming the active character in combat, the equipper's ATK increases by 11.5% for 10s. This effect can trigger once every 20s."
+   }
+  ]
+ },
+ "12014": {
+  "name": "[Identity] Inflection",
+  "main": "Base ATK",
+  "sub": "DEF",
+  "talents": [
+   {
+    "name": "Dazzle",
+    "desc": "When attacked, reduces the attacker's DMG by 6% for 12s."
+   },
+   {
+    "name": "Dazzle",
+    "desc": "When attacked, reduces the attacker's DMG by 7% for 12s."
+   },
+   {
+    "name": "Dazzle",
+    "desc": "When attacked, reduces the attacker's DMG by 8% for 12s."
+   },
+   {
+    "name": "Dazzle",
+    "desc": "When attacked, reduces the attacker's DMG by 9% for 12s."
+   },
+   {
+    "name": "Dazzle",
+    "desc": "When attacked, reduces the attacker's DMG by 10% for 12s."
+   }
+  ]
+ },
+ "12013": {
+  "name": "[Identity] Base",
+  "main": "Base ATK",
+  "sub": "DEF",
+  "talents": [
+   {
+    "name": "Sinking Strike",
+    "desc": "When attacked, the equipper's DEF increases by 20% for 8s."
+   },
+   {
+    "name": "Sinking Strike",
+    "desc": "When attacked, the equipper's DEF increases by 23% for 8s."
+   },
+   {
+    "name": "Sinking Strike",
+    "desc": "When attacked, the equipper's DEF increases by 26% for 8s."
+   },
+   {
+    "name": "Sinking Strike",
+    "desc": "When attacked, the equipper's DEF increases by 29% for 8s."
+   },
+   {
+    "name": "Sinking Strike",
+    "desc": "When attacked, the equipper's DEF increases by 32% for 8s."
+   }
+  ]
+ },
+ "12012": {
+  "name": "[Magnetic Storm] Charlie",
+  "main": "Base ATK",
+  "sub": "PEN Ratio",
+  "talents": [
+   {
+    "name": "Charge Overload",
+    "desc": "Whenever a squad member inflicts an Attribute Anomaly on an enemy, the equipper generates 3.5 Energy. This effect can trigger once every 12s."
+   },
+   {
+    "name": "Charge Overload",
+    "desc": "Whenever a squad member inflicts an Attribute Anomaly on an enemy, the equipper generates 4 Energy. This effect can trigger once every 12s."
+   },
+   {
+    "name": "Charge Overload",
+    "desc": "Whenever a squad member inflicts an Attribute Anomaly on an enemy, the equipper generates 4.5 Energy. This effect can trigger once every 12s."
+   },
+   {
+    "name": "Charge Overload",
+    "desc": "Whenever a squad member inflicts an Attribute Anomaly on an enemy, the equipper generates 5 Energy. This effect can trigger once every 12s."
+   },
+   {
+    "name": "Charge Overload",
+    "desc": "Whenever a squad member inflicts an Attribute Anomaly on an enemy, the equipper generates 5.5 Energy. This effect can trigger once every 12s."
+   }
+  ]
+ },
+ "12011": {
+  "name": "[Magnetic Storm] Bravo",
+  "main": "Base ATK",
+  "sub": "Anomaly Proficiency",
+  "talents": [
+   {
+    "name": "High-Voltage Surge",
+    "desc": "Accumulating Anomaly Buildup increases the equipper's Anomaly Proficiency by 25 for 10s. This effect can trigger once every 20s."
+   },
+   {
+    "name": "High-Voltage Surge",
+    "desc": "Accumulating Anomaly Buildup increases the equipper's Anomaly Proficiency by 28 for 10s. This effect can trigger once every 20s."
+   },
+   {
+    "name": "High-Voltage Surge",
+    "desc": "Accumulating Anomaly Buildup increases the equipper's Anomaly Proficiency by 32 for 10s. This effect can trigger once every 20s."
+   },
+   {
+    "name": "High-Voltage Surge",
+    "desc": "Accumulating Anomaly Buildup increases the equipper's Anomaly Proficiency by 36 for 10s. This effect can trigger once every 20s."
+   },
+   {
+    "name": "High-Voltage Surge",
+    "desc": "Accumulating Anomaly Buildup increases the equipper's Anomaly Proficiency by 40 for 10s. This effect can trigger once every 20s."
+   }
+  ]
+ },
+ "12010": {
+  "name": "[Magnetic Storm] Alpha",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Disordered Current",
+    "desc": "Accumulating Anomaly Buildup increases the equipper's Anomaly Mastery by 25 for 10s. This effect can trigger once every 20s."
+   },
+   {
+    "name": "Disordered Current",
+    "desc": "Accumulating Anomaly Buildup increases the equipper's Anomaly Mastery by 28 for 10s. This effect can trigger once every 20s."
+   },
+   {
+    "name": "Disordered Current",
+    "desc": "Accumulating Anomaly Buildup increases the equipper's Anomaly Mastery by 32 for 10s. This effect can trigger once every 20s."
+   },
+   {
+    "name": "Disordered Current",
+    "desc": "Accumulating Anomaly Buildup increases the equipper's Anomaly Mastery by 36 for 10s. This effect can trigger once every 20s."
+   },
+   {
+    "name": "Disordered Current",
+    "desc": "Accumulating Anomaly Buildup increases the equipper's Anomaly Mastery by 40 for 10s. This effect can trigger once every 20s."
+   }
+  ]
+ },
+ "12009": {
+  "name": "[Vortex] Hatchet",
+  "main": "Base ATK",
+  "sub": "Energy Regen",
+  "talents": [
+   {
+    "name": "Riptide",
+    "desc": "Upon becoming the active character in combat, the equipper's Impact increases by 9% for 10s. This effect can trigger once every 20s."
+   },
+   {
+    "name": "Riptide",
+    "desc": "Upon becoming the active character in combat, the equipper's Impact increases by 10% for 10s. This effect can trigger once every 20s."
+   },
+   {
+    "name": "Riptide",
+    "desc": "Upon becoming the active character in combat, the equipper's Impact increases by 11% for 10s. This effect can trigger once every 20s."
+   },
+   {
+    "name": "Riptide",
+    "desc": "Upon becoming the active character in combat, the equipper's Impact increases by 12% for 10s. This effect can trigger once every 20s."
+   },
+   {
+    "name": "Riptide",
+    "desc": "Upon becoming the active character in combat, the equipper's Impact increases by 13% for 10s. This effect can trigger once every 20s."
+   }
+  ]
+ },
+ "12008": {
+  "name": "[Vortex] Arrow",
+  "main": "Base ATK",
+  "sub": "Impact",
+  "talents": [
+   {
+    "name": "Tsunami",
+    "desc": "The equipper's attacks inflict 8% more Daze on their main target."
+   },
+   {
+    "name": "Tsunami",
+    "desc": "The equipper's attacks inflict 9% more Daze on their main target."
+   },
+   {
+    "name": "Tsunami",
+    "desc": "The equipper's attacks inflict 10% more Daze on their main target."
+   },
+   {
+    "name": "Tsunami",
+    "desc": "The equipper's attacks inflict 11% more Daze on their main target."
+   },
+   {
+    "name": "Tsunami",
+    "desc": "The equipper's attacks inflict 12% more Daze on their main target."
+   }
+  ]
+ },
+ "12007": {
+  "name": "[Vortex] Revolver",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Undercurrent",
+    "desc": "EX Special Attacks inflict 10% more Daze."
+   },
+   {
+    "name": "Undercurrent",
+    "desc": "EX Special Attacks inflict 11.5% more Daze."
+   },
+   {
+    "name": "Undercurrent",
+    "desc": "EX Special Attacks inflict 13% more Daze."
+   },
+   {
+    "name": "Undercurrent",
+    "desc": "EX Special Attacks inflict 14.5% more Daze."
+   },
+   {
+    "name": "Undercurrent",
+    "desc": "EX Special Attacks inflict 16% more Daze."
+   }
+  ]
+ },
+ "12006": {
+  "name": "[Reverb] Mark III",
+  "main": "Base ATK",
+  "sub": "HP",
+  "talents": [
+   {
+    "name": "Booming Sound",
+    "desc": "Launching a Chain Attack or Ultimate increases all squad members' ATK by 8% for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Booming Sound",
+    "desc": "Launching a Chain Attack or Ultimate increases all squad members' ATK by 9% for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Booming Sound",
+    "desc": "Launching a Chain Attack or Ultimate increases all squad members' ATK by 10% for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Booming Sound",
+    "desc": "Launching a Chain Attack or Ultimate increases all squad members' ATK by 11% for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Booming Sound",
+    "desc": "Launching a Chain Attack or Ultimate increases all squad members' ATK by 12% for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack."
+   }
+  ]
+ },
+ "12005": {
+  "name": "[Reverb] Mark II",
+  "main": "Base ATK",
+  "sub": "Energy Regen",
+  "talents": [
+   {
+    "name": "Roaring Waves",
+    "desc": "Launching an EX Special Attack or Chain Attack increases all squad members' Anomaly Mastery and Anomaly Proficiency by 10 for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Roaring Waves",
+    "desc": "Launching an EX Special Attack or Chain Attack increases all squad members' Anomaly Mastery and Anomaly Proficiency by 12 for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Roaring Waves",
+    "desc": "Launching an EX Special Attack or Chain Attack increases all squad members' Anomaly Mastery and Anomaly Proficiency by 13 for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Roaring Waves",
+    "desc": "Launching an EX Special Attack or Chain Attack increases all squad members' Anomaly Mastery and Anomaly Proficiency by 15 for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Roaring Waves",
+    "desc": "Launching an EX Special Attack or Chain Attack increases all squad members' Anomaly Mastery and Anomaly Proficiency by 16 for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack."
+   }
+  ]
+ },
+ "12004": {
+  "name": "[Reverb] Mark I",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Changing Tides",
+    "desc": "Launching an EX Special Attack increases all squad members' Impact by 8% for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Changing Tides",
+    "desc": "Launching an EX Special Attack increases all squad members' Impact by 9% for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Changing Tides",
+    "desc": "Launching an EX Special Attack increases all squad members' Impact by 10% for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Changing Tides",
+    "desc": "Launching an EX Special Attack increases all squad members' Impact by 11% for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack."
+   },
+   {
+    "name": "Changing Tides",
+    "desc": "Launching an EX Special Attack increases all squad members' Impact by 12% for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack."
+   }
+  ]
+ },
+ "12003": {
+  "name": "[Lunar] Noviluna",
+  "main": "Base ATK",
+  "sub": "CRIT Rate",
+  "talents": [
+   {
+    "name": "New Moon",
+    "desc": "Launching an EX Special Attack generates 3 Energy for the equipper. This effect can trigger once every 12s."
+   },
+   {
+    "name": "New Moon",
+    "desc": "Launching an EX Special Attack generates 3.5 Energy for the equipper. This effect can trigger once every 12s."
+   },
+   {
+    "name": "New Moon",
+    "desc": "Launching an EX Special Attack generates 4 Energy for the equipper. This effect can trigger once every 12s."
+   },
+   {
+    "name": "New Moon",
+    "desc": "Launching an EX Special Attack generates 4.5 Energy for the equipper. This effect can trigger once every 12s."
+   },
+   {
+    "name": "New Moon",
+    "desc": "Launching an EX Special Attack generates 5 Energy for the equipper. This effect can trigger once every 12s."
+   }
+  ]
+ },
+ "12002": {
+  "name": "[Lunar] Decrescent",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Waning Moon",
+    "desc": "Launching a Chain Attack or Ultimate increases the equipper's DMG by 15% for 6s."
+   },
+   {
+    "name": "Waning Moon",
+    "desc": "Launching a Chain Attack or Ultimate increases the equipper's DMG by 17.5% for 6s."
+   },
+   {
+    "name": "Waning Moon",
+    "desc": "Launching a Chain Attack or Ultimate increases the equipper's DMG by 20% for 6s."
+   },
+   {
+    "name": "Waning Moon",
+    "desc": "Launching a Chain Attack or Ultimate increases the equipper's DMG by 22.5% for 6s."
+   },
+   {
+    "name": "Waning Moon",
+    "desc": "Launching a Chain Attack or Ultimate increases the equipper's DMG by 25% for 6s."
+   }
+  ]
+ },
+ "12001": {
+  "name": "[Lunar] Pleniluna",
+  "main": "Base ATK",
+  "sub": "ATK",
+  "talents": [
+   {
+    "name": "Full Moon",
+    "desc": "Basic Attack, Dash Attack, and Dodge Counter DMG increases by 12%."
+   },
+   {
+    "name": "Full Moon",
+    "desc": "Basic Attack, Dash Attack, and Dodge Counter DMG increases by 14%."
+   },
+   {
+    "name": "Full Moon",
+    "desc": "Basic Attack, Dash Attack, and Dodge Counter DMG increases by 16%."
+   },
+   {
+    "name": "Full Moon",
+    "desc": "Basic Attack, Dash Attack, and Dodge Counter DMG increases by 18%."
+   },
+   {
+    "name": "Full Moon",
+    "desc": "Basic Attack, Dash Attack, and Dodge Counter DMG increases by 20%."
+   }
+  ]
+ }
+}

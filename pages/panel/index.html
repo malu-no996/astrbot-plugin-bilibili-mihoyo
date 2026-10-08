@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>米游社面板</title>
+    <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/frag/device.css">
     <link rel="stylesheet" href="./css/frag/sidebar.css">
@@ -61,10 +62,10 @@
 
   <!-- 扫码登录区 -->
   <div v-if="mys.login.show" class="mys-login">
-    <img v-if="mys.login.png" :src="mys.login.png" width="150" height="150" alt="登录二维码"
+    <img v-if="mys.login.png" v-bind="{src: mys.login.png}" width="150" height="150" alt="登录二维码"
          style="border:1px solid var(--line);border-radius:8px;background:#fff;display:block;margin:0 auto">
     <div class="muted" style="margin-top:8px">{{ mys.login.tip || '请用米游社 App 扫码' }}</div>
-    <div class="muted" style="margin-top:4px">显示不出来？<a :href="mys.login.url" target="_blank">浏览器打开登录链接</a></div>
+    <div class="muted" style="margin-top:4px">显示不出来？<a v-bind="{href: mys.login.url}" target="_blank">浏览器打开登录链接</a></div>
     <button class="ghost sm" style="margin-top:8px" @click="mysLoginCancel()">取消</button>
   </div>
 
@@ -79,7 +80,7 @@
              图挂了只把 img 藏起来，占位自然露出来。 -->
         <span class="mys-acc-avatar" aria-hidden="true">
           <span class="mys-acc-initial">{{ (a.nickname || a.account_id || '?').slice(0, 1).toUpperCase() }}</span>
-          <img v-if="a.face" class="mys-acc-face" :src="a.face" alt=""
+          <img v-if="a.face" class="mys-acc-face" v-bind="{src: a.face}" alt=""
                @error="$event.target.style.display='none'">
         </span>
         <!-- 右侧一整列（头像单独占一列）：① 名字 + 删除 ② 状态 · UID。
@@ -497,7 +498,7 @@
     <!-- ---- 绝境模式：独立一张卡，与常规危局明显区分 ---- -->
     <div class="hd-card hd-hard" v-if="mys.deadly.view.hard.length">
       <div class="hd-head">
-        <img class="hd-avatar" v-if="mys.deadly.view.avatar_icon" :src="mys.deadly.view.avatar_icon" alt="">
+        <img class="hd-avatar" v-if="mys.deadly.view.avatar_icon" v-bind="{src: mys.deadly.view.avatar_icon}" alt="">
         <div class="hd-head-main">
           <div class="hd-nick">
             {{ mys.deadly.view.nick_name || '代理人' }}
@@ -511,24 +512,24 @@
         </div>
       </div>
       <div class="hd-hard-body" v-for="(c, i) in mys.deadly.view.hard" :key="'h' + i">
-        <div class="hd-portrait" v-if="c.boss_img"><img :src="c.boss_img" alt=""></div>
+        <div class="hd-portrait" v-if="c.boss_img"><img v-bind="{src: c.boss_img}" alt=""></div>
         <div class="hd-entry-main">
           <div class="hd-boss-name">{{ c.boss_name || ('绝境 ' + (i + 1)) }}</div>
           <div class="hd-boss-score">{{ c.score }}<span class="hd-stars">{{ '★'.repeat(c.star) }}</span></div>
           <div class="hd-time" v-if="c.time && mys.deadly.showTime">通关时刻：{{ c.time }}</div>
           <div class="hd-avatars">
             <span class="hd-ava" v-for="(a, j) in c.avatars" :key="j" :class="dzRarity(a)" :title="a.rarity + ' 级代理人'">
-              <img :src="a.icon" alt="">
+              <img v-bind="{src: a.icon}" alt="">
               <!-- S / A / B 用方徽章图片（和 QQ 出图同一套素材）；没素材才退回字母小标签 -->
-              <img class="hd-rar" v-if="dzRarIcon(a.rarity)" :src="dzRarIcon(a.rarity)" alt="">
+              <img class="hd-rar" v-if="dzRarIcon(a.rarity)" v-bind="{src: dzRarIcon(a.rarity)}" alt="">
               <i v-else>{{ a.rarity }}</i>
               <b class="hd-ava-rank">{{ a.rank }}</b>
               <!-- 「全面」版：左下角叠一枚音擎图标（大小同左上角 A/S 徽章） -->
-              <img class="hd-wp" v-if="a.weapon" :src="a.weapon" alt="">
+              <img class="hd-wp" v-if="a.weapon" v-bind="{src: a.weapon}" alt="">
             </span>
             <span class="hd-ava buddy" v-if="c.buddy_icon" :class="c.buddy_rarity === 'A' ? 'a' : ''">
-              <img :src="c.buddy_icon" alt="" :title="c.buddy_rarity + ' 级邦布'">
-              <img class="hd-rar" v-if="dzRarIcon(c.buddy_rarity)" :src="dzRarIcon(c.buddy_rarity)" alt="">
+              <img v-bind="{src: c.buddy_icon}" alt="" :title="c.buddy_rarity + ' 级邦布'">
+              <img class="hd-rar" v-if="dzRarIcon(c.buddy_rarity)" v-bind="{src: dzRarIcon(c.buddy_rarity)}" alt="">
               <i v-else>{{ c.buddy_rarity }}</i>
             </span>
           </div>
@@ -544,7 +545,7 @@
     <!-- ---- 常规危局：一张大卡（总分 + ★xN + 每个 BOSS 一个条目） ---- -->
     <div class="hd-card hd-normal">
       <div class="hd-head">
-        <img class="hd-avatar" v-if="mys.deadly.view.avatar_icon" :src="mys.deadly.view.avatar_icon" alt="">
+        <img class="hd-avatar" v-if="mys.deadly.view.avatar_icon" v-bind="{src: mys.deadly.view.avatar_icon}" alt="">
         <div class="hd-head-main">
           <div class="hd-nick">
             {{ mys.deadly.view.nick_name || '代理人' }}
@@ -561,24 +562,24 @@
         <span class="hd-star">★ × {{ mys.deadly.view.total_star }}</span>
       </div>
       <div class="hd-entry" v-for="(c, i) in mys.deadly.view.list" :key="i">
-        <div class="hd-portrait" v-if="c.boss_img"><img :src="c.boss_img" alt=""></div>
+        <div class="hd-portrait" v-if="c.boss_img"><img v-bind="{src: c.boss_img}" alt=""></div>
         <div class="hd-entry-main">
           <div class="hd-boss-name">{{ c.boss_name || ('挑战 ' + (i + 1)) }}</div>
           <div class="hd-boss-score">{{ c.score }}<span class="hd-stars">{{ '★'.repeat(c.star) }}</span></div>
           <div class="hd-time" v-if="c.time && mys.deadly.showTime">通关时刻：{{ c.time }}</div>
           <div class="hd-avatars">
             <span class="hd-ava" v-for="(a, j) in c.avatars" :key="j" :class="dzRarity(a)" :title="a.rarity + ' 级代理人'">
-              <img :src="a.icon" alt="">
+              <img v-bind="{src: a.icon}" alt="">
               <!-- S / A / B 用方徽章图片（和 QQ 出图同一套素材）；没素材才退回字母小标签 -->
-              <img class="hd-rar" v-if="dzRarIcon(a.rarity)" :src="dzRarIcon(a.rarity)" alt="">
+              <img class="hd-rar" v-if="dzRarIcon(a.rarity)" v-bind="{src: dzRarIcon(a.rarity)}" alt="">
               <i v-else>{{ a.rarity }}</i>
               <b class="hd-ava-rank">{{ a.rank }}</b>
               <!-- 「全面」版：左下角叠一枚音擎图标（大小同左上角 A/S 徽章） -->
-              <img class="hd-wp" v-if="a.weapon" :src="a.weapon" alt="">
+              <img class="hd-wp" v-if="a.weapon" v-bind="{src: a.weapon}" alt="">
             </span>
             <span class="hd-ava buddy" v-if="c.buddy_icon" :class="c.buddy_rarity === 'A' ? 'a' : ''">
-              <img :src="c.buddy_icon" alt="" :title="c.buddy_rarity + ' 级邦布'">
-              <img class="hd-rar" v-if="dzRarIcon(c.buddy_rarity)" :src="dzRarIcon(c.buddy_rarity)" alt="">
+              <img v-bind="{src: c.buddy_icon}" alt="" :title="c.buddy_rarity + ' 级邦布'">
+              <img class="hd-rar" v-if="dzRarIcon(c.buddy_rarity)" v-bind="{src: dzRarIcon(c.buddy_rarity)}" alt="">
               <i v-else>{{ c.buddy_rarity }}</i>
             </span>
           </div>
@@ -672,7 +673,7 @@
     <!-- 综合评级**不在这里显示**（用户要求最上面角色名后面不要 S+ 之类的评级）：
          评级在下面的防线卡右侧已经有了，头卡留白更干净。 -->
     <div class="sy-card sy-head">
-      <img class="sy-avatar" v-if="mys.shiyu.view.icon" :src="mys.shiyu.view.icon" alt="">
+      <img class="sy-avatar" v-if="mys.shiyu.view.icon" v-bind="{src: mys.shiyu.view.icon}" alt="">
       <span class="sy-nick">{{ mys.shiyu.view.nick_name || '代理人' }}</span>
       <span class="sy-prev" v-if="mys.shiyu.view.saved">本地存档</span>
       <span class="sy-prev" v-else-if="mys.shiyu.view.previous">往期</span>
@@ -691,7 +692,7 @@
       </div>
 
       <div class="sy-team" v-for="t in mys.shiyu.view.fifth.teams" :key="t.no">
-        <img class="sy-monster" v-if="t.monster_pic" :src="t.monster_pic" alt="">
+        <img class="sy-monster" v-if="t.monster_pic" v-bind="{src: t.monster_pic}" alt="">
         <div class="sy-team-top">
           <span class="sy-team-label">0{{ t.no }} TEAM.</span>
           <span class="sy-rating" v-if="t.rating" :class="syRatingCls(t.rating)">{{ t.rating }}</span>
@@ -703,16 +704,16 @@
         <div class="sy-time" v-if="t.time && mys.shiyu.showTime">通关时刻：{{ t.time }}</div>
         <div class="sy-avatars">
           <span class="sy-ava" v-for="(a, j) in t.avatars" :key="j" :class="syRarity(a)" :title="a.rarity + ' 级代理人'">
-            <img :src="a.icon" alt="">
+            <img v-bind="{src: a.icon}" alt="">
             <!-- S / A / B 用方徽章图片（和 QQ 出图同一套素材）；没素材才退回字母小标签 -->
-            <img class="sy-rar" v-if="syRarIcon(a.rarity)" :src="syRarIcon(a.rarity)" alt=""><i v-else>{{ a.rarity }}</i>
+            <img class="sy-rar" v-if="syRarIcon(a.rarity)" v-bind="{src: syRarIcon(a.rarity)}" alt=""><i v-else>{{ a.rarity }}</i>
             <b class="sy-ava-rank">{{ a.rank }}</b>
             <!-- 「全面」版：左下角叠一枚音擎图标（大小同左上角 A/S 徽章） -->
-            <img class="sy-wp" v-if="a.weapon" :src="a.weapon" alt="">
+            <img class="sy-wp" v-if="a.weapon" v-bind="{src: a.weapon}" alt="">
           </span>
           <span class="sy-ava buddy" v-if="t.buddy_icon" :class="t.buddy_rarity === 'A' ? 'a' : ''">
-            <img :src="t.buddy_icon" alt="" :title="t.buddy_rarity + ' 级邦布'">
-            <img class="sy-rar" v-if="syRarIcon(t.buddy_rarity)" :src="syRarIcon(t.buddy_rarity)" alt=""><i v-else>{{ t.buddy_rarity }}</i>
+            <img v-bind="{src: t.buddy_icon}" alt="" :title="t.buddy_rarity + ' 级邦布'">
+            <img class="sy-rar" v-if="syRarIcon(t.buddy_rarity)" v-bind="{src: syRarIcon(t.buddy_rarity)}" alt=""><i v-else>{{ t.buddy_rarity }}</i>
           </span>
         </div>
       </div>
@@ -735,16 +736,16 @@
         <div class="sy-time" v-if="t.time && mys.shiyu.showTime">通关时刻：{{ t.time }}</div>
         <div class="sy-avatars">
           <span class="sy-ava" v-for="(a, j) in t.avatars" :key="j" :class="syRarity(a)" :title="a.rarity + ' 级代理人'">
-            <img :src="a.icon" alt="">
+            <img v-bind="{src: a.icon}" alt="">
             <!-- S / A / B 用方徽章图片（和 QQ 出图同一套素材）；没素材才退回字母小标签 -->
-            <img class="sy-rar" v-if="syRarIcon(a.rarity)" :src="syRarIcon(a.rarity)" alt=""><i v-else>{{ a.rarity }}</i>
+            <img class="sy-rar" v-if="syRarIcon(a.rarity)" v-bind="{src: syRarIcon(a.rarity)}" alt=""><i v-else>{{ a.rarity }}</i>
             <b class="sy-ava-rank">{{ a.rank }}</b>
             <!-- 「全面」版：左下角叠一枚音擎图标（大小同左上角 A/S 徽章） -->
-            <img class="sy-wp" v-if="a.weapon" :src="a.weapon" alt="">
+            <img class="sy-wp" v-if="a.weapon" v-bind="{src: a.weapon}" alt="">
           </span>
           <span class="sy-ava buddy" v-if="t.buddy_icon" :class="t.buddy_rarity === 'A' ? 'a' : ''">
-            <img :src="t.buddy_icon" alt="" :title="t.buddy_rarity + ' 级邦布'">
-            <img class="sy-rar" v-if="syRarIcon(t.buddy_rarity)" :src="syRarIcon(t.buddy_rarity)" alt=""><i v-else>{{ t.buddy_rarity }}</i>
+            <img v-bind="{src: t.buddy_icon}" alt="" :title="t.buddy_rarity + ' 级邦布'">
+            <img class="sy-rar" v-if="syRarIcon(t.buddy_rarity)" v-bind="{src: syRarIcon(t.buddy_rarity)}" alt=""><i v-else>{{ t.buddy_rarity }}</i>
           </span>
         </div>
       </div>
@@ -778,7 +779,7 @@
     <!-- ---- 顶部两块大数字：调查等级 / 鸣徽等级 ---- -->
     <div class="ab-heroes">
       <div class="ab-hero">
-        <img class="ab-hero-ic" v-if="mys.abyss.view.level.icon" :src="mys.abyss.view.level.icon" alt="">
+        <img class="ab-hero-ic" v-if="mys.abyss.view.level.icon" v-bind="{src: mys.abyss.view.level.icon}" alt="">
         <div class="ab-hero-b">
           <div class="ab-hero-t">调查等级</div>
           <div class="ab-hero-v">
@@ -875,7 +876,7 @@
   <div v-if="mys.zenkov.view" class="zk-wrap">
     <!-- ---- 头部：头像 + 昵称 + 最高排名 ---- -->
     <div class="zk-card zk-head">
-      <img class="zk-avatar" v-if="mys.zenkov.view.avatar" :src="mys.zenkov.view.avatar" alt="">
+      <img class="zk-avatar" v-if="mys.zenkov.view.avatar" v-bind="{src: mys.zenkov.view.avatar}" alt="">
       <div class="zk-head-b">
         <div class="zk-nick">{{ mys.zenkov.view.nick || mysRoleName() }}</div>
         <div class="zk-head-s">
@@ -966,7 +967,7 @@
       <div class="zk-icons">
         <span class="zk-icon" v-for="m in mys.zenkov.view.medal.list" :key="m.id"
               :class="{off: !m.unlock}" :title="m.name + (m.unlock ? '' : '（未解锁）')">
-          <img :src="m.icon" alt=""><i>{{ m.name }}</i>
+          <img v-bind="{src: m.icon}" alt=""><i>{{ m.name }}</i>
         </span>
       </div>
     </div>
@@ -981,7 +982,7 @@
         <span class="zk-icon" v-for="g in mys.zenkov.view.goods.list" :key="g.id"
               :class="{off: !g.unlock}"
               :title="g.name + (g.number > 1 ? ' ×' + g.number : '') + (g.unlock ? '' : '（未解锁）')">
-          <img :src="g.icon" alt=""><i>{{ g.name }}</i>
+          <img v-bind="{src: g.icon}" alt=""><i>{{ g.name }}</i>
         </span>
       </div>
     </div>
@@ -1018,11 +1019,11 @@
     <div class="rl-card rl-click" v-for="a in mys.avatars.list" :key="a.id" :class="rlRarity(a)"
          @click="avOpen(a)" :title="'查看 ' + a.name + ' 的详情'">
       <div class="rl-pic">
-        <img v-if="a.icon" :src="a.icon" :alt="a.name" loading="lazy" @error="rlImgErr($event)">
+        <img v-if="a.icon" v-bind="{src: a.icon}" :alt="a.name" loading="lazy" @error="rlImgErr($event)">
         <span v-else class="rl-ph">{{ (a.name || '?').slice(0, 1) }}</span>
         <i class="rl-rank" v-if="a.rank > 0" :title="'影画 ' + a.rank">{{ a.rank }}</i>
         <!-- 稀有度：优先官方圆形徽章图，没有素材或加载失败才回退文字 -->
-        <img class="rl-raric" v-if="rlRarIcon(a)" :src="rlRarIcon(a)" :alt="a.rarity"
+        <img class="rl-raric" v-if="rlRarIcon(a)" v-bind="{src: rlRarIcon(a)}" :alt="a.rarity"
              :title="'稀有度 ' + a.rarity" @error="rlRarErr($event)">
         <span class="rl-star" :class="rlRarity(a)" v-if="a.rarity"
               :style="rlRarIcon(a) ? 'display:none' : ''">{{ a.rarity }}</span>
@@ -1105,7 +1106,7 @@
   <div class="cx-grid" v-if="cxList().length">
     <div class="cx-card" v-for="it in cxList()" :key="it.id" :class="cxRarity(it)" @click="codexPick(it)">
       <div class="cx-pic">
-        <img v-if="it.icon" :src="it.icon" :alt="it.name" loading="lazy" @error="cxImgErr($event)">
+        <img v-if="it.icon" v-bind="{src: it.icon}" :alt="it.name" loading="lazy" @error="cxImgErr($event)">
         <span v-else class="cx-ph">{{ (it.name || '?').slice(0, 1) }}</span>
         <span class="cx-rar" :class="cxRarity(it)" v-if="it.rarity">{{ it.rarity }}</span>
       </div>
@@ -1129,7 +1130,7 @@
 
       <div class="cx-mhead">
         <div class="cx-mpic" :class="cxRarity(mys.codex.detail)">
-          <img v-if="mys.codex.detail.icon" :src="mys.codex.detail.icon"
+          <img v-if="mys.codex.detail.icon" v-bind="{src: mys.codex.detail.icon}"
                :alt="cxDetail().name" @error="cxImgErr($event)">
           <span v-else class="cx-ph">{{ (cxDetail().name || '?').slice(0, 1) }}</span>
         </div>
@@ -1304,7 +1305,7 @@
          :class="{got: i < (mys.sign.info.total_sign_day || 0), today: i === sgToday()}">
       <span class="sg-day">{{ i + 1 }}</span>
       <span class="sg-tick" v-if="i < (mys.sign.info.total_sign_day || 0)">✓</span>
-      <img class="sg-ico" v-if="a.icon" :src="a.icon" :alt="a.name" loading="lazy" @error="sgImgErr($event)">
+      <img class="sg-ico" v-if="a.icon" v-bind="{src: a.icon}" :alt="a.name" loading="lazy" @error="sgImgErr($event)">
       <span class="sg-ph" v-else>?</span>
       <div class="sg-name">{{ a.name }}</div>
       <div class="sg-cnt">×{{ a.cnt }}</div>
@@ -1442,9 +1443,9 @@
           <span v-if="it.time" class="vt-meta">{{ it.time }}</span>
           <span class="vt-avs">
             <img v-for="(a, k) in it.avatars" :key="k" class="vt-ava" :class="a.rarity==='A'?'a':'s'"
-                 :src="a.icon" alt="" @error="vtImgErr($event)">
+                 v-bind="{src: a.icon}" alt="" @error="vtImgErr($event)">
             <span class="vt-buddy" v-if="it.buddy">
-              <img class="vt-ava" :class="it.buddy_rarity==='A'?'a':'s'" :src="it.buddy" alt="" @error="vtImgErr($event)">
+              <img class="vt-ava" :class="it.buddy_rarity==='A'?'a':'s'" v-bind="{src: it.buddy}" alt="" @error="vtImgErr($event)">
             </span>
           </span>
         </div>
@@ -1486,7 +1487,7 @@
       <div class="pv-card-t">展示角色 <span class="hint">{{ mys.profile.view.avatars.length }} 个</span></div>
       <div class="pv-grid">
         <div class="pv-ava" v-for="a in mys.profile.view.avatars" :key="a.id">
-          <img class="pv-ava-i" :class="a.rarity==='A'?'a':'s'" :src="a.icon" alt="" @error="pvImgErr($event)">
+          <img class="pv-ava-i" :class="a.rarity==='A'?'a':'s'" v-bind="{src: a.icon}" alt="" @error="pvImgErr($event)">
           <div class="pv-ava-b">
             <div class="pv-ava-n">{{ a.name }}<span class="pv-ava-rk" v-if="a.rank">· {{ a.rank }} 影画</span></div>
             <div class="pv-ava-m">Lv.{{ a.level }} · {{ a.element }} · {{ a.profession }}</div>
@@ -1783,20 +1784,20 @@
         <div class="av-agent">
           <span class="av-agent-tab">AGENT INFO</span>
           <div class="av-pic" :class="avRarity()">
-            <img v-if="avD().icon" :src="avD().icon" :alt="avD().name" @error="avImgErr($event)">
+            <img v-if="avD().icon" v-bind="{src: avD().icon}" :alt="avD().name" @error="avImgErr($event)">
             <span v-else class="av-ph">{{ (avD().name || '?').slice(0, 1) }}</span>
             <!-- 左上角竖排三件套：稀有度 → 属性 → 职业（照游戏内 AGENT INFO 卡，
                  三个徽标贴着头像框左上角竖着一列，属性/职业不再单独占名字下面那一行）。
                  全部优先用官方图标素材，缺素材或加载失败时各自退回文字小标签。 -->
             <div class="av-tags">
-              <img class="av-raric" v-if="avRarIcon()" :src="avRarIcon()" :alt="avD().rarity"
+              <img class="av-raric" v-if="avRarIcon()" v-bind="{src: avRarIcon()}" :alt="avD().rarity"
                    :title="'稀有度 ' + avD().rarity" @error="avRarErr($event)">
               <span class="av-rar" :class="avRarity()" v-if="avD().rarity"
                     :style="avRarIcon() ? 'display:none' : ''">{{ avD().rarity }}</span>
-              <img class="av-mi av-mi-el" v-if="avElemIcon()" :src="avElemIcon()" :alt="avD().element"
+              <img class="av-mi av-mi-el" v-if="avElemIcon()" v-bind="{src: avElemIcon()}" :alt="avD().element"
                    :title="avD().element || '属性'" @error="avIcErr($event)">
               <span class="av-mt" v-else-if="avD().element">{{ avD().element }}</span>
-              <img class="av-mi av-mi-pr" v-if="avProfIcon()" :src="avProfIcon()" :alt="avD().profession"
+              <img class="av-mi av-mi-pr" v-if="avProfIcon()" v-bind="{src: avProfIcon()}" :alt="avD().profession"
                    :title="avD().profession || '职业'" @error="avIcErr($event)">
               <span class="av-mt" v-else-if="avD().profession">{{ avD().profession }}</span>
             </div>
@@ -1806,7 +1807,7 @@
           <div class="av-agent-lv">LV.{{ avD().level }}</div>
           <!-- 阵营 LOGO（官方 group_icon_path）：绝对定位在立绘卡右下角，**不参与布局**
                （不占 flex 空间、不推开名字/等级）。取不到就不渲染；加载失败按老规矩藏起来。 -->
-          <img class="av-camp" v-if="avD().camp_icon" :src="avD().camp_icon"
+          <img class="av-camp" v-if="avD().camp_icon" v-bind="{src: avD().camp_icon}"
                :alt="avD().camp" :title="avD().camp" @error="avIcErr($event)">
           <!-- （「米游社 / Enka」来源小标签已按要求移除：看板顶部已有 note 说明降级原因） -->
         </div>
@@ -1815,7 +1816,7 @@
           <div class="av-stats" v-if="avProps().length">
             <div class="av-stat" v-for="(p, i) in avProps()" :key="i">
               <span class="av-sk">
-                <img class="av-sk-ic" v-if="avPropIcon(p)" :src="avPropIcon(p)" :alt="p.name"
+                <img class="av-sk-ic" v-if="avPropIcon(p)" v-bind="{src: avPropIcon(p)}" :alt="p.name"
                      loading="lazy" @error="avIcErr($event)">
                 {{ p.name }}
               </span>
@@ -1833,7 +1834,7 @@
             <!-- ⚠️ 数字的百分比位置是相对「图片那层框」算的，必须包一层 .av-sbar-wrap：
                  直接挂在 .av-skillbar 上时，图片被 max-width 夹窄居中、数字却按整卡宽度排 → 会错位。 -->
             <div class="av-sbar-wrap">
-              <img class="av-sbar-img" :src="avSkillBarUrl()" alt="技能">
+              <img class="av-sbar-img" v-bind="{src: avSkillBarUrl()}" alt="技能">
               <span class="av-sbar-num" v-for="(s, i) in avSkills()" :key="i"
                     :class="avSkillLvClass(s)" :style="avSkillNumStyle(s)"
                     :title="s.name">{{ s.level }}</span>
@@ -1841,7 +1842,7 @@
           </div>
           <div class="av-strip" v-else-if="avDiscs().length" title="已装备的驱动盘">
             <div class="av-st" v-for="(d, i) in avDiscs()" :key="i">
-              <img :src="d.icon" :alt="d.name" @error="avImgErr($event)">
+              <img v-bind="{src: d.icon}" :alt="d.name" @error="avImgErr($event)">
               <i>{{ d.level }}</i>
             </div>
           </div>
@@ -1860,7 +1861,7 @@
           <!-- 左上角：音擎（只占左边一块） -->
           <div class="av-wrow" v-if="avW()">
             <div class="av-wico" :class="avWRarity()">
-              <img v-if="avW().icon" :src="avW().icon" @error="avImgErr($event)">
+              <img v-if="avW().icon" v-bind="{src: avW().icon}" @error="avImgErr($event)">
               <!-- 进阶星：照游戏压在图标下沿 —— 固定 5 格，前 avWStarN() 颗点亮 -->
               <span class="av-wstar" :title="'进阶 ' + avWStarN() + ' / 5'">
                 <i v-for="n in 5" :key="n" :class="{ on: n <= avWStarN() }">★</i>
@@ -1898,7 +1899,7 @@
                   <!-- 稀有度：用和代理人/音擎同一套官方圆形徽章（Rarity_*.png）。
                        文字小标签始终留在 DOM 里（有图标时 display:none），
                        这样徽章图万一加载失败，avRarErr 能把它放出来兜底。 -->
-                  <img class="av-drar" v-if="avDiscRarIcon(d.rarity)" :src="avDiscRarIcon(d.rarity)"
+                  <img class="av-drar" v-if="avDiscRarIcon(d.rarity)" v-bind="{src: avDiscRarIcon(d.rarity)}"
                        :alt="d.rarity" :title="'稀有度 ' + d.rarity" @error="avRarErr($event)">
                   <span class="av-drar-t" v-if="d.rarity"
                         :style="avDiscRarIcon(d.rarity) ? 'display:none' : ''">{{ d.rarity }}</span>
@@ -1907,7 +1908,7 @@
                   <span class="av-dmiss" v-else-if="d.invalid_cnt > 0">未命中{{ d.invalid_cnt }}次</span>
                 </div>
               </div>
-              <img class="av-dico" :src="d.icon" :alt="d.name" @error="avImgErr($event)">
+              <img class="av-dico" v-bind="{src: d.icon}" :alt="d.name" @error="avImgErr($event)">
             </div>
             <div class="av-dmain" v-if="d.main && d.main.name">
               <span class="av-dmk">{{ d.main.name }}</span>

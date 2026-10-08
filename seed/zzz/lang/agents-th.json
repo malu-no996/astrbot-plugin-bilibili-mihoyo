@@ -1,0 +1,11665 @@
+{
+ "1641": {
+  "element": "ไฟ",
+  "profession": "ธาตุผิดปกติ",
+  "hit_type": "Slash",
+  "camp": "หน่วยงานกำกับดูแล Krampus",
+  "skills": [
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1631": {
+  "profession": "โจมตีรุนแรง",
+  "hit_type": "Slash",
+  "camp": "กองรักษาความมั่นคง New Eridu",
+  "skills": [
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {}
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {},
+     {}
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1621": {
+  "name": "Roxy",
+  "profession": "สตั๊น",
+  "hit_type": "Strike",
+  "camp": "Roscaelifer",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: โปรดหยุดก่อน",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: ขอเสียมารยาท",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: ตอบแทน",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: ขออนุญาต",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: ขอไม่ไปส่ง",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: ระวังลมหนาว",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG ต่อวินาทีของการหมุนตัว"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: โปรดหลับให้สบาย",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG Explosion เพิ่มเติม"
+     }
+    ]
+   },
+   {
+    "name": "ตาแห่งลม",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การระเบิด"
+     },
+     {
+      "k": "ตัวคูณ DMG ของลมหมุนขนาดเล็กต่อวินาที"
+     },
+     {
+      "k": "ตัวคูณ DMG ต่อวินาทีของลมหมุนขนาดยักษ์"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: ค้อนยักษ์ฝังลม",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: บทเพลงส่งวิญญาณฝังรัตติกาล",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลซัปพอร์ต: ต้องทำโอทีอีกเหรอ?",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: พร้อมรับคำสั่ง",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: กฎเที่ยงคืน",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1611": {
+  "name": "Claret",
+  "element": "ไฟฟ้า",
+  "hit_type": "Slash",
+  "camp": "Roscaelifer",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: สี่กระบวนท่าหลอมโลหิต",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: สัตย์สาบานบุปผาโลหิต - หลอมดารา",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG Slash ต่อเนื่องขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG การทุบขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: สัตย์สาบานบุปผาโลหิต - ขวานสยบ",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: ชุบไฟ",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Returning Edge",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: สัตย์สาบานบุปผาโลหิต - หวนคมดาบ",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: แสงแรกเบิกสำเนียง",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: สัตย์สาบานบุปผาโลหิต - หลอมคมดาบโลหิตเร้นลับ",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: สัตย์สาบานบุปผาโลหิต - ตัดเหล็กกล้า",
+    "params": [
+     {},
+     {
+      "k": "ตัวคูณ DMG Horizontal Slash"
+     },
+     {
+      "k": "ตัวคูณ DMG การทำลาย"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: คำสาบานบุปผาโลหิต - Onslaught ฝังโลหิต",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: สัตย์ปฏิญาณโลหิต - เสียงสะท้อนพันธสัญญาเลือด",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: สัตย์สาบานบุปผาโลหิต - หล่อหลอมนับร้อยพัน",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: จันทร์ทมิฬหวนคืน",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: คำสาบานบุปผาโลหิต - จันทราวิปโยคหวนคืน",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: สัตย์สาบานโลหิต - ไร้มลทิน Molten Edge",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตตอบโต้: ไม่ยอมอ่อนข้อ",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: สัตย์สาบานบุปผาโลหิต - สลักลักษณ์",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     }
+    ]
+   }
+  ]
+ },
+ "1591": {
+  "name": "Sigrid",
+  "full_name": "Sigrid de L'Azur",
+  "element": "น้ำแข็ง",
+  "profession": "โจมตีรุนแรง",
+  "hit_type": "Pierce",
+  "camp": "Roscaelifer",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Frost-Tipped Spear",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Converging Spear ขั้นที่ 1",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Converging Spear ขั้นที่ 2",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Converging Spear ขั้นที่ 3",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Windchase",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Counterthrust",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Frostflower",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Scattered Jade",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Shattered Jade",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Encroaching Ice",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Frozen Heavens",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Iron Sentinel",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Devouring Frost",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1581": {
+  "name": "Remielle",
+  "full_name": "Remielle Dan",
+  "profession": "ธาตุผิดปกติ",
+  "hit_type": "Slash",
+  "camp": "Covenant of Dayat",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Leap",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Solo Dance",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Rainbow's End",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Fleeting Grace",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Keen Light",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Mirrored Shadow",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Sliver of Light",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Ode to Dawn - Radiant Turn",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Ode to Dawn",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Interwoven Dance Steps",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Dazzling Curtain Call",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Featherglow Rebirth",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Awakening Glimmer",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลซัปพอร์ต: Flower & Feather Dance",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "ความชำนาญ Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ความชำนาญ Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ความชำนาญ Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ความชำนาญ Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ความชำนาญ Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ความชำนาญ Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1571": {
+  "name": "Norma",
+  "full_name": "Norma Hollowell",
+  "element": "ไฟ",
+  "profession": "สตั๊น",
+  "hit_type": "Strike",
+  "camp": "Roscaelifer",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Engineering Insurance",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Hat Trick",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Deadline Rush",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Compliance Testing",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Thermal Shutdown",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: En-Nah Barrage",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การยิงโจมตี"
+     },
+     {
+      "k": "ตัวคูณ DMG หัวรบทลายเกราะ"
+     },
+     {
+      "k": "ตัวคูณ DMG หัวรบระเบิดแรงสูง"
+     },
+     {
+      "k": "ตัวคูณ DMG ต่อวินาทีของการขยายเวลายิงโจมตี"
+     },
+     {
+      "k": "ตัวคูณ DMG ต่อวินาทีของการขยายเวลายิงโจมตี ของหัวรบทลายเกราะ"
+     },
+     {
+      "k": "ตัวคูณ DMG ต่อวินาทีของการขยายเวลายิงโจมตี ของหัวรบระเบิดแรงสูง"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Target Practice",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Explosive Experiment",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG หัวรบทลายเกราะเพิ่มเติม"
+     },
+     {
+      "k": "ตัวคูณ DMG หัวรบระเบิดแรงสูงเพิ่มเติม"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Impact Drill",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Doctrine of Superior Firepower",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Roaring Backup",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Technological Suppression",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1561": {
+  "name": "Velina",
+  "full_name": "Velina Airgid",
+  "profession": "ธาตุผิดปกติ",
+  "hit_type": "Slash",
+  "camp": "Roscaelifer",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Dancing Fans",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Gale Step",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Cloudrend",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Wind Shear - Purging Surge",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Wind Shear - Purifying Rise",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Wind Shear - Triple Deathblow",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Wind Shear - Eye of the Storm",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "Sweeping Cyclone",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การโจมตีครั้งเดียวของ [Sweeping Cyclone] ธาตุลม"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีครั้งเดียวของ [Sweeping Cyclone] ที่เปลี่ยนเป็นธาตุอื่น"
+     }
+    ]
+   },
+   {
+    "name": "Condensed Cyclone",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Thousandfold Spiral",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Heed the Tempest",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Emergency Protocol",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Negotiation Techniques",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "ความชำนาญ Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ความชำนาญ Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ความชำนาญ Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ความชำนาญ Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ความชำนาญ Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ความชำนาญ Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1551": {
+  "name": "Pyrois",
+  "full_name": "Pyrois",
+  "element": "อีเทอร์",
+  "profession": "โจมตีรุนแรง",
+  "hit_type": "Slash",
+  "camp": "Phaethon",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Emberglow",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Celestial Light",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Sunrise",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: First Light",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Fading Rays",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Sun's Halo",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Assault Directive",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Ceremonial March",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Total Annihilation",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Triumphant Return",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Unbound Swordstorm",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Eternal Imprisonment",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Duskguard",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Return to Daylight",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1541": {
+  "name": "Promeia",
+  "full_name": "Promeia",
+  "element": "น้ำแข็ง",
+  "profession": "ธาตุผิดปกติ",
+  "hit_type": "Slash",
+  "camp": "หน่วยงานกำกับดูแล Krampus",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Sweeping Edge",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     },
+     {
+      "k": "ตัวคูณ DMG การฟันด้วยผ้าคลุมต่อวินาที"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Whirling Blade",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Grim Reap",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Soaring Bat",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Execution - Cold Flash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Execution - Glacial Death",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG รวมของการขว้างกงจักร"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Execution - Descending Frost",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Execution - Layered Frost",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG รวมของการฟันด้วยกงจักร"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Execution - Merciless Judgment",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Hanging Judgment",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Glaciating Impalement",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Ambushing Strike",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Intercepting Strike",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1531": {
+  "name": "Starlight - Billy",
+  "full_name": "Starlight - Billy",
+  "element": "กายภาพ",
+  "profession": "ตัดสะบั้น",
+  "hit_type": "Slash",
+  "camp": "Cunning Hares",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Knight's Technique",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Full-Throttle Starlight",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Starlight Retribution",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Duel King",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Afterfire Spin",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Drive Suppression",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Run Wild",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Cool Wheelie",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: High-Traction Wheels",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Rocking Footwork",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Knight's Swagger",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Starlight Knight Flying Kick",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Starlight - Power of Bonds",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Villain's Exit",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1521": {
+  "name": "Cissia",
+  "full_name": "Cissia",
+  "element": "ไฟฟ้า",
+  "profession": "โจมตีรุนแรง",
+  "hit_type": "Slash",
+  "camp": "กองรักษาความมั่นคง New Eridu",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Tongue Flick",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Serpent's Kiss",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "Corrode Bone",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Bite Mark",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Bite Back",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Bared Fangs",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Venomous Bite",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีเพิ่มเติม"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Gang Operation",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Ophidiophobia",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Alarm System",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Partners in Crime",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1511": {
+  "name": "Nangong Yu",
+  "full_name": "Nangong Yu",
+  "element": "อีเทอร์",
+  "profession": "สตั๊น",
+  "hit_type": "Strike",
+  "camp": "Angels of Delusion",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Shooting Star Step",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Adorable Explosive Impact",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3 (ประสาน)"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Spinning Meteor",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Asteroid Waltz",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: The Weight of Love",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: The Unbearable Weight of Love",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Comet Gravity",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Meteor Shower",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Emergency Save",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Improvised Performance",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1501": {
+  "name": "Aria",
+  "full_name": "Aria",
+  "element": "อีเทอร์",
+  "profession": "ธาตุผิดปกติ",
+  "hit_type": "Strike",
+  "camp": "Angels of Delusion",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Sweet Melody",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Perfect Pitch",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ชาร์จโจมตีขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ชาร์จโจมตีขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ชาร์จโจมตีขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ชาร์จโจมตีขั้นที่ 3 (ประสาน)"
+     },
+     {
+      "k": "ตัวคูณ DMG ชาร์จโจมตีเสริมพลัง"
+     },
+     {
+      "k": "ตัวคูณ DMG ชาร์จโจมตีเสริมพลัง (ประสาน)"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Silky-Smooth Combo",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Slide-Shift Variation",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Full-Sugar Electronica",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Full-Sugar Electronica - No Ice",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Fall Into Delusion",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Instantly Hooked",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Dream Collab",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: 100% Energy",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Shatter Fantasy",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Encore Song",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1491": {
+  "name": "Sunna",
+  "full_name": "Sunna",
+  "element": "กายภาพ",
+  "profession": "ซัปพอร์ต",
+  "hit_type": "Strike",
+  "camp": "Angels of Delusion",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Mischief Meteor Hammer",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Naughty Cat Spotted",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Skyward Hammer",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Delusion Strikeout",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Star Shooter",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Bubblegum Barrage",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ของ Bubblegum Barrage"
+     },
+     {
+      "k": "ตัวคูณ DMG ของ Bubblegum Barrage เมื่อเชื่อมต่อด้วย Special Photography Technique อย่างรวดเร็ว"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Special Photography Technique",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG (ประสาน)"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Don't Mess With the Cat",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Smash It All!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Sonic Beatdown",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Jump Training",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "ATK"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ATK"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ATK"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ATK"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ATK"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ATK"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1481": {
+  "name": "Dialyn",
+  "full_name": "Dialyn",
+  "element": "กายภาพ",
+  "profession": "สตั๊น",
+  "hit_type": "Slash",
+  "camp": "หน่วยงานกำกับดูแล Krampus",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Happy to Be of Service",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Rock, Paper, Scissors",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Sudden Call",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Number Unavailable",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Get Lost!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Welcome Gesture",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Rock",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Scissors",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Paper!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Welcome Mat",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Service Stopped for Number Dialed",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Forward Call",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Back-to-Back Calls",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1471": {
+  "name": "Banyue",
+  "full_name": "Banyue",
+  "element": "ไฟ",
+  "profession": "ตัดสะบั้น",
+  "hit_type": "Strike",
+  "camp": "หน่วยงานกำกับดูแล Krampus",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Towering Peaks",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Majestic Summit",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Immolate",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Toppling Mountain",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Crushing Peaks",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Scattering Sands",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Stoneburst",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Earth Shaker",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Mountain Tremor",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: One's Path",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Lion's Roar",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Mountain Tremor - Wrath",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Lion's Roar - Wrath",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Blazing Wrath",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: The World Trembles",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Batholith",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Lofty Ascent",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Pierce Heavens",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1461": {
+  "name": "\"Seed\"",
+  "full_name": "\"Seed\"",
+  "element": "ไฟฟ้า",
+  "profession": "โจมตีรุนแรง",
+  "hit_type": "Slash",
+  "camp": "กองกำลังป้องกัน New Eridu",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Chrysanthemum Wheel Dance",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Falling Petals - Slaughter",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Falling Petals - Downfall First Form",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Falling Petals - Downfall Second Form",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Magnetic Wheel Dance",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Blossom Burst",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Withered in Frost",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Raining Iron Petals",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Raining Iron Petals - Away",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Tempest of Frosty Petals",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Clockwork Garden - Bloom!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Barrage of Raining Flowers",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Crimson Core Burst",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1451": {
+  "name": "Lucia",
+  "full_name": "Lucia Elowen",
+  "element": "อีเทอร์",
+  "profession": "ซัปพอร์ต",
+  "hit_type": "Strike",
+  "camp": "Spook Shack",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Orbital Combo",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ของ Whim"
+     },
+     {
+      "k": "ตัวคูณ DMG ของ Harmony"
+     },
+     {
+      "k": "ตัวคูณ DMG เมื่อโจมตีเพิ่ม"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Refraction",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Stardust Echo",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ของ Whim"
+     },
+     {
+      "k": "ตัวคูณ DMG ของ Harmony"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Symphony of the Reaper - Storm",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ของ Whim"
+     },
+     {
+      "k": "ตัวคูณ DMG ของ Harmony"
+     },
+     {
+      "k": "ตัวคูณ DMG เมื่อโจมตีเพิ่ม"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Symphony of the Reaper - Daybreak",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Stage of Brilliance",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Charge, Great Armor!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การพุ่งชนครั้งเดียว"
+     },
+     {
+      "k": "ตัวคูณ DMG สกิลอัลติเมท"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Crushing Mist",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ของ Whim"
+     },
+     {
+      "k": "ตัวคูณ DMG ของ Harmony"
+     },
+     {
+      "k": "ตัวคูณ DMG เมื่อโจมตีเพิ่ม"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Harmony of Painted Dreams",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1431": {
+  "name": "Ye Shunguang",
+  "full_name": "Ye Shunguang",
+  "element": "กายภาพ",
+  "profession": "โจมตีรุนแรง",
+  "hit_type": "Slash",
+  "camp": "Yunkui Summit",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Swiftedge",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Cloudstream Sword Will",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG คลื่นดาบแต่ละลูก"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Enlightened Mind - Splitting Currents",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Enlightened Mind - Skyward Ascent",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Enlightened Mind - Sunderlight Maximum",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Enlightened Mind - Sunderlight",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Enlightened Mind - Sunderlight Annihilation",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG เมื่อมี Qingming Sword Force"
+     },
+     {
+      "k": "ตัวคูณ DMG เมื่อไม่มี Qingming Sword Force"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Phantasm Dash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Swallow Strike",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Guiding Tides",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG เมื่อเกิดหลบหลีกสมบูรณ์"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Gale Suppression",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Enlightened Mind - Clean Exit",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Enlightened Mind - Soaring Light",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG เมื่อใช้ Qingming Sword Force 1 แต้ม"
+     },
+     {
+      "k": "ตัวคูณ DMG เมื่อใช้ Qingming Sword Force 6 แต้ม"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Enlightened Mind - Return to Dust",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Smite the Wicked",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Chasing Storms",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Enlightened Mind - Lure Thunder",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Cleaving Heavens",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลเข้าสนาม: Illuminating Darkness",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Support Guard",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Cease Hostility",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Enlightened Mind - Tactical Support",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Enlightened Mind - Unification",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1411": {
+  "name": "Yuzuha",
+  "full_name": "Ukinami Yuzuha",
+  "element": "กายภาพ",
+  "profession": "ซัปพอร์ต",
+  "hit_type": "Strike",
+  "camp": "Spook Shack",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Tanuki Claws",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Hard Candy Shot",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Sugarburst Sparkles",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Sugarburst Sparkles - Max",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Tanuki Helper",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG เมื่อทานูกิ Kama โจมตีร่วมกับ Yuzuha"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีอัตโนมัติของทานูกิ Kama"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: You're Outta Luck!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Time for Payback~",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Gummy Bombardment",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Cavity Alert",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Cavity Alert, Right Now!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Prank Assault",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Surrender or Suffer the Mischief",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Dessert Time",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: We Have Cookies",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Stuffed Hard Candy Shot",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1401": {
+  "name": "Alice",
+  "full_name": "Alice Thymefield",
+  "element": "กายภาพ",
+  "profession": "ธาตุผิดปกติ",
+  "hit_type": "Slash",
+  "camp": "Spook Shack",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Celestial Overture",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5 (เสริมพลัง)"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Starshine Waltz",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ชาร์จโจมตีขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ชาร์จโจมตีขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ชาร์จโจมตีขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Blade-Dancer's Gale",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Ceremony of Swordlight",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Piercing Dawn",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Aurora Thrust - Northern Cross",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Aurora Thrust - Southern Cross",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Starfall Intermission",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Starfall Finale",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Intertwined Stab",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Cross Riposte",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1391": {
+  "name": "Ju Fufu",
+  "full_name": "Ju Fufu",
+  "element": "ไฟ",
+  "profession": "สตั๊น",
+  "hit_type": "Strike",
+  "camp": "Yunkui Summit",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Tiger Seven Forms - Flaming Claw",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Hu Wei",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Tiger Seven Forms - Tiger Charge",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Tiger Seven Forms - Mountain King's Game",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Tiger Seven Forms - Mountain King's Game - Momentum",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Tiger Seven Forms - Mountain King's Game - \"Hu Wei\"",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Tiger Seven Forms - Reignited Mountain",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Tiger Seven Forms - Mountain-Descending Tiger",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Tiger Seven Forms Alt - Mountain-Descending Savage Tiger",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Tiger Cauldron Collapse",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Suppressing Tiger Cauldron",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Tiger Seven Forms - Raging Tiger Explosion",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Decisive Stomp",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Feral Blazing Maw",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1381": {
+  "name": "Soldier 0 - Anby",
+  "full_name": "Soldier 0 - Anby",
+  "element": "ไฟฟ้า",
+  "profession": "โจมตีรุนแรง",
+  "hit_type": "Slash",
+  "camp": "กองกำลังป้องกัน New Eridu",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Penetrating Shock",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีปิดฉากขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Torrent",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Ground Flash Counter",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Celestial Thunder",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Azure Flash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG [White Thunder]"
+     },
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Thunder Smite",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG [Thunder Smite]"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Azure Flash - Boundary",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Sundering Bolt",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Leaping Thunderstrike",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Voidstrike",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Cloud Flash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Conducting Blow",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1371": {
+  "name": "Yixuan",
+  "full_name": "Yixuan",
+  "element": "อีเทอร์",
+  "profession": "ตัดสะบั้น",
+  "hit_type": "Strike",
+  "camp": "Yunkui Summit",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Cirrus Strike",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Ink‐Veil Cloud Coalescence",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG รวมของ Ink‐Veil Cloud Coalescence"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Auric Array",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG รวมของ Auric Array"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Qingming Eruption",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Skybreaker",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Banishing Blow",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Shadow-Ignition",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Ink Manifestation",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG เพิ่มเติมเมื่อชาร์จเต็ม"
+     },
+     {
+      "k": "ตัวคูณ DMG รวมของ [สกิลพิเศษ-EX: Celestial Cloud Blitz - Break]"
+     },
+     {
+      "k": "ตัวคูณ DMG รวมของ [สกิลพิเศษ-EX: Qingming Eruption - Break]"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Cloud-Shaper",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG รวมระหว่างการชาร์จ"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Ashen Ink Becomes Shadows",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Auric Ink Rush",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Qingming Skyshade",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Endless Talisman Suppression",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Cloudstream Shadow",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Celestial Cloud Blitz",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "HP"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "HP"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "HP"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "HP"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "HP"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "HP"
+     }
+    ]
+   }
+  ]
+ },
+ "1361": {
+  "name": "\"Trigger\"",
+  "full_name": "\"Trigger\"",
+  "element": "ไฟฟ้า",
+  "profession": "สตั๊น",
+  "hit_type": "Pierce",
+  "camp": "กองกำลังป้องกัน New Eridu",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Cold-Bore Shot",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Silenced Shot",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การยิงโจมตี"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีสวนกลับ"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีปิดฉาก"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Harmonizing Shot",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การยิงต่อเนื่อง"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Harmonizing Shot - Tartarus",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การยิงต่อเนื่อง"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีปิดฉาก"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Vengeful Specter",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Condemned Soul",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Spectral Flash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Flash Burial",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Stygian Guide",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Underworld Requiem",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Cold-Bore Cover Fire",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Piercing Thunder",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1341": {
+  "name": "Zhao",
+  "full_name": "Zhao",
+  "element": "น้ำแข็ง",
+  "profession": "ป้องกัน",
+  "hit_type": "Slash",
+  "camp": "หน่วยงานกำกับดูแล Krampus",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Glacial Judgment",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Final Verdict",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Bouncing Dash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Swift Blink",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Shatterfrost Surge",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Frostflow Tundra",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Temporary Alliance",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Bunny Barrage",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลเข้าสนาม: Burst of Frost",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Patch the Gaps",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Frostlight Reflection",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1331": {
+  "name": "Vivian",
+  "full_name": "Vivian Banshee",
+  "element": "อีเทอร์",
+  "profession": "ธาตุผิดปกติ",
+  "hit_type": "Slash",
+  "camp": "Mockingbird",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Feathered Strike",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Noblewoman - Waltz",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Fluttering Frock - Suspension",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Featherbloom",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Silver Thorned Melody",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Wingblade Reverb",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Song of Silver Wings",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Violet Requiem",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Chorus of Celestial Wings",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Soaring Bird's Song",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Frostwing Guard",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Featherblade Execution",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1321": {
+  "name": "Evelyn",
+  "full_name": "Evelyn Chevalier",
+  "element": "ไฟ",
+  "profession": "โจมตีรุนแรง",
+  "hit_type": "Slash",
+  "camp": "Stars of Lyra",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Razor Wire",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Garrote - First Form",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Garrote - Second Form",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Piercing Ambush",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Strangling Reversal",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Locked Position",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Binding Sunder - First Form",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การผูกมัด"
+     },
+     {
+      "k": "ตัวคูณ DMG การจุดระเบิด"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Binding Sunder - Final Form",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การผูกมัด"
+     },
+     {
+      "k": "ตัวคูณ DMG การจุดระเบิด"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Lunalux - Snare",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Lunalux Garrote - Timbre",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Lunalux Garrote - Shadow",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Fierce Blade",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Course Disruption",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1311": {
+  "name": "Astra Yao",
+  "full_name": "Astra Yao",
+  "element": "อีเทอร์",
+  "profession": "ซัปพอร์ต",
+  "hit_type": "Strike",
+  "camp": "Stars of Lyra",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: \"Capriccio\"",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ต่ำสุดขั้น 3"
+     },
+     {
+      "k": "ตัวคูณ DMG สูงสุดขั้น 3"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Interlude",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Chorus",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Finale",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: \"Lunar Eclipse Melody\"",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: \"Umbrella Waltz\"",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: \"Windchimes & Oaths\"",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ต่ำสุด"
+     },
+     {
+      "k": "ตัวคูณ DMG สูงสุด"
+     }
+    ]
+   },
+   {
+    "name": "Chord",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG Tremolo เพิ่มเติม"
+     },
+     {
+      "k": "ตัวคูณ DMG Tone Cluster เพิ่มเติม"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: \"Tipsy Concerto\"",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: \"Fantasian Sonata\"",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: \"One Luminous Sky\"",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: \"Three Lifetimes of Fate\"",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1301": {
+  "name": "Orphie & \"Magus\"",
+  "full_name": "Orphie Magnusson & \"Magus\"",
+  "element": "ไฟ",
+  "profession": "โจมตีรุนแรง",
+  "hit_type": "Pierce",
+  "camp": "กองกำลังป้องกัน New Eridu",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: High-Pressure Flamethrower",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     },
+     {
+      "k": "ตัวคูณ DMG ดาบไฟ"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Rush Command",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Counter Strike Opportunity",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Blazing Chamber",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Corrosive Flash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Watch Your Step",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Crimson Vortex",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Heat Charge",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG สูงสุดของเลเซอร์"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Firey Eruption",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Overheated Barrel",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Dance with Fire",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG รวมของระยะเวลาที่เพิ่ม"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Searing Slash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Boiling Pierce",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1291": {
+  "name": "Hugo",
+  "full_name": "Hugo Vlad",
+  "element": "น้ำแข็ง",
+  "profession": "โจมตีรุนแรง",
+  "hit_type": "Slash",
+  "camp": "Mockingbird",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Dark Abyss Quartet",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG Slash"
+     },
+     {
+      "k": "ตัวคูณ DMG การยิงโจมตี"
+     },
+     {
+      "k": "ตัวคูณ DMG การชาร์จยิง"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Dark Abyss Concerto",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG Slash"
+     },
+     {
+      "k": "ตัวคูณ DMG การยิงโจมตี"
+     },
+     {
+      "k": "ตัวคูณ DMG การชาร์จยิง"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Phantasm - Shatter",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Phantasm - Slash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG การยิงโจมตีเพิ่มเติม"
+     },
+     {
+      "k": "ตัวคูณ DMG การชาร์จยิงเพิ่มเติม"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Soul Hunter - Judgment",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Soul Hunter - Punishment",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Trick of Fate",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG Slash"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Blaspheme",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Elegy",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG การยิงโจมตีเพิ่มเติม"
+     },
+     {
+      "k": "ตัวคูณ DMG การชาร์จยิงเพิ่มเติม"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Ace Reversal",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1261": {
+  "name": "Jane",
+  "full_name": "Jane Doe",
+  "element": "กายภาพ",
+  "profession": "ธาตุผิดปกติ",
+  "hit_type": "Slash",
+  "camp": "กองรักษาความมั่นคง New Eridu",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Dancing Blades",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 6"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Salchow Jump",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การโจมตีต่อเนื่อง"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีปิดฉาก"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Edge Jump",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Phantom Thrust",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Swift Shadow",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Swift Shadow Dance",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Aerial Sweep",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Aerial Sweep - Clearout",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Aerial Sweep - Onslaught",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Flowers of Sin",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Final Curtain",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Dark Thorn",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Lutz Jump",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Gale Sweep",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1251": {
+  "name": "Qingyi",
+  "full_name": "Qingyi",
+  "element": "ไฟฟ้า",
+  "profession": "สตั๊น",
+  "hit_type": "Strike",
+  "camp": "กองรักษาความมั่นคง New Eridu",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Penultimate",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1 (เพิ่มเติม)"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4 (เสริมพลัง)"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Enchanted Blossoms",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Enchanted Moonlit Blossoms",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การพุ่งเข้าโจมตี"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีปิดฉาก"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Breach",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Lingering Sentiments",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Sunlit Glory",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Moonlit Begonia",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Tranquil Serenade",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Eight Sounds of Ganzhou",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Wind Through the Pines",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Song of the Clear River",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1241": {
+  "name": "Zhu Yuan",
+  "full_name": "Zhu Yuan",
+  "element": "อีเทอร์",
+  "profession": "โจมตีรุนแรง",
+  "hit_type": "Pierce",
+  "camp": "กองรักษาความมั่นคง New Eridu",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Don't Move!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Please Do Not Resist",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1 (กายภาพ)"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2 (กายภาพ)"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3 (กายภาพ)"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1 (อีเทอร์)"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2 (อีเทอร์)"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3 (อีเทอร์)"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Firepower Offensive",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Overwhelming Firepower",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG (กายภาพ)"
+     },
+     {
+      "k": "ตัวคูณ DMG (อีเทอร์)"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Fire Blast",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Buckshot Blast",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Full Barrage",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Eradication Mode",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Max Eradication Mode",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Covering Shot",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Defensive Counter",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1221": {
+  "name": "Yanagi",
+  "full_name": "Tsukishiro Yanagi",
+  "element": "ไฟฟ้า",
+  "profession": "ธาตุผิดปกติ",
+  "hit_type": "Slash",
+  "camp": "Hollow Special Operations Section 6",
+  "skills": [
+   {
+    "name": "ท่วงท่า: Jougen",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     }
+    ]
+   },
+   {
+    "name": "ท่วงท่า: Kagen",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Fleeting Flight",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Rapid Retaliation",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Ruten",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Gekka Ruten",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การโจมตีพุ่งทะลวง"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีพุ่งลง"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Celestial Harmony",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Raiei Tenge",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Blade of Elegance",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Weeping Willow Stab",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1211": {
+  "name": "Rina",
+  "full_name": "Alexandrina Sebastiane",
+  "element": "ไฟฟ้า",
+  "profession": "ซัปพอร์ต",
+  "hit_type": "Strike",
+  "camp": "Victoria Housekeeping Co.",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Whack the Dimwit",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Shoo the Fool",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Morning Cleanup",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Midnight Cleanup",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Sudden Surprise",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Bangboo Callback",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Beat the Blockhead",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Dimwit Disappearing Trick",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Code of Conduct",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: The Queen's Attendants",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Duple Meter Allemande",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Quadruple Meter Gavotte",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "PEN Ratio"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "PEN Ratio"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "PEN Ratio"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "PEN Ratio"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "PEN Ratio"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "PEN Ratio"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1201": {
+  "name": "Harumasa",
+  "full_name": "Asaba Harumasa",
+  "element": "ไฟฟ้า",
+  "profession": "โจมตีรุนแรง",
+  "hit_type": "Pierce",
+  "camp": "Hollow Special Operations Section 6",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Cloud Piercer",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Cloud Piercer - Drift",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Falling Feather",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Ha-Oto no Ya",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Hiten no Tsuru",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Hidden Edge",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Hiten no Tsuru - Slash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "Chasing Thunder",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG เพิ่มเติม"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Nowhere to Hide",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Nowhere to Run",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Nowhere to Run - Patrol",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Kai - Hanare",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Zanshin",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "Zanshin - Scattered Blossoms",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Braced Bow",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Yugamae - Slash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1191": {
+  "name": "Ellen",
+  "full_name": "Ellen Joe",
+  "element": "น้ำแข็ง",
+  "profession": "โจมตีรุนแรง",
+  "hit_type": "Slash",
+  "camp": "Victoria Housekeeping Co.",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Saw Teeth Trimming",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Flash Freeze Trimming",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Glacial Blade Wave",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Icy Blade",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ต่อศัตรูขนาดเล็ก"
+     },
+     {
+      "k": "ตัวคูณ DMG ต่อศัตรูขนาดกลาง"
+     },
+     {
+      "k": "ตัวคูณ DMG ต่อศัตรูขนาดใหญ่"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Arctic Ambush",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG Spinning Slash"
+     },
+     {
+      "k": "ตัวคูณ DMG การตัดโจมตีอย่างรวดเร็ว"
+     },
+     {
+      "k": "ตัวคูณ DMG การตัดโจมตีที่ชาร์จพลัง"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Monstrous Wave",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Cold Snap",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Reef Rock",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Drift",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Tail Swipe",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Sharknami",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Avalanche",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Endless Winter",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Shark Sentinel",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Shark Cruiser",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1181": {
+  "name": "Grace",
+  "full_name": "Grace Howard",
+  "element": "ไฟฟ้า",
+  "profession": "ธาตุผิดปกติ",
+  "hit_type": "Pierce",
+  "camp": "Belobog Heavy Industries",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: High-Pressure Spike",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG เมื่อออกสเตปยิง"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Quick Inspection",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Violation Penalty",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Obstruction Removal",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Supercharged Obstruction Removal",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ตัวคูณพื้นฐาน Vortex Cluster Grenade",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Obstruction Removal - Cycle",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ตัวคูณ Pulse Grenade",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Collaborative Construction",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Demolition Blast - Beware",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Incident Management",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Counter Volt Needle",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การควบคุม Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1171": {
+  "name": "Burnice",
+  "full_name": "Burnice White",
+  "element": "ไฟ",
+  "profession": "ธาตุผิดปกติ",
+  "hit_type": "Pierce",
+  "camp": "Sons of Calydon",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Direct Flame Blend",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Mixed Flame Blend",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การพ่นไฟต่อเนื่อง"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีปิดฉาก"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Dangerous Fermentation",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Fluttering Steps",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Intense Heat Aging Method",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG การชาร์จ"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Intense Heat Stirring Method",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การพ่นไฟต่อเนื่อง"
+     },
+     {
+      "k": "ตัวคูณ DMG การยิงเปลวไฟ"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Intense Heat Stirring Method - Double Shot",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การพ่นไฟต่อเนื่อง"
+     },
+     {
+      "k": "ตัวคูณ DMG การยิงเปลวไฟ"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Intense Heat Tossing Method",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Fuel-Fed Flame",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Glorious Inferno",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG สูงสุด"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Energizing Specialty Drink",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Scorching Dew",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1161": {
+  "name": "Lighter",
+  "full_name": "Lighter",
+  "element": "ไฟ",
+  "profession": "สตั๊น",
+  "hit_type": "Strike",
+  "camp": "Sons of Calydon",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: L-Form Thundering Fist",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีเพิ่มเติมขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีเพิ่มเติมขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีเพิ่มเติมขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีเพิ่มเติมขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีเพิ่มเติมขั้นที่ 5"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG เมื่อเริ่มปล่อยการโจมตีขั้นที่ 5"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีต่อเนื่องขั้นที่ 5"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีปิดฉากขั้นที่ 5"
+     },
+     {
+      "k": "ตัวคูณ DMG เมื่อเริ่มปล่อยการโจมตีขั้นที่ 5 (สถานะ Morale Burst)"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีต่อเนื่องขั้นที่ 5 (สถานะ Morale Burst)"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีปิดฉากขั้นที่ 5 (สถานะ Morale Burst)"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีปิดฉากที่รุนแรงขั้นที่ 5 (สถานะ Morale Burst)"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Charging Slam",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Blazing Flash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: V-Form Sunrise Uppercut",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: V-Form Sunrise Uppercut - Full Distance",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีเพิ่มเติม"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: V-Form Scorching Sun",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: W-Form Crowned Inferno",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Blazing Flash - Guard",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Charging Slam - Stab",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1141": {
+  "name": "Lycaon",
+  "full_name": "Von Lycaon",
+  "element": "น้ำแข็ง",
+  "profession": "สตั๊น",
+  "hit_type": "Strike",
+  "camp": "Victoria Housekeeping Co.",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Moon Hunter",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ชาร์จโจมตีขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ชาร์จโจมตีขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ชาร์จโจมตีขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ชาร์จโจมตีครั้งที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     },
+     {
+      "k": "ตัวคูณ DMG ชาร์จโจมตีเลเวล 1 ครั้งที่ 5"
+     },
+     {
+      "k": "ตัวคูณ DMG ชาร์จโจมตีเลเวล 2 ครั้งที่ 5"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Keep it Clean",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Etiquette Manual",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Time to Hunt",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG การชาร์จ"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Thrill of the Hunt",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG การชาร์จ"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: As You Wish",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Mission Complete",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Wolf Pack",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Vengeful Counterattack",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Vengeful Counterattack - Glacial Waltz",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1101": {
+  "name": "Koleda",
+  "full_name": "Koleda Belobog",
+  "element": "ไฟ",
+  "profession": "สตั๊น",
+  "hit_type": "Strike",
+  "camp": "Belobog Heavy Industries",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Smash 'n' Bash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1 เสริมพลังโจมตีปกติ"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2 เสริมพลังโจมตีปกติ"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2 เสริมพลังโจมตีปกติ (ประสาน)"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Tremble!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Don't Look Down on Me",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Hammer Time",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG Strike"
+     },
+     {
+      "k": "ตัวคูณ DMG การจุดระเบิด"
+     },
+     {
+      "k": "ตัวคูณ DMG การจุดระเบิด (ประสาน)"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Boiling Furnace",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG Strike"
+     },
+     {
+      "k": "ตัวคูณ DMG การจุดระเบิด"
+     },
+     {
+      "k": "ตัวคูณ DMG การจุดระเบิด (ประสาน)"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Natural Disaster",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Hammerquake",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG (ประสาน)"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Coming Thru!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Hammer Bell",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1091": {
+  "name": "Miyabi",
+  "full_name": "Miyabi",
+  "element": "น้ำแข็ง",
+  "profession": "ธาตุผิดปกติ",
+  "hit_type": "Slash",
+  "camp": "Hollow Special Operations Section 6",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Kazahana",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Shimotsuki",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ชาร์จ Slash ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ชาร์จ Slash ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ชาร์จ Slash ขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Fuyubachi",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Kan Suzume",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Miyuki",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Hisetsu",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG Slash"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีเพิ่มเติม"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Spring's Call",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Lingering Snow",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Dancing Petals",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Falling Petals",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "ความชำนาญ Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ความชำนาญ Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ความชำนาญ Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ความชำนาญ Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ความชำนาญ Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "ความชำนาญ Anomaly"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1071": {
+  "name": "Caesar",
+  "full_name": "Caesar King",
+  "element": "กายภาพ",
+  "profession": "ป้องกัน",
+  "hit_type": "Slash",
+  "camp": "Sons of Calydon",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Rampaging Slash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3 (เพิ่มเติม)"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 6"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Dead End",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Hog Rush",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Eye For an Eye",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Shockwave Shield Bash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Roaring Thrust",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Parry Counter",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีสวนกลับ [Perfect Block]"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Overpowered Shield Bash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Road Rage Slam",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Savage Smash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Lane Change",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Aiding Blade",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1051": {
+  "name": "Yidhari",
+  "full_name": "Yidhari Murphy",
+  "element": "น้ำแข็ง",
+  "profession": "ตัดสะบั้น",
+  "hit_type": "Strike",
+  "camp": "Spook Shack",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Crushing Strike",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1 (เพิ่มเติม)"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Frostbite Embrace",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การชาร์จเลเวล 1"
+     },
+     {
+      "k": "ตัวคูณ DMG การชาร์จเลเวล 2"
+     },
+     {
+      "k": "ตัวคูณ DMG การทุบของชาร์จเลเวล 3"
+     },
+     {
+      "k": "ตัวคูณ DMG การหมุนตัวของชาร์จเลเวล 3"
+     }
+    ]
+   },
+   {
+    "name": "Frost's Crushing Weight",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Frostbloom Impact",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Icehaul Reverb",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Cease Thoughts",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Frost Coil",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Surging Cold, Crushing Pursuit",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Glacial Crush",
+    "params": [
+     {
+      "k": "สกิลพิเศษ-EX: ตัวคูณ DMG ของ Glacial Crush"
+     },
+     {
+      "k": "ตัวคูณ DMG ของหนวดน้ำแข็งจากความสามารถเพิ่มเติม"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Frostbound Oath",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG ใน [Ether Veil: Wellspring]"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Final Act - Crossing the River of Regret",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Frostshock Reinforcement",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Glacial Onslaught",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1041": {
+  "name": "\"Soldier 11\"",
+  "full_name": "\"Soldier 11\"",
+  "element": "ไฟ",
+  "profession": "โจมตีรุนแรง",
+  "hit_type": "Slash",
+  "camp": "กองกำลังป้องกัน New Eridu",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Warmup Sparks",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Fire Suppression",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     },
+     {
+      "k": "ตัวคูณ DMG โจมตีปกติเสริมพลังขั้นที่ 5"
+     },
+     {
+      "k": "ตัวคูณ DMG เพิ่มเติมของโจมตีปกติเสริมพลังขั้นที่ 5"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Fire Assault",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG โจมตีปกติ: Fire Assault"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Blazing Fire",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Fire Suppression",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Backdraft",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Raging Fire",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Fervent Fire",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Uplifting Flame",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Bellowing Flame",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Covering Fire",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Reignition",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1021": {
+  "name": "Nekomata",
+  "full_name": "Nekomiya Mana",
+  "element": "กายภาพ",
+  "profession": "โจมตีรุนแรง",
+  "hit_type": "Slash",
+  "camp": "Cunning Hares",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Kitty Slash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Crimson Blade",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Over Here!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Phantom Claws",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Fluffy Piercing Claw",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Surprise Attack",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Super Surprise Attack!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Claw Swipe",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Claw Smash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Cat's Paw",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Shadow Strike",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1441": {
+  "name": "Manato",
+  "full_name": "Komano Manato",
+  "element": "ไฟ",
+  "profession": "ตัดสะบั้น",
+  "hit_type": "Slash",
+  "camp": "Spook Shack",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Blazing Wind Slash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1 (เมื่อทำให้เกิด Scorchwind)"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2 (เมื่อทำให้เกิด Scorchwind)"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3 (เมื่อทำให้เกิด Scorchwind)"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Blazing Wind - Misty Slash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Radiant Blade - Zanshin",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Radiant Blade - Battle Sweep",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Return to Ashes",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG (ชาร์จพลังหรือปัดป้องสำเร็จ)"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Return to Ashes - Fall",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Blazing Eruption",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Musou Aratama",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Lone Shadow - Regroup",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Lone Shadow - Breaking Fang",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG สูงสุดของการโจมตีต่อเนื่อง"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "HP"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1421": {
+  "name": "Pan Yinhu",
+  "full_name": "Pan Yinhu",
+  "element": "กายภาพ",
+  "profession": "ป้องกัน",
+  "hit_type": "Strike",
+  "camp": "Yunkui Summit",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Unyielding Strikes",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Sizzling Oil Supreme",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Moving Mountains and Seas",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Sonic Pressure-Point Strike",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Touch of Death",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Mountainous Pulse Strike",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Anointed with Wok Steam",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: A Feast Fit for an Emperor!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Lift Your Gaze to Good Fortune",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Ride the Momentum",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1351": {
+  "name": "Pulchra",
+  "full_name": "Pulchra Fellini",
+  "element": "กายภาพ",
+  "profession": "สตั๊น",
+  "hit_type": "Slash",
+  "camp": "Sons of Calydon",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Swift Strike",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Leaping Strike",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: First Strike Advantage",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Relentless Retribution",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Rending Claw",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Rending Claw - Nightmare Shadow",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีปิดฉาก"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Rending Claw - Flashstep",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Hey, Didn't Expect That, Right?",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Oh, Time to Play?",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Contract - Bodyguard",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Independent Pricing",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1281": {
+  "name": "Piper",
+  "full_name": "Piper",
+  "element": "กายภาพ",
+  "profession": "ธาตุผิดปกติ",
+  "hit_type": "Slash",
+  "camp": "Sons of Calydon",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Load Up and Roll Out",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Pedal to the Metal",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Power Drift",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Tire Spin",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: One Trillion Tons",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การชาร์จเลเวล 1"
+     },
+     {
+      "k": "ตัวคูณ DMG การชาร์จเลเวล 2"
+     },
+     {
+      "k": "ตัวคูณ DMG การชาร์จเลเวล 3"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Engine Spin",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ต่อรอบ"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Really Heavy",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Buckle Up",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Hold~ On~ Tight~",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Brake Tap",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Overtaking Maneuver",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1271": {
+  "name": "Seth",
+  "full_name": "Seth Lowell",
+  "element": "ไฟฟ้า",
+  "profession": "ป้องกัน",
+  "hit_type": "Slash",
+  "camp": "กองรักษาความมั่นคง New Eridu",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Lightning Strike",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Lightning Strike - Electrified",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การโจมตีต่อเนื่อง"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีปิดฉาก"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Thunder Assault",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Retreat to Advance",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Thunder Shield Rush",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Thunder Shield Rush - High Voltage",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     },
+     {
+      "k": "ตัวคูณ DMG (ชาร์จพลัง)"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Final Judgement",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Justice Prevails",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Armed Support",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Public Security Ruling",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1151": {
+  "name": "Lucy",
+  "full_name": "Luciana de Montefio",
+  "element": "ไฟ",
+  "profession": "ซัปพอร์ต",
+  "hit_type": "Strike",
+  "camp": "Sons of Calydon",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Lady's Bat",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3 (เพิ่มเติม)"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "Guard Boar: To Arms!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ไม้เบสบอล"
+     },
+     {
+      "k": "ตัวคูณ DMG นวม"
+     },
+     {
+      "k": "ตัวคูณ DMG หนังสติ๊ก"
+     }
+    ]
+   },
+   {
+    "name": "Guard Boar: Spinning Swing!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG Spinning Swing"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Fearless Boar!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Returning Tusk!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Solid Hit!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG Line Drive"
+     },
+     {
+      "k": "ตัวคูณ DMG Fly Ball"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Home Run!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG Line Drive"
+     },
+     {
+      "k": "ตัวคูณ DMG Fly Ball"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Grand Slam!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Walk-Off Home Run!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Hit By Pitch!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Scored a Run!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1131": {
+  "name": "Soukaku",
+  "full_name": "Soukaku",
+  "element": "น้ำแข็ง",
+  "profession": "ซัปพอร์ต",
+  "hit_type": "Slash",
+  "camp": "Hollow Special Operations Section 6",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Making Rice Cakes",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Making Rice Cakes (Frosted Banner)",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: 50/50",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: 50/50 (Frosted Banner)",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Away From My Snacks",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Cooling Bento",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นสุดท้าย"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Fanning Mosquitoes",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การโจมตีต่อเนื่อง"
+     },
+     {
+      "k": "ตัวคูณ DMG สนามลม"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Rally!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การใช้ Fly the Flag"
+     },
+     {
+      "k": "ตัวคูณ DMG การใช้ Fly the Flag อย่างเร็ว"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีเมื่อเก็บธง"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Pudding Slash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Jumbo Pudding Slash",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: A Set for Two",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Sweeping Strike",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1121": {
+  "name": "Ben",
+  "full_name": "Ben Bigger",
+  "element": "ไฟ",
+  "profession": "ป้องกัน",
+  "hit_type": "Strike",
+  "camp": "Belobog Heavy Industries",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Debt Reconciliation",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Incoming Expense",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Accounts Settled",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Fiscal Fist",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การโจมตีที่ปล่อย"
+     },
+     {
+      "k": "ตัวคูณ DMG การปัดป้องสวนกลับ"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Cashflow Counter",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การโจมตีที่ปล่อย"
+     },
+     {
+      "k": "ตัวคูณ DMG เมื่อโจมตีเพิ่ม"
+     },
+     {
+      "k": "ตัวคูณ DMG การปัดป้องสวนกลับ"
+     },
+     {
+      "k": "ตัวคูณ DMG การโจมตีเพิ่มเมื่อปัดป้อง"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Signed and Sealed",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Complete Payback",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Joint Account",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Don't Break Contract",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1111": {
+  "name": "Anton",
+  "full_name": "Anton Ivanov",
+  "element": "ไฟฟ้า",
+  "profession": "โจมตีรุนแรง",
+  "hit_type": "Pierce",
+  "camp": "Belobog Heavy Industries",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Enthusiastic Drills",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Enthusiastic Drills (Burst Mode)",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Fire With Fire",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Retaliation",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Overload Drill (Burst Mode)",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Spin, Bro!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Explosive Drill (Burst Mode)",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Smash the Horizon, Bro!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Go Go Go!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Go Go Go Go Go!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Shoulder-To-Shoulder",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Protective Drill (Burst Mode)",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Limit Burst",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1081": {
+  "name": "Billy",
+  "full_name": "Billy Kid",
+  "element": "กายภาพ",
+  "profession": "โจมตีรุนแรง",
+  "hit_type": "Pierce",
+  "camp": "Cunning Hares",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Full Firepower",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ยืนยิง"
+     },
+     {
+      "k": "ตัวคูณ DMG กระสุนเมื่อยืน"
+     },
+     {
+      "k": "ตัวคูณ DMG เมื่อคุกเข่ายิง"
+     },
+     {
+      "k": "ตัวคูณ DMG กระสุนเมื่อคุกเข่า"
+     },
+     {
+      "k": "ตัวคูณ DMG เมื่อกลิ้งยิง"
+     },
+     {
+      "k": "ตัวคูณ DMG เมื่อยิงปิดฉาก"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Starlight Sanction",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG เมื่อยิงรอบตัว"
+     },
+     {
+      "k": "ตัวคูณ DMG เมื่อยิงเป็นเส้นตรง"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Fair Fight",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Stand Still",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Clearance Time",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Starlight Mirage",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Starlight, Shine Bright",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Power of Teamwork",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Fatal Shot",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT Rate"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1061": {
+  "name": "Corin",
+  "full_name": "Corin Wickes",
+  "element": "กายภาพ",
+  "profession": "โจมตีรุนแรง",
+  "hit_type": "Slash",
+  "camp": "Victoria Housekeeping Co.",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Wipeout",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 5"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Oopsy-Daisy!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG สูงสุด"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Nope!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Clean Sweep",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG Spinning Slash"
+     },
+     {
+      "k": "ตัวคูณ DMG สูงสุดของ Slash ต่อเนื่อง"
+     },
+     {
+      "k": "ตัวคูณ DMG Explosion"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Skirt Alert",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG Spinning Slash"
+     },
+     {
+      "k": "ตัวคูณ DMG สูงสุดของ Slash ต่อเนื่อง"
+     },
+     {
+      "k": "ตัวคูณ DMG Explosion"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Sorry...",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Very, Very Sorry!",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Emergency Measures",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Quick Sweep",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "CRIT DMG"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1031": {
+  "name": "Nicole",
+  "full_name": "Nicole Demara",
+  "element": "อีเทอร์",
+  "profession": "ซัปพอร์ต",
+  "hit_type": "Strike",
+  "camp": "Cunning Hares",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Cunning Combo",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Do As I Please",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Jack in the Box",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG เมื่อพุ่งโจมตีไปข้างหน้า"
+     },
+     {
+      "k": "ตัวคูณ DMG เมื่อพุ่งโจมตีไปข้างหลัง"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Do As I Please",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG เมื่อพุ่งโจมตีไปข้างหน้า"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Diverted Bombard",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Sugarcoated Bullet",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Stuffed Sugarcoated Bullet",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG การชาร์จ"
+     },
+     {
+      "k": "ตัวคูณ DMG Bombard"
+     },
+     {
+      "k": "ตัวคูณ DMG Energy Field"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Ether Shellacking",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG Bombard"
+     },
+     {
+      "k": "ตัวคูณ DMG Energy Field"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Ether Grenade",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG Bombard"
+     },
+     {
+      "k": "ตัวคูณ DMG Energy Field"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Emergency Bombard",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Window of Opportunity",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "การฟื้นฟูพลังงานพื้นฐาน"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ },
+ "1011": {
+  "name": "Anby",
+  "full_name": "Anby Demara",
+  "element": "ไฟฟ้า",
+  "profession": "สตั๊น",
+  "hit_type": "Slash",
+  "camp": "Cunning Hares",
+  "skills": [
+   {
+    "name": "โจมตีปกติ: Turbo Volt",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 1"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 2"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 3"
+     },
+     {
+      "k": "ตัวคูณ DMG ขั้นที่ 4"
+     }
+    ]
+   },
+   {
+    "name": "โจมตีปกติ: Thunderbolt",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "พุ่งโจมตี: Taser Blast",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "หลบหลีกสวนกลับ: Thunderclap",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ: Fork Lightning",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลพิเศษ-EX: Lightning Bolt",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลต่อเนื่อง: Electro Engine",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "สกิลอัลติเมท: Overdrive Engine",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตอย่างรวดเร็ว: Thunderfall",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   },
+   {
+    "name": "ซัปพอร์ตจู่โจม: Lightning Whirl",
+    "params": [
+     {
+      "k": "ตัวคูณ DMG"
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   },
+   {
+    "items": [
+     {
+      "k": "Impact"
+     },
+     {
+      "k": "Base ATK"
+     }
+    ]
+   }
+  ]
+ }
+}

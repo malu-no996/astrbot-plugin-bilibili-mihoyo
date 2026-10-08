@@ -2,20 +2,11 @@
 __pycache__/
 *.py[cod]
 
-# 运行期用户/凭证数据（securestore 加密的账号、绑定、设备指纹、社交命令配置）
-data/.auth_key
-data/miyoushe_accounts.json
-data/miyoushe_binds.json
-data/miyoushe_devices.json
-data/zzz/social.json
-data/zzz/*.csv
-data/zzz/records/
-data/zzz/lang/
-
-# 图鉴图标缓存（哈希名，可由 asset_cache 重新抓取；面板镜像随缓存重建）
-data/zzz/assets/
-data/zzz/img/
-pages/panel/assets/zzz/
+# ---- 运行数据（整目录不进仓库）----
+# AstrBot 更新插件时，会对压缩包里出现的每个目录先 rmtree 再覆盖：
+# 只要仓库里有 data/，每次更新都会把账号凭证、抽卡记录、战绩存档、图标缓存全删掉。
+# 所以 data/ 整个不提交；随仓库发的只读数据放 seed/（见 miyoho/seed.py）。
+data/
 
 # 日志/临时
 *.log
