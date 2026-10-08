@@ -19,6 +19,7 @@
 """
 from __future__ import annotations
 
+import base64
 import time
 
 from loguru import logger
@@ -429,6 +430,26 @@ async def api_zzz_asset(name: str):
     return file_response(path, filename=name)
 
 
+# 沙箱 iframe 是不透明源，<img> 请求不带 cookie → Page 静态目录的相对路径全 401
+# （静态 HTML 里的图能显示是因为服务端改写时注入了 asset_token，动态拼的不行）。
+# 所以动态图片只能由父页面代取：走这个 base64 路由（apiGet 自带身份），
+# 前端 app.js 拿到后转成 blob URL 再塞回数据。
+_ASSET_MIME = {
+    ".png": "image/png", ".webp": "image/webp", ".jpg": "image/jpeg",
+    ".jpeg": "image/jpeg", ".gif": "image/gif",
+}
+
+
+async def api_zzz_asset64(name: str):
+    """同 zzz/asset，但返回 base64 JSON（专供面板 bridge apiGet，见上）。"""
+    path = asset_cache.asset_path(name)
+    if not path.exists():
+        return fail("图片不存在", 404)
+    b64 = base64.b64encode(path.read_bytes()).decode("ascii")
+    mime = _ASSET_MIME.get(path.suffix.lower(), "image/png")
+    return json_response({"ok": True, "name": name, "mime": mime, "b64": b64})
+
+
 async def api_zzz_deadly_image():
     """后台把危局结果渲染成 PNG（不经前台；纯 Pillow 绘制，立绘走本地缓存，无跨域问题）。"""
     uid, server = _qstr("uid"), _qstr("server", "prod_gf_cn")
@@ -464,5 +485,6 @@ ROUTES = [
     ("zzz/note", "GET", api_zzz_note, "实时便笺"),
     ("zzz/void", "GET", api_zzz_void, "临界推演"),
     ("zzz/asset/<name>", "GET", api_zzz_asset, "后台缓存的米游社图片"),
+    ("zzz/asset64/<name>", "GET", api_zzz_asset64, "后台缓存图片的 base64 版（面板 bridge 用）"),
     ("zzz/deadly/image", "GET", api_zzz_deadly_image, "危局结果渲染成 PNG"),
 ]

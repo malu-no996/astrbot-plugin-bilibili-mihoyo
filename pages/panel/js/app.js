@@ -79,6 +79,60 @@
           return v;
         }
 
+        /* ---------------- 动态图片代取（⚠️ 不能用相对路径 <img>） ----------------
+         * 沙箱 iframe（sandbox 无 allow-same-origin）是不透明源：<img> 请求**不带
+         * cookie**，而 Page 静态目录 / /api/plug 的图片路由都要鉴权 → 全 401 裂图
+         * （静态 HTML 里的图能显示是因为服务端改写时注入了 asset_token，动态拼的不行）。
+         * 所以接口数据里的图片走 apiGet 代取（父页面有身份）：zzz/asset64/<名> 返回
+         * base64 → 这里转 blob URL，在数据交给 frag 之前原位换好（进 Vue 前完成，
+         * 没有响应式问题）。按 URL 缓存整个会话复用。 */
+        const PLACEHOLDER_IMG = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+        const assetUrls = new Map();    // './assets/zzz/<名>' → blob URL
+        const assetPending = new Map(); // 去重并发
+
+        function isAssetUrl(v) {
+          return typeof v === 'string' && v.indexOf('./assets/zzz/') === 0;
+        }
+
+        function loadAsset(key) {
+          if (assetUrls.has(key)) return Promise.resolve(assetUrls.get(key));
+          if (assetPending.has(key)) return assetPending.get(key);
+          const p = (async () => {
+            try {
+              const j = norm(await bridge.apiGet('zzz/asset64/' + key.split('/').pop(), null));
+              if (!j || !j.b64) throw new Error('asset64 返回异常');
+              const bin = atob(j.b64);
+              const bytes = new Uint8Array(bin.length);
+              for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+              const url = URL.createObjectURL(new Blob([bytes], { type: j.mime || 'image/png' }));
+              assetUrls.set(key, url);
+              return url;
+            } catch (e) {
+              return PLACEHOLDER_IMG;  // 单图失败不炸整个查询
+            } finally {
+              assetPending.delete(key);
+            }
+          })();
+          assetPending.set(key, p);
+          return p;
+        }
+
+        async function resolveAssetsDeep(v) {
+          if (Array.isArray(v)) {
+            await Promise.all(v.map(async (val, i) => {
+              if (isAssetUrl(val)) v[i] = await loadAsset(val);
+              else await resolveAssetsDeep(val);
+            }));
+          } else if (v && typeof v === 'object') {
+            await Promise.all(Object.keys(v).map(async (k) => {
+              const val = v[k];
+              if (isAssetUrl(val)) v[k] = await loadAsset(val);
+              else await resolveAssetsDeep(val);
+            }));
+          }
+          return v;
+        }
+
         /* bridge 返回值归一成原框架口径：{ok, message, ...} / 任意业务 JSON。 */
         function norm(v) {
           if (v && typeof v === 'object') {
@@ -113,7 +167,8 @@
             }
           }
           try {
-            return norm(await bridge.apiGet(ep, qs));
+            const out = norm(await bridge.apiGet(ep, qs));
+            return await resolveAssetsDeep(out);  // 图片换 blob URL（失败原样返回）
           } catch (e) {
             return { ok: false, message: (e && e.message) || '请求失败' };
           }
@@ -122,7 +177,8 @@
         async function post(path, bodyData) {
           const [ep] = cleanEndpoint(path);
           try {
-            return norm(await bridge.apiPost(ep, bodyData || {}));
+            const out = norm(await bridge.apiPost(ep, bodyData || {}));
+            return await resolveAssetsDeep(out);
           } catch (e) {
             return { ok: false, message: (e && e.message) || '请求失败' };
           }
