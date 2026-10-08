@@ -25,9 +25,13 @@ from . import card_assets as _a
 # 渲染倍率：网页那套数值全是 CSS px，乘这个倍数画大图（像素密度高一点，QQ 里更清楚）
 SCALE = 1.6
 
-# 技能条素材（网页版用的是 web/asset 那张 350×70，和 texture2d 里的不是同一张）
+# 技能条素材：网页版用的是 350×70 那张（6 个圆 + 图标烙在图里），
+# 就放在面板静态资源里 pages/panel/assets/skill_bar.png（git 跟踪）。
+# ⚠️ 别指向 texture2d/skill_bar.png —— 那是另一张 1100×130 的原图，圆心位置对不上，
+# 等级数字会全部错位。原先指向 NoneBot 原项目的 web/asset/，AstrBot 版没有这个目录，
+# 结果就是技能条底图永远贴不上、只剩一排悬空的等级数字（2026-10-09 修）。
 _PLUGIN_ROOT = Path(__file__).resolve().parents[3]
-SKILL_BAR_PATH = _PLUGIN_ROOT / "web" / "asset" / "skill_bar.png"
+SKILL_BAR_PATH = _PLUGIN_ROOT / "pages" / "panel" / "assets" / "skill_bar.png"
 
 # ---------------- 配色（逐个取自 web/frag/zzz-avatar.css）----------------
 C_CARD = (22, 24, 29)        # #16181d 整卡底（音擎小卡也用这个 = 最深那一档）
